@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Super Bright Labs — Products</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --black: #111827;
+    --white: #ffffff;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-400: #6b7280;
+    --gray-600: #4b5563;
+    --gray-800: #1f2937;
+    --accent: #e60023;
+    --border: 1px solid #e5e7eb;
+    --border-dark: 1px solid #d1d5db;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #eff2f7;
+    color: var(--black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── TOP NAV ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 64px;
+    background: #ffffff;
+    color: var(--black);
+    flex-shrink: 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+  .logo span { color: #e60023; font-weight: 800; }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #374151;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #e60023; }
+  .nav-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: var(--gray-400);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── BREADCRUMB BAR ── */
+  .breadbar {
+    background: var(--white);
+    border-bottom: var(--border);
+    padding: 10px 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--gray-400);
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+  .breadbar span { color: var(--black); }
+
+  /* ── MAIN LAYOUT ── */
+  .layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ── LEFT SIDEBAR ── */
+  .sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    border-right: var(--border);
+    overflow-y: auto;
+    background: var(--white);
+  }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-track { background: transparent; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--gray-200); }
+
+  .sidebar-header {
+    padding: 20px 24px 12px;
+    border-bottom: var(--border);
+    background: var(--gray-100);
+  }
+  .sidebar-header h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+  }
+
+  .category-block { border-bottom: var(--border); }
+
+  .cat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    cursor: pointer;
+    background: var(--white);
+    transition: background 0.15s;
+    user-select: none;
+  }
+  .cat-header:hover { background: var(--gray-100); }
+  .cat-header.open { background: var(--accent); color: #ffffff; }
+  .cat-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cat-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    opacity: 0.5;
+  }
+  .cat-chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+    opacity: 0.5;
+  }
+  .cat-header.open .cat-chevron { transform: rotate(180deg); opacity: 1; color: #ffffff; }
+
+  .cat-body { display: none; }
+  .cat-body.open { display: block; }
+
+  .subcat-block { border-bottom: 1px solid var(--gray-100); }
+  .subcat-header {
+    padding: 10px 24px 10px 28px;
+    cursor: pointer;
+    background: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.15s;
+  }
+  .subcat-header:hover { background: var(--gray-200); }
+  .subcat-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--gray-600);
+    text-transform: uppercase;
+  }
+  .subcat-chevron { font-size: 9px; color: var(--gray-400); transition: transform 0.2s; }
+  .subcat-header.open .subcat-chevron { transform: rotate(180deg); }
+  .subcat-header.open .subcat-title { color: var(--black); }
+
+  .product-list { display: none; padding: 4px 0; background: #f3f4f6; }
+  .product-list.open { display: block; }
+
+  .product-item {
+    padding: 9px 24px 9px 36px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    color: var(--gray-600);
+    border-left: 2px solid transparent;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .product-item:hover { color: var(--black); background: var(--gray-100); border-left-color: var(--gray-400); }
+  .product-item.active { color: var(--black); background: var(--white); border-left-color: var(--black); font-weight: 500; }
+  .product-item::before { content: '—'; font-size: 10px; color: var(--gray-400); flex-shrink: 0; }
+
+  /* ── PRODUCT PANEL ── */
+  .product-panel {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--white);
+    padding: 40px 52px;
+  }
+  .product-panel::-webkit-scrollbar { width: 5px; }
+  .product-panel::-webkit-scrollbar-thumb { background: var(--gray-200); }
+
+  .product-panel.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .empty-icon {
+    font-size: 64px;
+    opacity: 0.08;
+  }
+  .empty-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: var(--gray-400);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Product detail */
+  .prod-meta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  .prod-sku {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--gray-400);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .prod-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.05;
+    color: var(--black);
+    max-width: 500px;
+  }
+  .prod-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-top: 10px;
+    letter-spacing: 0.04em;
+    border-left: 2px solid var(--gray-200);
+    padding-left: 10px;
+  }
+  .prod-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    background: var(--accent);
+    color: #ffffff;
+    padding: 5px 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* Product image */
+  .prod-visual-row {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .prod-image-box {
+    background: var(--gray-100);
+    border: var(--border);
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .prod-image-box img { max-width: 85%; max-height: 85%; object-fit: contain; }
+  .img-watermark {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    color: var(--gray-400);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Specs panel */
+  .specs-box {
+    border: var(--border-dark);
+    padding: 24px;
+  }
+  .specs-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: var(--border);
+  }
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 12.5px;
+  }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-key {
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-400);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .spec-val { font-weight: 500; font-size: 13px; }
+
+  /* Description */
+  .prod-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--gray-600);
+    margin-bottom: 40px;
+    max-width: 680px;
+  }
+
+  /* Section headings */
+  .section-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--black);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-heading .sh-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--gray-400);
+    font-weight: 300;
+  }
+
+  /* Consumables grid */
+  .consumables-section { margin-bottom: 48px; }
+  .consumables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  .consumable-card {
+    border: var(--border);
+    padding: 18px 16px;
+    background: var(--white);
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+  }
+  .consumable-card:hover { border-color: var(--black); background: var(--gray-100); }
+  .con-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    margin-bottom: 14px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .con-icon svg { width: 24px; height: 24px; stroke: var(--white); fill: none; stroke-width: 1.5; }
+  .con-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .con-sku {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: var(--gray-400);
+    letter-spacing: 0.06em;
+  }
+  .con-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--black);
+  }
+
+  /* Similar products */
+  .similar-section { margin-bottom: 48px; }
+  .similar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .similar-card {
+    border: var(--border);
+    cursor: pointer;
+    transition: border-color 0.2s;
+    overflow: hidden;
+  }
+  .similar-card:hover { border-color: var(--black); }
+  .sim-image {
+    background: var(--gray-100);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--border);
+  }
+  .sim-image img { max-width: 80%; max-height: 80%; object-fit: contain; }
+  .sim-info { padding: 14px 16px; }
+  .sim-sku {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    color: var(--gray-400);
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .sim-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  .sim-tag {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-thumb { background: var(--gray-200); border-radius: 2px; }
+
+  /* Divider */
+  hr.prod-divider { border: none; border-top: var(--border); margin: 36px 0; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .product-panel > * { animation: fadeIn 0.3s ease forwards; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="catalog.html" class="logo" style="text-decoration:none;color:#111827">Super <span>Bright</span> Labs</a>
+  <ul class="nav-links">
+    <li>
+      <a href="../index.html">Home</a>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../updates.html">Updates</a></li>
+      <li><a href="catalog.html">Products</a></li>
+      <li><a href="../photos.html">Photo</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    </li>
+  </ul>
+  <div class="nav-badge">EST. 2001 · INDUSTRIAL GRADE</div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadbar" id="breadbar">Products / <span>Select a category</span></div>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header"><h3>Product Catalogue</h3></div>
+    <div id="sidebar-nav"></div>
+  </aside>
+
+  <!-- PRODUCT PANEL -->
+  <main class="product-panel empty" id="product-panel">
+    <div class="empty-icon">◈</div>
+    <div class="empty-text">Select a product to view details</div>
+  </main>
+
+</div>
+
+<script>
+// ── PRODUCT DATA ──────────────────────────────────────────────
+const CATALOGUE = [
+  {
+    id: "adhesive-tapes",
+    name: "Adhesive Tapes",
+    subcategories: [
+      {
+        id: "double-sided",
+        name: "Double-Sided Tapes",
+        products: [
+          {
+            id: "dst-pro-5000",
+            name: "ProMount DS-5000",
+            sku: "SBL-DS-5000",
+            brand: "Super Bright Labs",
+            tagline: "Heavy-duty double-sided mounting tape for industrial bonding",
+            badge: "Best Seller",
+            description: "The ProMount DS-5000 is engineered for permanent high-strength bonding across smooth, rough, and textured surfaces. Its dual-acrylic adhesive system delivers exceptional holding power even under vibration, moisture, and temperature swings from −30°C to 120°C. Designed for assembly line environments and field applications alike.",
+            specs: { "Width": "25 mm", "Length": "33 m", "Thickness": "1.2 mm", "Peel Strength": "180 N/cm²", "Temp Range": "−30°C to 120°C", "Liner": "Silicone Release" },
+            svgType: "tape-roll",
+            imageUrl: "images/double_sided_tape.png",
+            consumables: [
+              { name: "Tape Dispenser Handle", sku: "SBL-TDH-01", price: "₹ 649", icon: "dispenser" },
+              { name: "Surface Primer Spray", sku: "SBL-SPS-02", price: "₹ 420", icon: "spray" },
+              { name: "Applicator Roller", sku: "SBL-AR-03", price: "₹ 280", icon: "roller" },
+              { name: "Residue Remover 250ml", sku: "SBL-RR-04", price: "₹ 350", icon: "bottle" },
+            ],
+            similar: ["foam-mounting", "specialty-alu"],
+          },
+          {
+            id: "foam-mounting",
+            name: "FoamBond FM-800",
+            sku: "SBL-FM-800",
+            brand: "Super Bright Labs",
+            tagline: "Acrylic foam double-sided tape for structural joining",
+            badge: "Professional",
+            description: "FoamBond FM-800 features a conformable closed-cell acrylic foam core that compensates for surface irregularities. Ideal for bonding nameplates, emblems, glass, and panels. Its UV-stable adhesive maintains bond integrity after prolonged outdoor exposure.",
+            specs: { "Width": "19 mm", "Length": "22 m", "Core": "Closed-cell Foam", "Tack": "Very High", "UV Resistance": "Excellent", "Liner Colour": "Red" },
+            svgType: "tape-flat",
+            imageUrl: "images/foam_tape.png",
+            consumables: [
+              { name: "Foam Cutter Guide", sku: "SBL-FCG-01", price: "₹ 220", icon: "cutter" },
+              { name: "Bond Primer Wipe Pack (50)", sku: "SBL-BWP-10", price: "₹ 310", icon: "wipe" },
+              { name: "Hand Roller Press", sku: "SBL-HRP-02", price: "₹ 490", icon: "roller" },
+            ],
+            similar: ["dst-pro-5000", "transfer-tape"],
+          },
+        ],
+      },
+      {
+        id: "masking-tapes",
+        name: "Masking & Painters Tapes",
+        products: [
+          {
+            id: "mask-clean-100",
+            name: "CleanEdge MT-100",
+            sku: "SBL-MT-100",
+            brand: "Super Bright Labs",
+            tagline: "Zero-bleed masking tape for precision painting",
+            badge: "Precision Grade",
+            description: "CleanEdge MT-100 uses a specially treated crepe paper backing and a rubber-based adhesive calibrated for 14-day clean removal. Its micro-textured edge seals tight against paint bleed even on textured walls and irregular surfaces. Safe for delicate paints and wallpapers.",
+            specs: { "Width": "48 mm", "Length": "55 m", "Backing": "Crepe Paper", "Adhesion": "Medium", "Max Temp": "80°C", "Removal": "Up to 14 days" },
+            svgType: "tape-roll",
+            imageUrl: "images/masking_tape.png",
+            consumables: [
+              { name: "Tape Dispenser (Wide)", sku: "SBL-TDW-05", price: "₹ 580", icon: "dispenser" },
+              { name: "Scraper Tool Set (3pc)", sku: "SBL-STS-03", price: "₹ 310", icon: "scraper" },
+              { name: "Touch-Up Brush Pack", sku: "SBL-TUB-07", price: "₹ 240", icon: "brush" },
+            ],
+            similar: ["high-temp-masking", "specialty-alu"],
+          },
+          {
+            id: "high-temp-masking",
+            name: "ThermoMask HT-260",
+            sku: "SBL-HT-260",
+            brand: "Super Bright Labs",
+            tagline: "High-temperature masking tape for powder coat & oven use",
+            badge: "High Temp",
+            description: "ThermoMask HT-260 is manufactured from a glass-cloth base with silicone adhesive capable of withstanding continuous heat up to 260°C. Resists paint, solvents, and anodising chemicals. Used extensively in automotive powder coating, PCB wave soldering, and anodising processes.",
+            specs: { "Width": "25 mm", "Length": "33 m", "Backing": "Glass Cloth", "Adhesive": "Silicone", "Max Temp": "260°C", "Colour": "Tan" },
+            svgType: "tape-roll",
+            imageUrl: "images/high_temp_tape.png",
+            consumables: [
+              { name: "Heat-Resistant Gloves", sku: "SBL-HRG-01", price: "₹ 720", icon: "glove" },
+              { name: "Tape Punch Tool", sku: "SBL-TPT-02", price: "₹ 350", icon: "cutter" },
+            ],
+            similar: ["mask-clean-100", "specialty-alu"],
+          },
+        ],
+      },
+      {
+        id: "industrial-strength",
+        name: "Industrial Strength Tapes",
+        products: [
+          {
+            id: "gaffer-ultra",
+            name: "GripForce Gaffer G-700",
+            sku: "SBL-GF-700",
+            brand: "Super Bright Labs",
+            tagline: "Professional cloth gaffer tape, residue-free removal",
+            badge: "Pro AV Grade",
+            description: "GripForce G-700 uses a woven polyethylene-coated cotton cloth reinforced with a natural rubber adhesive. Tears cleanly by hand, holds cables, marks stages, and removes without residue on most surfaces. The matte black finish eliminates reflections for broadcast and stage use.",
+            specs: { "Width": "50 mm", "Length": "50 m", "Backing": "Woven Cloth", "Adhesive": "Natural Rubber", "Finish": "Matte Black", "Tearable": "By Hand" },
+            svgType: "tape-flat",
+            imageUrl: "images/gaffer_tape.png",
+            consumables: [
+              { name: "Cable Tie Set 200pk", sku: "SBL-CTS-200", price: "₹ 180", icon: "tie" },
+              { name: "Glow-In-Dark Floor Tape", sku: "SBL-GFT-01", price: "₹ 520", icon: "tape-floor" },
+            ],
+            similar: ["transfer-tape", "dst-pro-5000"],
+          },
+          {
+            id: "transfer-tape",
+            name: "TransferPro TP-400",
+            sku: "SBL-TP-400",
+            brand: "Super Bright Labs",
+            tagline: "Repositionable transfer tape for graphic mounting",
+            badge: "Graphics Grade",
+            description: "TransferPro TP-400 is a premium, clear, pressure-sensitive transfer tape engineered for sign, graphics, and vinyl application. Its gridded liner ensures precise alignment. Aggressive tack on contact, yet repositionable within 60 seconds of application.",
+            specs: { "Width": "305 mm", "Length": "91 m", "Adhesive": "Acrylic PSA", "Liner": "Gridded Kraft", "Clarity": "Optically Clear", "Reposition Window": "60 sec" },
+            svgType: "tape-roll",
+            imageUrl: "images/transfer_tape.png",
+            consumables: [
+              { name: "Squeegee Applicator", sku: "SBL-SQA-01", price: "₹ 160", icon: "squeegee" },
+              { name: "Cutting Mat A2", sku: "SBL-CMA-02", price: "₹ 780", icon: "cutter" },
+              { name: "Weeding Tool Set", sku: "SBL-WTS-03", price: "₹ 290", icon: "scraper" },
+            ],
+            similar: ["dst-pro-5000", "foam-mounting"],
+          },
+        ],
+      },
+      {
+        id: "specialty-foil",
+        name: "Specialty & Foil Tapes",
+        products: [
+          {
+            id: "specialty-alu",
+            name: "AlumiFoil AF-200",
+            sku: "SBL-AF-200",
+            brand: "Super Bright Labs",
+            tagline: "Aluminium foil tape for HVAC and thermal sealing",
+            badge: "HVAC Grade",
+            description: "AlumiFoil AF-200 features a dead-soft aluminium foil conformable around ducts, pipes, and irregular joints. The acrylic adhesive maintains adhesion from −40°C to 150°C. UL-listed for use in air-handling ductwork. EMI shielding applications benefit from the conductive foil construction.",
+            specs: { "Width": "72 mm", "Length": "55 m", "Foil Gauge": "0.05 mm", "Adhesive": "Acrylic", "UL Rating": "UL 181A-P", "EMI Shielding": "Yes" },
+            svgType: "tape-flat",
+            imageUrl: "images/aluminium_foil_tape.png",
+            consumables: [
+              { name: "Duct Tape Dispenser", sku: "SBL-DTD-01", price: "₹ 610", icon: "dispenser" },
+              { name: "Joint Compound Brush", sku: "SBL-JCB-02", price: "₹ 200", icon: "brush" },
+            ],
+            similar: ["gaffer-ultra", "transfer-tape"],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "power-tools",
+    name: "Power Tools",
+    subcategories: [
+      {
+        id: "drills-drivers",
+        name: "Drills & Drivers",
+        products: [
+          {
+            id: "bosch-gsb-18v",
+            name: "Bosch GSB 18V-85 C",
+            sku: "BSH-GSB18V85",
+            brand: "Bosch Professional",
+            tagline: "Connected brushless combi drill with 85 Nm torque",
+            badge: "Top Pick",
+            description: "The Bosch GSB 18V-85 C Professional is a high-performance brushless combi drill with Connectivity Module supporting the Bosch Toolbox app. Delivers 85 Nm of torque, all-metal chuck, 2-speed gearbox, and Bosch Electronic Motor Protection. Ideal for demanding drilling and screwdriving in concrete, steel, and hardwood.",
+            specs: { "Max Torque": "85 Nm", "Chuck": "13 mm All-Metal", "Speeds": "0–550 / 0–2,100 rpm", "Impact Rate": "0–33,600 bpm", "Battery": "18 V (Li-Ion)", "Weight": "2.0 kg (with 4 Ah)" },
+            svgType: "drill",
+            imageUrl: "images/cordless_drill.png",
+            consumables: [
+              { name: "Bosch 4 Ah ProCORE18V Battery", sku: "BSH-PC18V4", price: "₹ 5,200", icon: "battery" },
+              { name: "GAL 18V-40 Charger", sku: "BSH-GAL40", price: "₹ 2,800", icon: "charger" },
+              { name: "X-Line Drill & Bit Set (93 pc)", sku: "BSH-XLN93", price: "₹ 1,450", icon: "bit-set" },
+              { name: "Belt Clip & Bit Holder", sku: "BSH-BCH-01", price: "₹ 320", icon: "clip" },
+              { name: "Carrying Case L-Boxx 136", sku: "BSH-LBOX136", price: "₹ 1,100", icon: "case" },
+            ],
+            similar: ["dewalt-dcd996", "bosch-go-2"],
+          },
+          {
+            id: "dewalt-dcd996",
+            name: "DeWalt DCD996P2",
+            sku: "DWL-DCD996P2",
+            brand: "DeWalt",
+            tagline: "3-speed brushless hammer drill/driver, 95 Nm",
+            badge: "XR Series",
+            description: "The DeWalt DCD996P2 features a 3-speed all-metal transmission delivering up to 95 Nm torque and 38,250 bpm impact rate. Its DEWALT-built brushless motor maximises runtime and durability. Ergonomically balanced with LED work light and comes with two 5 Ah POWERSTACK batteries.",
+            specs: { "Max Torque": "95 Nm", "Chuck": "13 mm Ratcheting", "Speeds": "3-Speed", "Impact Rate": "38,250 bpm", "Battery": "20V MAX XR 5 Ah", "Weight": "2.1 kg" },
+            svgType: "drill",
+            imageUrl: "images/dewalt_drill.png",
+            consumables: [
+              { name: "DeWalt 5Ah XR Battery (2-Pack)", sku: "DWL-DCB205-2", price: "₹ 8,400", icon: "battery" },
+              { name: "DCB115 Fast Charger", sku: "DWL-DCB115", price: "₹ 2,200", icon: "charger" },
+              { name: "Impact-Ready Bit Set (31 pc)", sku: "DWL-DWA3193", price: "₹ 890", icon: "bit-set" },
+              { name: "TSTAK V Storage Module", sku: "DWL-TSTAK5", price: "₹ 1,650", icon: "case" },
+            ],
+            similar: ["bosch-gsb-18v", "bosch-go-2"],
+          },
+          {
+            id: "bosch-go-2",
+            name: "Bosch GO 2 Screwdriver",
+            sku: "BSH-GO2",
+            brand: "Bosch",
+            tagline: "Smart compact electric screwdriver, pocket-sized",
+            badge: "Compact",
+            description: "The Bosch GO 2 is a smart 3.6V screwdriver featuring Bosch SmartSense auto-start technology — it starts and stops with the twist of your wrist. Weighs only 0.27 kg and fits in any toolkit. Charges via USB-C in under 2 hours and offers 200 screwdriving operations per charge.",
+            specs: { "Voltage": "3.6 V", "Max Torque": "5 Nm", "No-Load Speed": "200 rpm", "Bits Included": "5 pc", "Battery": "Li-Ion (built-in)", "Charge": "USB-C 2 hr" },
+            svgType: "drill-compact",
+            imageUrl: "images/compact_screwdriver.png",
+            consumables: [
+              { name: "Flex Shaft Extension", sku: "BSH-FSE-01", price: "₹ 480", icon: "bit-set" },
+              { name: "Colour-Coded Bit Set 35pc", sku: "BSH-CCB-35", price: "₹ 620", icon: "bit-set" },
+              { name: "Carry Pouch", sku: "BSH-CPG-01", price: "₹ 190", icon: "clip" },
+            ],
+            similar: ["bosch-gsb-18v", "dewalt-dcd996"],
+          },
+        ],
+      },
+      {
+        id: "grinders-sanders",
+        name: "Grinders & Sanders",
+        products: [
+          {
+            id: "bosch-gws18v",
+            name: "Bosch GWS 18V-10 SC",
+            sku: "BSH-GWS18V10",
+            brand: "Bosch Professional",
+            tagline: "Brushless cordless angle grinder with KickBack Control",
+            badge: "Safety Rated",
+            description: "The GWS 18V-10 SC features Bosch's KickBack Control and Restart Protection for maximum operator safety. Its brushless motor delivers 8,500 rpm and the anti-vibration side handle reduces operator fatigue during extended use. Compatible with all standard 125 mm grinding and cutting discs.",
+            specs: { "Disc Dia.": "125 mm", "No-load Speed": "8,500 rpm", "Spindle Thread": "M14", "Safety": "KickBack Control", "Battery": "18 V Li-Ion", "Weight": "1.8 kg" },
+            svgType: "grinder",
+            imageUrl: "images/angle_grinder.png",
+            consumables: [
+              { name: "Expert Metal Grinding Disc (5pk)", sku: "BSH-GMD-5PK", price: "₹ 760", icon: "disc" },
+              { name: "Diamond Cutting Disc", sku: "BSH-DCD-125", price: "₹ 540", icon: "disc" },
+              { name: "Flap Sanding Disc 40G (3pk)", sku: "BSH-FSD-40", price: "₹ 420", icon: "disc" },
+              { name: "Safety Guard Replacement", sku: "BSH-SGR-01", price: "₹ 310", icon: "shield" },
+            ],
+            similar: ["camo-marking-tool", "bosch-gsb-18v"],
+          },
+        ],
+      },
+      {
+        id: "saws-cutters",
+        name: "Saws & Cutters",
+        products: [
+          {
+            id: "bosch-gst-18v",
+            name: "Bosch GST 18V-Li B",
+            sku: "BSH-GST18VLI",
+            brand: "Bosch Professional",
+            tagline: "Cordless jigsaw with Constant Electronic speed control",
+            badge: "Precision Cut",
+            description: "The Bosch GST 18V-Li B jigsaw delivers clean, precise cuts in wood, metal, ceramics, and plastics up to 120 mm. Its Constant Electronic technology maintains blade speed under load. The SDS blade system enables tool-free blade changing and the dust blower keeps the cut line clear.",
+            specs: { "Stroke Rate": "0–3,100 spm", "Cutting (Wood)": "120 mm", "Cutting (Metal)": "10 mm", "Blade System": "T-Shank SDS", "Orbit Settings": "4-stage", "Battery": "18 V Li-Ion" },
+            svgType: "saw",
+            imageUrl: "images/cordless_jigsaw.png",
+            consumables: [
+              { name: "T-Shank Wood Blade Set (5pk)", sku: "BSH-TWB-5", price: "₹ 580", icon: "blade" },
+              { name: "T-Shank Metal Blade Set (3pk)", sku: "BSH-TMB-3", price: "₹ 490", icon: "blade" },
+              { name: "Dust Extraction Adapter", sku: "BSH-DEA-01", price: "₹ 380", icon: "vacuum" },
+              { name: "Guide Rail System", sku: "BSH-GRS-01", price: "₹ 1,200", icon: "rail" },
+            ],
+            similar: ["bosch-gsb-18v", "bosch-gws18v"],
+          },
+        ],
+      },
+      {
+        id: "measuring-detection",
+        name: "Measuring & Detection",
+        products: [
+          {
+            id: "bosch-plr-30c",
+            name: "Bosch PLR 30 C Laser",
+            sku: "BSH-PLR30C",
+            brand: "Bosch",
+            tagline: "30m Bluetooth laser measure with free app",
+            badge: "Smart Tool",
+            description: "The Bosch PLR 30 C laser distance measurer delivers ±1.5 mm accuracy up to 30 m and pairs to the free MeasureOn app via Bluetooth. Captures length, area, volume, and indirect measurements. Compact at only 100 mm, it fits in any shirt pocket.",
+            specs: { "Range": "0.05–30 m", "Accuracy": "±1.5 mm", "Display": "Backlit LCD", "Bluetooth": "4.0", "Battery": "2 × AAA", "IP Rating": "IP 54" },
+            svgType: "measure",
+            imageUrl: "images/laser_measure.png",
+            consumables: [
+              { name: "Measuring Tape 5m", sku: "BSH-MT-5M", price: "₹ 380", icon: "tape-measure" },
+              { name: "Wall Detector GMS 120", sku: "BSH-GMS120", price: "₹ 2,400", icon: "detector" },
+              { name: "Tripod Adapter Set", sku: "BSH-TAS-01", price: "₹ 540", icon: "tripod" },
+            ],
+            similar: ["bosch-go-2", "camo-marking-tool"],
+          },
+          {
+            id: "camo-marking-tool",
+            name: "Camo Marksman Pro-NB",
+            sku: "CMO-MPN-1",
+            brand: "Camo",
+            tagline: "Deck board spacing and fastening guide tool",
+            badge: "Deck Pro",
+            description: "The Camo Marksman Pro-NB drives Camo fasteners at the perfect angle for hidden deck fastening on boards up to 145 mm wide. Works with composite, PVC, and hardwood decking. Reduces fastener drive time by up to 70% compared to traditional face screwing.",
+            specs: { "Board Width": "up to 145 mm", "Drive Angle": "15°", "Fastener Type": "Camo Edge", "Material": "Aluminium Body", "Compatible": "Composite / Wood", "Boards/Bucket": "Up to 1,750 sqft" },
+            svgType: "measure",
+            imageUrl: "images/deck_fastening_tool.png",
+            consumables: [
+              { name: "Camo Edge Fasteners 350pk", sku: "CMO-CEF-350", price: "₹ 1,240", icon: "screw" },
+              { name: "Star Drive Bit #2 (5pk)", sku: "CMO-SDB-5", price: "₹ 280", icon: "bit-set" },
+              { name: "Camo Deck Board Spacer", sku: "CMO-DBS-01", price: "₹ 340", icon: "clip" },
+            ],
+            similar: ["bosch-plr-30c", "bosch-gsb-18v"],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "protective-packaging",
+    name: "Protective Packaging",
+    subcategories: [
+      {
+        id: "bubble-wrap",
+        name: "Bubble Wrap",
+        products: [
+          {
+            id: "bw-small-500",
+            name: "ShieldAir BW-10 (Small Bubble)",
+            sku: "SBL-BW-10",
+            brand: "Super Bright Labs",
+            tagline: "Small 10mm bubble wrap for fragile electronics & glassware",
+            badge: "Electronics Safe",
+            description: "ShieldAir BW-10 features uniform 10 mm air bubbles for cushioning delicate items such as phones, glassware, and precision components. Made from 100% virgin LDPE for consistent bubble performance and superior clarity. Anti-static variant available for sensitive electronics.",
+            specs: { "Bubble Diameter": "10 mm", "Bubble Height": "8 mm", "Width": "500 mm", "Roll Length": "100 m", "Material": "Virgin LDPE", "Anti-Static": "Optional" },
+            svgType: "bubble",
+            imageUrl: "images/bubble_wrap_small.png",
+            consumables: [
+              { name: "Stretch Film Clear 500m Roll", sku: "SBL-SF-500", price: "₹ 680", icon: "roll" },
+              { name: "Packing Tape 48mm×50m", sku: "SBL-PT-4850", price: "₹ 120", icon: "tape-floor" },
+              { name: "Bubble Dispenser Stand", sku: "SBL-BDS-01", price: "₹ 1,800", icon: "dispenser" },
+              { name: "Perforation Tool", sku: "SBL-PFT-01", price: "₹ 240", icon: "cutter" },
+            ],
+            similar: ["bw-large-1000", "foam-sheet"],
+          },
+          {
+            id: "bw-large-1000",
+            name: "ShieldAir BW-30 (Large Bubble)",
+            sku: "SBL-BW-30",
+            brand: "Super Bright Labs",
+            tagline: "30mm large-bubble wrap for heavy & bulky goods",
+            badge: "Heavy Duty",
+            description: "ShieldAir BW-30 uses large 30 mm diameter bubbles to provide superior cushioning for heavy machinery parts, furniture, and industrial equipment. The thicker LDPE film delivers higher puncture resistance. Excellent compression strength for stacking in transit.",
+            specs: { "Bubble Diameter": "30 mm", "Bubble Height": "22 mm", "Width": "750 mm", "Roll Length": "50 m", "Film Gauge": "100 micron", "Colour": "Clear" },
+            svgType: "bubble",
+            imageUrl: "images/bubble_wrap_large.png",
+            consumables: [
+              { name: "Heavy Duty Packing Tape", sku: "SBL-HDT-01", price: "₹ 160", icon: "tape-floor" },
+              { name: "Kraft Paper Void Fill (5 kg)", sku: "SBL-KPV-5", price: "₹ 420", icon: "roll" },
+              { name: "Box Sealing Gun", sku: "SBL-BSG-01", price: "₹ 540", icon: "dispenser" },
+            ],
+            similar: ["bw-small-500", "stretch-film"],
+          },
+        ],
+      },
+      {
+        id: "foam-packaging",
+        name: "Foam Packaging",
+        products: [
+          {
+            id: "foam-sheet",
+            name: "ProFoam PF-200 Sheet",
+            sku: "SBL-PF-200",
+            brand: "Super Bright Labs",
+            tagline: "Polyethylene foam sheet for interleaving & wrapping",
+            badge: "Chemical Resistant",
+            description: "ProFoam PF-200 is a cross-linked polyethylene foam sheet offering excellent cushioning, moisture resistance, and chemical inertness. Used as interleaving material for polished metal, glass, and ceramic surfaces. Tear-resistant even at low temperatures.",
+            specs: { "Density": "30 kg/m³", "Thickness": "5 mm", "Sheet Size": "1000×2000 mm", "Colour": "White", "Temp Range": "−50°C to 100°C", "Recyclable": "Yes" },
+            svgType: "foam",
+            imageUrl: "images/foam_sheet.png",
+            consumables: [
+              { name: "Foam Cutting Knife Set", sku: "SBL-FCK-03", price: "₹ 340", icon: "cutter" },
+              { name: "PE Foam Adhesive Spray", sku: "SBL-FAS-01", price: "₹ 480", icon: "spray" },
+              { name: "Antistatic Coating Spray", sku: "SBL-ACS-01", price: "₹ 390", icon: "spray" },
+            ],
+            similar: ["foam-inserts", "bw-small-500"],
+          },
+          {
+            id: "foam-inserts",
+            name: "CubeForm CF-100 Custom Insert",
+            sku: "SBL-CF-100",
+            brand: "Super Bright Labs",
+            tagline: "Pre-scored foam bun for custom pick-and-pluck inserts",
+            badge: "Custom Fit",
+            description: "CubeForm CF-100 is a high-density pre-scored foam bun for creating precision pick-and-pluck foam inserts in tool cases, camera bags, and display boxes. Cleanly removes in exact cube increments with no tearing. Available in standard black and custom colours.",
+            specs: { "Density": "55 kg/m³", "Block Size": "455×330×50 mm", "Cube Size": "12×12×12 mm", "Colour": "Black", "Material": "Polyurethane", "Layers": "Stackable" },
+            svgType: "foam",
+            imageUrl: "images/foam_insert.png",
+            consumables: [
+              { name: "Foam Rail Case 550×400", sku: "SBL-FRC-01", price: "₹ 1,900", icon: "case" },
+              { name: "Adhesive Foam Lid Lining", sku: "SBL-ALL-01", price: "₹ 360", icon: "roller" },
+            ],
+            similar: ["foam-sheet", "edge-protectors"],
+          },
+        ],
+      },
+      {
+        id: "stretch-films",
+        name: "Stretch Films",
+        products: [
+          {
+            id: "stretch-film",
+            name: "PalletPro SF-23 Stretch Film",
+            sku: "SBL-SF-23",
+            brand: "Super Bright Labs",
+            tagline: "Machine stretch film 23 micron for pallet unitisation",
+            badge: "Machine Grade",
+            description: "PalletPro SF-23 is a high-performance machine stretch film offering outstanding load containment with pre-stretched film elongation up to 250%. Its nano-layer co-extrusion technology delivers maximum puncture and tear resistance at only 23 micron, reducing plastic usage by 30% vs standard films.",
+            specs: { "Gauge": "23 micron", "Width": "500 mm", "Length": "2,500 m", "Elongation": "Up to 250%", "Cast/Blown": "Cast", "Core": "76 mm" },
+            svgType: "roll",
+            imageUrl: "images/stretch_film.png",
+            consumables: [
+              { name: "Semi-Auto Pallet Wrapper PM-200", sku: "SBL-PM200", price: "₹ 48,000", icon: "dispenser" },
+              { name: "Film Core Adapter Set", sku: "SBL-FCA-01", price: "₹ 380", icon: "roller" },
+              { name: "Film Cutter Safety Tool", sku: "SBL-FCT-01", price: "₹ 220", icon: "cutter" },
+            ],
+            similar: ["bw-large-1000", "edge-protectors"],
+          },
+        ],
+      },
+      {
+        id: "edge-protectors",
+        name: "Edge Protectors",
+        products: [
+          {
+            id: "edge-protectors",
+            name: "CornerShield CE-75 Angle Board",
+            sku: "SBL-CE-75",
+            brand: "Super Bright Labs",
+            tagline: "Solid paperboard edge protector for pallet & panel protection",
+            badge: "Load Bearing",
+            description: "CornerShield CE-75 is a heavy-duty solid fibreboard angle board that protects pallet edges and corners from strapping, handling, and transit damage. Produced from 100% recycled content and FSC-certified. Rated for compressive loads up to 450 kg/linear metre.",
+            specs: { "Angle": "90°", "Wing Width": "75×75 mm", "Thickness": "4 mm", "Length": "1000 mm", "Load Rating": "450 kg/lm", "Recycled Content": "100%" },
+            svgType: "edge",
+            imageUrl: "images/edge_protectors.png",
+            consumables: [
+              { name: "Polyester Strapping 16mm (800m)", sku: "SBL-PES-800", price: "₹ 2,200", icon: "strap" },
+              { name: "Manual Strapping Tensioner", sku: "SBL-MST-01", price: "₹ 1,650", icon: "dispenser" },
+              { name: "Buckle Seals Galvanised 100pk", sku: "SBL-BSG-100", price: "₹ 310", icon: "clip" },
+            ],
+            similar: ["stretch-film", "foam-inserts"],
+          },
+        ],
+      },
+    ],
+  },
+];
+
+// ── BUILD PRODUCT INDEX ──────────────────────────────────────
+const productIndex = {};
+CATALOGUE.forEach(cat => {
+  cat.subcategories.forEach(sub => {
+    sub.products.forEach(p => {
+      productIndex[p.id] = { ...p, catId: cat.id, catName: cat.name, subName: sub.name };
+    });
+  });
+});
+
+// ── SVG ILLUSTRATIONS ──────────────────────────────────────
+function getProductSVG(type) {
+  const svgs = {
+    "tape-roll": `<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="50" stroke="#0a0a0a" stroke-width="3"/>
+      <circle cx="60" cy="60" r="22" stroke="#0a0a0a" stroke-width="2.5"/>
+      <circle cx="60" cy="60" r="12" stroke="#999990" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <path d="M60 10 A50 50 0 0 1 110 60" stroke="#0a0a0a" stroke-width="8" stroke-linecap="round"/>
+      <path d="M60 10 A50 50 0 0 1 110 60" stroke="#e8e8e4" stroke-width="4" stroke-linecap="round"/>
+      <text x="60" y="65" text-anchor="middle" font-family="Inter" font-size="8" fill="#999990">SBL</text>
+    </svg>`,
+    "tape-flat": `<svg viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="20" width="140" height="40" rx="4" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="10" y="20" width="35" height="40" rx="4" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <line x1="45" y1="20" x2="45" y2="60" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="20" y1="35" x2="35" y2="35" stroke="#999990" stroke-width="1" stroke-dasharray="3 2"/>
+      <line x1="20" y1="45" x2="35" y2="45" stroke="#999990" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="105" y="44" text-anchor="middle" font-family="Inter" font-size="7" fill="#555550">ADHESIVE TAPE</text>
+    </svg>`,
+    "drill": `<svg viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="20" width="80" height="28" rx="6" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="68" y="48" width="52" height="20" rx="4" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <rect x="85" y="68" width="20" height="16" rx="3" stroke="#0a0a0a" stroke-width="2" fill="#e8e8e4"/>
+      <rect x="10" y="28" width="50" height="12" rx="3" stroke="#0a0a0a" stroke-width="2" fill="#0a0a0a"/>
+      <circle cx="136" cy="33" r="8" stroke="#0a0a0a" stroke-width="2" fill="#999990"/>
+      <line x1="2" y1="34" x2="10" y2="34" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="80" cy="58" r="5" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+      <text x="100" y="38" text-anchor="middle" font-family="Inter" font-size="6" fill="#555550">18V</text>
+    </svg>`,
+    "drill-compact": `<svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="10" width="40" height="60" rx="8" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="35" y="70" width="30" height="40" rx="6" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <rect x="42" y="108" width="16" height="14" rx="3" stroke="#0a0a0a" stroke-width="1.5" fill="#e8e8e4"/>
+      <circle cx="50" cy="18" r="6" stroke="#0a0a0a" stroke-width="2" fill="#999990"/>
+      <text x="50" y="50" text-anchor="middle" font-family="Inter" font-size="7" fill="#555550">GO 2</text>
+    </svg>`,
+    "grinder": `<svg viewBox="0 0 180 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="40" y="20" width="120" height="30" rx="8" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="50" y="50" width="80" height="18" rx="5" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <circle cx="32" cy="60" r="22" stroke="#0a0a0a" stroke-width="2.5" fill="none"/>
+      <circle cx="32" cy="60" r="12" stroke="#0a0a0a" stroke-width="1.5" fill="#e8e8e4"/>
+      <line x1="32" y1="38" x2="32" y2="82" stroke="#0a0a0a" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="10" y1="60" x2="54" y2="60" stroke="#0a0a0a" stroke-width="1" stroke-dasharray="3 3"/>
+      <rect x="140" y="26" width="16" height="18" rx="3" stroke="#0a0a0a" stroke-width="1.5" fill="#0a0a0a"/>
+    </svg>`,
+    "saw": `<svg viewBox="0 0 180 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="15" width="110" height="35" rx="8" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="60" y="50" width="70" height="20" rx="5" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <path d="M50 50 L20 75 L30 80 L55 55" stroke="#0a0a0a" stroke-width="2" fill="#e8e8e4"/>
+      <path d="M20 75 L8 95 L15 80" stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="150" cy="32" r="10" stroke="#0a0a0a" stroke-width="2" fill="#999990"/>
+      <line x1="10" y1="84" x2="8" y2="95" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round"/>
+    </svg>`,
+    "measure": `<svg viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="20" width="120" height="40" rx="6" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <rect x="30" y="28" width="60" height="24" rx="3" stroke="#0a0a0a" stroke-width="1.5" fill="#0a0a0a"/>
+      <text x="60" y="44" text-anchor="middle" font-family="Inter" font-size="9" fill="#f5f5f0">12.45m</text>
+      <circle cx="120" cy="40" r="8" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+      <line x1="120" y1="32" x2="120" y2="48" stroke="#0a0a0a" stroke-width="1"/>
+      <line x1="112" y1="40" x2="128" y2="40" stroke="#0a0a0a" stroke-width="1"/>
+      <line x1="140" y1="25" x2="148" y2="20" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+    </svg>`,
+    "bubble": `<svg viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      ${Array.from({length:4}, (_,r) => Array.from({length:6}, (_,c) =>
+        `<circle cx="${22 + c*28 + (r%2)*14}" cy="${22 + r*24}" r="10" stroke="#0a0a0a" stroke-width="1.5" fill="#e8e8e4"/>`
+      ).join('')).join('')}
+      <rect x="5" y="5" width="170" height="110" rx="4" stroke="#0a0a0a" stroke-width="2" fill="none"/>
+    </svg>`,
+    "foam": `<svg viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="160" height="100" rx="6" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      ${Array.from({length:6}, (_,r) => Array.from({length:8}, (_,c) =>
+        `<rect x="${18 + c*19}" y="${18 + r*14}" width="15" height="10" rx="2" stroke="#999990" stroke-width="0.8" fill="none"/>`
+      ).join('')).join('')}
+    </svg>`,
+    "roll": `<svg viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="70" cy="110" rx="55" ry="10" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <rect x="15" y="20" width="110" height="90" rx="55" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <ellipse cx="70" cy="20" rx="55" ry="10" stroke="#0a0a0a" stroke-width="2" fill="#d0d0ca"/>
+      <ellipse cx="70" cy="20" rx="22" ry="5" stroke="#0a0a0a" stroke-width="1.5" fill="#f5f5f0"/>
+      <text x="70" y="65" text-anchor="middle" font-family="Inter" font-size="8" fill="#555550">STRETCH</text>
+      <text x="70" y="76" text-anchor="middle" font-family="Inter" font-size="8" fill="#555550">FILM</text>
+    </svg>`,
+    "edge": `<svg viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 100 L20 20 L70 20 L70 40 L40 40 L40 100 Z" stroke="#0a0a0a" stroke-width="2.5" fill="#e8e8e4"/>
+      <path d="M40 40 L70 20" stroke="#0a0a0a" stroke-width="1.5"/>
+      <path d="M40 60 L65 44" stroke="#999990" stroke-width="1" stroke-dasharray="3 2"/>
+      <path d="M40 75 L65 59" stroke="#999990" stroke-width="1" stroke-dasharray="3 2"/>
+      <path d="M40 90 L65 74" stroke="#999990" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="25" y="115" font-family="Inter" font-size="7" fill="#555550">CORNERBOARD</text>
+    </svg>`,
+  };
+  return svgs[type] || svgs["tape-roll"];
+}
+
+function getConsumableIcon(type) {
+  const icons = {
+    dispenser: `<polyline points="8,20 8,4 16,4 16,20"/><line x1="4" y1="20" x2="20" y2="20"/><path d="M8 12 Q4 12 4 16 Q4 20 8 20"/>`,
+    spray: `<path d="M5 4h8v4H5z"/><path d="M13 6h4v12H9V9"/><circle cx="11" cy="15" r="2"/><line x1="13" y1="3" x2="17" y2="3"/>`,
+    roller: `<rect x="3" y="8" width="18" height="8" rx="4"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/>`,
+    bottle: `<path d="M9 2h6v4l2 3v12H7V9l2-3z"/><line x1="7" y1="14" x2="17" y2="14"/>`,
+    cutter: `<path d="M4 20 L20 4"/><path d="M15 4 L20 4 L20 9"/><circle cx="6" cy="18" r="2"/>`,
+    wipe: `<rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M8 6V4h8v2"/>`,
+    battery: `<rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 11v2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/>`,
+    charger: `<path d="M4 17l4-10 4 10"/><path d="M6.5 13h5"/><path d="M16 7v10"/><line x1="14" y1="10" x2="18" y2="10"/>`,
+    "bit-set": `<line x1="12" y1="2" x2="12" y2="22"/><path d="M9 5h6"/><path d="M10 8h4"/><circle cx="12" cy="19" r="2"/>`,
+    clip: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>`,
+    case: `<rect x="2" y="8" width="20" height="14" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>`,
+    disc: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/>`,
+    shield: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`,
+    blade: `<path d="M4 20 L20 4 L16 4 L4 16 Z"/><line x1="18" y1="6" x2="22" y2="2"/>`,
+    vacuum: `<circle cx="12" cy="12" r="8"/><path d="M12 8v8"/><path d="M8 12h8"/>`,
+    rail: `<line x1="2" y1="12" x2="22" y2="12"/><line x1="6" y1="7" x2="6" y2="17"/><line x1="18" y1="7" x2="18" y2="17"/>`,
+    glove: `<path d="M18 11V6a2 2 0 0 0-4 0v3"/><path d="M14 10V4a2 2 0 0 0-4 0v4"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8c0 3.3 2.7 6 6 6s6-2.7 6-6v-4a2 2 0 0 0-4 0z"/>`,
+    scraper: `<rect x="4" y="14" width="16" height="4" rx="1"/><line x1="12" y1="14" x2="12" y2="4"/><line x1="9" y1="7" x2="15" y2="7"/>`,
+    brush: `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 17H20V3H6.5"/><circle cx="10" cy="10" r="1"/>`,
+    squeegee: `<rect x="3" y="3" width="18" height="6" rx="1"/><line x1="12" y1="9" x2="12" y2="21"/><line x1="9" y1="18" x2="15" y2="18"/>`,
+    tie: `<path d="M8 3h8"/><path d="M12 3v5l4 2-4 2-4-2 4-2"/><path d="M12 12v9"/>`,
+    "tape-floor": `<rect x="3" y="10" width="18" height="4" rx="1"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="13" y1="10" x2="13" y2="14"/>`,
+    roll: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>`,
+    screw: `<line x1="12" y1="2" x2="12" y2="16"/><path d="M8 6h8M9 9h6M10 12h4"/><path d="M10 16 L12 22 L14 16"/>`,
+    detector: `<rect x="6" y="4" width="12" height="16" rx="2"/><circle cx="12" cy="14" r="3"/><line x1="12" y1="8" x2="12" y2="11"/>`,
+    tripod: `<line x1="12" y1="4" x2="12" y2="20"/><line x1="12" y1="12" x2="4" y2="20"/><line x1="12" y1="12" x2="20" y2="20"/>`,
+    "tape-measure": `<circle cx="12" cy="12" r="8"/><path d="M12 4v4"/><path d="M12 16v4"/><path d="M4 12h4"/><path d="M16 12h4"/>`,
+    strap: `<path d="M3 12h18"/><path d="M3 7h18"/><path d="M3 17h18"/>`,
+  };
+  return icons[type] || icons.clip;
+}
+
+// ── RENDER SIDEBAR ───────────────────────────────────────────
+function renderSidebar() {
+  const nav = document.getElementById("sidebar-nav");
+  nav.innerHTML = CATALOGUE.map(cat => {
+    const totalProducts = cat.subcategories.reduce((a, s) => a + s.products.length, 0);
+    return `
+      <div class="category-block" id="cat-block-${cat.id}">
+        <div class="cat-header" onclick="toggleCat('${cat.id}')">
+          <div>
+            <div class="cat-title">${cat.name}</div>
+            <div class="cat-count">${totalProducts} products</div>
+          </div>
+          <span class="cat-chevron">▼</span>
+        </div>
+        <div class="cat-body" id="cat-body-${cat.id}">
+          ${cat.subcategories.map(sub => `
+            <div class="subcat-block">
+              <div class="subcat-header" onclick="toggleSubcat('${sub.id}')">
+                <span class="subcat-title">${sub.name}</span>
+                <span class="subcat-chevron">▼</span>
+              </div>
+              <div class="product-list" id="sub-${sub.id}">
+                ${sub.products.map(p => `
+                  <div class="product-item" id="item-${p.id}" onclick="showProduct('${p.id}')">
+                    ${p.name}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function toggleCat(catId) {
+  const body = document.getElementById(`cat-body-${catId}`);
+  const header = document.querySelector(`#cat-block-${catId} .cat-header`);
+  const isOpen = body.classList.contains("open");
+  // close all
+  document.querySelectorAll('.cat-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.cat-header').forEach(h => h.classList.remove('open'));
+  if (!isOpen) {
+    body.classList.add('open');
+    header.classList.add('open');
+  }
+}
+
+function toggleSubcat(subId) {
+  const list = document.getElementById(`sub-${subId}`);
+  const header = list.previousElementSibling;
+  list.classList.toggle('open');
+  header.classList.toggle('open');
+}
+
+// ── RENDER PRODUCT ───────────────────────────────────────────
+function showProduct(productId) {
+  const p = productIndex[productId];
+  if (!p) return;
+
+  // sidebar active
+  document.querySelectorAll('.product-item').forEach(el => el.classList.remove('active'));
+  const item = document.getElementById(`item-${productId}`);
+  if (item) item.classList.add('active');
+
+  // breadcrumb
+  document.getElementById('breadbar').innerHTML = `Products / ${p.catName} / ${p.subName} / <span>${p.name}</span>`;
+
+  // similar products
+  const similarHTML = (p.similar || []).map(sid => {
+    const sp = productIndex[sid];
+    if (!sp) return '';
+    return `
+      <div class="similar-card" onclick="showProduct('${sp.id}')"> 
+        <div class="sim-image"><img src="${sp.imageUrl}" alt="${sp.name}" loading="lazy"/></div>
+        <div class="sim-info">
+          <div class="sim-sku">${sp.sku}</div>
+          <div class="sim-name">${sp.name}</div>
+          <div class="sim-tag">${sp.tagline.substring(0, 50)}…</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // consumables
+  const consumablesHTML = p.consumables.map(c => `
+    <div class="consumable-card">
+      <div class="con-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="${getConsumableIcon(c.icon)}" stroke="white" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="con-name">${c.name}</div>
+      <div class="con-sku">${c.sku}</div>
+      <div class="con-price">${c.price}</div>
+    </div>
+  `).join('');
+
+  // specs
+  const specsHTML = Object.entries(p.specs).map(([k, v]) => `
+    <div class="spec-row">
+      <span class="spec-key">${k}</span>
+      <span class="spec-val">${v}</span>
+    </div>
+  `).join('');
+
+  const panel = document.getElementById('product-panel');
+  panel.classList.remove('empty');
+  panel.innerHTML = `
+    <div class="prod-meta">
+      <div>
+        <div class="prod-sku">${p.sku} · ${p.brand}</div>
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-tag">${p.tagline}</div>
+      </div>
+      <div class="prod-badge">${p.badge}</div>
+    </div>
+
+    <div class="prod-visual-row">
+      <div class="prod-image-box">
+        <img src="${p.imageUrl}" alt="${p.name}"/>
+        <span class="img-watermark">Super Bright Labs</span>
+      </div>
+      <div class="specs-box">
+        <div class="specs-title">Specifications</div>
+        ${specsHTML}
+      </div>
+    </div>
+
+    <p class="prod-desc">${p.description}</p>
+
+    <hr class="prod-divider"/>
+
+    <div class="consumables-section">
+      <div class="section-heading">
+        Consumables & Accessories
+        <span class="sh-num">${p.consumables.length} items</span>
+      </div>
+      <div class="consumables-grid">${consumablesHTML}</div>
+    </div>
+
+    ${p.similar && p.similar.length > 0 ? `
+    <div class="similar-section">
+      <div class="section-heading">
+        Similar Products
+        <span class="sh-num">${p.similar.length} items</span>
+      </div>
+      <div class="similar-grid">${similarHTML}</div>
+    </div>
+    ` : ''}
+  `;
+  panel.scrollTop = 0;
+}
+
+// ── INIT ──────────────────────────────────────────────────────
+renderSidebar();
+
+// Check URL for product parameter
+const urlParams = new URLSearchParams(window.location.search);
+const requestedProduct = urlParams.get('product');
+
+if (requestedProduct && productIndex[requestedProduct]) {
+  const p = productIndex[requestedProduct];
+  // Open the correct category
+  CATALOGUE.forEach(cat => {
+    cat.subcategories.forEach(sub => {
+      sub.products.forEach(prod => {
+        if (prod.id === requestedProduct) {
+          toggleCat(cat.id);
+          toggleSubcat(sub.id);
+        }
+      });
+    });
+  });
+  showProduct(requestedProduct);
+} else {
+  // Default: open first category/subcategory/product
+  toggleCat(CATALOGUE[0].id);
+  const firstSub = CATALOGUE[0].subcategories[0];
+  toggleSubcat(firstSub.id);
+  showProduct(firstSub.products[0].id);
+}
+</script>
+</body>
+</html>

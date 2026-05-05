@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Bright Labs — Product Catalog</title>
+  <meta name="description"
+    content="Browse the complete Super Bright Labs product catalog. Industrial tapes, power tools, and protective packaging." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --black: #111827;
+      --white: #ffffff;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #6b7280;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --accent: #e60023;
+      --border: 1px solid #e5e7eb
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eff2f7;
+      color: var(--black)
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 64px;
+      background: #ffffff;
+      color: var(--black);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e5e7eb
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      color: var(--black)
+    }
+
+    .logo span {
+      color: #e60023;
+      font-weight: 800
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none
+    }
+
+    .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #374151;
+      text-decoration: none;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color .2s
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #e60023
+    }
+
+    .nav-badge {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--gray-400);
+      letter-spacing: .08em
+    }
+
+    /* HERO */
+    .hero {
+      background: #111827;
+      color: #ffffff;
+      padding: 60px 48px 50px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, .03) 100%)
+    }
+
+    .hero-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 12px
+    }
+
+    .hero h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 12px
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #94a3b8;
+      max-width: 520px;
+      line-height: 1.6
+    }
+
+    /* TOOLBAR */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 48px;
+      border-bottom: var(--border);
+      background: var(--white);
+      position: sticky;
+      top: 64px;
+      z-index: 90;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: var(--border);
+      padding: 8px 14px;
+      background: var(--white);
+      min-width: 280px
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      background: transparent;
+      width: 100%
+    }
+
+    .search-icon {
+      color: var(--gray-400);
+      font-size: 14px
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 0
+    }
+
+    .filter-tab {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border: var(--border);
+      border-right: none;
+      cursor: pointer;
+      background: var(--white);
+      color: var(--gray-600);
+      transition: all .15s;
+      font-weight: 600
+    }
+
+    .filter-tab:last-child {
+      border-right: var(--border)
+    }
+
+    .filter-tab:hover {
+      background: var(--gray-100)
+    }
+
+    .filter-tab.active {
+      background: #e60023;
+      color: #ffffff;
+      border-color: #e60023
+    }
+
+    .results-count {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: var(--gray-400);
+      letter-spacing: .06em
+    }
+
+    /* GRID */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 40px 48px 60px
+    }
+
+    .product-card {
+      border: var(--border);
+      background: var(--white);
+      cursor: pointer;
+      transition: all .25s ease;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      color: var(--black)
+    }
+
+    .product-card:hover {
+      border-color: var(--black);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .08)
+    }
+
+    .card-image {
+      background: var(--gray-100);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: var(--border);
+      overflow: hidden;
+      position: relative
+    }
+
+    .card-image img {
+      max-width: 75%;
+      max-height: 75%;
+      object-fit: contain;
+      transition: transform .3s ease
+    }
+
+    .product-card:hover .card-image img {
+      transform: scale(1.05)
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      background: #e60023;
+      color: #ffffff;
+      padding: 4px 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border-radius: 4px
+    }
+
+    .card-cat {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      background: var(--white);
+      color: var(--gray-600);
+      padding: 4px 8px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border: var(--border);
+      border-radius: 4px
+    }
+
+    .card-body {
+      padding: 18px 20px 22px
+    }
+
+    .card-sku {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--gray-400);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 6px
+    }
+
+    .card-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      line-height: 1.2;
+      margin-bottom: 6px
+    }
+
+    .card-tagline {
+      font-size: 12.5px;
+      color: var(--gray-600);
+      line-height: 1.4;
+      margin-bottom: 14px
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid var(--gray-100)
+    }
+
+    .card-brand {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--gray-400);
+      letter-spacing: .06em
+    }
+
+    .card-arrow {
+      width: 28px;
+      height: 28px;
+      border: var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: var(--gray-400);
+      transition: all .2s
+    }
+
+    .product-card:hover .card-arrow {
+      background: #e60023;
+      color: #ffffff;
+      border-color: #e60023
+    }
+
+    /* EMPTY STATE */
+    .no-results {
+      text-align: center;
+      padding: 80px 48px;
+      display: none
+    }
+
+    .no-results .nr-icon {
+      font-size: 48px;
+      opacity: .1;
+      margin-bottom: 16px
+    }
+
+    .no-results p {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: var(--gray-400);
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111827;
+      color: #94a3b8;
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      letter-spacing: .08em
+    }
+
+    /* ANIMATIONS */
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .product-card {
+      animation: cardIn .4s ease forwards;
+      opacity: 0
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gray-200);
+      border-radius: 2px
+    }
+
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 32px
+      }
+
+      .catalog-grid {
+        padding: 24px 16px;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))
+      }
+
+      .toolbar {
+        padding: 12px 16px
+      }
+
+      .nav-links {
+        display: none
+      }
+
+      .hero {
+        padding: 40px 24px 36px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html" class="logo">Super <span>Bright</span> Labs</a>
+    <ul class="nav-links">
+     <li>
+      <a href="../index.html">Home</a>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../updates.html">Updates</a></li>
+      <li><a href="catalog.html">Products</a></li>
+      <li><a href="../photos.html">Photo</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+
+    </ul>
+    <div class="nav-badge">EST. 2001 · INDUSTRIAL GRADE</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-label">Super Bright Labs · Product Catalog</div>
+    <h1>Browse Our<br />Product Range</h1>
+    <p>Explore our complete range of industrial adhesive tapes, professional power tools, and protective packaging
+      solutions — engineered for demanding environments.</p>
+  </section>
+
+  <div class="toolbar">
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Search products by name, SKU, or keyword..."
+        oninput="filterProducts()" />
+    </div>
+    <div class="filter-tabs" id="filterTabs"></div>
+    <div class="results-count" id="resultsCount"></div>
+  </div>
+
+  <div class="catalog-grid" id="catalogGrid"></div>
+  <div class="no-results" id="noResults">
+    <div class="nr-icon">◈</div>
+    <p>No products match your search</p>
+  </div>
+
+  <footer>
+    <div>© 2025 Super Bright Labs. All rights reserved.</div>
+    <div>Industrial Grade Products Since 2001</div>
+  </footer>
+
+  <script>
+    const PRODUCTS = [
+      { id: "dst-pro-5000", name: "ProMount DS-5000", sku: "SBL-DS-5000", brand: "Super Bright Labs", tagline: "Heavy-duty double-sided mounting tape for industrial bonding", badge: "Best Seller", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/double_sided_tape.png" },
+      { id: "foam-mounting", name: "FoamBond FM-800", sku: "SBL-FM-800", brand: "Super Bright Labs", tagline: "Acrylic foam double-sided tape for structural joining", badge: "Professional", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/foam_tape.png" },
+      { id: "mask-clean-100", name: "CleanEdge MT-100", sku: "SBL-MT-100", brand: "Super Bright Labs", tagline: "Zero-bleed masking tape for precision painting", badge: "Precision Grade", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/masking_tape.png" },
+      { id: "high-temp-masking", name: "ThermoMask HT-260", sku: "SBL-HT-260", brand: "Super Bright Labs", tagline: "High-temperature masking tape for powder coat & oven use", badge: "High Temp", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/high_temp_tape.png" },
+      { id: "gaffer-ultra", name: "GripForce Gaffer G-700", sku: "SBL-GF-700", brand: "Super Bright Labs", tagline: "Professional cloth gaffer tape, residue-free removal", badge: "Pro AV Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/gaffer_tape.png" },
+      { id: "transfer-tape", name: "TransferPro TP-400", sku: "SBL-TP-400", brand: "Super Bright Labs", tagline: "Repositionable transfer tape for graphic mounting", badge: "Graphics Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/transfer_tape.png" },
+      { id: "specialty-alu", name: "AlumiFoil AF-200", sku: "SBL-AF-200", brand: "Super Bright Labs", tagline: "Aluminium foil tape for HVAC and thermal sealing", badge: "HVAC Grade", cat: "Adhesive Tapes", sub: "Specialty & Foil", img: "images/aluminium_foil_tape.png" },
+      { id: "bosch-gsb-18v", name: "Bosch GSB 18V-85 C", sku: "BSH-GSB18V85", brand: "Bosch Professional", tagline: "Connected brushless combi drill with 85 Nm torque", badge: "Top Pick", cat: "Power Tools", sub: "Drills & Drivers", img: "images/cordless_drill.png" },
+      { id: "dewalt-dcd996", name: "DeWalt DCD996P2", sku: "DWL-DCD996P2", brand: "DeWalt", tagline: "3-speed brushless hammer drill/driver, 95 Nm", badge: "XR Series", cat: "Power Tools", sub: "Drills & Drivers", img: "images/dewalt_drill.png" },
+      { id: "bosch-go-2", name: "Bosch GO 2 Screwdriver", sku: "BSH-GO2", brand: "Bosch", tagline: "Smart compact electric screwdriver, pocket-sized", badge: "Compact", cat: "Power Tools", sub: "Drills & Drivers", img: "images/compact_screwdriver.png" },
+      { id: "bosch-gws18v", name: "Bosch GWS 18V-10 SC", sku: "BSH-GWS18V10", brand: "Bosch Professional", tagline: "Brushless cordless angle grinder with KickBack Control", badge: "Safety Rated", cat: "Power Tools", sub: "Grinders & Sanders", img: "images/angle_grinder.png" },
+      { id: "bosch-gst-18v", name: "Bosch GST 18V-Li B", sku: "BSH-GST18VLI", brand: "Bosch Professional", tagline: "Cordless jigsaw with Constant Electronic speed control", badge: "Precision Cut", cat: "Power Tools", sub: "Saws & Cutters", img: "images/cordless_jigsaw.png" },
+      { id: "bosch-plr-30c", name: "Bosch PLR 30 C Laser", sku: "BSH-PLR30C", brand: "Bosch", tagline: "30m Bluetooth laser measure with free app", badge: "Smart Tool", cat: "Power Tools", sub: "Measuring", img: "images/laser_measure.png" },
+      { id: "camo-marking-tool", name: "Camo Marksman Pro-NB", sku: "CMO-MPN-1", brand: "Camo", tagline: "Deck board spacing and fastening guide tool", badge: "Deck Pro", cat: "Power Tools", sub: "Measuring", img: "images/deck_fastening_tool.png" },
+      { id: "bw-small-500", name: "ShieldAir BW-10", sku: "SBL-BW-10", brand: "Super Bright Labs", tagline: "Small 10mm bubble wrap for fragile electronics & glassware", badge: "Electronics Safe", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_small.png" },
+      { id: "bw-large-1000", name: "ShieldAir BW-30", sku: "SBL-BW-30", brand: "Super Bright Labs", tagline: "30mm large-bubble wrap for heavy & bulky goods", badge: "Heavy Duty", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_large.png" },
+      { id: "foam-sheet", name: "ProFoam PF-200 Sheet", sku: "SBL-PF-200", brand: "Super Bright Labs", tagline: "Polyethylene foam sheet for interleaving & wrapping", badge: "Chemical Resistant", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_sheet.png" },
+      { id: "foam-inserts", name: "CubeForm CF-100", sku: "SBL-CF-100", brand: "Super Bright Labs", tagline: "Pre-scored foam bun for custom pick-and-pluck inserts", badge: "Custom Fit", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_insert.png" },
+      { id: "stretch-film", name: "PalletPro SF-23", sku: "SBL-SF-23", brand: "Super Bright Labs", tagline: "Machine stretch film 23 micron for pallet unitisation", badge: "Machine Grade", cat: "Protective Packaging", sub: "Stretch Films", img: "images/stretch_film.png" },
+      { id: "edge-protectors", name: "CornerShield CE-75", sku: "SBL-CE-75", brand: "Super Bright Labs", tagline: "Solid paperboard edge protector for pallet & panel protection", badge: "Load Bearing", cat: "Protective Packaging", sub: "Edge Protectors", img: "images/edge_protectors.png" }
+    ];
+
+    const categories = ["All", ...new Set(PRODUCTS.map(p => p.cat))];
+    let activeFilter = "All";
+
+    function init() {
+      const tabs = document.getElementById("filterTabs");
+      tabs.innerHTML = categories.map(c => `<div class="filter-tab${c === "All" ? " active" : ""}" onclick="setFilter('${c}')">${c}</div>`).join("");
+      renderGrid(PRODUCTS);
+    }
+
+    function setFilter(cat) {
+      activeFilter = cat;
+      document.querySelectorAll(".filter-tab").forEach(t => { t.classList.toggle("active", t.textContent === cat) });
+      filterProducts();
+    }
+
+    function filterProducts() {
+      const q = document.getElementById("searchInput").value.toLowerCase();
+      const filtered = PRODUCTS.filter(p => {
+        const matchCat = activeFilter === "All" || p.cat === activeFilter;
+        const matchQ = !q || p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.tagline.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sub.toLowerCase().includes(q);
+        return matchCat && matchQ;
+      });
+      renderGrid(filtered);
+    }
+
+    function renderGrid(items) {
+      const grid = document.getElementById("catalogGrid");
+      const noRes = document.getElementById("noResults");
+      document.getElementById("resultsCount").textContent = items.length + " product" + (items.length !== 1 ? "s" : "") + " found";
+      if (!items.length) { grid.innerHTML = ""; noRes.style.display = "block"; return; }
+      noRes.style.display = "none";
+      grid.innerHTML = items.map((p, i) => `
+    <a class="product-card" href="products.html?product=${p.id}" style="animation-delay:${i * 0.05}s">
+      <div class="card-image">
+        <div class="card-cat">${p.sub}</div>
+        <img src="${p.img}" alt="${p.name}" loading="lazy"/>
+        <div class="card-badge">${p.badge}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-sku">${p.sku}</div>
+        <div class="card-name">${p.name}</div>
+        <div class="card-tagline">${p.tagline}</div>
+        <div class="card-footer">
+          <span class="card-brand">${p.brand}</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </a>
+  `).join("");
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
