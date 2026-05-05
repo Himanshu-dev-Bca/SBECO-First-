@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact -SBECO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-block">
+         <img src="logo.png.png" alt="SBECO Logo" class="logo-img">
+        <div>
+          <span class="site-title">SBECO</span>
+          <span class="site-description">Packaging made easy</span>
+          <style>.logo-img {
+  height: 50px;   
+  width: auto;
+        }</style>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="updates.html">Updates</a>
+        <a href="photos.html">Photos</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="form-card">
+        <form onsubmit="submitForm(); return false;">
+          <input class="form-control" type="text" placeholder="Name" required>
+          <input class="form-control" type="email" placeholder="Email" required>
+          <textarea class="form-control" placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>� 2026 SBECO. Trusted partner for industrial packaging and tools.</p>
+      <div class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="updates.html">Updates</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
