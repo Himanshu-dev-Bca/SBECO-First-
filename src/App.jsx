@@ -10,7 +10,7 @@ import ProductDetail from './pages/ProductDetail';
 import Photos from './pages/Photos';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/next"
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
@@ -40,7 +40,7 @@ export default function App() {
         <Route path="/products/:productId" element={<Layout hideFooter><ProductDetail /></Layout>} />
         <Route path="/photos" element={<Layout><Photos /></Layout>} />
       </Routes>
-      <Analytics />
+      
     </BrowserRouter>
   );
 }
