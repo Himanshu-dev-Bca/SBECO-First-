@@ -1,59 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Updates - XYZ Enterprises</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Updates — Super Bright Labs</title>
+  <meta name="description"
+    content="Stay updated with the latest product launches, new additions, and company news from Super Bright Labs." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --black: #111827;
+      --white: #fff;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #6b7280;
+      --gray-600: #4b5563;
+      --accent: #e60023;
+      --border: 1px solid #e5e7eb
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eff2f7;
+      color: var(--black)
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 64px;
+      background: var(--white);
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      text-decoration: none;
+      color: var(--black)
+    }
+
+    .logo span {
+      color: var(--accent)
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none
+    }
+
+    .nav-links a {
+      font-size: 11px;
+      color: #374151;
+      text-decoration: none;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color .2s
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent)
+    }
+
+    .nav-badge {
+      font-size: 10px;
+      color: var(--gray-400);
+      letter-spacing: .08em
+    }
+
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 70px 48px 60px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, .03) 100%)
+    }
+
+    .hero-label {
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 14px
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 14px
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #94a3b8;
+      max-width: 520px;
+      line-height: 1.7
+    }
+
+    .section {
+      padding: 56px 48px
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--black);
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .section-title .sh-num {
+      font-size: 11px;
+      color: var(--gray-400);
+      font-weight: 300
+    }
+
+    .updates-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px
+    }
+
+    .update-card {
+      border: var(--border);
+      background: var(--white);
+      overflow: hidden;
+      transition: all .25s;
+      animation: fadeUp .4s ease forwards;
+      opacity: 0
+    }
+
+    .update-card:nth-child(1) {
+      animation-delay: 0s
+    }
+
+    .update-card:nth-child(2) {
+      animation-delay: .06s
+    }
+
+    .update-card:nth-child(3) {
+      animation-delay: .12s
+    }
+
+    .update-card:nth-child(4) {
+      animation-delay: .18s
+    }
+
+    .update-card:hover {
+      border-color: var(--black);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .06)
+    }
+
+    .update-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--gray-100);
+      background: var(--gray-100)
+    }
+
+    .update-date {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gray-400)
+    }
+
+    .update-badge {
+      font-size: 9px;
+      background: var(--accent);
+      color: var(--white);
+      padding: 3px 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700
+    }
+
+    .update-body {
+      padding: 24px
+    }
+
+    .update-body h3 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 10px;
+      line-height: 1.3
+    }
+
+    .update-body p {
+      font-size: 13px;
+      color: var(--gray-600);
+      line-height: 1.7
+    }
+
+    .update-tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      flex-wrap: wrap
+    }
+
+    .update-tag {
+      font-size: 9px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border: var(--border);
+      color: var(--gray-600);
+      font-weight: 600
+    }
+
+    .featured-update {
+      border: var(--border);
+      background: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      animation: fadeUp .4s ease forwards;
+      opacity: 0;
+      margin-bottom: 32px
+    }
+
+    .featured-update:hover {
+      border-color: var(--black)
+    }
+
+    .featured-img {
+      background: var(--gray-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      border-right: var(--border);
+      position: relative;
+      overflow: hidden
+    }
+
+    .featured-img img {
+      max-width: 70%;
+      max-height: 70%;
+      object-fit: contain
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-size: 9px;
+      background: var(--accent);
+      color: var(--white);
+      padding: 5px 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700
+    }
+
+    .featured-content {
+      padding: 40px
+    }
+
+    .featured-content .update-date {
+      margin-bottom: 12px;
+      display: block
+    }
+
+    .featured-content h2 {
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      line-height: 1.15;
+      margin-bottom: 14px
+    }
+
+    .featured-content p {
+      font-size: 14px;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 20px
+    }
+
+    .featured-link {
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700
+    }
+
+    footer {
+      background: var(--black);
+      color: #94a3b8;
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      letter-spacing: .08em
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    footer a:hover {
+      color: var(--white)
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gray-200);
+      border-radius: 2px
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @media(max-width:960px) {
+      .updates-grid {
+        grid-template-columns: 1fr
+      }
+
+      .featured-update {
+        grid-template-columns: 1fr
+      }
+
+      .featured-img {
+        min-height: 200px;
+        border-right: none;
+        border-bottom: var(--border)
+      }
+    }
+
+    @media(max-width:768px) {
+      .hero {
+        padding: 50px 24px 44px
+      }
+
+      .hero h1 {
+        font-size: 34px
+      }
+
+      .section {
+        padding: 40px 20px
+      }
+
+      .nav-links,
+      .nav-badge {
+        display: none
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo-block">
-        <div class="logo-box">LOGO</div>
-        <div>
-          <span class="site-title">XYZ Enterprises</span>
-          <span class="site-description">Industrial Packaging & Tools</span>
-        </div>
-      </a>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="updates.html" class="active">Updates</a>
-        <a href="photos.html">Photos</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <a href="index.html" class="logo">Super <span>Bright</span> Labs</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="updates.html" class="active">Updates</a></li>
+      <li><a href="./demo pro/catalog.html">Products</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-badge">EST. 2001 · INDUSTRIAL GRADE</div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h2 class="section-title">Latest Updates</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>New Product Launch</h3>
-          <p>We have added industrial-grade adhesive tape options with stronger grip and enhanced durability.</p>
-        </div>
-        <div class="card">
-          <h3>Improved Delivery Support</h3>
-          <p>Faster local delivery and better packaging for urgent and bulk orders.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="hero">
+    <div class="hero-label">Updates · Super Bright Labs</div>
+    <h1>Latest News<br />& Updates</h1>
+    <p>Stay informed about new product launches, catalogue additions, and company announcements from Super Bright
+      Labs.</p>
+  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>� 2026 XYZ Enterprises. Trusted partner for industrial packaging and tools.</p>
-      <div class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+  <section class="section">
+    <!-- Featured -->
+    <div class="featured-update">
+      <div class="featured-img">
+        <img src="./demo pro/images/high_temp_tape.png" alt="ThermoMask HT-260" />
+        <div class="featured-badge">Featured</div>
+      </div>
+      <div class="featured-content">
+        <span class="update-date">May 2026</span>
+        <h2>New Product Launch:<br />Industrial Adhesive Range</h2>
+        <p>We've expanded our adhesive tape lineup with industrial-grade options featuring stronger grip, enhanced
+          durability, and temperature resistance up to 260°C. Including the new ThermoMask HT-260 and AlumiFoil AF-200.
+        </p>
+        <a href="./demo pro/catalog.html" class="featured-link">View Products →</a>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="section-title">All Updates <span class="sh-num">4 updates</span></div>
+    <div class="updates-grid">
+      <div class="update-card">
+        <div class="update-header">
+          <span class="update-date">May 2026</span>
+          <span class="update-badge">New</span>
+        </div>
+        <div class="update-body">
+          <h3>Digital Product Catalogue Launch</h3>
+          <p>Our complete product range is now available online with detailed specifications, product images, and
+            consumables information. Browse and find the right products faster than ever.</p>
+          <div class="update-tags"><span class="update-tag">Website</span><span class="update-tag">Products</span></div>
+        </div>
+      </div>
+      <div class="update-card">
+        <div class="update-header">
+          <span class="update-date">April 2026</span>
+          <span class="update-badge">Enquiry</span>
+        </div>
+        <div class="update-body">
+          <h3>New Enquiry System Launched</h3>
+          <p>We've streamlined our product enquiry process. Browse our catalogue, find the products you need, and submit your requirements directly through our contact form for a quick response.</p>
+          <div class="update-tags"><span class="update-tag">Enquiry</span><span class="update-tag">Service</span>
+          </div>
+        </div>
+      </div>
+      <div class="update-card">
+        <div class="update-header">
+          <span class="update-date">March 2026</span>
+          <span class="update-badge">Products</span>
+        </div>
+        <div class="update-body">
+          <h3>Bosch Professional Range Added</h3>
+          <p>We are now authorised stockists for Bosch Professional power tools including the GSB 18V-85 C, GWS 18V-10
+            SC, and GST 18V-Li B with full warranty support.</p>
+          <div class="update-tags"><span class="update-tag">Power Tools</span><span class="update-tag">Bosch</span>
+          </div>
+        </div>
+      </div>
+      <div class="update-card">
+        <div class="update-header">
+          <span class="update-date">January 2026</span>
+          <span class="update-badge">Company</span>
+        </div>
+        <div class="update-body">
+          <h3>Protective Packaging Expansion</h3>
+          <p>New additions to our protective packaging line including PalletPro stretch film, CubeForm custom foam
+            inserts, and CornerShield edge protectors for comprehensive transit protection.</p>
+          <div class="update-tags"><span class="update-tag">Packaging</span><span class="update-tag">New Range</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Super Bright Labs. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="./demo pro/catalog.html">PRODUCTS</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <div>Industrial Grade Products Since 2001</div>
+  </footer>
 </body>
+
 </html>
