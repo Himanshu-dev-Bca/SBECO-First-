@@ -218,6 +218,50 @@
       letter-spacing: .06em
     }
 
+    .sort-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .sort-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      font-weight: 600;
+      white-space: nowrap
+    }
+
+    .sort-select {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 8px 32px 8px 14px;
+      border: var(--border);
+      background: var(--white);
+      color: var(--gray-600);
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      transition: border-color .2s
+    }
+
+    .sort-select:hover {
+      border-color: var(--black)
+    }
+
+    .sort-select:focus {
+      border-color: var(--accent)
+    }
+
     /* GRID */
     .catalog-grid {
       display: grid;
@@ -476,6 +520,17 @@
         oninput="filterProducts()" />
     </div>
     <div class="filter-tabs" id="filterTabs"></div>
+    <div class="sort-wrapper">
+      <span class="sort-label">Sort by</span>
+      <select class="sort-select" id="sortSelect" onchange="filterProducts()">
+        <option value="default">Default</option>
+        <option value="best-seller">Best Seller</option>
+        <option value="latest">Latest Products</option>
+        <option value="name-asc">Name A–Z</option>
+        <option value="name-desc">Name Z–A</option>
+        <option value="brand">Brand</option>
+      </select>
+    </div>
     <div class="results-count" id="resultsCount"></div>
   </div>
 
@@ -492,26 +547,26 @@
 
   <script>
     const PRODUCTS = [
-      { id: "dst-pro-5000", name: "ProMount DS-5000", sku: "SBL-DS-5000", brand: "Super Bright Labs", tagline: "Heavy-duty double-sided mounting tape for industrial bonding", badge: "Best Seller", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/double_sided_tape.png" },
-      { id: "foam-mounting", name: "FoamBond FM-800", sku: "SBL-FM-800", brand: "Super Bright Labs", tagline: "Acrylic foam double-sided tape for structural joining", badge: "Professional", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/foam_tape.png" },
-      { id: "mask-clean-100", name: "CleanEdge MT-100", sku: "SBL-MT-100", brand: "Super Bright Labs", tagline: "Zero-bleed masking tape for precision painting", badge: "Precision Grade", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/masking_tape.png" },
-      { id: "high-temp-masking", name: "ThermoMask HT-260", sku: "SBL-HT-260", brand: "Super Bright Labs", tagline: "High-temperature masking tape for powder coat & oven use", badge: "High Temp", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/high_temp_tape.png" },
-      { id: "gaffer-ultra", name: "GripForce Gaffer G-700", sku: "SBL-GF-700", brand: "Super Bright Labs", tagline: "Professional cloth gaffer tape, residue-free removal", badge: "Pro AV Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/gaffer_tape.png" },
-      { id: "transfer-tape", name: "TransferPro TP-400", sku: "SBL-TP-400", brand: "Super Bright Labs", tagline: "Repositionable transfer tape for graphic mounting", badge: "Graphics Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/transfer_tape.png" },
-      { id: "specialty-alu", name: "AlumiFoil AF-200", sku: "SBL-AF-200", brand: "Super Bright Labs", tagline: "Aluminium foil tape for HVAC and thermal sealing", badge: "HVAC Grade", cat: "Adhesive Tapes", sub: "Specialty & Foil", img: "images/aluminium_foil_tape.png" },
-      { id: "bosch-gsb-18v", name: "Bosch GSB 18V-85 C", sku: "BSH-GSB18V85", brand: "Bosch Professional", tagline: "Connected brushless combi drill with 85 Nm torque", badge: "Top Pick", cat: "Power Tools", sub: "Drills & Drivers", img: "images/cordless_drill.png" },
-      { id: "dewalt-dcd996", name: "DeWalt DCD996P2", sku: "DWL-DCD996P2", brand: "DeWalt", tagline: "3-speed brushless hammer drill/driver, 95 Nm", badge: "XR Series", cat: "Power Tools", sub: "Drills & Drivers", img: "images/dewalt_drill.png" },
-      { id: "bosch-go-2", name: "Bosch GO 2 Screwdriver", sku: "BSH-GO2", brand: "Bosch", tagline: "Smart compact electric screwdriver, pocket-sized", badge: "Compact", cat: "Power Tools", sub: "Drills & Drivers", img: "images/compact_screwdriver.png" },
-      { id: "bosch-gws18v", name: "Bosch GWS 18V-10 SC", sku: "BSH-GWS18V10", brand: "Bosch Professional", tagline: "Brushless cordless angle grinder with KickBack Control", badge: "Safety Rated", cat: "Power Tools", sub: "Grinders & Sanders", img: "images/angle_grinder.png" },
-      { id: "bosch-gst-18v", name: "Bosch GST 18V-Li B", sku: "BSH-GST18VLI", brand: "Bosch Professional", tagline: "Cordless jigsaw with Constant Electronic speed control", badge: "Precision Cut", cat: "Power Tools", sub: "Saws & Cutters", img: "images/cordless_jigsaw.png" },
-      { id: "bosch-plr-30c", name: "Bosch PLR 30 C Laser", sku: "BSH-PLR30C", brand: "Bosch", tagline: "30m Bluetooth laser measure with free app", badge: "Smart Tool", cat: "Power Tools", sub: "Measuring", img: "images/laser_measure.png" },
-      { id: "camo-marking-tool", name: "Camo Marksman Pro-NB", sku: "CMO-MPN-1", brand: "Camo", tagline: "Deck board spacing and fastening guide tool", badge: "Deck Pro", cat: "Power Tools", sub: "Measuring", img: "images/deck_fastening_tool.png" },
-      { id: "bw-small-500", name: "ShieldAir BW-10", sku: "SBL-BW-10", brand: "Super Bright Labs", tagline: "Small 10mm bubble wrap for fragile electronics & glassware", badge: "Electronics Safe", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_small.png" },
-      { id: "bw-large-1000", name: "ShieldAir BW-30", sku: "SBL-BW-30", brand: "Super Bright Labs", tagline: "30mm large-bubble wrap for heavy & bulky goods", badge: "Heavy Duty", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_large.png" },
-      { id: "foam-sheet", name: "ProFoam PF-200 Sheet", sku: "SBL-PF-200", brand: "Super Bright Labs", tagline: "Polyethylene foam sheet for interleaving & wrapping", badge: "Chemical Resistant", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_sheet.png" },
-      { id: "foam-inserts", name: "CubeForm CF-100", sku: "SBL-CF-100", brand: "Super Bright Labs", tagline: "Pre-scored foam bun for custom pick-and-pluck inserts", badge: "Custom Fit", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_insert.png" },
-      { id: "stretch-film", name: "PalletPro SF-23", sku: "SBL-SF-23", brand: "Super Bright Labs", tagline: "Machine stretch film 23 micron for pallet unitisation", badge: "Machine Grade", cat: "Protective Packaging", sub: "Stretch Films", img: "images/stretch_film.png" },
-      { id: "edge-protectors", name: "CornerShield CE-75", sku: "SBL-CE-75", brand: "Super Bright Labs", tagline: "Solid paperboard edge protector for pallet & panel protection", badge: "Load Bearing", cat: "Protective Packaging", sub: "Edge Protectors", img: "images/edge_protectors.png" }
+      { id: "dst-pro-5000", name: "ProMount DS-5000", sku: "SBL-DS-5000", brand: "Super Bright Labs", tagline: "Heavy-duty double-sided mounting tape for industrial bonding", badge: "Best Seller", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/double_sided_tape.png", dateAdded: "2026-01-10", isBestSeller: true },
+      { id: "foam-mounting", name: "FoamBond FM-800", sku: "SBL-FM-800", brand: "Super Bright Labs", tagline: "Acrylic foam double-sided tape for structural joining", badge: "Professional", cat: "Adhesive Tapes", sub: "Double-Sided Tapes", img: "images/foam_tape.png", dateAdded: "2026-01-10", isBestSeller: false },
+      { id: "mask-clean-100", name: "CleanEdge MT-100", sku: "SBL-MT-100", brand: "Super Bright Labs", tagline: "Zero-bleed masking tape for precision painting", badge: "Precision Grade", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/masking_tape.png", dateAdded: "2026-01-15", isBestSeller: false },
+      { id: "high-temp-masking", name: "ThermoMask HT-260", sku: "SBL-HT-260", brand: "Super Bright Labs", tagline: "High-temperature masking tape for powder coat & oven use", badge: "High Temp", cat: "Adhesive Tapes", sub: "Masking & Painters", img: "images/high_temp_tape.png", dateAdded: "2026-05-01", isBestSeller: false },
+      { id: "gaffer-ultra", name: "GripForce Gaffer G-700", sku: "SBL-GF-700", brand: "Super Bright Labs", tagline: "Professional cloth gaffer tape, residue-free removal", badge: "Pro AV Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/gaffer_tape.png", dateAdded: "2026-02-01", isBestSeller: true },
+      { id: "transfer-tape", name: "TransferPro TP-400", sku: "SBL-TP-400", brand: "Super Bright Labs", tagline: "Repositionable transfer tape for graphic mounting", badge: "Graphics Grade", cat: "Adhesive Tapes", sub: "Industrial Strength", img: "images/transfer_tape.png", dateAdded: "2026-02-01", isBestSeller: false },
+      { id: "specialty-alu", name: "AlumiFoil AF-200", sku: "SBL-AF-200", brand: "Super Bright Labs", tagline: "Aluminium foil tape for HVAC and thermal sealing", badge: "HVAC Grade", cat: "Adhesive Tapes", sub: "Specialty & Foil", img: "images/aluminium_foil_tape.png", dateAdded: "2026-05-01", isBestSeller: false },
+      { id: "bosch-gsb-18v", name: "Bosch GSB 18V-85 C", sku: "BSH-GSB18V85", brand: "Bosch Professional", tagline: "Connected brushless combi drill with 85 Nm torque", badge: "Top Pick", cat: "Power Tools", sub: "Drills & Drivers", img: "images/cordless_drill.png", dateAdded: "2026-03-01", isBestSeller: true },
+      { id: "dewalt-dcd996", name: "DeWalt DCD996P2", sku: "DWL-DCD996P2", brand: "DeWalt", tagline: "3-speed brushless hammer drill/driver, 95 Nm", badge: "XR Series", cat: "Power Tools", sub: "Drills & Drivers", img: "images/dewalt_drill.png", dateAdded: "2026-03-01", isBestSeller: true },
+      { id: "bosch-go-2", name: "Bosch GO 2 Screwdriver", sku: "BSH-GO2", brand: "Bosch", tagline: "Smart compact electric screwdriver, pocket-sized", badge: "Compact", cat: "Power Tools", sub: "Drills & Drivers", img: "images/compact_screwdriver.png", dateAdded: "2026-03-15", isBestSeller: false },
+      { id: "bosch-gws18v", name: "Bosch GWS 18V-10 SC", sku: "BSH-GWS18V10", brand: "Bosch Professional", tagline: "Brushless cordless angle grinder with KickBack Control", badge: "Safety Rated", cat: "Power Tools", sub: "Grinders & Sanders", img: "images/angle_grinder.png", dateAdded: "2026-03-15", isBestSeller: false },
+      { id: "bosch-gst-18v", name: "Bosch GST 18V-Li B", sku: "BSH-GST18VLI", brand: "Bosch Professional", tagline: "Cordless jigsaw with Constant Electronic speed control", badge: "Precision Cut", cat: "Power Tools", sub: "Saws & Cutters", img: "images/cordless_jigsaw.png", dateAdded: "2026-04-01", isBestSeller: false },
+      { id: "bosch-plr-30c", name: "Bosch PLR 30 C Laser", sku: "BSH-PLR30C", brand: "Bosch", tagline: "30m Bluetooth laser measure with free app", badge: "Smart Tool", cat: "Power Tools", sub: "Measuring", img: "images/laser_measure.png", dateAdded: "2026-04-01", isBestSeller: false },
+      { id: "camo-marking-tool", name: "Camo Marksman Pro-NB", sku: "CMO-MPN-1", brand: "Camo", tagline: "Deck board spacing and fastening guide tool", badge: "Deck Pro", cat: "Power Tools", sub: "Measuring", img: "images/deck_fastening_tool.png", dateAdded: "2026-04-15", isBestSeller: false },
+      { id: "bw-small-500", name: "ShieldAir BW-10", sku: "SBL-BW-10", brand: "Super Bright Labs", tagline: "Small 10mm bubble wrap for fragile electronics & glassware", badge: "Electronics Safe", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_small.png", dateAdded: "2026-01-20", isBestSeller: true },
+      { id: "bw-large-1000", name: "ShieldAir BW-30", sku: "SBL-BW-30", brand: "Super Bright Labs", tagline: "30mm large-bubble wrap for heavy & bulky goods", badge: "Heavy Duty", cat: "Protective Packaging", sub: "Bubble Wrap", img: "images/bubble_wrap_large.png", dateAdded: "2026-01-20", isBestSeller: false },
+      { id: "foam-sheet", name: "ProFoam PF-200 Sheet", sku: "SBL-PF-200", brand: "Super Bright Labs", tagline: "Polyethylene foam sheet for interleaving & wrapping", badge: "Chemical Resistant", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_sheet.png", dateAdded: "2026-02-10", isBestSeller: false },
+      { id: "foam-inserts", name: "CubeForm CF-100", sku: "SBL-CF-100", brand: "Super Bright Labs", tagline: "Pre-scored foam bun for custom pick-and-pluck inserts", badge: "Custom Fit", cat: "Protective Packaging", sub: "Foam Packaging", img: "images/foam_insert.png", dateAdded: "2026-02-10", isBestSeller: false },
+      { id: "stretch-film", name: "PalletPro SF-23", sku: "SBL-SF-23", brand: "Super Bright Labs", tagline: "Machine stretch film 23 micron for pallet unitisation", badge: "Machine Grade", cat: "Protective Packaging", sub: "Stretch Films", img: "images/stretch_film.png", dateAdded: "2026-04-20", isBestSeller: false },
+      { id: "edge-protectors", name: "CornerShield CE-75", sku: "SBL-CE-75", brand: "Super Bright Labs", tagline: "Solid paperboard edge protector for pallet & panel protection", badge: "Load Bearing", cat: "Protective Packaging", sub: "Edge Protectors", img: "images/edge_protectors.png", dateAdded: "2026-04-20", isBestSeller: false }
     ];
 
     const categories = ["All", ...new Set(PRODUCTS.map(p => p.cat))];
@@ -529,6 +584,31 @@
       filterProducts();
     }
 
+    function sortProducts(items) {
+      const sortBy = document.getElementById("sortSelect").value;
+      const sorted = [...items];
+      switch (sortBy) {
+        case "best-seller":
+          sorted.sort((a, b) => (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0));
+          break;
+        case "latest":
+          sorted.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+          break;
+        case "name-asc":
+          sorted.sort((a, b) => a.name.localeCompare(b.name));
+          break;
+        case "name-desc":
+          sorted.sort((a, b) => b.name.localeCompare(a.name));
+          break;
+        case "brand":
+          sorted.sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+          break;
+        default:
+          break;
+      }
+      return sorted;
+    }
+
     function filterProducts() {
       const q = document.getElementById("searchInput").value.toLowerCase();
       const filtered = PRODUCTS.filter(p => {
@@ -536,7 +616,7 @@
         const matchQ = !q || p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.tagline.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sub.toLowerCase().includes(q);
         return matchCat && matchQ;
       });
-      renderGrid(filtered);
+      renderGrid(sortProducts(filtered));
     }
 
     function renderGrid(items) {

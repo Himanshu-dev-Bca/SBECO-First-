@@ -1,61 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact -SBECO</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Super Bright Labs</title>
+  <meta name="description"
+    content="Get in touch with Super Bright Labs for industrial packaging, adhesive tapes, and power tools enquiries." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --black: #111827;
+      --white: #fff;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #6b7280;
+      --gray-600: #4b5563;
+      --accent: #e60023;
+      --border: 1px solid #e5e7eb
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eff2f7;
+      color: var(--black)
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 64px;
+      background: var(--white);
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      text-decoration: none;
+      color: var(--black)
+    }
+
+    .logo span {
+      color: var(--accent)
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none
+    }
+
+    .nav-links a {
+      font-size: 11px;
+      color: #374151;
+      text-decoration: none;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color .2s
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent)
+    }
+
+    .nav-badge {
+      font-size: 10px;
+      color: var(--gray-400);
+      letter-spacing: .08em
+    }
+
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 70px 48px 60px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, .03) 100%)
+    }
+
+    .hero-label {
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 14px
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 14px
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #94a3b8;
+      max-width: 520px;
+      line-height: 1.7
+    }
+
+    .section {
+      padding: 56px 48px
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--black);
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .section-title .sh-num {
+      font-size: 11px;
+      color: var(--gray-400);
+      font-weight: 300
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 32px
+    }
+
+    .form-box {
+      border: var(--border);
+      background: var(--white);
+      padding: 36px
+    }
+
+    .form-box label {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 8px
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box select {
+      width: 100%;
+      border: var(--border);
+      padding: 14px 16px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--black);
+      background: var(--white);
+      margin-bottom: 20px;
+      outline: none;
+      transition: border-color .2s
+    }
+
+    .form-box input:focus,
+    .form-box textarea:focus,
+    .form-box select:focus {
+      border-color: var(--black)
+    }
+
+    .form-box textarea {
+      min-height: 140px;
+      resize: vertical
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background .2s, transform .2s
+    }
+
+    .submit-btn:hover {
+      background: #c50e1f;
+      transform: translateY(-2px)
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px
+    }
+
+    .info-card {
+      border: var(--border);
+      background: var(--white);
+      padding: 28px;
+      transition: all .2s
+    }
+
+    .info-card:hover {
+      border-color: var(--black);
+      transform: translateY(-2px)
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      border-radius: 10px
+    }
+
+    .info-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 2
+    }
+
+    .info-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 6px
+    }
+
+    .info-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--black)
+    }
+
+    .info-detail {
+      font-size: 12px;
+      color: var(--gray-600);
+      margin-top: 4px;
+      line-height: 1.5
+    }
+
+    .success-msg {
+      display: none;
+      border: var(--border);
+      background: var(--white);
+      padding: 40px;
+      text-align: center;
+      border-left: 4px solid #10b981
+    }
+
+    .success-msg.show {
+      display: block
+    }
+
+    .success-msg h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+      color: #10b981
+    }
+
+    .success-msg p {
+      font-size: 13px;
+      color: var(--gray-600);
+      line-height: 1.6
+    }
+
+    footer {
+      background: var(--black);
+      color: #94a3b8;
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      letter-spacing: .08em
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    footer a:hover {
+      color: var(--white)
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gray-200);
+      border-radius: 2px
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .form-box,
+    .info-card {
+      animation: fadeUp .4s ease forwards;
+      opacity: 0
+    }
+
+    .info-card:nth-child(1) {
+      animation-delay: 0s
+    }
+
+    .info-card:nth-child(2) {
+      animation-delay: .08s
+    }
+
+    .info-card:nth-child(3) {
+      animation-delay: .16s
+    }
+
+    .info-card:nth-child(4) {
+      animation-delay: .24s
+    }
+
+    @media(max-width:960px) {
+      .contact-layout {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+      .hero {
+        padding: 50px 24px 44px
+      }
+
+      .hero h1 {
+        font-size: 34px
+      }
+
+      .section {
+        padding: 40px 20px
+      }
+
+      .nav-links,
+      .nav-badge {
+        display: none
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo-block">
-         <img src="logo.png.png" alt="SBECO Logo" class="logo-img">
-        <div>
-          <span class="site-title">SBECO</span>
-          <span class="site-description">Packaging made easy</span>
-          <style>.logo-img {
-  height: 50px;   
-  width: auto;
-        }</style>
-        </div>
-      </a>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="./demo pro/catalog.html">Products</a>
-        <a href="updates.html">Updates</a>
-        <a href="photos.html">Photos</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <a href="index.html" class="logo">Super <span>Bright</span> Labs</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="./demo pro/catalog.html">Products</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-badge">EST. 2001 · INDUSTRIAL GRADE</div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="form-card">
-        <form onsubmit="submitForm(); return false;">
-          <input class="form-control" type="text" placeholder="Name" required>
-          <input class="form-control" type="email" placeholder="Email" required>
-          <textarea class="form-control" placeholder="Message" required></textarea>
-          <button class="btn" type="submit">Submit Request</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <section class="hero">
+    <div class="hero-label">Contact · Super Bright Labs</div>
+    <h1>Get In Touch</h1>
+    <p>Have a question about our products, need a bulk quote, or want to discuss your packaging requirements? We're here
+      to help.</p>
+  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>� 2026 SBECO. Trusted partner for industrial packaging and tools.</p>
-      <div class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="updates.html">Updates</a>
+  <section class="section">
+    <div class="section-title">Send Us A Message <span class="sh-num">01</span></div>
+    <div class="contact-layout">
+      <div>
+        <div class="form-box" id="contactForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <label for="company">Company Name</label>
+          <input type="text" id="company" placeholder="Your company (optional)" />
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">Select a topic...</option>
+            <option>Product Enquiry</option>
+            <option>Bulk Order Quote</option>
+            <option>Technical Support</option>
+            <option>Partnership Opportunity</option>
+            <option>Other</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us how we can help..." required></textarea>
+          <button class="submit-btn" onclick="submitForm()">Submit Request →</button>
+        </div>
+        <div class="success-msg" id="successMsg">
+          <h3>Message Sent Successfully</h3>
+          <p>Thank you for reaching out. Our team will review your message and get back to you within 24 hours.</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg></div>
+          <div class="info-label">Phone</div>
+          <div class="info-value">+91 98XXX XXXXX</div>
+          <div class="info-detail">Mon–Sat, 9:00 AM – 6:00 PM IST</div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg></div>
+          <div class="info-label">Email</div>
+          <div class="info-value">info@superbrightlabs.com</div>
+          <div class="info-detail">We typically respond within 24 hours</div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg></div>
+          <div class="info-label">Office Address</div>
+          <div class="info-value">Mumbai, India</div>
+          <div class="info-detail">Visit us by appointment during business hours</div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg></div>
+          <div class="info-label">Business Hours</div>
+          <div class="info-value">Mon – Sat</div>
+          <div class="info-detail">9:00 AM – 6:00 PM IST · Closed on Sundays</div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Super Bright Labs. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="./demo pro/catalog.html">PRODUCTS</a>
+      <a href="updates.html">UPDATES</a>
+    </div>
+    <div>Industrial Grade Products Since 2001</div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function submitForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) { alert('Please fill in all required fields.'); return; }
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successMsg').classList.add('show');
+    }
+  </script>
 </body>
+
 </html>
