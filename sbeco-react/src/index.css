@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #111827;
+  --color-white: #ffffff;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-400: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-accent: #e60023;
+  --color-accent-hover: #c50e1f;
+  --color-bg: #eff2f7;
+  --color-muted: #94a3b8;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--color-gray-200); border-radius: 2px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background: var(--color-bg);
+  color: var(--color-black);
+}
