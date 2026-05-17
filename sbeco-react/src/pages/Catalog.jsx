@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useMemo, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import Hero from '../components/Hero';
 import { allProducts } from '../data/products';
 
@@ -14,9 +14,16 @@ const SORT_OPTIONS = [
 ];
 
 export default function Catalog() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [filter, setFilter] = useState('All');
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(searchParams.get('search') || '');
   const [sort, setSort] = useState('default');
+
+  // Sync search state when URL search param changes (e.g. from navbar search)
+  useEffect(() => {
+    const q = searchParams.get('search') || '';
+    setSearch(q);
+  }, [searchParams]);
 
   const results = useMemo(() => {
     const q = search.toLowerCase();
