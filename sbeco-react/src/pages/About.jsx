@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <Hero label="About · Super Bright Labs"
-        title={<>Built On Trust,<br/>Driven By Quality</>}
+        title={<>Built On Trust,<br />Driven By Quality</>}
         subtitle="For over two decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India." />
 
       {/* Who We Are */}
@@ -16,7 +16,11 @@ export default function About() {
           <div className="border border-gray-200 bg-white p-9 animate-fade-up">
             <div className="text-[12px] font-bold tracking-[.08em] uppercase mb-4">Our Story</div>
             <p className="text-[13px] text-gray-600 leading-relaxed">
-              Super Bright Labs is a leading supplier of industrial-grade adhesive tapes, professional power tools, and protective packaging materials. Founded in 2001, we have grown from a small trading house to a trusted partner for manufacturing, logistics, and warehouse operations across India.
+              Super Bright Engineering Company (SBECO) has been a trusted name in the industry for over 40 years, delivering reliable solutions in strapping, nailing, stapling, packaging, and furnishing. Serving a wide range of clients—from packaging firms and interior designers to factories and logistics companies—we have built a reputation as a dependable, one-stop solution provider.
+
+              With decades of expertise, we offer an extensive range of products including tapes, straps, seals, tools, foam rolls, wraps, dispensers, PVC curtains, films, and power tools. Our diverse portfolio ensures that customers find the right solutions for both current needs and future growth.
+
+              At SBECO, our focus is simple: quality, variety, and service that gives our customers a real competitive edge.
             </p>
           </div>
           <div className="border border-gray-200 bg-white p-9 animate-fade-up" style={{ animationDelay: '.08s' }}>
@@ -43,10 +47,10 @@ export default function About() {
       {/* Values */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-200 bg-white">
         {[
-          { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>, title: 'Quality First', desc: 'Every product is tested and certified for industrial-grade performance.' },
-          { icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>, title: 'Reliability', desc: 'Consistent product range, transparent business practices, and dependable support.' },
-          { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></>, title: 'Partnership', desc: 'We work alongside clients as a long-term solutions partner, not just a supplier.' },
-          { icon: <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>, title: 'Experience', desc: 'Over 20 years of deep expertise in industrial packaging and tools.' },
+          { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />, title: 'Quality First', desc: 'Every product is tested and certified for industrial-grade performance.' },
+          { icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></>, title: 'Reliability', desc: 'Consistent product range, transparent business practices, and dependable support.' },
+          { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /></>, title: 'Partnership', desc: 'We work alongside clients as a long-term solutions partner, not just a supplier.' },
+          { icon: <><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></>, title: 'Experience', desc: 'Over 20 years of deep expertise in industrial packaging and tools.' },
         ].map((v, i) => (
           <div key={i} className="p-9 border-r border-gray-200 last:border-r-0 hover:bg-gray-100 transition-colors">
             <div className="w-10 h-10 bg-accent rounded-[10px] flex items-center justify-center mb-4">
