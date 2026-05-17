@@ -36,6 +36,26 @@
   to { opacity: 1; transform: none; }
 }
 
+/* Nav link hover underline */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
 body {
   font-family: var(--font-family-sans);
   background: var(--color-bg);
