@@ -50,7 +50,7 @@ export default function Catalog() {
         subtitle="Explore our complete range of industrial adhesive tapes, professional power tools, and protective packaging solutions — engineered for demanding environments." />
 
       {/* Toolbar */}
-      <div className="flex items-center justify-between px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-16 z-40 gap-4 flex-wrap">
+      <div className="flex items-center justify-between px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-20 z-40 gap-4 flex-wrap">
         <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white min-w-[280px]">
           <span className="text-gray-400 text-sm">⊘</span>
           <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products by name, SKU, or keyword..."

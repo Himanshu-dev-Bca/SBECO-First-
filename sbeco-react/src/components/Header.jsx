@@ -24,9 +24,9 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between px-8 h-16 bg-white border-b border-gray-200 sticky top-0 z-50">
-      <Link to="/" className="text-[22px] font-extrabold tracking-tight no-underline text-black">
-        Super <span className="text-accent">Bright</span> Labs
+    <header className="flex items-center justify-between px-8 h-20 bg-white border-b border-gray-200 sticky top-0 z-50">
+      <Link to="/" className="shrink-0">
+        <img src="/images/sbeco-logo.png" alt="SBECO" className="h-14 w-auto object-contain" />
       </Link>
 
       <ul className="hidden md:flex gap-8 list-none">
