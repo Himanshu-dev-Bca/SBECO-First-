@@ -56,9 +56,8 @@ function Carousel() {
             <div className="flex gap-1.5 ml-2">
               {Array.from({ length: Math.min(maxSlide + 1, 6) }, (_, i) => (
                 <button key={i} onClick={() => setSlide(i)}
-                  className={`w-2 h-2 border cursor-pointer transition-all ${
-                    i === clampedSlide ? 'bg-accent border-accent' : 'bg-white border-gray-200'
-                  }`} />
+                  className={`w-2 h-2 border cursor-pointer transition-all ${i === clampedSlide ? 'bg-accent border-accent' : 'bg-white border-gray-200'
+                    }`} />
               ))}
             </div>
           </div>
@@ -96,7 +95,7 @@ function Carousel() {
 export default function Home() {
   return (
     <>
-      <Hero label="Super Bright Labs · Since 2001" title={<>Your Trusted Partner<br/>For Industrial<br/>Packaging &amp; Tools</>}
+      <Hero label="Super Bright Labs · Since 2001" title={<>Your Trusted Partner<br />For Industrial<br />Packaging &amp; Tools</>}
         subtitle="Showcasing premium industrial solutions — adhesive tapes, professional power tools, and protective packaging engineered for demanding environments. Enquire today for your requirements.">
         <Link to="/products" className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-accent text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all">
           Explore Products →
@@ -106,8 +105,8 @@ export default function Home() {
       {/* Stats */}
       <div className="flex flex-wrap bg-white border-b border-gray-200">
         {[
-          { num: '20+', label: 'Years of Experience' },
-          { num: '500+', label: 'Products Available' },
+          { num: '40+', label: 'Years of Experience' },
+          { num: '200+', label: 'Products Available' },
           { num: '1,000+', label: 'Clients Served' },
           { num: '20+', label: 'Product Categories' },
         ].map((s, i) => (
@@ -123,10 +122,10 @@ export default function Home() {
       {/* Features */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-200 bg-white">
         {[
-          { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>, title: 'Quality Assured', desc: 'Every product tested and certified for industrial-grade performance and durability.' },
-          { icon: <><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></>, title: 'Trusted Brands', desc: 'Authorised stockists for Bosch, DeWalt, Camo, and our own Super Bright Labs range.' },
-          { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></>, title: 'Expert Support', desc: 'Dedicated technical team to help you choose the right products for your needs.' },
-          { icon: <><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></>, title: 'Since 2001', desc: 'Over two decades of trusted expertise in industrial packaging and tools.' },
+          { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />, title: 'Quality Assured', desc: 'Every product tested and certified for industrial-grade performance and durability.' },
+          { icon: <><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" /></>, title: 'Trusted Brands', desc: 'Authorised stockists for Bosch, DeWalt, Camo, and our own Super Bright Labs range.' },
+          { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /></>, title: 'Expert Support', desc: 'Dedicated technical team to help you choose the right products for your needs.' },
+          { icon: <><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></>, title: 'Since 2001', desc: 'Over two decades of trusted expertise in industrial packaging and tools.' },
         ].map((f, i) => (
           <div key={i} className="p-9 border-r border-gray-200 last:border-r-0 hover:bg-gray-100 transition-colors">
             <div className="w-10 h-10 bg-accent rounded-[10px] flex items-center justify-center mb-4">
