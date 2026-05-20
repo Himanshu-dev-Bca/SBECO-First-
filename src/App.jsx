@@ -40,7 +40,6 @@ export default function App() {
         <Route path="/products/:productId" element={<Layout hideFooter><ProductDetail /></Layout>} />
         <Route path="/photos" element={<Layout><Photos /></Layout>} />
       </Routes>
-      
     </BrowserRouter>
   );
 }
