@@ -3,31 +3,66 @@ import Hero from '../components/Hero';
 export default function About() {
   return (
     <>
-      <Hero label="About · Super Bright Labs"
+      <Hero 
+        label="About · Super Bright Labs"
         title={<>Built On Trust,<br />Driven By Quality</>}
-        subtitle="For over two decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India." />
+        subtitle="For over two decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India." 
+        image="/images/about_trusted_partner.png"
+      />
 
-      {/* Who We Are */}
-      <section className="px-8 md:px-12 py-14">
-        <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
-          Who We Are <span className="text-[11px] text-gray-400 font-light">01</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border border-gray-200 bg-white p-9 animate-fade-up">
-            <div className="text-[12px] font-bold tracking-[.08em] uppercase mb-4">Our Story</div>
-            <p className="text-[13px] text-gray-600 leading-relaxed">
-              Super Bright Engineering Company (SBECO) has been a trusted name in the industry for over 40 years, delivering reliable solutions in strapping, nailing, stapling, packaging, and furnishing. Serving a wide range of clients—from packaging firms and interior designers to factories and logistics companies—we have built a reputation as a dependable, one-stop solution provider.
+      {/* Who We Are & Trusted Partner */}
+      <section className="px-8 md:px-12 py-16 lg:py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Text Content */}
+            <div className="animate-fade-up z-10 relative">
+              <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-6 pb-3.5 border-b-2 border-black inline-flex">
+                Your Trusted Partner <span className="text-[11px] text-gray-400 font-light">01</span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-[.02em] leading-tight mb-8">
+                Building Trust<br />Through <span className="text-accent">Excellence</span>
+              </h2>
+              <div className="space-y-6 text-[14px] text-gray-600 leading-relaxed">
+                <p>
+                  Super Bright Engineering Company (SBECO) has been a trusted name in the industry for over 40 years, delivering reliable solutions in strapping, nailing, stapling, packaging, and furnishing. Serving a wide range of clients—from packaging firms and interior designers to factories and logistics companies—we have built a reputation as a dependable, one-stop solution provider.
+                </p>
+                <p>
+                  From double-sided mounting tapes to Bosch Professional power tools and custom foam packaging — we provide dependable products designed for demanding environments. Our diverse portfolio ensures that customers find the right solutions for both current needs and future growth.
+                </p>
+              </div>
+              <div className="mt-10 flex items-center gap-4">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white shrink-0 shadow-lg">
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <div className="text-[11px] font-bold tracking-[.1em] uppercase text-black">
+                  Certified Quality<br /><span className="text-gray-400 font-medium">100% Guaranteed</span>
+                </div>
+              </div>
+            </div>
 
-              With decades of expertise, we offer an extensive range of products including tapes, straps, seals, tools, foam rolls, wraps, dispensers, PVC curtains, films, and power tools. Our diverse portfolio ensures that customers find the right solutions for both current needs and future growth.
-
-              At SBECO, our focus is simple: quality, variety, and service that gives our customers a real competitive edge.
-            </p>
-          </div>
-          <div className="border border-gray-200 bg-white p-9 animate-fade-up" style={{ animationDelay: '.08s' }}>
-            <div className="text-[12px] font-bold tracking-[.08em] uppercase mb-4">What We Do</div>
-            <p className="text-[13px] text-gray-600 leading-relaxed">
-              From double-sided mounting tapes to Bosch Professional power tools and custom foam packaging — we provide dependable products designed for demanding environments. Our catalogue spans 20+ products across 3 major categories, serving industries from electronics to heavy manufacturing.
-            </p>
+            {/* Image Content - Beautifully Blended */}
+            <div className="relative h-[500px] lg:h-[650px] w-full group animate-fade-up" style={{ animationDelay: '.1s' }}>
+              {/* Decorative background blocks */}
+              <div className="absolute top-10 -right-10 w-full h-full bg-gray-50 border border-gray-100 z-0 transition-transform duration-500 group-hover:-translate-x-4 group-hover:-translate-y-4"></div>
+              <div className="absolute -bottom-10 -left-10 w-2/3 h-2/3 bg-accent/5 z-0 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+              
+              {/* Main Image */}
+              <div className="relative z-10 w-full h-full overflow-hidden border border-gray-200 shadow-[0_30px_60px_rgba(0,0,0,0.12)]">
+                <img 
+                  src="/images/about_trusted_partner.png" 
+                  alt="Industrial Facility" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                />
+                {/* Gradient blend overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-transparent to-transparent"></div>
+                
+                {/* Floating Badge */}
+                <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-6 border-l-4 border-accent shadow-xl">
+                  <div className="text-4xl font-extrabold text-black mb-1">40+</div>
+                  <div className="text-[10px] font-bold tracking-[.15em] uppercase text-gray-500">Years of<br/>Excellence</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

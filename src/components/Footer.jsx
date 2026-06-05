@@ -63,16 +63,20 @@ export default function Footer() {
               About
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/updates" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
-              Updates
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
-            </Link>
             <Link to="/products" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
               Products
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/photos" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
-              Photos
+            <Link to="/articles" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
+              Articles
+              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+            <Link to="/gallery" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
+              Gallery
+              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+            <Link to="/videos" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
+              Videos
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link to="/contact" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
