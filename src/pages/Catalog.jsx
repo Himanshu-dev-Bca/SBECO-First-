@@ -1,9 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { allProducts } from '../data/products';
+import { allProducts, CATALOGUE } from '../data/products';
 
-const CATEGORIES = ['All', ...new Set(allProducts.map(p => p.cat))];
 const SORT_OPTIONS = [
   { value: 'default', label: 'Default' },
   { value: 'best-seller', label: 'Best Seller' },
@@ -15,23 +14,26 @@ const SORT_OPTIONS = [
 
 export default function Catalog() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [filter, setFilter] = useState('All');
+  const categoryParam = searchParams.get('category');
   const [search, setSearch] = useState(searchParams.get('search') || '');
   const [sort, setSort] = useState('default');
 
-  // Sync search state when URL search param changes (e.g. from navbar search)
   useEffect(() => {
     const q = searchParams.get('search') || '';
     setSearch(q);
   }, [searchParams]);
 
   const results = useMemo(() => {
+    if (!categoryParam) return [];
     const q = search.toLowerCase();
+    const categoryName = CATALOGUE.find(c => c.id === categoryParam)?.name;
+    
     let filtered = allProducts.filter(p => {
-      const matchCat = filter === 'All' || p.cat === filter;
+      const matchCat = p.cat === categoryName;
       const matchQ = !q || p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.tagline.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sub.toLowerCase().includes(q);
       return matchCat && matchQ;
     });
+    
     const sorted = [...filtered];
     switch (sort) {
       case 'best-seller': sorted.sort((a, b) => (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0)); break;
@@ -41,30 +43,44 @@ export default function Catalog() {
       case 'brand': sorted.sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name)); break;
     }
     return sorted;
-  }, [filter, search, sort]);
+  }, [categoryParam, search, sort]);
+
+  if (!categoryParam) {
+    return (
+      <>
+        <Hero label="Super Bright Labs · Product Categories"
+          title={<>Browse Our<br/>Categories</>}
+          subtitle="Explore our complete range of industrial solutions." />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 md:px-12 py-12 bg-gray-50 min-h-[50vh]">
+          {CATALOGUE.map(c => (
+            <Link key={c.id} to={`/products?category=${c.id}`}
+              className="group border border-gray-200 bg-white p-10 flex flex-col items-center justify-center text-center no-underline hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all">
+              <h2 className="text-xl font-bold uppercase tracking-[.02em] text-black group-hover:text-accent transition-colors">{c.name}</h2>
+              <span className="mt-4 text-[11px] tracking-[.1em] uppercase font-semibold text-gray-400 group-hover:text-black transition-colors">View Products →</span>
+            </Link>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  const currentCategoryName = CATALOGUE.find(c => c.id === categoryParam)?.name || 'Products';
 
   return (
     <>
-      <Hero label="Super Bright Labs · Product Catalog"
-        title={<>Browse Our<br/>Product Range</>}
-        subtitle="Explore our complete range of industrial adhesive tapes, professional power tools, and protective packaging solutions — engineered for demanding environments." />
+      <Hero label={`Super Bright Labs · ${currentCategoryName}`}
+        title={<>{currentCategoryName}</>}
+        subtitle="Explore our products in this category." />
 
       {/* Toolbar */}
       <div className="flex items-center justify-between px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-20 z-40 gap-4 flex-wrap">
-        <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white min-w-[280px]">
+        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-gray-500 hover:text-black font-semibold mr-4">
+          ← Back to Categories
+        </Link>
+        <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white flex-1 min-w-[280px]">
           <span className="text-gray-400 text-sm">⊘</span>
           <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products by name, SKU, or keyword..."
             className="border-none outline-none text-[13px] bg-transparent w-full" />
-        </div>
-        <div className="flex">
-          {CATEGORIES.map(c => (
-            <button key={c} onClick={() => setFilter(c)}
-              className={`text-[11px] tracking-[.08em] uppercase px-4.5 py-2 border border-r-0 last:border-r cursor-pointer font-semibold transition-all ${
-                filter === c ? 'bg-accent text-white border-accent' : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-100'
-              }`}>
-              {c}
-            </button>
-          ))}
         </div>
         <div className="flex items-center gap-2.5">
           <span className="text-[10px] tracking-[.1em] uppercase text-gray-400 font-semibold whitespace-nowrap">Sort by</span>
@@ -103,7 +119,7 @@ export default function Catalog() {
       {results.length === 0 && (
         <div className="text-center py-20 text-gray-400">
           <div className="text-4xl mb-4">⊘</div>
-          <div className="text-[13px] tracking-[.06em] uppercase">No products match your search</div>
+          <div className="text-[13px] tracking-[.06em] uppercase">No products found in this category</div>
         </div>
       )}
     </>

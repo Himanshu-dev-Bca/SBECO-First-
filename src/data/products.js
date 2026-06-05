@@ -1,8 +1,8 @@
 // Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
-    id: "adhesive-tapes",
-    name: "Adhesive Tapes",
+    id: "tapes-and-dispensers",
+    name: "Tapes and Dispensers",
     subcategories: [
       {
         id: "double-sided", name: "Double-Sided Tapes",
@@ -67,8 +67,8 @@ export const CATALOGUE = [
     ],
   },
   {
-    id: "protective-packaging",
-    name: "Protective Packaging",
+    id: "straps-and-strapping-solutions",
+    name: "Straps & Strapping Solutions",
     subcategories: [
       {
         id: "bubble-wrap", name: "Bubble Wrap",
@@ -98,6 +98,16 @@ export const CATALOGUE = [
       },
     ],
   },
+  {
+    id: "nailing-and-stapling-solutions",
+    name: "Nailing and Stapling Solutions",
+    subcategories: []
+  },
+  {
+    id: "faculty-management",
+    name: "Faculty Management",
+    subcategories: []
+  }
 ];
 
 // Build flat product index

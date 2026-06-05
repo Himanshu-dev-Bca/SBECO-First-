@@ -28,7 +28,13 @@ function Carousel() {
     if (slide > maxSlide) setSlide(maxSlide);
   }, [maxSlide, slide]);
 
-  const move = (dir) => setSlide(s => Math.max(0, Math.min(s + dir, maxSlide)));
+  // Auto-scroll functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlide(s => (s >= maxSlide ? 0 : s + 1));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [maxSlide]);
 
   const translateX = trackRef.current
     ? clampedSlide * ((trackRef.current.children[0]?.offsetWidth || 300) + 24)
@@ -44,24 +50,7 @@ function Carousel() {
           <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-accent no-underline font-semibold hover:opacity-70 transition-opacity">
             View All Products →
           </Link>
-          <div className="flex items-center gap-3">
-            <button onClick={() => move(-1)} disabled={clampedSlide === 0}
-              className="w-9 h-9 border border-gray-200 bg-white flex items-center justify-center cursor-pointer text-gray-400 hover:bg-black hover:text-white hover:border-black transition-all disabled:opacity-30 disabled:cursor-default disabled:hover:bg-white disabled:hover:text-gray-400 disabled:hover:border-gray-200">
-              ←
-            </button>
-            <button onClick={() => move(1)} disabled={clampedSlide >= maxSlide}
-              className="w-9 h-9 border border-gray-200 bg-white flex items-center justify-center cursor-pointer text-gray-400 hover:bg-black hover:text-white hover:border-black transition-all disabled:opacity-30 disabled:cursor-default disabled:hover:bg-white disabled:hover:text-gray-400 disabled:hover:border-gray-200">
-              →
-            </button>
-            <div className="flex gap-1.5 ml-2">
-              {Array.from({ length: Math.min(maxSlide + 1, 6) }, (_, i) => (
-                <button key={i} onClick={() => setSlide(i)}
-                  className={`w-2 h-2 border cursor-pointer transition-all ${
-                    i === clampedSlide ? 'bg-accent border-accent' : 'bg-white border-gray-200'
-                  }`} />
-              ))}
-            </div>
-          </div>
+
         </div>
       </div>
 
@@ -73,7 +62,6 @@ function Carousel() {
               className="group min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all duration-200">
               <div className="bg-gray-100 h-[200px] flex items-center justify-center border-b border-gray-200 overflow-hidden relative">
                 <span className="absolute top-3 left-3 text-[9px] bg-white text-gray-600 px-2 py-1 tracking-[.06em] uppercase border border-gray-200">{p.sub}</span>
-                <img src={p.img} alt={p.name} loading="lazy" className="max-w-[75%] max-h-[75%] object-contain group-hover:scale-[1.06] transition-transform duration-300" />
                 <span className="absolute top-3 right-3 text-[9px] bg-accent text-white px-2.5 py-1 tracking-[.1em] uppercase">{p.badge}</span>
               </div>
               <div className="p-5">
