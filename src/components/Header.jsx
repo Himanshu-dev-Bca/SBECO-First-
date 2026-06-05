@@ -5,9 +5,18 @@ import { CATALOGUE } from '../data/products';
 const NAV = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/updates', label: 'Updates' },
   { to: '/products', label: 'Products', hasMega: true },
   { to: '/photos', label: 'Photos' },
+  { 
+    to: '#', 
+    label: 'More', 
+    hasDropdown: true,
+    items: [
+      { to: '/articles', label: 'Articles' },
+      { to: '/gallery', label: 'Gallery' },
+      { to: '/videos', label: 'Videos' },
+    ]
+  },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -31,16 +40,16 @@ export default function Header() {
       </Link>
 
       <ul className="hidden md:flex gap-8 list-none">
-        {NAV.map(({ to, label, hasMega }) => (
-          <li key={to} className={hasMega ? 'group/mega relative' : ''}>
+        {NAV.map((item) => (
+          <li key={item.to} className={item.hasMega || item.hasDropdown ? 'group/mega relative' : ''}>
             <Link
-              to={to}
+              to={item.to}
               className={`nav-link text-[11px] tracking-[.1em] uppercase font-semibold no-underline transition-colors duration-200 ${
-                pathname === to || (hasMega && pathname.startsWith('/products')) ? 'text-accent active' : 'text-gray-600 hover:text-accent'
+                pathname === item.to || (item.hasMega && pathname.startsWith('/products')) ? 'text-accent active' : 'text-gray-600 hover:text-accent'
               }`}
             >
-              {label}
-              {hasMega && (
+              {item.label}
+              {(item.hasMega || item.hasDropdown) && (
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3 inline-block ml-1 -mt-px opacity-50">
                   <path fillRule="evenodd" d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z" clipRule="evenodd" />
                 </svg>
@@ -48,7 +57,7 @@ export default function Header() {
             </Link>
 
             {/* Mega Menu Dropdown */}
-            {hasMega && (
+            {item.hasMega && (
               <div className="invisible opacity-0 group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-200 absolute top-full left-1/2 -translate-x-1/2 pt-4 z-50">
                 <div className="bg-white border border-gray-200 shadow-[0_20px_60px_rgba(0,0,0,.1)] w-[720px] max-w-[90vw]">
                   {/* Header */}
@@ -92,6 +101,24 @@ export default function Header() {
                 </div>
               </div>
             )}
+
+            {/* Simple Dropdown */}
+            {item.hasDropdown && (
+              <div className="invisible opacity-0 group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-200 absolute top-full left-1/2 -translate-x-1/2 pt-4 z-50">
+                <div className="bg-white border border-gray-200 shadow-[0_20px_60px_rgba(0,0,0,.1)] min-w-[200px]">
+                  <ul className="flex flex-col list-none p-0 m-0">
+                    {item.items.map(subItem => (
+                      <li key={subItem.to} className="border-b border-gray-100 last:border-0">
+                        <Link to={subItem.to} className="block px-6 py-4 text-[11px] font-bold tracking-[.1em] uppercase text-gray-600 hover:text-accent hover:bg-gray-50 no-underline transition-colors">
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+
           </li>
         ))}
       </ul>

@@ -3,6 +3,8 @@ export const CATALOGUE = [
   {
     id: "tapes-and-dispensers",
     name: "Tapes and Dispensers",
+    imageUrl: "/images/category_tapes.png",
+    description: "Industrial adhesive tapes, mounting tapes, masking solutions, and professional dispensers.",
     subcategories: [
       {
         id: "double-sided", name: "Double-Sided Tapes",
@@ -36,6 +38,8 @@ export const CATALOGUE = [
   {
     id: "power-tools",
     name: "Power Tools",
+    imageUrl: "/images/category_power_tools.png",
+    description: "Professional-grade drills, grinders, saws, and precision measuring instruments.",
     subcategories: [
       {
         id: "drills-drivers", name: "Drills & Drivers",
@@ -69,6 +73,8 @@ export const CATALOGUE = [
   {
     id: "straps-and-strapping-solutions",
     name: "Straps & Strapping Solutions",
+    imageUrl: "/images/category_straps.png",
+    description: "Stretch films, edge protectors, bubble wrap, and foam packaging for transit protection.",
     subcategories: [
       {
         id: "bubble-wrap", name: "Bubble Wrap",
@@ -101,11 +107,15 @@ export const CATALOGUE = [
   {
     id: "nailing-and-stapling-solutions",
     name: "Nailing and Stapling Solutions",
+    imageUrl: "/images/category_nailing.png",
+    description: "Pneumatic nail guns, staple guns, brad nailers, and fastening accessories.",
     subcategories: []
   },
   {
     id: "faculty-management",
     name: "Faculty Management",
+    imageUrl: "/images/category_facility.png",
+    description: "Safety equipment, maintenance tools, cleaning supplies, and facility essentials.",
     subcategories: []
   }
 ];

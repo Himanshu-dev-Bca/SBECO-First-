@@ -13,7 +13,7 @@ const SORT_OPTIONS = [
 ];
 
 export default function Catalog() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   const [search, setSearch] = useState(searchParams.get('search') || '');
   const [sort, setSort] = useState('default');
@@ -27,13 +27,13 @@ export default function Catalog() {
     if (!categoryParam) return [];
     const q = search.toLowerCase();
     const categoryName = CATALOGUE.find(c => c.id === categoryParam)?.name;
-    
+
     let filtered = allProducts.filter(p => {
       const matchCat = p.cat === categoryName;
       const matchQ = !q || p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.tagline.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sub.toLowerCase().includes(q);
       return matchCat && matchQ;
     });
-    
+
     const sorted = [...filtered];
     switch (sort) {
       case 'best-seller': sorted.sort((a, b) => (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0)); break;
@@ -45,36 +45,88 @@ export default function Catalog() {
     return sorted;
   }, [categoryParam, search, sort]);
 
+  /* ─────────── CATEGORY OVERVIEW (no ?category param) ─────────── */
   if (!categoryParam) {
     return (
       <>
         <Hero label="Super Bright Labs · Product Categories"
           title={<>Browse Our<br/>Categories</>}
-          subtitle="Explore our complete range of industrial solutions." />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 md:px-12 py-12 bg-gray-50 min-h-[50vh]">
-          {CATALOGUE.map(c => (
-            <Link key={c.id} to={`/products?category=${c.id}`}
-              className="group border border-gray-200 bg-white p-10 flex flex-col items-center justify-center text-center no-underline hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all">
-              <h2 className="text-xl font-bold uppercase tracking-[.02em] text-black group-hover:text-accent transition-colors">{c.name}</h2>
-              <span className="mt-4 text-[11px] tracking-[.1em] uppercase font-semibold text-gray-400 group-hover:text-black transition-colors">View Products →</span>
-            </Link>
-          ))}
-        </div>
+          subtitle="Explore our complete range of industrial packaging, tools, and facility solutions — engineered for demanding environments." />
+
+        {/* Category Cards Grid */}
+        <section className="px-8 md:px-12 py-14 bg-gray-50">
+          <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-10 pb-3.5 border-b-2 border-black">
+            Our Categories <span className="text-[11px] text-gray-400 font-light">{CATALOGUE.length} categories</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {CATALOGUE.map((c, i) => {
+              const productCount = c.subcategories.reduce((acc, sub) => acc + sub.products.length, 0);
+              return (
+                <Link key={c.id} to={`/products?category=${c.id}`}
+                  className="group relative border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(0,0,0,.1)] transition-all duration-300 animate-fade-up"
+                  style={{ animationDelay: `${i * .08}s` }}>
+                  {/* Image area */}
+                  <div className="relative h-[240px] bg-gray-100 overflow-hidden border-b border-gray-200">
+                    <img
+                      src={c.imageUrl}
+                      alt={c.name}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-500 ease-out"
+                    />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+                    {/* Product count badge */}
+                    <span className="absolute top-4 right-4 text-[9px] bg-accent text-white px-3 py-1.5 tracking-[.12em] uppercase font-bold">
+                      {productCount > 0 ? `${productCount} Products` : 'Coming Soon'}
+                    </span>
+                    {/* Category name over image */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h2 className="text-xl font-extrabold uppercase tracking-[.04em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,.4)] leading-tight">
+                        {c.name}
+                      </h2>
+                    </div>
+                  </div>
+
+                  {/* Description area */}
+                  <div className="p-6">
+                    <p className="text-[13px] text-gray-600 leading-relaxed mb-5">
+                      {c.description}
+                    </p>
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <span className="text-[10px] tracking-[.1em] uppercase font-semibold text-gray-400">
+                        {c.subcategories.length > 0 ? `${c.subcategories.length} Subcategories` : 'Products Coming Soon'}
+                      </span>
+                      <div className="flex items-center gap-2 text-[11px] tracking-[.08em] uppercase font-bold text-accent group-hover:gap-3 transition-all duration-300">
+                        Explore
+                        <div className="w-8 h-8 border border-gray-200 flex items-center justify-center text-sm text-gray-400 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
+                          →
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
       </>
     );
   }
 
-  const currentCategoryName = CATALOGUE.find(c => c.id === categoryParam)?.name || 'Products';
+  /* ─────────── CATEGORY PRODUCT LIST ─────────── */
+  const currentCategory = CATALOGUE.find(c => c.id === categoryParam);
+  const currentCategoryName = currentCategory?.name || 'Products';
 
   return (
     <>
       <Hero label={`Super Bright Labs · ${currentCategoryName}`}
         title={<>{currentCategoryName}</>}
-        subtitle="Explore our products in this category." />
+        subtitle={currentCategory?.description || 'Explore our products in this category.'} />
 
       {/* Toolbar */}
       <div className="flex items-center justify-between px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-20 z-40 gap-4 flex-wrap">
-        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-gray-500 hover:text-black font-semibold mr-4">
+        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-gray-500 hover:text-accent no-underline font-semibold mr-4 transition-colors">
           ← Back to Categories
         </Link>
         <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white flex-1 min-w-[280px]">
