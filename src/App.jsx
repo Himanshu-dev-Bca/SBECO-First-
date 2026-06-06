@@ -9,6 +9,8 @@ import Gallery from './pages/Gallery';
 import Videos from './pages/Videos';
 import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
+import OurTeam from './pages/OurTeam';
+import OurJourney from './pages/OurJourney';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -35,6 +37,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
+        <Route path="/about/team" element={<Layout><OurTeam /></Layout>} />
+        <Route path="/about/journey" element={<Layout><OurJourney /></Layout>} />
         <Route path="/contact" element={<Layout><Contact /></Layout>} />
         <Route path="/articles" element={<Layout><Articles /></Layout>} />
         <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
