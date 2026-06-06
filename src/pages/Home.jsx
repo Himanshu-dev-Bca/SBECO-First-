@@ -84,8 +84,12 @@ function Carousel() {
 export default function Home() {
   return (
     <>
-      <Hero label="Super Bright Labs · Since 2001" title={<>Your Trusted Partner<br/>For Industrial<br/>Packaging &amp; Tools</>}
-        subtitle="Showcasing premium industrial solutions — adhesive tapes, professional power tools, and protective packaging engineered for demanding environments. Enquire today for your requirements.">
+      <Hero 
+        label="Super Bright Labs · Since 2001" 
+        title={<>Your Trusted Partner<br/>For Industrial<br/>Packaging &amp; Tools</>}
+        subtitle="Showcasing premium industrial solutions — adhesive tapes, professional power tools, and protective packaging engineered for demanding environments. Enquire today for your requirements."
+        image="/images/about_trusted_partner.png"
+      >
         <Link to="/products" className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-accent text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all">
           Explore Products →
         </Link>
