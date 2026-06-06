@@ -21,9 +21,8 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          to: 'himanshu.chand@bcah.christuniversity.in',
           from_name: form.name,
-          subject: `SBECO Contact: ${form.subject || 'General Enquiry'} — from ${form.name}`,
+          subject: `SBECO: ${form.subject || 'General Enquiry'} — from ${form.name}`,
           name: form.name,
           email: form.email,
           company: form.company || 'Not specified',
