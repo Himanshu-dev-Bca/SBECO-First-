@@ -113,8 +113,7 @@ export default function ProductDetail() {
                 <div key={i} className="border border-gray-200 bg-white p-6 text-center hover:border-black hover:-translate-y-0.5 transition-all">
                   <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">📦</div>
                   <div className="text-[13px] font-bold uppercase tracking-[.02em] mb-1">{c.name}</div>
-                  <div className="text-[10px] text-gray-400 tracking-[.06em] mb-2">{c.sku}</div>
-                  <div className="text-[14px] font-bold text-accent">{c.price}</div>
+                  <div className="text-[10px] text-gray-400 tracking-[.06em]">{c.sku}</div>
                 </div>
               ))}
             </div>

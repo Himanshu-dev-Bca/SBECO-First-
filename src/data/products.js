@@ -1,123 +1,450 @@
 // Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
-    id: "tapes-and-dispensers",
-    name: "Tapes and Dispensers",
-    imageUrl: "/images/category_tapes.png",
-    description: "Industrial adhesive tapes, mounting tapes, masking solutions, and professional dispensers.",
+    id: "pp-strapping-tools",
+    name: "PP Strapping Tools",
     subcategories: [
       {
-        id: "double-sided", name: "Double-Sided Tapes",
+        id: "strapping-machines", name: "Strapping Machines",
         products: [
-          { id: "dst-pro-5000", name: "ProMount DS-5000", sku: "SBL-DS-5000", brand: "Super Bright Labs", tagline: "Heavy-duty double-sided mounting tape for industrial bonding", badge: "Best Seller", description: "The ProMount DS-5000 is engineered for permanent high-strength bonding across smooth, rough, and textured surfaces. Its dual-acrylic adhesive system delivers exceptional holding power even under vibration, moisture, and temperature swings from −30°C to 120°C.", specs: { "Width": "25 mm", "Length": "33 m", "Thickness": "1.2 mm", "Peel Strength": "180 N/cm²", "Temp Range": "−30°C to 120°C", "Liner": "Silicone Release" }, imageUrl: "/images/double_sided_tape.png", consumables: [ { name: "Tape Dispenser Handle", sku: "SBL-TDH-01", price: "₹ 649", icon: "dispenser" }, { name: "Surface Primer Spray", sku: "SBL-SPS-02", price: "₹ 420", icon: "spray" }, { name: "Applicator Roller", sku: "SBL-AR-03", price: "₹ 280", icon: "roller" }, { name: "Residue Remover 250ml", sku: "SBL-RR-04", price: "₹ 350", icon: "bottle" } ], similar: ["foam-mounting", "specialty-alu"], dateAdded: "2026-01-10", isBestSeller: true },
-          { id: "foam-mounting", name: "FoamBond FM-800", sku: "SBL-FM-800", brand: "Super Bright Labs", tagline: "Acrylic foam double-sided tape for structural joining", badge: "Professional", description: "FoamBond FM-800 features a conformable closed-cell acrylic foam core that compensates for surface irregularities. Ideal for bonding nameplates, emblems, glass, and panels.", specs: { "Width": "19 mm", "Length": "22 m", "Core": "Closed-cell Foam", "Tack": "Very High", "UV Resistance": "Excellent", "Liner Colour": "Red" }, imageUrl: "/images/foam_tape.png", consumables: [ { name: "Foam Cutter Guide", sku: "SBL-FCG-01", price: "₹ 220", icon: "cutter" }, { name: "Bond Primer Wipe Pack (50)", sku: "SBL-BWP-10", price: "₹ 310", icon: "wipe" }, { name: "Hand Roller Press", sku: "SBL-HRP-02", price: "₹ 490", icon: "roller" } ], similar: ["dst-pro-5000", "transfer-tape"], dateAdded: "2026-01-10", isBestSeller: false },
+          {
+            id: "semi-auto-strapping",
+            name: "Semi Automatic Strapping Machine",
+            sku: "SBL-SASM-01",
+            brand: "SEPACK",
+            tagline: "Reliable semi-automatic strapping for 6mm–12mm PP straps with 250W power",
+            badge: "Best Seller",
+            description: "The SBECO Semi Automatic Strapping Machine by SEPACK is a high-performance tabletop unit designed for medium to high-volume strapping operations. Featuring a robust 250W motor and an average cycle speed of just 2.5 seconds, it handles PP straps from 6mm to 12mm width with precision and consistency. Its user-friendly digital control panel allows quick adjustments to tension and sealing parameters, making it ideal for packaging lines in manufacturing, logistics, and warehousing environments.",
+            specs: {
+              "Brand": "SEPACK",
+              "Type": "Strapping Machine",
+              "Suitable For": "6mm – 12mm PP Strap",
+              "Power Consumption": "250W",
+              "Cycle Speed (Avg)": "2.5 Sec (depending on package size)",
+              "Operation": "Semi-Automatic"
+            },
+            imageUrl: "/images/semi_auto_strapping.png",
+            consumables: [
+              { name: "SBECO PP Strap (Semi-Auto Grade)", sku: "SBL-PPS-2", icon: "strap" },
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" }
+            ],
+            similar: ["fully-auto-strapping", "pp-strap-semi-auto"],
+            dateAdded: "2026-06-01",
+            isBestSeller: true
+          },
+          {
+            id: "fully-auto-strapping",
+            name: "Fully Automatic Strapping Machine",
+            sku: "SBL-FASM-01",
+            brand: "SEPACK DBA 200",
+            tagline: "High-speed fully automatic strapping machine with 400W power for 12mm PP straps",
+            badge: "Industrial",
+            description: "The SBECO Fully Automatic Strapping Machine powered by SEPACK DBA 200 is engineered for high-throughput production lines. With a powerful 400W motor dedicated to 12mm PP straps, it delivers continuous, hands-free strapping with an average cycle speed of 2.5 seconds. The machine features automatic strap feeding, tensioning, sealing, and cutting — eliminating manual intervention and maximizing productivity for heavy-duty industrial packaging operations.",
+            specs: {
+              "Brand": "SEPACK DBA 200",
+              "Type": "Strapping Machine",
+              "Suitable For": "12 mm PP Strap",
+              "Power Consumption": "400W",
+              "Cycle Speed (Avg)": "2.5 Sec (depending on package size)",
+              "Operation": "Fully Automatic"
+            },
+            imageUrl: "/images/fully_auto_strapping.png",
+            consumables: [
+              { name: "SBECO PP Strap (Machine Grade)", sku: "SBL-PPS-3", icon: "strap" },
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" }
+            ],
+            similar: ["semi-auto-strapping", "pp-strap-machine"],
+            dateAdded: "2026-06-01",
+            isBestSeller: true
+          },
         ],
       },
       {
-        id: "masking-tapes", name: "Masking & Painters Tapes",
+        id: "tensioners", name: "Strap Tensioners",
         products: [
-          { id: "mask-clean-100", name: "CleanEdge MT-100", sku: "SBL-MT-100", brand: "Super Bright Labs", tagline: "Zero-bleed masking tape for precision painting", badge: "Precision Grade", description: "CleanEdge MT-100 uses a specially treated crepe paper backing and a rubber-based adhesive calibrated for 14-day clean removal.", specs: { "Width": "48 mm", "Length": "55 m", "Backing": "Crepe Paper", "Adhesion": "Medium", "Max Temp": "80°C", "Removal": "Up to 14 days" }, imageUrl: "/images/masking_tape.png", consumables: [ { name: "Tape Dispenser (Wide)", sku: "SBL-TDW-05", price: "₹ 580", icon: "dispenser" }, { name: "Scraper Tool Set (3pc)", sku: "SBL-STS-03", price: "₹ 310", icon: "scraper" } ], similar: ["high-temp-masking", "specialty-alu"], dateAdded: "2026-01-15", isBestSeller: false },
-          { id: "high-temp-masking", name: "ThermoMask HT-260", sku: "SBL-HT-260", brand: "Super Bright Labs", tagline: "High-temperature masking tape for powder coat & oven use", badge: "High Temp", description: "ThermoMask HT-260 is manufactured from a glass-cloth base with silicone adhesive capable of withstanding continuous heat up to 260°C.", specs: { "Width": "25 mm", "Length": "33 m", "Backing": "Glass Cloth", "Adhesive": "Silicone", "Max Temp": "260°C", "Colour": "Tan" }, imageUrl: "/images/high_temp_tape.png", consumables: [ { name: "Heat-Resistant Gloves", sku: "SBL-HRG-01", price: "₹ 720", icon: "glove" }, { name: "Tape Punch Tool", sku: "SBL-TPT-02", price: "₹ 350", icon: "cutter" } ], similar: ["mask-clean-100", "specialty-alu"], dateAdded: "2026-05-01", isBestSeller: false },
+          {
+            id: "pp-tensioner-eco",
+            name: "SBECO PP Strap Tensioner ECO",
+            sku: "SBL-TEN-ECO",
+            brand: "Falcon",
+            tagline: "Durable metal tensioner with rubberized grip for 12–19mm PP straps",
+            badge: "Value Pick",
+            description: "The SBECO PP Strap Tensioner ECO by Falcon is a rugged, ergonomic hand tool designed for manual PP strapping operations. Built with a solid metal body and a comfortable rubberized grip, it provides consistent strap tensioning for 12mm to 19mm polypropylene straps. The gear-driven mechanism ensures reliable, repeatable tension with minimal operator fatigue, making it a cost-effective choice for warehouses and shipping departments.",
+            specs: {
+              "Brand": "Falcon",
+              "Type": "Tensioner",
+              "Suitable For": "12–19mm PP Strap",
+              "Body Material": "Metal",
+              "Grip": "Rubberized Grip",
+              "Grade": "ECO / Economy"
+            },
+            imageUrl: "/images/pp_tensioner_eco.png",
+            consumables: [
+              { name: "SBECO PP Strap (Manual Grade)", sku: "SBL-PPS-1", icon: "strap" },
+              { name: "PP Strap Seals 19mm", sku: "SBL-SEAL-19", icon: "seal" }
+            ],
+            similar: ["pp-tensioner-pro", "pp-sealer-eco"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pp-tensioner-pro",
+            name: "SBECO PP Strap Tensioner PRO",
+            sku: "SBL-TEN-PRO",
+            brand: "Eagle",
+            tagline: "Professional-grade metal tensioner for heavy-duty 12–19mm PP strapping",
+            badge: "Professional",
+            description: "The SBECO PP Strap Tensioner PRO by Eagle is a professional-grade hand tool built for demanding, high-volume strapping environments. Its heavy-duty metal construction and precision-engineered tensioning mechanism deliver superior grip strength and consistent tension across 12mm to 19mm PP straps. Ideal for industrial packaging, export shipments, and pallet securing where maximum strap tension is critical.",
+            specs: {
+              "Brand": "Eagle",
+              "Type": "Tensioner",
+              "Suitable For": "12–19mm PP Strap",
+              "Body Material": "Metal",
+              "Grade": "PRO / Professional"
+            },
+            imageUrl: "/images/pp_tensioner_pro.png",
+            consumables: [
+              { name: "SBECO PP Strap (Manual Grade)", sku: "SBL-PPS-1", icon: "strap" },
+              { name: "PP Strap Seals 15mm", sku: "SBL-SEAL-15", icon: "seal" }
+            ],
+            similar: ["pp-tensioner-eco", "pp-sealer-pro"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
       {
-        id: "industrial-strength", name: "Industrial Strength Tapes",
+        id: "sealers", name: "Strap Sealers",
         products: [
-          { id: "gaffer-ultra", name: "GripForce Gaffer G-700", sku: "SBL-GF-700", brand: "Super Bright Labs", tagline: "Professional cloth gaffer tape, residue-free removal", badge: "Pro AV Grade", description: "GripForce G-700 uses a woven polyethylene-coated cotton cloth reinforced with a natural rubber adhesive.", specs: { "Width": "50 mm", "Length": "50 m", "Backing": "Woven Cloth", "Adhesive": "Natural Rubber", "Finish": "Matte Black", "Tearable": "By Hand" }, imageUrl: "/images/gaffer_tape.png", consumables: [ { name: "Cable Tie Set 200pk", sku: "SBL-CTS-200", price: "₹ 180", icon: "tie" } ], similar: ["transfer-tape", "dst-pro-5000"], dateAdded: "2026-02-01", isBestSeller: true },
-          { id: "transfer-tape", name: "TransferPro TP-400", sku: "SBL-TP-400", brand: "Super Bright Labs", tagline: "Repositionable transfer tape for graphic mounting", badge: "Graphics Grade", description: "TransferPro TP-400 is a premium, clear, pressure-sensitive transfer tape engineered for sign, graphics, and vinyl application.", specs: { "Width": "305 mm", "Length": "91 m", "Adhesive": "Acrylic PSA", "Liner": "Gridded Kraft", "Clarity": "Optically Clear", "Reposition Window": "60 sec" }, imageUrl: "/images/transfer_tape.png", consumables: [ { name: "Squeegee Applicator", sku: "SBL-SQA-01", price: "₹ 160", icon: "squeegee" }, { name: "Cutting Mat A2", sku: "SBL-CMA-02", price: "₹ 780", icon: "cutter" } ], similar: ["dst-pro-5000", "foam-mounting"], dateAdded: "2026-02-01", isBestSeller: false },
-        ],
-      },
-      {
-        id: "specialty-foil", name: "Specialty & Foil Tapes",
-        products: [
-          { id: "specialty-alu", name: "AlumiFoil AF-200", sku: "SBL-AF-200", brand: "Super Bright Labs", tagline: "Aluminium foil tape for HVAC and thermal sealing", badge: "HVAC Grade", description: "AlumiFoil AF-200 features a dead-soft aluminium foil conformable around ducts, pipes, and irregular joints.", specs: { "Width": "72 mm", "Length": "55 m", "Foil Gauge": "0.05 mm", "Adhesive": "Acrylic", "UL Rating": "UL 181A-P", "EMI Shielding": "Yes" }, imageUrl: "/images/aluminium_foil_tape.png", consumables: [ { name: "Duct Tape Dispenser", sku: "SBL-DTD-01", price: "₹ 610", icon: "dispenser" } ], similar: ["gaffer-ultra", "transfer-tape"], dateAdded: "2026-05-01", isBestSeller: false },
+          {
+            id: "pp-sealer-eco",
+            name: "SBECO PP Strap Sealer ECO",
+            sku: "SBL-SEL-ECO",
+            brand: "Falcon",
+            tagline: "Metal sealer with rubberized grip for secure 12–19mm PP strap crimping",
+            badge: "Value Pick",
+            description: "The SBECO PP Strap Sealer ECO by Falcon is a dependable crimping tool for securing PP strap seals onto tensioned polypropylene strapping. Its sturdy metal body and rubberized grip provide comfortable, fatigue-free operation even during extended use. Compatible with 12mm to 19mm PP straps and matching galvanized steel seals, it's an essential tool for any manual strapping station.",
+            specs: {
+              "Brand": "Falcon",
+              "Type": "Sealer",
+              "Suitable For": "12–19mm PP Strap",
+              "Body Material": "Metal",
+              "Grip": "Rubberized Grip",
+              "Grade": "ECO / Economy"
+            },
+            imageUrl: "/images/pp_sealer_eco.png",
+            consumables: [
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" },
+              { name: "PP Strap Seals 15mm", sku: "SBL-SEAL-15", icon: "seal" }
+            ],
+            similar: ["pp-sealer-pro", "pp-tensioner-eco"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pp-sealer-pro",
+            name: "SBECO PP Strap Sealer PRO",
+            sku: "SBL-SEL-PRO",
+            brand: "Eagle",
+            tagline: "Stainless steel professional sealer with rubberized grip for 12–19mm PP straps",
+            badge: "Professional",
+            description: "The SBECO PP Strap Sealer PRO by Eagle is a premium-grade crimping tool constructed from stainless steel for long-lasting durability and corrosion resistance. The rubberized grip ensures comfortable handling, while the precision jaw mechanism delivers secure, consistent crimps on 12mm to 19mm PP strap seals. Designed for professional packaging environments where reliability and seal integrity are paramount.",
+            specs: {
+              "Brand": "Eagle",
+              "Type": "Sealer",
+              "Suitable For": "12–19mm PP Strap",
+              "Body Material": "Stainless Steel",
+              "Grip": "Rubberized Grip",
+              "Grade": "PRO / Professional"
+            },
+            imageUrl: "/images/pp_sealer_pro.png",
+            consumables: [
+              { name: "PP Strap Seals 19mm", sku: "SBL-SEAL-19", icon: "seal" },
+              { name: "PP Strap Seals 15mm", sku: "SBL-SEAL-15", icon: "seal" }
+            ],
+            similar: ["pp-sealer-eco", "pp-tensioner-pro"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
     ],
   },
   {
-    id: "power-tools",
-    name: "Power Tools",
-    imageUrl: "/images/category_power_tools.png",
-    description: "Professional-grade drills, grinders, saws, and precision measuring instruments.",
+    id: "pp-straps-seals",
+    name: "PP Straps & Seals",
     subcategories: [
       {
-        id: "drills-drivers", name: "Drills & Drivers",
+        id: "pp-straps", name: "PP Straps",
         products: [
-          { id: "bosch-gsb-18v", name: "Bosch GSB 18V-85 C", sku: "BSH-GSB18V85", brand: "Bosch Professional", tagline: "Connected brushless combi drill with 85 Nm torque", badge: "Top Pick", description: "The Bosch GSB 18V-85 C Professional is a high-performance brushless combi drill with Connectivity Module.", specs: { "Max Torque": "85 Nm", "Chuck": "13 mm All-Metal", "Speeds": "0–550 / 0–2,100 rpm", "Impact Rate": "0–33,600 bpm", "Battery": "18 V (Li-Ion)", "Weight": "2.0 kg (with 4 Ah)" }, imageUrl: "/images/cordless_drill.png", consumables: [ { name: "Bosch 4 Ah ProCORE18V Battery", sku: "BSH-PC18V4", price: "₹ 5,200", icon: "battery" }, { name: "X-Line Drill & Bit Set (93 pc)", sku: "BSH-XLN93", price: "₹ 1,450", icon: "bit-set" } ], similar: ["dewalt-dcd996", "bosch-go-2"], dateAdded: "2026-03-01", isBestSeller: true },
-          { id: "dewalt-dcd996", name: "DeWalt DCD996P2", sku: "DWL-DCD996P2", brand: "DeWalt", tagline: "3-speed brushless hammer drill/driver, 95 Nm", badge: "XR Series", description: "The DeWalt DCD996P2 features a 3-speed all-metal transmission delivering up to 95 Nm torque.", specs: { "Max Torque": "95 Nm", "Chuck": "13 mm Ratcheting", "Speeds": "3-Speed", "Impact Rate": "38,250 bpm", "Battery": "20V MAX XR 5 Ah", "Weight": "2.1 kg" }, imageUrl: "/images/dewalt_drill.png", consumables: [ { name: "DeWalt 5Ah XR Battery (2-Pack)", sku: "DWL-DCB205-2", price: "₹ 8,400", icon: "battery" } ], similar: ["bosch-gsb-18v", "bosch-go-2"], dateAdded: "2026-03-01", isBestSeller: true },
-          { id: "bosch-go-2", name: "Bosch GO 2 Screwdriver", sku: "BSH-GO2", brand: "Bosch", tagline: "Smart compact electric screwdriver, pocket-sized", badge: "Compact", description: "The Bosch GO 2 is a smart 3.6V screwdriver featuring Bosch SmartSense auto-start technology.", specs: { "Voltage": "3.6 V", "Max Torque": "5 Nm", "No-Load Speed": "200 rpm", "Bits Included": "5 pc", "Battery": "Li-Ion (built-in)", "Charge": "USB-C 2 hr" }, imageUrl: "/images/compact_screwdriver.png", consumables: [ { name: "Flex Shaft Extension", sku: "BSH-FSE-01", price: "₹ 480", icon: "bit-set" } ], similar: ["bosch-gsb-18v", "dewalt-dcd996"], dateAdded: "2026-03-15", isBestSeller: false },
+          {
+            id: "pp-strap-manual",
+            name: "SBECO Manual PP Strap",
+            sku: "SBL-PPS-1",
+            brand: "SBECO",
+            tagline: "Manual grade PP strap in 12mm & 19mm widths, available in 7 vibrant colours",
+            badge: "Popular",
+            description: "The SBECO Manual PP Strap (PP Strap 1) is designed for hand strapping applications using manual tensioners and sealers. Available in 12mm and 19mm widths with a consistent 0.5mm thickness, it provides reliable holding force for general-purpose bundling and packaging. Offered in 7 colour options — White, Yellow, Black, Grey, Blue, Red, and Green — and supplied in convenient 3Kg and 5Kg rolls for heat sealing applications.",
+            specs: {
+              "Grade": "Manual",
+              "Strap Width": "12mm, 19mm",
+              "Thickness": "0.5mm",
+              "Color Options": "White, Yellow, Black, Grey, Blue, Red, Green",
+              "Weight": "3Kg & 5Kg",
+              "Usage": "Heat Sealing"
+            },
+            imageUrl: "/images/pp_strap_rolls.png",
+            consumables: [
+              { name: "PP Strap Tensioner ECO", sku: "SBL-TEN-ECO", icon: "tool" },
+              { name: "PP Strap Sealer ECO", sku: "SBL-SEL-ECO", icon: "tool" },
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" }
+            ],
+            similar: ["pp-strap-semi-auto", "pp-strap-machine"],
+            dateAdded: "2026-06-01",
+            isBestSeller: true
+          },
+          {
+            id: "pp-strap-semi-auto",
+            name: "SBECO Semi-Automatic PP Strap",
+            sku: "SBL-PPS-2",
+            brand: "SBECO",
+            tagline: "Semi-automatic grade PP strap in 9mm, 12mm & 15mm for machine use",
+            badge: "Machine Grade",
+            description: "The SBECO Semi-Automatic PP Strap (PP Strap 2) is optimized for use with semi-automatic strapping machines. Available in 9mm, 12mm, and 15mm widths with a uniform 0.5mm thickness, it feeds smoothly through machine guides and tensioning mechanisms. Supplied in 3Kg and 5Kg rolls across 7 colour options, this strap is ideal for medium-volume production lines requiring consistent, reliable heat-sealed closures.",
+            specs: {
+              "Grade": "Semi-Automatic",
+              "Strap Width": "9mm, 12mm, 15mm",
+              "Thickness": "0.5mm",
+              "Color Options": "White, Yellow, Black, Grey, Blue, Red, Green",
+              "Weight": "3Kg & 5Kg",
+              "Usage": "Heat Sealing"
+            },
+            imageUrl: "/images/pp_strap_rolls.png",
+            consumables: [
+              { name: "Semi Automatic Strapping Machine", sku: "SBL-SASM-01", icon: "machine" },
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" }
+            ],
+            similar: ["pp-strap-manual", "pp-strap-machine", "semi-auto-strapping"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pp-strap-machine",
+            name: "SBECO Machine Grade PP Strap",
+            sku: "SBL-PPS-3",
+            brand: "SBECO",
+            tagline: "Machine grade PP strap for fully automatic strapping systems",
+            badge: "Automatic",
+            description: "The SBECO Machine Grade PP Strap (PP Strap 3) is engineered for fully automatic strapping machines. Available in 12mm and 19mm widths with 0.5mm thickness, it is designed for continuous high-speed feeding without jams or misfeeds. Supplied in 3Kg and 5Kg rolls across 7 colour options, this strap delivers consistent heat-sealed closures at high throughput — perfect for production lines, distribution centres, and export packaging.",
+            specs: {
+              "Grade": "Machine Grade / Automatic",
+              "Strap Width": "12mm, 19mm",
+              "Thickness": "0.5mm",
+              "Color Options": "White, Yellow, Black, Grey, Blue, Red, Green",
+              "Weight": "3Kg & 5Kg",
+              "Usage": "Heat Sealing"
+            },
+            imageUrl: "/images/pp_strap_rolls.png",
+            consumables: [
+              { name: "Fully Automatic Strapping Machine", sku: "SBL-FASM-01", icon: "machine" },
+              { name: "PP Strap Seals 12mm", sku: "SBL-SEAL-12", icon: "seal" }
+            ],
+            similar: ["pp-strap-manual", "pp-strap-semi-auto", "fully-auto-strapping"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
       {
-        id: "grinders-sanders", name: "Grinders & Sanders",
+        id: "pp-seals", name: "PP Strap Seals",
         products: [
-          { id: "bosch-gws18v", name: "Bosch GWS 18V-10 SC", sku: "BSH-GWS18V10", brand: "Bosch Professional", tagline: "Brushless cordless angle grinder with KickBack Control", badge: "Safety Rated", description: "The GWS 18V-10 SC features Bosch's KickBack Control and Restart Protection for maximum operator safety.", specs: { "Disc Dia.": "125 mm", "No-load Speed": "8,500 rpm", "Spindle Thread": "M14", "Safety": "KickBack Control", "Battery": "18 V Li-Ion", "Weight": "1.8 kg" }, imageUrl: "/images/angle_grinder.png", consumables: [ { name: "Expert Metal Grinding Disc (5pk)", sku: "BSH-GMD-5PK", price: "₹ 760", icon: "disc" } ], similar: ["camo-marking-tool", "bosch-gsb-18v"], dateAdded: "2026-03-15", isBestSeller: false },
-        ],
-      },
-      {
-        id: "saws-cutters", name: "Saws & Cutters",
-        products: [
-          { id: "bosch-gst-18v", name: "Bosch GST 18V-Li B", sku: "BSH-GST18VLI", brand: "Bosch Professional", tagline: "Cordless jigsaw with Constant Electronic speed control", badge: "Precision Cut", description: "The Bosch GST 18V-Li B jigsaw delivers clean, precise cuts in wood, metal, ceramics, and plastics up to 120 mm.", specs: { "Stroke Rate": "0–3,100 spm", "Cutting (Wood)": "120 mm", "Cutting (Metal)": "10 mm", "Blade System": "T-Shank SDS", "Orbit Settings": "4-stage", "Battery": "18 V Li-Ion" }, imageUrl: "/images/cordless_jigsaw.png", consumables: [ { name: "T-Shank Wood Blade Set (5pk)", sku: "BSH-TWB-5", price: "₹ 580", icon: "blade" } ], similar: ["bosch-gsb-18v", "bosch-gws18v"], dateAdded: "2026-04-01", isBestSeller: false },
-        ],
-      },
-      {
-        id: "measuring-detection", name: "Measuring & Detection",
-        products: [
-          { id: "bosch-plr-30c", name: "Bosch PLR 30 C Laser", sku: "BSH-PLR30C", brand: "Bosch", tagline: "30m Bluetooth laser measure with free app", badge: "Smart Tool", description: "The Bosch PLR 30 C laser distance measurer delivers ±1.5 mm accuracy up to 30 m.", specs: { "Range": "0.05–30 m", "Accuracy": "±1.5 mm", "Display": "Backlit LCD", "Bluetooth": "4.0", "Battery": "2 × AAA", "IP Rating": "IP 54" }, imageUrl: "/images/laser_measure.png", consumables: [ { name: "Measuring Tape 5m", sku: "BSH-MT-5M", price: "₹ 380", icon: "tape-measure" } ], similar: ["bosch-go-2", "camo-marking-tool"], dateAdded: "2026-04-01", isBestSeller: false },
-          { id: "camo-marking-tool", name: "Camo Marksman Pro-NB", sku: "CMO-MPN-1", brand: "Camo", tagline: "Deck board spacing and fastening guide tool", badge: "Deck Pro", description: "The Camo Marksman Pro-NB drives Camo fasteners at the perfect angle for hidden deck fastening.", specs: { "Board Width": "up to 145 mm", "Drive Angle": "15°", "Fastener Type": "Camo Edge", "Material": "Aluminium Body", "Compatible": "Composite / Wood", "Boards/Bucket": "Up to 1,750 sqft" }, imageUrl: "/images/deck_fastening_tool.png", consumables: [ { name: "Camo Edge Fasteners 350pk", sku: "CMO-CEF-350", price: "₹ 1,240", icon: "screw" } ], similar: ["bosch-plr-30c", "bosch-gsb-18v"], dateAdded: "2026-04-15", isBestSeller: false },
+          {
+            id: "pp-seal-12mm",
+            name: "SBECO PP Strap Seals 12MM",
+            sku: "SBL-SEAL-12",
+            brand: "SBECO",
+            tagline: "Galvanized steel seals for 12mm polypropylene strapping",
+            badge: "Essential",
+            description: "SBECO PP Strap Seals 12MM are precision-stamped galvanized steel clips designed for securing 12mm polypropylene straps. Available in silver and golden finishes, these seals provide a strong, tamper-evident closure when crimped with a compatible sealer tool. Their galvanized coating ensures corrosion resistance for both indoor and outdoor applications.",
+            specs: {
+              "Suitable For": "12mm Polypropylene Strap",
+              "Material": "Galvanized Steel",
+              "Colors": "Silver / Golden",
+              "Type": "Crimp Seal"
+            },
+            imageUrl: "/images/pp_strap_seals.png",
+            consumables: [
+              { name: "PP Strap Sealer ECO", sku: "SBL-SEL-ECO", icon: "tool" },
+              { name: "SBECO Manual PP Strap", sku: "SBL-PPS-1", icon: "strap" }
+            ],
+            similar: ["pp-seal-15mm", "pp-seal-19mm"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pp-seal-15mm",
+            name: "SBECO PP Strap Seals 15MM",
+            sku: "SBL-SEAL-15",
+            brand: "SBECO",
+            tagline: "Galvanized steel seals for 15mm polypropylene strapping",
+            badge: "Essential",
+            description: "SBECO PP Strap Seals 15MM are robust galvanized steel clips engineered for 15mm polypropylene straps. Available in silver and golden finishes, they deliver reliable, tamper-evident closures for medium-duty strapping applications. Ideal for carton sealing, bundling, and pallet securing.",
+            specs: {
+              "Suitable For": "15mm Polypropylene Strap",
+              "Material": "Galvanized Steel",
+              "Colors": "Silver / Golden",
+              "Type": "Crimp Seal"
+            },
+            imageUrl: "/images/pp_strap_seals.png",
+            consumables: [
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" },
+              { name: "SBECO Semi-Automatic PP Strap", sku: "SBL-PPS-2", icon: "strap" }
+            ],
+            similar: ["pp-seal-12mm", "pp-seal-19mm"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pp-seal-19mm",
+            name: "SBECO PP Strap Seals 19MM",
+            sku: "SBL-SEAL-19",
+            brand: "SBECO",
+            tagline: "Heavy-duty galvanized steel seals for 19mm polypropylene strapping",
+            badge: "Heavy Duty",
+            description: "SBECO PP Strap Seals 19MM are heavy-duty galvanized steel clips for the widest polypropylene straps in the SBECO range. Available in silver and golden finishes, they provide maximum holding strength for heavy loads, pallets, and export shipments. Compatible with both ECO and PRO series sealers.",
+            specs: {
+              "Suitable For": "19mm Polypropylene Strap",
+              "Material": "Galvanized Steel",
+              "Colors": "Silver / Golden",
+              "Type": "Crimp Seal"
+            },
+            imageUrl: "/images/pp_strap_seals.png",
+            consumables: [
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" },
+              { name: "PP Strap Tensioner PRO", sku: "SBL-TEN-PRO", icon: "tool" }
+            ],
+            similar: ["pp-seal-12mm", "pp-seal-15mm"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
     ],
   },
   {
-    id: "straps-and-strapping-solutions",
-    name: "Straps & Strapping Solutions",
-    imageUrl: "/images/category_straps.png",
-    description: "Stretch films, edge protectors, bubble wrap, and foam packaging for transit protection.",
+    id: "pet-straps-seals",
+    name: "PET Straps & Seals",
     subcategories: [
       {
-        id: "bubble-wrap", name: "Bubble Wrap",
+        id: "pet-straps-12mm", name: "PET Straps 12mm",
         products: [
-          { id: "bw-small-500", name: "ShieldAir BW-10 (Small Bubble)", sku: "SBL-BW-10", brand: "Super Bright Labs", tagline: "Small 10mm bubble wrap for fragile electronics & glassware", badge: "Electronics Safe", description: "ShieldAir BW-10 features uniform 10 mm air bubbles for cushioning delicate items.", specs: { "Bubble Diameter": "10 mm", "Bubble Height": "8 mm", "Width": "500 mm", "Roll Length": "100 m", "Material": "Virgin LDPE", "Anti-Static": "Optional" }, imageUrl: "/images/bubble_wrap_small.png", consumables: [ { name: "Stretch Film Clear 500m Roll", sku: "SBL-SF-500", price: "₹ 680", icon: "roll" } ], similar: ["bw-large-1000", "foam-sheet"], dateAdded: "2026-01-20", isBestSeller: true },
-          { id: "bw-large-1000", name: "ShieldAir BW-30 (Large Bubble)", sku: "SBL-BW-30", brand: "Super Bright Labs", tagline: "30mm large-bubble wrap for heavy & bulky goods", badge: "Heavy Duty", description: "ShieldAir BW-30 uses large 30 mm diameter bubbles to provide superior cushioning.", specs: { "Bubble Diameter": "30 mm", "Bubble Height": "22 mm", "Width": "750 mm", "Roll Length": "50 m", "Film Gauge": "100 micron", "Colour": "Clear" }, imageUrl: "/images/bubble_wrap_large.png", consumables: [ { name: "Heavy Duty Packing Tape", sku: "SBL-HDT-01", price: "₹ 160", icon: "tape-floor" } ], similar: ["bw-small-500", "stretch-film"], dateAdded: "2026-01-20", isBestSeller: false },
+          {
+            id: "pet-strap-1260",
+            name: "SBECO PET Strap 1260",
+            sku: "SBL-PET-1260",
+            brand: "SBECO",
+            tagline: "12mm recycled PET embossed strap — 2000m per roll for heavy-duty applications",
+            badge: "Eco Friendly",
+            description: "The SBECO PET Strap 1260 is a high-strength embossed polyester strap manufactured from recycled PET material. At 12mm width and available in 0.6mm or 0.8mm thickness, it offers an eco-friendly alternative to steel strapping while maintaining exceptional tensile strength and elongation recovery. Each roll provides 2000 metres of continuous strapping, making it ideal for securing heavy pallets, timber, bricks, and export cargo.",
+            specs: {
+              "Material Type": "Recycled PET",
+              "Width": "12mm",
+              "Thickness": "0.6 mm / 0.8 mm",
+              "Length": "2000 m",
+              "Type": "Embossed",
+              "Colour": "Green"
+            },
+            imageUrl: "/images/pet_strap_green.png",
+            consumables: [
+              { name: "PP Strap Tensioner PRO", sku: "SBL-TEN-PRO", icon: "tool" },
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" }
+            ],
+            similar: ["pet-strap-b1260", "pet-strap-1580", "pet-strap-19127"],
+            dateAdded: "2026-06-01",
+            isBestSeller: true
+          },
+          {
+            id: "pet-strap-b1260",
+            name: "SBECO PET Strap Black 1270",
+            sku: "SBL-PET-B1260",
+            brand: "SBECO",
+            tagline: "12mm black recycled PET embossed strap — 2000m per roll",
+            badge: "Heavy Duty",
+            description: "The SBECO PET Strap Black 1270 (B1260) is a premium black-coloured embossed polyester strap made from recycled PET. With 12mm width and 0.6mm or 0.8mm thickness options, it delivers the same high performance as its green counterpart while offering a distinctive black finish preferred for certain industries and export requirements. Each roll provides 2000 metres of continuous strapping.",
+            specs: {
+              "Material Type": "Recycled PET",
+              "Width": "12mm",
+              "Thickness": "0.6 mm / 0.8 mm",
+              "Length": "2000 m",
+              "Type": "Embossed",
+              "Colour": "Black"
+            },
+            imageUrl: "/images/pet_strap_black.png",
+            consumables: [
+              { name: "PP Strap Tensioner PRO", sku: "SBL-TEN-PRO", icon: "tool" },
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" }
+            ],
+            similar: ["pet-strap-1260", "pet-strap-1580", "pet-strap-19127"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
       {
-        id: "foam-packaging", name: "Foam Packaging",
+        id: "pet-straps-wide", name: "PET Straps 15mm & 19mm",
         products: [
-          { id: "foam-sheet", name: "ProFoam PF-200 Sheet", sku: "SBL-PF-200", brand: "Super Bright Labs", tagline: "Polyethylene foam sheet for interleaving & wrapping", badge: "Chemical Resistant", description: "ProFoam PF-200 is a cross-linked polyethylene foam sheet offering excellent cushioning.", specs: { "Density": "30 kg/m³", "Thickness": "5 mm", "Sheet Size": "1000×2000 mm", "Colour": "White", "Temp Range": "−50°C to 100°C", "Recyclable": "Yes" }, imageUrl: "/images/foam_sheet.png", consumables: [ { name: "Foam Cutting Knife Set", sku: "SBL-FCK-03", price: "₹ 340", icon: "cutter" } ], similar: ["foam-inserts", "bw-small-500"], dateAdded: "2026-02-10", isBestSeller: false },
-          { id: "foam-inserts", name: "CubeForm CF-100 Custom Insert", sku: "SBL-CF-100", brand: "Super Bright Labs", tagline: "Pre-scored foam bun for custom pick-and-pluck inserts", badge: "Custom Fit", description: "CubeForm CF-100 is a high-density pre-scored foam bun for creating precision pick-and-pluck foam inserts.", specs: { "Density": "55 kg/m³", "Block Size": "455×330×50 mm", "Cube Size": "12×12×12 mm", "Colour": "Black", "Material": "Polyurethane", "Layers": "Stackable" }, imageUrl: "/images/foam_insert.png", consumables: [ { name: "Foam Rail Case 550×400", sku: "SBL-FRC-01", price: "₹ 1,900", icon: "case" } ], similar: ["foam-sheet", "edge-protectors"], dateAdded: "2026-02-10", isBestSeller: false },
-        ],
-      },
-      {
-        id: "stretch-films", name: "Stretch Films",
-        products: [
-          { id: "stretch-film", name: "PalletPro SF-23 Stretch Film", sku: "SBL-SF-23", brand: "Super Bright Labs", tagline: "Machine stretch film 23 micron for pallet unitisation", badge: "Machine Grade", description: "PalletPro SF-23 is a high-performance machine stretch film offering outstanding load containment.", specs: { "Gauge": "23 micron", "Width": "500 mm", "Length": "2,500 m", "Elongation": "Up to 250%", "Cast/Blown": "Cast", "Core": "76 mm" }, imageUrl: "/images/stretch_film.png", consumables: [ { name: "Film Cutter Safety Tool", sku: "SBL-FCT-01", price: "₹ 220", icon: "cutter" } ], similar: ["bw-large-1000", "edge-protectors"], dateAdded: "2026-04-20", isBestSeller: false },
-        ],
-      },
-      {
-        id: "edge-protectors-cat", name: "Edge Protectors",
-        products: [
-          { id: "edge-protectors", name: "CornerShield CE-75 Angle Board", sku: "SBL-CE-75", brand: "Super Bright Labs", tagline: "Solid paperboard edge protector for pallet & panel protection", badge: "Load Bearing", description: "CornerShield CE-75 is a heavy-duty solid fibreboard angle board that protects pallet edges and corners.", specs: { "Angle": "90°", "Wing Width": "75×75 mm", "Thickness": "4 mm", "Length": "1000 mm", "Load Rating": "450 kg/lm", "Recycled Content": "100%" }, imageUrl: "/images/edge_protectors.png", consumables: [ { name: "Polyester Strapping 16mm (800m)", sku: "SBL-PES-800", price: "₹ 2,200", icon: "strap" } ], similar: ["stretch-film", "foam-inserts"], dateAdded: "2026-04-20", isBestSeller: false },
+          {
+            id: "pet-strap-1580",
+            name: "SBECO PET Strap 1580",
+            sku: "SBL-PET-1580",
+            brand: "SBECO",
+            tagline: "15mm embossed PET strap at 0.8mm thickness — 1350m per roll",
+            badge: "Mid Range",
+            description: "The SBECO PET Strap 1580 is a 15mm wide embossed polyester strap offering the perfect balance between flexibility and tensile strength. At 0.8mm thickness and 1350 metres per roll, it's designed for medium to heavy-duty strapping applications where a wider strap profile provides better load distribution. Ideal for securing pallets, crates, and heavy cartons in manufacturing and logistics.",
+            specs: {
+              "Width": "15 mm",
+              "Thickness": "0.8 mm",
+              "Length": "1350 m",
+              "Type": "Embossed",
+              "Colour": "Green"
+            },
+            imageUrl: "/images/pet_strap_green.png",
+            consumables: [
+              { name: "PP Strap Tensioner PRO", sku: "SBL-TEN-PRO", icon: "tool" },
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" }
+            ],
+            similar: ["pet-strap-1260", "pet-strap-19127", "pet-strap-b1260"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
+          {
+            id: "pet-strap-19127",
+            name: "SBECO PET Strap 19127",
+            sku: "SBL-PET-19127",
+            brand: "SBECO",
+            tagline: "19mm heavy-duty embossed PET strap at 1.27mm — maximum strength",
+            badge: "Max Strength",
+            description: "The SBECO PET Strap 19127 is the heaviest-duty strap in the SBECO PET range. At 19mm width and a robust 1.27mm thickness, it delivers maximum tensile strength for the most demanding strapping applications — from heavy machinery and steel coils to construction materials and oversized export cargo. Each roll provides 650 metres of premium embossed strapping.",
+            specs: {
+              "Width": "19 mm",
+              "Thickness": "1.27 mm",
+              "Length": "650 m",
+              "Type": "Embossed",
+              "Colour": "Green"
+            },
+            imageUrl: "/images/pet_strap_green.png",
+            consumables: [
+              { name: "PP Strap Tensioner PRO", sku: "SBL-TEN-PRO", icon: "tool" },
+              { name: "PP Strap Sealer PRO", sku: "SBL-SEL-PRO", icon: "tool" }
+            ],
+            similar: ["pet-strap-1580", "pet-strap-1260", "pet-strap-b1260"],
+            dateAdded: "2026-06-01",
+            isBestSeller: false
+          },
         ],
       },
     ],
   },
-  {
-    id: "nailing-and-stapling-solutions",
-    name: "Nailing and Stapling Solutions",
-    imageUrl: "/images/category_nailing.png",
-    description: "Pneumatic nail guns, staple guns, brad nailers, and fastening accessories.",
-    subcategories: []
-  },
-  {
-    id: "faculty-management",
-    name: "Faculty Management",
-    imageUrl: "/images/category_facility.png",
-    description: "Safety equipment, maintenance tools, cleaning supplies, and facility essentials.",
-    subcategories: []
-  }
 ];
 
 // Build flat product index
