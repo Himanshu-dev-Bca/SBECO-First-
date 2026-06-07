@@ -97,7 +97,7 @@ export default function OurTeam() {
             <p className="text-[12px] text-gray-600 leading-relaxed">Organized teams ensuring operational excellence.</p>
           </div>
           <div className="border-l-4 border-accent pl-6">
-            <div className="text-[24px] font-extrabold text-accent mb-2">25+</div>
+            <div className="text-[24px] font-extrabold text-accent mb-2">40+</div>
             <div className="text-[12px] font-bold uppercase tracking-[.06em] text-black mb-1">Years Combined</div>
             <p className="text-[12px] text-gray-600 leading-relaxed">Experience in industrial packaging and tools.</p>
           </div>
