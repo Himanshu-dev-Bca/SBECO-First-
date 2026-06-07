@@ -79,19 +79,21 @@ export default function Header() {
                           {cat.subcategories.map(sub => (
                             <div key={sub.id}>
                               <div className="text-[10px] font-semibold tracking-[.06em] uppercase text-gray-400 mb-1.5">{sub.name}</div>
-                              <ul className="space-y-1 list-none">
-                                {sub.products.map(p => (
-                                  <li key={p.id}>
-                                    <Link
-                                      to={`/products/${p.id}`}
-                                      className="text-[12px] text-gray-600 no-underline hover:text-accent transition-colors flex items-center gap-1.5 py-0.5"
-                                    >
-                                      <span className="w-1 h-1 rounded-full bg-gray-300 shrink-0" />
-                                      {p.name}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                              {sub.products ? (
+                                <ul className="space-y-1 list-none">
+                                  {sub.products.map(p => (
+                                    <li key={p.id}>
+                                      <Link
+                                        to={`/products/${p.id}`}
+                                        className="text-[12px] text-gray-600 no-underline hover:text-accent transition-colors flex items-center gap-1.5 py-0.5"
+                                      >
+                                        <span className="w-1 h-1 rounded-full bg-gray-300 shrink-0" />
+                                        {p.name}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              ) : null}
                             </div>
                           ))}
                         </div>

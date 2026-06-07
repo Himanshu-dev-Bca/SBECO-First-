@@ -61,7 +61,13 @@ export default function Catalog() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {CATALOGUE.map((c, i) => {
-              const productCount = c.subcategories.reduce((acc, sub) => acc + sub.products.length, 0);
+              const productCount = c.subcategories.reduce((acc, sub) => {
+                let count = sub.products ? sub.products.length : 0;
+                if (sub.nestedSubcategories) {
+                  count += sub.nestedSubcategories.reduce((nestedAcc, nested) => nestedAcc + (nested.products ? nested.products.length : 0), 0);
+                }
+                return acc + count;
+              }, 0);
               return (
                 <Link key={c.id} to={`/products?category=${c.id}`}
                   className="group relative border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(0,0,0,.1)] transition-all duration-300 animate-fade-up"

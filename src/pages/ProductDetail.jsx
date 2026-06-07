@@ -31,13 +31,30 @@ export default function ProductDetail() {
             {cat.subcategories.map(sub => (
               <div key={sub.id}>
                 <div className="px-6 py-2 text-[10px] tracking-[.06em] uppercase text-gray-400 font-semibold">{sub.name}</div>
-                {sub.products.map(p => (
+                
+                {/* Regular products */}
+                {sub.products && sub.products.map(p => (
                   <button key={p.id} onClick={() => navigate(`/products/${p.id}`)}
                     className={`w-full text-left px-6 py-2 text-[12px] border-none cursor-pointer transition-all ${
                       p.id === productId ? 'bg-accent text-white font-semibold' : 'bg-white text-gray-600 hover:bg-gray-100'
                     }`}>
                     {p.name}
                   </button>
+                ))}
+                
+                {/* Nested subcategories */}
+                {sub.nestedSubcategories && sub.nestedSubcategories.map(nested => (
+                  <div key={nested.id}>
+                    <div className="px-8 py-1.5 text-[9px] tracking-[.06em] uppercase text-gray-300 font-semibold bg-gray-50">{nested.name}</div>
+                    {nested.products && nested.products.map(p => (
+                      <button key={p.id} onClick={() => navigate(`/products/${p.id}`)}
+                        className={`w-full text-left px-8 py-2 text-[11px] border-none cursor-pointer transition-all ${
+                          p.id === productId ? 'bg-accent text-white font-semibold' : 'bg-white text-gray-600 hover:bg-gray-100'
+                        }`}>
+                        {p.name}
+                      </button>
+                    ))}
+                  </div>
                 ))}
               </div>
             ))}
@@ -54,6 +71,12 @@ export default function ProductDetail() {
           <span>{product.catName}</span>
           <span>›</span>
           <span>{product.subName}</span>
+          {product.nestedSubName && (
+            <>
+              <span>›</span>
+              <span>{product.nestedSubName}</span>
+            </>
+          )}
           <span>›</span>
           <span className="text-black font-semibold">{product.name}</span>
           <button onClick={() => setSidebarOpen(!sidebarOpen)}
