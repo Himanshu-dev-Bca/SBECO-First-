@@ -8,7 +8,6 @@ const NAV = [
   { to: '/products', label: 'Products', hasMega: true },
   { to: '/photos', label: 'Photos' },
   { 
-    to: '#', 
     label: 'More', 
     hasDropdown: true,
     items: [
@@ -41,26 +40,40 @@ export default function Header() {
 
       <ul className="hidden md:flex gap-10 list-none">
         {NAV.map((item) => (
-          <li key={item.to} className={item.hasMega || item.hasDropdown ? 'group/mega relative' : ''}>
-            <Link
-              to={item.to}
-              className={`nav-link text-[11px] tracking-[.1em] uppercase font-semibold no-underline transition-all duration-200 relative pb-1 ${
-                pathname === item.to || (item.hasMega && pathname.startsWith('/products')) ? 'text-accent' : 'text-gray-600 hover:text-accent'
-              }`}
-            >
-              {item.label}
-              {(item.hasMega || item.hasDropdown) && (
+          <li key={item.to || item.label} className={item.hasMega || item.hasDropdown ? 'group/mega relative' : ''}>
+            {item.hasDropdown ? (
+              <button
+                type="button"
+                className={`nav-link text-[11px] tracking-[.1em] uppercase font-semibold no-underline transition-all duration-200 relative pb-1 ${
+                  pathname === item.to || (item.hasMega && pathname.startsWith('/products')) ? 'text-accent' : 'text-gray-600 hover:text-accent'
+                }`}
+              >
+                {item.label}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3 inline-block ml-1.5 -mt-px opacity-60 group-hover/mega:opacity-100 transition-opacity">
                   <path fillRule="evenodd" d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z" clipRule="evenodd" />
                 </svg>
-              )}
-              {/* Hover underline effect */}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover/mega:w-full transition-all duration-300" />
-            </Link>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover/mega:w-full transition-all duration-300" />
+              </button>
+            ) : (
+              <Link
+                to={item.to}
+                className={`nav-link text-[11px] tracking-[.1em] uppercase font-semibold no-underline transition-all duration-200 relative pb-1 ${
+                  pathname === item.to || (item.hasMega && pathname.startsWith('/products')) ? 'text-accent' : 'text-gray-600 hover:text-accent'
+                }`}
+              >
+                {item.label}
+                {(item.hasMega || item.hasDropdown) && (
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3 inline-block ml-1.5 -mt-px opacity-60 group-hover/mega:opacity-100 transition-opacity">
+                    <path fillRule="evenodd" d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z" clipRule="evenodd" />
+                  </svg>
+                )}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover/mega:w-full transition-all duration-300" />
+              </Link>
+            )}
 
             {/* Mega Menu Dropdown */}
             {item.hasMega && (
-              <div className="invisible opacity-0 group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-6 z-50">
+              <div className="pointer-events-none invisible opacity-0 group-hover/mega:pointer-events-auto group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-6 z-50">
                 <div className="bg-white border border-gray-200 shadow-[0_24px_80px_rgba(0,0,0,.12)] w-[720px] max-w-[90vw] rounded-sm">
                   {/* Header */}
                   <div className="flex items-center justify-between px-8 py-5 border-b border-gray-100 bg-gray-50">
@@ -108,7 +121,7 @@ export default function Header() {
 
             {/* Simple Dropdown */}
             {item.hasDropdown && (
-              <div className="invisible opacity-0 group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-6 z-50">
+              <div className="pointer-events-none invisible opacity-0 group-hover/mega:pointer-events-auto group-hover/mega:visible group-hover/mega:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-6 z-50">
                 <div className="bg-white border border-gray-200 shadow-[0_24px_80px_rgba(0,0,0,.12)] min-w-[220px] rounded-sm overflow-hidden">
                   <ul className="flex flex-col list-none p-0 m-0">
                     {item.items.map((subItem, idx) => (

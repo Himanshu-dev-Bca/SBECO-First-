@@ -96,7 +96,7 @@ export default function Home() {
       </Hero>
 
       {/* Stats */}
-      <div className="flex flex-wrap bg-white border-b border-gray-200">
+      <div className="flex flex-wrap bg-white border-b border-gray-200 animate-fade-up">
         {[
           { num: '40+', label: 'Years of Experience' },
           { num: '200+', label: 'Products Available' },
@@ -110,10 +110,12 @@ export default function Home() {
         ))}
       </div>
 
-      <Carousel />
+      <div className="animate-fade-up">
+        <Carousel />
+      </div>
 
       {/* Features */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-200 bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-200 bg-white animate-fade-up">
         {[
           { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>, title: 'Quality Assured', desc: 'Every product tested and certified for industrial-grade performance and durability.' },
           { icon: <><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></>, title: 'Trusted Brands', desc: 'Authorised stockists for Bosch, DeWalt, Camo, and our own Super Bright Labs range.' },

@@ -19,7 +19,7 @@ export default function Hero({ label, title, subtitle, children, image }) {
       )}
 
       {/* Content */}
-      <div className="px-8 md:px-12 pt-16 md:pt-24 pb-14 md:pb-20 relative z-10 w-full">
+      <div className="px-8 md:px-12 pt-16 md:pt-24 pb-14 md:pb-20 relative z-10 w-full animate-fade-up">
         {label && (
           <div className="text-[10px] tracking-[.2em] uppercase text-muted mb-3.5">
             {label}
