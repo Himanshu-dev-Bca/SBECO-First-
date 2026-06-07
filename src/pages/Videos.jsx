@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 
 const VIDEOS = [
-  { id: '1', youtubeId: 'VIDEO_ID_1', title: 'Bosch Power Tools Showcase', duration: '3:45', category: 'Product Demo', description: 'Comprehensive overview of professional power tools for industrial applications.' },
+  { id: '1', youtubeId: 'tAwpzWalPAg', title: 'Bosch Power Tools Showcase', duration: '3:45', category: 'Product Demo', description: 'Comprehensive overview of professional power tools for industrial applications.' },
   { id: '2', youtubeId: 'VIDEO_ID_2', title: 'Choosing the Right Industrial Tape', duration: '5:20', category: 'Guide', description: 'Expert guide to selecting the perfect adhesive tape for your packaging needs.' },
   { id: '3', youtubeId: 'VIDEO_ID_3', title: 'Proper Pallet Wrapping Techniques', duration: '2:15', category: 'Tutorial', description: 'Step-by-step tutorial on efficient and secure pallet wrapping methods.' },
   { id: '4', youtubeId: 'VIDEO_ID_4', title: 'Facility Safety Equipment Overview', duration: '4:30', category: 'Overview', description: 'Complete walkthrough of safety equipment and best practices at SBECO.' },
