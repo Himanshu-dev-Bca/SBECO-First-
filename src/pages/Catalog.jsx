@@ -17,21 +17,57 @@ export default function Catalog() {
   const categoryParam = searchParams.get('category');
   const [search, setSearch] = useState(searchParams.get('search') || '');
   const [sort, setSort] = useState('default');
+  const [subCategoryFilter, setSubCategoryFilter] = useState('All');
+  const [nestedSubCategoryFilter, setNestedSubCategoryFilter] = useState('All');
 
   useEffect(() => {
     const q = searchParams.get('search') || '';
     setSearch(q);
   }, [searchParams]);
 
+  const currentCategory = CATALOGUE.find(c => c.id === categoryParam);
+  
+  // Get available sub-categories for level 1 filter
+  const availableSubCategories = useMemo(() => {
+    if (!currentCategory) return [];
+    return ['All', ...currentCategory.subcategories.map(s => s.id)];
+  }, [currentCategory]);
+
+  // Get available nested sub-categories for level 2 filter (when applicable)
+  const availableNestedSubCategories = useMemo(() => {
+    if (!currentCategory || subCategoryFilter === 'All') return [];
+    const selectedSub = currentCategory.subcategories.find(s => s.id === subCategoryFilter);
+    if (!selectedSub || !selectedSub.nestedSubcategories) return [];
+    return ['All', ...selectedSub.nestedSubcategories.map(n => n.id)];
+  }, [currentCategory, subCategoryFilter]);
+
+  // Reset nested filter when main sub-category changes
+  useEffect(() => {
+    setNestedSubCategoryFilter('All');
+  }, [subCategoryFilter]);
+
   const results = useMemo(() => {
     if (!categoryParam) return [];
     const q = search.toLowerCase();
-    const categoryName = CATALOGUE.find(c => c.id === categoryParam)?.name;
+    const categoryName = currentCategory?.name || '';
 
     let filtered = allProducts.filter(p => {
       const matchCat = p.cat === categoryName;
       const matchQ = !q || p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q) || p.tagline.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q) || p.sub.toLowerCase().includes(q);
-      return matchCat && matchQ;
+      const matchSub = subCategoryFilter === 'All' || p.sub === subCategoryFilter;
+      
+      // Handle nested subcategory filtering
+      let matchNested = true;
+      if (nestedSubCategoryFilter !== 'All' && subCategoryFilter !== 'All') {
+        // For nested filtering, check if product belongs to selected nested subcategory
+        const selectedSub = currentCategory?.subcategories.find(s => s.id === subCategoryFilter);
+        if (selectedSub?.nestedSubcategories) {
+          const selectedNested = selectedSub.nestedSubcategories.find(n => n.id === nestedSubCategoryFilter);
+          matchNested = selectedNested?.products?.some(prod => prod.id === p.id) || false;
+        }
+      }
+      
+      return matchCat && matchQ && matchSub && matchNested;
     });
 
     const sorted = [...filtered];
@@ -43,7 +79,7 @@ export default function Catalog() {
       case 'brand': sorted.sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name)); break;
     }
     return sorted;
-  }, [categoryParam, search, sort]);
+  }, [categoryParam, search, sort, subCategoryFilter, nestedSubCategoryFilter, currentCategory]);
 
   /* ─────────── CATEGORY OVERVIEW (no ?category param) ─────────── */
   if (!categoryParam) {
@@ -121,7 +157,6 @@ export default function Catalog() {
   }
 
   /* ─────────── CATEGORY PRODUCT LIST ─────────── */
-  const currentCategory = CATALOGUE.find(c => c.id === categoryParam);
   const currentCategoryName = currentCategory?.name || 'Products';
 
   return (
@@ -131,23 +166,69 @@ export default function Catalog() {
         subtitle={currentCategory?.description || 'Explore our products in this category.'} />
 
       {/* Toolbar */}
-      <div className="flex items-center justify-between px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-20 z-40 gap-4 flex-wrap">
-        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-gray-500 hover:text-accent no-underline font-semibold mr-4 transition-colors">
-          ← Back to Categories
-        </Link>
-        <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white flex-1 min-w-[280px]">
-          <span className="text-gray-400 text-sm">⊘</span>
-          <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products by name, SKU, or keyword..."
-            className="border-none outline-none text-[13px] bg-transparent w-full" />
+      <div className="flex flex-col gap-3 px-8 md:px-12 py-4 border-b border-gray-200 bg-white sticky top-20 z-40">
+        {/* Row 1: Search and Back Button */}
+        <div className="flex items-center gap-4 flex-wrap">
+          <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-gray-500 hover:text-accent no-underline font-semibold transition-colors">
+            ← Back to Categories
+          </Link>
+          <div className="flex items-center gap-2 border border-gray-200 px-3.5 py-2 bg-white flex-1 min-w-[280px]">
+            <span className="text-gray-400 text-sm">⊘</span>
+            <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products by name, SKU, or keyword..."
+              className="border-none outline-none text-[13px] bg-transparent w-full" />
+          </div>
+          <div className="flex items-center gap-2.5">
+            <span className="text-[10px] tracking-[.1em] uppercase text-gray-400 font-semibold whitespace-nowrap">Sort by</span>
+            <select value={sort} onChange={e => setSort(e.target.value)}
+              className="text-[11px] tracking-[.06em] uppercase font-semibold px-3.5 py-2 pr-8 border border-gray-200 bg-white text-gray-600 cursor-pointer outline-none appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%3E%3Cpath%20d%3D%22M1%201l4%204%204-4%22%20stroke%3D%22%236b7280%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_12px_center] hover:border-black focus:border-accent transition-colors">
+              {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
+            </select>
+          </div>
+          <div className="text-[11px] text-gray-400 tracking-[.06em]">{results.length} products</div>
         </div>
-        <div className="flex items-center gap-2.5">
-          <span className="text-[10px] tracking-[.1em] uppercase text-gray-400 font-semibold whitespace-nowrap">Sort by</span>
-          <select value={sort} onChange={e => setSort(e.target.value)}
-            className="text-[11px] tracking-[.06em] uppercase font-semibold px-3.5 py-2 pr-8 border border-gray-200 bg-white text-gray-600 cursor-pointer outline-none appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%3E%3Cpath%20d%3D%22M1%201l4%204%204-4%22%20stroke%3D%22%236b7280%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_12px_center] hover:border-black focus:border-accent transition-colors">
-            {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
-          </select>
+
+        {/* Row 2: Sub-category Filters (Level 1) */}
+        <div className="flex flex-wrap gap-2">
+          {availableSubCategories.map(subId => {
+            const subLabel = subId === 'All' ? 'All Subcategories' : currentCategory?.subcategories.find(s => s.id === subId)?.name;
+            return (
+              <button
+                key={subId}
+                onClick={() => setSubCategoryFilter(subId)}
+                className={`text-[11px] tracking-[.08em] uppercase px-4 py-2 border cursor-pointer font-semibold transition-all ${
+                  subCategoryFilter === subId
+                    ? 'bg-accent text-white border-accent'
+                    : 'bg-white text-gray-600 border-gray-200 hover:border-gray-400'
+                }`}
+              >
+                {subLabel}
+              </button>
+            );
+          })}
         </div>
-        <div className="text-[11px] text-gray-400 tracking-[.06em]">{results.length} products found</div>
+
+        {/* Row 3: Nested Sub-category Filters (Level 2) - Only show if available */}
+        {availableNestedSubCategories.length > 0 && (
+          <div className="flex flex-wrap gap-2 pl-4 border-l-2 border-accent">
+            {availableNestedSubCategories.map(nestedId => {
+              const selectedSub = currentCategory?.subcategories.find(s => s.id === subCategoryFilter);
+              const nestedLabel = nestedId === 'All' ? 'All Types' : selectedSub?.nestedSubcategories.find(n => n.id === nestedId)?.name;
+              return (
+                <button
+                  key={nestedId}
+                  onClick={() => setNestedSubCategoryFilter(nestedId)}
+                  className={`text-[11px] tracking-[.08em] uppercase px-4 py-2 border cursor-pointer font-semibold transition-all ${
+                    nestedSubCategoryFilter === nestedId
+                      ? 'bg-accent text-white border-accent'
+                      : 'bg-white text-gray-600 border-gray-200 hover:border-gray-400'
+                  }`}
+                >
+                  {nestedLabel}
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Grid */}
