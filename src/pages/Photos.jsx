@@ -173,8 +173,8 @@ export default function Photos() {
       <section className="px-8 md:px-12 py-14 bg-gradient-to-r from-black to-gray-900 text-white">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { num: '25+', label: 'Years of Excellence' },
-            { num: '500+', label: 'Products Catalogued' },
+            { num: '40+', label: 'Years of Excellence' },
+            { num: '200+', label: 'Products Catalogued' },
             { num: '1000+', label: 'Satisfied Clients' },
             { num: '20+', label: 'Expert Team Members' },
           ].map((stat, i) => (

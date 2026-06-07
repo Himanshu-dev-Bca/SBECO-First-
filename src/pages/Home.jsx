@@ -98,8 +98,8 @@ export default function Home() {
       {/* Stats */}
       <div className="flex flex-wrap bg-white border-b border-gray-200">
         {[
-          { num: '20+', label: 'Years of Experience' },
-          { num: '500+', label: 'Products Available' },
+          { num: '40+', label: 'Years of Experience' },
+          { num: '200+', label: 'Products Available' },
           { num: '1,000+', label: 'Clients Served' },
           { num: '20+', label: 'Product Categories' },
         ].map((s, i) => (
