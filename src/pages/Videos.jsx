@@ -1,9 +1,9 @@
 import Hero from '../components/Hero';
 
 const VIDEOS = [
-  { id: '1', youtubeId: 'tAwpzWalPAg', title: 'Super Bright Engineering Company-our products', duration: '0.60', category: 'Product Demo', description: 'just showcasing the products we deal in.' },
+  { id: '1', youtubeId: 'tAwpzWalPAg', title: 'Super Bright Engineering Company-our products', duration: '0.60', category: 'Products view', description: 'just showcasing the products we deal in.' },
   { id: '2', youtubeId: 'IUdHLF08wJA', title: 'Bread packing tape dispenser', duration: '0:50', category: 'Guide', description: 'guide on how u shall operate the bread sealing machine.' },
-  { id: '3', youtubeId: 'VIDEO_ID_3', title: 'Proper Pallet Wrapping Techniques', duration: '2:15', category: 'Tutorial', description: 'Step-by-step tutorial on efficient and secure pallet wrapping methods.' },
+  { id: '3', youtubeId: 'us6wqThUrhE', title: 'Proper Pallet Wrapping Techniques', duration: '2:15', category: 'Tutorial', description: 'Step-by-step tutorial on efficient and secure pallet wrapping methods.' },
   { id: '4', youtubeId: 'VIDEO_ID_4', title: 'Facility Safety Equipment Overview', duration: '4:30', category: 'Overview', description: 'Complete walkthrough of safety equipment and best practices at SBECO.' },
   { id: '5', youtubeId: 'VIDEO_ID_5', title: 'Strapping Solutions Explained', duration: '3:10', category: 'Product Demo', description: 'Learn about our complete range of strapping systems and tools.' },
   { id: '6', youtubeId: 'VIDEO_ID_6', title: 'Quality Control Process', duration: '4:05', category: 'Overview', description: 'Inside look at our rigorous quality assurance testing procedures.' },
