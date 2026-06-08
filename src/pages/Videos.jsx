@@ -6,7 +6,7 @@ const VIDEOS = [
   { id: '3', youtubeId: 'us6wqThUrhE', title: 'BHive stand', duration: '0:13', category: 'Demo', description: 'showing the durable bhive paper stand we offer.' },
   { id: '4', youtubeId: '9U12rA7FZkE', title: 'Lane marking for indoors', duration: '0:29', category: 'Overview', description: 'Lane marking solutions for indoor applications.' },
   { id: '5', youtubeId: 'oMDkSq-DFgw', title: 'Hand tape dispenser', duration: '1:11', category: 'Product Demo', description: 'Learn about our complete range of tape dispensers.' },
-  { id: '6', youtubeId: 'H7AxQLpLT4', title: 'Pro Pruner', duration: '0:45', category: 'Overview', description: 'look at the pro pruner in action.' },
+  { id: '6', youtubeId: '04RORJBFGqk', title: 'GLM 500', duration: '0:49', category: 'Overview', description: 'look at the GLM 500 in action.' },
 ];
 
 export default function Videos() {
