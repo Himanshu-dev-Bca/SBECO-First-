@@ -71,7 +71,7 @@ export default function Footer() {
               Articles
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link to="/photos" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
+            <Link to="/gallery" className="text-gray-300 w-fit relative group transition-colors hover:text-white">
               Gallery
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>

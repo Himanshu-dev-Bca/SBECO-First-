@@ -6,7 +6,7 @@ const NAV = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/products', label: 'Products', hasMega: true },
-  { to: '/photos', label: 'Gallery' },
+  { to: '/gallery', label: 'Gallery' },
   { 
     label: 'More', 
     hasDropdown: true,
