@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { allProducts } from '../data/products';
+import { allProducts, CATALOGUE } from '../data/products';
 
 const CAROUSEL_ITEMS = allProducts.slice(0, 12);
 
@@ -82,10 +82,96 @@ function Carousel() {
   );
 }
 
+/* ─────────── Categories grid (placed below the Carousel) ─────────── */
+function CategoriesSection() {
+  return (
+    <section className="px-8 md:px-12 py-14 bg-gray-50 border-t border-gray-200">
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 pb-3.5 border-b-2 border-black">
+        <div>
+          <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3">
+            Browse Our Categories
+            <span className="text-[11px] text-gray-400 font-light">{CATALOGUE.length} categories</span>
+          </div>
+          <p className="text-[13px] text-gray-500 mt-2 max-w-[560px] leading-relaxed">
+            Explore our complete range of industrial packaging, tools, and facility solutions — engineered for demanding environments.
+          </p>
+        </div>
+        <Link
+          to="/products"
+          className="text-[11px] tracking-[.08em] uppercase text-accent no-underline font-bold hover:opacity-70 transition-opacity shrink-0"
+        >
+          View All Products →
+        </Link>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {CATALOGUE.map((c, i) => {
+          const productCount = c.subcategories.reduce((acc, sub) => {
+            let count = sub.products ? sub.products.length : 0;
+            if (sub.nestedSubcategories) {
+              count += sub.nestedSubcategories.reduce(
+                (nestedAcc, nested) => nestedAcc + (nested.products ? nested.products.length : 0),
+                0
+              );
+            }
+            return acc + count;
+          }, 0);
+
+          return (
+            <Link
+              key={c.id}
+              to={`/products?category=${c.id}`}
+              className="group relative border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(0,0,0,.1)] transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: `${i * 0.08}s` }}
+            >
+              <div className="relative h-[260px] bg-gray-100 overflow-hidden">
+                <img
+                  src={c.imageUrl}
+                  alt={c.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-500 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+                <span className="absolute top-4 right-4 text-[9px] bg-accent text-white px-3 py-1.5 tracking-[.12em] uppercase font-bold">
+                  {productCount > 0 ? `${productCount} Products` : 'Coming Soon'}
+                </span>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-xl font-extrabold uppercase tracking-[.04em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)] leading-tight">
+                    {c.name}
+                  </h3>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <p className="text-[13px] text-gray-600 leading-relaxed mb-5 line-clamp-2 min-h-[3.2em]">
+                  {c.description}
+                </p>
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  <span className="text-[10px] tracking-[.1em] uppercase font-semibold text-gray-400">
+                    {c.subcategories.length > 0
+                      ? `${c.subcategories.length} Subcategories`
+                      : 'Products Coming Soon'}
+                  </span>
+                  <div className="flex items-center gap-2 text-[11px] tracking-[.08em] uppercase font-bold text-accent group-hover:gap-3 transition-all duration-300">
+                    Explore
+                    <div className="w-8 h-8 border border-gray-200 flex items-center justify-center text-sm text-gray-400 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
+                      →
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
-      <Hero 
+      <Hero
         label="Super Bright Labs · Since 2001" 
         title={<>Your Trusted Partner<br/>For Industrial<br/>Packaging &amp; Tools</>}
         subtitle="Showcasing premium industrial solutions — adhesive tapes, professional power tools, and protective packaging engineered for demanding environments. Enquire today for your requirements."
@@ -114,6 +200,9 @@ export default function Home() {
       <div className="animate-fade-up">
         <Carousel />
       </div>
+
+      {/* Categories overview – placed BELOW the product carousel as requested */}
+      <CategoriesSection />
 
       {/* Features */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-200 bg-white animate-fade-up">
