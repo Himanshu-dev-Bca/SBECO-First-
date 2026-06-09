@@ -60,9 +60,10 @@ function Carousel() {
           {CAROUSEL_ITEMS.map(p => (
             <Link key={p.id} to={`/products/${p.id}`}
               className="group min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all duration-200">
-              <div className="bg-gray-100 h-[200px] flex items-center justify-center border-b border-gray-200 overflow-hidden relative">
+              <div className="bg-gray-100 h-[240px] flex items-center justify-center overflow-hidden relative">
                 <span className="absolute top-3 left-3 text-[9px] bg-white text-gray-600 px-2 py-1 tracking-[.06em] uppercase border border-gray-200">{p.sub}</span>
                 <span className="absolute top-3 right-3 text-[9px] bg-accent text-white px-2.5 py-1 tracking-[.1em] uppercase">{p.badge}</span>
+                <img src={p.img} alt={p.name} loading="lazy" className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500 ease-out" />
               </div>
               <div className="p-5">
                 <div className="text-[10px] text-gray-400 tracking-[.1em] uppercase mb-1">{p.sku}</div>

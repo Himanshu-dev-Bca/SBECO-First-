@@ -6,13 +6,12 @@ const NAV = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/products', label: 'Products', hasMega: true },
-  { to: '/photos', label: 'Photos' },
+  { to: '/photos', label: 'Gallery' },
   { 
     label: 'More', 
     hasDropdown: true,
     items: [
       { to: '/articles', label: 'Articles' },
-      { to: '/gallery', label: 'Gallery' },
       { to: '/videos', label: 'Videos' },
     ]
   },

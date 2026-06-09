@@ -109,7 +109,7 @@ export default function Catalog() {
                   className="group relative border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(0,0,0,.1)] transition-all duration-300 animate-fade-up"
                   style={{ animationDelay: `${i * .08}s` }}>
                   {/* Image area */}
-                  <div className="relative h-[240px] bg-gray-100 overflow-hidden border-b border-gray-200">
+                  <div className="relative h-[280px] bg-gray-100 overflow-hidden">
                     <img
                       src={c.imageUrl}
                       alt={c.name}
@@ -241,9 +241,9 @@ export default function Catalog() {
           <Link key={p.id} to={`/products/${p.id}`}
             className="group border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all animate-fade-up"
             style={{ animationDelay: `${Math.min(i, 8) * .04}s` }}>
-            <div className="bg-gray-100 h-[200px] flex items-center justify-center border-b border-gray-200 overflow-hidden relative">
+            <div className="bg-gray-100 h-[240px] flex items-center justify-center overflow-hidden relative">
               <span className="absolute top-3 left-3 text-[9px] text-gray-400 tracking-[.08em] uppercase border border-gray-200 px-2 py-0.5 bg-white">{p.sub}</span>
-              <img src={p.img} alt={p.name} loading="lazy" className="max-w-[65%] max-h-[65%] object-contain group-hover:scale-105 transition-transform duration-300" />
+              <img src={p.img} alt={p.name} loading="lazy" className="w-full h-full object-contain p-3 group-hover:scale-[1.08] transition-transform duration-500 ease-out" />
               <span className="absolute top-3 right-3 text-[9px] bg-accent text-white px-2.5 py-1 tracking-[.1em] uppercase font-bold">{p.badge}</span>
             </div>
             <div className="p-5">

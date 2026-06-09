@@ -116,53 +116,44 @@ export default function About() {
         ))}
       </div>
 
-      {/* Team */}
+      {/* Journey */}
       <section className="px-8 md:px-12 py-14">
-        <Link to="/about/team" className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black no-underline text-black hover:text-accent transition-colors group">
-          Our Team <span className="text-[11px] text-gray-400 font-light">03</span>
-          <span className="ml-auto text-[12px] text-gray-400 group-hover:text-accent group-hover:translate-x-1 transition-all">View All →</span>
-        </Link>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { symbol: '◆', role: 'Leadership', name: 'Founder', desc: 'Driving product quality and customer trust through strong leadership and industry expertise.' },
-            { symbol: '◈', role: 'Sales', name: 'Sales Team', desc: 'Helping clients find the right solutions for their specific operational and manufacturing needs.' },
-            { symbol: '▣', role: 'Operations', name: 'Operations Team', desc: 'Managing logistics so every order arrives on time and in perfect condition, nationwide.' },
-          ].map((t, i) => (
-            <Link key={i} to="/about/team"
-              className="border border-gray-200 bg-white p-8 text-center hover:border-black hover:-translate-y-0.5 transition-all animate-fade-up no-underline text-black"
-              style={{ animationDelay: `${i * .08}s` }}>
-              <div className="text-4xl text-accent mb-4">{t.symbol}</div>
-              <div className="text-[10px] text-gray-400 tracking-[.1em] uppercase mb-1">{t.role}</div>
-              <div className="text-[16px] font-bold uppercase tracking-[.02em] mb-2">{t.name}</div>
-              <p className="text-[12px] text-gray-600 leading-relaxed">{t.desc}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="px-8 md:px-12 pb-14">
         <Link to="/about/journey" className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black no-underline text-black hover:text-accent transition-colors group">
-          Our Journey <span className="text-[11px] text-gray-400 font-light">04</span>
-          <span className="ml-auto text-[12px] text-gray-400 group-hover:text-accent group-hover:translate-x-1 transition-all">View All →</span>
+          Our Journey <span className="text-[11px] text-gray-400 font-light">03</span>
+          <span className="ml-auto text-[12px] text-gray-400 group-hover:text-accent group-hover:translate-x-1 transition-all">View All -&gt;</span>
         </Link>
-        <div className="flex flex-col gap-5">
-          {[
-            { year: '2001', title: 'Founded', desc: 'Super Bright Labs started as a small trading house specialising in industrial adhesive tapes.' },
-            { year: '2008', title: 'Product Expansion', desc: 'Expanded into power tools and protective packaging, becoming a one-stop industrial supply partner.' },
-            { year: '2015', title: 'Pan-India Reach', desc: 'Built relationships with clients across India in manufacturing, logistics, and construction sectors.' },
-            { year: '2026', title: 'Digital Catalogue', desc: 'Launched our full product catalogue online — making it easier to browse, compare, and enquire about products.' },
-          ].map((tl, i) => (
-            <Link key={i} to="/about/journey"
-              className="flex gap-6 border border-gray-200 bg-white p-7 hover:border-black transition-colors animate-fade-up no-underline text-black"
-              style={{ animationDelay: `${i * .06}s` }}>
-              <div className="text-[32px] font-extrabold text-accent tracking-tight min-w-[90px]">{tl.year}</div>
+        <div className="relative overflow-hidden border border-gray-200 bg-white">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.4fr]">
+            <div className="bg-black text-white p-9 md:p-12 flex flex-col justify-between gap-10">
               <div>
-                <h4 className="text-[14px] font-bold uppercase tracking-[.04em] mb-1">{tl.title}</h4>
-                <p className="text-[13px] text-gray-600 leading-relaxed">{tl.desc}</p>
+                <div className="text-[10px] tracking-[.16em] uppercase text-accent font-bold mb-4">Built over decades</div>
+                <h3 className="text-[30px] md:text-[42px] font-extrabold uppercase leading-[1.05] tracking-[.02em]">From specialist supplier to industrial partner.</h3>
               </div>
-            </Link>
-          ))}
+              <p className="text-[13px] text-gray-300 leading-[1.8] max-w-[420px]">
+                Our growth has followed one clear thread: dependable products, practical guidance, and stronger support for every customer operation we serve.
+              </p>
+            </div>
+            <div className="relative p-8 md:p-10">
+              <div className="absolute left-[43px] md:left-[51px] top-10 bottom-10 w-px bg-gray-200" />
+              {[
+                { year: '2001', title: 'Founded', desc: 'Started as a focused industrial supply house specialising in adhesive tapes and packaging essentials.' },
+                { year: '2008', title: 'Expanded Range', desc: 'Added strapping systems, power tools, and protective packaging for broader factory and logistics needs.' },
+                { year: '2015', title: 'Wider Reach', desc: 'Built long-term relationships with clients across manufacturing, interiors, construction, and distribution.' },
+                { year: '2026', title: 'Digital Catalogue', desc: 'Brought the product range online so teams can browse, compare, and enquire with less friction.' },
+              ].map((tl, i) => (
+                <Link key={i} to="/about/journey"
+                  className="group relative grid grid-cols-[56px_1fr] gap-5 pb-7 last:pb-0 animate-fade-up no-underline text-black"
+                  style={{ animationDelay: `${i * .08}s` }}>
+                  <div className="relative z-10 w-7 h-7 mt-1 rounded-full bg-white border-2 border-accent group-hover:bg-accent transition-colors duration-300" />
+                  <div className="border border-gray-200 bg-gray-50 p-6 group-hover:bg-white group-hover:border-black group-hover:-translate-y-0.5 group-hover:shadow-[0_12px_32px_rgba(0,0,0,.06)] transition-all duration-300">
+                    <div className="text-[28px] font-extrabold text-accent tracking-tight mb-1">{tl.year}</div>
+                    <h4 className="text-[14px] font-bold uppercase tracking-[.04em] mb-2">{tl.title}</h4>
+                    <p className="text-[13px] text-gray-600 leading-relaxed">{tl.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -23,8 +23,8 @@ export default function Gallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {GALLERY_IMAGES.map((img, i) => (
             <div key={i} className="group relative border border-gray-200 bg-white overflow-hidden animate-fade-up cursor-pointer hover:border-black transition-colors" style={{ animationDelay: `${i * .06}s` }}>
-              <div className="h-[280px] bg-gray-100 overflow-hidden relative p-4 flex items-center justify-center">
-                <img src={img.src} alt={img.title} loading="lazy" className="max-w-[80%] max-h-[80%] object-contain group-hover:scale-110 transition-transform duration-500" />
+              <div className="h-[320px] bg-gray-100 overflow-hidden relative flex items-center justify-center">
+                <img src={img.src} alt={img.title} loading="lazy" className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-500 ease-out" />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
               <div className="p-5 border-t border-gray-100 flex items-center justify-between">

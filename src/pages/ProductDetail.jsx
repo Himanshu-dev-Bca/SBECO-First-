@@ -87,9 +87,9 @@ export default function ProductDetail() {
 
         {/* Product Hero */}
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="bg-gray-100 flex items-center justify-center min-h-[350px] border-b md:border-b-0 md:border-r border-gray-200 relative p-10">
+          <div className="bg-gray-100 flex items-center justify-center min-h-[430px] border-b md:border-b-0 md:border-r border-gray-200 relative overflow-hidden">
             <span className="absolute top-4 left-4 text-[9px] bg-accent text-white px-3 py-1.5 tracking-[.1em] uppercase font-bold">{product.badge}</span>
-            <img src={product.imageUrl} alt={product.name} className="max-w-[70%] max-h-[70%] object-contain" />
+            <img src={product.imageUrl} alt={product.name} className="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-500 ease-out" />
           </div>
           <div className="p-10 md:p-14 bg-white">
             <div className="text-[10px] text-gray-400 tracking-[.12em] uppercase mb-1">{product.sku} · {product.brand}</div>
@@ -153,8 +153,8 @@ export default function ProductDetail() {
               {similar.map(s => (
                 <Link key={s.id} to={`/products/${s.id}`}
                   className="group flex border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black transition-all">
-                  <div className="w-[140px] shrink-0 bg-gray-100 flex items-center justify-center border-r border-gray-200">
-                    <img src={s.imageUrl} alt={s.name} className="max-w-[70%] max-h-[70%] object-contain" />
+                  <div className="w-[170px] shrink-0 bg-gray-100 flex items-center justify-center border-r border-gray-200 overflow-hidden">
+                    <img src={s.imageUrl} alt={s.name} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500 ease-out" />
                   </div>
                   <div className="p-5 flex-1">
                     <div className="text-[10px] text-gray-400 tracking-[.06em] uppercase mb-1">{s.sku}</div>
