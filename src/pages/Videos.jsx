@@ -11,7 +11,7 @@ const VIDEOS = [
 
 // Instagram content - placeholders for future integration
 const INSTAGRAM_VIDEOS = [
-  { id: 'ig-1', handle: '@superbrightlabs', caption: 'Product showcase', thumbnail: '📸', url: '#' },
+  { id: 'ig-1', handle: '@superbrightlabs', caption: 'Product showcase', thumbnail: '📸', url: 'https://www.instagram.com/p/DYrpRBphkFC/' },
   { id: 'ig-2', handle: '@superbrightlabs', caption: 'Behind the scenes', thumbnail: '🎬', url: '#' },
   { id: 'ig-3', handle: '@superbrightlabs', caption: 'Customer testimonials', thumbnail: '⭐', url: '#' },
   { id: 'ig-4', handle: '@superbrightlabs', caption: 'New product launch', thumbnail: '🚀', url: '#' },
