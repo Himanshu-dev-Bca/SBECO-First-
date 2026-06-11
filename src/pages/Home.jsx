@@ -8,70 +8,146 @@ const CAROUSEL_ITEMS = allProducts.slice(0, 12);
 function Carousel() {
   const trackRef = useRef(null);
   const [slide, setSlide] = useState(0);
-  const [perView, setPerView] = useState(3);
+  const [perView, setPerView] = useState(() => {
+    if (typeof window === 'undefined') return 3;
+    const w = window.innerWidth;
+    return w <= 640 ? 1 : w <= 960 ? 2 : 3;
+  });
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const [itemWidth, setItemWidth] = useState(320);
 
   const updatePerView = useCallback(() => {
     const w = window.innerWidth;
-    setPerView(w <= 768 ? 1 : w <= 960 ? 2 : 3);
+    setPerView(w <= 640 ? 1 : w <= 960 ? 2 : 3);
   }, []);
 
+  const measureItemWidth = useCallback(() => {
+    const width = trackRef.current?.children[0]?.offsetWidth;
+    if (width && width !== itemWidth) {
+      setItemWidth(width);
+    }
+  }, [itemWidth]);
+
   useEffect(() => {
-    updatePerView();
     window.addEventListener('resize', updatePerView);
-    return () => window.removeEventListener('resize', updatePerView);
-  }, [updatePerView]);
+    window.addEventListener('resize', measureItemWidth);
+    measureItemWidth();
+    return () => {
+      window.removeEventListener('resize', updatePerView);
+      window.removeEventListener('resize', measureItemWidth);
+    };
+  }, [measureItemWidth, updatePerView]);
 
   const maxSlide = Math.max(0, CAROUSEL_ITEMS.length - perView);
-  const clampedSlide = Math.min(slide, maxSlide);
+  const activeSlide = Math.min(slide, maxSlide);
 
   useEffect(() => {
-    if (slide > maxSlide) setSlide(maxSlide);
-  }, [maxSlide, slide]);
+    if (isPaused || maxSlide === 0) return;
 
-  useEffect(() => {
     const interval = setInterval(() => {
       setSlide(s => (s >= maxSlide ? 0 : s + 1));
     }, 3000);
-    return () => clearInterval(interval);
-  }, [maxSlide]);
 
-  const translateX = trackRef.current
-    ? clampedSlide * ((trackRef.current.children[0]?.offsetWidth || 300) + 24)
-    : 0;
+    return () => clearInterval(interval);
+  }, [isPaused, maxSlide]);
+
+  const centerItem = useCallback(
+    (index) => {
+      const target = Math.max(0, Math.min(index - Math.floor(perView / 2), maxSlide));
+      setSlide(target);
+    },
+    [maxSlide, perView]
+  );
+
+  const handlePointerEnter = (index) => {
+    setHoveredIndex(index);
+    setIsPaused(true);
+    centerItem(index);
+  };
+
+  const handlePointerLeave = () => {
+    setHoveredIndex(null);
+    setIsPaused(false);
+  };
+
+  const handleTouchStart = (index) => {
+    setHoveredIndex(index);
+    setIsPaused(true);
+    centerItem(index);
+  };
+
+  const handleTouchEnd = () => {
+    setHoveredIndex(null);
+    setIsPaused(false);
+  };
+
+  const translateX = activeSlide * (itemWidth + 24);
 
   return (
-    <section className="px-8 md:px-12 py-14">
+    <section className="px-6 md:px-12 py-14">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8">
         <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3">
           Categories <span className="text-[11px] text-gray-400 font-light">{CAROUSEL_ITEMS.length} products</span>
         </div>
-        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-accent no-underline font-semibold hover:opacity-70 transition-opacity">
+        <Link to="/products" className="text-[11px] tracking-[.08em] uppercase text-accent no-underline font-semibold hover:opacity-80 transition-opacity">
           View All Products →
         </Link>
       </div>
 
-      <div className="overflow-hidden rounded-[24px] border border-gray-200 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-[0_30px_70px_rgba(15,23,42,0.06)]">
         <div ref={trackRef} className="flex gap-6 transition-transform duration-500 ease-[cubic-bezier(.4,0,.2,1)]"
           style={{ transform: `translateX(-${translateX}px)` }}>
-          {CAROUSEL_ITEMS.map(p => (
-            <Link key={p.id} to={`/products/${p.id}`}
-              className="group min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden no-underline text-black transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,.08)]">
-              <div className="bg-gray-100 h-[240px] flex items-center justify-center overflow-hidden relative">
-                <span className="absolute top-3 left-3 text-[9px] bg-white text-gray-600 px-2 py-1 tracking-[.06em] uppercase border border-gray-200">{p.sub}</span>
-                <span className="absolute top-3 right-3 text-[9px] bg-accent text-white px-2.5 py-1 tracking-[.1em] uppercase">{p.badge}</span>
-                <img src={p.img} alt={p.name} loading="lazy" className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500 ease-out" />
-              </div>
-              <div className="p-5">
-                <div className="text-[10px] text-gray-400 tracking-[.1em] uppercase mb-1">{p.sku}</div>
-                <div className="text-[17px] font-bold uppercase tracking-[.02em] mb-1 leading-tight">{p.name}</div>
-                <div className="text-[12px] text-gray-600 leading-snug mb-3.5">{p.tagline}</div>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                  <span className="text-[10px] text-gray-400 tracking-[.06em]">{p.brand}</span>
-                  <div className="w-7 h-7 border border-gray-200 flex items-center justify-center text-xs text-gray-400 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all">→</div>
+          {CAROUSEL_ITEMS.map((p, index) => {
+            const isActive = hoveredIndex === index;
+            const isDimmed = hoveredIndex !== null && hoveredIndex !== index;
+
+            return (
+              <Link
+                key={p.id}
+                to={`/products/${p.id}`}
+                onPointerEnter={() => handlePointerEnter(index)}
+                onPointerLeave={handlePointerLeave}
+                onTouchStart={() => handleTouchStart(index)}
+                onTouchEnd={handleTouchEnd}
+                onFocus={() => handlePointerEnter(index)}
+                onBlur={handlePointerLeave}
+                className={`group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[28px] border border-gray-200 bg-white/90 shadow-sm transition-all duration-500 ease-out will-change-transform opacity ${isActive ? 'scale-105 shadow-[0_30px_90px_rgba(15,23,42,0.18)] z-20' : ''}`}
+                style={{ opacity: isDimmed ? 0.35 : 1, filter: isDimmed ? 'blur(1.2px)' : 'none', willChange: 'transform, opacity' }}
+              >
+                <div className="relative h-[240px] overflow-hidden bg-slate-50">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <img src={p.img} alt={p.name} loading="lazy" className={`h-full w-full object-contain p-4 transition-transform duration-700 ease-out ${isActive ? 'scale-105' : ''}`} />
+                  <div className="absolute inset-x-4 bottom-4 rounded-[22px] bg-white/90 p-4 shadow-[0_20px_45px_rgba(15,23,42,0.08)] backdrop-blur-sm opacity-95">
+                    <div className="flex items-center justify-between gap-3">
+                      <div>
+                        <div className="text-[10px] uppercase tracking-[.2em] text-slate-500">{p.sku}</div>
+                        <div className="text-lg font-semibold uppercase tracking-[.04em] text-slate-900 leading-tight">{p.name}</div>
+                      </div>
+                      <div className="rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] uppercase tracking-[.12em] text-slate-700">
+                        {p.badge}
+                      </div>
+                    </div>
+                    <p className="mt-3 text-[13px] leading-relaxed text-slate-600 line-clamp-2">{p.tagline}</p>
+                    <div className="mt-4 flex items-center justify-between gap-3 text-[11px] uppercase tracking-[.14em] text-accent">
+                      <span className="font-semibold">View Product</span>
+                      <span>→</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+
+                <div className="px-6 py-5">
+                  <div className="text-[10px] text-gray-500 tracking-[.14em] uppercase mb-2">{p.brand}</div>
+                  <h3 className="text-[18px] font-semibold uppercase tracking-[.02em] text-slate-900 leading-tight mb-2">{p.name}</h3>
+                  <p className="text-[13px] text-slate-600 leading-relaxed mb-4 line-clamp-3">{p.tagline}</p>
+                  <div className="flex items-center justify-between gap-3 text-[11px] uppercase tracking-[.1em] text-slate-500">
+                    <span>{p.sub}</span>
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-slate-500 transition-colors duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-white">→</span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
