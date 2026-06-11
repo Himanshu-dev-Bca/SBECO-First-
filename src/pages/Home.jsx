@@ -112,38 +112,16 @@ function Carousel() {
                 onTouchEnd={handleTouchEnd}
                 onFocus={() => handlePointerEnter(index)}
                 onBlur={handlePointerLeave}
-                className={`group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[28px] border border-gray-200 bg-white/90 shadow-sm transition-all duration-500 ease-out will-change-transform opacity ${isActive ? 'scale-105 shadow-[0_30px_90px_rgba(15,23,42,0.18)] z-20' : ''}`}
+                className={`group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[20px] border border-gray-200 bg-white shadow-sm transition-all duration-500 ease-out will-change-transform opacity ${isActive ? 'scale-105 shadow-[0_30px_90px_rgba(15,23,42,0.18)] z-20' : ''}`}
                 style={{ opacity: isDimmed ? 0.35 : 1, filter: isDimmed ? 'blur(1.2px)' : 'none', willChange: 'transform, opacity' }}
               >
-                <div className="relative h-[240px] overflow-hidden bg-slate-50">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                  <img src={p.img} alt={p.name} loading="lazy" className={`h-full w-full object-contain p-4 transition-transform duration-700 ease-out ${isActive ? 'scale-105' : ''}`} />
-                  <div className="absolute inset-x-4 bottom-4 rounded-[22px] bg-white/90 p-4 shadow-[0_20px_45px_rgba(15,23,42,0.08)] backdrop-blur-sm opacity-95">
-                    <div className="flex items-center justify-between gap-3">
-                      <div>
-                        <div className="text-[10px] uppercase tracking-[.2em] text-slate-500">{p.sku}</div>
-                        <div className="text-lg font-semibold uppercase tracking-[.04em] text-slate-900 leading-tight">{p.name}</div>
-                      </div>
-                      <div className="rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] uppercase tracking-[.12em] text-slate-700">
-                        {p.badge}
-                      </div>
-                    </div>
-                    <p className="mt-3 text-[13px] leading-relaxed text-slate-600 line-clamp-2">{p.tagline}</p>
-                    <div className="mt-4 flex items-center justify-between gap-3 text-[11px] uppercase tracking-[.14em] text-accent">
-                      <span className="font-semibold">View Product</span>
-                      <span>→</span>
-                    </div>
-                  </div>
+                <div className="relative h-[260px] flex items-center justify-center overflow-hidden bg-slate-50">
+                  <img src={p.img} alt={p.name} loading="lazy" className={`max-h-full max-w-full object-contain p-6 transition-transform duration-700 ease-out ${isActive ? 'scale-105' : ''}`} />
                 </div>
 
-                <div className="px-6 py-5">
-                  <div className="text-[10px] text-gray-500 tracking-[.14em] uppercase mb-2">{p.brand}</div>
-                  <h3 className="text-[18px] font-semibold uppercase tracking-[.02em] text-slate-900 leading-tight mb-2">{p.name}</h3>
-                  <p className="text-[13px] text-slate-600 leading-relaxed mb-4 line-clamp-3">{p.tagline}</p>
-                  <div className="flex items-center justify-between gap-3 text-[11px] uppercase tracking-[.1em] text-slate-500">
-                    <span>{p.sub}</span>
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-slate-500 transition-colors duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-white">→</span>
-                  </div>
+                <div className="px-6 py-6 text-center">
+                  <h3 className="text-[16px] font-semibold text-slate-900 mb-2 line-clamp-2">{p.name}</h3>
+                  <p className="text-[13px] text-slate-600 leading-relaxed line-clamp-2">{p.tagline}</p>
                 </div>
               </Link>
             );
