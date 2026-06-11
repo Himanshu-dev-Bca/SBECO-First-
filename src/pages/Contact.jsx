@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Hero from '../components/Hero';
+import CloudflareTurnstile from '../components/CloudflareTurnstile';
 
 const WEB3FORMS_KEY = 'b1b9178c-a2eb-40d0-9704-277ac889a758';
 
@@ -7,6 +8,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState({});
+  const [turnstileToken, setTurnstileToken] = useState('');
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -14,7 +16,6 @@ export default function Contact() {
     company: '',
     subject: '',
     message: '',
-    recaptchaToken: ''
   });
 
   // Validate form
@@ -49,6 +50,11 @@ export default function Contact() {
     // Validate mobile if provided
     if (hasMobile && !/^[0-9]{10,}$/.test(form.mobile.replace(/\D/g, ''))) {
       newErrors.mobile = 'Please enter a valid mobile number (10+ digits)';
+    }
+
+    // Turnstile verification is required
+    if (!turnstileToken) {
+      newErrors.turnstile = 'Please complete the security verification';
     }
 
     return newErrors;
@@ -86,6 +92,7 @@ export default function Contact() {
           company: form.company || 'Not specified',
           topic: form.subject || 'General Enquiry',
           message: form.message,
+          'cf-turnstile-response': turnstileToken,
         }),
       });
 
@@ -100,8 +107,8 @@ export default function Contact() {
           company: '',
           subject: '',
           message: '',
-          recaptchaToken: ''
         });
+        setTurnstileToken('');
       } else {
         setErrors({ general: 'Something went wrong. Please try again or contact us directly.' });
       }
@@ -282,6 +289,34 @@ export default function Contact() {
                   </div>
                 )}
 
+                {/* Cloudflare Turnstile Widget */}
+                <div className="mb-6">
+                  <label className="block text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
+                    Security Verification <span className="text-red-500">*</span>
+                  </label>
+                  <CloudflareTurnstile
+                    onVerify={(token) => {
+                      setTurnstileToken(token);
+                      if (errors.turnstile) {
+                        setErrors((prev) => ({ ...prev, turnstile: '' }));
+                      }
+                    }}
+                    onExpire={() => setTurnstileToken('')}
+                    onError={() => {
+                      setTurnstileToken('');
+                      setErrors((prev) => ({
+                        ...prev,
+                        turnstile: 'Verification failed. Please try again.',
+                      }));
+                    }}
+                  />
+                  {errors.turnstile && (
+                    <div className="text-[11px] text-red-600 mt-1.5 flex items-center gap-1.5 animate-slide-down">
+                      <span>⚠</span> {errors.turnstile}
+                    </div>
+                  )}
+                </div>
+
                 {/* Submit Button */}
                 <button
                   onClick={handleSubmit}
@@ -320,8 +355,8 @@ export default function Contact() {
                       company: '',
                       subject: '',
                       message: '',
-                      recaptchaToken: ''
                     });
+                    setTurnstileToken('');
                     setErrors({});
                   }}
                   className="inline-flex items-center gap-2 px-6 py-2.5 border border-gray-200 bg-white text-[11px] font-semibold tracking-[.08em] uppercase text-gray-600 cursor-pointer hover:border-black hover:bg-gray-50 transition-all"
