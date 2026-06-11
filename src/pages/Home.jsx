@@ -13,7 +13,6 @@ function Carousel() {
     const w = window.innerWidth;
     return w <= 640 ? 1 : w <= 960 ? 2 : 3;
   });
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
   const [itemWidth, setItemWidth] = useState(320);
 
@@ -52,35 +51,16 @@ function Carousel() {
     return () => clearInterval(interval);
   }, [isPaused, maxSlide]);
 
-  const centerItem = useCallback(
-    (index) => {
-      const target = Math.max(0, Math.min(index - Math.floor(perView / 2), maxSlide));
-      setSlide(target);
-    },
-    [maxSlide, perView]
-  );
-
-  const handlePointerEnter = (index) => {
-    setHoveredIndex(index);
+  const handlePointerEnter = () => {
     setIsPaused(true);
-    centerItem(index);
   };
 
   const handlePointerLeave = () => {
-    setHoveredIndex(null);
     setIsPaused(false);
   };
 
-  const handleTouchStart = (index) => {
-    setHoveredIndex(index);
-    setIsPaused(true);
-    centerItem(index);
-  };
-
-  const handleTouchEnd = () => {
-    setHoveredIndex(null);
-    setIsPaused(false);
-  };
+  const goNext = () => setSlide(s => (s >= maxSlide ? 0 : s + 1));
+  const goPrev = () => setSlide(s => (s <= 0 ? maxSlide : s - 1));
 
   const translateX = activeSlide * (itemWidth + 24);
 
@@ -95,37 +75,59 @@ function Carousel() {
         </Link>
       </div>
 
-      <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-[0_30px_70px_rgba(15,23,42,0.06)]">
+      <div
+        className="relative overflow-hidden rounded-[28px]"
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
+      >
+        {/* Navigation arrows */}
+        <button
+          onClick={goPrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-accent transition-colors cursor-pointer backdrop-blur-sm border-none"
+          aria-label="Previous"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" /></svg>
+        </button>
+        <button
+          onClick={goNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-accent transition-colors cursor-pointer backdrop-blur-sm border-none"
+          aria-label="Next"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
+        </button>
+
         <div ref={trackRef} className="flex gap-6 transition-transform duration-500 ease-[cubic-bezier(.4,0,.2,1)]"
           style={{ transform: `translateX(-${translateX}px)` }}>
-          {CAROUSEL_ITEMS.map((p, index) => {
-            const isActive = hoveredIndex === index;
-            const isDimmed = hoveredIndex !== null && hoveredIndex !== index;
+          {CAROUSEL_ITEMS.map((p) => (
+            <Link
+              key={p.id}
+              to={`/products/${p.id}`}
+              className="group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[20px] border border-gray-200 bg-white transition-all duration-300 ease-out no-underline hover:scale-[1.02] hover:border-accent/40"
+            >
+              <div className="relative h-[260px] flex items-center justify-center overflow-hidden bg-slate-50">
+                <img src={p.img} alt={p.name} loading="lazy" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 ease-out group-hover:scale-110" />
+              </div>
 
-            return (
-              <Link
-                key={p.id}
-                to={`/products/${p.id}`}
-                onPointerEnter={() => handlePointerEnter(index)}
-                onPointerLeave={handlePointerLeave}
-                onTouchStart={() => handleTouchStart(index)}
-                onTouchEnd={handleTouchEnd}
-                onFocus={() => handlePointerEnter(index)}
-                onBlur={handlePointerLeave}
-                className={`group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[20px] border border-gray-200 bg-white shadow-sm transition-all duration-500 ease-out will-change-transform opacity ${isActive ? 'scale-105 shadow-[0_30px_90px_rgba(15,23,42,0.18)] z-20' : ''}`}
-                style={{ opacity: isDimmed ? 0.35 : 1, filter: isDimmed ? 'blur(1.2px)' : 'none', willChange: 'transform, opacity' }}
-              >
-                <div className="relative h-[260px] flex items-center justify-center overflow-hidden bg-slate-50">
-                  <img src={p.img} alt={p.name} loading="lazy" className={`max-h-full max-w-full object-contain p-6 transition-transform duration-700 ease-out ${isActive ? 'scale-105' : ''}`} />
-                </div>
+              <div className="px-6 py-5 text-center">
+                <h3 className="text-[15px] font-semibold text-slate-900 mb-1.5 line-clamp-2">{p.name}</h3>
+                <p className="text-[12px] text-gray-500 leading-relaxed line-clamp-2">{p.tagline}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-                <div className="px-6 py-6 text-center">
-                  <h3 className="text-[16px] font-semibold text-slate-900 mb-2 line-clamp-2">{p.name}</h3>
-                  <p className="text-[13px] text-slate-600 leading-relaxed line-clamp-2">{p.tagline}</p>
-                </div>
-              </Link>
-            );
-          })}
+        {/* Dot indicators */}
+        <div className="flex justify-center gap-1.5 py-4">
+          {Array.from({ length: maxSlide + 1 }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setSlide(i)}
+              className={`w-2 h-2 rounded-full border-none cursor-pointer transition-all duration-300 ${
+                i === activeSlide ? 'bg-accent w-6' : 'bg-gray-400/40 hover:bg-gray-400/70'
+              }`}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
