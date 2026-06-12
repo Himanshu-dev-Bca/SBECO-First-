@@ -1,8 +1,9 @@
-import { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { allProducts, CATALOGUE } from '../data/products';
 
 const SORT_OPTIONS = [
+
   { value: 'default', label: 'Default' },
   { value: 'name-asc', label: 'Name A–Z' },
   { value: 'name-desc', label: 'Name Z–A' },
@@ -15,6 +16,7 @@ export default function Catalog() {
   const [sort, setSort] = useState('default');
 
   /* Build unique category list from CATALOGUE */
+
   const categories = useMemo(() => {
     return [
       { id: 'all', name: 'All Products' },
