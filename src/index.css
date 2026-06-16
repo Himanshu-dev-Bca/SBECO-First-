@@ -292,3 +292,72 @@ main > section,
 main > div {
   animation: contentFade 0.35s ease both;
 }
+
+/* ============================================================
+   SKELETON SHIMMER ANIMATION
+   ============================================================ */
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #f3f4f6 0%,
+    #e5e7eb 40%,
+    #f3f4f6 80%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.8s ease-in-out infinite;
+}
+
+/* ============================================================
+   FILTER PANEL – SCROLLBAR & POLISH
+   ============================================================ */
+.filter-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.filter-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Firefox */
+.filter-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+/* Filter panel button focus states */
+.filter-panel button:focus {
+  outline: none;
+}
+.filter-panel button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+/* ============================================================
+   PRODUCT CARD – HOVER GLOW
+   ============================================================ */
+.product-card:hover {
+  box-shadow:
+    0 12px 40px rgba(230, 0, 35, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.04);
+}
+

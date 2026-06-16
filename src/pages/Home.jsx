@@ -16,6 +16,10 @@ function Carousel() {
   const [isPaused, setIsPaused] = useState(false);
   const [itemWidth, setItemWidth] = useState(320);
 
+  // Touch/swipe state
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
   const updatePerView = useCallback(() => {
     const w = window.innerWidth;
     setPerView(w <= 640 ? 1 : w <= 960 ? 2 : 3);
@@ -41,12 +45,13 @@ function Carousel() {
   const maxSlide = Math.max(0, CAROUSEL_ITEMS.length - perView);
   const activeSlide = Math.min(slide, maxSlide);
 
+  // Slower auto-slide: 5 seconds for better content absorption
   useEffect(() => {
     if (isPaused || maxSlide === 0) return;
 
     const interval = setInterval(() => {
       setSlide(s => (s >= maxSlide ? 0 : s + 1));
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isPaused, maxSlide]);
@@ -59,10 +64,34 @@ function Carousel() {
     setIsPaused(false);
   };
 
+  // Touch/swipe handlers for mobile
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.changedTouches[0].screenX;
+    setIsPaused(true);
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].screenX;
+    const delta = touchStartX.current - touchEndX.current;
+    const threshold = 50;
+    if (delta > threshold) {
+      // Swiped left → next
+      setSlide(s => (s >= maxSlide ? 0 : s + 1));
+    } else if (delta < -threshold) {
+      // Swiped right → prev
+      setSlide(s => (s <= 0 ? maxSlide : s - 1));
+    }
+    setIsPaused(false);
+  };
+
   const goNext = () => setSlide(s => (s >= maxSlide ? 0 : s + 1));
   const goPrev = () => setSlide(s => (s <= 0 ? maxSlide : s - 1));
 
   const translateX = activeSlide * (itemWidth + 24);
+
+  // Determine which card indices are "active" (currently visible)
+  const visibleStart = activeSlide;
+  const visibleEnd = activeSlide + perView - 1;
 
   return (
     <section className="px-6 md:px-12 py-14">
@@ -79,6 +108,8 @@ function Carousel() {
         className="relative overflow-hidden rounded-[28px]"
         onPointerEnter={handlePointerEnter}
         onPointerLeave={handlePointerLeave}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Navigation arrows */}
         <button
@@ -96,34 +127,44 @@ function Carousel() {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" /></svg>
         </button>
 
-        <div ref={trackRef} className="flex gap-6 transition-transform duration-500 ease-[cubic-bezier(.4,0,.2,1)]"
+        {/* Smoother transition: 700ms with refined easing */}
+        <div ref={trackRef} className="flex gap-6 transition-transform duration-700 ease-[cubic-bezier(.25,.1,.25,1)]"
           style={{ transform: `translateX(-${translateX}px)` }}>
-          {CAROUSEL_ITEMS.map((p) => (
-            <Link
-              key={p.id}
-              to={`/products/${p.id}`}
-              className="group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[20px] border border-gray-200 bg-white transition-all duration-300 ease-out no-underline hover:scale-[1.02] hover:border-accent/40"
-            >
-              <div className="relative h-[260px] flex items-center justify-center overflow-hidden bg-slate-50">
-                <img src={p.img} alt={p.name} loading="lazy" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 ease-out group-hover:scale-110" />
-              </div>
+          {CAROUSEL_ITEMS.map((p, idx) => {
+            const isVisible = idx >= visibleStart && idx <= visibleEnd;
+            return (
+              <Link
+                key={p.id}
+                to={`/products/${p.id}`}
+                className={`group relative min-w-[calc(33.333%-16px)] max-md:min-w-[calc(50%-12px)] max-sm:min-w-full shrink-0 overflow-hidden rounded-[20px] border bg-white no-underline transition-all duration-500 ease-out hover:border-accent/40 ${
+                  isVisible
+                    ? 'scale-100 border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.06)] opacity-100'
+                    : 'scale-[0.96] border-gray-100 shadow-none opacity-60'
+                }`}
+              >
+                <div className="relative h-[260px] flex items-center justify-center overflow-hidden bg-slate-50">
+                  <img src={p.img} alt={p.name} loading="lazy" className="max-h-full max-w-full object-contain p-6 transition-transform duration-500 ease-out group-hover:scale-110" />
+                </div>
 
-              <div className="px-6 py-5 text-center">
-                <h3 className="text-[15px] font-semibold text-slate-900 mb-1.5 line-clamp-2">{p.name}</h3>
-                <p className="text-[12px] text-gray-500 leading-relaxed line-clamp-2">{p.tagline}</p>
-              </div>
-            </Link>
-          ))}
+                <div className="px-6 py-5 text-center">
+                  <h3 className="text-[15px] font-semibold text-slate-900 mb-1.5 line-clamp-2">{p.name}</h3>
+                  <p className="text-[12px] text-gray-500 leading-relaxed line-clamp-2">{p.tagline}</p>
+                </div>
+              </Link>
+            );
+          })}
         </div>
 
-        {/* Dot indicators */}
-        <div className="flex justify-center gap-1.5 py-4">
+        {/* Enhanced dot indicators */}
+        <div className="flex justify-center gap-2 py-4">
           {Array.from({ length: maxSlide + 1 }).map((_, i) => (
             <button
               key={i}
               onClick={() => setSlide(i)}
-              className={`w-2 h-2 rounded-full border-none cursor-pointer transition-all duration-300 ${
-                i === activeSlide ? 'bg-accent w-6' : 'bg-gray-400/40 hover:bg-gray-400/70'
+              className={`h-2 rounded-full border-none cursor-pointer transition-all duration-500 ease-out ${
+                i === activeSlide
+                  ? 'bg-accent w-8 shadow-[0_0_8px_rgba(230,0,35,0.3)]'
+                  : 'bg-gray-400/30 w-2 hover:bg-gray-400/60'
               }`}
               aria-label={`Go to slide ${i + 1}`}
             />
