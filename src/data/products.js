@@ -197,7 +197,7 @@ export const CATALOGUE = [
           },
           {
             id: "pp-strap-semi-auto",
-            name: "SBECO Semi-Automatic PP Strap",
+            name: "PET strap",
             sku: "SBL-PPS-2",
             brand: "SBECO",
             tagline: "Semi-automatic grade PP strap in 9mm, 12mm & 15mm for machine use",
@@ -238,7 +238,7 @@ export const CATALOGUE = [
           },
           {
             id: "pp-strap-machine",
-            name: "SBECO Machine Grade PP Strap",
+            name: "PP Strap",
             sku: "SBL-PPS-3",
             brand: "SBECO",
             tagline: "Machine grade PP strap for fully automatic strapping systems",
