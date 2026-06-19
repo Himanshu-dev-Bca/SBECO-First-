@@ -320,7 +320,7 @@ export const CATALOGUE = [
           },
           {
             id: "composite-strap",
-            name: "SBECO Composite Cord Strap",
+            name: "Cord Strap",
             sku: "SBL-COMP-1",
             brand: "SBECO",
             tagline: "Flexible and robust composite strap with high system strength",
@@ -361,7 +361,7 @@ export const CATALOGUE = [
           },
           {
             id: "woven-strap",
-            name: "SBECO Woven Cord Strap",
+            name: "Lashing belts",
             sku: "SBL-WOV-1",
             brand: "SBECO",
             tagline: "Cross-woven polyester strap for maximum durability and tear resistance",
