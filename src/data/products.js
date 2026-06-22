@@ -1599,7 +1599,7 @@ export const CATALOGUE = [
         products: [
           {
             id: "pp-seal-12mm",
-            name: "SBECO PP Strap Seals 12MM",
+            name: "PP strap seals",
             sku: "SBL-SEAL-12",
             brand: "SBECO",
             tagline: "Galvanized steel seals for 12mm polypropylene strapping",
@@ -1639,7 +1639,7 @@ export const CATALOGUE = [
           },
           {
             id: "pp-seal-15mm",
-            name: "SBECO PP Strap Seals 15MM",
+            name: "PET Strap seals",
             sku: "SBL-SEAL-15",
             brand: "SBECO",
             tagline: "Galvanized steel seals for 15mm polypropylene strapping",
@@ -1678,7 +1678,7 @@ export const CATALOGUE = [
           },
           {
             id: "pp-seal-19mm",
-            name: "SBECO PP Strap Seals 19MM",
+            name: "Steel strap seals",
             sku: "SBL-SEAL-19",
             brand: "SBECO",
             tagline: "Heavy-duty galvanized steel seals for 19mm polypropylene strapping",
@@ -1717,7 +1717,7 @@ export const CATALOGUE = [
           },
           {
             id: "wire-buckle-19mm",
-            name: "SBECO Heavy Duty Wire Buckles 19MM",
+            name: "Buckles",
             sku: "SBL-BUCKLE-19",
             brand: "SBECO",
             tagline: "Galvanized wire buckles for composite and woven cord straps",
