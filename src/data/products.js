@@ -155,11 +155,11 @@ export const CATALOGUE = [
         products: [
           {
             id: "pp-strap-manual",
-            name: "SBECO Manual PP Strap",
+            name: "PP Strap",
             sku: "SBL-PPS-1",
             brand: "SBECO",
             tagline: "Manual grade PP strap in 12mm & 19mm widths, available in 7 vibrant colours",
-            badge: "Popular",
+            badge: "Heavy Duty",
             description: "The SBECO Manual PP Strap is designed for hand strapping applications using manual tensioners and sealers. Available in 12mm and 19mm widths with a consistent 0.5mm thickness, it provides reliable holding force for general-purpose bundling and packaging. Offered in 7 colour options — White, Yellow, Black, Grey, Blue, Red, and Green.",
             specs: {
               Grade: "Manual",
