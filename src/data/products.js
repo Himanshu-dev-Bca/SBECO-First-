@@ -278,11 +278,11 @@ export const CATALOGUE = [
             isBestSeller: false
           },
           {
-            id: "pet-strap-heavy",
-            name: "steel strap",
-            sku: "SBL-PET-1",
+            id: "steel-strap",
+            name: "Steel strap",
+            sku: "SBL-STL-1",
             brand: "SBECO",
-            tagline: "High tensile strength PET strap for heavy palletizing",
+            tagline: "High tensile strength steel s trap for heavy palletizing",
             badge: "Heavy Duty",
             description: "Polyester (PET) strapping offers superior strength and maintains tension over time. Ideal alternative to steel strapping for securing heavy loads.",
             specs: {
