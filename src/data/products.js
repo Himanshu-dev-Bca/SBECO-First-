@@ -160,7 +160,7 @@ export const CATALOGUE = [
             brand: "SBECO",
             tagline: "Manual grade PP strap in 12mm & 19mm widths, available in 7 vibrant colours",
             badge: "Heavy Duty",
-            description: "The SBECO Manual PP Strap is designed for hand strapping applications using manual tensioners and sealers. Available in 12mm and 19mm widths with a consistent 0.5mm thickness, it provides reliable holding force for general-purpose bundling and packaging. Offered in 7 colour options — White, Yellow, Black, Grey, Blue, Red, and Green.",
+            description: "The PP Strap is designed for hand strapping applications using manual tensioners and sealers. Available in 12mm and 19mm widths with a consistent 0.5mm thickness, it provides reliable holding force for general-purpose bundling and packaging. Offered in 7 colour options — White, Yellow, Black, Grey, Blue, Red, and Green.",
             specs: {
               Grade: "Manual",
               "Strap Width": "12mm, 19mm",
@@ -237,11 +237,11 @@ export const CATALOGUE = [
             isBestSeller: false
           },
           {
-            id: "pp-strap-machine",
-            name: "PP Strap",
-            sku: "SBL-PPS-3",
+            id: "lashing-belts",
+            name: "Lashing belts",
+            sku: "SBL-LSH-1",
             brand: "SBECO",
-            tagline: "Machine grade PP strap for fully automatic strapping systems",
+            tagline: "Machine grade lashing belts for fully automatic strapping systems",
             badge: "Automatic",
             description: "Engineered for fully automatic strapping machines. Available in 12mm and 19mm widths with 0.5mm thickness, designed for continuous high-speed feeding.",
             specs: {
