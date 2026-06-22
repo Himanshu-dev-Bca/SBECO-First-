@@ -279,7 +279,7 @@ export const CATALOGUE = [
           },
           {
             id: "pet-strap-heavy",
-            name: "Cord strap",
+            name: "steel strap",
             sku: "SBL-PET-1",
             brand: "SBECO",
             tagline: "High tensile strength PET strap for heavy palletizing",
