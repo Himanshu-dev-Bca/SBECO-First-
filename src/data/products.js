@@ -1336,46 +1336,6 @@ export const CATALOGUE = [
                 ],
                 dateAdded: "2026-06-17",
                 isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-10",
-                name: "SBECO Sealer Series Z10",
-                sku: "SBL-SEL-Z10",
-                brand: "Eagle",
-                tagline: "High-efficiency Z10 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z10 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-1"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
               }
             ]
           },
@@ -1502,6 +1462,35 @@ export const CATALOGUE = [
                 ],
                 dateAdded: "2026-06-17",
                 isBestSeller: true
+              },
+              {
+                id: "pp-strap-cutter-var-1",
+                name: "SBECO Cutter Series Y1",
+                sku: "SBL-CUT-Y1",
+                brand: "Falcon",
+                tagline: "High-efficiency Y1 cutter for fast cutting",
+                badge: "Standard",
+                description: "The Y1 series is engineered for repetitive cutting with minimal effort.",
+                specs: {
+                  Brand: "Falcon",
+                  Type: "Cutter",
+                  "Suitable For": "12–19mm Straps",
+                  Operation: "Manual"
+                },
+                imageUrl: "/images/pp_cutter.png",
+                consumables: [
+                  {
+                    name: "SBECO PP Strap (Manual Grade)",
+                    sku: "SBL-PPS-1",
+                    icon: "strap"
+                  }
+                ],
+                similar: [
+                  "pp-strap-cutter-eco",
+                  "pp-strap-cutter-pro"
+                ],
+                dateAdded: "2026-06-17",
+                isBestSeller: false
               }
             ]
           },
