@@ -361,3 +361,82 @@ main > div {
     0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
+/* ============================================================
+   CATEGORY TABS — HORIZONTAL SCROLLING
+   ============================================================ */
+.category-tabs-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.category-tabs-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab {
+  transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* ============================================================
+   BADGE COLOR VARIANTS
+   ============================================================ */
+.badge-bestseller  { background: #fef3c7; color: #b45309; }
+.badge-popular     { background: #fef3c7; color: #b45309; }
+.badge-professional { background: #dbeafe; color: #1d4ed8; }
+.badge-industrial  { background: #e0e7ff; color: #4338ca; }
+.badge-essential   { background: #f3f4f6; color: #374151; }
+.badge-eco         { background: #d1fae5; color: #065f46; }
+.badge-heavy-duty  { background: #fce7f3; color: #9d174d; }
+.badge-machine     { background: #e0e7ff; color: #4338ca; }
+.badge-value       { background: #d1fae5; color: #065f46; }
+.badge-premium     { background: #faf5ff; color: #7c3aed; }
+.badge-specialty   { background: #fff7ed; color: #c2410c; }
+.badge-new         { background: #dcfce7; color: #15803d; }
+.badge-safety      { background: #fef9c3; color: #a16207; }
+.badge-standard    { background: #f3f4f6; color: #6b7280; }
+.badge-versatile   { background: #e0f2fe; color: #0369a1; }
+.badge-precision   { background: #fdf4ff; color: #a21caf; }
+.badge-light-duty  { background: #f0fdf4; color: #16a34a; }
+
+/* ============================================================
+   FEATURED PRODUCTS GLOW
+   ============================================================ */
+.featured-glow {
+  position: relative;
+}
+.featured-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(230, 0, 35, 0.15), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================================
+   PRODUCT DETAIL — SPEC TABLE STRIPES
+   ============================================================ */
+.spec-row:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* ============================================================
+   APPLICATIONS GRID ICONS
+   ============================================================ */
+.app-card {
+  transition: all 0.3s ease;
+}
+.app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   ENHANCED BREADCRUMB SEPARATOR
+   ============================================================ */
+.breadcrumb-sep {
+  color: #d1d5db;
+  margin: 0 2px;
+  user-select: none;
+}
+

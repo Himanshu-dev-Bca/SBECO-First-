@@ -4,6 +4,65 @@ import Lightbox from '../components/Lightbox';
 import CategorySidebar from '../components/CategorySidebar';
 import { CATALOGUE, productIndex } from '../data/products';
 
+/* ── Badge class helper ── */
+function getBadgeClass(badge) {
+  if (!badge) return '';
+  const b = badge.toLowerCase();
+  if (b.includes('best') || b.includes('popular')) return 'badge-popular';
+  if (b.includes('professional')) return 'badge-professional';
+  if (b.includes('industrial')) return 'badge-industrial';
+  if (b.includes('essential')) return 'badge-essential';
+  if (b.includes('eco')) return 'badge-eco';
+  if (b.includes('heavy')) return 'badge-heavy-duty';
+  if (b.includes('machine')) return 'badge-machine';
+  if (b.includes('value')) return 'badge-value';
+  if (b.includes('premium')) return 'badge-premium';
+  if (b.includes('specialty')) return 'badge-specialty';
+  if (b.includes('new')) return 'badge-new';
+  if (b.includes('safety')) return 'badge-safety';
+  return 'badge-standard';
+}
+
+/* ── Applications inferred from category context ── */
+const APPLICATION_MAP = {
+  'tape-dispensers': [
+    { icon: '📦', label: 'Packaging & Sealing', desc: 'Carton sealing, box closing, and parcel wrapping' },
+    { icon: '🚚', label: 'Logistics & Shipping', desc: 'Secure packaging for transit and delivery' },
+    { icon: '🏭', label: 'Manufacturing', desc: 'Production line packaging and labeling' },
+    { icon: '🏪', label: 'Retail & E-commerce', desc: 'Order fulfillment and product packaging' },
+  ],
+  'strapping-solutions': [
+    { icon: '📦', label: 'Palletizing', desc: 'Heavy-duty pallet strapping and securing' },
+    { icon: '🏗️', label: 'Construction', desc: 'Bundling building materials and steel' },
+    { icon: '🚢', label: 'Export & Shipping', desc: 'Container and cargo securing for transport' },
+    { icon: '🏭', label: 'Industrial Manufacturing', desc: 'Production line bundling and unitizing' },
+  ],
+  'power-tools': [
+    { icon: '🏗️', label: 'Construction', desc: 'On-site drilling, cutting, and fastening' },
+    { icon: '🔧', label: 'Maintenance', desc: 'Facility repair and equipment maintenance' },
+    { icon: '🪵', label: 'Woodworking', desc: 'Precision cutting and shaping of wood' },
+    { icon: '🏭', label: 'Manufacturing', desc: 'Assembly line tools and fabrication' },
+  ],
+  'nailing-stapling': [
+    { icon: '🪵', label: 'Woodworking', desc: 'Furniture assembly and wood joinery' },
+    { icon: '📦', label: 'Crate & Pallet Making', desc: 'Constructing shipping crates and pallets' },
+    { icon: '🏗️', label: 'Construction', desc: 'Framing, roofing, and finishing work' },
+    { icon: '🏭', label: 'Manufacturing', desc: 'Upholstery and product assembly' },
+  ],
+  'packaging-consumables': [
+    { icon: '📦', label: 'Packaging', desc: 'Wrapping, cushioning, and protecting goods' },
+    { icon: '🚚', label: 'Logistics', desc: 'Safe transit and storage of products' },
+    { icon: '🏪', label: 'Retail', desc: 'Presentation packaging and protection' },
+    { icon: '🧊', label: 'Cold Chain', desc: 'Insulated packaging for temperature-sensitive goods' },
+  ],
+  'facility-management': [
+    { icon: '🏢', label: 'Office & Facilities', desc: 'Workplace cleaning and maintenance' },
+    { icon: '🏭', label: 'Industrial Sites', desc: 'Factory floor safety and hygiene' },
+    { icon: '🏥', label: 'Healthcare', desc: 'Medical facility safety equipment' },
+    { icon: '🏪', label: 'Retail Spaces', desc: 'Store maintenance and safety compliance' },
+  ],
+};
+
 export default function ProductDetail() {
   const { productId } = useParams();
   const navigate = useNavigate();
@@ -23,6 +82,12 @@ export default function ProductDetail() {
   }
 
   const similar = (product.similar || []).map((id) => productIndex[id]).filter(Boolean);
+  const applications = APPLICATION_MAP[product.catId] || APPLICATION_MAP['strapping-solutions'];
+
+  /* Parse description into bullet points if it has sentences */
+  const descriptionBullets = product.description
+    ? product.description.split(/\.\s+/).filter((s) => s.trim().length > 10).map((s) => s.trim().replace(/\.$/, ''))
+    : [];
 
   return (
     <div className="flex min-h-[calc(100vh-80px)] bg-white">
@@ -58,8 +123,10 @@ export default function ProductDetail() {
               ☰ Categories
             </button>
             <nav className="flex items-center gap-1.5 text-[10px] tracking-[.08em] uppercase text-gray-500 min-w-0 flex-1 overflow-x-auto">
+              <Link to="/" className="hover:text-accent no-underline shrink-0 font-medium">Home</Link>
+              <span className="breadcrumb-sep shrink-0">›</span>
               <Link to="/products" className="hover:text-accent no-underline shrink-0 font-semibold">All Products</Link>
-              <span className="text-gray-300 shrink-0">›</span>
+              <span className="breadcrumb-sep shrink-0">›</span>
               {product.catId && (
                 <Link to={`/products?category=${product.catId}`} className="hover:text-accent no-underline shrink-0">
                   {product.catName}
@@ -67,17 +134,17 @@ export default function ProductDetail() {
               )}
               {product.subName && (
                 <>
-                  <span className="text-gray-300 shrink-0">›</span>
+                  <span className="breadcrumb-sep shrink-0">›</span>
                   <span className="text-gray-500 shrink-0">{product.subName}</span>
                 </>
               )}
               {product.nestedSubName && (
                 <>
-                  <span className="text-gray-300 shrink-0">›</span>
+                  <span className="breadcrumb-sep shrink-0">›</span>
                   <span className="text-gray-500 shrink-0">{product.nestedSubName}</span>
                 </>
               )}
-              <span className="text-gray-300 shrink-0">›</span>
+              <span className="breadcrumb-sep shrink-0">›</span>
               <span className="text-black font-bold shrink-0 truncate">{product.name}</span>
             </nav>
           </div>
@@ -87,7 +154,7 @@ export default function ProductDetail() {
         <div className="grid grid-cols-1 md:grid-cols-2 animate-fade-up">
           <div className="bg-gray-50 flex items-center justify-center min-h-[400px] border-b md:border-b-0 md:border-r border-gray-200 relative overflow-hidden">
             {product.badge && (
-              <span className="absolute top-4 left-4 text-[9px] bg-accent text-white px-3 py-1.5 tracking-[.1em] uppercase font-bold z-10">
+              <span className={`absolute top-4 left-4 text-[9px] px-3 py-1.5 tracking-[.1em] uppercase font-bold z-10 rounded-full ${getBadgeClass(product.badge)}`}>
                 {product.badge}
               </span>
             )}
@@ -107,16 +174,32 @@ export default function ProductDetail() {
               {product.name}
             </h1>
             <p className="text-[14px] text-gray-500 leading-relaxed mb-6">{product.tagline}</p>
+
+            {/* Quick specs inline */}
+            {product.specs && (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {Object.entries(product.specs).slice(0, 4).map(([k, v]) => (
+                  <span key={k} className="text-[10px] tracking-[.04em] font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
+                    {k}: <strong>{v}</strong>
+                  </span>
+                ))}
+              </div>
+            )}
+
             <div className="flex flex-wrap gap-2.5">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-accent text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-accent text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all rounded-md"
               >
-                Enquire Now →
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                  <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                  <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+                </svg>
+                Request Quote
               </Link>
               <button
                 onClick={() => navigate(-1)}
-                className="inline-flex items-center gap-2.5 px-7 py-3.5 border border-gray-200 text-[11px] font-bold tracking-[.12em] uppercase hover:border-black transition-colors bg-white"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 border border-gray-200 text-[11px] font-bold tracking-[.12em] uppercase hover:border-black transition-colors bg-white rounded-md cursor-pointer"
               >
                 ← Back
               </button>
@@ -124,32 +207,47 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Product Details – STACKED: Description ABOVE Specifications */}
+        {/* ═══ SECTION 01: Product Details ═══ */}
         <section className="px-4 md:px-8 py-12 md:py-14">
           <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
             Product Details <span className="text-[11px] text-gray-400 font-light">01</span>
           </div>
 
-          {/* Description – full width, stacked ABOVE */}
-          <div className="border border-gray-200 bg-white p-6 md:p-8 hover:shadow-md transition-shadow mb-6">
-            <div className="text-[12px] font-bold tracking-[.08em] uppercase mb-3 text-accent flex items-center gap-2">
-              <span className="w-1 h-4 bg-accent inline-block" /> Description
+          {/* Description — full width */}
+          <div className="border border-gray-200 bg-white p-6 md:p-8 hover:shadow-md transition-shadow mb-6 rounded-lg">
+            <div className="text-[12px] font-bold tracking-[.08em] uppercase mb-4 text-accent flex items-center gap-2">
+              <span className="w-1 h-4 bg-accent inline-block rounded-sm" /> Description
             </div>
-            <p className="text-[14px] text-gray-700 leading-[1.8] max-w-[820px]">{product.description}</p>
+            <p className="text-[14px] text-gray-700 leading-[1.8] max-w-[820px] mb-4">{product.description}</p>
+
+            {/* Features as bullet points */}
+            {descriptionBullets.length > 1 && (
+              <div className="mt-4 border-t border-gray-100 pt-4">
+                <div className="text-[11px] font-bold tracking-[.08em] uppercase mb-3 text-gray-500">Key Features</div>
+                <ul className="space-y-2">
+                  {descriptionBullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-[13px] text-gray-600 leading-relaxed">
+                      <span className="w-5 h-5 rounded-full bg-accent/10 text-accent flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">✓</span>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
-          {/* Specifications – below description, table style */}
-          <div className="border border-gray-200 bg-white hover:shadow-md transition-shadow">
+          {/* Specifications — table style */}
+          <div className="border border-gray-200 bg-white hover:shadow-md transition-shadow rounded-lg overflow-hidden">
             <div className="px-6 md:px-8 py-4 border-b border-gray-200 bg-gray-50">
               <div className="text-[12px] font-bold tracking-[.08em] uppercase text-accent flex items-center gap-2">
-                <span className="w-1 h-4 bg-accent inline-block" /> Specifications
+                <span className="w-1 h-4 bg-accent inline-block rounded-sm" /> Technical Specifications
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2">
               {Object.entries(product.specs || {}).map(([k, v], i) => (
                 <div
                   key={k}
-                  className={`flex justify-between items-center px-6 md:px-8 py-3.5 text-[13px] ${
+                  className={`spec-row flex justify-between items-center px-6 md:px-8 py-4 text-[13px] ${
                     i > 0 ? 'border-t border-gray-100' : ''
                   } ${i % 2 === 0 ? 'md:border-r md:border-gray-100' : ''}`}
                 >
@@ -161,7 +259,34 @@ export default function ProductDetail() {
           </div>
         </section>
 
-        {/* Related / Consumables */}
+        {/* ═══ SECTION 02: Applications / Industries ═══ */}
+        <section className="px-4 md:px-8 pb-12 md:pb-14">
+          <div className="flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
+            <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0 text-accent text-xl">
+              🏭
+            </div>
+            <div className="flex-1">
+              <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3">
+                Applications & Industries <span className="text-[11px] text-gray-400 font-light">02</span>
+              </div>
+              <p className="text-[12px] text-gray-500 mt-1">Industries and use cases where this product excels</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {applications.map((app, i) => (
+              <div
+                key={i}
+                className="app-card border border-gray-200 bg-white p-6 rounded-lg text-center"
+              >
+                <div className="text-3xl mb-3">{app.icon}</div>
+                <div className="text-[12px] font-bold uppercase tracking-[.06em] mb-1.5 text-black">{app.label}</div>
+                <p className="text-[11px] text-gray-500 leading-relaxed">{app.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ═══ SECTION 03: Compatible Accessories / Consumables ═══ */}
         {product.consumables?.length > 0 && (
           <section className="px-4 md:px-8 pb-12 md:pb-14">
             <div className="flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
@@ -170,29 +295,49 @@ export default function ProductDetail() {
               </div>
               <div className="flex-1">
                 <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3">
-                  Related / Consumables <span className="text-[11px] text-gray-400 font-light">02</span>
+                  Compatible Accessories <span className="text-[11px] text-gray-400 font-light">03</span>
                 </div>
                 <p className="text-[12px] text-gray-500 mt-1">Accessories and refills used with this product</p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {product.consumables.map((c, i) => (
-                <div
-                  key={i}
-                  className="group border border-gray-200 bg-white p-6 text-center hover:border-accent hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(230,0,35,0.08)] transition-all duration-300"
-                >
-                  <div className="w-14 h-14 bg-accent/[0.08] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent transition-all duration-300">
-                    <span className="text-accent group-hover:text-white text-xl font-bold transition-colors">📦</span>
+              {product.consumables.map((c, i) => {
+                /* check if consumable exists as a product in catalog */
+                const linkedProduct = Object.values(productIndex).find(
+                  (p) => p.sku === c.sku && p.id !== product.id
+                );
+
+                const Card = (
+                  <div
+                    key={i}
+                    className={`group border border-gray-200 bg-white p-6 text-center rounded-lg hover:border-accent hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(230,0,35,0.08)] transition-all duration-300 ${linkedProduct ? 'cursor-pointer' : ''}`}
+                  >
+                    <div className="w-14 h-14 bg-accent/[0.08] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent transition-all duration-300">
+                      <span className="text-accent group-hover:text-white text-xl font-bold transition-colors">📦</span>
+                    </div>
+                    <div className="text-[13px] font-bold uppercase tracking-[.02em] mb-1.5 text-black">{c.name}</div>
+                    <div className="text-[10px] text-gray-400 tracking-[.06em] uppercase mb-2">{c.sku}</div>
+                    {linkedProduct && (
+                      <span className="text-[9px] text-accent font-bold uppercase tracking-[.06em]">
+                        View Product →
+                      </span>
+                    )}
                   </div>
-                  <div className="text-[13px] font-bold uppercase tracking-[.02em] mb-1.5 text-black">{c.name}</div>
-                  <div className="text-[10px] text-gray-400 tracking-[.06em] uppercase">{c.sku}</div>
-                </div>
-              ))}
+                );
+
+                return linkedProduct ? (
+                  <Link key={i} to={`/products/${linkedProduct.id}`} className="no-underline">
+                    {Card}
+                  </Link>
+                ) : (
+                  Card
+                );
+              })}
             </div>
           </section>
         )}
 
-        {/* Similar Products */}
+        {/* ═══ SECTION 04: Similar / Related Products ═══ */}
         {similar.length > 0 && (
           <section className="px-4 md:px-8 pb-12 md:pb-14">
             <div className="flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
@@ -201,33 +346,36 @@ export default function ProductDetail() {
               </div>
               <div className="flex-1">
                 <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3">
-                  Similar Products <span className="text-[11px] text-gray-400 font-light">03</span>
+                  Related Products <span className="text-[11px] text-gray-400 font-light">04</span>
                 </div>
                 <p className="text-[12px] text-gray-500 mt-1">Other products that complement or pair well with this one</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {similar.map((s) => (
                 <Link
                   key={s.id}
                   to={`/products/${s.id}`}
-                  className="group flex border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300"
+                  className="group block rounded-xl border border-gray-200 bg-white overflow-hidden no-underline text-black hover:border-accent/30 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300"
                 >
-                  <div className="w-[140px] sm:w-[180px] shrink-0 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center border-r border-gray-200 overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden p-4">
                     <img
                       src={s.imageUrl}
                       alt={s.name}
-                      className="w-full h-full object-contain p-3 group-hover:scale-110 transition-transform duration-500 ease-out"
+                      className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-500 ease-out"
                     />
                   </div>
-                  <div className="p-4 sm:p-5 flex-1 flex flex-col justify-center">
+                  <div className="p-4 border-t border-gray-100">
                     <div className="text-[10px] text-gray-400 tracking-[.06em] uppercase mb-1 font-semibold">{s.sku}</div>
-                    <div className="text-[14px] sm:text-[15px] font-bold uppercase tracking-[.02em] mb-1.5 leading-snug text-black group-hover:text-accent transition-colors">
+                    <div className="text-[13px] font-bold uppercase tracking-[.02em] mb-1 leading-snug text-black group-hover:text-accent transition-colors line-clamp-2">
                       {s.name}
                     </div>
-                    <div className="text-[12px] text-gray-500 leading-snug line-clamp-2 mb-2">{s.tagline}</div>
-                    <div className="text-[10px] text-accent font-bold uppercase tracking-[.08em] flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
-                      View Details <span>→</span>
+                    <div className="text-[11px] text-gray-500 leading-snug line-clamp-2 mb-2">{s.tagline}</div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[9px] text-gray-400 tracking-[.06em] uppercase font-medium">{s.brand}</span>
+                      <span className="text-[10px] text-accent font-bold uppercase tracking-[.08em] flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+                        View <span>→</span>
+                      </span>
                     </div>
                   </div>
                 </Link>
@@ -235,6 +383,33 @@ export default function ProductDetail() {
             </div>
           </section>
         )}
+
+        {/* ═══ CTA BANNER ═══ */}
+        <section className="mx-4 md:mx-8 mb-12 bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-8 md:p-12 text-center animate-fade-up">
+          <h3 className="text-[18px] md:text-[22px] font-bold text-white uppercase tracking-[.08em] mb-3">
+            Interested in this product?
+          </h3>
+          <p className="text-[13px] text-gray-300 mb-6 max-w-lg mx-auto leading-relaxed">
+            Contact our team for bulk pricing, technical specifications, or to schedule a product demonstration.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all rounded-md"
+            >
+              Request a Quotation →
+            </Link>
+            <a
+              href="tel:+918884746746"
+              className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/30 text-white text-[11px] font-bold tracking-[.12em] uppercase no-underline hover:bg-white/10 transition-all rounded-md"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clipRule="evenodd" />
+              </svg>
+              Call Us
+            </a>
+          </div>
+        </section>
       </main>
     </div>
   );
