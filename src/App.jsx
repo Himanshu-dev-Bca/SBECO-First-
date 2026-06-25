@@ -43,7 +43,7 @@ export default function App() {
         <Route path="/photos" element={<Navigate to="/gallery" replace />} />
         <Route path="/videos" element={<Layout><Videos /></Layout>} />
         <Route path="/products" element={<Layout><Catalog /></Layout>} />
-        <Route path="/products/:productId" element={<Layout hideFooter><ProductDetail /></Layout>} />
+        <Route path="/products/:productId" element={<Layout><ProductDetail /></Layout>} />
       </Routes>
     </BrowserRouter>
   );

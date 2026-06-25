@@ -1,13 +1,30 @@
 import { useMemo, useState, useEffect, useCallback } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { allProducts, CATALOGUE } from '../data/products';
 import FilterPanel from '../components/FilterPanel';
 import ProductCard from '../components/ProductCard';
 import SortDropdown from '../components/SortDropdown';
+import CategoryTabs from '../components/CategoryTabs';
 import { SkeletonGrid } from '../components/SkeletonCard';
 
 // Extract unique brands from all products
 const ALL_BRANDS = [...new Set(allProducts.map((p) => p.brand).filter(Boolean))].sort();
+
+// Featured / best-seller products
+const FEATURED = allProducts.filter((p) => p.isBestSeller);
+
+// Helper: count products in a category
+function getProductCount(cat) {
+  let count = 0;
+  cat.subcategories.forEach((sub) => {
+    if (sub.products) count += sub.products.length;
+    if (sub.nestedSubcategories)
+      sub.nestedSubcategories.forEach((n) => {
+        if (n.products) count += n.products.length;
+      });
+  });
+  return count;
+}
 
 export default function Catalog() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -242,20 +259,59 @@ export default function Catalog() {
     return parts;
   }, [selectedCategory, selectedSubcategory, selectedNested]);
 
+  // Should we show the featured products section?
+  const showFeatured = !selectedCategory && !searchQuery && FEATURED.length > 0 && selectedBrands.length === 0;
+
   return (
     <div className="min-h-[calc(100vh-80px)] bg-gray-50 catalog-layout" id="products-page">
       {/* ═══ Page Header ═══ */}
       <div className="px-6 md:px-12 pt-8 pb-6 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="text-[10px] tracking-[.15em] uppercase text-accent font-semibold mb-2">
-            Super Bright Labs
+          {/* Breadcrumbs */}
+          <nav className="flex items-center gap-1.5 text-[10px] tracking-[.06em] uppercase text-gray-400 mb-3">
+            <Link to="/" className="hover:text-accent no-underline font-medium">Home</Link>
+            <span className="breadcrumb-sep">›</span>
+            <Link to="/products" className="hover:text-accent no-underline font-medium" onClick={(e) => { e.preventDefault(); handleClearFilters(); }}>Products</Link>
+            {filterSummary.map((label, i) => (
+              <span key={i} className="flex items-center gap-1.5">
+                <span className="breadcrumb-sep">›</span>
+                <span className="text-gray-600 font-semibold">{label}</span>
+              </span>
+            ))}
+          </nav>
+
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+            <div>
+              <h1 className="text-[26px] md:text-[32px] font-extrabold tracking-tight text-slate-900 mb-1">
+                {filterSummary.length > 0 ? filterSummary[filterSummary.length - 1] : 'Products'}
+              </h1>
+              <p className="text-[13px] text-gray-500 max-w-[540px] leading-relaxed">
+                Browse our complete range of industrial packaging tools and supplies.
+              </p>
+            </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-[10px] font-bold tracking-[.1em] uppercase no-underline hover:bg-accent-hover hover:-translate-y-0.5 transition-all rounded-md shrink-0 self-start md:self-auto"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+              </svg>
+              Request a Quotation
+            </Link>
           </div>
-          <h1 className="text-[26px] md:text-[32px] font-extrabold tracking-tight text-slate-900 mb-2">
-            Products
-          </h1>
-          <p className="text-[13px] text-gray-500 max-w-[540px] leading-relaxed">
-            Browse our complete range of industrial packaging tools and supplies.
-          </p>
+        </div>
+      </div>
+
+      {/* ═══ Category Tabs Strip ═══ */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 py-4">
+          <CategoryTabs
+            categories={CATALOGUE}
+            selectedCategory={selectedCategory}
+            onCategorySelect={handleCategorySelect}
+            getProductCount={getProductCount}
+          />
         </div>
       </div>
 
@@ -423,6 +479,30 @@ export default function Catalog() {
             {products.length} {products.length === 1 ? 'product' : 'products'}
           </div>
 
+          {/* ── Featured / Best-Sellers (when no filter active) ── */}
+          {showFeatured && (
+            <div className="mb-8 animate-fade-up">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                  <h2 className="text-[13px] font-bold tracking-[.1em] uppercase text-slate-900 m-0">
+                    Featured Products
+                  </h2>
+                </div>
+                <div className="flex-1 h-px bg-gray-200" />
+                <span className="text-[9px] tracking-[.06em] uppercase text-gray-400 font-medium">
+                  {FEATURED.length} items
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                {FEATURED.slice(0, 4).map((product, i) => (
+                  <ProductCard key={product.id} product={product} index={i} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ── All Products Grid ── */}
           {isLoading ? (
             <SkeletonGrid count={8} />
           ) : products.length === 0 ? (
@@ -431,9 +511,21 @@ export default function Catalog() {
               <div className="text-[13px] tracking-[.06em] uppercase font-semibold mb-2">
                 No products found
               </div>
-              <p className="text-[12px] text-gray-500 mb-4">
-                Try adjusting your filters or search query.
+              <p className="text-[12px] text-gray-500 mb-6 max-w-md mx-auto">
+                Try adjusting your filters, search query, or browse a different category.
               </p>
+              {/* Suggest categories */}
+              <div className="flex flex-wrap justify-center gap-2 mb-5">
+                {CATALOGUE.slice(0, 4).map((cat) => (
+                  <button
+                    key={cat.id}
+                    onClick={() => handleCategorySelect(cat.id)}
+                    className="text-[10px] tracking-[.06em] uppercase font-semibold text-gray-600 bg-gray-100 px-4 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-colors cursor-pointer border-none"
+                  >
+                    {cat.name}
+                  </button>
+                ))}
+              </div>
               <button
                 onClick={handleClearFilters}
                 className="text-[11px] tracking-[.06em] uppercase font-bold text-accent hover:text-accent-hover transition-colors bg-transparent border border-accent/20 hover:border-accent px-5 py-2.5 rounded-lg cursor-pointer"
@@ -442,11 +534,25 @@ export default function Catalog() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-              {products.map((product, i) => (
-                <ProductCard key={product.id} product={product} index={i} />
-              ))}
-            </div>
+            <>
+              {/* Section header when category is selected */}
+              {selectedCategory && !showFeatured && (
+                <div className="flex items-center gap-3 mb-5 animate-fade-up">
+                  <h2 className="text-[13px] font-bold tracking-[.1em] uppercase text-slate-900 m-0">
+                    {filterSummary[filterSummary.length - 1] || 'All Products'}
+                  </h2>
+                  <div className="flex-1 h-px bg-gray-200" />
+                  <span className="text-[9px] tracking-[.06em] uppercase text-gray-400 font-medium">
+                    {products.length} items
+                  </span>
+                </div>
+              )}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                {products.map((product, i) => (
+                  <ProductCard key={product.id} product={product} index={i} />
+                ))}
+              </div>
+            </>
           )}
         </div>
       </div>
