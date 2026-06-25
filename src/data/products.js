@@ -144,1712 +144,512 @@ export const CATALOGUE = [
   // 2. STRAPPING SOLUTIONS (with nested subcategories under Tools)
   // ═══════════════════════════════════════════════════════════════
   {
-    id: "strapping-solutions",
-    name: "Strapping Solutions",
-    description: "Complete strapping solutions including PP and PET straps, manual and automatic tools with tensioning, sealing, and cutting capabilities.",
-    imageUrl: "/images/strapping_solutions.png",
-    subcategories: [
-      {
-        id: "straps",
-        name: "Straps",
-        products: [
-          {
-            id: "pp-strap-manual",
-            name: "PP Strap",
-            sku: "SBL-PPS-1",
-            brand: "SBECO",
-            tagline: "Manual grade PP strap in 12mm & 19mm widths, available in 7 vibrant colours",
-            badge: "Heavy Duty",
-            description: "The PP Strap is designed for hand strapping applications using manual tensioners and sealers. Available in 12mm and 19mm widths with a consistent 0.5mm thickness, it provides reliable holding force for general-purpose bundling and packaging. Offered in 7 colour options — White, Yellow, Black, Grey, Blue, Red, and Green.",
-            specs: {
-              Grade: "Manual",
-              "Strap Width": "12mm, 19mm",
-              Thickness: "0.5mm",
-              "Color Options": "7 colors",
-              Weight: "3Kg & 5Kg",
-              Usage: "Heat Sealing"
+  "id": "strapping-solutions",
+  "name": "Strapping Solutions",
+  "description": "Complete strapping solutions including PP, PET, and steel straps, manual and automatic tools, sealers, and accessories.",
+  "imageUrl": "/images/strapping_solutions.png",
+  "subcategories": [
+    {
+      "id": "straps",
+      "name": "Straps",
+      "products": [
+        {
+          "id": "pp-strap",
+          "name": "PP Strap",
+          "sku": "SBL-STRAP-PP",
+          "brand": "SBECO",
+          "tagline": "Manual and machine grade PP strap",
+          "badge": "Popular",
+          "description": "High quality Polypropylene strap suitable for manual tools and semi-automatic machines.",
+          "specs": {
+            "Material": "Polypropylene",
+            "Grade": "Manual/Machine"
+          },
+          "imageUrl": "/images/PP-strap.png",
+          "dateAdded": "2026-06-01",
+          "isBestSeller": true
+        },
+        {
+          "id": "pet-strap",
+          "name": "PET Strap",
+          "sku": "SBL-STRAP-PET",
+          "brand": "SBECO",
+          "tagline": "Heavy-duty PET strap for secure packaging",
+          "description": "High-tensile PET strapping designed as a safe and efficient alternative to steel strapping.",
+          "specs": {
+            "Material": "Polyester (PET)",
+            "Tensile Strength": "High"
+          },
+          "imageUrl": "/images/Pet-strap.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "steel-strap",
+          "name": "Steel Strap",
+          "sku": "SBL-STRAP-STL",
+          "brand": "SBECO",
+          "tagline": "Maximum strength steel strap",
+          "badge": "Heavy Duty",
+          "description": "Premium steel strapping for ultra heavy-duty applications and extreme conditions.",
+          "specs": {
+            "Material": "Steel",
+            "Strength": "Maximum"
+          },
+          "imageUrl": "/images/steel-strap.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "cord-strap",
+          "name": "Cord Strap",
+          "sku": "SBL-STRAP-CRD",
+          "brand": "SBECO",
+          "tagline": "Woven and composite cord strap",
+          "description": "Strong and safe cord strapping for securing irregular or heavy loads.",
+          "specs": {
+            "Material": "Polyester Cord",
+            "Type": "Woven/Composite"
+          },
+          "imageUrl": "/images/cord-strap.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "pallet-belts",
+          "name": "Pallet Belts",
+          "sku": "SBL-PLT-BLT",
+          "brand": "SBECO",
+          "tagline": "Reusable pallet strapping belts",
+          "description": "Eco-friendly, reusable belts for securing pallet loads quickly.",
+          "specs": {
+            "Type": "Reusable",
+            "Application": "Palletizing"
+          },
+          "imageUrl": "/images/pallet-belts.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "pallet-covers",
+          "name": "Pallet Covers",
+          "sku": "SBL-PLT-COV",
+          "brand": "SBECO",
+          "tagline": "Protective covers for pallets",
+          "description": "Durable covers to protect palletized goods from dust, moisture, and transit damage.",
+          "specs": {
+            "Material": "PE",
+            "Protection": "Dust & Moisture"
+          },
+          "imageUrl": "/images/pallet-covers.png",
+          "dateAdded": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "nestedSubcategories": [
+        {
+          "id": "tensioners",
+          "name": "Tensioners",
+          "products": [
+            {
+              "id": "eagle-tensioner",
+              "name": "Eagle Strap Tensioner",
+              "sku": "EGL-TEN",
+              "brand": "Eagle",
+              "tagline": "Professional tensioner",
+              "description": "Heavy-duty tensioner for secure strapping.",
+              "specs": {
+                "Type": "Tensioner"
+              },
+              "imageUrl": "/images/Eagle-Strap-Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "PP Strap Tensioner ECO",
-                sku: "SBL-TEN-ECO",
-                icon: "tool"
+            {
+              "id": "falcon-tensioner",
+              "name": "Falcon Strap Tensioner",
+              "sku": "FLC-TEN",
+              "brand": "Falcon",
+              "tagline": "Ergonomic tensioner",
+              "description": "Durable and ergonomic hand tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "PP Strap Sealer ECO",
-                sku: "SBL-SEL-ECO",
-                icon: "tool"
-              },
-              {
-                name: "PP Strap Cutter ECO",
-                sku: "SBL-CUT-ECO",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-strap-semi-auto",
-              "pp-strap-machine",
-              "pet-strap-heavy"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: true
-          },
-          {
-            id: "pp-strap-semi-auto",
-            name: "PET strap",
-            sku: "SBL-PPS-2",
-            brand: "SBECO",
-            tagline: "Semi-automatic grade PP strap in 9mm, 12mm & 15mm for machine use",
-            badge: "Machine Grade",
-            description: "Optimized for use with semi-automatic strapping machines. Available in 9mm, 12mm, and 15mm widths with a uniform 0.5mm thickness, it feeds smoothly through machine guides.",
-            specs: {
-              Grade: "Semi-Automatic",
-              "Strap Width": "9mm, 12mm, 15mm",
-              Thickness: "0.5mm",
-              "Color Options": "7 colors",
-              Weight: "3Kg & 5Kg"
+              "imageUrl": "/images/Falcon-Strap-Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "Semi Automatic Strapping Machine",
-                sku: "SBL-SASM-01",
-                icon: "machine"
+            {
+              "id": "mip-370-tensioner",
+              "name": "MIP 370 Tensioner",
+              "sku": "MIP-370",
+              "brand": "MIP",
+              "tagline": "MIP 370 series tensioner",
+              "description": "Reliable MIP 370 series tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "PP Strap Cutter ECO",
-                sku: "SBL-CUT-ECO",
-                icon: "tool"
-              },
-              {
-                name: "Strapping Dispenser Cart",
-                sku: "SBL-DISP-CRT",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-strap-manual",
-              "pp-strap-machine",
-              "pet-strap-heavy"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: false
-          },
-          {
-            id: "lashing-belts",
-            name: "Pallet belts",
-            sku: "SBL-PAL-1",
-            brand: "SBECO",
-            tagline: "Pallet belts for heavy-duty applications",
-            badge: "Heavy Duty",
-            description: "Engineered for heavy-duty applications. Available in 12mm and 19mm widths with 0.5mm thickness, designed for continuous high-speed feeding.",
-            specs: {
-              Grade: "Heavy Duty",
-              "Strap Width": "12mm, 19mm",
-              Thickness: "0.5mm",
-              "Color Options": "7 colors",
-              Speed: "High-throughput"
+              "imageUrl": "/images/mip 370 tensioners.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "Fully Automatic Strapping Machine",
-                sku: "SBL-FASM-01",
-                icon: "machine"
+            {
+              "id": "mip-380-tensioner",
+              "name": "MIP 380 Tensioner",
+              "sku": "MIP-380",
+              "brand": "MIP",
+              "tagline": "MIP 380 series tensioner",
+              "description": "Reliable MIP 380 series tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "Strapping Dispenser Cart",
-                sku: "SBL-DISP-CRT",
-                icon: "tool"
-              },
-              {
-                name: "PP Strap Cutter PRO",
-                sku: "SBL-CUT-PRO",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-strap-manual",
-              "pp-strap-semi-auto",
-              "pet-strap-heavy"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: false
-          },
-          {
-            id: "steel-strap",
-            name: "Steel strap",
-            sku: "SBL-STL-1",
-            brand: "SBECO",
-            tagline: "High tensile strength steel s trap for heavy palletizing",
-            badge: "Heavy Duty",
-            description: "Polyester (PET) strapping offers superior strength and maintains tension over time. Ideal alternative to steel strapping for securing heavy loads.",
-            specs: {
-              Grade: "Heavy Duty",
-              "Strap Width": "16mm, 19mm",
-              Thickness: "0.8mm, 1.0mm",
-              "Color Options": "Green",
-              "Tensile Strength": "High"
+              "imageUrl": "/images/MIP 380 tensioners.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "PET Battery Strapping Tool",
-                sku: "SBL-BATT-TOOL",
-                icon: "tool"
+            {
+              "id": "mip-1200-tensioner",
+              "name": "MIP 1200 Tensioner",
+              "sku": "MIP-1200",
+              "brand": "MIP",
+              "tagline": "MIP 1200 heavy duty tensioner",
+              "description": "Heavy duty MIP 1200 tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "PET Seals 16mm",
-                sku: "SBL-PET-SEAL-16",
-                icon: "seal"
-              },
-              {
-                name: "Heavy Duty Dispenser",
-                sku: "SBL-DISP-HD",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-strap-machine",
-              "pp-strap-manual",
-              "composite-strap"
-            ],
-            dateAdded: "2026-06-17",
-            isBestSeller: true
-          },
-          {
-            id: "composite-strap",
-            name: "Cord Strap",
-            sku: "SBL-COMP-1",
-            brand: "SBECO",
-            tagline: "Flexible and robust composite strap with high system strength",
-            badge: "Premium",
-            description: "Made from high tenacity polyester yarns embedded in a polymer coating. Safe to handle and provides excellent load securing.",
-            specs: {
-              Grade: "Premium",
-              "Strap Width": "19mm, 25mm, 32mm",
-              "System Strength": "Up to 1500daN",
-              "Weather Resistance": "Excellent",
-              Usage: "Buckle Fastening"
+              "imageUrl": "/images/MIP 1200 Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "Galvanized Wire Buckles",
-                sku: "SBL-BUCKLE-GALV",
-                icon: "seal"
+            {
+              "id": "mip-1610-tensioner",
+              "name": "MIP 1610 Tensioner",
+              "sku": "MIP-1610",
+              "brand": "MIP",
+              "tagline": "MIP 1610 standard tensioner",
+              "description": "Standard MIP 1610 tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "Cord Strap Tensioner",
-                sku: "SBL-TEN-CORD",
-                icon: "tool"
-              },
-              {
-                name: "Dispenser for Cord Strap",
-                sku: "SBL-DISP-CORD",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pet-strap-heavy",
-              "woven-strap",
-              "pp-strap-manual"
-            ],
-            dateAdded: "2026-06-17",
-            isBestSeller: false
-          },
-          {
-            id: "woven-strap",
-            name: "Pallet covers",
-            sku: "SBL-PAL-1",
-            brand: "SBECO",
-            tagline: "Cross-woven polyester strap for maximum durability and tear resistance",
-            badge: "Specialty",
-            description: "Cross-woven structure prevents splitting and provides exceptional strength for demanding logistics operations.",
-            specs: {
-              Grade: "Specialty",
-              "Strap Width": "19mm, 25mm",
-              Material: "Woven Polyester",
-              Elongation: "Low",
-              Usage: "Buckle Fastening"
+              "imageUrl": "/images/MIP 1610 tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_rolls.png",
-            consumables: [
-              {
-                name: "Phosphated Wire Buckles",
-                sku: "SBL-BUCKLE-PHOS",
-                icon: "seal"
+            {
+              "id": "mip-1860-tensioner",
+              "name": "MIP 1860 Tensioner",
+              "sku": "MIP-1860",
+              "brand": "MIP",
+              "tagline": "MIP 1860 series tensioner",
+              "description": "Advanced MIP 1860 tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "Cord Strap Tensioner",
-                sku: "SBL-TEN-CORD",
-                icon: "tool"
-              },
-              {
-                name: "Heavy Duty Dispenser",
-                sku: "SBL-DISP-HD",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "composite-strap",
-              "pet-strap-heavy",
-              "pp-strap-machine"
-            ],
-            dateAdded: "2026-06-17",
-            isBestSeller: false
-          }
-        ]
-      },
-      {
-        id: "tools",
-        name: "Tools",
-        nestedSubcategories: [
-          {
-            id: "tensioners",
-            name: "Tensioners",
-            products: [
-              {
-                id: "pp-tensioner-eco",
-                name: "SBECO PP Strap Tensioner ECO",
-                sku: "SBL-TEN-ECO",
-                brand: "Falcon",
-                tagline: "Durable metal tensioner with rubberized grip for 12–19mm PP straps",
-                badge: "Value Pick",
-                description: "Rugged, ergonomic hand tool designed for manual PP strapping operations. Built with solid metal body and comfortable rubberized grip.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm PP Strap",
-                  "Body Material": "Metal",
-                  Grip: "Rubberized"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "PP Strap Cutter ECO",
-                    sku: "SBL-CUT-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-pro",
-                  "pp-tensioner-hd",
-                  "pp-tensioner-compact"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-pro",
-                name: "SBECO PP Strap Tensioner PRO",
-                sku: "SBL-TEN-PRO",
-                brand: "Eagle",
-                tagline: "Professional-grade metal tensioner for heavy-duty 12–19mm PP strapping",
-                badge: "Professional",
-                description: "Professional-grade hand tool built for demanding, high-volume strapping environments. Heavy-duty metal construction.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm PP Strap",
-                  Grade: "Professional"
-                },
-                imageUrl: "/images/pp_tensioner_pro.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "PP Strap Cutter PRO",
-                    sku: "SBL-CUT-PRO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-hd",
-                  "pp-tensioner-ultra"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-1",
-                name: "SBECO Tensioner Series X1",
-                sku: "SBL-TEN-X1",
-                brand: "Falcon",
-                tagline: "Advanced series X1 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X1 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-2"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: true
-              },
-              {
-                id: "pp-tensioner-var-2",
-                name: "SBECO Tensioner Series X2",
-                sku: "SBL-TEN-X2",
-                brand: "Eagle",
-                tagline: "Advanced series X2 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X2 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-3"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-3",
-                name: "SBECO Tensioner Series X3",
-                sku: "SBL-TEN-X3",
-                brand: "Falcon",
-                tagline: "Advanced series X3 tensioner for rapid and secure strapping",
-                badge: "New Arrival",
-                description: "The X3 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-4"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-4",
-                name: "SBECO Tensioner Series X4",
-                sku: "SBL-TEN-X4",
-                brand: "Eagle",
-                tagline: "Advanced series X4 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X4 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-5"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-5",
-                name: "SBECO Tensioner Series X5",
-                sku: "SBL-TEN-X5",
-                brand: "Falcon",
-                tagline: "Advanced series X5 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X5 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-6"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-6",
-                name: "SBECO Tensioner Series X6",
-                sku: "SBL-TEN-X6",
-                brand: "Eagle",
-                tagline: "Advanced series X6 tensioner for rapid and secure strapping",
-                badge: "New Arrival",
-                description: "The X6 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-7"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-7",
-                name: "SBECO Tensioner Series X7",
-                sku: "SBL-TEN-X7",
-                brand: "Falcon",
-                tagline: "Advanced series X7 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X7 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-8"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-8",
-                name: "SBECO Tensioner Series X8",
-                sku: "SBL-TEN-X8",
-                brand: "Eagle",
-                tagline: "Advanced series X8 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X8 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-9"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-9",
-                name: "SBECO Tensioner Series X9",
-                sku: "SBL-TEN-X9",
-                brand: "Falcon",
-                tagline: "Advanced series X9 tensioner for rapid and secure strapping",
-                badge: "New Arrival",
-                description: "The X9 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-10"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-tensioner-var-10",
-                name: "SBECO Tensioner Series X10",
-                sku: "SBL-TEN-X10",
-                brand: "Eagle",
-                tagline: "Advanced series X10 tensioner for rapid and secure strapping",
-                badge: "Standard",
-                description: "The X10 series brings refined ergonomics and durable parts. Ideal for continuous packaging lines.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Tensioner",
-                  "Suitable For": "12–19mm Straps",
-                  Durability: "High"
-                },
-                imageUrl: "/images/pp_tensioner_eco.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "Strapping Dispenser Cart",
-                    sku: "SBL-DISP-CRT",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-tensioner-eco",
-                  "pp-tensioner-pro",
-                  "pp-tensioner-var-1"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              }
-            ]
-          },
-          {
-            id: "sealers",
-            name: "Sealers",
-            products: [
-              {
-                id: "pp-sealer-eco",
-                name: "SBECO PP Strap Sealer ECO",
-                sku: "SBL-SEL-ECO",
-                brand: "Falcon",
-                tagline: "Metal sealer with rubberized grip for secure 12–19mm PP strap crimping",
-                badge: "Value Pick",
-                description: "Dependable crimping tool for securing PP strap seals onto tensioned polypropylene strapping.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm PP Strap",
-                  Grade: "Economy"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Cutter ECO",
-                    sku: "SBL-CUT-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-pro",
-                  "pp-sealer-var-1",
-                  "pp-sealer-var-2"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-pro",
-                name: "SBECO PP Strap Sealer PRO",
-                sku: "SBL-SEL-PRO",
-                brand: "Eagle",
-                tagline: "Stainless steel professional sealer with rubberized grip",
-                badge: "Professional",
-                description: "Premium-grade crimping tool constructed from stainless steel for long-lasting durability.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  Material: "Stainless Steel",
-                  Grade: "Professional"
-                },
-                imageUrl: "/images/pp_sealer_pro.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Cutter PRO",
-                    sku: "SBL-CUT-PRO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-var-3",
-                  "pp-sealer-var-4"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-1",
-                name: "SBECO Sealer Series Z1",
-                sku: "SBL-SEL-Z1",
-                brand: "Falcon",
-                tagline: "High-efficiency Z1 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z1 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-2"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-2",
-                name: "SBECO Sealer Series Z2",
-                sku: "SBL-SEL-Z2",
-                brand: "Eagle",
-                tagline: "High-efficiency Z2 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z2 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-3"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: true
-              },
-              {
-                id: "pp-sealer-var-3",
-                name: "SBECO Sealer Series Z3",
-                sku: "SBL-SEL-Z3",
-                brand: "Falcon",
-                tagline: "High-efficiency Z3 sealer for fast crimping",
-                badge: "Ergonomic",
-                description: "The Z3 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-4"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-4",
-                name: "SBECO Sealer Series Z4",
-                sku: "SBL-SEL-Z4",
-                brand: "Eagle",
-                tagline: "High-efficiency Z4 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z4 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-5"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-5",
-                name: "SBECO Sealer Series Z5",
-                sku: "SBL-SEL-Z5",
-                brand: "Falcon",
-                tagline: "High-efficiency Z5 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z5 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-6"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-6",
-                name: "SBECO Sealer Series Z6",
-                sku: "SBL-SEL-Z6",
-                brand: "Eagle",
-                tagline: "High-efficiency Z6 sealer for fast crimping",
-                badge: "Ergonomic",
-                description: "The Z6 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-7"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-7",
-                name: "SBECO Sealer Series Z7",
-                sku: "SBL-SEL-Z7",
-                brand: "Falcon",
-                tagline: "High-efficiency Z7 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z7 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-8"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-8",
-                name: "SBECO Sealer Series Z8",
-                sku: "SBL-SEL-Z8",
-                brand: "Eagle",
-                tagline: "High-efficiency Z8 sealer for fast crimping",
-                badge: "Standard",
-                description: "The Z8 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Eagle",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-9"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              },
-              {
-                id: "pp-sealer-var-9",
-                name: "SBECO Sealer Series Z9",
-                sku: "SBL-SEL-Z9",
-                brand: "Falcon",
-                tagline: "High-efficiency Z9 sealer for fast crimping",
-                badge: "Ergonomic",
-                description: "The Z9 series is engineered for repetitive sealing with minimal effort, providing perfect crimps every time.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Sealer",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_sealer_eco.png",
-                consumables: [
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-sealer-eco",
-                  "pp-sealer-pro",
-                  "pp-sealer-var-10"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              }
-            ]
-          },
-          {
-            id: "cutters",
-            name: "Cutters",
-            products: [
-              {
-                id: "pp-strap-cutter-eco",
-                name: "SBECO PP Strap Cutter ECO",
-                sku: "SBL-CUT-ECO",
-                brand: "Falcon",
-                tagline: "Hand-operated cutter for clean 12-19mm PP strap cutting",
-                badge: "Value Pick",
-                description: "Efficient manual cutter designed for precise, clean cutting of polypropylene straps without fraying.",
-                specs: {
-                  "Suitable For": "12-19mm PP Strap",
-                  "Blade Type": "Stainless Steel",
-                  Grip: "Rubberized",
-                  "Cut Quality": "Clean edge"
-                },
-                imageUrl: "/images/pp_cutter.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-strap-cutter-pro",
-                  "pp-strap-cutter-heavy",
-                  "pp-tensioner-eco"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-strap-cutter-pro",
-                name: "SBECO PP Strap Cutter PRO",
-                sku: "SBL-CUT-PRO",
-                brand: "Eagle",
-                tagline: "Professional-grade cutter with precision blade for high-volume use",
-                badge: "Professional",
-                description: "Heavy-duty professional cutter for demanding industrial applications.",
-                specs: {
-                  "Suitable For": "12-19mm PP Strap",
-                  Blade: "Hardened Steel",
-                  Lifespan: "Extended",
-                  Precision: "High"
-                },
-                imageUrl: "/images/pp_cutter_pro.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Seals 19mm",
-                    sku: "SBL-SEAL-19",
-                    icon: "seal"
-                  },
-                  {
-                    name: "PP Strap Tensioner PRO",
-                    sku: "SBL-TEN-PRO",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-strap-cutter-eco",
-                  "pp-strap-cutter-heavy",
-                  "pp-sealer-pro"
-                ],
-                dateAdded: "2026-06-01",
-                isBestSeller: false
-              },
-              {
-                id: "pp-strap-cutter-heavy",
-                name: "SBECO Heavy Duty Strap Cutter",
-                sku: "SBL-CUT-HD",
-                brand: "Eagle",
-                tagline: "Ultra-sharp heavy duty cutter for PET and steel straps",
-                badge: "Heavy Duty",
-                description: "Cuts through thick PET and even light steel straps effortlessly. Extended handle for extra leverage.",
-                specs: {
-                  "Suitable For": "PET & Steel",
-                  Blade: "High Carbon Steel",
-                  Leverage: "High",
-                  Grip: "Ergonomic"
-                },
-                imageUrl: "/images/pp_cutter_pro.png",
-                consumables: [
-                  {
-                    name: "Heavy Duty PET Strap",
-                    sku: "SBL-PET-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PET Seals 16mm",
-                    sku: "SBL-PET-SEAL-16",
-                    icon: "seal"
-                  },
-                  {
-                    name: "PET Battery Strapping Tool",
-                    sku: "SBL-BATT-TOOL",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "pp-strap-cutter-pro",
-                  "pp-strap-cutter-eco",
-                  "pet-strap-heavy"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: true
-              },
-              {
-                id: "pp-strap-cutter-var-1",
-                name: "SBECO Cutter Series Y1",
-                sku: "SBL-CUT-Y1",
-                brand: "Falcon",
-                tagline: "High-efficiency Y1 cutter for fast cutting",
-                badge: "Standard",
-                description: "The Y1 series is engineered for repetitive cutting with minimal effort.",
-                specs: {
-                  Brand: "Falcon",
-                  Type: "Cutter",
-                  "Suitable For": "12–19mm Straps",
-                  Operation: "Manual"
-                },
-                imageUrl: "/images/pp_cutter.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  }
-                ],
-                similar: [
-                  "pp-strap-cutter-eco",
-                  "pp-strap-cutter-pro"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              }
-            ]
-          },
-          {
-            id: "dispensers",
-            name: "Dispensers",
-            products: [
-              {
-                id: "dispenser-cart-standard",
-                name: "Strapping dispenser",
-                sku: "SBL-DISP-STD",
-                brand: "SBECO",
-                tagline: "Mobile dispenser cart for PP and PET strap rolls",
-                badge: "Essential",
-                description: "Convenient mobile cart for transporting and dispensing strapping rolls. Includes a tool tray for tensioners, sealers, and seals.",
-                specs: {
-                  "Core Size": "200mm to 406mm",
-                  Mobility: "Wheeled",
-                  Storage: "Integrated Tool Tray",
-                  Material: "Steel"
-                },
-                imageUrl: "/images/dispenser_cart.png",
-                consumables: [
-                  {
-                    name: "SBECO PP Strap (Manual Grade)",
-                    sku: "SBL-PPS-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PP Strap Tensioner ECO",
-                    sku: "SBL-TEN-ECO",
-                    icon: "tool"
-                  },
-                  {
-                    name: "PP Strap Seals 12mm",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  }
-                ],
-                similar: [
-                  "dispenser-cart-heavy",
-                  "tape-dispenser-table",
-                  "pp-strap-machine"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: true
-              },
-              {
-                id: "dispenser-cart-heavy",
-                name: "SBECO Heavy Duty Dispenser Cart",
-                sku: "SBL-DISP-HD",
-                brand: "SBECO",
-                tagline: "Reinforced mobile cart for heavy steel and PET strapping",
-                badge: "Heavy Duty",
-                description: "Built with reinforced steel framing to handle heavy rolls of PET and steel strapping. Features oversized wheels for easy maneuverability.",
-                specs: {
-                  "Core Size": "406mm",
-                  Mobility: "Oversized Wheels",
-                  Storage: "Large Tool Tray",
-                  Material: "Reinforced Steel"
-                },
-                imageUrl: "/images/dispenser_cart.png",
-                consumables: [
-                  {
-                    name: "Heavy Duty PET Strap",
-                    sku: "SBL-PET-1",
-                    icon: "strap"
-                  },
-                  {
-                    name: "PET Battery Strapping Tool",
-                    sku: "SBL-BATT-TOOL",
-                    icon: "tool"
-                  },
-                  {
-                    name: "PET Seals 16mm",
-                    sku: "SBL-PET-SEAL-16",
-                    icon: "seal"
-                  }
-                ],
-                similar: [
-                  "dispenser-cart-standard",
-                  "tape-dispenser-table",
-                  "composite-strap"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        id: "seals",
-        name: "Seals & Buckles",
-        products: [
-          {
-            id: "pp-seal-12mm",
-            name: "PP strap seals",
-            sku: "SBL-SEAL-12",
-            brand: "SBECO",
-            tagline: "Galvanized steel seals for 12mm polypropylene strapping",
-            badge: "Essential",
-            description: "Precision-stamped galvanized steel clips designed for securing 12mm polypropylene straps.",
-            specs: {
-              "Suitable For": "12mm Polypropylene Strap",
-              Material: "Galvanized Steel",
-              Colors: "Silver / Golden",
-              Type: "Crimp Seal"
+              "imageUrl": "/images/MIP 1860 Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_seals.png",
-            consumables: [
-              {
-                name: "PP Strap Sealer ECO",
-                sku: "SBL-SEL-ECO",
-                icon: "tool"
+            {
+              "id": "ybico-p330",
+              "name": "YBICO P330 Tensioner",
+              "sku": "YBC-P330",
+              "brand": "YBICO",
+              "tagline": "YBICO P330 tool",
+              "description": "Premium YBICO P330 tensioner.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "SBECO PP Strap (Manual Grade)",
-                sku: "SBL-PPS-1",
-                icon: "strap"
-              },
-              {
-                name: "PP Strap Tensioner ECO",
-                sku: "SBL-TEN-ECO",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-seal-15mm",
-              "pp-seal-19mm",
-              "wire-buckle-19mm"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: false
-          },
-          {
-            id: "pp-seal-15mm",
-            name: "PET Strap seals",
-            sku: "SBL-SEAL-15",
-            brand: "SBECO",
-            tagline: "Galvanized steel seals for 15mm polypropylene strapping",
-            badge: "Essential",
-            description: "Robust galvanized steel clips engineered for 15mm polypropylene straps.",
-            specs: {
-              "Suitable For": "15mm Polypropylene Strap",
-              Material: "Galvanized Steel",
-              Type: "Crimp Seal"
+              "imageUrl": "/images/YBICO-P330-Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_seals.png",
-            consumables: [
-              {
-                name: "PP Strap Sealer PRO",
-                sku: "SBL-SEL-PRO",
-                icon: "tool"
+            {
+              "id": "ybico-p472-p482",
+              "name": "YBICO P472/P482 Tensioner",
+              "sku": "YBC-P472",
+              "brand": "YBICO",
+              "tagline": "YBICO P472 & P482",
+              "description": "YBICO series tensioners.",
+              "specs": {
+                "Type": "Tensioner"
               },
-              {
-                name: "SBECO Semi-Automatic PP Strap",
-                sku: "SBL-PPS-2",
-                icon: "strap"
-              },
-              {
-                name: "PP Strap Tensioner PRO",
-                sku: "SBL-TEN-PRO",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-seal-12mm",
-              "pp-seal-19mm",
-              "wire-buckle-19mm"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: false
-          },
-          {
-            id: "pp-seal-19mm",
-            name: "Steel strap seals",
-            sku: "SBL-SEAL-19",
-            brand: "SBECO",
-            tagline: "Heavy-duty galvanized steel seals for 19mm polypropylene strapping",
-            badge: "Heavy Duty",
-            description: "Heavy-duty galvanized steel clips for the widest polypropylene straps.",
-            specs: {
-              "Suitable For": "19mm Polypropylene Strap",
-              Material: "Galvanized Steel",
-              Type: "Crimp Seal"
+              "imageUrl": "/images/YBICO-P472-P482-Tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_seals.png",
-            consumables: [
-              {
-                name: "PP Strap Sealer PRO",
-                sku: "SBL-SEL-PRO",
-                icon: "tool"
+            {
+              "id": "ybico-s249",
+              "name": "YBICO S249/S259 Steel Tensioner",
+              "sku": "YBC-S249",
+              "brand": "YBICO",
+              "tagline": "Steel strap tensioner",
+              "description": "Tensioner for steel strapping.",
+              "specs": {
+                "Type": "Steel Tensioner"
               },
-              {
-                name: "SBECO PP Strap (Manual Grade)",
-                sku: "SBL-PPS-1",
-                icon: "strap"
-              },
-              {
-                name: "PP Strap Tensioner PRO",
-                sku: "SBL-TEN-PRO",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-seal-12mm",
-              "pp-seal-15mm",
-              "wire-buckle-19mm"
-            ],
-            dateAdded: "2026-06-01",
-            isBestSeller: true
-          },
-          {
-            id: "wire-buckle-19mm",
-            name: "Buckles",
-            sku: "SBL-BUCKLE-19",
-            brand: "SBECO",
-            tagline: "Galvanized wire buckles for composite and woven cord straps",
-            badge: "Premium",
-            description: "High-strength wire buckles providing superior joint efficiency. Engineered for use with 19mm composite and woven polyester strapping.",
-            specs: {
-              "Suitable For": "19mm Cord Strap",
-              Material: "Galvanized Wire",
-              "Joint Efficiency": "High",
-              Type: "Wire Buckle"
+              "imageUrl": "/images/YBICO-S249-S259-steel-strap-tensioner.png",
+              "dateAdded": "2026-06-01"
             },
-            imageUrl: "/images/pp_strap_seals.png",
-            consumables: [
-              {
-                name: "Composite Cord Strap",
-                sku: "SBL-COMP-1",
-                icon: "strap"
+            {
+              "id": "ybico-s290",
+              "name": "YBICO S290 Steel Tensioner",
+              "sku": "YBC-S290",
+              "brand": "YBICO",
+              "tagline": "Steel strap tensioner",
+              "description": "Heavy duty steel tensioner.",
+              "specs": {
+                "Type": "Steel Tensioner"
               },
-              {
-                name: "Cord Strap Tensioner",
-                sku: "SBL-TEN-CORD",
-                icon: "tool"
+              "imageUrl": "/images/YBICO-S290-Steel-strap-tensioner.png",
+              "dateAdded": "2026-06-01"
+            }
+          ]
+        },
+        {
+          "id": "sealers",
+          "name": "Sealers",
+          "products": [
+            {
+              "id": "eagle-sealer",
+              "name": "Eagle Strap Sealer",
+              "sku": "EGL-SEL",
+              "brand": "Eagle",
+              "tagline": "Professional sealer",
+              "description": "Secure sealer for plastic straps.",
+              "specs": {
+                "Type": "Sealer"
               },
-              {
-                name: "Dispenser for Cord Strap",
-                sku: "SBL-DISP-CORD",
-                icon: "tool"
-              }
-            ],
-            similar: [
-              "pp-seal-19mm",
-              "pp-seal-15mm",
-              "pp-seal-12mm"
-            ],
-            dateAdded: "2026-06-17",
-            isBestSeller: false
-          }
-        ]
-      },
-      {
-        id: "machinery",
-        name: "Machinery",
-        nestedSubcategories: [
-          {
-            id: "machinery-semi-automatic",
-            name: "Semi-Automatic",
-            products: [
-              {
-                id: "semi-auto-strapping-machine",
-                name: "SBECO Semi-Automatic Strapping Machine",
-                sku: "SBL-SASM-01",
-                brand: "SBECO",
-                tagline: "Efficient table-style strapping machine for low to medium volume",
-                badge: "Popular",
-                description: "Reliable and easy-to-use semi-automatic strapping machine. Perfect for bundling cartons, packages, and printed materials. Features adjustable tension control and energy-saving motor.",
-                specs: {
-                  Type: "Semi-Automatic",
-                  "Strap Width": "6mm - 15mm",
-                  Tension: "15-45kg",
-                  "Power Supply": "220V/50Hz"
-                },
-                imageUrl: "/images/strapping_machine_semi.png",
-                consumables: [
-                  {
-                    name: "SBECO Semi-Automatic PP Strap",
-                    sku: "SBL-PPS-2",
-                    icon: "strap"
-                  },
-                  {
-                    name: "Machine Maintenance Kit",
-                    sku: "SBL-MAINT-KIT",
-                    icon: "tool"
-                  },
-                  {
-                    name: "SBECO PP Strap Seals 12MM",
-                    sku: "SBL-SEAL-12",
-                    icon: "seal"
-                  }
-                ],
-                similar: [
-                  "fully-auto-strapping-machine",
-                  "pp-strap-semi-auto",
-                  "tape-dispenser-table"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: true
-              }
-            ]
+              "imageUrl": "/images/Eagle-Strap-Sealer.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "falcon-sealer",
+              "name": "Falcon Strap Sealer",
+              "sku": "FLC-SEL",
+              "brand": "Falcon",
+              "tagline": "Ergonomic sealer",
+              "description": "Durable sealer tool.",
+              "specs": {
+                "Type": "Sealer"
+              },
+              "imageUrl": "/images/Falcon-strap-sealer.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "mip-420-sealer",
+              "name": "MIP 420 1/2\" Sealer",
+              "sku": "MIP-420",
+              "brand": "MIP",
+              "tagline": "1/2 inch sealer",
+              "description": "MIP 420 series half inch sealer.",
+              "specs": {
+                "Type": "Sealer",
+                "Size": "1/2\""
+              },
+              "imageUrl": "/images/MIP 420 12 sealer.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "mip-430-sealer",
+              "name": "MIP 430 1/2\" Sealer",
+              "sku": "MIP-430",
+              "brand": "MIP",
+              "tagline": "1/2 inch sealer",
+              "description": "MIP 430 series half inch sealer.",
+              "specs": {
+                "Type": "Sealer",
+                "Size": "1/2\""
+              },
+              "imageUrl": "/images/MIP 430 12 sealers.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "mip-1100-sealer",
+              "name": "MIP 1100 3/4\" Sealer",
+              "sku": "MIP-1100",
+              "brand": "MIP",
+              "tagline": "3/4 inch sealer",
+              "description": "MIP 1100 series 3/4 inch sealer.",
+              "specs": {
+                "Type": "Sealer",
+                "Size": "3/4\""
+              },
+              "imageUrl": "/images/MIP 1100 34 inch Sealer.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "mip-3100-sealer",
+              "name": "MIP 3100 3/4\" Sealer",
+              "sku": "MIP-3100",
+              "brand": "MIP",
+              "tagline": "3/4 inch sealer",
+              "description": "MIP 3100 series 3/4 inch sealer.",
+              "specs": {
+                "Type": "Sealer",
+                "Size": "3/4\""
+              },
+              "imageUrl": "/images/MIP 3100 34 sealer.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "ybico-c3160",
+              "name": "YBICO C3160/C3166/C3180",
+              "sku": "YBC-C3160",
+              "brand": "YBICO",
+              "tagline": "YBICO series sealers",
+              "description": "YBICO sealing tools.",
+              "specs": {
+                "Type": "Sealer"
+              },
+              "imageUrl": "/images/YBICO-C3160-C3166-C3180.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "ybico-c5004",
+              "name": "YBICO C5004/C5005/C5015",
+              "sku": "YBC-C5004",
+              "brand": "YBICO",
+              "tagline": "YBICO series sealers",
+              "description": "YBICO sealing tools.",
+              "specs": {
+                "Type": "Sealer"
+              },
+              "imageUrl": "/images/YBICO-C5004-C5005-C5015-C5006.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "ybico-s3104",
+              "name": "YBICO S3104 Steel Sealer",
+              "sku": "YBC-S3104",
+              "brand": "YBICO",
+              "tagline": "Steel strap sealer",
+              "description": "Sealer for steel straps.",
+              "specs": {
+                "Type": "Steel Sealer"
+              },
+              "imageUrl": "/images/YBICO-S3104-Steel-Strap-Sealer.png",
+              "dateAdded": "2026-06-01"
+            }
+          ]
+        },
+        {
+          "id": "cutters",
+          "name": "Cutters",
+          "products": [
+            {
+              "id": "ybico-300-cutter",
+              "name": "YBICO 300 Cutter",
+              "sku": "YBC-300",
+              "brand": "YBICO",
+              "tagline": "Strap cutter",
+              "description": "Heavy duty strap cutter.",
+              "specs": {
+                "Type": "Cutter"
+              },
+              "imageUrl": "/images/YBCIO-300-cutter.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "ybico-410-cutter",
+              "name": "YBICO 410 Cutter",
+              "sku": "YBC-410",
+              "brand": "YBICO",
+              "tagline": "Strap cutter",
+              "description": "Precision strap cutter.",
+              "specs": {
+                "Type": "Cutter"
+              },
+              "imageUrl": "/images/YBICO-410-cutter.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "ybico-h200-cutter",
+              "name": "YBICO H200 Cutter",
+              "sku": "YBC-H200",
+              "brand": "YBICO",
+              "tagline": "Strap cutter",
+              "description": "YBICO H200 series cutter.",
+              "specs": {
+                "Type": "Cutter"
+              },
+              "imageUrl": "/images/YBICO-H200-cutter.png",
+              "dateAdded": "2026-06-01"
+            }
+          ]
+        },
+        {
+          "id": "dispensers",
+          "name": "Dispensers",
+          "products": [
+            {
+              "id": "dispenser-1",
+              "name": "Strap Dispenser 1",
+              "sku": "DISP-1",
+              "brand": "SBECO",
+              "tagline": "Standard Dispenser",
+              "description": "Mobile cart for strap dispensing.",
+              "specs": {
+                "Type": "Dispenser"
+              },
+              "imageUrl": "/images/Strap-Dispenser-1.png",
+              "dateAdded": "2026-06-01"
+            },
+            {
+              "id": "dispenser-2",
+              "name": "Strap Dispenser 2",
+              "sku": "DISP-2",
+              "brand": "SBECO",
+              "tagline": "Heavy Duty Dispenser",
+              "description": "Heavy duty mobile cart with tool tray.",
+              "specs": {
+                "Type": "Dispenser"
+              },
+              "imageUrl": "/images/Strap-Dispenser-2.png",
+              "dateAdded": "2026-06-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seals-buckles",
+      "name": "Seals & Buckles",
+      "products": [
+        {
+          "id": "pp-seals",
+          "name": "PP Strap Seals",
+          "sku": "SBL-SEAL-PP",
+          "brand": "SBECO",
+          "tagline": "Secure PP seals",
+          "description": "Metal seals for PP strapping.",
+          "specs": {
+            "Material": "Metal",
+            "For": "PP Strap"
           },
-          {
-            id: "machinery-fully-automatic",
-            name: "Fully Automatic",
-            products: [
-              {
-                id: "fully-auto-strapping-machine",
-                name: "SBECO Fully Automatic Arch Strapping Machine",
-                sku: "SBL-FASM-01",
-                brand: "SBECO",
-                tagline: "High-speed arch strapping machine for continuous production lines",
-                badge: "Industrial",
-                description: "Designed for high-throughput packaging environments. This fully automatic machine features an arch system for rapid, hands-free strapping of large volumes of cartons.",
-                specs: {
-                  Type: "Fully Automatic",
-                  "Arch Size": "850mm x 600mm",
-                  Speed: "Up to 27 straps/min",
-                  "Strap Width": "9mm - 15mm"
-                },
-                imageUrl: "/images/strapping_machine_auto.png",
-                consumables: [
-                  {
-                    name: "SBECO Machine Grade PP Strap",
-                    sku: "SBL-PPS-3",
-                    icon: "strap"
-                  },
-                  {
-                    name: "Arch Sensor Cleaning Kit",
-                    sku: "SBL-CLN-ARCH",
-                    icon: "tool"
-                  },
-                  {
-                    name: "Heavy Duty Dispenser Cart",
-                    sku: "SBL-DISP-HD",
-                    icon: "tool"
-                  }
-                ],
-                similar: [
-                  "semi-auto-strapping-machine",
-                  "pp-strap-machine",
-                  "dispenser-cart-heavy"
-                ],
-                dateAdded: "2026-06-17",
-                isBestSeller: false
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  // ═══════════════════════════════════════════════════════════════
-  // 3. POWER TOOLS
-  // ═══════════════════════════════════════════════════════════════
+          "imageUrl": "/images/PP-strap-seals.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "steel-seals",
+          "name": "Steel Strap Seals",
+          "sku": "SBL-SEAL-STL",
+          "brand": "SBECO",
+          "tagline": "Secure Steel seals",
+          "description": "High strength seals for steel straps.",
+          "specs": {
+            "Material": "Steel",
+            "For": "Steel Strap"
+          },
+          "imageUrl": "/images/Steel-strap=seals.png",
+          "dateAdded": "2026-06-01"
+        },
+        {
+          "id": "buckles",
+          "name": "Buckles",
+          "sku": "SBL-BUCKLE",
+          "brand": "SBECO",
+          "tagline": "Wire buckles",
+          "description": "Wire and plastic buckles for tensioning.",
+          "specs": {
+            "Type": "Wire/Plastic"
+          },
+          "imageUrl": "/images/Buckles.png",
+          "dateAdded": "2026-06-01"
+        }
+      ]
+    }
+  ]
+},
   {
     id: "power-tools",
     name: "Power Tools",
