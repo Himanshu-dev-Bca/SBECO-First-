@@ -5,7 +5,18 @@ import { CATALOGUE } from '../data/products';
 const NAV = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/products', label: 'Products', hasMega: true },
+  { 
+    to: '/products', 
+    label: 'Products', 
+    hasDropdown: true,
+    items: [
+      { to: '/products?category=tape-dispensers', label: 'Tapes and Tape Dispensers' },
+      { to: '/products?category=strapping-solutions', label: 'Strapping Solutions' },
+      { to: '/products?category=power-tools', label: 'Power Tools' },
+      { to: '/products?category=packaging-consumables', label: 'Packaging Consumables' },
+      { to: '/products', label: 'And Many More...' }
+    ]
+  },
   { to: '/gallery', label: 'Gallery' },
   { 
     label: 'More', 
