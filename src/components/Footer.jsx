@@ -89,7 +89,7 @@ export default function Footer() {
                     </svg>
                   </span>
                   <span className="text-[13px] font-['Montserrat'] leading-[1.7] font-medium">
-                    #4/2 1st Main, <br />Srinivasa Colony, <br />Bangalore-560027
+                    <br />Srinivasa Colony, <br />Bangalore-560027
                   </span>
                 </div>
               </div>

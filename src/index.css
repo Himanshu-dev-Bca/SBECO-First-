@@ -83,6 +83,78 @@ html {
   width: 100%;
 }
 
+/* ============================================================
+   MEGA MENU — ANIMATIONS & POLISH
+   ============================================================ */
+@keyframes megaFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-mega-fade {
+  animation: megaFadeIn 0.25s ease-out;
+}
+
+/* Mega menu category button active indicator */
+.mega-cat-btn {
+  transition: all 0.2s ease;
+}
+.mega-cat-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Mega menu product link hover shift */
+.mega-product-link {
+  transition: all 0.15s ease;
+}
+.mega-product-link:hover {
+  transform: translateX(3px);
+}
+.mega-product-link:hover span:first-child {
+  opacity: 1 !important;
+  transform: scale(1.4);
+}
+
+/* Mega menu scrollbar */
+.mega-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.mega-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mega-scroll::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+.mega-scroll::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+.mega-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e5e7eb transparent;
+}
+
+/* Subcategory card hover */
+.mega-subcategory {
+  padding: 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+.mega-subcategory:hover {
+  background: rgba(0, 0, 0, 0.015);
+}
+
+/* Mega menu container entrance */
+.mega-menu {
+  transform-origin: top center;
+}
+
 body {
   font-family: var(--font-family-sans);
   background: var(--color-bg);

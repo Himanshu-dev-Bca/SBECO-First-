@@ -144,512 +144,512 @@ export const CATALOGUE = [
   // 2. STRAPPING SOLUTIONS (with nested subcategories under Tools)
   // ═══════════════════════════════════════════════════════════════
   {
-  "id": "strapping-solutions",
-  "name": "Strapping Solutions",
-  "description": "Complete strapping solutions including PP, PET, and steel straps, manual and automatic tools, sealers, and accessories.",
-  "imageUrl": "/images/strapping_solutions.png",
-  "subcategories": [
-    {
-      "id": "straps",
-      "name": "Straps",
-      "products": [
-        {
-          "id": "pp-strap",
-          "name": "PP Strap",
-          "sku": "SBL-STRAP-PP",
-          "brand": "SBECO",
-          "tagline": "Manual and machine grade PP strap",
-          "badge": "Popular",
-          "description": "High quality Polypropylene strap suitable for manual tools and semi-automatic machines.",
-          "specs": {
-            "Material": "Polypropylene",
-            "Grade": "Manual/Machine"
+    "id": "strapping-solutions",
+    "name": "Strapping Solutions",
+    "description": "Complete strapping solutions including PP, PET, and steel straps, manual and automatic tools, sealers, and accessories.",
+    "imageUrl": "/images/strapping_solutions.png",
+    "subcategories": [
+      {
+        "id": "straps",
+        "name": "Straps",
+        "products": [
+          {
+            "id": "pp-strap",
+            "name": "PP Strap",
+            "sku": "SBL-STRAP-PP",
+            "brand": "SBECO",
+            "tagline": "Manual and machine grade PP strap",
+            "badge": "Popular",
+            "description": "High quality Polypropylene strap suitable for manual tools and semi-automatic machines.",
+            "specs": {
+              "Material": "Polypropylene",
+              "Grade": "Manual/Machine"
+            },
+            "imageUrl": "/images/PP-strap.png",
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
           },
-          "imageUrl": "/images/PP-strap.png",
-          "dateAdded": "2026-06-01",
-          "isBestSeller": true
-        },
-        {
-          "id": "pet-strap",
-          "name": "PET Strap",
-          "sku": "SBL-STRAP-PET",
-          "brand": "SBECO",
-          "tagline": "Heavy-duty PET strap for secure packaging",
-          "description": "High-tensile PET strapping designed as a safe and efficient alternative to steel strapping.",
-          "specs": {
-            "Material": "Polyester (PET)",
-            "Tensile Strength": "High"
+          {
+            "id": "pet-strap",
+            "name": "PET Strap",
+            "sku": "SBL-STRAP-PET",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty PET strap for secure packaging",
+            "description": "High-tensile PET strapping designed as a safe and efficient alternative to steel strapping.",
+            "specs": {
+              "Material": "Polyester (PET)",
+              "Tensile Strength": "High"
+            },
+            "imageUrl": "/images/Pet-strap.png",
+            "dateAdded": "2026-06-01"
           },
-          "imageUrl": "/images/Pet-strap.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "steel-strap",
-          "name": "Steel Strap",
-          "sku": "SBL-STRAP-STL",
-          "brand": "SBECO",
-          "tagline": "Maximum strength steel strap",
-          "badge": "Heavy Duty",
-          "description": "Premium steel strapping for ultra heavy-duty applications and extreme conditions.",
-          "specs": {
-            "Material": "Steel",
-            "Strength": "Maximum"
+          {
+            "id": "steel-strap",
+            "name": "Steel Strap",
+            "sku": "SBL-STRAP-STL",
+            "brand": "SBECO",
+            "tagline": "Maximum strength steel strap",
+            "badge": "Heavy Duty",
+            "description": "Premium steel strapping for ultra heavy-duty applications and extreme conditions.",
+            "specs": {
+              "Material": "Steel",
+              "Strength": "Maximum"
+            },
+            "imageUrl": "/images/steel-strap.png",
+            "dateAdded": "2026-06-01"
           },
-          "imageUrl": "/images/steel-strap.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "cord-strap",
-          "name": "Cord Strap",
-          "sku": "SBL-STRAP-CRD",
-          "brand": "SBECO",
-          "tagline": "Woven and composite cord strap",
-          "description": "Strong and safe cord strapping for securing irregular or heavy loads.",
-          "specs": {
-            "Material": "Polyester Cord",
-            "Type": "Woven/Composite"
+          {
+            "id": "cord-strap",
+            "name": "Cord Strap",
+            "sku": "SBL-STRAP-CRD",
+            "brand": "SBECO",
+            "tagline": "Woven and composite cord strap",
+            "description": "Strong and safe cord strapping for securing irregular or heavy loads.",
+            "specs": {
+              "Material": "Polyester Cord",
+              "Type": "Woven/Composite"
+            },
+            "imageUrl": "/images/cord-strap.png",
+            "dateAdded": "2026-06-01"
           },
-          "imageUrl": "/images/cord-strap.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "pallet-belts",
-          "name": "Pallet Belts",
-          "sku": "SBL-PLT-BLT",
-          "brand": "SBECO",
-          "tagline": "Reusable pallet strapping belts",
-          "description": "Eco-friendly, reusable belts for securing pallet loads quickly.",
-          "specs": {
-            "Type": "Reusable",
-            "Application": "Palletizing"
+          {
+            "id": "pallet-belts",
+            "name": "Pallet Belts",
+            "sku": "SBL-PLT-BLT",
+            "brand": "SBECO",
+            "tagline": "Reusable pallet strapping belts",
+            "description": "Eco-friendly, reusable belts for securing pallet loads quickly.",
+            "specs": {
+              "Type": "Reusable",
+              "Application": "Palletizing"
+            },
+            "imageUrl": "/images/pallet-belts.png",
+            "dateAdded": "2026-06-01"
           },
-          "imageUrl": "/images/pallet-belts.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "pallet-covers",
-          "name": "Pallet Covers",
-          "sku": "SBL-PLT-COV",
-          "brand": "SBECO",
-          "tagline": "Protective covers for pallets",
-          "description": "Durable covers to protect palletized goods from dust, moisture, and transit damage.",
-          "specs": {
-            "Material": "PE",
-            "Protection": "Dust & Moisture"
+          {
+            "id": "pallet-covers",
+            "name": "Pallet Covers",
+            "sku": "SBL-PLT-COV",
+            "brand": "SBECO",
+            "tagline": "Protective covers for pallets",
+            "description": "Durable covers to protect palletized goods from dust, moisture, and transit damage.",
+            "specs": {
+              "Material": "PE",
+              "Protection": "Dust & Moisture"
+            },
+            "imageUrl": "/images/pallet-covers.png",
+            "dateAdded": "2026-06-01"
+          }
+        ]
+      },
+      {
+        "id": "tools",
+        "name": "Tools",
+        "nestedSubcategories": [
+          {
+            "id": "tensioners",
+            "name": "Tensioners",
+            "products": [
+              {
+                "id": "eagle-tensioner",
+                "name": "Eagle Strap Tensioner",
+                "sku": "EGL-TEN",
+                "brand": "Eagle",
+                "tagline": "Professional tensioner",
+                "description": "change",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/Eagle-Strap-Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "falcon-tensioner",
+                "name": "Falcon Strap Tensioner",
+                "sku": "FLC-TEN",
+                "brand": "Falcon",
+                "tagline": "Ergonomic tensioner",
+                "description": "Durable and ergonomic hand tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/Falcon-Strap-Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "mip-370-tensioner",
+                "name": "MIP 370 Tensioner",
+                "sku": "MIP-370",
+                "brand": "MIP",
+                "tagline": "MIP 370 series tensioner",
+                "description": "Reliable MIP 370 series tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/mip 370 tensioners.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "mip-380-tensioner",
+                "name": "MIP 380 Tensioner",
+                "sku": "MIP-380",
+                "brand": "MIP",
+                "tagline": "MIP 380 series tensioner",
+                "description": "Reliable MIP 380 series tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/MIP 380 tensioners.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "mip-1200-tensioner",
+                "name": "MIP 1200 Tensioner",
+                "sku": "MIP-1200",
+                "brand": "MIP",
+                "tagline": "MIP 1200 heavy duty tensioner",
+                "description": "Heavy duty MIP 1200 tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/MIP 1200 Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "mip-1610-tensioner",
+                "name": "MIP 1610 Tensioner",
+                "sku": "MIP-1610",
+                "brand": "MIP",
+                "tagline": "MIP 1610 standard tensioner",
+                "description": "Standard MIP 1610 tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/MIP 1610 tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "mip-1860-tensioner",
+                "name": "MIP 1860 Tensioner",
+                "sku": "MIP-1860",
+                "brand": "MIP",
+                "tagline": "MIP 1860 series tensioner",
+                "description": "Advanced MIP 1860 tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/MIP 1860 Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-p330",
+                "name": "YBICO P330 Tensioner",
+                "sku": "YBC-P330",
+                "brand": "YBICO",
+                "tagline": "YBICO P330 tool",
+                "description": "Premium YBICO P330 tensioner.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/YBICO-P330-Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-p472-p482",
+                "name": "YBICO P472/P482 Tensioner",
+                "sku": "YBC-P472",
+                "brand": "YBICO",
+                "tagline": "YBICO P472 & P482",
+                "description": "YBICO series tensioners.",
+                "specs": {
+                  "Type": "Tensioner"
+                },
+                "imageUrl": "/images/YBICO-P472-P482-Tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-s249",
+                "name": "YBICO S249/S259 Steel Tensioner",
+                "sku": "YBC-S249",
+                "brand": "YBICO",
+                "tagline": "Steel strap tensioner",
+                "description": "Tensioner for steel strapping.",
+                "specs": {
+                  "Type": "Steel Tensioner"
+                },
+                "imageUrl": "/images/YBICO-S249-S259-steel-strap-tensioner.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-s290",
+                "name": "YBICO S290 Steel Tensioner",
+                "sku": "YBC-S290",
+                "brand": "YBICO",
+                "tagline": "Steel strap tensioner",
+                "description": "Heavy duty steel tensioner.",
+                "specs": {
+                  "Type": "Steel Tensioner"
+                },
+                "imageUrl": "/images/YBICO-S290-Steel-strap-tensioner.png",
+                "dateAdded": "2026-06-01"
+              }
+            ]
           },
-          "imageUrl": "/images/pallet-covers.png",
-          "dateAdded": "2026-06-01"
-        }
-      ]
-    },
-    {
-      "id": "tools",
-      "name": "Tools",
-      "nestedSubcategories": [
-        {
-          "id": "tensioners",
-          "name": "Tensioners",
-          "products": [
-            {
-              "id": "eagle-tensioner",
-              "name": "Eagle Strap Tensioner",
-              "sku": "EGL-TEN",
-              "brand": "Eagle",
-              "tagline": "Professional tensioner",
-              "description": "Heavy-duty tensioner for secure strapping.",
-              "specs": {
-                "Type": "Tensioner"
+          {
+            "id": "sealers",
+            "name": "Sealers",
+            "products": [
+              {
+                "id": "eagle-sealer",
+                "name": "Eagle Strap Sealer",
+                "sku": "EGL-SEL",
+                "brand": "Eagle",
+                "tagline": "Professional sealer",
+                "description": "Secure sealer for plastic straps.",
+                "specs": {
+                  "Type": "Sealer"
+                },
+                "imageUrl": "/images/Eagle-Strap-Sealer.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/Eagle-Strap-Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "falcon-tensioner",
-              "name": "Falcon Strap Tensioner",
-              "sku": "FLC-TEN",
-              "brand": "Falcon",
-              "tagline": "Ergonomic tensioner",
-              "description": "Durable and ergonomic hand tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "falcon-sealer",
+                "name": "Falcon Strap Sealer",
+                "sku": "FLC-SEL",
+                "brand": "Falcon",
+                "tagline": "Ergonomic sealer",
+                "description": "Durable sealer tool.",
+                "specs": {
+                  "Type": "Sealer"
+                },
+                "imageUrl": "/images/Falcon-strap-sealer.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/Falcon-Strap-Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-370-tensioner",
-              "name": "MIP 370 Tensioner",
-              "sku": "MIP-370",
-              "brand": "MIP",
-              "tagline": "MIP 370 series tensioner",
-              "description": "Reliable MIP 370 series tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "mip-420-sealer",
+                "name": "MIP 420 1/2\" Sealer",
+                "sku": "MIP-420",
+                "brand": "MIP",
+                "tagline": "1/2 inch sealer",
+                "description": "MIP 420 series half inch sealer.",
+                "specs": {
+                  "Type": "Sealer",
+                  "Size": "1/2\""
+                },
+                "imageUrl": "/images/MIP 420 12 sealer.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/mip 370 tensioners.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-380-tensioner",
-              "name": "MIP 380 Tensioner",
-              "sku": "MIP-380",
-              "brand": "MIP",
-              "tagline": "MIP 380 series tensioner",
-              "description": "Reliable MIP 380 series tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "mip-430-sealer",
+                "name": "MIP 430 1/2\" Sealer",
+                "sku": "MIP-430",
+                "brand": "MIP",
+                "tagline": "1/2 inch sealer",
+                "description": "MIP 430 series half inch sealer.",
+                "specs": {
+                  "Type": "Sealer",
+                  "Size": "1/2\""
+                },
+                "imageUrl": "/images/MIP 430 12 sealers.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/MIP 380 tensioners.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-1200-tensioner",
-              "name": "MIP 1200 Tensioner",
-              "sku": "MIP-1200",
-              "brand": "MIP",
-              "tagline": "MIP 1200 heavy duty tensioner",
-              "description": "Heavy duty MIP 1200 tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "mip-1100-sealer",
+                "name": "MIP 1100 3/4\" Sealer",
+                "sku": "MIP-1100",
+                "brand": "MIP",
+                "tagline": "3/4 inch sealer",
+                "description": "MIP 1100 series 3/4 inch sealer.",
+                "specs": {
+                  "Type": "Sealer",
+                  "Size": "3/4\""
+                },
+                "imageUrl": "/images/MIP 1100 34 inch Sealer.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/MIP 1200 Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-1610-tensioner",
-              "name": "MIP 1610 Tensioner",
-              "sku": "MIP-1610",
-              "brand": "MIP",
-              "tagline": "MIP 1610 standard tensioner",
-              "description": "Standard MIP 1610 tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "mip-3100-sealer",
+                "name": "MIP 3100 3/4\" Sealer",
+                "sku": "MIP-3100",
+                "brand": "MIP",
+                "tagline": "3/4 inch sealer",
+                "description": "MIP 3100 series 3/4 inch sealer.",
+                "specs": {
+                  "Type": "Sealer",
+                  "Size": "3/4\""
+                },
+                "imageUrl": "/images/MIP 3100 34 sealer.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/MIP 1610 tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-1860-tensioner",
-              "name": "MIP 1860 Tensioner",
-              "sku": "MIP-1860",
-              "brand": "MIP",
-              "tagline": "MIP 1860 series tensioner",
-              "description": "Advanced MIP 1860 tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "ybico-c3160",
+                "name": "YBICO C3160/C3166/C3180",
+                "sku": "YBC-C3160",
+                "brand": "YBICO",
+                "tagline": "YBICO series sealers",
+                "description": "YBICO sealing tools.",
+                "specs": {
+                  "Type": "Sealer"
+                },
+                "imageUrl": "/images/YBICO-C3160-C3166-C3180.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/MIP 1860 Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-p330",
-              "name": "YBICO P330 Tensioner",
-              "sku": "YBC-P330",
-              "brand": "YBICO",
-              "tagline": "YBICO P330 tool",
-              "description": "Premium YBICO P330 tensioner.",
-              "specs": {
-                "Type": "Tensioner"
+              {
+                "id": "ybico-c5004",
+                "name": "YBICO C5004/C5005/C5015",
+                "sku": "YBC-C5004",
+                "brand": "YBICO",
+                "tagline": "YBICO series sealers",
+                "description": "YBICO sealing tools.",
+                "specs": {
+                  "Type": "Sealer"
+                },
+                "imageUrl": "/images/YBICO-C5004-C5005-C5015-C5006.png",
+                "dateAdded": "2026-06-01"
               },
-              "imageUrl": "/images/YBICO-P330-Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-p472-p482",
-              "name": "YBICO P472/P482 Tensioner",
-              "sku": "YBC-P472",
-              "brand": "YBICO",
-              "tagline": "YBICO P472 & P482",
-              "description": "YBICO series tensioners.",
-              "specs": {
-                "Type": "Tensioner"
-              },
-              "imageUrl": "/images/YBICO-P472-P482-Tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-s249",
-              "name": "YBICO S249/S259 Steel Tensioner",
-              "sku": "YBC-S249",
-              "brand": "YBICO",
-              "tagline": "Steel strap tensioner",
-              "description": "Tensioner for steel strapping.",
-              "specs": {
-                "Type": "Steel Tensioner"
-              },
-              "imageUrl": "/images/YBICO-S249-S259-steel-strap-tensioner.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-s290",
-              "name": "YBICO S290 Steel Tensioner",
-              "sku": "YBC-S290",
-              "brand": "YBICO",
-              "tagline": "Steel strap tensioner",
-              "description": "Heavy duty steel tensioner.",
-              "specs": {
-                "Type": "Steel Tensioner"
-              },
-              "imageUrl": "/images/YBICO-S290-Steel-strap-tensioner.png",
-              "dateAdded": "2026-06-01"
-            }
-          ]
-        },
-        {
-          "id": "sealers",
-          "name": "Sealers",
-          "products": [
-            {
-              "id": "eagle-sealer",
-              "name": "Eagle Strap Sealer",
-              "sku": "EGL-SEL",
-              "brand": "Eagle",
-              "tagline": "Professional sealer",
-              "description": "Secure sealer for plastic straps.",
-              "specs": {
-                "Type": "Sealer"
-              },
-              "imageUrl": "/images/Eagle-Strap-Sealer.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "falcon-sealer",
-              "name": "Falcon Strap Sealer",
-              "sku": "FLC-SEL",
-              "brand": "Falcon",
-              "tagline": "Ergonomic sealer",
-              "description": "Durable sealer tool.",
-              "specs": {
-                "Type": "Sealer"
-              },
-              "imageUrl": "/images/Falcon-strap-sealer.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-420-sealer",
-              "name": "MIP 420 1/2\" Sealer",
-              "sku": "MIP-420",
-              "brand": "MIP",
-              "tagline": "1/2 inch sealer",
-              "description": "MIP 420 series half inch sealer.",
-              "specs": {
-                "Type": "Sealer",
-                "Size": "1/2\""
-              },
-              "imageUrl": "/images/MIP 420 12 sealer.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-430-sealer",
-              "name": "MIP 430 1/2\" Sealer",
-              "sku": "MIP-430",
-              "brand": "MIP",
-              "tagline": "1/2 inch sealer",
-              "description": "MIP 430 series half inch sealer.",
-              "specs": {
-                "Type": "Sealer",
-                "Size": "1/2\""
-              },
-              "imageUrl": "/images/MIP 430 12 sealers.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-1100-sealer",
-              "name": "MIP 1100 3/4\" Sealer",
-              "sku": "MIP-1100",
-              "brand": "MIP",
-              "tagline": "3/4 inch sealer",
-              "description": "MIP 1100 series 3/4 inch sealer.",
-              "specs": {
-                "Type": "Sealer",
-                "Size": "3/4\""
-              },
-              "imageUrl": "/images/MIP 1100 34 inch Sealer.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "mip-3100-sealer",
-              "name": "MIP 3100 3/4\" Sealer",
-              "sku": "MIP-3100",
-              "brand": "MIP",
-              "tagline": "3/4 inch sealer",
-              "description": "MIP 3100 series 3/4 inch sealer.",
-              "specs": {
-                "Type": "Sealer",
-                "Size": "3/4\""
-              },
-              "imageUrl": "/images/MIP 3100 34 sealer.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-c3160",
-              "name": "YBICO C3160/C3166/C3180",
-              "sku": "YBC-C3160",
-              "brand": "YBICO",
-              "tagline": "YBICO series sealers",
-              "description": "YBICO sealing tools.",
-              "specs": {
-                "Type": "Sealer"
-              },
-              "imageUrl": "/images/YBICO-C3160-C3166-C3180.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-c5004",
-              "name": "YBICO C5004/C5005/C5015",
-              "sku": "YBC-C5004",
-              "brand": "YBICO",
-              "tagline": "YBICO series sealers",
-              "description": "YBICO sealing tools.",
-              "specs": {
-                "Type": "Sealer"
-              },
-              "imageUrl": "/images/YBICO-C5004-C5005-C5015-C5006.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-s3104",
-              "name": "YBICO S3104 Steel Sealer",
-              "sku": "YBC-S3104",
-              "brand": "YBICO",
-              "tagline": "Steel strap sealer",
-              "description": "Sealer for steel straps.",
-              "specs": {
-                "Type": "Steel Sealer"
-              },
-              "imageUrl": "/images/YBICO-S3104-Steel-Strap-Sealer.png",
-              "dateAdded": "2026-06-01"
-            }
-          ]
-        },
-        {
-          "id": "cutters",
-          "name": "Cutters",
-          "products": [
-            {
-              "id": "ybico-300-cutter",
-              "name": "YBICO 300 Cutter",
-              "sku": "YBC-300",
-              "brand": "YBICO",
-              "tagline": "Strap cutter",
-              "description": "Heavy duty strap cutter.",
-              "specs": {
-                "Type": "Cutter"
-              },
-              "imageUrl": "/images/YBCIO-300-cutter.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-410-cutter",
-              "name": "YBICO 410 Cutter",
-              "sku": "YBC-410",
-              "brand": "YBICO",
-              "tagline": "Strap cutter",
-              "description": "Precision strap cutter.",
-              "specs": {
-                "Type": "Cutter"
-              },
-              "imageUrl": "/images/YBICO-410-cutter.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "ybico-h200-cutter",
-              "name": "YBICO H200 Cutter",
-              "sku": "YBC-H200",
-              "brand": "YBICO",
-              "tagline": "Strap cutter",
-              "description": "YBICO H200 series cutter.",
-              "specs": {
-                "Type": "Cutter"
-              },
-              "imageUrl": "/images/YBICO-H200-cutter.png",
-              "dateAdded": "2026-06-01"
-            }
-          ]
-        },
-        {
-          "id": "dispensers",
-          "name": "Dispensers",
-          "products": [
-            {
-              "id": "dispenser-1",
-              "name": "Strap Dispenser 1",
-              "sku": "DISP-1",
-              "brand": "SBECO",
-              "tagline": "Standard Dispenser",
-              "description": "Mobile cart for strap dispensing.",
-              "specs": {
-                "Type": "Dispenser"
-              },
-              "imageUrl": "/images/Strap-Dispenser-1.png",
-              "dateAdded": "2026-06-01"
-            },
-            {
-              "id": "dispenser-2",
-              "name": "Strap Dispenser 2",
-              "sku": "DISP-2",
-              "brand": "SBECO",
-              "tagline": "Heavy Duty Dispenser",
-              "description": "Heavy duty mobile cart with tool tray.",
-              "specs": {
-                "Type": "Dispenser"
-              },
-              "imageUrl": "/images/Strap-Dispenser-2.png",
-              "dateAdded": "2026-06-01"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "seals-buckles",
-      "name": "Seals & Buckles",
-      "products": [
-        {
-          "id": "pp-seals",
-          "name": "PP Strap Seals",
-          "sku": "SBL-SEAL-PP",
-          "brand": "SBECO",
-          "tagline": "Secure PP seals",
-          "description": "Metal seals for PP strapping.",
-          "specs": {
-            "Material": "Metal",
-            "For": "PP Strap"
+              {
+                "id": "ybico-s3104",
+                "name": "YBICO S3104 Steel Sealer",
+                "sku": "YBC-S3104",
+                "brand": "YBICO",
+                "tagline": "Steel strap sealer",
+                "description": "Sealer for steel straps.",
+                "specs": {
+                  "Type": "Steel Sealer"
+                },
+                "imageUrl": "/images/YBICO-S3104-Steel-Strap-Sealer.png",
+                "dateAdded": "2026-06-01"
+              }
+            ]
           },
-          "imageUrl": "/images/PP-strap-seals.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "steel-seals",
-          "name": "Steel Strap Seals",
-          "sku": "SBL-SEAL-STL",
-          "brand": "SBECO",
-          "tagline": "Secure Steel seals",
-          "description": "High strength seals for steel straps.",
-          "specs": {
-            "Material": "Steel",
-            "For": "Steel Strap"
+          {
+            "id": "cutters",
+            "name": "Cutters",
+            "products": [
+              {
+                "id": "ybico-300-cutter",
+                "name": "YBICO 300 Cutter",
+                "sku": "YBC-300",
+                "brand": "YBICO",
+                "tagline": "Strap cutter",
+                "description": "Heavy duty strap cutter.",
+                "specs": {
+                  "Type": "Cutter"
+                },
+                "imageUrl": "/images/YBCIO-300-cutter.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-410-cutter",
+                "name": "YBICO 410 Cutter",
+                "sku": "YBC-410",
+                "brand": "YBICO",
+                "tagline": "Strap cutter",
+                "description": "Precision strap cutter.",
+                "specs": {
+                  "Type": "Cutter"
+                },
+                "imageUrl": "/images/YBICO-410-cutter.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "ybico-h200-cutter",
+                "name": "YBICO H200 Cutter",
+                "sku": "YBC-H200",
+                "brand": "YBICO",
+                "tagline": "Strap cutter",
+                "description": "YBICO H200 series cutter.",
+                "specs": {
+                  "Type": "Cutter"
+                },
+                "imageUrl": "/images/YBICO-H200-cutter.png",
+                "dateAdded": "2026-06-01"
+              }
+            ]
           },
-          "imageUrl": "/images/Steel-strap=seals.png",
-          "dateAdded": "2026-06-01"
-        },
-        {
-          "id": "buckles",
-          "name": "Buckles",
-          "sku": "SBL-BUCKLE",
-          "brand": "SBECO",
-          "tagline": "Wire buckles",
-          "description": "Wire and plastic buckles for tensioning.",
-          "specs": {
-            "Type": "Wire/Plastic"
+          {
+            "id": "dispensers",
+            "name": "Dispensers",
+            "products": [
+              {
+                "id": "dispenser-1",
+                "name": "Strap Dispenser 1",
+                "sku": "DISP-1",
+                "brand": "SBECO",
+                "tagline": "Standard Dispenser",
+                "description": "Mobile cart for strap dispensing.",
+                "specs": {
+                  "Type": "Dispenser"
+                },
+                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "dateAdded": "2026-06-01"
+              },
+              {
+                "id": "dispenser-2",
+                "name": "Strap Dispenser 2",
+                "sku": "DISP-2",
+                "brand": "SBECO",
+                "tagline": "Heavy Duty Dispenser",
+                "description": "Heavy duty mobile cart with tool tray.",
+                "specs": {
+                  "Type": "Dispenser"
+                },
+                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "dateAdded": "2026-06-01"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "seals-buckles",
+        "name": "Seals & Buckles",
+        "products": [
+          {
+            "id": "pp-seals",
+            "name": "PP Strap Seals",
+            "sku": "SBL-SEAL-PP",
+            "brand": "SBECO",
+            "tagline": "Secure PP seals",
+            "description": "Metal seals for PP strapping.",
+            "specs": {
+              "Material": "Metal",
+              "For": "PP Strap"
+            },
+            "imageUrl": "/images/PP-strap-seals.png",
+            "dateAdded": "2026-06-01"
           },
-          "imageUrl": "/images/Buckles.png",
-          "dateAdded": "2026-06-01"
-        }
-      ]
-    }
-  ]
-},
+          {
+            "id": "steel-seals",
+            "name": "Steel Strap Seals",
+            "sku": "SBL-SEAL-STL",
+            "brand": "SBECO",
+            "tagline": "Secure Steel seals",
+            "description": "High strength seals for steel straps.",
+            "specs": {
+              "Material": "Steel",
+              "For": "Steel Strap"
+            },
+            "imageUrl": "/images/Steel-strap=seals.png",
+            "dateAdded": "2026-06-01"
+          },
+          {
+            "id": "buckles",
+            "name": "Buckles",
+            "sku": "SBL-BUCKLE",
+            "brand": "SBECO",
+            "tagline": "Wire buckles",
+            "description": "Wire and plastic buckles for tensioning.",
+            "specs": {
+              "Type": "Wire/Plastic"
+            },
+            "imageUrl": "/images/Buckles.png",
+            "dateAdded": "2026-06-01"
+          }
+        ]
+      }
+    ]
+  },
   {
     id: "power-tools",
     name: "Power Tools",
