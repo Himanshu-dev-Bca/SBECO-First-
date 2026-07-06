@@ -63,12 +63,12 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-3",
-            "name": "SBECO Precision Fine Line Masking Tape 24mm",
+            "name": "SBECO Masking Film 208",
             "sku": "SBL-TAPE-MSK-03",
-            "brand": "3M",
-            "tagline": "Professional-grade masking tape designed for precision fine line applications.",
-            "badge": "Heavy Duty",
-            "description": "Premium precision fine line masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "brand": "SBECO",
+            "tagline": "Premium-grade masking film designed for precision applications.",
+            "badge": "Premium",
+            "description": "Premium masking film featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
               "Width": "24mm",
               "Length": "50m",
@@ -90,7 +90,7 @@ export const CATALOGUE = [
             "name": "SBECO Masking Film 158",
             "sku": "SBL-TAPE-MSK-04",
             "brand": "SBECO",
-            "tagline": "Professional-grade masking tape designed for uv-resistant outdoor washi applications.",
+            "tagline": "Premium-grade masking film designed for uv-resistant outdoor washi applications.",
             "badge": "Premium",
             "description": "Premium uv-resistant outdoor washi masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
