@@ -87,7 +87,7 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-4",
-            "name": "SBECO UV-Resistant Outdoor Washi Masking Tape 36mm",
+            "name": "SBECO Masking Film 158",
             "sku": "SBL-TAPE-MSK-04",
             "brand": "SBECO",
             "tagline": "Professional-grade masking tape designed for uv-resistant outdoor washi applications.",
@@ -138,9 +138,9 @@ export const CATALOGUE = [
             "name": "SBECO Masking Tape ABRO",
             "sku": "SBL-TAPE-MSK-06",
             "brand": "SBECO",
-            "tagline": "Professional-grade masking tape designed for heavy-duty sandblast masking applications.",
+            "tagline": "Premium-grade masking tape designed for high-temperature applications.",
             "badge": "Essential",
-            "description": "Premium heavy-duty sandblast masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "description": "Premium masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
               "Width": "72mm",
               "Length": "50m",
