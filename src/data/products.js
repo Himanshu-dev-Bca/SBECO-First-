@@ -42,9 +42,9 @@ export const CATALOGUE = [
             "name": "Tesa 53123 Masking Tape",
             "sku": "SBL-TAPE-MSK-02",
             "brand": "Tesa",
-            "tagline": "Professional-grade masking tape designed for high-temperature paint masking applications.",
+            "tagline": "Premium-grade masking tape designed for general purpose applications.",
             "badge": "Essential",
-            "description": "Premium high-temperature paint masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "description": "Premium general purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
               "Width": "18mm",
               "Length": "50m",
@@ -111,12 +111,12 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-5",
-            "name": "SBECO Delicate Surface Low-Tack Masking Tape 48mm",
+            "name": "Tesa 04341 Masking Tape",
             "sku": "SBL-TAPE-MSK-05",
             "brand": "Tesa",
-            "tagline": "Professional-grade masking tape designed for delicate surface low-tack applications.",
+            "tagline": "Premium-grade masking tape designed for general-purpose applications.",
             "badge": "Popular",
-            "description": "Premium delicate surface low-tack masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "description": "Premium general-purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
               "Width": "48mm",
               "Length": "50m",
