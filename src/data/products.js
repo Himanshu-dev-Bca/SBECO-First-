@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   // ═══════════════════════════════════════════════════════════════
   // 1. TAPE AND TAPE DISPENSERS
@@ -9,2389 +9,2389 @@ export const CATALOGUE = [
     description: "Premium adhesive tapes and professional tape dispensers for packaging, labeling, and sealing applications.",
     imageUrl: "/images/tape_dispensers.png",
     subcategories: [
-  {
-    "id": "masking-tapes-films",
-    "name": "Masking Tapes & Films",
-    "products": [
       {
-        "id": "masking-tapes-films-1",
-        "name": "SBECO General Purpose Crepe Masking Tape 12mm",
-        "sku": "SBL-TAPE-MSK-01",
-        "brand": "SBECO",
-        "tagline": "Professional-grade masking tape designed for general purpose crepe applications.",
-        "badge": "Popular",
-        "description": "Premium general purpose crepe masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "60°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-2",
-          "masking-tapes-films-3",
-          "masking-tapes-films-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
+        "id": "masking-tapes-films",
+        "name": "Masking Tapes & Films",
+        "products": [
+          {
+            "id": "masking-tapes-films-1",
+            "name": "SBECO GP Masking Tape",
+            "sku": "SBL-TAPE-MSK-01",
+            "brand": "SBECO",
+            "tagline": "Professional-grade masking tape designed for general purpose crepe applications.",
+            "badge": "Popular",
+            "description": "Premium general purpose crepe masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "60°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-2",
+              "masking-tapes-films-3",
+              "masking-tapes-films-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "masking-tapes-films-2",
+            "name": "SBECO High-Temperature Paint Masking Masking Tape 18mm",
+            "sku": "SBL-TAPE-MSK-02",
+            "brand": "Tesa",
+            "tagline": "Professional-grade masking tape designed for high-temperature paint masking applications.",
+            "badge": "Essential",
+            "description": "Premium high-temperature paint masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "18mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "80°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-3",
+              "masking-tapes-films-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "masking-tapes-films-3",
+            "name": "SBECO Precision Fine Line Masking Tape 24mm",
+            "sku": "SBL-TAPE-MSK-03",
+            "brand": "3M",
+            "tagline": "Professional-grade masking tape designed for precision fine line applications.",
+            "badge": "Heavy Duty",
+            "description": "Premium precision fine line masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "110°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "masking-tapes-films-4",
+            "name": "SBECO UV-Resistant Outdoor Washi Masking Tape 36mm",
+            "sku": "SBL-TAPE-MSK-04",
+            "brand": "SBECO",
+            "tagline": "Professional-grade masking tape designed for uv-resistant outdoor washi applications.",
+            "badge": "Premium",
+            "description": "Premium uv-resistant outdoor washi masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "36mm",
+              "Length": "50m",
+              "Backing Material": "Washi Paper",
+              "Temperature Resistance": "120°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "masking-tapes-films-5",
+            "name": "SBECO Delicate Surface Low-Tack Masking Tape 48mm",
+            "sku": "SBL-TAPE-MSK-05",
+            "brand": "Tesa",
+            "tagline": "Professional-grade masking tape designed for delicate surface low-tack applications.",
+            "badge": "Popular",
+            "description": "Premium delicate surface low-tack masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "150°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "masking-tapes-films-6",
+            "name": "SBECO Masking Tape ABRO",
+            "sku": "SBL-TAPE-MSK-06",
+            "brand": "SBECO",
+            "tagline": "Professional-grade masking tape designed for heavy-duty sandblast masking applications.",
+            "badge": "Essential",
+            "description": "Premium heavy-duty sandblast masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "72mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "180°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "masking-tapes-films-7",
+            "name": "SBECO Automotive Body Shop Masking Tape 12mm",
+            "sku": "SBL-TAPE-MSK-07",
+            "brand": "SBECO",
+            "tagline": "Professional-grade masking tape designed for automotive body shop applications.",
+            "badge": "Heavy Duty",
+            "description": "Premium automotive body shop masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "60°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "masking-tapes-films-8",
+            "name": "SBECO Polyester Powder Coating Shield Masking Tape 18mm",
+            "sku": "SBL-TAPE-MSK-08",
+            "brand": "Tesa",
+            "tagline": "Professional-grade masking tape designed for polyester powder coating shield applications.",
+            "badge": "Premium",
+            "description": "Premium polyester powder coating shield masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+            "specs": {
+              "Width": "18mm",
+              "Length": "50m",
+              "Backing Material": "Crepe Paper",
+              "Temperature Resistance": "80°C",
+              "Adhesive Type": "Natural Rubber"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "masking-tapes-films-1",
+              "masking-tapes-films-2",
+              "masking-tapes-films-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-2",
-        "name": "SBECO High-Temperature Paint Masking Masking Tape 18mm",
-        "sku": "SBL-TAPE-MSK-02",
-        "brand": "Tesa",
-        "tagline": "Professional-grade masking tape designed for high-temperature paint masking applications.",
-        "badge": "Essential",
-        "description": "Premium high-temperature paint masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "18mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "80°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-3",
-          "masking-tapes-films-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "double-sided-tapes",
+        "name": "Double Sided Tapes",
+        "products": [
+          {
+            "id": "double-sided-tapes-1",
+            "name": "SBECO Double-Sided Tissue Tape 12mm",
+            "sku": "SBL-TAPE-DST-01",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with tissue carrier for nameplate mounting.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "10m",
+              "Carrier Material": "Tissue",
+              "Thickness": "0.1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-2",
+              "double-sided-tapes-3",
+              "double-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "double-sided-tapes-2",
+            "name": "SBECO Double-Sided PE Foam Tape 19mm",
+            "sku": "SBL-TAPE-DST-02",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pe foam carrier for signage bonding.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "50m",
+              "Carrier Material": "PE Foam",
+              "Thickness": "0.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-3",
+              "double-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-3",
+            "name": "SBECO Double-Sided PET Film Tape 24mm",
+            "sku": "SBL-TAPE-DST-03",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with pet film carrier for mirror fixing.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Carrier Material": "PET Film",
+              "Thickness": "0.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-4",
+            "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 30mm",
+            "sku": "SBL-TAPE-DST-04",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for carpet laying.",
+            "badge": "Premium",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "30mm",
+              "Length": "10m",
+              "Carrier Material": "Acrylic Foam (VHB)",
+              "Thickness": "0.8mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-5",
+            "name": "SBECO Double-Sided PVC Tape 48mm",
+            "sku": "SBL-TAPE-DST-05",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pvc carrier for splicing applications.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Carrier Material": "PVC",
+              "Thickness": "1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-6",
+            "name": "SBECO Double-Sided Transfer (No Carrier) Tape 50mm",
+            "sku": "SBL-TAPE-DST-06",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with transfer (no carrier) carrier for general crafts.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a transfer (no carrier) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "50m",
+              "Carrier Material": "Transfer (No Carrier)",
+              "Thickness": "1.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "double-sided-tapes-7",
+            "name": "SBECO Double-Sided Cloth Tape 12mm",
+            "sku": "SBL-TAPE-DST-07",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with cloth carrier for structural bonding.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "10m",
+              "Carrier Material": "Cloth",
+              "Thickness": "1.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-8",
+            "name": "SBECO Double-Sided PP Film Tape 19mm",
+            "sku": "SBL-TAPE-DST-08",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pp film carrier for electronic component mounting.",
+            "badge": "Premium",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pp film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "50m",
+              "Carrier Material": "PP Film",
+              "Thickness": "2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-9",
+            "name": "SBECO Double-Sided Non-Woven Tape 24mm",
+            "sku": "SBL-TAPE-DST-09",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with non-woven carrier for nameplate mounting.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a non-woven carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Carrier Material": "Non-Woven",
+              "Thickness": "0.1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-10",
+            "name": "SBECO Double-Sided Tissue Tape 30mm",
+            "sku": "SBL-TAPE-DST-10",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with tissue carrier for signage bonding.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "30mm",
+              "Length": "10m",
+              "Carrier Material": "Tissue",
+              "Thickness": "0.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-11",
+            "name": "SBECO Double-Sided PE Foam Tape 48mm",
+            "sku": "SBL-TAPE-DST-11",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pe foam carrier for mirror fixing.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Carrier Material": "PE Foam",
+              "Thickness": "0.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "double-sided-tapes-12",
+            "name": "SBECO Double-Sided PET Film Tape 50mm",
+            "sku": "SBL-TAPE-DST-12",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with pet film carrier for carpet laying.",
+            "badge": "Premium",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "50m",
+              "Carrier Material": "PET Film",
+              "Thickness": "0.8mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-13",
+            "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 12mm",
+            "sku": "SBL-TAPE-DST-13",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for splicing applications.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "10m",
+              "Carrier Material": "Acrylic Foam (VHB)",
+              "Thickness": "1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-14",
+            "name": "SBECO Double-Sided PVC Tape 19mm",
+            "sku": "SBL-TAPE-DST-14",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pvc carrier for general crafts.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "50m",
+              "Carrier Material": "PVC",
+              "Thickness": "1.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-15",
+            "name": "SBECO Double-Sided Transfer (No Carrier) Tape 24mm",
+            "sku": "SBL-TAPE-DST-15",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with transfer (no carrier) carrier for structural bonding.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a transfer (no carrier) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Carrier Material": "Transfer (No Carrier)",
+              "Thickness": "1.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-16",
+            "name": "SBECO Double-Sided Cloth Tape 30mm",
+            "sku": "SBL-TAPE-DST-16",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with cloth carrier for electronic component mounting.",
+            "badge": "Premium",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "30mm",
+              "Length": "10m",
+              "Carrier Material": "Cloth",
+              "Thickness": "2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "double-sided-tapes-17",
+            "name": "SBECO Double-Sided PP Film Tape 48mm",
+            "sku": "SBL-TAPE-DST-17",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pp film carrier for nameplate mounting.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pp film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Carrier Material": "PP Film",
+              "Thickness": "0.1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-18",
+            "name": "SBECO Double-Sided Non-Woven Tape 50mm",
+            "sku": "SBL-TAPE-DST-18",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with non-woven carrier for signage bonding.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a non-woven carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "50m",
+              "Carrier Material": "Non-Woven",
+              "Thickness": "0.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-19",
+            "name": "SBECO Double-Sided Tissue Tape 12mm",
+            "sku": "SBL-TAPE-DST-19",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with tissue carrier for mirror fixing.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "10m",
+              "Carrier Material": "Tissue",
+              "Thickness": "0.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-20",
+            "name": "SBECO Double-Sided PE Foam Tape 19mm",
+            "sku": "SBL-TAPE-DST-20",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pe foam carrier for carpet laying.",
+            "badge": "Premium",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "50m",
+              "Carrier Material": "PE Foam",
+              "Thickness": "0.8mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-21",
+            "name": "SBECO Double-Sided PET Film Tape 24mm",
+            "sku": "SBL-TAPE-DST-21",
+            "brand": "3M",
+            "tagline": "High-strength double-coated tape with pet film carrier for splicing applications.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Carrier Material": "PET Film",
+              "Thickness": "1mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "double-sided-tapes-22",
+            "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 30mm",
+            "sku": "SBL-TAPE-DST-22",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for general crafts.",
+            "badge": "Essential",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "30mm",
+              "Length": "10m",
+              "Carrier Material": "Acrylic Foam (VHB)",
+              "Thickness": "1.2mm",
+              "Adhesive Type": "Hot-melt Rubber"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "double-sided-tapes-23",
+            "name": "SBECO Double-Sided PVC Tape 48mm",
+            "sku": "SBL-TAPE-DST-23",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with pvc carrier for structural bonding.",
+            "badge": "Heavy Duty",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Carrier Material": "PVC",
+              "Thickness": "1.5mm",
+              "Adhesive Type": "Acrylic"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "double-sided-tapes-1",
+              "double-sided-tapes-2",
+              "double-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-3",
-        "name": "SBECO Precision Fine Line Masking Tape 24mm",
-        "sku": "SBL-TAPE-MSK-03",
-        "brand": "3M",
-        "tagline": "Professional-grade masking tape designed for precision fine line applications.",
-        "badge": "Heavy Duty",
-        "description": "Premium precision fine line masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "110°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "sustainability-tapes",
+        "name": "Sustainability Tapes",
+        "products": [
+          {
+            "id": "sustainability-tapes-1",
+            "name": "SBECO EcoFriendly Gummed Kraft Paper Tape 24mm",
+            "sku": "SBL-TAPE-SUS-01",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious gummed kraft paper tape for green packaging.",
+            "badge": "Popular",
+            "description": "Part of our commitment to green logistics, this gummed kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-2",
+              "sustainability-tapes-3",
+              "sustainability-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "sustainability-tapes-2",
+            "name": "SBECO EcoFriendly Self-Adhesive Kraft Paper Tape 36mm",
+            "sku": "SBL-TAPE-SUS-02",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious self-adhesive kraft paper tape for green packaging.",
+            "badge": "Essential",
+            "description": "Part of our commitment to green logistics, this self-adhesive kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "36mm",
+              "Length": "150m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-3",
+              "sustainability-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-3",
+            "name": "SBECO EcoFriendly Reinforced Paper Tape 48mm",
+            "sku": "SBL-TAPE-SUS-03",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious reinforced paper tape for green packaging.",
+            "badge": "Heavy Duty",
+            "description": "Part of our commitment to green logistics, this reinforced paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-4",
+            "name": "SBECO EcoFriendly Biodegradable Cellulose Tape 50mm",
+            "sku": "SBL-TAPE-SUS-04",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious biodegradable cellulose tape for green packaging.",
+            "badge": "Premium",
+            "description": "Part of our commitment to green logistics, this biodegradable cellulose tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "150m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-5",
+            "name": "SBECO EcoFriendly Compostable PLA Film Tape 60mm",
+            "sku": "SBL-TAPE-SUS-05",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious compostable pla film tape for green packaging.",
+            "badge": "Popular",
+            "description": "Part of our commitment to green logistics, this compostable pla film tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "60mm",
+              "Length": "50m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-6",
+            "name": "SBECO EcoFriendly Recycled PET Packaging Tape 75mm",
+            "sku": "SBL-TAPE-SUS-06",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious recycled pet packaging tape for green packaging.",
+            "badge": "Essential",
+            "description": "Part of our commitment to green logistics, this recycled pet packaging tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "75mm",
+              "Length": "150m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "sustainability-tapes-7",
+            "name": "SBECO EcoFriendly Grass Paper Tape 24mm",
+            "sku": "SBL-TAPE-SUS-07",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious grass paper tape for green packaging.",
+            "badge": "Heavy Duty",
+            "description": "Part of our commitment to green logistics, this grass paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-8",
+            "name": "SBECO EcoFriendly Water-Activated Starch-Bonded Tape 36mm",
+            "sku": "SBL-TAPE-SUS-08",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious water-activated starch-bonded tape for green packaging.",
+            "badge": "Premium",
+            "description": "Part of our commitment to green logistics, this water-activated starch-bonded tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "36mm",
+              "Length": "150m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-9",
+            "name": "SBECO EcoFriendly Gummed Kraft Paper Tape 48mm",
+            "sku": "SBL-TAPE-SUS-09",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious gummed kraft paper tape for green packaging.",
+            "badge": "Popular",
+            "description": "Part of our commitment to green logistics, this gummed kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-10",
+            "name": "SBECO EcoFriendly Self-Adhesive Kraft Paper Tape 50mm",
+            "sku": "SBL-TAPE-SUS-10",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious self-adhesive kraft paper tape for green packaging.",
+            "badge": "Essential",
+            "description": "Part of our commitment to green logistics, this self-adhesive kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "150m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-11",
+            "name": "SBECO EcoFriendly Reinforced Paper Tape 60mm",
+            "sku": "SBL-TAPE-SUS-11",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious reinforced paper tape for green packaging.",
+            "badge": "Heavy Duty",
+            "description": "Part of our commitment to green logistics, this reinforced paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "60mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "sustainability-tapes-12",
+            "name": "SBECO EcoFriendly Biodegradable Cellulose Tape 75mm",
+            "sku": "SBL-TAPE-SUS-12",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious biodegradable cellulose tape for green packaging.",
+            "badge": "Premium",
+            "description": "Part of our commitment to green logistics, this biodegradable cellulose tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "75mm",
+              "Length": "150m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-13",
+            "name": "SBECO EcoFriendly Compostable PLA Film Tape 24mm",
+            "sku": "SBL-TAPE-SUS-13",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious compostable pla film tape for green packaging.",
+            "badge": "Popular",
+            "description": "Part of our commitment to green logistics, this compostable pla film tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "50m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-14",
+            "name": "SBECO EcoFriendly Recycled PET Packaging Tape 36mm",
+            "sku": "SBL-TAPE-SUS-14",
+            "brand": "Tesa",
+            "tagline": "100% sustainable and eco-conscious recycled pet packaging tape for green packaging.",
+            "badge": "Essential",
+            "description": "Part of our commitment to green logistics, this recycled pet packaging tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "36mm",
+              "Length": "150m",
+              "Base Material": "Bio-based Film",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sustainability-tapes-15",
+            "name": "SBECO EcoFriendly Grass Paper Tape 48mm",
+            "sku": "SBL-TAPE-SUS-15",
+            "brand": "SBECO",
+            "tagline": "100% sustainable and eco-conscious grass paper tape for green packaging.",
+            "badge": "Heavy Duty",
+            "description": "Part of our commitment to green logistics, this grass paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Base Material": "Kraft Paper",
+              "Eco Certification": "FSC & EN 13432 Certified",
+              "Recyclability": "100% Recyclable with Box"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "sustainability-tapes-1",
+              "sustainability-tapes-2",
+              "sustainability-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-4",
-        "name": "SBECO UV-Resistant Outdoor Washi Masking Tape 36mm",
-        "sku": "SBL-TAPE-MSK-04",
-        "brand": "SBECO",
-        "tagline": "Professional-grade masking tape designed for uv-resistant outdoor washi applications.",
-        "badge": "Premium",
-        "description": "Premium uv-resistant outdoor washi masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "36mm",
-          "Length": "50m",
-          "Backing Material": "Washi Paper",
-          "Temperature Resistance": "120°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "single-sided-tapes",
+        "name": "Single Sided Tapes",
+        "products": [
+          {
+            "id": "single-sided-tapes-1",
+            "name": "SBECO Premium Single-Sided Cellulose Film Tape 12mm",
+            "sku": "SBL-TAPE-SST-01",
+            "brand": "SBECO",
+            "tagline": "High-tack single-sided tape with heavy-duty cellulose film backing.",
+            "badge": "Popular",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough cellulose film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "66m",
+              "Backing Type": "Cellulose Film",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-2",
+              "single-sided-tapes-3",
+              "single-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "single-sided-tapes-2",
+            "name": "SBECO Premium Single-Sided UPVC Film Tape 18mm",
+            "sku": "SBL-TAPE-SST-02",
+            "brand": "Tesa",
+            "tagline": "High-tack single-sided tape with heavy-duty upvc film backing.",
+            "badge": "Essential",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough upvc film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "18mm",
+              "Length": "66m",
+              "Backing Type": "UPVC Film",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-3",
+              "single-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "single-sided-tapes-3",
+            "name": "SBECO Premium Single-Sided MOPP Tensilized Tape 24mm",
+            "sku": "SBL-TAPE-SST-03",
+            "brand": "SBECO",
+            "tagline": "High-tack single-sided tape with heavy-duty mopp tensilized backing.",
+            "badge": "Heavy Duty",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough mopp tensilized backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "66m",
+              "Backing Type": "MOPP Tensilized",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "single-sided-tapes-4",
+            "name": "SBECO Premium Single-Sided Crepe Paper Tape 36mm",
+            "sku": "SBL-TAPE-SST-04",
+            "brand": "Tesa",
+            "tagline": "High-tack single-sided tape with heavy-duty crepe paper backing.",
+            "badge": "Premium",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough crepe paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "36mm",
+              "Length": "66m",
+              "Backing Type": "Crepe Paper",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "single-sided-tapes-5",
+            "name": "SBECO Premium Single-Sided Colored Vinyl Tape 48mm",
+            "sku": "SBL-TAPE-SST-05",
+            "brand": "SBECO",
+            "tagline": "High-tack single-sided tape with heavy-duty colored vinyl backing.",
+            "badge": "Popular",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough colored vinyl backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "66m",
+              "Backing Type": "Colored Vinyl",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "single-sided-tapes-6",
+            "name": "SBECO Premium Single-Sided Reinforced Paper Tape 12mm",
+            "sku": "SBL-TAPE-SST-06",
+            "brand": "Tesa",
+            "tagline": "High-tack single-sided tape with heavy-duty reinforced paper backing.",
+            "badge": "Essential",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough reinforced paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "66m",
+              "Backing Type": "Reinforced Paper",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "single-sided-tapes-7",
+            "name": "SBECO Premium Single-Sided Plain Kraft Tape 18mm",
+            "sku": "SBL-TAPE-SST-07",
+            "brand": "SBECO",
+            "tagline": "High-tack single-sided tape with heavy-duty plain kraft backing.",
+            "badge": "Heavy Duty",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough plain kraft backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "18mm",
+              "Length": "66m",
+              "Backing Type": "Plain Kraft",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "single-sided-tapes-8",
+            "name": "SBECO Premium Single-Sided PET Film Tape 24mm",
+            "sku": "SBL-TAPE-SST-08",
+            "brand": "Tesa",
+            "tagline": "High-tack single-sided tape with heavy-duty pet film backing.",
+            "badge": "Premium",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough pet film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "specs": {
+              "Width": "24mm",
+              "Length": "66m",
+              "Backing Type": "PET Film",
+              "Adhesive Base": "Natural Rubber",
+              "Tensile Strength": "45 N/25mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "single-sided-tapes-1",
+              "single-sided-tapes-2",
+              "single-sided-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-5",
-        "name": "SBECO Delicate Surface Low-Tack Masking Tape 48mm",
-        "sku": "SBL-TAPE-MSK-05",
-        "brand": "Tesa",
-        "tagline": "Professional-grade masking tape designed for delicate surface low-tack applications.",
-        "badge": "Popular",
-        "description": "Premium delicate surface low-tack masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "150°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "anti-slip-tapes",
+        "name": "Anti-Skid/Anti-Slip Tapes",
+        "products": [
+          {
+            "id": "anti-slip-tapes-1",
+            "name": "SBECO Anti-Slip Standard 60-Grit Tape 25mm - Black",
+            "sku": "SBL-TAPE-AST-01",
+            "brand": "SBECO",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Popular",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "18m",
+              "Grit Level": "Standard 60-Grit",
+              "Carrier Material": "PVC",
+              "Color": "Black",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3",
+              "anti-slip-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "anti-slip-tapes-2",
+            "name": "SBECO Anti-Slip Coarse 36-Grit Tape 50mm - Yellow",
+            "sku": "SBL-TAPE-AST-02",
+            "brand": "3M",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Essential",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Grit Level": "Coarse 36-Grit",
+              "Carrier Material": "PVC",
+              "Color": "Yellow",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-3",
+              "anti-slip-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-3",
+            "name": "SBECO Anti-Slip Extra Coarse Tape 100mm - Yellow/Black Stripes",
+            "sku": "SBL-TAPE-AST-03",
+            "brand": "SBECO",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Heavy Duty",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "100mm",
+              "Length": "18m",
+              "Grit Level": "Extra Coarse",
+              "Carrier Material": "PVC",
+              "Color": "Yellow/Black Stripes",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-4",
+            "name": "SBECO Anti-Slip Resilient Rubberized Tape 150mm - Clear",
+            "sku": "SBL-TAPE-AST-04",
+            "brand": "3M",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Premium",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "150mm",
+              "Length": "18m",
+              "Grit Level": "Resilient Rubberized",
+              "Carrier Material": "PVC",
+              "Color": "Clear",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-5",
+            "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 25mm - Red",
+            "sku": "SBL-TAPE-AST-05",
+            "brand": "SBECO",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Popular",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "18m",
+              "Grit Level": "Glow-in-the-Dark Safewalk",
+              "Carrier Material": "PVC",
+              "Color": "Red",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-6",
+            "name": "SBECO Anti-Slip Standard 60-Grit Tape 50mm - Glow-in-the-Dark",
+            "sku": "SBL-TAPE-AST-06",
+            "brand": "3M",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Essential",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Grit Level": "Standard 60-Grit",
+              "Carrier Material": "PVC",
+              "Color": "Glow-in-the-Dark",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "anti-slip-tapes-7",
+            "name": "SBECO Anti-Slip Coarse 36-Grit Tape 100mm - Black",
+            "sku": "SBL-TAPE-AST-07",
+            "brand": "SBECO",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Heavy Duty",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "100mm",
+              "Length": "18m",
+              "Grit Level": "Coarse 36-Grit",
+              "Carrier Material": "PVC",
+              "Color": "Black",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-8",
+            "name": "SBECO Anti-Slip Extra Coarse Tape 150mm - Yellow",
+            "sku": "SBL-TAPE-AST-08",
+            "brand": "3M",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Premium",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "150mm",
+              "Length": "18m",
+              "Grit Level": "Extra Coarse",
+              "Carrier Material": "PVC",
+              "Color": "Yellow",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-9",
+            "name": "SBECO Anti-Slip Resilient Rubberized Tape 25mm - Yellow/Black Stripes",
+            "sku": "SBL-TAPE-AST-09",
+            "brand": "SBECO",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Popular",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "18m",
+              "Grit Level": "Resilient Rubberized",
+              "Carrier Material": "PVC",
+              "Color": "Yellow/Black Stripes",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-slip-tapes-10",
+            "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 50mm - Clear",
+            "sku": "SBL-TAPE-AST-10",
+            "brand": "3M",
+            "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
+            "badge": "Essential",
+            "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Grit Level": "Glow-in-the-Dark Safewalk",
+              "Carrier Material": "PVC",
+              "Color": "Clear",
+              "OSHA Compliant": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "anti-slip-tapes-1",
+              "anti-slip-tapes-2",
+              "anti-slip-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-6",
-        "name": "SBECO Heavy-Duty Sandblast Masking Masking Tape 72mm",
-        "sku": "SBL-TAPE-MSK-06",
-        "brand": "3M",
-        "tagline": "Professional-grade masking tape designed for heavy-duty sandblast masking applications.",
-        "badge": "Essential",
-        "description": "Premium heavy-duty sandblast masking masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "72mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "180°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
+        "id": "pvc-repair-structural",
+        "name": "PVC/Repair/Structural",
+        "products": [
+          {
+            "id": "pvc-repair-structural-1",
+            "name": "SBECO All-Weather Heavy PVC Repair Tape 48mm",
+            "sku": "SBL-TAPE-PRS-01",
+            "brand": "SBECO",
+            "tagline": "Tough all-weather heavy pvc repair tape for demanding industrial repair and structural applications.",
+            "badge": "Popular",
+            "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "10m",
+              "Material": "PVC",
+              "Tensile Strength": "90 N/25mm",
+              "Waterproof": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "pvc-repair-structural-2",
+              "pvc-repair-structural-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "pvc-repair-structural-2",
+            "name": "SBECO Heavy Duty Structural Bond Tape 50mm",
+            "sku": "SBL-TAPE-PRS-02",
+            "brand": "Tesa",
+            "tagline": "Tough heavy duty structural bond tape for demanding industrial repair and structural applications.",
+            "badge": "Essential",
+            "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "10m",
+              "Material": "Modified Acrylic",
+              "Tensile Strength": "90 N/25mm",
+              "Waterproof": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "pvc-repair-structural-1",
+              "pvc-repair-structural-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "pvc-repair-structural-3",
+            "name": "SBECO Fibre-Reinforced Leak Patch Tape 100mm",
+            "sku": "SBL-TAPE-PRS-03",
+            "brand": "SBECO",
+            "tagline": "Tough fibre-reinforced leak patch tape for demanding industrial repair and structural applications.",
+            "badge": "Heavy Duty",
+            "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
+            "specs": {
+              "Width": "100mm",
+              "Length": "10m",
+              "Material": "Modified Acrylic",
+              "Tensile Strength": "90 N/25mm",
+              "Waterproof": "Yes"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "pvc-repair-structural-1",
+              "pvc-repair-structural-2"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-7",
-        "name": "SBECO Automotive Body Shop Masking Tape 12mm",
-        "sku": "SBL-TAPE-MSK-07",
-        "brand": "SBECO",
-        "tagline": "Professional-grade masking tape designed for automotive body shop applications.",
-        "badge": "Heavy Duty",
-        "description": "Premium automotive body shop masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "60°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "reflective-filament",
+        "name": "Reflective & Filament",
+        "products": [
+          {
+            "id": "reflective-filament-1",
+            "name": "SBECO Mono-Directional Filament Tape 25mm",
+            "sku": "SBL-TAPE-RFT-01",
+            "brand": "SBECO",
+            "tagline": "High-tensile reinforcement and safety signaling with premium mono-directional filament tape.",
+            "badge": "Popular",
+            "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "55m",
+              "Type": "Mono-Directional Filament",
+              "Tensile Strength": "350 N/25mm",
+              "Reflective Standard": "N/A"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "reflective-filament-2",
+              "reflective-filament-3",
+              "reflective-filament-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "reflective-filament-2",
+            "name": "SBECO Bi-Directional Cross-Weave Filament Tape 50mm",
+            "sku": "SBL-TAPE-RFT-02",
+            "brand": "3M",
+            "tagline": "High-tensile reinforcement and safety signaling with premium bi-directional cross-weave filament tape.",
+            "badge": "Essential",
+            "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "55m",
+              "Type": "Bi-Directional Cross-Weave Filament",
+              "Tensile Strength": "350 N/25mm",
+              "Reflective Standard": "N/A"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "reflective-filament-1",
+              "reflective-filament-3",
+              "reflective-filament-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "reflective-filament-3",
+            "name": "SBECO High-Visibility Prismatic Reflective Tape 25mm",
+            "sku": "SBL-TAPE-RFT-03",
+            "brand": "SBECO",
+            "tagline": "High-tensile reinforcement and safety signaling with premium high-visibility prismatic reflective tape.",
+            "badge": "Heavy Duty",
+            "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "45m",
+              "Type": "High-Visibility Prismatic Reflective",
+              "Tensile Strength": "N/A",
+              "Reflective Standard": "DOT-C2 Certified"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "reflective-filament-1",
+              "reflective-filament-2",
+              "reflective-filament-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "reflective-filament-4",
+            "name": "SBECO DOT-C2 Conspicuity Reflective Tape 50mm",
+            "sku": "SBL-TAPE-RFT-04",
+            "brand": "3M",
+            "tagline": "High-tensile reinforcement and safety signaling with premium dot-c2 conspicuity reflective tape.",
+            "badge": "Premium",
+            "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "45m",
+              "Type": "DOT-C2 Conspicuity Reflective",
+              "Tensile Strength": "N/A",
+              "Reflective Standard": "DOT-C2 Certified"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "reflective-filament-1",
+              "reflective-filament-2",
+              "reflective-filament-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       },
       {
-        "id": "masking-tapes-films-8",
-        "name": "SBECO Polyester Powder Coating Shield Masking Tape 18mm",
-        "sku": "SBL-TAPE-MSK-08",
-        "brand": "Tesa",
-        "tagline": "Professional-grade masking tape designed for polyester powder coating shield applications.",
-        "badge": "Premium",
-        "description": "Premium polyester powder coating shield masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
-        "specs": {
-          "Width": "18mm",
-          "Length": "50m",
-          "Backing Material": "Crepe Paper",
-          "Temperature Resistance": "80°C",
-          "Adhesive Type": "Natural Rubber"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "masking-tapes-films-1",
-          "masking-tapes-films-2",
-          "masking-tapes-films-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
+        "id": "strapping-surface-protection",
+        "name": "Strapping & Surface Protection",
+        "products": [
+          {
+            "id": "strapping-surface-protection-1",
+            "name": "SBECO Tensilized MOPP Strapping Tape 19mm",
+            "sku": "SBL-TAPE-SSP-01",
+            "brand": "SBECO",
+            "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
+            "badge": "Popular",
+            "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "100m",
+              "Material": "MOPP",
+              "Adhesive Type": "Low-Tack Acrylic",
+              "Clean Removal": "Yes, guaranteed"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "strapping-surface-protection-2",
+              "strapping-surface-protection-3",
+              "strapping-surface-protection-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "strapping-surface-protection-2",
+            "name": "SBECO Low-Tack Glass Protection Film Tape 50mm",
+            "sku": "SBL-TAPE-SSP-02",
+            "brand": "Tesa",
+            "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
+            "badge": "Essential",
+            "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "100m",
+              "Material": "LDPE",
+              "Adhesive Type": "Low-Tack Acrylic",
+              "Clean Removal": "Yes, guaranteed"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "strapping-surface-protection-1",
+              "strapping-surface-protection-3",
+              "strapping-surface-protection-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "strapping-surface-protection-3",
+            "name": "SBECO Stainless Steel Surface Shield Tape 100mm",
+            "sku": "SBL-TAPE-SSP-03",
+            "brand": "SBECO",
+            "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
+            "badge": "Heavy Duty",
+            "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
+            "specs": {
+              "Width": "100mm",
+              "Length": "100m",
+              "Material": "MOPP",
+              "Adhesive Type": "Low-Tack Acrylic",
+              "Clean Removal": "Yes, guaranteed"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "strapping-surface-protection-1",
+              "strapping-surface-protection-2",
+              "strapping-surface-protection-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "strapping-surface-protection-4",
+            "name": "SBECO Heavy-Duty Metal Panel Protector Tape 19mm",
+            "sku": "SBL-TAPE-SSP-04",
+            "brand": "Tesa",
+            "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
+            "badge": "Premium",
+            "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "100m",
+              "Material": "MOPP",
+              "Adhesive Type": "Low-Tack Acrylic",
+              "Clean Removal": "Yes, guaranteed"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "strapping-surface-protection-1",
+              "strapping-surface-protection-2",
+              "strapping-surface-protection-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "fabric-duct-floor-marking",
+        "name": "Fabric/Duct/Floor Marking (Tesa)",
+        "products": [
+          {
+            "id": "fabric-duct-floor-marking-1",
+            "name": "Tesa Premium PE-Coated Duct Tape 48mm",
+            "sku": "SBL-TAPE-FDF-01",
+            "brand": "Tesa",
+            "tagline": "High-durability premium pe-coated duct tape for harsh industrial environments, labeling, and repairs.",
+            "badge": "Popular",
+            "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "33m",
+              "Backing Material": "PE-Coated Fabric",
+              "Adhesive Base": "Natural Rubber",
+              "Thickness": "0.27mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "fabric-duct-floor-marking-2",
+              "fabric-duct-floor-marking-3",
+              "fabric-duct-floor-marking-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "fabric-duct-floor-marking-2",
+            "name": "Tesa Heavy-Duty Floor Lane Marking Tape 50mm",
+            "sku": "SBL-TAPE-FDF-02",
+            "brand": "SBECO",
+            "tagline": "High-durability heavy-duty floor lane marking tape for harsh industrial environments, labeling, and repairs.",
+            "badge": "Essential",
+            "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "33m",
+              "Backing Material": "PVC Vinyl",
+              "Adhesive Base": "Natural Rubber",
+              "Thickness": "0.27mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "fabric-duct-floor-marking-1",
+              "fabric-duct-floor-marking-3",
+              "fabric-duct-floor-marking-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "fabric-duct-floor-marking-3",
+            "name": "Tesa Professional Grade Fabric Gaffer Tape 48mm",
+            "sku": "SBL-TAPE-FDF-03",
+            "brand": "Tesa",
+            "tagline": "High-durability professional grade fabric gaffer tape for harsh industrial environments, labeling, and repairs.",
+            "badge": "Heavy Duty",
+            "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "33m",
+              "Backing Material": "PE-Coated Fabric",
+              "Adhesive Base": "Natural Rubber",
+              "Thickness": "0.27mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "fabric-duct-floor-marking-1",
+              "fabric-duct-floor-marking-2",
+              "fabric-duct-floor-marking-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "fabric-duct-floor-marking-4",
+            "name": "Tesa Hazard Diagonal Warning Tape 50mm",
+            "sku": "SBL-TAPE-FDF-04",
+            "brand": "SBECO",
+            "tagline": "High-durability hazard diagonal warning tape for harsh industrial environments, labeling, and repairs.",
+            "badge": "Premium",
+            "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "33m",
+              "Backing Material": "PVC Vinyl",
+              "Adhesive Base": "Natural Rubber",
+              "Thickness": "0.27mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "fabric-duct-floor-marking-1",
+              "fabric-duct-floor-marking-2",
+              "fabric-duct-floor-marking-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "insulation-cloth-wire",
+        "name": "Insulation/Cloth/Wire (Tesa)",
+        "products": [
+          {
+            "id": "insulation-cloth-wire-1",
+            "name": "Tesa PVC Electrical Insulation Tape 19mm",
+            "sku": "SBL-TAPE-ICW-01",
+            "brand": "Tesa",
+            "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
+            "badge": "Popular",
+            "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "20m",
+              "Dielectric Strength": "600V",
+              "Temperature Range": "-40°C to 125°C",
+              "Abrasion Resistance": "Class B (LV 312)"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "insulation-cloth-wire-2",
+              "insulation-cloth-wire-3",
+              "insulation-cloth-wire-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "insulation-cloth-wire-2",
+            "name": "Tesa Fleece Wire Harness Wrap Tape 25mm",
+            "sku": "SBL-TAPE-ICW-02",
+            "brand": "SBECO",
+            "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
+            "badge": "Essential",
+            "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "20m",
+              "Dielectric Strength": "N/A",
+              "Temperature Range": "-40°C to 125°C",
+              "Abrasion Resistance": "Class B (LV 312)"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "insulation-cloth-wire-1",
+              "insulation-cloth-wire-3",
+              "insulation-cloth-wire-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "insulation-cloth-wire-3",
+            "name": "Tesa Self-Fusing Rubber Splicing Tape 19mm",
+            "sku": "SBL-TAPE-ICW-03",
+            "brand": "Tesa",
+            "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
+            "badge": "Heavy Duty",
+            "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "20m",
+              "Dielectric Strength": "N/A",
+              "Temperature Range": "-40°C to 125°C",
+              "Abrasion Resistance": "Class B (LV 312)"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "insulation-cloth-wire-1",
+              "insulation-cloth-wire-2",
+              "insulation-cloth-wire-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "insulation-cloth-wire-4",
+            "name": "Tesa High-Temp Glass Cloth Insulation Tape 25mm",
+            "sku": "SBL-TAPE-ICW-04",
+            "brand": "SBECO",
+            "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
+            "badge": "Premium",
+            "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "20m",
+              "Dielectric Strength": "N/A",
+              "Temperature Range": "-40°C to 125°C",
+              "Abrasion Resistance": "Class B (LV 312)"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "insulation-cloth-wire-1",
+              "insulation-cloth-wire-2",
+              "insulation-cloth-wire-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "veneer-tapes",
+        "name": "Veneer Tapes",
+        "products": [
+          {
+            "id": "veneer-tapes-1",
+            "name": "SBECO Veneer Perforated Gummed Paper Tape 12mm",
+            "sku": "SBL-TAPE-VNR-01",
+            "brand": "SBECO",
+            "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
+            "badge": "Popular",
+            "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
+            "specs": {
+              "Width": "12mm",
+              "Length": "200m",
+              "Paper Type": "Perforated Kraft",
+              "Adhesive Type": "Water-Activated Starch",
+              "Thickness": "0.07mm"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "veneer-tapes-2",
+              "veneer-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "veneer-tapes-2",
+            "name": "SBECO Veneer Solid Kraft Veneer Splicing Tape 16mm",
+            "sku": "SBL-TAPE-VNR-02",
+            "brand": "SBECO",
+            "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
+            "badge": "Essential",
+            "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
+            "specs": {
+              "Width": "16mm",
+              "Length": "200m",
+              "Paper Type": "Solid Kraft",
+              "Adhesive Type": "Water-Activated Starch",
+              "Thickness": "0.07mm"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "veneer-tapes-1",
+              "veneer-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "veneer-tapes-3",
+            "name": "SBECO Veneer Ultra-Thin Wet-Activated Paper Tape 20mm",
+            "sku": "SBL-TAPE-VNR-03",
+            "brand": "SBECO",
+            "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
+            "badge": "Heavy Duty",
+            "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
+            "specs": {
+              "Width": "20mm",
+              "Length": "200m",
+              "Paper Type": "Solid Kraft",
+              "Adhesive Type": "Water-Activated Starch",
+              "Thickness": "0.07mm"
+            },
+            "imageUrl": "/images/kraft_tape.png",
+            "similar": [
+              "veneer-tapes-1",
+              "veneer-tapes-2"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "static-non-adhesive",
+        "name": "Static/Non-Adhesive",
+        "products": [
+          {
+            "id": "static-non-adhesive-1",
+            "name": "SBECO Self-Clinging Static Protection Film Tape 50mm",
+            "sku": "SBL-TAPE-SNA-01",
+            "brand": "SBECO",
+            "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
+            "badge": "Popular",
+            "description": "This category features non-adhesive films. The static protective tape relies on electrostatic cling to shield screens, glass, and polished electronics from dirt and scratches without any adhesive residue. The caution barricade tape is a lightweight, high-tensile polyethylene strip printed with high-contrast safety warnings, ideal for blocking off hazardous areas or construction sites.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "100m",
+              "Material": "Static Cling PVC",
+              "Adhesive-Free": "Yes",
+              "UV Stable": "Yes"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "static-non-adhesive-2"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "static-non-adhesive-2",
+            "name": "SBECO Non-Adhesive PE Barricade Caution Tape 75mm",
+            "sku": "SBL-TAPE-SNA-02",
+            "brand": "SBECO",
+            "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
+            "badge": "Essential",
+            "description": "This category features non-adhesive films. The static protective tape relies on electrostatic cling to shield screens, glass, and polished electronics from dirt and scratches without any adhesive residue. The caution barricade tape is a lightweight, high-tensile polyethylene strip printed with high-contrast safety warnings, ideal for blocking off hazardous areas or construction sites.",
+            "specs": {
+              "Width": "75mm",
+              "Length": "200m",
+              "Material": "Polyethylene",
+              "Adhesive-Free": "Yes",
+              "UV Stable": "Yes"
+            },
+            "imageUrl": "/images/clear_tape.png",
+            "similar": [
+              "static-non-adhesive-1"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "packing-tapes",
+        "name": "Packing Tapes",
+        "products": [
+          {
+            "id": "packing-tapes-1",
+            "name": "SBECO Packing Tape 48mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
+            "sku": "SBL-TAPE-PKG-01",
+            "brand": "SBECO",
+            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Popular",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "66m",
+              "Color": "Clear",
+              "Type": "Heavy-Duty Acrylic Carton Sealing",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-2",
+              "packing-tapes-3",
+              "packing-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "packing-tapes-2",
+            "name": "SBECO Packing Tape 50mm - Brown (Silent Unwind Packaging)",
+            "sku": "SBL-TAPE-PKG-02",
+            "brand": "SBECO",
+            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Essential",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "66m",
+              "Color": "Brown",
+              "Type": "Silent Unwind Packaging",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-3",
+              "packing-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "packing-tapes-3",
+            "name": "SBECO Packing Tape 75mm - Clear (Industrial Hot-Melt Packing)",
+            "sku": "SBL-TAPE-PKG-03",
+            "brand": "SBECO",
+            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Heavy Duty",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "75mm",
+              "Length": "66m",
+              "Color": "Clear",
+              "Type": "Industrial Hot-Melt Packing",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-4"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "packing-tapes-4",
+            "name": "SBECO Packing Tape 48mm - Brown (Cold-Storage Freezer Grade)",
+            "sku": "SBL-TAPE-PKG-04",
+            "brand": "SBECO",
+            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Premium",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "66m",
+              "Color": "Brown",
+              "Type": "Cold-Storage Freezer Grade",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "packing-tapes-5",
+            "name": "SBECO Packing Tape 50mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
+            "sku": "SBL-TAPE-PKG-05",
+            "brand": "SBECO",
+            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Popular",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "66m",
+              "Color": "Clear",
+              "Type": "Heavy-Duty Acrylic Carton Sealing",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "packing-tapes-6",
+            "name": "SBECO Packing Tape 75mm - Brown (Silent Unwind Packaging)",
+            "sku": "SBL-TAPE-PKG-06",
+            "brand": "SBECO",
+            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Essential",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "75mm",
+              "Length": "66m",
+              "Color": "Brown",
+              "Type": "Silent Unwind Packaging",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "packing-tapes-7",
+            "name": "SBECO Packing Tape 48mm - Clear (Industrial Hot-Melt Packing)",
+            "sku": "SBL-TAPE-PKG-07",
+            "brand": "SBECO",
+            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Heavy Duty",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "66m",
+              "Color": "Clear",
+              "Type": "Industrial Hot-Melt Packing",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "packing-tapes-8",
+            "name": "SBECO Packing Tape 50mm - Brown (Cold-Storage Freezer Grade)",
+            "sku": "SBL-TAPE-PKG-08",
+            "brand": "SBECO",
+            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "badge": "Premium",
+            "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "66m",
+              "Color": "Brown",
+              "Type": "Cold-Storage Freezer Grade",
+              "Thickness": "0.052mm"
+            },
+            "imageUrl": "/images/carton_tape.png",
+            "similar": [
+              "packing-tapes-1",
+              "packing-tapes-2",
+              "packing-tapes-3"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
       }
-    ]
-  },
-  {
-    "id": "double-sided-tapes",
-    "name": "Double Sided Tapes",
-    "products": [
-      {
-        "id": "double-sided-tapes-1",
-        "name": "SBECO Double-Sided Tissue Tape 12mm",
-        "sku": "SBL-TAPE-DST-01",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with tissue carrier for nameplate mounting.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "10m",
-          "Carrier Material": "Tissue",
-          "Thickness": "0.1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-2",
-          "double-sided-tapes-3",
-          "double-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "double-sided-tapes-2",
-        "name": "SBECO Double-Sided PE Foam Tape 19mm",
-        "sku": "SBL-TAPE-DST-02",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pe foam carrier for signage bonding.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "50m",
-          "Carrier Material": "PE Foam",
-          "Thickness": "0.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-3",
-          "double-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-3",
-        "name": "SBECO Double-Sided PET Film Tape 24mm",
-        "sku": "SBL-TAPE-DST-03",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with pet film carrier for mirror fixing.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Carrier Material": "PET Film",
-          "Thickness": "0.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-4",
-        "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 30mm",
-        "sku": "SBL-TAPE-DST-04",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for carpet laying.",
-        "badge": "Premium",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "30mm",
-          "Length": "10m",
-          "Carrier Material": "Acrylic Foam (VHB)",
-          "Thickness": "0.8mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-5",
-        "name": "SBECO Double-Sided PVC Tape 48mm",
-        "sku": "SBL-TAPE-DST-05",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pvc carrier for splicing applications.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Carrier Material": "PVC",
-          "Thickness": "1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-6",
-        "name": "SBECO Double-Sided Transfer (No Carrier) Tape 50mm",
-        "sku": "SBL-TAPE-DST-06",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with transfer (no carrier) carrier for general crafts.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a transfer (no carrier) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "50m",
-          "Carrier Material": "Transfer (No Carrier)",
-          "Thickness": "1.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "double-sided-tapes-7",
-        "name": "SBECO Double-Sided Cloth Tape 12mm",
-        "sku": "SBL-TAPE-DST-07",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with cloth carrier for structural bonding.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "10m",
-          "Carrier Material": "Cloth",
-          "Thickness": "1.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-8",
-        "name": "SBECO Double-Sided PP Film Tape 19mm",
-        "sku": "SBL-TAPE-DST-08",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pp film carrier for electronic component mounting.",
-        "badge": "Premium",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pp film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "50m",
-          "Carrier Material": "PP Film",
-          "Thickness": "2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-9",
-        "name": "SBECO Double-Sided Non-Woven Tape 24mm",
-        "sku": "SBL-TAPE-DST-09",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with non-woven carrier for nameplate mounting.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a non-woven carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Carrier Material": "Non-Woven",
-          "Thickness": "0.1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-10",
-        "name": "SBECO Double-Sided Tissue Tape 30mm",
-        "sku": "SBL-TAPE-DST-10",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with tissue carrier for signage bonding.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "30mm",
-          "Length": "10m",
-          "Carrier Material": "Tissue",
-          "Thickness": "0.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-11",
-        "name": "SBECO Double-Sided PE Foam Tape 48mm",
-        "sku": "SBL-TAPE-DST-11",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pe foam carrier for mirror fixing.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Carrier Material": "PE Foam",
-          "Thickness": "0.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "double-sided-tapes-12",
-        "name": "SBECO Double-Sided PET Film Tape 50mm",
-        "sku": "SBL-TAPE-DST-12",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with pet film carrier for carpet laying.",
-        "badge": "Premium",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "50m",
-          "Carrier Material": "PET Film",
-          "Thickness": "0.8mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-13",
-        "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 12mm",
-        "sku": "SBL-TAPE-DST-13",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for splicing applications.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "10m",
-          "Carrier Material": "Acrylic Foam (VHB)",
-          "Thickness": "1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-14",
-        "name": "SBECO Double-Sided PVC Tape 19mm",
-        "sku": "SBL-TAPE-DST-14",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pvc carrier for general crafts.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "50m",
-          "Carrier Material": "PVC",
-          "Thickness": "1.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-15",
-        "name": "SBECO Double-Sided Transfer (No Carrier) Tape 24mm",
-        "sku": "SBL-TAPE-DST-15",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with transfer (no carrier) carrier for structural bonding.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a transfer (no carrier) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Carrier Material": "Transfer (No Carrier)",
-          "Thickness": "1.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-16",
-        "name": "SBECO Double-Sided Cloth Tape 30mm",
-        "sku": "SBL-TAPE-DST-16",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with cloth carrier for electronic component mounting.",
-        "badge": "Premium",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "30mm",
-          "Length": "10m",
-          "Carrier Material": "Cloth",
-          "Thickness": "2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "double-sided-tapes-17",
-        "name": "SBECO Double-Sided PP Film Tape 48mm",
-        "sku": "SBL-TAPE-DST-17",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pp film carrier for nameplate mounting.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pp film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Carrier Material": "PP Film",
-          "Thickness": "0.1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-18",
-        "name": "SBECO Double-Sided Non-Woven Tape 50mm",
-        "sku": "SBL-TAPE-DST-18",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with non-woven carrier for signage bonding.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a non-woven carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "50m",
-          "Carrier Material": "Non-Woven",
-          "Thickness": "0.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-19",
-        "name": "SBECO Double-Sided Tissue Tape 12mm",
-        "sku": "SBL-TAPE-DST-19",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with tissue carrier for mirror fixing.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "10m",
-          "Carrier Material": "Tissue",
-          "Thickness": "0.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-20",
-        "name": "SBECO Double-Sided PE Foam Tape 19mm",
-        "sku": "SBL-TAPE-DST-20",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pe foam carrier for carpet laying.",
-        "badge": "Premium",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "50m",
-          "Carrier Material": "PE Foam",
-          "Thickness": "0.8mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-21",
-        "name": "SBECO Double-Sided PET Film Tape 24mm",
-        "sku": "SBL-TAPE-DST-21",
-        "brand": "3M",
-        "tagline": "High-strength double-coated tape with pet film carrier for splicing applications.",
-        "badge": "Popular",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Carrier Material": "PET Film",
-          "Thickness": "1mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "double-sided-tapes-22",
-        "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 30mm",
-        "sku": "SBL-TAPE-DST-22",
-        "brand": "SBECO",
-        "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for general crafts.",
-        "badge": "Essential",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "30mm",
-          "Length": "10m",
-          "Carrier Material": "Acrylic Foam (VHB)",
-          "Thickness": "1.2mm",
-          "Adhesive Type": "Hot-melt Rubber"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "double-sided-tapes-23",
-        "name": "SBECO Double-Sided PVC Tape 48mm",
-        "sku": "SBL-TAPE-DST-23",
-        "brand": "Tesa",
-        "tagline": "High-strength double-coated tape with pvc carrier for structural bonding.",
-        "badge": "Heavy Duty",
-        "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Carrier Material": "PVC",
-          "Thickness": "1.5mm",
-          "Adhesive Type": "Acrylic"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "double-sided-tapes-1",
-          "double-sided-tapes-2",
-          "double-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "sustainability-tapes",
-    "name": "Sustainability Tapes",
-    "products": [
-      {
-        "id": "sustainability-tapes-1",
-        "name": "SBECO EcoFriendly Gummed Kraft Paper Tape 24mm",
-        "sku": "SBL-TAPE-SUS-01",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious gummed kraft paper tape for green packaging.",
-        "badge": "Popular",
-        "description": "Part of our commitment to green logistics, this gummed kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-2",
-          "sustainability-tapes-3",
-          "sustainability-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "sustainability-tapes-2",
-        "name": "SBECO EcoFriendly Self-Adhesive Kraft Paper Tape 36mm",
-        "sku": "SBL-TAPE-SUS-02",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious self-adhesive kraft paper tape for green packaging.",
-        "badge": "Essential",
-        "description": "Part of our commitment to green logistics, this self-adhesive kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "36mm",
-          "Length": "150m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-3",
-          "sustainability-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-3",
-        "name": "SBECO EcoFriendly Reinforced Paper Tape 48mm",
-        "sku": "SBL-TAPE-SUS-03",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious reinforced paper tape for green packaging.",
-        "badge": "Heavy Duty",
-        "description": "Part of our commitment to green logistics, this reinforced paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-4",
-        "name": "SBECO EcoFriendly Biodegradable Cellulose Tape 50mm",
-        "sku": "SBL-TAPE-SUS-04",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious biodegradable cellulose tape for green packaging.",
-        "badge": "Premium",
-        "description": "Part of our commitment to green logistics, this biodegradable cellulose tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "150m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-5",
-        "name": "SBECO EcoFriendly Compostable PLA Film Tape 60mm",
-        "sku": "SBL-TAPE-SUS-05",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious compostable pla film tape for green packaging.",
-        "badge": "Popular",
-        "description": "Part of our commitment to green logistics, this compostable pla film tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "60mm",
-          "Length": "50m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-6",
-        "name": "SBECO EcoFriendly Recycled PET Packaging Tape 75mm",
-        "sku": "SBL-TAPE-SUS-06",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious recycled pet packaging tape for green packaging.",
-        "badge": "Essential",
-        "description": "Part of our commitment to green logistics, this recycled pet packaging tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "75mm",
-          "Length": "150m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "sustainability-tapes-7",
-        "name": "SBECO EcoFriendly Grass Paper Tape 24mm",
-        "sku": "SBL-TAPE-SUS-07",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious grass paper tape for green packaging.",
-        "badge": "Heavy Duty",
-        "description": "Part of our commitment to green logistics, this grass paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-8",
-        "name": "SBECO EcoFriendly Water-Activated Starch-Bonded Tape 36mm",
-        "sku": "SBL-TAPE-SUS-08",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious water-activated starch-bonded tape for green packaging.",
-        "badge": "Premium",
-        "description": "Part of our commitment to green logistics, this water-activated starch-bonded tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "36mm",
-          "Length": "150m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-9",
-        "name": "SBECO EcoFriendly Gummed Kraft Paper Tape 48mm",
-        "sku": "SBL-TAPE-SUS-09",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious gummed kraft paper tape for green packaging.",
-        "badge": "Popular",
-        "description": "Part of our commitment to green logistics, this gummed kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-10",
-        "name": "SBECO EcoFriendly Self-Adhesive Kraft Paper Tape 50mm",
-        "sku": "SBL-TAPE-SUS-10",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious self-adhesive kraft paper tape for green packaging.",
-        "badge": "Essential",
-        "description": "Part of our commitment to green logistics, this self-adhesive kraft paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "150m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-11",
-        "name": "SBECO EcoFriendly Reinforced Paper Tape 60mm",
-        "sku": "SBL-TAPE-SUS-11",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious reinforced paper tape for green packaging.",
-        "badge": "Heavy Duty",
-        "description": "Part of our commitment to green logistics, this reinforced paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "60mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "sustainability-tapes-12",
-        "name": "SBECO EcoFriendly Biodegradable Cellulose Tape 75mm",
-        "sku": "SBL-TAPE-SUS-12",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious biodegradable cellulose tape for green packaging.",
-        "badge": "Premium",
-        "description": "Part of our commitment to green logistics, this biodegradable cellulose tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "75mm",
-          "Length": "150m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-13",
-        "name": "SBECO EcoFriendly Compostable PLA Film Tape 24mm",
-        "sku": "SBL-TAPE-SUS-13",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious compostable pla film tape for green packaging.",
-        "badge": "Popular",
-        "description": "Part of our commitment to green logistics, this compostable pla film tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "50m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-14",
-        "name": "SBECO EcoFriendly Recycled PET Packaging Tape 36mm",
-        "sku": "SBL-TAPE-SUS-14",
-        "brand": "Tesa",
-        "tagline": "100% sustainable and eco-conscious recycled pet packaging tape for green packaging.",
-        "badge": "Essential",
-        "description": "Part of our commitment to green logistics, this recycled pet packaging tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "36mm",
-          "Length": "150m",
-          "Base Material": "Bio-based Film",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "sustainability-tapes-15",
-        "name": "SBECO EcoFriendly Grass Paper Tape 48mm",
-        "sku": "SBL-TAPE-SUS-15",
-        "brand": "SBECO",
-        "tagline": "100% sustainable and eco-conscious grass paper tape for green packaging.",
-        "badge": "Heavy Duty",
-        "description": "Part of our commitment to green logistics, this grass paper tape is made from renewable, biodegradable, or recycled materials. Designed to offer robust box closure while matching or exceeding the performance of traditional plastic tapes. Fully compatible with standard recycling streams.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "50m",
-          "Base Material": "Kraft Paper",
-          "Eco Certification": "FSC & EN 13432 Certified",
-          "Recyclability": "100% Recyclable with Box"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "sustainability-tapes-1",
-          "sustainability-tapes-2",
-          "sustainability-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "single-sided-tapes",
-    "name": "Single Sided Tapes",
-    "products": [
-      {
-        "id": "single-sided-tapes-1",
-        "name": "SBECO Premium Single-Sided Cellulose Film Tape 12mm",
-        "sku": "SBL-TAPE-SST-01",
-        "brand": "SBECO",
-        "tagline": "High-tack single-sided tape with heavy-duty cellulose film backing.",
-        "badge": "Popular",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough cellulose film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "66m",
-          "Backing Type": "Cellulose Film",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-2",
-          "single-sided-tapes-3",
-          "single-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "single-sided-tapes-2",
-        "name": "SBECO Premium Single-Sided UPVC Film Tape 18mm",
-        "sku": "SBL-TAPE-SST-02",
-        "brand": "Tesa",
-        "tagline": "High-tack single-sided tape with heavy-duty upvc film backing.",
-        "badge": "Essential",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough upvc film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "18mm",
-          "Length": "66m",
-          "Backing Type": "UPVC Film",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-3",
-          "single-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "single-sided-tapes-3",
-        "name": "SBECO Premium Single-Sided MOPP Tensilized Tape 24mm",
-        "sku": "SBL-TAPE-SST-03",
-        "brand": "SBECO",
-        "tagline": "High-tack single-sided tape with heavy-duty mopp tensilized backing.",
-        "badge": "Heavy Duty",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough mopp tensilized backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "66m",
-          "Backing Type": "MOPP Tensilized",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "single-sided-tapes-4",
-        "name": "SBECO Premium Single-Sided Crepe Paper Tape 36mm",
-        "sku": "SBL-TAPE-SST-04",
-        "brand": "Tesa",
-        "tagline": "High-tack single-sided tape with heavy-duty crepe paper backing.",
-        "badge": "Premium",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough crepe paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "36mm",
-          "Length": "66m",
-          "Backing Type": "Crepe Paper",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "single-sided-tapes-5",
-        "name": "SBECO Premium Single-Sided Colored Vinyl Tape 48mm",
-        "sku": "SBL-TAPE-SST-05",
-        "brand": "SBECO",
-        "tagline": "High-tack single-sided tape with heavy-duty colored vinyl backing.",
-        "badge": "Popular",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough colored vinyl backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "66m",
-          "Backing Type": "Colored Vinyl",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "single-sided-tapes-6",
-        "name": "SBECO Premium Single-Sided Reinforced Paper Tape 12mm",
-        "sku": "SBL-TAPE-SST-06",
-        "brand": "Tesa",
-        "tagline": "High-tack single-sided tape with heavy-duty reinforced paper backing.",
-        "badge": "Essential",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough reinforced paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "66m",
-          "Backing Type": "Reinforced Paper",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "single-sided-tapes-7",
-        "name": "SBECO Premium Single-Sided Plain Kraft Tape 18mm",
-        "sku": "SBL-TAPE-SST-07",
-        "brand": "SBECO",
-        "tagline": "High-tack single-sided tape with heavy-duty plain kraft backing.",
-        "badge": "Heavy Duty",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough plain kraft backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "18mm",
-          "Length": "66m",
-          "Backing Type": "Plain Kraft",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "single-sided-tapes-8",
-        "name": "SBECO Premium Single-Sided PET Film Tape 24mm",
-        "sku": "SBL-TAPE-SST-08",
-        "brand": "Tesa",
-        "tagline": "High-tack single-sided tape with heavy-duty pet film backing.",
-        "badge": "Premium",
-        "description": "Multi-purpose single-sided adhesive tape featuring a tough pet film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
-        "specs": {
-          "Width": "24mm",
-          "Length": "66m",
-          "Backing Type": "PET Film",
-          "Adhesive Base": "Natural Rubber",
-          "Tensile Strength": "45 N/25mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "single-sided-tapes-1",
-          "single-sided-tapes-2",
-          "single-sided-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "anti-slip-tapes",
-    "name": "Anti-Skid/Anti-Slip Tapes",
-    "products": [
-      {
-        "id": "anti-slip-tapes-1",
-        "name": "SBECO Anti-Slip Standard 60-Grit Tape 25mm - Black",
-        "sku": "SBL-TAPE-AST-01",
-        "brand": "SBECO",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Popular",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "18m",
-          "Grit Level": "Standard 60-Grit",
-          "Carrier Material": "PVC",
-          "Color": "Black",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3",
-          "anti-slip-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "anti-slip-tapes-2",
-        "name": "SBECO Anti-Slip Coarse 36-Grit Tape 50mm - Yellow",
-        "sku": "SBL-TAPE-AST-02",
-        "brand": "3M",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Essential",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "18m",
-          "Grit Level": "Coarse 36-Grit",
-          "Carrier Material": "PVC",
-          "Color": "Yellow",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-3",
-          "anti-slip-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-3",
-        "name": "SBECO Anti-Slip Extra Coarse Tape 100mm - Yellow/Black Stripes",
-        "sku": "SBL-TAPE-AST-03",
-        "brand": "SBECO",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Heavy Duty",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "100mm",
-          "Length": "18m",
-          "Grit Level": "Extra Coarse",
-          "Carrier Material": "PVC",
-          "Color": "Yellow/Black Stripes",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-4",
-        "name": "SBECO Anti-Slip Resilient Rubberized Tape 150mm - Clear",
-        "sku": "SBL-TAPE-AST-04",
-        "brand": "3M",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Premium",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "150mm",
-          "Length": "18m",
-          "Grit Level": "Resilient Rubberized",
-          "Carrier Material": "PVC",
-          "Color": "Clear",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-5",
-        "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 25mm - Red",
-        "sku": "SBL-TAPE-AST-05",
-        "brand": "SBECO",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Popular",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "18m",
-          "Grit Level": "Glow-in-the-Dark Safewalk",
-          "Carrier Material": "PVC",
-          "Color": "Red",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-6",
-        "name": "SBECO Anti-Slip Standard 60-Grit Tape 50mm - Glow-in-the-Dark",
-        "sku": "SBL-TAPE-AST-06",
-        "brand": "3M",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Essential",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "18m",
-          "Grit Level": "Standard 60-Grit",
-          "Carrier Material": "PVC",
-          "Color": "Glow-in-the-Dark",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "anti-slip-tapes-7",
-        "name": "SBECO Anti-Slip Coarse 36-Grit Tape 100mm - Black",
-        "sku": "SBL-TAPE-AST-07",
-        "brand": "SBECO",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Heavy Duty",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "100mm",
-          "Length": "18m",
-          "Grit Level": "Coarse 36-Grit",
-          "Carrier Material": "PVC",
-          "Color": "Black",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-8",
-        "name": "SBECO Anti-Slip Extra Coarse Tape 150mm - Yellow",
-        "sku": "SBL-TAPE-AST-08",
-        "brand": "3M",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Premium",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "150mm",
-          "Length": "18m",
-          "Grit Level": "Extra Coarse",
-          "Carrier Material": "PVC",
-          "Color": "Yellow",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-9",
-        "name": "SBECO Anti-Slip Resilient Rubberized Tape 25mm - Yellow/Black Stripes",
-        "sku": "SBL-TAPE-AST-09",
-        "brand": "SBECO",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Popular",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "18m",
-          "Grit Level": "Resilient Rubberized",
-          "Carrier Material": "PVC",
-          "Color": "Yellow/Black Stripes",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "anti-slip-tapes-10",
-        "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 50mm - Clear",
-        "sku": "SBL-TAPE-AST-10",
-        "brand": "3M",
-        "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
-        "badge": "Essential",
-        "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "18m",
-          "Grit Level": "Glow-in-the-Dark Safewalk",
-          "Carrier Material": "PVC",
-          "Color": "Clear",
-          "OSHA Compliant": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "anti-slip-tapes-1",
-          "anti-slip-tapes-2",
-          "anti-slip-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "pvc-repair-structural",
-    "name": "PVC/Repair/Structural",
-    "products": [
-      {
-        "id": "pvc-repair-structural-1",
-        "name": "SBECO All-Weather Heavy PVC Repair Tape 48mm",
-        "sku": "SBL-TAPE-PRS-01",
-        "brand": "SBECO",
-        "tagline": "Tough all-weather heavy pvc repair tape for demanding industrial repair and structural applications.",
-        "badge": "Popular",
-        "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "10m",
-          "Material": "PVC",
-          "Tensile Strength": "90 N/25mm",
-          "Waterproof": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "pvc-repair-structural-2",
-          "pvc-repair-structural-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "pvc-repair-structural-2",
-        "name": "SBECO Heavy Duty Structural Bond Tape 50mm",
-        "sku": "SBL-TAPE-PRS-02",
-        "brand": "Tesa",
-        "tagline": "Tough heavy duty structural bond tape for demanding industrial repair and structural applications.",
-        "badge": "Essential",
-        "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "10m",
-          "Material": "Modified Acrylic",
-          "Tensile Strength": "90 N/25mm",
-          "Waterproof": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "pvc-repair-structural-1",
-          "pvc-repair-structural-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "pvc-repair-structural-3",
-        "name": "SBECO Fibre-Reinforced Leak Patch Tape 100mm",
-        "sku": "SBL-TAPE-PRS-03",
-        "brand": "SBECO",
-        "tagline": "Tough fibre-reinforced leak patch tape for demanding industrial repair and structural applications.",
-        "badge": "Heavy Duty",
-        "description": "Specially formulated repair and structural tape designed for extreme durability. Features an extra-thick, weather-resistant carrier combined with a high-performance adhesive that bonds instantly to dry and damp surfaces. UV and chemical resistant, ensuring long-lasting outdoor performance.",
-        "specs": {
-          "Width": "100mm",
-          "Length": "10m",
-          "Material": "Modified Acrylic",
-          "Tensile Strength": "90 N/25mm",
-          "Waterproof": "Yes"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "pvc-repair-structural-1",
-          "pvc-repair-structural-2"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "reflective-filament",
-    "name": "Reflective & Filament",
-    "products": [
-      {
-        "id": "reflective-filament-1",
-        "name": "SBECO Mono-Directional Filament Tape 25mm",
-        "sku": "SBL-TAPE-RFT-01",
-        "brand": "SBECO",
-        "tagline": "High-tensile reinforcement and safety signaling with premium mono-directional filament tape.",
-        "badge": "Popular",
-        "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "55m",
-          "Type": "Mono-Directional Filament",
-          "Tensile Strength": "350 N/25mm",
-          "Reflective Standard": "N/A"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "reflective-filament-2",
-          "reflective-filament-3",
-          "reflective-filament-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "reflective-filament-2",
-        "name": "SBECO Bi-Directional Cross-Weave Filament Tape 50mm",
-        "sku": "SBL-TAPE-RFT-02",
-        "brand": "3M",
-        "tagline": "High-tensile reinforcement and safety signaling with premium bi-directional cross-weave filament tape.",
-        "badge": "Essential",
-        "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "55m",
-          "Type": "Bi-Directional Cross-Weave Filament",
-          "Tensile Strength": "350 N/25mm",
-          "Reflective Standard": "N/A"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "reflective-filament-1",
-          "reflective-filament-3",
-          "reflective-filament-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "reflective-filament-3",
-        "name": "SBECO High-Visibility Prismatic Reflective Tape 25mm",
-        "sku": "SBL-TAPE-RFT-03",
-        "brand": "SBECO",
-        "tagline": "High-tensile reinforcement and safety signaling with premium high-visibility prismatic reflective tape.",
-        "badge": "Heavy Duty",
-        "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "45m",
-          "Type": "High-Visibility Prismatic Reflective",
-          "Tensile Strength": "N/A",
-          "Reflective Standard": "DOT-C2 Certified"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "reflective-filament-1",
-          "reflective-filament-2",
-          "reflective-filament-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "reflective-filament-4",
-        "name": "SBECO DOT-C2 Conspicuity Reflective Tape 50mm",
-        "sku": "SBL-TAPE-RFT-04",
-        "brand": "3M",
-        "tagline": "High-tensile reinforcement and safety signaling with premium dot-c2 conspicuity reflective tape.",
-        "badge": "Premium",
-        "description": "Engineered for high performance, our filament tapes feature fiberglass strands embedded in the backing to provide extreme tensile strength for heavy-duty bundling and palletizing. Our reflective tapes use micro-prismatic technology to deliver maximum nighttime reflectivity, complying with global transport safety standards.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "45m",
-          "Type": "DOT-C2 Conspicuity Reflective",
-          "Tensile Strength": "N/A",
-          "Reflective Standard": "DOT-C2 Certified"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "reflective-filament-1",
-          "reflective-filament-2",
-          "reflective-filament-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "strapping-surface-protection",
-    "name": "Strapping & Surface Protection",
-    "products": [
-      {
-        "id": "strapping-surface-protection-1",
-        "name": "SBECO Tensilized MOPP Strapping Tape 19mm",
-        "sku": "SBL-TAPE-SSP-01",
-        "brand": "SBECO",
-        "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
-        "badge": "Popular",
-        "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "100m",
-          "Material": "MOPP",
-          "Adhesive Type": "Low-Tack Acrylic",
-          "Clean Removal": "Yes, guaranteed"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "strapping-surface-protection-2",
-          "strapping-surface-protection-3",
-          "strapping-surface-protection-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "strapping-surface-protection-2",
-        "name": "SBECO Low-Tack Glass Protection Film Tape 50mm",
-        "sku": "SBL-TAPE-SSP-02",
-        "brand": "Tesa",
-        "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
-        "badge": "Essential",
-        "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "100m",
-          "Material": "LDPE",
-          "Adhesive Type": "Low-Tack Acrylic",
-          "Clean Removal": "Yes, guaranteed"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "strapping-surface-protection-1",
-          "strapping-surface-protection-3",
-          "strapping-surface-protection-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "strapping-surface-protection-3",
-        "name": "SBECO Stainless Steel Surface Shield Tape 100mm",
-        "sku": "SBL-TAPE-SSP-03",
-        "brand": "SBECO",
-        "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
-        "badge": "Heavy Duty",
-        "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
-        "specs": {
-          "Width": "100mm",
-          "Length": "100m",
-          "Material": "MOPP",
-          "Adhesive Type": "Low-Tack Acrylic",
-          "Clean Removal": "Yes, guaranteed"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "strapping-surface-protection-1",
-          "strapping-surface-protection-2",
-          "strapping-surface-protection-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "strapping-surface-protection-4",
-        "name": "SBECO Heavy-Duty Metal Panel Protector Tape 19mm",
-        "sku": "SBL-TAPE-SSP-04",
-        "brand": "Tesa",
-        "tagline": "Securing loads and protecting delicate surfaces from scratches, dust, and transit damage.",
-        "badge": "Premium",
-        "description": "This product line serves two critical logistics needs. Our tensilized strapping tapes offer high tensile strength and stretch resistance for holding heavy appliance parts and pallets secure. Our surface protection films feature a low-tack, residue-free adhesive designed to shield polished surfaces from scratches and scuffs during manufacturing, transport, and installation.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "100m",
-          "Material": "MOPP",
-          "Adhesive Type": "Low-Tack Acrylic",
-          "Clean Removal": "Yes, guaranteed"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "strapping-surface-protection-1",
-          "strapping-surface-protection-2",
-          "strapping-surface-protection-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "fabric-duct-floor-marking",
-    "name": "Fabric/Duct/Floor Marking (Tesa)",
-    "products": [
-      {
-        "id": "fabric-duct-floor-marking-1",
-        "name": "Tesa Premium PE-Coated Duct Tape 48mm",
-        "sku": "SBL-TAPE-FDF-01",
-        "brand": "Tesa",
-        "tagline": "High-durability premium pe-coated duct tape for harsh industrial environments, labeling, and repairs.",
-        "badge": "Popular",
-        "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "33m",
-          "Backing Material": "PE-Coated Fabric",
-          "Adhesive Base": "Natural Rubber",
-          "Thickness": "0.27mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "fabric-duct-floor-marking-2",
-          "fabric-duct-floor-marking-3",
-          "fabric-duct-floor-marking-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "fabric-duct-floor-marking-2",
-        "name": "Tesa Heavy-Duty Floor Lane Marking Tape 50mm",
-        "sku": "SBL-TAPE-FDF-02",
-        "brand": "SBECO",
-        "tagline": "High-durability heavy-duty floor lane marking tape for harsh industrial environments, labeling, and repairs.",
-        "badge": "Essential",
-        "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "33m",
-          "Backing Material": "PVC Vinyl",
-          "Adhesive Base": "Natural Rubber",
-          "Thickness": "0.27mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "fabric-duct-floor-marking-1",
-          "fabric-duct-floor-marking-3",
-          "fabric-duct-floor-marking-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "fabric-duct-floor-marking-3",
-        "name": "Tesa Professional Grade Fabric Gaffer Tape 48mm",
-        "sku": "SBL-TAPE-FDF-03",
-        "brand": "Tesa",
-        "tagline": "High-durability professional grade fabric gaffer tape for harsh industrial environments, labeling, and repairs.",
-        "badge": "Heavy Duty",
-        "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "33m",
-          "Backing Material": "PE-Coated Fabric",
-          "Adhesive Base": "Natural Rubber",
-          "Thickness": "0.27mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "fabric-duct-floor-marking-1",
-          "fabric-duct-floor-marking-2",
-          "fabric-duct-floor-marking-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "fabric-duct-floor-marking-4",
-        "name": "Tesa Hazard Diagonal Warning Tape 50mm",
-        "sku": "SBL-TAPE-FDF-04",
-        "brand": "SBECO",
-        "tagline": "High-durability hazard diagonal warning tape for harsh industrial environments, labeling, and repairs.",
-        "badge": "Premium",
-        "description": "Manufactured in partnership with Tesa, this category offers exceptional wear resistance and adhesion. The duct and fabric tapes utilize a high-mesh woven fabric carrier coated with polyethylene for waterproofing, making them perfect for sealing pipes, bundling heavy rods, and managing A/V cables. The floor marking tapes feature a tough vinyl base with vibrant colors for setting boundaries and traffic lanes in warehouses.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "33m",
-          "Backing Material": "PVC Vinyl",
-          "Adhesive Base": "Natural Rubber",
-          "Thickness": "0.27mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "fabric-duct-floor-marking-1",
-          "fabric-duct-floor-marking-2",
-          "fabric-duct-floor-marking-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "insulation-cloth-wire",
-    "name": "Insulation/Cloth/Wire (Tesa)",
-    "products": [
-      {
-        "id": "insulation-cloth-wire-1",
-        "name": "Tesa PVC Electrical Insulation Tape 19mm",
-        "sku": "SBL-TAPE-ICW-01",
-        "brand": "Tesa",
-        "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
-        "badge": "Popular",
-        "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "20m",
-          "Dielectric Strength": "600V",
-          "Temperature Range": "-40°C to 125°C",
-          "Abrasion Resistance": "Class B (LV 312)"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "insulation-cloth-wire-2",
-          "insulation-cloth-wire-3",
-          "insulation-cloth-wire-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "insulation-cloth-wire-2",
-        "name": "Tesa Fleece Wire Harness Wrap Tape 25mm",
-        "sku": "SBL-TAPE-ICW-02",
-        "brand": "SBECO",
-        "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
-        "badge": "Essential",
-        "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "20m",
-          "Dielectric Strength": "N/A",
-          "Temperature Range": "-40°C to 125°C",
-          "Abrasion Resistance": "Class B (LV 312)"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "insulation-cloth-wire-1",
-          "insulation-cloth-wire-3",
-          "insulation-cloth-wire-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "insulation-cloth-wire-3",
-        "name": "Tesa Self-Fusing Rubber Splicing Tape 19mm",
-        "sku": "SBL-TAPE-ICW-03",
-        "brand": "Tesa",
-        "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
-        "badge": "Heavy Duty",
-        "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
-        "specs": {
-          "Width": "19mm",
-          "Length": "20m",
-          "Dielectric Strength": "N/A",
-          "Temperature Range": "-40°C to 125°C",
-          "Abrasion Resistance": "Class B (LV 312)"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "insulation-cloth-wire-1",
-          "insulation-cloth-wire-2",
-          "insulation-cloth-wire-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "insulation-cloth-wire-4",
-        "name": "Tesa High-Temp Glass Cloth Insulation Tape 25mm",
-        "sku": "SBL-TAPE-ICW-04",
-        "brand": "SBECO",
-        "tagline": "Advanced insulation and wire harness wrapping tape for automotive and electrical applications.",
-        "badge": "Premium",
-        "description": "Professional-grade electrical and wire management tapes by Tesa. Includes premium PVC tape providing reliable electrical insulation up to 600V, PET fleece tape engineered for wrapping automotive wire harnesses to damp noise and resist abrasion, and self-fusing rubber tape for watertight electrical splices. Designed to perform under high temperatures and harsh mechanical conditions.",
-        "specs": {
-          "Width": "25mm",
-          "Length": "20m",
-          "Dielectric Strength": "N/A",
-          "Temperature Range": "-40°C to 125°C",
-          "Abrasion Resistance": "Class B (LV 312)"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "insulation-cloth-wire-1",
-          "insulation-cloth-wire-2",
-          "insulation-cloth-wire-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "veneer-tapes",
-    "name": "Veneer Tapes",
-    "products": [
-      {
-        "id": "veneer-tapes-1",
-        "name": "SBECO Veneer Perforated Gummed Paper Tape 12mm",
-        "sku": "SBL-TAPE-VNR-01",
-        "brand": "SBECO",
-        "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
-        "badge": "Popular",
-        "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
-        "specs": {
-          "Width": "12mm",
-          "Length": "200m",
-          "Paper Type": "Perforated Kraft",
-          "Adhesive Type": "Water-Activated Starch",
-          "Thickness": "0.07mm"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "veneer-tapes-2",
-          "veneer-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "veneer-tapes-2",
-        "name": "SBECO Veneer Solid Kraft Veneer Splicing Tape 16mm",
-        "sku": "SBL-TAPE-VNR-02",
-        "brand": "SBECO",
-        "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
-        "badge": "Essential",
-        "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
-        "specs": {
-          "Width": "16mm",
-          "Length": "200m",
-          "Paper Type": "Solid Kraft",
-          "Adhesive Type": "Water-Activated Starch",
-          "Thickness": "0.07mm"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "veneer-tapes-1",
-          "veneer-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "veneer-tapes-3",
-        "name": "SBECO Veneer Ultra-Thin Wet-Activated Paper Tape 20mm",
-        "sku": "SBL-TAPE-VNR-03",
-        "brand": "SBECO",
-        "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
-        "badge": "Heavy Duty",
-        "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
-        "specs": {
-          "Width": "20mm",
-          "Length": "200m",
-          "Paper Type": "Solid Kraft",
-          "Adhesive Type": "Water-Activated Starch",
-          "Thickness": "0.07mm"
-        },
-        "imageUrl": "/images/kraft_tape.png",
-        "similar": [
-          "veneer-tapes-1",
-          "veneer-tapes-2"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "static-non-adhesive",
-    "name": "Static/Non-Adhesive",
-    "products": [
-      {
-        "id": "static-non-adhesive-1",
-        "name": "SBECO Self-Clinging Static Protection Film Tape 50mm",
-        "sku": "SBL-TAPE-SNA-01",
-        "brand": "SBECO",
-        "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
-        "badge": "Popular",
-        "description": "This category features non-adhesive films. The static protective tape relies on electrostatic cling to shield screens, glass, and polished electronics from dirt and scratches without any adhesive residue. The caution barricade tape is a lightweight, high-tensile polyethylene strip printed with high-contrast safety warnings, ideal for blocking off hazardous areas or construction sites.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "100m",
-          "Material": "Static Cling PVC",
-          "Adhesive-Free": "Yes",
-          "UV Stable": "Yes"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "static-non-adhesive-2"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "static-non-adhesive-2",
-        "name": "SBECO Non-Adhesive PE Barricade Caution Tape 75mm",
-        "sku": "SBL-TAPE-SNA-02",
-        "brand": "SBECO",
-        "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
-        "badge": "Essential",
-        "description": "This category features non-adhesive films. The static protective tape relies on electrostatic cling to shield screens, glass, and polished electronics from dirt and scratches without any adhesive residue. The caution barricade tape is a lightweight, high-tensile polyethylene strip printed with high-contrast safety warnings, ideal for blocking off hazardous areas or construction sites.",
-        "specs": {
-          "Width": "75mm",
-          "Length": "200m",
-          "Material": "Polyethylene",
-          "Adhesive-Free": "Yes",
-          "UV Stable": "Yes"
-        },
-        "imageUrl": "/images/clear_tape.png",
-        "similar": [
-          "static-non-adhesive-1"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  },
-  {
-    "id": "packing-tapes",
-    "name": "Packing Tapes",
-    "products": [
-      {
-        "id": "packing-tapes-1",
-        "name": "SBECO Packing Tape 48mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
-        "sku": "SBL-TAPE-PKG-01",
-        "brand": "SBECO",
-        "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Popular",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "66m",
-          "Color": "Clear",
-          "Type": "Heavy-Duty Acrylic Carton Sealing",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-2",
-          "packing-tapes-3",
-          "packing-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "packing-tapes-2",
-        "name": "SBECO Packing Tape 50mm - Brown (Silent Unwind Packaging)",
-        "sku": "SBL-TAPE-PKG-02",
-        "brand": "SBECO",
-        "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Essential",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "66m",
-          "Color": "Brown",
-          "Type": "Silent Unwind Packaging",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-3",
-          "packing-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "packing-tapes-3",
-        "name": "SBECO Packing Tape 75mm - Clear (Industrial Hot-Melt Packing)",
-        "sku": "SBL-TAPE-PKG-03",
-        "brand": "SBECO",
-        "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Heavy Duty",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "75mm",
-          "Length": "66m",
-          "Color": "Clear",
-          "Type": "Industrial Hot-Melt Packing",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-4"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "packing-tapes-4",
-        "name": "SBECO Packing Tape 48mm - Brown (Cold-Storage Freezer Grade)",
-        "sku": "SBL-TAPE-PKG-04",
-        "brand": "SBECO",
-        "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Premium",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "66m",
-          "Color": "Brown",
-          "Type": "Cold-Storage Freezer Grade",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "packing-tapes-5",
-        "name": "SBECO Packing Tape 50mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
-        "sku": "SBL-TAPE-PKG-05",
-        "brand": "SBECO",
-        "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Popular",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "66m",
-          "Color": "Clear",
-          "Type": "Heavy-Duty Acrylic Carton Sealing",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "packing-tapes-6",
-        "name": "SBECO Packing Tape 75mm - Brown (Silent Unwind Packaging)",
-        "sku": "SBL-TAPE-PKG-06",
-        "brand": "SBECO",
-        "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Essential",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "75mm",
-          "Length": "66m",
-          "Color": "Brown",
-          "Type": "Silent Unwind Packaging",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": true
-      },
-      {
-        "id": "packing-tapes-7",
-        "name": "SBECO Packing Tape 48mm - Clear (Industrial Hot-Melt Packing)",
-        "sku": "SBL-TAPE-PKG-07",
-        "brand": "SBECO",
-        "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Heavy Duty",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "48mm",
-          "Length": "66m",
-          "Color": "Clear",
-          "Type": "Industrial Hot-Melt Packing",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      },
-      {
-        "id": "packing-tapes-8",
-        "name": "SBECO Packing Tape 50mm - Brown (Cold-Storage Freezer Grade)",
-        "sku": "SBL-TAPE-PKG-08",
-        "brand": "SBECO",
-        "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
-        "badge": "Premium",
-        "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
-        "specs": {
-          "Width": "50mm",
-          "Length": "66m",
-          "Color": "Brown",
-          "Type": "Cold-Storage Freezer Grade",
-          "Thickness": "0.052mm"
-        },
-        "imageUrl": "/images/carton_tape.png",
-        "similar": [
-          "packing-tapes-1",
-          "packing-tapes-2",
-          "packing-tapes-3"
-        ],
-        "dateAdded": "2026-06-01",
-        "isBestSeller": false
-      }
-    ]
-  }
-],
+    ],
   },
 
   // ═══════════════════════════════════════════════════════════════
