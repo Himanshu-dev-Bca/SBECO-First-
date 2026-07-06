@@ -113,7 +113,7 @@ export const CATALOGUE = [
             "id": "masking-tapes-films-5",
             "name": "Tesa 04341 Masking Tape",
             "sku": "SBL-TAPE-MSK-05",
-            "brand": "Tesa",
+            "brand": "SBECO",
             "tagline": "Premium-grade masking tape designed for general-purpose applications.",
             "badge": "Popular",
             "description": "Premium general-purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
