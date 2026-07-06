@@ -39,7 +39,7 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-2",
-            "name": "SBECO High-Temperature Paint Masking Masking Tape 18mm",
+            "name": "Tesa 53123 Masking Tape",
             "sku": "SBL-TAPE-MSK-02",
             "brand": "Tesa",
             "tagline": "Professional-grade masking tape designed for high-temperature paint masking applications.",
