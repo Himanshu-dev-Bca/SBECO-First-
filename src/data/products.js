@@ -66,7 +66,7 @@ export const CATALOGUE = [
             "name": "SBECO Masking Film 208",
             "sku": "SBL-TAPE-MSK-03",
             "brand": "SBECO",
-            "tagline": "Premium-grade masking film designed for precision applications.",
+            "tagline": "Premium-grade masking film designed for outdoor applications.",
             "badge": "Premium",
             "description": "Premium masking film featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
