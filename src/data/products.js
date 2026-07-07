@@ -271,8 +271,8 @@ export const CATALOGUE = [
               "Width": "24mm",
               "Length": "50m",
               "Carrier Material": "PE Foam",
-              "Thickness": "0.5mm",
-              "Adhesive Type": "Acrylic"
+              "Thickness": "1mm",
+              "Adhesive Type": "Hot-melt Rubber"
             },
             "imageUrl": "/images/clear_tape.png",
             "similar": [
