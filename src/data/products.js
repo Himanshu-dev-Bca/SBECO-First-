@@ -261,16 +261,16 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-3",
-            "name": "SBECO Double-Sided PET Film Tape 24mm",
+            "name": "SBECO Double Side Foam Tape",
             "sku": "SBL-TAPE-DST-03",
-            "brand": "3M",
-            "tagline": "High-strength double-coated tape with pet film carrier for mirror fixing.",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with foam carrier for general purpose applications.",
             "badge": "Heavy Duty",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pet film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "24mm",
               "Length": "50m",
-              "Carrier Material": "PET Film",
+              "Carrier Material": "PE Foam",
               "Thickness": "0.5mm",
               "Adhesive Type": "Acrylic"
             },
