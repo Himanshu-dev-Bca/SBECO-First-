@@ -213,7 +213,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "double-sided-tapes-1",
-            "name": "SBECO Double-Sided Tissue Tape 12mm",
+            "name": "SBECO Double Side Polyester Tape",
             "sku": "SBL-TAPE-DST-01",
             "brand": "SBECO",
             "tagline": "High-strength double-coated tape with tissue carrier for nameplate mounting.",
