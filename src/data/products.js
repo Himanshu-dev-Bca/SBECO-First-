@@ -237,12 +237,12 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-2",
-            "name": "SBECO Double-Sided PE Foam Tape 19mm",
+            "name": "SBECO Double Side Tissue Tape",
             "sku": "SBL-TAPE-DST-02",
-            "brand": "Tesa",
-            "tagline": "High-strength double-coated tape with pe foam carrier for signage bonding.",
-            "badge": "Essential",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pe foam carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "brand": "SBECO",
+            "tagline": "High-strength double-coated tape with tissue carrier for general purpose applications.",
+            "badge": "Popular",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "19mm",
               "Length": "50m",
