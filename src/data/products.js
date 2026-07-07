@@ -161,8 +161,8 @@ export const CATALOGUE = [
             "id": "masking-tapes-films-7",
             "name": "Tesa 4304 Masking Tape",
             "sku": "SBL-TAPE-MSK-07",
-            "brand": "SBECO",
-            "tagline": "Professional-grade masking tape designed for automotive body shop applications.",
+            "brand": "Tesa",
+            "tagline": "Premium-grade masking tape designed for automotive body shop applications.",
             "badge": "Heavy Duty",
             "description": "Premium automotive body shop masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
@@ -183,10 +183,10 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-8",
-            "name": "SBECO Polyester Powder Coating Shield Masking Tape 18mm",
+            "name": "Tesa 4309 Masking Tape",
             "sku": "SBL-TAPE-MSK-08",
             "brand": "Tesa",
-            "tagline": "Professional-grade masking tape designed for polyester powder coating shield applications.",
+            "tagline": "Premium-grade masking tape designed for polyester powder coating shield applications.",
             "badge": "Premium",
             "description": "Premium polyester powder coating shield masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
             "specs": {
