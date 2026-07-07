@@ -159,7 +159,7 @@ export const CATALOGUE = [
           },
           {
             "id": "masking-tapes-films-7",
-            "name": "SBECO Automotive Body Shop Masking Tape 12mm",
+            "name": "Tesa 4304 Masking Tape",
             "sku": "SBL-TAPE-MSK-07",
             "brand": "SBECO",
             "tagline": "Professional-grade masking tape designed for automotive body shop applications.",
