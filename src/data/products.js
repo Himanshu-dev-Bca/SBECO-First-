@@ -285,12 +285,12 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-4",
-            "name": "SBECO Double-Sided Acrylic Foam (VHB) Tape 30mm",
+            "name": "SBECO Double Side Cloth Tape",
             "sku": "SBL-TAPE-DST-04",
             "brand": "SBECO",
-            "tagline": "High-strength double-coated tape with acrylic foam (vhb) carrier for carpet laying.",
+            "tagline": "High-strength double-coated tape with cloth carrier for carpet laying.",
             "badge": "Premium",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a acrylic foam (vhb) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "30mm",
               "Length": "10m",
