@@ -357,16 +357,16 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-7",
-            "name": "SBECO Double-Sided Cloth Tape 12mm",
+            "name": "SBECO Nano Tape",
             "sku": "SBL-TAPE-DST-07",
             "brand": "SBECO",
-            "tagline": "High-strength double-coated tape with cloth carrier for structural bonding.",
+            "tagline": "High-strength double-sided tape with nano tape carrier for general purpose.",
             "badge": "Heavy Duty",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a cloth carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a nano tape carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
-              "Width": "12mm",
-              "Length": "10m",
-              "Carrier Material": "Cloth",
+              "Width": "50mm",
+              "Length": "3m",
+              "Carrier Material": "Nano Tape",
               "Thickness": "1.5mm",
               "Adhesive Type": "Acrylic"
             },
