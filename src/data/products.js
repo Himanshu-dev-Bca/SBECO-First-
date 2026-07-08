@@ -309,7 +309,7 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-5",
-            "name": "SBECO Double-Sided PVC Tape 48mm",
+            "name": "SBECO Double Side Tissue Solvent Tape",
             "sku": "SBL-TAPE-DST-05",
             "brand": "Tesa",
             "tagline": "High-strength double-coated tape with pvc carrier for splicing applications.",
@@ -318,7 +318,7 @@ export const CATALOGUE = [
             "specs": {
               "Width": "48mm",
               "Length": "50m",
-              "Carrier Material": "PVC",
+              "Carrier Material": "Tissue",
               "Thickness": "1mm",
               "Adhesive Type": "Acrylic"
             },
