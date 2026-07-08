@@ -333,16 +333,16 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-6",
-            "name": "SBECO Double-Sided Transfer (No Carrier) Tape 50mm",
+            "name": "SBECO Aluminium Foil Tape",
             "sku": "SBL-TAPE-DST-06",
             "brand": "3M",
-            "tagline": "High-strength double-coated tape with transfer (no carrier) carrier for general crafts.",
+            "tagline": "High-strength double-sided tape with aluminium foil carrier for general crafts.",
             "badge": "Essential",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a transfer (no carrier) carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a aluminium foil carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "50mm",
               "Length": "50m",
-              "Carrier Material": "Transfer (No Carrier)",
+              "Carrier Material": "Aluminium Foil",
               "Thickness": "1.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
