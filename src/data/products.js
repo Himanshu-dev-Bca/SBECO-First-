@@ -381,18 +381,18 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-8",
-            "name": "SBECO Double-Sided PP Film Tape 19mm",
+            "name": "SBECO VBH Tape",
             "sku": "SBL-TAPE-DST-08",
-            "brand": "Tesa",
-            "tagline": "High-strength double-coated tape with pp film carrier for electronic component mounting.",
+            "brand": "SBECO",
+            "tagline": "High-strength double-sided tape with VBH carrier for bonding applications.",
             "badge": "Premium",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pp film carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a VBH carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "19mm",
               "Length": "50m",
-              "Carrier Material": "PP Film",
+              "Carrier Material": "VBH",
               "Thickness": "2mm",
-              "Adhesive Type": "Hot-melt Rubber"
+              "Adhesive Type": "Acrylic"
             },
             "imageUrl": "/images/clear_tape.png",
             "similar": [
