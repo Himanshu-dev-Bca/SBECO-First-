@@ -28,7 +28,7 @@ export const CATALOGUE = [
               "Temperature Resistance": "60°C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tape/GP-Masking-Tape.png",
             "similar": [
               "masking-tapes-films-2",
               "masking-tapes-films-3",
