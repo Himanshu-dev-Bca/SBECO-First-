@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+ï»¿// Complete product catalogue data ï¿½ single source of truth
 export const CATALOGUE = [
   // ---------------------------------------------------------------
   // 1. TAPE AND TAPE DISPENSERS
@@ -25,7 +25,7 @@ export const CATALOGUE = [
               "Width": "12mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "60°C",
+              "Temperature Resistance": "60ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/SBECO-GP-Masking-Tape.png",
@@ -49,7 +49,7 @@ export const CATALOGUE = [
               "Width": "18mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "80°C",
+              "Temperature Resistance": "80ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/Tesa 53123 Masking Tape.png",
@@ -73,7 +73,7 @@ export const CATALOGUE = [
               "Width": "24mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "110°C",
+              "Temperature Resistance": "110ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Film 208.png",
@@ -97,7 +97,7 @@ export const CATALOGUE = [
               "Width": "36mm",
               "Length": "50m",
               "Backing Material": "Washi Paper",
-              "Temperature Resistance": "120°C",
+              "Temperature Resistance": "120ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Film 158.png",
@@ -121,7 +121,7 @@ export const CATALOGUE = [
               "Width": "48mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "150°C",
+              "Temperature Resistance": "150ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/Tesa 04341 Masking Tape.png",
@@ -145,7 +145,7 @@ export const CATALOGUE = [
               "Width": "72mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "180°C",
+              "Temperature Resistance": "180ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Tape ABRO.png",
@@ -169,7 +169,7 @@ export const CATALOGUE = [
               "Width": "12mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "60°C",
+              "Temperature Resistance": "60ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/Tesa 4304 Masking Tape.png",
@@ -193,7 +193,7 @@ export const CATALOGUE = [
               "Width": "18mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "80°C",
+              "Temperature Resistance": "80ï¿½C",
               "Adhesive Type": "Natural Rubber"
             },
             "imageUrl": "/images/tapes/Masking tapes and films/Tesa 4309 Masking Tape.png",
@@ -1335,7 +1335,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "anti-slip-tapes-1",
-            "name": "SBECO Anti-Slip Tape – Yellow/Black",
+            "name": "SBECO Anti-Slip Tape ï¿½ Yellow/Black",
             "sku": "SBL-TAPE-AST-01",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1360,7 +1360,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-2",
-            "name": "SBECO Anti-Slip Tape – Black",
+            "name": "SBECO Anti-Slip Tape ï¿½ Black",
             "sku": "SBL-TAPE-AST-02",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1385,7 +1385,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-3",
-            "name": "SBECO Anti-Slip Tape – Yellow",
+            "name": "SBECO Anti-Slip Tape ï¿½ Yellow",
             "sku": "SBL-TAPE-AST-03",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1410,7 +1410,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-4",
-            "name": "SBECO Anti-Slip Tape – White",
+            "name": "SBECO Anti-Slip Tape ï¿½ White",
             "sku": "SBL-TAPE-AST-04",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1435,7 +1435,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-5",
-            "name": "SBECO Anti-Slip Tape – Glow in Dark",
+            "name": "SBECO Anti-Slip Tape ï¿½ Glow in Dark",
             "sku": "SBL-TAPE-AST-05",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1460,7 +1460,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-6",
-            "name": "SBECO Anti-Slip Tape – Grey",
+            "name": "SBECO Anti-Slip Tape ï¿½ Grey",
             "sku": "SBL-TAPE-AST-06",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1485,7 +1485,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-7",
-            "name": "SBECO Anti-Slip Tape – Glow in Dark",
+            "name": "SBECO Anti-Slip Tape ï¿½ Glow in Dark",
             "sku": "SBL-TAPE-AST-07",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1982,7 +1982,7 @@ export const CATALOGUE = [
               "Width": "19mm",
               "Length": "20m",
               "Dielectric Strength": "600V",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40ï¿½C to 125ï¿½C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
             "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 2125 Insulation Tape.png",
@@ -2006,7 +2006,7 @@ export const CATALOGUE = [
               "Width": "25mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40ï¿½C to 125ï¿½C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
             "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 4657 Cloth Tape.png",
@@ -2030,7 +2030,7 @@ export const CATALOGUE = [
               "Width": "19mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40ï¿½C to 125ï¿½C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
             "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 51608 Wire Harness Tape.png",
@@ -2054,7 +2054,7 @@ export const CATALOGUE = [
               "Width": "25mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40ï¿½C to 125ï¿½C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
             "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 60963 Anti-Slip Glow In Dark.png",
@@ -3004,7 +3004,7 @@ export const CATALOGUE = [
               "Stroke Length": "20mm",
               "Speed": "500-3000 spm",
               "Weight": "2.2 kg",
-              "Tilt": "±45°"
+              "Tilt": "ï¿½45ï¿½"
             },
             imageUrl: "/images/jigsaw.png",
             consumables: [
@@ -3351,7 +3351,7 @@ export const CATALOGUE = [
             description: "High-quality closed-cell foam sheets for protecting fragile and sensitive items.",
             specs: {
               "Thickness": "50mm",
-              "Density": "25kg/m³",
+              "Density": "25kg/mï¿½",
               "Size": "1m x 0.5m per sheet",
               "Material": "EPE Foam",
               "Reusable": "Yes"

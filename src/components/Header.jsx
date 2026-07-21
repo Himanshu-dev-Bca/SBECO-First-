@@ -230,248 +230,117 @@ export default function Header() {
               )}
 
               {/* ────────────────────────────────────────
-                  MEGA MENU DROPDOWN (Products)
+                  SIMPLE PRODUCTS HOVER MENU (Categories & Product Names)
                  ──────────────────────────────────────── */}
               {item.hasMega && (
                 <div
                   ref={megaRef}
                   onMouseEnter={openMega}
                   onMouseLeave={closeMega}
-                  className={`mega-menu-container fixed left-0 right-0 top-[80px] z-50 transition-all duration-300 ease-[cubic-bezier(.22,1,.36,1)] ${
+                  className={`mega-menu-container fixed left-0 right-0 top-[64px] md:top-[80px] z-50 transition-all duration-200 ease-out ${
                     megaOpen
                       ? 'opacity-100 visible translate-y-0'
-                      : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                      : 'opacity-0 invisible -translate-y-1 pointer-events-none'
                   }`}
                 >
-                  {/* Backdrop blur overlay */}
-                  <div className="absolute inset-0 bg-black/5 backdrop-blur-[2px] -z-10" onClick={() => setMegaOpen(false)} />
+                  {/* Backdrop */}
+                  <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px] -z-10" onClick={() => setMegaOpen(false)} />
 
-                  <div className="max-w-7xl mx-auto px-4 md:px-6">
-                    <div className="mega-menu bg-white border border-gray-200/80 shadow-[0_24px_80px_rgba(0,0,0,.12),0_8px_24px_rgba(0,0,0,.06)] rounded-xl overflow-hidden">
-
-                      {/* ── Mega Menu Header ── */}
-                      <div className="flex items-center justify-between px-8 py-4 border-b border-gray-100 bg-gradient-to-r from-gray-50 to-white">
-                        <div className="flex items-center gap-3">
-                          <div className="w-1 h-5 bg-accent rounded-full" />
-                          <span className="text-[11px] tracking-[.12em] uppercase font-bold text-gray-500">
-                            Our Product Range
-                          </span>
-                          <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent rounded-full font-semibold">
-                            {CATALOGUE.reduce((acc, cat) => acc + getCategoryProductCount(cat), 0)}+ Products
-                          </span>
+                  <div className="max-w-6xl mx-auto px-4">
+                    <div className="bg-white border border-gray-200/90 shadow-[0_20px_60px_rgba(0,0,0,0.12)] rounded-2xl overflow-hidden flex min-h-[360px] max-h-[480px]">
+                      
+                      {/* Left Column: Categories */}
+                      <div className="w-[280px] bg-gray-50/80 border-r border-gray-200/80 py-3 shrink-0 overflow-y-auto">
+                        <div className="px-5 py-2 text-[9px] font-extrabold tracking-[.12em] uppercase text-gray-400">
+                          Categories
                         </div>
-                        <Link
-                          to="/products"
-                          onClick={() => setMegaOpen(false)}
-                          className="group/viewall flex items-center gap-1.5 text-[10px] tracking-[.08em] uppercase font-semibold text-accent no-underline hover:opacity-80 transition-opacity"
-                        >
-                          View All Products
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            className="w-3.5 h-3.5 transition-transform group-hover/viewall:translate-x-0.5">
-                            <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638l-3.22-3.22a.75.75 0 111.06-1.06l4.5 4.5a.75.75 0 010 1.06l-4.5 4.5a.75.75 0 11-1.06-1.06l3.22-3.22H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                          </svg>
-                        </Link>
+                        {CATALOGUE.map((cat, idx) => {
+                          const isActive = activeCat === idx;
+                          const count = getCategoryProductCount(cat);
+                          return (
+                            <button
+                              key={cat.id}
+                              type="button"
+                              onMouseEnter={() => setActiveCat(idx)}
+                              onClick={() => {
+                                navigate(`/products?category=${cat.id}`);
+                                setMegaOpen(false);
+                              }}
+                              className={`w-full flex items-center justify-between px-5 py-3 text-left border-none cursor-pointer transition-all duration-150 ${
+                                isActive
+                                  ? 'bg-white text-accent font-bold border-l-4 border-accent shadow-sm'
+                                  : 'bg-transparent text-gray-700 hover:bg-white/60 hover:text-accent border-l-4 border-transparent'
+                              }`}
+                            >
+                              <span className="text-[12px] uppercase font-semibold tracking-wide truncate">
+                                {cat.name}
+                              </span>
+                              <span className="text-[10px] text-gray-400 font-normal ml-2">
+                                ({count})
+                              </span>
+                            </button>
+                          );
+                        })}
                       </div>
 
-                      {/* ── Mega Menu Body — Sidebar + Content ── */}
-                      <div className="flex min-h-[420px] max-h-[calc(100vh-200px)]">
+                      {/* Right Column: Product Names for Active Category */}
+                      <div className="flex-1 p-6 overflow-y-auto bg-white flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center justify-between pb-3 mb-4 border-b border-gray-100">
+                            <h3 className="text-[14px] font-extrabold uppercase tracking-wide text-slate-900 m-0">
+                              {CATALOGUE[activeCat]?.name}
+                            </h3>
+                            <Link
+                              to={`/products?category=${CATALOGUE[activeCat]?.id}`}
+                              onClick={() => setMegaOpen(false)}
+                              className="text-[11px] font-bold text-accent hover:underline uppercase tracking-wider no-underline"
+                            >
+                              Browse Category →
+                            </Link>
+                          </div>
 
-                        {/* ── Left: Category Sidebar ── */}
-                        <div className="w-[260px] bg-gray-50/60 border-r border-gray-100 py-3 shrink-0">
-                          {CATALOGUE.map((cat, idx) => {
-                            const colors = CATEGORY_COLORS[cat.id] || CATEGORY_COLORS['tape-dispensers'];
-                            const isActive = activeCat === idx;
-                            return (
-                              <button
-                                key={cat.id}
-                                type="button"
-                                onMouseEnter={() => setActiveCat(idx)}
-                                onClick={() => {
-                                  navigate(`/products?category=${cat.id}`);
-                                  setMegaOpen(false);
-                                }}
-                                className={`mega-cat-btn w-full flex items-center gap-3 px-6 py-3.5 text-left border-none cursor-pointer transition-all duration-200 relative ${
-                                  isActive
-                                    ? 'bg-white shadow-[0_2px_8px_rgba(0,0,0,.04)]'
-                                    : 'bg-transparent hover:bg-white/60'
-                                }`}
-                                style={isActive ? { borderLeft: `3px solid ${colors.border}` } : { borderLeft: '3px solid transparent' }}
-                              >
-                                <span
-                                  className="flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-200"
-                                  style={{
-                                    backgroundColor: isActive ? colors.bg : 'rgba(0,0,0,0.03)',
-                                    color: isActive ? colors.text : '#9ca3af',
-                                  }}
+                          {/* List of Product Names */}
+                          <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+                            {(() => {
+                              const cat = CATALOGUE[activeCat];
+                              if (!cat) return null;
+                              const allProds = [];
+                              cat.subcategories.forEach((sub) => {
+                                if (sub.products) allProds.push(...sub.products);
+                                if (sub.nestedSubcategories) {
+                                  sub.nestedSubcategories.forEach((n) => {
+                                    if (n.products) allProds.push(...n.products);
+                                  });
+                                }
+                              });
+
+                              return allProds.map((p) => (
+                                <Link
+                                  key={p.id}
+                                  to={`/products/${p.id}`}
+                                  onClick={() => setMegaOpen(false)}
+                                  className="group/pitem flex items-center gap-2 text-[11px] text-gray-600 hover:text-accent no-underline py-1 transition-colors truncate"
+                                  title={p.name}
                                 >
-                                  {CATEGORY_ICONS[cat.id] || CATEGORY_ICONS['tape-dispensers']}
-                                </span>
-                                <div className="flex-1 min-w-0">
-                                  <div className={`text-[11px] font-bold tracking-[.04em] uppercase truncate transition-colors duration-200 ${
-                                    isActive ? 'text-gray-900' : 'text-gray-600'
-                                  }`}>
-                                    {cat.name}
-                                  </div>
-                                  <div className="text-[9px] text-gray-400 mt-0.5">
-                                    {getCategoryProductCount(cat)} products
-                                  </div>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                  className={`w-3.5 h-3.5 shrink-0 transition-all duration-200 ${isActive ? 'text-gray-400 translate-x-0 opacity-100' : 'text-gray-300 -translate-x-1 opacity-0'}`}>
-                                  <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                </svg>
-                              </button>
-                            );
-                          })}
+                                  <span className="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover/pitem:bg-accent transition-colors shrink-0" />
+                                  <span className="truncate group-hover/pitem:translate-x-0.5 transition-transform font-medium">
+                                    {p.name}
+                                  </span>
+                                </Link>
+                              ));
+                            })()}
+                          </div>
                         </div>
 
-                        {/* ── Right: Subcategories & Products ── */}
-                        <div className="flex-1 overflow-y-auto mega-scroll py-5 px-8">
-                          {CATALOGUE.map((cat, catIdx) => {
-                            if (catIdx !== activeCat) return null;
-                            const colors = CATEGORY_COLORS[cat.id] || CATEGORY_COLORS['tape-dispensers'];
-
-                            return (
-                              <div key={cat.id} className="animate-mega-fade">
-                                {/* Category description */}
-                                <div className="mb-6">
-                                  <h3 className="text-[13px] font-bold text-gray-900 mb-1.5">{cat.name}</h3>
-                                  <p className="text-[11px] text-gray-500 leading-relaxed max-w-lg">{cat.description}</p>
-                                </div>
-
-                                {/* Subcategories grid */}
-                                <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
-                                  {cat.subcategories.map((sub) => {
-                                    const products = getSubProducts(sub);
-                                    const displayProducts = products.slice(0, 5);
-                                    const remaining = products.length - displayProducts.length;
-
-                                    return (
-                                      <div key={sub.id} className="mega-subcategory group/sub">
-                                        {/* Subcategory header */}
-                                        <Link
-                                          to={`/products?category=${cat.id}&sub=${sub.id}`}
-                                          onClick={() => setMegaOpen(false)}
-                                          className="flex items-center gap-2 mb-3 pb-2 border-b-2 no-underline transition-colors"
-                                          style={{ borderBottomColor: colors.border }}
-                                        >
-                                          <span className="text-[10px] font-bold tracking-[.08em] uppercase" style={{ color: colors.text }}>
-                                            {sub.name}
-                                          </span>
-                                          <span className="text-[9px] text-gray-400 font-medium">
-                                            ({products.length})
-                                          </span>
-                                        </Link>
-
-                                        {/* Nested subcategories */}
-                                        {sub.nestedSubcategories && sub.nestedSubcategories.length > 0 && (
-                                          <div className="space-y-3 mb-2">
-                                            {sub.nestedSubcategories.slice(0, 3).map((nested) => (
-                                              <div key={nested.id}>
-                                                <div className="text-[9px] font-semibold tracking-[.06em] uppercase text-gray-400 mb-1.5">
-                                                  {nested.name}
-                                                </div>
-                                                <ul className="space-y-1 list-none">
-                                                  {nested.products && nested.products.slice(0, 3).map((p) => (
-                                                    <li key={p.id}>
-                                                      <Link
-                                                        to={`/products/${p.id}`}
-                                                        onClick={() => setMegaOpen(false)}
-                                                        className="mega-product-link text-[11px] text-gray-600 no-underline hover:text-accent transition-all duration-200 flex items-center gap-2 py-0.5"
-                                                      >
-                                                        <span className="w-1 h-1 rounded-full shrink-0 transition-colors duration-200" style={{ backgroundColor: colors.border, opacity: 0.4 }} />
-                                                        <span className="truncate">{p.name}</span>
-                                                      </Link>
-                                                    </li>
-                                                  ))}
-                                                  {nested.products && nested.products.length > 3 && (
-                                                    <li>
-                                                      <Link
-                                                        to={`/products?category=${cat.id}&sub=${sub.id}`}
-                                                        onClick={() => setMegaOpen(false)}
-                                                        className="text-[10px] text-accent no-underline hover:underline font-medium pl-3"
-                                                      >
-                                                        +{nested.products.length - 3} more
-                                                      </Link>
-                                                    </li>
-                                                  )}
-                                                </ul>
-                                              </div>
-                                            ))}
-                                            {sub.nestedSubcategories.length > 3 && (
-                                              <Link
-                                                to={`/products?category=${cat.id}&sub=${sub.id}`}
-                                                onClick={() => setMegaOpen(false)}
-                                                className="text-[10px] text-accent no-underline hover:underline font-medium"
-                                              >
-                                                View all {sub.name} →
-                                              </Link>
-                                            )}
-                                          </div>
-                                        )}
-
-                                        {/* Direct products */}
-                                        {sub.products && sub.products.length > 0 && (
-                                          <ul className="space-y-1 list-none">
-                                            {displayProducts.map((p) => (
-                                              <li key={p.id}>
-                                                <Link
-                                                  to={`/products/${p.id}`}
-                                                  onClick={() => setMegaOpen(false)}
-                                                  className="mega-product-link text-[11px] text-gray-600 no-underline hover:text-accent transition-all duration-200 flex items-center gap-2 py-0.5"
-                                                >
-                                                  <span className="w-1 h-1 rounded-full shrink-0 transition-colors duration-200" style={{ backgroundColor: colors.border, opacity: 0.4 }} />
-                                                  <span className="truncate">{p.name}</span>
-                                                  {p.isBestSeller && (
-                                                    <span className="text-[8px] px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded-full font-semibold uppercase tracking-wide shrink-0">
-                                                      Best Seller
-                                                    </span>
-                                                  )}
-                                                </Link>
-                                              </li>
-                                            ))}
-                                            {remaining > 0 && (
-                                              <li>
-                                                <Link
-                                                  to={`/products?category=${cat.id}&sub=${sub.id}`}
-                                                  onClick={() => setMegaOpen(false)}
-                                                  className="text-[10px] text-accent no-underline hover:underline font-medium pl-3"
-                                                >
-                                                  +{remaining} more products
-                                                </Link>
-                                              </li>
-                                            )}
-                                          </ul>
-                                        )}
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-
-                                {/* Category CTA footer */}
-                                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
-                                  <p className="text-[10px] text-gray-400">
-                                    Explore all {getCategoryProductCount(cat)} products in {cat.name}
-                                  </p>
-                                  <Link
-                                    to={`/products?category=${cat.id}`}
-                                    onClick={() => setMegaOpen(false)}
-                                    className="group/catcta inline-flex items-center gap-1.5 px-4 py-2 text-[10px] font-bold tracking-[.06em] uppercase no-underline rounded-lg transition-all duration-200"
-                                    style={{
-                                      backgroundColor: colors.bg,
-                                      color: colors.text,
-                                    }}
-                                  >
-                                    Browse {cat.name}
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                      className="w-3 h-3 transition-transform group-hover/catcta:translate-x-0.5">
-                                      <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638l-3.22-3.22a.75.75 0 111.06-1.06l4.5 4.5a.75.75 0 010 1.06l-4.5 4.5a.75.75 0 11-1.06-1.06l3.22-3.22H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                                    </svg>
-                                  </Link>
-                                </div>
-                              </div>
-                            );
-                          })}
+                        <div className="pt-3 mt-4 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400 shrink-0">
+                          <span>Hover over a category to view its products</span>
+                          <Link
+                            to="/products"
+                            onClick={() => setMegaOpen(false)}
+                            className="font-bold text-accent no-underline hover:underline uppercase tracking-wider text-[10px]"
+                          >
+                            View All Products →
+                          </Link>
                         </div>
                       </div>
                     </div>

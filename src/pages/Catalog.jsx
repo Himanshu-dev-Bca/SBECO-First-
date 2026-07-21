@@ -424,9 +424,9 @@ export default function Catalog() {
       </div>
 
       {/* ═══ Main Content Area ═══ */}
-      <div className="max-w-7xl mx-auto flex">
+      <div className="max-w-7xl mx-auto flex min-h-screen items-start">
         {/* ── Desktop Sidebar ── */}
-        <div className="hidden lg:block w-[280px] shrink-0 sticky top-[140px] self-start h-[calc(100vh-140px)] border-r border-gray-200 bg-white">
+        <div className="hidden lg:block w-[280px] shrink-0 sticky top-[80px] self-start h-[calc(100vh-80px)] border-r border-gray-200 bg-white z-20">
           <FilterPanel
             categories={CATALOGUE}
             selectedCategory={selectedCategory}
