@@ -741,17 +741,17 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-23",
-            "name": "SBECO Double-Sided PVC Tape 48mm",
-            "sku": "SBL-TAPE-DST-23",
+            "name": "SBECO Copper Foil Tape",
+            "sku": "SBL-TAPE-CFT-23",
             "brand": "Tesa",
-            "tagline": "High-strength double-coated tape with pvc carrier for structural bonding.",
+            "tagline": "High-strength copper foil tape for EMI shielding and conductivity applications.",
             "badge": "Heavy Duty",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade copper foil tape with an acrylic adhesive formulation. Engineered for EMI shielding, grounding, and conductivity applications requiring excellent adhesion and shielding performance. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "48mm",
               "Length": "50m",
-              "Carrier Material": "PVC",
-              "Thickness": "1.5mm",
+              "Carrier Material": "Copper Foil",
+              "Thickness": "0.05mm",
               "Adhesive Type": "Acrylic"
             },
             "imageUrl": "/images/clear_tape.png",
