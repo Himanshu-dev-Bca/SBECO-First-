@@ -2074,9 +2074,9 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "veneer-tapes-1",
-            "name": "SBECO Veneer Perforated Gummed Paper Tape 12mm",
+            "name": "SBECO Perforated Veneer Tape",
             "sku": "SBL-TAPE-VNR-01",
-            "brand": "SBECO",
+            "brand": "WACO",
             "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
             "badge": "Popular",
             "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
@@ -2097,9 +2097,9 @@ export const CATALOGUE = [
           },
           {
             "id": "veneer-tapes-2",
-            "name": "SBECO Veneer Solid Kraft Veneer Splicing Tape 16mm",
+            "name": "SBECO Veneer Tape",
             "sku": "SBL-TAPE-VNR-02",
-            "brand": "SBECO",
+            "brand": "WACO",
             "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
             "badge": "Essential",
             "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
@@ -2120,9 +2120,9 @@ export const CATALOGUE = [
           },
           {
             "id": "veneer-tapes-3",
-            "name": "SBECO Veneer Ultra-Thin Wet-Activated Paper Tape 20mm",
+            "name": "SBECO Perforated Gum Tape",
             "sku": "SBL-TAPE-VNR-03",
-            "brand": "SBECO",
+            "brand": "WACO",
             "tagline": "High-quality water-activated paper tape for wood veneer splicing and furniture manufacturing.",
             "badge": "Heavy Duty",
             "description": "Designed specifically for the woodworking industry, our veneer splicing tapes are made from thin, high-tensile kraft paper coated with water-activated starch adhesive. Once dried, it holds veneer sheets tightly edge-to-edge during the pressing process. Perforations allow moisture to escape, preventing veneer blistering. Sanded off easily after pressing.",
@@ -2149,7 +2149,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "static-non-adhesive-1",
-            "name": "SBECO Self-Clinging Static Protection Film Tape 50mm",
+            "name": "SBECO Non-Adhesive PTFE Tape",
             "sku": "SBL-TAPE-SNA-01",
             "brand": "SBECO",
             "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
@@ -2171,7 +2171,7 @@ export const CATALOGUE = [
           },
           {
             "id": "static-non-adhesive-2",
-            "name": "SBECO Non-Adhesive PE Barricade Caution Tape 75mm",
+            "name": "SBECO Static Caution Tape",
             "sku": "SBL-TAPE-SNA-02",
             "brand": "SBECO",
             "tagline": "Non-adhesive, static cling or high-contrast barrier tape for marking and safety marking.",
@@ -2199,7 +2199,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "packing-tapes-1",
-            "name": "SBECO Packing Tape 48mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
+            "name": "SBECO BOPP Transparent Tape",
             "sku": "SBL-TAPE-PKG-01",
             "brand": "SBECO",
             "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
@@ -2223,7 +2223,7 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-2",
-            "name": "SBECO Packing Tape 50mm - Brown (Silent Unwind Packaging)",
+            "name": "SBECO BOPP Brown Tape",
             "sku": "SBL-TAPE-PKG-02",
             "brand": "SBECO",
             "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
@@ -2247,7 +2247,7 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-3",
-            "name": "SBECO Packing Tape 75mm - Clear (Industrial Hot-Melt Packing)",
+            "name": "SBECO BOPP No Noise Tape",
             "sku": "SBL-TAPE-PKG-03",
             "brand": "SBECO",
             "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
@@ -2271,10 +2271,10 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-4",
-            "name": "SBECO Packing Tape 48mm - Brown (Cold-Storage Freezer Grade)",
+            "name": "SBECO BOPP Color Tape",
             "sku": "SBL-TAPE-PKG-04",
             "brand": "SBECO",
-            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "tagline": "Premium-grade colored packing tape with high shear adhesion for secure carton sealing.",
             "badge": "Premium",
             "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
             "specs": {
@@ -2295,10 +2295,10 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-5",
-            "name": "SBECO Packing Tape 50mm - Clear (Heavy-Duty Acrylic Carton Sealing)",
+            "name": "SBECO BOPP Printed Tape",
             "sku": "SBL-TAPE-PKG-05",
             "brand": "SBECO",
-            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "tagline": "Premium-grade printed packing tape with high shear adhesion for secure carton sealing.",
             "badge": "Popular",
             "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
             "specs": {
@@ -2319,10 +2319,10 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-6",
-            "name": "SBECO Packing Tape 75mm - Brown (Silent Unwind Packaging)",
+            "name": "Tesa 2410 Transparent BOPP Tape",
             "sku": "SBL-TAPE-PKG-06",
-            "brand": "SBECO",
-            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "brand": "TESA",
+            "tagline": "Premium-grade transparent packing tape with high shear adhesion for secure carton sealing.",
             "badge": "Essential",
             "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
             "specs": {
@@ -2343,10 +2343,10 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-7",
-            "name": "SBECO Packing Tape 48mm - Clear (Industrial Hot-Melt Packing)",
+            "name": "Tesa 4104 Packaging Tape",
             "sku": "SBL-TAPE-PKG-07",
-            "brand": "SBECO",
-            "tagline": "Premium-grade clear packing tape with high shear adhesion for secure carton sealing.",
+            "brand": "TESA",
+            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
             "badge": "Heavy Duty",
             "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
             "specs": {
@@ -2367,10 +2367,10 @@ export const CATALOGUE = [
           },
           {
             "id": "packing-tapes-8",
-            "name": "SBECO Packing Tape 50mm - Brown (Cold-Storage Freezer Grade)",
+            "name": "SBECO Warning/Fragile Tape",
             "sku": "SBL-TAPE-PKG-08",
             "brand": "SBECO",
-            "tagline": "Premium-grade brown packing tape with high shear adhesion for secure carton sealing.",
+            "tagline": "Premium-grade warning/fragile tape with high shear adhesion for secure carton sealing.",
             "badge": "Premium",
             "description": "Reliable packing tape engineered for securing packages in shipping and storage. Available in clear and brown options, these tapes feature a thick BOPP backing combined with heavy acrylic or hot-melt adhesives. Offers superior tensile strength, ensuring boxes remain closed under vibration, handling, and varying temperature conditions.",
             "specs": {
