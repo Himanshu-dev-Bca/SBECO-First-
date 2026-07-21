@@ -1137,12 +1137,12 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "single-sided-tapes-1",
-            "name": "SBECO Premium Single-Sided Cellulose Film Tape 12mm",
+            "name": "SBECO Single Side Polyester Tape",
             "sku": "SBL-TAPE-SST-01",
             "brand": "SBECO",
-            "tagline": "High-tack single-sided tape with heavy-duty cellulose film backing.",
+            "tagline": "High-tack single-sided tape with heavy-duty polyester film backing.",
             "badge": "Popular",
-            "description": "Multi-purpose single-sided adhesive tape featuring a tough cellulose film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough polyester film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
             "specs": {
               "Width": "12mm",
               "Length": "66m",
@@ -1161,9 +1161,9 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-2",
-            "name": "SBECO Premium Single-Sided UPVC Film Tape 18mm",
+            "name": "SBECO Void Tape",
             "sku": "SBL-TAPE-SST-02",
-            "brand": "Tesa",
+            "brand": "SBECO",
             "tagline": "High-tack single-sided tape with heavy-duty upvc film backing.",
             "badge": "Essential",
             "description": "Multi-purpose single-sided adhesive tape featuring a tough upvc film backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
@@ -1185,7 +1185,7 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-3",
-            "name": "SBECO Premium Single-Sided MOPP Tensilized Tape 24mm",
+            "name": "SBECO Litho Tape",
             "sku": "SBL-TAPE-SST-03",
             "brand": "SBECO",
             "tagline": "High-tack single-sided tape with heavy-duty mopp tensilized backing.",
@@ -1209,16 +1209,16 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-4",
-            "name": "SBECO Premium Single-Sided Crepe Paper Tape 36mm",
+            "name": "SBECO PTFE Tape",
             "sku": "SBL-TAPE-SST-04",
-            "brand": "Tesa",
-            "tagline": "High-tack single-sided tape with heavy-duty crepe paper backing.",
+            "brand": "SBECO",
+            "tagline": "High-tack single-sided tape with heavy-duty PTFE backing.",
             "badge": "Premium",
-            "description": "Multi-purpose single-sided adhesive tape featuring a tough crepe paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
+            "description": "Multi-purpose single-sided adhesive tape featuring a tough PTFE backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
             "specs": {
               "Width": "36mm",
               "Length": "66m",
-              "Backing Type": "Crepe Paper",
+              "Backing Type": "PTFE",
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
@@ -1233,7 +1233,7 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-5",
-            "name": "SBECO Premium Single-Sided Colored Vinyl Tape 48mm",
+            "name": "SBECO Aluminium Foil Tape Butyl",
             "sku": "SBL-TAPE-SST-05",
             "brand": "SBECO",
             "tagline": "High-tack single-sided tape with heavy-duty colored vinyl backing.",
@@ -1257,9 +1257,9 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-6",
-            "name": "SBECO Premium Single-Sided Reinforced Paper Tape 12mm",
+            "name": "SBECO HMHDP Tape",
             "sku": "SBL-TAPE-SST-06",
-            "brand": "Tesa",
+            "brand": "SBECO",
             "tagline": "High-tack single-sided tape with heavy-duty reinforced paper backing.",
             "badge": "Essential",
             "description": "Multi-purpose single-sided adhesive tape featuring a tough reinforced paper backing. Coated with a pressure-sensitive adhesive that offers excellent initial grab, clean release, and resistance to shearing forces. Perfect for general packaging, bundling, coding, and sealing.",
@@ -1281,7 +1281,7 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-7",
-            "name": "SBECO Premium Single-Sided Plain Kraft Tape 18mm",
+            "name": "SBECO Kapton Tape",
             "sku": "SBL-TAPE-SST-07",
             "brand": "SBECO",
             "tagline": "High-tack single-sided tape with heavy-duty plain kraft backing.",
@@ -1305,7 +1305,7 @@ export const CATALOGUE = [
           },
           {
             "id": "single-sided-tapes-8",
-            "name": "SBECO Premium Single-Sided PET Film Tape 24mm",
+            "name": "SBECO Duct Tape",
             "sku": "SBL-TAPE-SST-08",
             "brand": "Tesa",
             "tagline": "High-tack single-sided tape with heavy-duty pet film backing.",
