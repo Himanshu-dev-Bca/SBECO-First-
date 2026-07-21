@@ -1335,7 +1335,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "anti-slip-tapes-1",
-            "name": "SBECO Anti-Slip Standard 60-Grit Tape 25mm - Black",
+            "name": "SBECO Anti-Slip Tape – Yellow/Black",
             "sku": "SBL-TAPE-AST-01",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1360,9 +1360,9 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-2",
-            "name": "SBECO Anti-Slip Coarse 36-Grit Tape 50mm - Yellow",
+            "name": "SBECO Anti-Slip Tape – Black",
             "sku": "SBL-TAPE-AST-02",
-            "brand": "3M",
+            "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
             "badge": "Essential",
             "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
@@ -1385,7 +1385,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-3",
-            "name": "SBECO Anti-Slip Extra Coarse Tape 100mm - Yellow/Black Stripes",
+            "name": "SBECO Anti-Slip Tape – Yellow",
             "sku": "SBL-TAPE-AST-03",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1410,14 +1410,14 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-4",
-            "name": "SBECO Anti-Slip Resilient Rubberized Tape 150mm - Clear",
+            "name": "SBECO Anti-Slip Tape – White",
             "sku": "SBL-TAPE-AST-04",
-            "brand": "3M",
+            "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
             "badge": "Premium",
             "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
             "specs": {
-              "Width": "150mm",
+              "Width": "25mm",
               "Length": "18m",
               "Grit Level": "Resilient Rubberized",
               "Carrier Material": "PVC",
@@ -1435,7 +1435,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-5",
-            "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 25mm - Red",
+            "name": "SBECO Anti-Slip Tape – Glow in Dark",
             "sku": "SBL-TAPE-AST-05",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1460,9 +1460,9 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-6",
-            "name": "SBECO Anti-Slip Standard 60-Grit Tape 50mm - Glow-in-the-Dark",
+            "name": "SBECO Anti-Slip Tape – Grey",
             "sku": "SBL-TAPE-AST-06",
-            "brand": "3M",
+            "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
             "badge": "Essential",
             "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
@@ -1485,7 +1485,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-7",
-            "name": "SBECO Anti-Slip Coarse 36-Grit Tape 100mm - Black",
+            "name": "SBECO Anti-Slip Tape – Glow in Dark",
             "sku": "SBL-TAPE-AST-07",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1510,9 +1510,9 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-8",
-            "name": "SBECO Anti-Slip Extra Coarse Tape 150mm - Yellow",
+            "name": "SBECO Floor Marking Tape",
             "sku": "SBL-TAPE-AST-08",
-            "brand": "3M",
+            "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
             "badge": "Premium",
             "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
@@ -1535,7 +1535,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-9",
-            "name": "SBECO Anti-Slip Resilient Rubberized Tape 25mm - Yellow/Black Stripes",
+            "name": "Tesa 60950 Anti-Slip Black",
             "sku": "SBL-TAPE-AST-09",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1560,9 +1560,9 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-10",
-            "name": "SBECO Anti-Slip Glow-in-the-Dark Safewalk Tape 50mm - Clear",
+            "name": "Tesa 60951 Anti-Slip Yellow Black",
             "sku": "SBL-TAPE-AST-10",
-            "brand": "3M",
+            "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
             "badge": "Essential",
             "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
