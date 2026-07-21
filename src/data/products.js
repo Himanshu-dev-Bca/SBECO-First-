@@ -28,7 +28,7 @@ export const CATALOGUE = [
               "Temperature Resistance": "60°C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/tape/GP-Masking-Tape.png",
+            "imageUrl": "/images/tapes/GP-Masking-Tape.png",
             "similar": [
               "masking-tapes-films-2",
               "masking-tapes-films-3",
@@ -405,12 +405,12 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-9",
-            "name": "SBECO Double-Sided Non-Woven Tape 24mm",
-            "sku": "SBL-TAPE-DST-09",
-            "brand": "3M",
-            "tagline": "High-strength double-coated tape with non-woven carrier for nameplate mounting.",
+            "name": "Tesa 50565 Aluminum Tape",
+            "sku": "TESA-50565-001",
+            "brand": "Tesa",
+            "tagline": "High-strength double-coated tape with aluminum carrier for general crafts.",
             "badge": "Popular",
-            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a non-woven carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
+            "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a aluminium carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
               "Width": "24mm",
               "Length": "50m",
