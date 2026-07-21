@@ -1,8 +1,8 @@
-﻿// Complete product catalogue data — single source of truth
+// Complete product catalogue data � single source of truth
 export const CATALOGUE = [
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   // 1. TAPE AND TAPE DISPENSERS
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   {
     id: "tape-dispensers",
     name: "Tape and Tape Dispensers",
@@ -25,10 +25,10 @@ export const CATALOGUE = [
               "Width": "12mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "60°C",
+              "Temperature Resistance": "60�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/tapes/GP-Masking-Tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/SBECO-GP-Masking-Tape.png",
             "similar": [
               "masking-tapes-films-2",
               "masking-tapes-films-3",
@@ -49,10 +49,10 @@ export const CATALOGUE = [
               "Width": "18mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "80°C",
+              "Temperature Resistance": "80�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/Tesa 53123 Masking Tape.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-3",
@@ -73,10 +73,10 @@ export const CATALOGUE = [
               "Width": "24mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "110°C",
+              "Temperature Resistance": "110�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Film 208.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -97,10 +97,10 @@ export const CATALOGUE = [
               "Width": "36mm",
               "Length": "50m",
               "Backing Material": "Washi Paper",
-              "Temperature Resistance": "120°C",
+              "Temperature Resistance": "120�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Film 158.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -121,10 +121,10 @@ export const CATALOGUE = [
               "Width": "48mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "150°C",
+              "Temperature Resistance": "150�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/Tesa 04341 Masking Tape.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -145,10 +145,10 @@ export const CATALOGUE = [
               "Width": "72mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "180°C",
+              "Temperature Resistance": "180�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/SBECO Masking Tape ABRO.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -169,10 +169,10 @@ export const CATALOGUE = [
               "Width": "12mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "60°C",
+              "Temperature Resistance": "60�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/Tesa 4304 Masking Tape.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -193,10 +193,10 @@ export const CATALOGUE = [
               "Width": "18mm",
               "Length": "50m",
               "Backing Material": "Crepe Paper",
-              "Temperature Resistance": "80°C",
+              "Temperature Resistance": "80�C",
               "Adhesive Type": "Natural Rubber"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Masking tapes and films/Tesa 4309 Masking Tape.png",
             "similar": [
               "masking-tapes-films-1",
               "masking-tapes-films-2",
@@ -226,7 +226,7 @@ export const CATALOGUE = [
               "Thickness": "0.1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Double Side Polyester Tape.png",
             "similar": [
               "double-sided-tapes-2",
               "double-sided-tapes-3",
@@ -250,7 +250,7 @@ export const CATALOGUE = [
               "Thickness": "0.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Double Side Tissue Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-3",
@@ -274,7 +274,7 @@ export const CATALOGUE = [
               "Thickness": "1mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Double Side Foam Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -298,7 +298,7 @@ export const CATALOGUE = [
               "Thickness": "0.8mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Double Side Cloth Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -322,7 +322,7 @@ export const CATALOGUE = [
               "Thickness": "1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Double Side Tissue Solvent Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -346,7 +346,7 @@ export const CATALOGUE = [
               "Thickness": "1.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Aluminium Foil Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -370,7 +370,7 @@ export const CATALOGUE = [
               "Thickness": "1.5mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Nano Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -394,7 +394,7 @@ export const CATALOGUE = [
               "Thickness": "2mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/VHB-tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -418,7 +418,7 @@ export const CATALOGUE = [
               "Thickness": "0.1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 50565 Aluminum Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -442,7 +442,7 @@ export const CATALOGUE = [
               "Thickness": "0.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 60999 Bundling Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -466,7 +466,7 @@ export const CATALOGUE = [
               "Thickness": "0.5mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 8401 Reactive Structural Bonding Film.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -490,7 +490,7 @@ export const CATALOGUE = [
               "Thickness": "0.8mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 7065 Acrylic Foam Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -514,7 +514,7 @@ export const CATALOGUE = [
               "Thickness": "1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 51207 Abrasion Protection Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -538,7 +538,7 @@ export const CATALOGUE = [
               "Thickness": "1.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4934 Double Sided Cloth Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -562,7 +562,7 @@ export const CATALOGUE = [
               "Thickness": "1.5mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4952 Double Sided Foam Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -586,7 +586,7 @@ export const CATALOGUE = [
               "Thickness": "2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4964 Double Side Cloth Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -610,7 +610,7 @@ export const CATALOGUE = [
               "Thickness": "0.1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4965 Double Side Polyester Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -634,7 +634,7 @@ export const CATALOGUE = [
               "Thickness": "0.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4970 Double Side Acrylic Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -658,7 +658,7 @@ export const CATALOGUE = [
               "Thickness": "0.5mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 4985 Double Side Transfer Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -682,7 +682,7 @@ export const CATALOGUE = [
               "Thickness": "0.8mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 50658 Double Side Slicing Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -706,7 +706,7 @@ export const CATALOGUE = [
               "Thickness": "1mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 55576 Double Sided Foam Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -730,7 +730,7 @@ export const CATALOGUE = [
               "Thickness": "1.2mm",
               "Adhesive Type": "Hot-melt Rubber"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/Tesa 88641 Tissue Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -754,7 +754,7 @@ export const CATALOGUE = [
               "Thickness": "0.05mm",
               "Adhesive Type": "Acrylic"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Double sided tapes/SBECO Copper Foil Tape.png",
             "similar": [
               "double-sided-tapes-1",
               "double-sided-tapes-2",
@@ -784,7 +784,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Paper Tape.png",
             "similar": [
               "sustainability-tapes-2",
               "sustainability-tapes-3",
@@ -808,7 +808,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Gum Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-3",
@@ -832,7 +832,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Printed Gum Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -856,7 +856,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Reinforcement Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -880,7 +880,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Printed Reinforcement Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -904,7 +904,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Warning Printed Reinforcement Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -928,7 +928,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Kraft Paper Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -952,7 +952,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Taco Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -976,7 +976,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/SBECO Cello Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1000,7 +1000,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 4513.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1024,7 +1024,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 60400.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1048,7 +1048,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 58156.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1072,7 +1072,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 60412.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1096,7 +1096,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 4713 Reinforced Paper Packaging Tape.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1120,7 +1120,7 @@ export const CATALOGUE = [
               "Eco Certification": "FSC & EN 13432 Certified",
               "Recyclability": "100% Recyclable with Box"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Sustainability Tapes/Tesa 60013.png",
             "similar": [
               "sustainability-tapes-1",
               "sustainability-tapes-2",
@@ -1150,7 +1150,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Single Side Polyester Tape.png",
             "similar": [
               "single-sided-tapes-2",
               "single-sided-tapes-3",
@@ -1174,7 +1174,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Void Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-3",
@@ -1198,7 +1198,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Litho Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1222,7 +1222,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO PTFE Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1246,7 +1246,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Aluminium Foil Tape Butyl.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1270,7 +1270,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO HMHDP Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1294,7 +1294,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Kapton Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1318,7 +1318,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Tensile Strength": "45 N/25mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Single-sided tapes/SBECO Duct Tape.png",
             "similar": [
               "single-sided-tapes-1",
               "single-sided-tapes-2",
@@ -1335,7 +1335,7 @@ export const CATALOGUE = [
         "products": [
           {
             "id": "anti-slip-tapes-1",
-            "name": "SBECO Anti-Slip Tape – Yellow/Black",
+            "name": "SBECO Anti-Slip Tape � Yellow/Black",
             "sku": "SBL-TAPE-AST-01",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1349,7 +1349,7 @@ export const CATALOGUE = [
               "Color": "Black",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Yellow-Black.png",
             "similar": [
               "anti-slip-tapes-2",
               "anti-slip-tapes-3",
@@ -1360,7 +1360,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-2",
-            "name": "SBECO Anti-Slip Tape – Black",
+            "name": "SBECO Anti-Slip Tape � Black",
             "sku": "SBL-TAPE-AST-02",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1374,7 +1374,7 @@ export const CATALOGUE = [
               "Color": "Yellow",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Black.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-3",
@@ -1385,7 +1385,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-3",
-            "name": "SBECO Anti-Slip Tape – Yellow",
+            "name": "SBECO Anti-Slip Tape � Yellow",
             "sku": "SBL-TAPE-AST-03",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1399,7 +1399,7 @@ export const CATALOGUE = [
               "Color": "Yellow/Black Stripes",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Yellow.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1410,7 +1410,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-4",
-            "name": "SBECO Anti-Slip Tape – White",
+            "name": "SBECO Anti-Slip Tape � White",
             "sku": "SBL-TAPE-AST-04",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1424,7 +1424,7 @@ export const CATALOGUE = [
               "Color": "Clear",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – White.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1435,7 +1435,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-5",
-            "name": "SBECO Anti-Slip Tape – Glow in Dark",
+            "name": "SBECO Anti-Slip Tape � Glow in Dark",
             "sku": "SBL-TAPE-AST-05",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1449,7 +1449,7 @@ export const CATALOGUE = [
               "Color": "Red",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Glow in Dark.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1460,7 +1460,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-6",
-            "name": "SBECO Anti-Slip Tape – Grey",
+            "name": "SBECO Anti-Slip Tape � Grey",
             "sku": "SBL-TAPE-AST-06",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1474,7 +1474,7 @@ export const CATALOGUE = [
               "Color": "Glow-in-the-Dark",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Grey.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1485,7 +1485,7 @@ export const CATALOGUE = [
           },
           {
             "id": "anti-slip-tapes-7",
-            "name": "SBECO Anti-Slip Tape – Glow in Dark",
+            "name": "SBECO Anti-Slip Tape � Glow in Dark",
             "sku": "SBL-TAPE-AST-07",
             "brand": "SBECO",
             "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
@@ -1499,7 +1499,7 @@ export const CATALOGUE = [
               "Color": "Black",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Anti-Slip Tape – Glow in Dark.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1524,7 +1524,7 @@ export const CATALOGUE = [
               "Color": "Yellow",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/SBECO Floor Marking Tape.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1549,7 +1549,7 @@ export const CATALOGUE = [
               "Color": "Yellow/Black Stripes",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/Tesa 60950 Anti-Slip Black.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1574,7 +1574,7 @@ export const CATALOGUE = [
               "Color": "Clear",
               "OSHA Compliant": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Anti-slip-tape/Tesa 60951 Anti-Slip Yellow Black.png",
             "similar": [
               "anti-slip-tapes-1",
               "anti-slip-tapes-2",
@@ -1604,7 +1604,7 @@ export const CATALOGUE = [
               "Tensile Strength": "90 N/25mm",
               "Waterproof": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Structural Tapes/SBECO PVC Tape.png",
             "similar": [
               "pvc-repair-structural-2",
               "pvc-repair-structural-3"
@@ -1627,7 +1627,7 @@ export const CATALOGUE = [
               "Tensile Strength": "90 N/25mm",
               "Waterproof": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Structural Tapes/SBECO Rubber Repair Tape.png",
             "similar": [
               "pvc-repair-structural-1",
               "pvc-repair-structural-3"
@@ -1650,7 +1650,7 @@ export const CATALOGUE = [
               "Tensile Strength": "90 N/25mm",
               "Waterproof": "Yes"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Structural Tapes/SBECO Dry Wall Tape.png",
             "similar": [
               "pvc-repair-structural-1",
               "pvc-repair-structural-2"
@@ -1679,7 +1679,7 @@ export const CATALOGUE = [
               "Tensile Strength": "350 N/25mm",
               "Reflective Standard": "N/A"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Reflective and filament tapes/SBECO Reflective Tape.png",
             "similar": [
               "reflective-filament-2",
               "reflective-filament-3",
@@ -1703,7 +1703,7 @@ export const CATALOGUE = [
               "Tensile Strength": "350 N/25mm",
               "Reflective Standard": "N/A"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Reflective and filament tapes/SBECO Filament Tape (Mono & Cross).png",
             "similar": [
               "reflective-filament-1",
               "reflective-filament-3",
@@ -1727,7 +1727,7 @@ export const CATALOGUE = [
               "Tensile Strength": "N/A",
               "Reflective Standard": "DOT-C2 Certified"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Reflective and filament tapes/Tesa 4590 Filament Tape.png",
             "similar": [
               "reflective-filament-1",
               "reflective-filament-2",
@@ -1751,7 +1751,7 @@ export const CATALOGUE = [
               "Tensile Strength": "N/A",
               "Reflective Standard": "DOT-C2 Certified"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Reflective and filament tapes/Tesa 4591 Filament Tape (Cross).png",
             "similar": [
               "reflective-filament-1",
               "reflective-filament-2",
@@ -1781,7 +1781,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Low-Tack Acrylic",
               "Clean Removal": "Yes, guaranteed"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Strapping and surface protection/Tesa 4287 Strapping Tape.png",
             "similar": [
               "strapping-surface-protection-2",
               "strapping-surface-protection-3",
@@ -1805,7 +1805,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Low-Tack Acrylic",
               "Clean Removal": "Yes, guaranteed"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Strapping and surface protection/Tesa 4289 Strapping Tape.png",
             "similar": [
               "strapping-surface-protection-1",
               "strapping-surface-protection-3",
@@ -1829,7 +1829,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Low-Tack Acrylic",
               "Clean Removal": "Yes, guaranteed"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Strapping and surface protection/Tesa 4414 Surface Protection Tape.png",
             "similar": [
               "strapping-surface-protection-1",
               "strapping-surface-protection-2",
@@ -1853,7 +1853,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Low-Tack Acrylic",
               "Clean Removal": "Yes, guaranteed"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Strapping and surface protection/Tesa 51136 Green Surface Protection.png",
             "similar": [
               "strapping-surface-protection-1",
               "strapping-surface-protection-2",
@@ -1883,7 +1883,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Thickness": "0.27mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Duct-floor-marking tape/Tesa 4651 Fabric Tape.png",
             "similar": [
               "fabric-duct-floor-marking-2",
               "fabric-duct-floor-marking-3",
@@ -1907,7 +1907,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Thickness": "0.27mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Duct-floor-marking tape/Tesa 4613 Duct Tape.png",
             "similar": [
               "fabric-duct-floor-marking-1",
               "fabric-duct-floor-marking-3",
@@ -1931,7 +1931,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Thickness": "0.27mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Duct-floor-marking tape/Tesa 4169 Floor Marking Tape.png",
             "similar": [
               "fabric-duct-floor-marking-1",
               "fabric-duct-floor-marking-2",
@@ -1955,7 +1955,7 @@ export const CATALOGUE = [
               "Adhesive Base": "Natural Rubber",
               "Thickness": "0.27mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Duct-floor-marking tape/Tesa 4563.png",
             "similar": [
               "fabric-duct-floor-marking-1",
               "fabric-duct-floor-marking-2",
@@ -1982,10 +1982,10 @@ export const CATALOGUE = [
               "Width": "19mm",
               "Length": "20m",
               "Dielectric Strength": "600V",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40�C to 125�C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 2125 Insulation Tape.png",
             "similar": [
               "insulation-cloth-wire-2",
               "insulation-cloth-wire-3",
@@ -2006,10 +2006,10 @@ export const CATALOGUE = [
               "Width": "25mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40�C to 125�C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 4657 Cloth Tape.png",
             "similar": [
               "insulation-cloth-wire-1",
               "insulation-cloth-wire-3",
@@ -2030,10 +2030,10 @@ export const CATALOGUE = [
               "Width": "19mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40�C to 125�C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 51608 Wire Harness Tape.png",
             "similar": [
               "insulation-cloth-wire-1",
               "insulation-cloth-wire-2",
@@ -2054,10 +2054,10 @@ export const CATALOGUE = [
               "Width": "25mm",
               "Length": "20m",
               "Dielectric Strength": "N/A",
-              "Temperature Range": "-40°C to 125°C",
+              "Temperature Range": "-40�C to 125�C",
               "Abrasion Resistance": "Class B (LV 312)"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Insulation-cloth-wire harness -tapes/Tesa 60963 Anti-Slip Glow In Dark.png",
             "similar": [
               "insulation-cloth-wire-1",
               "insulation-cloth-wire-2",
@@ -2087,7 +2087,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Water-Activated Starch",
               "Thickness": "0.07mm"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Veneer Tapes/SBECO Perforated Veneer Tape.png",
             "similar": [
               "veneer-tapes-2",
               "veneer-tapes-3"
@@ -2110,7 +2110,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Water-Activated Starch",
               "Thickness": "0.07mm"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Veneer Tapes/SBECO Veneer Tape .png",
             "similar": [
               "veneer-tapes-1",
               "veneer-tapes-3"
@@ -2133,7 +2133,7 @@ export const CATALOGUE = [
               "Adhesive Type": "Water-Activated Starch",
               "Thickness": "0.07mm"
             },
-            "imageUrl": "/images/kraft_tape.png",
+            "imageUrl": "/images/tapes/Veneer Tapes/SBECO Perforated Veneer Tape.png",
             "similar": [
               "veneer-tapes-1",
               "veneer-tapes-2"
@@ -2162,7 +2162,7 @@ export const CATALOGUE = [
               "Adhesive-Free": "Yes",
               "UV Stable": "Yes"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Static-non-adhesive-speciality/SBECO Non-Adhesive PTFE Tape.png",
             "similar": [
               "static-non-adhesive-2"
             ],
@@ -2184,7 +2184,7 @@ export const CATALOGUE = [
               "Adhesive-Free": "Yes",
               "UV Stable": "Yes"
             },
-            "imageUrl": "/images/clear_tape.png",
+            "imageUrl": "/images/tapes/Static-non-adhesive-speciality/SBECO Static Caution Tape.png",
             "similar": [
               "static-non-adhesive-1"
             ],
@@ -2212,7 +2212,7 @@ export const CATALOGUE = [
               "Type": "Heavy-Duty Acrylic Carton Sealing",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO BOPP Transparent Tape.png",
             "similar": [
               "packing-tapes-2",
               "packing-tapes-3",
@@ -2236,7 +2236,7 @@ export const CATALOGUE = [
               "Type": "Silent Unwind Packaging",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO BOPP Brown Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-3",
@@ -2260,7 +2260,7 @@ export const CATALOGUE = [
               "Type": "Industrial Hot-Melt Packing",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO BOPP No Noise Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2284,7 +2284,7 @@ export const CATALOGUE = [
               "Type": "Cold-Storage Freezer Grade",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO BOPP Color Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2308,7 +2308,7 @@ export const CATALOGUE = [
               "Type": "Heavy-Duty Acrylic Carton Sealing",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO BOPP Printed Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2332,7 +2332,7 @@ export const CATALOGUE = [
               "Type": "Silent Unwind Packaging",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/Tesa 2410 Transparent BOPP Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2356,7 +2356,7 @@ export const CATALOGUE = [
               "Type": "Industrial Hot-Melt Packing",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/Tesa 4104 Packaging Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2380,7 +2380,7 @@ export const CATALOGUE = [
               "Type": "Cold-Storage Freezer Grade",
               "Thickness": "0.052mm"
             },
-            "imageUrl": "/images/carton_tape.png",
+            "imageUrl": "/images/tapes/Packing Tapes/SBECO Warning-Fragile Tape.png",
             "similar": [
               "packing-tapes-1",
               "packing-tapes-2",
@@ -2394,9 +2394,9 @@ export const CATALOGUE = [
     ],
   },
 
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   // 2. STRAPPING SOLUTIONS (with nested subcategories under Tools)
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   {
     "id": "strapping-solutions",
     "name": "Strapping Solutions",
@@ -3004,7 +3004,7 @@ export const CATALOGUE = [
               "Stroke Length": "20mm",
               "Speed": "500-3000 spm",
               "Weight": "2.2 kg",
-              "Tilt": "±45°"
+              "Tilt": "�45�"
             },
             imageUrl: "/images/jigsaw.png",
             consumables: [
@@ -3019,9 +3019,9 @@ export const CATALOGUE = [
     ],
   },
 
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   // 4. NAILING AND STAPLING SOLUTIONS
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   {
     id: "nailing-stapling",
     name: "Nailing and Stapling Solutions",
@@ -3232,9 +3232,9 @@ export const CATALOGUE = [
     ],
   },
 
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   // 5. PACKAGING CONSUMABLES
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   {
     id: "packaging-consumables",
     name: "Packaging Consumables",
@@ -3351,7 +3351,7 @@ export const CATALOGUE = [
             description: "High-quality closed-cell foam sheets for protecting fragile and sensitive items.",
             specs: {
               "Thickness": "50mm",
-              "Density": "25kg/m³",
+              "Density": "25kg/m�",
               "Size": "1m x 0.5m per sheet",
               "Material": "EPE Foam",
               "Reusable": "Yes"
@@ -3369,9 +3369,9 @@ export const CATALOGUE = [
     ],
   },
 
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   // 6. FACILITY MANAGEMENT
-  // ═══════════════════════════════════════════════════════════════
+  // ---------------------------------------------------------------
   {
     id: "facility-management",
     name: "Facility Management",
