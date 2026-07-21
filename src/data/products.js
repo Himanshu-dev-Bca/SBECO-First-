@@ -429,10 +429,10 @@ export const CATALOGUE = [
           },
           {
             "id": "double-sided-tapes-10",
-            "name": "SBECO Double-Sided Tissue Tape 30mm",
-            "sku": "SBL-TAPE-DST-10",
-            "brand": "SBECO",
-            "tagline": "High-strength double-coated tape with tissue carrier for signage bonding.",
+            "name": "Tesa 60999 Bundling Tape",
+            "sku": "TESA-60999-001",
+            "brand": "Tesa",
+            "tagline": "High-strength bundling tape for various applications.",
             "badge": "Essential",
             "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a tissue carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
             "specs": {
