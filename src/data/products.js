@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -2404,9 +2404,9 @@ export const CATALOGUE = [
             "products": [
               {
                 "id": "handheld-dispenser-1",
-                "name": "SBECO Heavy-Duty Handheld Pistol Grip Dispenser 50mm",
+                "name": "Packex SAFE 3-inch",
                 "sku": "SBL-DISP-HH-01",
-                "brand": "SBECO",
+                "brand": "Packex",
                 "tagline": "Ergonomic 50mm pistol grip tape dispenser for high-speed carton sealing",
                 "badge": "Popular",
                 "description": "Industrial-grade handheld pistol grip tape dispenser designed for standard 50mm (2 inch) packaging tapes. Features an adjustable tension control knob, heat-treated steel serrated blade, and a comfortable ergonomic handle that reduces hand fatigue during continuous warehouse operations.",
@@ -2428,9 +2428,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-2",
-                "name": "Tesa 6400 Industrial Handheld Dispenser 50mm",
+                "name": "Packex 2-inch",
                 "sku": "SBL-DISP-HH-02",
-                "brand": "Tesa",
+                "brand": "Packex",
                 "tagline": "Robust professional manual dispenser with safety blade cover",
                 "badge": "Industrial",
                 "description": "Premium manual tape dispenser from Tesa featuring a covered blade for worker safety (injury prevention). Built with a heavy metal frame and rubber roller for smooth tape application without wrinkling.",
@@ -2452,7 +2452,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-3",
-                "name": "SBECO Wide-Roll Handheld Dispenser 75mm",
+                "name": "Eagle 3-inch",
                 "sku": "SBL-DISP-HH-03",
                 "brand": "SBECO",
                 "tagline": "Heavy-duty 75mm (3-inch) tape gun for wide box sealing",
@@ -2475,9 +2475,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-4",
-                "name": "Tesa 6300 Standard Handheld Packaging Dispenser",
+                "name": "Eagle 2-inch",
                 "sku": "SBL-DISP-HH-04",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "Lightweight and durable manual packaging tape dispenser",
                 "badge": "Essential",
                 "description": "Versatile and lightweight manual tape gun suited for general packaging applications. Features adjustable roll brake and durable wiper plate for firm tape adhesion.",
@@ -2497,10 +2497,10 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-5",
-                "name": "SBECO Noise-Reduction Silent Roll Dispenser",
+                "name": "Packex HD 3-inch",
                 "sku": "SBL-DISP-HH-05",
-                "brand": "SBECO",
-                "tagline": "Quiet-unwind handheld tape gun for noise-sensitive workplaces",
+                "brand": "Packex",
+                "tagline": "Heavy duty 75 mm tape dispenser for industrial sealing jobs.",
                 "badge": "Quiet Operation",
                 "description": "Specially designed dampening roller system reduces harsh unspooling noise by up to 15dB. Perfect for fulfillment centers and indoor packing stations where noise reduction is essential.",
                 "specs": {
@@ -2519,10 +2519,10 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-6",
-                "name": "Falcon Pro Handheld Carton Sealing Dispenser",
+                "name": "Packex MB 2-inch",
                 "sku": "SBL-DISP-HH-06",
-                "brand": "Falcon",
-                "tagline": "High-speed commercial carton tape gun with quick-load core",
+                "brand": "Packex",
+                "tagline": "Heavy duty 75 mm tape dispenser for industrial sealing jobs.",
                 "badge": "Professional",
                 "description": "Falcon Pro series tape dispenser built for fast-paced logistics lines. Quick-change core mechanism allows tape roll swaps in seconds.",
                 "specs": {
