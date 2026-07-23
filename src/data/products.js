@@ -3,7 +3,7 @@ export const CATALOGUE = [
   {
     "id": "tape-dispensers",
     "name": "Tape and Tape Dispensers",
-    "description": "Premium adhesive tapes and professional tape dispensers for packaging, labeling, and sealing applications.",
+    "description": "Premium adhesive tapus and professional tape dispensers for packaging, labeling, and sealing applications.",
     "imageUrl": "/images/tape_dispensers.png",
     "subcategories": [
       {
