@@ -2417,7 +2417,7 @@ export const CATALOGUE = [
                   "Blade Type": "Reverse-Cut Serrated Steel",
                   "Tension Control": "Adjustable Knob"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex SAFE 3.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-3",
@@ -2441,7 +2441,7 @@ export const CATALOGUE = [
                   "Safety Feature": "Retractable Blade Shield",
                   "Weight": "500g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex 2.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-3",
@@ -2465,7 +2465,7 @@ export const CATALOGUE = [
                   "Blade": "Hardened Stainless Steel",
                   "Tension": "Dual Spring Mechanism"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/eagle 3.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-11"
@@ -2487,7 +2487,7 @@ export const CATALOGUE = [
                   "Weight": "380g",
                   "Blade": "Serrated Carbon Steel"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/eagle 2.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-5"
@@ -2509,7 +2509,7 @@ export const CATALOGUE = [
                   "Core Diameter": "76mm",
                   "Handle": "Soft-Touch Ergonomic Rubber"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex hd 3.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-9"
@@ -2531,7 +2531,7 @@ export const CATALOGUE = [
                   "Tensioning": "Micro-Adjustable Dial",
                   "Weight": "420g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex mb 2.png",
                 "similar": [
                   "handheld-dispenser-7",
                   "handheld-dispenser-8"
@@ -2553,7 +2553,7 @@ export const CATALOGUE = [
                   "Handle Type": "Molded Anti-Slip Rubber",
                   "Blade Guard": "Spring-Loaded Safety Cap"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa 6300.png",
                 "similar": [
                   "handheld-dispenser-6",
                   "handheld-dispenser-10"
@@ -2575,7 +2575,7 @@ export const CATALOGUE = [
                   "Blade": "Tempered Alloy Steel",
                   "Weight": "650g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa pack n go.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-3"
@@ -2597,7 +2597,7 @@ export const CATALOGUE = [
                   "Tensioning": "Knurled Screw Knob",
                   "Weight": "390g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/easy packer.png",
                 "similar": [
                   "handheld-dispenser-5",
                   "handheld-dispenser-1"
@@ -2619,7 +2619,7 @@ export const CATALOGUE = [
                   "Body": "Impact-Resistant Polymer & Metal",
                   "Weight": "460g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa comfort.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-7"
