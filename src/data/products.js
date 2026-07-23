@@ -2641,7 +2641,7 @@ export const CATALOGUE = [
                   "Frame": "Heavy Plate Steel",
                   "Weight": "780g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa 6075.png",
                 "similar": [
                   "handheld-dispenser-3",
                   "handheld-dispenser-1"
@@ -2670,7 +2670,7 @@ export const CATALOGUE = [
                   "Power Supply": "AC 220V / 50Hz",
                   "Weight": "2.5kg"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/m1000.png",
                 "similar": [
                   "auto-dispenser-2",
                   "auto-dispenser-4"
@@ -2693,7 +2693,7 @@ export const CATALOGUE = [
                   "Sensor Type": "Infrared Auto-Detect",
                   "Display": "Digital LED Display"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/ZCUT-9.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-6"
@@ -2715,7 +2715,7 @@ export const CATALOGUE = [
                   "Water Tank Capacity": "1.5 Liters (Heated)",
                   "Tape Compatibility": "Reinforced & Non-Reinforced Kraft Gummed Tape"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 9GR.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-5"
@@ -2737,7 +2737,7 @@ export const CATALOGUE = [
                   "Cutting Accuracy": "±1mm",
                   "Operating Modes": "Auto / Manual / Preset Loop"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/z-cut 870.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-2"
@@ -2759,7 +2759,7 @@ export const CATALOGUE = [
                   "Cut Length Range": "50mm - 999mm",
                   "Frame": "Heavy Steel Housing"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 2.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-3"
@@ -2781,7 +2781,7 @@ export const CATALOGUE = [
                   "Tape Width Range": "6mm - 60mm",
                   "Safety": "Anti-Jam Auto Shut-off"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Sbeco-8000 ATD.png",
                 "similar": [
                   "auto-dispenser-2",
                   "auto-dispenser-7"
@@ -2803,7 +2803,7 @@ export const CATALOGUE = [
                   "Piece Counter": "4-Digit LED Display",
                   "Blade Material": "Tungsten Carbide"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/555E Sbeco WAT.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-4"
