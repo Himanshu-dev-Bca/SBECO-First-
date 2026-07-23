@@ -2509,7 +2509,7 @@ export const CATALOGUE = [
                   "Core Diameter": "76mm",
                   "Handle": "Soft-Touch Ergonomic Rubber"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex hd 3.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex HD 3.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-9"
@@ -2531,7 +2531,7 @@ export const CATALOGUE = [
                   "Tensioning": "Micro-Adjustable Dial",
                   "Weight": "420g"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex mb 2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex mb 2.png",
                 "similar": [
                   "handheld-dispenser-7",
                   "handheld-dispenser-8"
@@ -2553,7 +2553,7 @@ export const CATALOGUE = [
                   "Handle Type": "Molded Anti-Slip Rubber",
                   "Blade Guard": "Spring-Loaded Safety Cap"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa 6300.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa 6300.png",
                 "similar": [
                   "handheld-dispenser-6",
                   "handheld-dispenser-10"
@@ -2575,7 +2575,7 @@ export const CATALOGUE = [
                   "Blade": "Tempered Alloy Steel",
                   "Weight": "650g"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa pack n go.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa Pack N Go.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-3"
@@ -2597,7 +2597,7 @@ export const CATALOGUE = [
                   "Tensioning": "Knurled Screw Knob",
                   "Weight": "390g"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/easy packer.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Easy Packer.png",
                 "similar": [
                   "handheld-dispenser-5",
                   "handheld-dispenser-1"
@@ -2619,7 +2619,7 @@ export const CATALOGUE = [
                   "Body": "Impact-Resistant Polymer & Metal",
                   "Weight": "460g"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa comfort.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa Comfort.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-7"
@@ -2641,7 +2641,7 @@ export const CATALOGUE = [
                   "Frame": "Heavy Plate Steel",
                   "Weight": "780g"
                 },
-                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/tesa 6075.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa 6075.png",
                 "similar": [
                   "handheld-dispenser-3",
                   "handheld-dispenser-1"
@@ -2670,7 +2670,7 @@ export const CATALOGUE = [
                   "Power Supply": "AC 220V / 50Hz",
                   "Weight": "2.5kg"
                 },
-                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/m1000.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/M1000.png",
                 "similar": [
                   "auto-dispenser-2",
                   "auto-dispenser-4"
@@ -2693,7 +2693,7 @@ export const CATALOGUE = [
                   "Sensor Type": "Infrared Auto-Detect",
                   "Display": "Digital LED Display"
                 },
-                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/ZCUT-9.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z CUT 9.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-6"
@@ -2715,7 +2715,7 @@ export const CATALOGUE = [
                   "Water Tank Capacity": "1.5 Liters (Heated)",
                   "Tape Compatibility": "Reinforced & Non-Reinforced Kraft Gummed Tape"
                 },
-                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 9GR.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/ZCUT-9GR Tape dispenser.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-5"
@@ -2737,7 +2737,7 @@ export const CATALOGUE = [
                   "Cutting Accuracy": "±1mm",
                   "Operating Modes": "Auto / Manual / Preset Loop"
                 },
-                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/z-cut 870.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 870.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-2"
