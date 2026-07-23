@@ -2791,9 +2791,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-7",
-                "name": "YBICO Electronic Auto-Laminating Tape Dispenser ET-80",
+                "name": "555E Sbeco Water",
                 "sku": "SBL-DISP-AT-07",
-                "brand": "YBICO",
+                "brand": "Sbeco",
                 "tagline": "Precision electronic tape dispenser with auto piece counter",
                 "badge": "Premium",
                 "description": "Professional electronic tape dispenser featuring a built-in 4-digit piece counter and auto-repeat cutting function for automated packaging work.",
@@ -2863,7 +2863,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-3",
-                "name": "Paper Tape Dispenser",
+                "name": "Taped Mini",
                 "sku": "SBL-DISP-TT-03",
                 "brand": "SBECO",
                 "tagline": "Compact weighted table top tape dispenser for office & retail",
