@@ -2819,9 +2819,9 @@ export const CATALOGUE = [
             "products": [
               {
                 "id": "tabletop-dispenser-1",
-                "name": "SBECO Dual-Core Heavy Weighted Table Top Dispenser",
+                "name": "Duro Inov 80",
                 "sku": "SBL-DISP-TT-01",
-                "brand": "SBECO",
+                "brand": "Duro",
                 "tagline": "Weighted desktop tape dispenser with dual 1-inch & 3-inch cores",
                 "badge": "Essential",
                 "description": "Classic heavy-weighted desktop tape dispenser designed for one-handed operation. Includes interchangeable 1-inch and 3-inch tape cores for small office rolls and large industrial rolls up to 25mm width.",
@@ -2841,9 +2841,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-2",
-                "name": "Tesa 6012 Heavy-Duty Desktop Multi-Roll Dispenser",
+                "name": "Bag Tape Dispenser",
                 "sku": "SBL-DISP-TT-02",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "Heavy-duty metal benchtop dispenser for 50mm or multi-rolls",
                 "badge": "Industrial",
                 "description": "Rugged metal benchtop tape dispenser engineered to hold either one 50mm wide roll or two 25mm wide rolls simultaneously. Can be screw-mounted or clamped to packing tables.",
@@ -2863,9 +2863,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-3",
-                "name": "Falcon Office Table Top Tape Dispenser TT-200",
+                "name": "Paper Tape Dispenser",
                 "sku": "SBL-DISP-TT-03",
-                "brand": "Falcon",
+                "brand": "SBECO",
                 "tagline": "Compact weighted table top tape dispenser for office & retail",
                 "badge": "Popular",
                 "description": "Sleek and compact weighted desktop dispenser with anti-skid rubber pads. Ideal for office desk, retail counter, or shipping desk use.",
@@ -2885,7 +2885,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-4",
-                "name": "SBECO Multi-Roll Benchtop Tape Dispenser 100mm",
+                "name": "Omega Table Top Tape Dispenser",
                 "sku": "SBL-DISP-TT-04",
                 "brand": "SBECO",
                 "tagline": "Industrial 100mm benchtop dispenser holding up to 4 rolls",
