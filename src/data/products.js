@@ -5195,261 +5195,778 @@ export const CATALOGUE = [
   {
     "id": "nailing-stapling",
     "name": "Nailing and Stapling Solutions",
-    "description": "Complete fastening solutions including nails, staples, and professional-grade nailing and stapling guns.",
+    "description": "Complete fastening solutions featuring Kaymo professional-grade pneumatic staplers, carton staplers, and flooring nailers across ECO, NEO, PRO and XPRO tiers.",
     "imageUrl": "/images/nailing_stapling.png",
     "subcategories": [
       {
-        "id": "nails",
-        "name": "Nails",
-        "products": [
+        "id": "pneumatic-staplers",
+        "name": "Pneumatic Staplers",
+        "nestedSubcategories": [
           {
-            "id": "finishing-nails-50mm",
-            "name": "SBECO Finishing Nails 50mm",
-            "sku": "SBL-NAIL-FIN-50",
-            "brand": "SBECO",
-            "tagline": "High-quality finishing nails for woodworking and trim applications",
-            "badge": "Popular",
-            "description": "Precision-made finishing nails with smooth shaft and minimal head for clean, professional results.",
-            "specs": {
-              "Length": "50mm (2-inch)",
-              "Gauge": "16",
-              "Material": "Steel",
-              "Finish": "Bright / Galvanized",
-              "Qty": "500 nails/box"
-            },
-            "imageUrl": "/images/finishing_nails.png",
-            "consumables": [
+            "id": "standard-pneumatic-staplers",
+            "name": "Standard Pneumatic Staplers",
+            "products": [
               {
-                "name": "Nail Gun Pneumatic",
-                "sku": "SBL-GUN-NAIL-PNM",
-                "icon": "tool"
+                "id": "ps8016-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS8016",
+                "sku": "KYM-PS8016-ECO",
+                "brand": "Kaymo",
+                "tagline": "Economy 80-series stapler for upholstery and light fastening",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS8016 is a reliable entry-level pneumatic stapler designed for 80-series staples (6–16 mm). Features an ergonomic rubber grip, curved trigger for precise operational control, staple viewing window, and fixed top air exhaust. Ideal for upholstery, sofas, chairs, modular kitchens, flush doors, carrom boards, and screen printing applications.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "0.95 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler -ECO-PS8016.png",
+                "similar": ["ps8016-neo", "ps8016-pro", "ps8016-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps8016-neo",
+                "name": "Kaymo Pneumatic Stapler NEO-PS8016",
+                "sku": "KYM-PS8016-NEO",
+                "brand": "Kaymo",
+                "tagline": "Mid-range 80-series stapler with enhanced durability",
+                "badge": "Popular",
+                "description": "The Kaymo NEO-PS8016 is a mid-range pneumatic stapler for 80-series staples (6–16 mm). Built with upgraded internals for improved durability and consistent firing. Features ergonomic rubber grip, curved trigger, staple viewing window, and fixed top air exhaust. Perfect for upholstery, modular kitchens, flush doors, and general woodworking.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "0.95 kg",
+                  "Tier": "NEO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler -NEO-PS8016.png",
+                "similar": ["ps8016-eco", "ps8016-pro", "ps8016-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps8016-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS8016V2",
+                "sku": "KYM-PS8016-PRO-V2",
+                "brand": "Kaymo",
+                "tagline": "Professional V2-edition 80-series stapler for demanding applications",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PS8016V2 is a professional-grade pneumatic stapler for 80-series staples (6–16 mm). The V2 edition features refined internals, improved trigger mechanism, and enhanced air efficiency. Built for heavy daily use in upholstery workshops, furniture factories, and modular kitchen production lines.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "0.95 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS8016V2.png",
+                "similar": ["ps8016-eco", "ps8016-neo", "ps8016-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "ps8016-xpro",
+                "name": "Kaymo Pneumatic Stapler XPRO-PS8016",
+                "sku": "KYM-PS8016-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Top-tier 80-series stapler with maximum precision and durability",
+                "badge": "Best Seller",
+                "description": "The Kaymo XPRO-PS8016 is the flagship pneumatic stapler in the 80-series lineup. Engineered with premium-grade components for exceptional precision, longevity, and operator comfort. Features advanced air management, all-metal internals, and ergonomic design for extended production runs.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "0.95 kg",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-XPRO-PS8016.png",
+                "similar": ["ps8016-eco", "ps8016-neo", "ps8016-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "ps7116-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS7116",
+                "sku": "KYM-PS7116-ECO",
+                "brand": "Kaymo",
+                "tagline": "71-series stapler for thin materials and shoe manufacturing",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS7116 is designed for efficiency in thin material fastening including cloth, foam, and leather. Uses 71-series staples (6–16 mm). Slim nose for tight spots and all-metal internal parts. Ideal for light upholstery, shoe manufacturing (sole to heel), and joining MDF/plywood/particle boards.",
+                "specs": {
+                  "Staple Series": "71 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "60 – 90 PSI",
+                  "Weight": "0.9 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS7116.png",
+                "similar": ["ps8016-eco", "ps1013j-neo", "pshs16-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps1013j-neo",
+                "name": "Kaymo Pneumatic Stapler NEO-PS1013J",
+                "sku": "KYM-PS1013J-NEO",
+                "brand": "Kaymo",
+                "tagline": "10J-series stapler with compact nose for tight corners",
+                "badge": "Popular",
+                "description": "The Kaymo NEO-PS1013J is a mid-range pneumatic stapler for 10J-series staples (6–13 mm). Features a compact nose for tight corners, dual-sided staple viewing window, oversized trigger, and full metal magazine/slider for durability. Ideal for furniture manufacturing, modular kitchens, canvas stretching, and softwood fastening.",
+                "specs": {
+                  "Staple Series": "10J Series",
+                  "Staple Length": "6 – 13 mm",
+                  "Operating Pressure": "60 – 95 PSI",
+                  "Weight": "1.1 kg",
+                  "Tier": "NEO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-NEO-PS1013J.png",
+                "similar": ["ps1013j-pro", "ps1013f-eco", "ps7116-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps1013j-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS1013J",
+                "sku": "KYM-PS1013J-PRO",
+                "brand": "Kaymo",
+                "tagline": "Professional 10J-series stapler for heavy-duty furniture work",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PS1013J is a professional-grade pneumatic stapler for 10J-series staples (6–13 mm). Built with premium internals, compact nose for tight corners, dual-sided staple viewing window, and full metal construction. Designed for high-volume furniture manufacturing and modular kitchen production.",
+                "specs": {
+                  "Staple Series": "10J Series",
+                  "Staple Length": "6 – 13 mm",
+                  "Operating Pressure": "60 – 95 PSI",
+                  "Weight": "1.2 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS1013J.png",
+                "similar": ["ps1013j-neo", "ps1013f-eco", "ps1013f-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps1013f-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS1013F",
+                "sku": "KYM-PS1013F-ECO",
+                "brand": "Kaymo",
+                "tagline": "Lightweight fine stapler for fabric and craft work",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS1013F is a lightweight pneumatic stapler for fine stapling applications using 10-series staples (3–13 mm). Features a curved trigger for better grip, slim nose design for tight corners, and ergonomic rubber handle. Ideal for fabric, craft work, and delicate fastening tasks.",
+                "specs": {
+                  "Staple Series": "10 Series",
+                  "Staple Length": "3 – 13 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "0.95 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1013F.png",
+                "similar": ["ps1013f-pro", "ps1013j-neo", "ps7116-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps1013f-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS1013FV2",
+                "sku": "KYM-PS1013F-PRO-V2",
+                "brand": "Kaymo",
+                "tagline": "Professional V2-edition fine stapler with enhanced precision",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PS1013FV2 is the professional V2 revision of the fine stapling platform. Uses 10-series staples (3–13 mm) with upgraded trigger mechanism and improved air management for consistent, precise firing. Built for production-level fabric and craft fastening.",
+                "specs": {
+                  "Staple Series": "10 Series",
+                  "Staple Length": "3 – 13 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Weight": "1.0 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/pro-ps1013fv2-kaymo-pneumatic-stapler.png",
+                "similar": ["ps1013f-eco", "ps1013j-pro", "ps1013jv2-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps1013jv2-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS1013JV2",
+                "sku": "KYM-PS1013JV2-ECO",
+                "brand": "Kaymo",
+                "tagline": "Updated V2 economy 10J-series stapler with improved magazine",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS1013JV2 is the updated V2 revision of the economy 10J-series stapler. Features an improved magazine mechanism, dual-sided staple viewing window, and enhanced reliability. Suitable for furniture manufacturing, modular kitchens, and general woodworking.",
+                "specs": {
+                  "Staple Series": "10J Series",
+                  "Staple Length": "6 – 13 mm",
+                  "Operating Pressure": "60 – 95 PSI",
+                  "Weight": "1.1 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1013JV2.png",
+                "similar": ["ps1013j-neo", "ps1013j-pro", "ps1013f-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps2315-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS2315V2",
+                "sku": "KYM-PS2315-PRO-V2",
+                "brand": "Kaymo",
+                "tagline": "23-series stapler for heavy packing and seat manufacturing",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PS2315V2 is designed for industrial heavy packing, box assembly, sofa/chair upholstery, and 2-wheeler seat manufacturing. Features a rear exhaust system for noise reduction, 2-way staple loading magazine catch, all-metal internal components, and curved trigger for operator comfort.",
+                "specs": {
+                  "Staple Series": "23 Series",
+                  "Staple Length": "Up to 15 mm",
+                  "Operating Pressure": "60 – 100 PSI",
+                  "Weight": "0.88 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS2315V2.png",
+                "similar": ["pshs16-pro", "ps8016-pro", "ps9040-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "pshs16-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PSHS16",
+                "sku": "KYM-PSHS16-PRO",
+                "brand": "Kaymo",
+                "tagline": "Compact high-speed stapler with trigger lock and reversible bumper",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PSHS16 is a compact high-speed pneumatic stapler using HS-series staples (8–16 mm). Features trigger lock for safety, reversible bumper for extended tool life, metal cylinder construction, and ergonomic rubber grip. Suited for precision fastening in upholstery and furniture manufacturing.",
+                "specs": {
+                  "Staple Length": "8 – 16 mm",
+                  "Outer Crown": "8.50 mm",
+                  "Inner Crown": "7.30 mm",
+                  "Wire Dimensions": "0.60 mm × 1.15 mm",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PSHS16.png",
+                "similar": ["ps2315-pro", "ps7116-eco", "ps8016-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps9040-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS9040",
+                "sku": "KYM-PS9040-PRO",
+                "brand": "Kaymo",
+                "tagline": "Heavy-duty 90-series stapler for framing and paneling",
+                "badge": "Heavy Duty",
+                "description": "The Kaymo PRO-PS9040 is a heavy-duty pneumatic stapler for 90-series staples (12–40 mm). Features metal cylinder and valve piston construction, 360° exhaust, depth adjustment screw, and safety mechanism to prevent slippage. Ideal for drawer assembly, display frames, light framing, and paneling applications.",
+                "specs": {
+                  "Staple Series": "90 Series",
+                  "Staple Length": "12 – 40 mm",
+                  "Operating Pressure": "70 – 100 PSI",
+                  "Weight": "1.8 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS9040.png",
+                "similar": ["ps9240-pro", "ps9040combi-eco", "ps16wc38-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "ps9240-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS9240",
+                "sku": "KYM-PS9240-PRO",
+                "brand": "Kaymo",
+                "tagline": "Extended 92-series stapler for deeper fastening applications",
+                "badge": "Heavy Duty",
+                "description": "The Kaymo PRO-PS9240 is a heavy-duty pneumatic stapler for 92-series staples with extended depth capability. Built with robust metal construction, 360° exhaust, and depth adjustment for versatile fastening. Ideal for heavy framing, paneling, and industrial assembly work.",
+                "specs": {
+                  "Staple Series": "92 Series",
+                  "Staple Length": "12 – 40 mm",
+                  "Operating Pressure": "70 – 100 PSI",
+                  "Weight": "1.9 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS9240.png",
+                "similar": ["ps9040-pro", "ps16wc38-pro", "ps10050-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps9716-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS9716",
+                "sku": "KYM-PS9716-PRO",
+                "brand": "Kaymo",
+                "tagline": "21-gauge narrow-crown stapler for shoe and precision work",
+                "badge": "Precision",
+                "description": "The Kaymo PRO-PS9716 is a specialized 21-gauge pneumatic stapler for 97-series staples (up to 16 mm). Features a 45° plastic nose plate cover, no-mar nose plate, 360° exhaust deflector, and 2-way magazine catch. Designed for shoe manufacturing and detailed, narrow-crown stapling tasks.",
+                "specs": {
+                  "Staple Series": "97 Series",
+                  "Staple Length": "Up to 16 mm",
+                  "Gauge": "21",
+                  "Operating Pressure": "60 – 100 PSI",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/pro-ps9716-pneumatic-stapler.png",
+                "similar": ["ps7116-eco", "ps2315-pro", "pshs16-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps16wc38-pro",
+                "name": "Kaymo Pneumatic Stapler PRO-PS16WC38V2",
+                "sku": "KYM-PS16WC38-PRO-V2",
+                "brand": "Kaymo",
+                "tagline": "Wide-crown stapler for corrugated sheets and pallet assembly",
+                "badge": "Industrial",
+                "description": "The Kaymo PRO-PS16WC38V2 is a premium wide-crown pneumatic stapler for 16WC-series staples (16–38 mm). Features full metal magazine assembly, staple depth adjustment, extra-long trigger, and staple unjamming latch. Designed for heavy-duty industrial assembly including attaching corrugated sheets to pallets.",
+                "specs": {
+                  "Staple Series": "16WC Series",
+                  "Staple Length": "16 – 38 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Weight": "2.5 kg",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS16WC38V2.png",
+                "similar": ["ps16wc38-xpro", "ps9040-pro", "ps10050-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps16wc38-xpro",
+                "name": "Kaymo Pneumatic Stapler XPRO-PS16WC38",
+                "sku": "KYM-PS16WC38-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Top-tier wide-crown stapler with maximum performance",
+                "badge": "Best Seller",
+                "description": "The Kaymo XPRO-PS16WC38 is the flagship wide-crown pneumatic stapler for 16WC-series staples (16–38 mm). Engineered with premium-grade components, advanced air management, and superior build quality for maximum performance in industrial assembly. Features staple depth adjustment, unjamming latch, and ergonomic design.",
+                "specs": {
+                  "Staple Series": "16WC Series",
+                  "Staple Length": "16 – 38 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Weight": "2.5 kg",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-XPRO-PS16WC38.png",
+                "similar": ["ps16wc38-pro", "ps9040-pro", "ps10050-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "ps10050-kaymo",
+                "name": "Kaymo Pneumatic Stapler 10050V2",
+                "sku": "KYM-PS10050-V2",
+                "brand": "Kaymo",
+                "tagline": "Heavy-duty 100-series stapler for deep fastening up to 50 mm",
+                "badge": "Industrial",
+                "description": "The Kaymo 10050V2 is a heavy-duty industrial pneumatic stapler for 100-series staples (16–50 mm). Features 360° top air exhaust, extra-strong pusher spring, robust aluminum magazine, and ergonomic rubber grip. Designed for upholstery, modular kitchens, and furniture assembly requiring deep penetration.",
+                "specs": {
+                  "Staple Series": "100 Series",
+                  "Staple Length": "16 – 50 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Weight": "5.0 kg",
+                  "Tier": "Standard"
+                },
+                "imageUrl": "/images/nailing&Stapling/kaymo-10050v2-pneumatic-stapler.png",
+                "similar": ["ps10050e2-eco", "ps10050e3-eco", "ps9040-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps10050e2-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS10050E2",
+                "sku": "KYM-PS10050E2-ECO",
+                "brand": "Kaymo",
+                "tagline": "Economy E2-edition 100-series stapler with depth adjustment",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS10050E2 is an economy-tier 100-series pneumatic stapler for staples (16–50 mm). Features staple depth adjustment for consistent results, robust aluminum magazine, and ergonomic rubber grip. A cost-effective solution for industrial upholstery and heavy assembly work.",
+                "specs": {
+                  "Staple Series": "100 Series",
+                  "Staple Length": "16 – 50 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Weight": "2.5 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Kaymo-ECO-PS10050E2.png",
+                "similar": ["ps10050-kaymo", "ps10050e3-eco", "ps9040-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps10050e3-eco",
+                "name": "Kaymo Pneumatic Stapler ECO-PS1050E3",
+                "sku": "KYM-PS1050E3-ECO",
+                "brand": "Kaymo",
+                "tagline": "Enhanced E3-edition with switchable trigger and quick unjamming",
+                "badge": "Popular",
+                "description": "The Kaymo ECO-PS1050E3 is an enhanced 100-series pneumatic stapler for staples (16–50 mm). Features staple depth adjustment, switchable trigger (single/sequential firing), quick unjamming latch, and swivel air inlet adaptor. Provides professional-level features at an economy price point.",
+                "specs": {
+                  "Staple Series": "100 Series",
+                  "Staple Length": "16 – 50 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Weight": "2.5 kg",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1050E3.png",
+                "similar": ["ps10050-kaymo", "ps10050e2-eco", "ps9040-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
               }
-            ],
-            "similar": [
-              "common-nails-75mm",
-              "brad-nails-25mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": true
+            ]
           },
           {
-            "id": "common-nails-75mm",
-            "name": "SBECO Common Nails 75mm",
-            "sku": "SBL-NAIL-COM-75",
-            "brand": "SBECO",
-            "tagline": "Heavy-duty common nails for general construction and framing",
-            "badge": "Heavy Duty",
-            "description": "Robust common nails with larger head for maximum holding power.",
-            "specs": {
-              "Length": "75mm (3-inch)",
-              "Gauge": "12",
-              "Material": "Steel",
-              "Finish": "Hot-dipped Galvanized",
-              "Qty": "350 nails/box"
-            },
-            "imageUrl": "/images/common_nails.png",
-            "consumables": [
+            "id": "long-nose-pneumatic-staplers",
+            "name": "Long Nose Pneumatic Staplers",
+            "products": [
               {
-                "name": "Framing Nailer",
-                "sku": "SBL-GUN-NAIL-FRM",
-                "icon": "tool"
+                "id": "ps8016ln-eco",
+                "name": "Kaymo Pneumatic Stapler Long Nose ECO-PS8016LN",
+                "sku": "KYM-PS8016LN-ECO",
+                "brand": "Kaymo",
+                "tagline": "Economy long-nose stapler for deep-reach applications",
+                "badge": "Essential",
+                "description": "The Kaymo ECO-PS8016LN is a long-nose pneumatic stapler for 80-series staples (6–16 mm). The extended nose allows access to recessed and hard-to-reach areas. Features ergonomic rubber grip, staple viewing window, and fixed top air exhaust. Perfect for furniture interiors and cabinet assembly.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Nose Type": "Long Nose",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose -ECO-PS8016LN.png",
+                "similar": ["ps8016ln-pro", "ps8016ln-xpro", "ps8016-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps8016ln-pro",
+                "name": "Kaymo Pneumatic Stapler Long Nose PRO-PS8016LNV2",
+                "sku": "KYM-PS8016LN-PRO-V2",
+                "brand": "Kaymo",
+                "tagline": "Professional V2 long-nose stapler with refined internals",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-PS8016LNV2 is a professional-grade long-nose pneumatic stapler for 80-series staples (6–16 mm). The V2 revision features refined internals, improved firing consistency, and an extended nose for deep-reach fastening. Built for demanding production environments.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Nose Type": "Long Nose",
+                  "Tier": "PRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose -PRO-PS8016LNV2.png",
+                "similar": ["ps8016ln-eco", "ps8016ln-xpro", "ps8016-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps8016ln-xpro",
+                "name": "Kaymo Pneumatic Stapler Long Nose XPRO-PS8016LN",
+                "sku": "KYM-PS8016LN-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Top-tier long-nose stapler for maximum precision and reach",
+                "badge": "Best Seller",
+                "description": "The Kaymo XPRO-PS8016LN is the flagship long-nose pneumatic stapler for 80-series staples (6–16 mm). Premium-grade construction with maximum precision, advanced air management, and the longest nose reach in the lineup. Ideal for complex furniture interiors and deep cabinet assembly.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Nose Type": "Long Nose",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose-XPRO-PS8016LN.png",
+                "similar": ["ps8016ln-eco", "ps8016ln-pro", "ps8016-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
               }
-            ],
-            "similar": [
-              "finishing-nails-50mm",
-              "brad-nails-25mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": false
+            ]
           },
           {
-            "id": "brad-nails-25mm",
-            "name": "SBECO Brad Nails 25mm",
-            "sku": "SBL-NAIL-BRD-25",
-            "brand": "SBECO",
-            "tagline": "Thin brad nails for delicate woodwork and furniture assembly",
-            "badge": "Precision",
-            "description": "Fine brad nails with minimal visibility for premium finish work.",
-            "specs": {
-              "Length": "25mm (1-inch)",
-              "Gauge": "18",
-              "Material": "Steel",
-              "Head Size": "Minimal",
-              "Qty": "1000 nails/box"
-            },
-            "imageUrl": "/images/brad_nails.png",
-            "consumables": [
+            "id": "long-magazine-rapid-action-staplers",
+            "name": "Long Magazine & Rapid Action Staplers",
+            "products": [
               {
-                "name": "Brad Nailer Gun",
-                "sku": "SBL-GUN-BRAD",
-                "icon": "tool"
+                "id": "ps8016lm-xpro",
+                "name": "Kaymo Pneumatic Stapler Long Magazine XPRO-PS8016LM",
+                "sku": "KYM-PS8016LM-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Extended magazine stapler for high-volume continuous stapling",
+                "badge": "Industrial",
+                "description": "The Kaymo XPRO-PS8016LM is a long-magazine pneumatic stapler for 80-series staples (6–16 mm). The extended magazine holds significantly more staples, reducing reload frequency for high-volume production. Premium XPRO-tier construction ensures maximum durability and precision.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Magazine Type": "Long Magazine",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Magazine-XPRO-PS8016LM.png",
+                "similar": ["ps8016ralm-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps8016ralm-xpro",
+                "name": "Kaymo Pneumatic Stapler Rapid Action Long Magazine XPRO-PS8016RALM",
+                "sku": "KYM-PS8016RALM-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Rapid-action long-magazine stapler for maximum throughput",
+                "badge": "Best Seller",
+                "description": "The Kaymo XPRO-PS8016RALM combines rapid-action firing with an extended magazine for ultimate production throughput. Uses 80-series staples (6–16 mm). The rapid-action mechanism enables faster cycle times while the long magazine reduces downtime. The top choice for high-speed assembly lines.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Magazine Type": "Rapid Action Long Magazine",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Rapid-Action-Long-Magazine-XPRO-PS8016RALM.png",
+                "similar": ["ps8016lm-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
               }
-            ],
-            "similar": [
-              "finishing-nails-50mm",
-              "common-nails-75mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": false
+            ]
+          },
+          {
+            "id": "folding-attachment-staplers",
+            "name": "Folding Attachment Staplers",
+            "products": [
+              {
+                "id": "ps8016fa-xpro",
+                "name": "Kaymo Pneumatic Stapler Folding Attachment XPRO-PS8016FA",
+                "sku": "KYM-PS8016FA-XPRO",
+                "brand": "Kaymo",
+                "tagline": "80-series stapler with folding attachment for clinched stapling",
+                "badge": "Professional",
+                "description": "The Kaymo XPRO-PS8016FA is a pneumatic stapler with integrated folding attachment for 80-series staples (6–16 mm). The folding attachment clinches staple legs inward for secure, flat fastening — ideal for attaching fabric to frames and substrates where protruding staple legs are unacceptable.",
+                "specs": {
+                  "Staple Series": "80 Series",
+                  "Staple Length": "6 – 16 mm",
+                  "Operating Pressure": "50 – 90 PSI",
+                  "Attachment": "Folding / Clinching",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/pneumatic-stapler-folding-attachment-xpro-ps8016fa.png",
+                "similar": ["ps16wc38fa-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "ps16wc38fa-xpro",
+                "name": "Kaymo Pneumatic Stapler Folding Attachment XPRO-PS16WC38FA",
+                "sku": "KYM-PS16WC38FA-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Wide-crown stapler with folding attachment for heavy clinched fastening",
+                "badge": "Industrial",
+                "description": "The Kaymo XPRO-PS16WC38FA is a wide-crown pneumatic stapler with folding attachment for 16WC-series staples (16–38 mm). Combines the deep-penetration capability of wide-crown staples with the clinching action of the folding attachment. Ideal for heavy-duty fabric-to-frame and panel assembly where flush stapling is critical.",
+                "specs": {
+                  "Staple Series": "16WC Series",
+                  "Staple Length": "16 – 38 mm",
+                  "Operating Pressure": "75 – 110 PSI",
+                  "Attachment": "Folding / Clinching",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Folding-Attachment-XPRO-PS16WC38FA.png",
+                "similar": ["ps8016fa-xpro", "ps16wc38-xpro", "ps16wc38-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              }
+            ]
+          },
+          {
+            "id": "combi-pneumatic-staplers",
+            "name": "Combi Staplers (Staple + Nail)",
+            "products": [
+              {
+                "id": "ps9040combi-eco",
+                "name": "Kaymo Pneumatic Stapler Combi ECO-PS9040COMBI",
+                "sku": "KYM-PS9040COMBI-ECO",
+                "brand": "Kaymo",
+                "tagline": "Versatile combi tool firing both staples and nails",
+                "badge": "Popular",
+                "description": "The Kaymo ECO-PS9040COMBI is a versatile pneumatic combination tool that fires both 90-series staples and brad nails. This dual-functionality eliminates the need for two separate tools, saving cost and workspace. Features metal cylinder construction, 360° exhaust, depth adjustment, and safety mechanism.",
+                "specs": {
+                  "Staple Series": "90 Series (Combi)",
+                  "Fastener Type": "Staples + Brad Nails",
+                  "Staple Length": "12 – 40 mm",
+                  "Operating Pressure": "70 – 100 PSI",
+                  "Tier": "ECO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Combi-ECO-PS9040COMBI.png",
+                "similar": ["ps9040-pro", "ps9240-pro", "ps8016-eco"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              }
+            ]
           }
         ]
       },
       {
-        "id": "staples",
-        "name": "Staples",
-        "products": [
+        "id": "carton-staplers",
+        "name": "Carton Staplers (Boxers)",
+        "nestedSubcategories": [
           {
-            "id": "industrial-staples-10mm",
-            "name": "SBECO Industrial Staples 10mm",
-            "sku": "SBL-STAPLE-10",
-            "brand": "SBECO",
-            "tagline": "Heavy-duty staples for box sealing and packaging",
-            "badge": "Industrial",
-            "description": "Galvanized staples designed for high-powered stapling guns and fastening applications.",
-            "specs": {
-              "Length": "10mm",
-              "Crown Width": "10.6mm",
-              "Material": "Galvanized Steel",
-              "Qty": "1000 staples/box",
-              "Hardness": "High"
-            },
-            "imageUrl": "/images/industrial_staples.png",
-            "consumables": [
+            "id": "air-boxers",
+            "name": "Air Boxers (Pneumatic)",
+            "products": [
               {
-                "name": "Heavy Duty Stapler Gun",
-                "sku": "SBL-GUN-STAPLE-HD",
-                "icon": "tool"
+                "id": "ab3518combi-pro",
+                "name": "Kaymo Air Boxer Combi PRO-AB3518COMBI",
+                "sku": "KYM-AB3518COMBI-PRO",
+                "brand": "Kaymo",
+                "tagline": "Pneumatic carton stapler for 15–18 mm 35-series staples",
+                "badge": "Professional",
+                "description": "The Kaymo PRO-AB3518COMBI is a professional pneumatic carton stapler for top-closing corrugated boxes using 35-series wide-crown staples (15–18 mm leg length). Features full metal body, spring steel pusher, and clinching adjustment for varying carton ply thicknesses. Optional balance hook available for suspended operation.",
+                "specs": {
+                  "Staple Series": "35 Series (Wide Crown)",
+                  "Leg Length": "15 – 18 mm",
+                  "Staple Crown": "35 mm (Outer) / 33 mm (Inner)",
+                  "Operating Pressure": "60 – 90 PSI",
+                  "Weight": "2.65 kg"
+                },
+                "imageUrl": "/images/nailing&Stapling/Air-Boxer-Combi-PRO-AB3518COMBI.png",
+                "similar": ["ab3522combi-pro", "hb3518combi-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "ab3522combi-pro",
+                "name": "Kaymo Air Boxer Combi PRO-AB3522COMBI",
+                "sku": "KYM-AB3522COMBI-PRO",
+                "brand": "Kaymo",
+                "tagline": "Pneumatic carton stapler for 18–22 mm 35-series staples",
+                "badge": "Heavy Duty",
+                "description": "The Kaymo PRO-AB3522COMBI is a heavy-duty pneumatic carton stapler for top-closing thicker corrugated boxes using 35-series wide-crown staples (18–22 mm leg length). Features full metal body, spring steel pusher, and clinching adjustment. The longer leg length provides greater holding power for multi-ply and heavy cartons.",
+                "specs": {
+                  "Staple Series": "35 Series (Wide Crown)",
+                  "Leg Length": "18 – 22 mm",
+                  "Staple Crown": "35 mm (Outer) / 33 mm (Inner)",
+                  "Operating Pressure": "60 – 90 PSI",
+                  "Weight": "2.65 kg"
+                },
+                "imageUrl": "/images/nailing&Stapling/Air-Boxer-Combi-PRO-AB3522COMBI.png",
+                "similar": ["ab3518combi-pro", "hb3518combi-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
               }
-            ],
-            "similar": [
-              "staples-12mm",
-              "staples-8mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": true
+            ]
           },
           {
-            "id": "staples-12mm",
-            "name": "SBECO Staples 12mm",
-            "sku": "SBL-STAPLE-12",
-            "brand": "SBECO",
-            "tagline": "Standard staples for general-purpose stapling and fastening",
-            "badge": "Essential",
-            "description": "Versatile staples for office and industrial stapling applications.",
-            "specs": {
-              "Length": "12mm",
-              "Crown Width": "10.6mm",
-              "Material": "Steel",
-              "Qty": "5000 staples/box",
-              "Compatibility": "Standard staplers"
-            },
-            "imageUrl": "/images/staples.png",
-            "consumables": [
+            "id": "hand-boxers",
+            "name": "Hand Boxers (Manual)",
+            "products": [
               {
-                "name": "Professional Stapler Gun",
-                "sku": "SBL-GUN-STAPLE-PRO",
-                "icon": "tool"
+                "id": "hb3518combi-pro",
+                "name": "Kaymo Hand Boxer Combi PRO-HB3518COMBI",
+                "sku": "KYM-HB3518COMBI-PRO",
+                "brand": "Kaymo",
+                "tagline": "Manual carton stapler — no compressor required",
+                "badge": "Essential",
+                "description": "The Kaymo PRO-HB3518COMBI is a manual carton stapler for top-closing corrugated boxes using 35-series wide-crown staples (15–18 mm leg length). Requires no air compressor, making it ideal for remote locations and on-the-go packaging. Features full metal construction, ergonomic grip, and clinching depth adjustment.",
+                "specs": {
+                  "Staple Series": "35 Series (Wide Crown)",
+                  "Leg Length": "15 – 18 mm",
+                  "Staple Crown": "35 mm (Outer) / 33 mm (Inner)",
+                  "Wire Dimension": "0.90 mm × 2.30 mm",
+                  "Operation": "Manual (No compressor)"
+                },
+                "imageUrl": "/images/nailing&Stapling/Hand-Boxer-Combi-PRO-HB3518COMBI.png",
+                "similar": ["ab3518combi-pro", "ab3522combi-pro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
               }
-            ],
-            "similar": [
-              "industrial-staples-10mm",
-              "staples-8mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": false
-          },
-          {
-            "id": "staples-8mm",
-            "name": "SBECO Staples 8mm",
-            "sku": "SBL-STAPLE-8",
-            "brand": "SBECO",
-            "tagline": "Compact staples for light-duty applications and bookbinding",
-            "badge": "Light Duty",
-            "description": "Shorter staples ideal for thin materials and booklet assembly.",
-            "specs": {
-              "Length": "8mm",
-              "Crown Width": "10.6mm",
-              "Material": "Steel",
-              "Qty": "5000 staples/box"
-            },
-            "imageUrl": "/images/staples_8mm.png",
-            "consumables": [
-              {
-                "name": "Desktop Stapler",
-                "sku": "SBL-STAPLER-DESK",
-                "icon": "tool"
-              }
-            ],
-            "similar": [
-              "industrial-staples-10mm",
-              "staples-12mm"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": false
+            ]
           }
         ]
       },
       {
-        "id": "stapling-guns",
-        "name": "Stapling Guns",
-        "products": [
+        "id": "flooring-nailers",
+        "name": "Flooring Nailers",
+        "nestedSubcategories": [
           {
-            "id": "pneumatic-stapler-gun",
-            "name": "SBECO Pneumatic Stapler Gun",
-            "sku": "SBL-GUN-STAPLE-PNM",
-            "brand": "ProPower",
-            "tagline": "Air-powered stapler for high-volume industrial applications",
-            "badge": "Industrial",
-            "description": "Heavy-duty pneumatic stapler requiring 90 PSI air supply. Ideal for production lines.",
-            "specs": {
-              "Type": "Pneumatic",
-              "Air Pressure": "90 PSI",
-              "Staple Size": "10-12mm",
-              "Speed": "Up to 6 shots/sec",
-              "Weight": "1.8 kg"
-            },
-            "imageUrl": "/images/pneumatic_stapler.png",
-            "consumables": [
+            "id": "pneumatic-flooring-nailers",
+            "name": "Pneumatic Flooring Nailers",
+            "products": [
               {
-                "name": "SBECO Industrial Staples 10mm",
-                "sku": "SBL-STAPLE-10",
-                "icon": "staple"
+                "id": "fn1650-250f-xpro",
+                "name": "Kaymo Flooring Nailer Pneumatic XPRO-FN1650-250F",
+                "sku": "KYM-FN1650-250F-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Professional pneumatic flooring nailer for 12–26 mm hardwood",
+                "badge": "Professional",
+                "description": "The Kaymo XPRO-FN1650-250F is a professional-grade pneumatic flooring nailer designed for hardwood flooring installations (12–26 mm thickness). Features an adjustable striking system for depth control, wood-friendly composite shoe, safety mechanism in the base plate, and high-grade steel piston/driver blade. Operates at 120 PSI for consistent nail driving.",
+                "specs": {
+                  "Gauge": "16",
+                  "Flooring Thickness": "12 – 26 mm",
+                  "Air Pressure": "120 PSI",
+                  "Operation": "Pneumatic",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Pneumatic-XPRO-FN1650-250F.png",
+                "similar": ["fn1838-q550al-xpro", "fn1838-q550al-pt-xpro", "fn1650-h330-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "fn1838-q550al-xpro",
+                "name": "Kaymo Flooring Nailer Pneumatic XPRO-FN1838-Q550AL",
+                "sku": "KYM-FN1838-Q550AL-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Pneumatic flooring nailer for 16–22 mm precision flooring",
+                "badge": "Professional",
+                "description": "The Kaymo XPRO-FN1838-Q550AL is a pneumatic flooring nailer designed for thinner flooring profiles (16–22 mm thickness). Features an adjustable base for precision, dual-action striking system, and no-recoil mechanism. Operates at 120 PSI and weighs approximately 6 kg for stable, controlled nailing.",
+                "specs": {
+                  "Gauge": "16",
+                  "Flooring Thickness": "16 – 22 mm",
+                  "Air Pressure": "120 PSI",
+                  "Weight": "6.0 kg",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Pneumatic-XPRO-FN1838-Q550AL.png",
+                "similar": ["fn1650-250f-xpro", "fn1838-q550al-pt-xpro", "fn1650-h330-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "fn1838-q550al-pt-xpro",
+                "name": "Kaymo Flooring Nailer PT Pneumatic XPRO-FN1838-Q550AL",
+                "sku": "KYM-FN1838-Q550AL-PT-XPRO",
+                "brand": "Kaymo",
+                "tagline": "PT-variant pneumatic flooring nailer with enhanced base plate",
+                "badge": "Industrial",
+                "description": "The Kaymo XPRO-FN1838-Q550AL PT variant is an enhanced pneumatic flooring nailer with an upgraded base plate design for improved stability and surface protection. Uses 16-gauge cleat nails for 16–22 mm flooring. Features dual-action striking, no-recoil mechanism, and adjustable base.",
+                "specs": {
+                  "Gauge": "16",
+                  "Flooring Thickness": "16 – 22 mm",
+                  "Air Pressure": "120 PSI",
+                  "Weight": "6.0 kg",
+                  "Variant": "PT (Enhanced Base Plate)"
+                },
+                "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-PT-Pneumatic-XPRO-FN1838-Q550AL.png",
+                "similar": ["fn1838-q550al-xpro", "fn1650-250f-xpro", "fn1650-h330-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
               }
-            ],
-            "similar": [
-              "electric-stapler-gun"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": true
+            ]
           },
           {
-            "id": "electric-stapler-gun",
-            "name": "SBECO Electric Stapler Gun 220V",
-            "sku": "SBL-GUN-STAPLE-ELC",
-            "brand": "ProPower",
-            "tagline": "Portable electric stapler for cordless convenience",
-            "badge": "Professional",
-            "description": "Battery-powered stapler with ergonomic design for extended use.",
-            "specs": {
-              "Power": "220V AC or Battery",
-              "Staple Capacity": "200 staples",
-              "Firing Rate": "3 shots/sec",
-              "Weight": "1.5 kg",
-              "Portability": "Cordless ready"
-            },
-            "imageUrl": "/images/electric_stapler.png",
-            "consumables": [
+            "id": "manual-flooring-nailers",
+            "name": "Manual Flooring Nailers",
+            "products": [
               {
-                "name": "SBECO Staples 12mm",
-                "sku": "SBL-STAPLE-12",
-                "icon": "staple"
+                "id": "fn1650-h330-xpro",
+                "name": "Kaymo Flooring Nailer Manual XPRO-FN1650-H330",
+                "sku": "KYM-FN1650-H330-XPRO",
+                "brand": "Kaymo",
+                "tagline": "Mallet-driven manual flooring nailer — no compressor needed",
+                "badge": "Popular",
+                "description": "The Kaymo XPRO-FN1650-H330 is a manual mallet-driven flooring nailer for 16-gauge cleat nails. Requires no air compressor, making it ideal for jobsites without power. Features a non-marring mallet, quick-loading magazine, adjustable base plate, and wood-friendly composite shoe. Suitable for hardwood flooring installations up to 26 mm thickness.",
+                "specs": {
+                  "Gauge": "16",
+                  "Nail Length": "32 – 50 mm",
+                  "Operation": "Manual (Mallet-driven)",
+                  "Compressor": "Not required",
+                  "Tier": "XPRO"
+                },
+                "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Manual-XPRO-FN1650-H330.png",
+                "similar": ["fn1650-250f-xpro", "fn1838-q550al-xpro", "fn1838-q550al-pt-xpro"],
+                "dateAdded": "2026-07-01",
+                "isBestSeller": false
               }
-            ],
-            "similar": [
-              "pneumatic-stapler-gun"
-            ],
-            "dateAdded": "2026-06-01",
-            "isBestSeller": false
+            ]
           }
         ]
       }
