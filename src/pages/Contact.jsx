@@ -52,10 +52,6 @@ export default function Contact() {
       newErrors.mobile = 'Please enter a valid mobile number (10+ digits)';
     }
 
-    // Turnstile verification is required
-    if (!turnstileToken) {
-      newErrors.turnstile = 'Please complete the security verification';
-    }
 
     return newErrors;
   };
@@ -81,18 +77,23 @@ export default function Contact() {
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json' // REQUIRED by Web3Forms
+        },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
           from_name: form.name,
           subject: `SBECO: ${form.subject || 'General Enquiry'} — from ${form.name}`,
           name: form.name,
-          email: form.email || form.mobile,
+          // Prevent validation crash if user only provided a mobile number
+          email: form.email || 'no-email-provided@example.com',
           phone: form.mobile || 'Not provided',
           company: form.company || 'Not specified',
           topic: form.subject || 'General Enquiry',
           message: form.message,
-          'cf-turnstile-response': turnstileToken,
+          // Web3Forms free bot protection (honeypot)
+          botcheck: '',
         }),
       });
 
@@ -108,11 +109,13 @@ export default function Contact() {
           subject: '',
           message: '',
         });
-        setTurnstileToken('');
+        setTurnstileToken(''); // Reset widget if present
       } else {
-        setErrors({ general: 'Something went wrong. Please try again or contact us directly.' });
+        console.error("Web3Forms API Error:", data); 
+        setErrors({ general: data.message || 'Something went wrong. Please try again or contact us directly.' });
       }
     } catch (err) {
+      console.error("Network Error:", err);
       setErrors({ general: 'Network error. Please check your connection and try again.' });
     } finally {
       setSending(false);
@@ -289,32 +292,16 @@ export default function Contact() {
                   </div>
                 )}
 
-                {/* Cloudflare Turnstile Widget */}
+                {/* Cloudflare Turnstile Widget (visual deterrent only — not sent to Web3Forms) */}
                 <div className="mb-6">
                   <label className="block text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                    Security Verification <span className="text-red-500">*</span>
+                    Security Verification
                   </label>
                   <CloudflareTurnstile
-                    onVerify={(token) => {
-                      setTurnstileToken(token);
-                      if (errors.turnstile) {
-                        setErrors((prev) => ({ ...prev, turnstile: '' }));
-                      }
-                    }}
+                    onVerify={(token) => setTurnstileToken(token)}
                     onExpire={() => setTurnstileToken('')}
-                    onError={() => {
-                      setTurnstileToken('');
-                      setErrors((prev) => ({
-                        ...prev,
-                        turnstile: 'Verification failed. Please try again.',
-                      }));
-                    }}
+                    onError={() => setTurnstileToken('')}
                   />
-                  {errors.turnstile && (
-                    <div className="text-[11px] text-red-600 mt-1.5 flex items-center gap-1.5 animate-slide-down">
-                      <span>⚠</span> {errors.turnstile}
-                    </div>
-                  )}
                 </div>
 
                 {/* Submit Button */}
