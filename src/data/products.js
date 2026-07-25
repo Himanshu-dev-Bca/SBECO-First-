@@ -6172,7 +6172,8 @@ export const CATALOGUE = [
               }
             ],
             "similar": [
-              "floor-cleaner-5l"
+              "floor-cleaner-5l",
+              "window-cleaner-2l"
             ],
             "dateAdded": "2026-06-01",
             "isBestSeller": false
@@ -6200,10 +6201,280 @@ export const CATALOGUE = [
               }
             ],
             "similar": [
+              "industrial-cleaner-5l",
+              "carpet-cleaner-3l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "window-cleaner-2l",
+            "name": "SBECO Window & Glass Cleaner 2L",
+            "sku": "SBL-CLEAN-WIN-2",
+            "brand": "SBECO",
+            "tagline": "Streak-free window and glass cleaner for clear visibility",
+            "badge": "Popular",
+            "description": "Professional-grade window cleaner that removes smudges, dust, and fingerprints without leaving streaks.",
+            "specs": {
+              "Volume": "2 Liters",
+              "Type": "Glass Cleaner",
+              "Streak-free": "Yes",
+              "Dilution": "Ready-to-use or 1:5",
+              "Coverage": "Approx. 100 sqm per liter"
+            },
+            "imageUrl": "/images/window_cleaner.png",
+            "consumables": [
+              {
+                "name": "Microfiber Cloth Pack",
+                "sku": "SBL-CLOTH-MF",
+                "icon": "cloth"
+              }
+            ],
+            "similar": [
+              "industrial-cleaner-5l",
+              "floor-cleaner-5l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "carpet-cleaner-3l",
+            "name": "SBECO Carpet & Upholstery Cleaner 3L",
+            "sku": "SBL-CLEAN-CRP-3",
+            "brand": "SBECO",
+            "tagline": "Deep-cleaning formula for carpets, rugs, and upholstery",
+            "badge": "Essential",
+            "description": "Powerful carpet cleaner effective on tough stains, dirt, and odors. Works with carpet cleaning machines.",
+            "specs": {
+              "Volume": "3 Liters",
+              "Type": "Carpet Cleaner",
+              "Dilution": "1:4 to 1:8",
+              "Machine Compatible": "Yes",
+              "Odor Control": "Advanced"
+            },
+            "imageUrl": "/images/carpet_cleaner.png",
+            "consumables": [
+              {
+                "name": "Carpet Brush",
+                "sku": "SBL-BRUSH-CRP",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-cleaner-5l",
+              "industrial-cleaner-5l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "bathroom-cleaner-2l",
+            "name": "SBECO Bathroom Cleaner 2L",
+            "sku": "SBL-CLEAN-BTH-2",
+            "brand": "SBECO",
+            "tagline": "Anti-bacterial cleaner for bathrooms, sinks, and shower areas",
+            "badge": "Essential",
+            "description": "Multi-surface bathroom cleaner with anti-bacterial properties. Removes soap scum, hard water stains, and mildew.",
+            "specs": {
+              "Volume": "2 Liters",
+              "Type": "Multi-surface",
+              "Anti-bacterial": "Yes",
+              "Scent": "Fresh citrus",
+              "Dilution": "1:3 or ready-to-use"
+            },
+            "imageUrl": "/images/bathroom_cleaner.png",
+            "consumables": [
+              {
+                "name": "Sponges Pack (5)",
+                "sku": "SBL-SPONGE-5",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "window-cleaner-2l",
+              "floor-cleaner-5l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "kitchen-degreaser-2l",
+            "name": "SBECO Kitchen Degreaser 2L",
+            "sku": "SBL-CLEAN-KIT-2",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty degreaser for kitchen surfaces, stovetops, and hoods",
+            "badge": "Popular",
+            "description": "Powerful kitchen degreaser cuts through baked-on grease and stubborn kitchen stains effectively.",
+            "specs": {
+              "Volume": "2 Liters",
+              "Type": "Degreaser",
+              "Coverage": "Up to 200 sqm",
+              "Dilution": "1:5 recommended",
+              "Effectiveness": "Heavy-duty"
+            },
+            "imageUrl": "/images/kitchen_degreaser.png",
+            "consumables": [
+              {
+                "name": "Spray Bottle 500ml",
+                "sku": "SBL-SPRAY-500",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "industrial-cleaner-5l",
+              "bathroom-cleaner-2l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "disinfectant-surface-1l",
+            "name": "SBECO Disinfectant Surface Spray 1L",
+            "sku": "SBL-DISINFECT-1",
+            "brand": "SBECO",
+            "tagline": "Hospital-grade disinfectant for high-touch surfaces and workstations",
+            "badge": "Safety",
+            "description": "EPA-approved disinfectant spray kills 99.9% of germs and viruses. Quick-drying and leaves no residue.",
+            "specs": {
+              "Volume": "1 Liter",
+              "Type": "Disinfectant",
+              "EPA Approved": "Yes",
+              "Contact Time": "10 seconds",
+              "Effectiveness": "99.9% kill rate"
+            },
+            "imageUrl": "/images/disinfectant_spray.png",
+            "consumables": [
+              {
+                "name": "Disposable Wipes Pack",
+                "sku": "SBL-WIPES-DIS",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "bathroom-cleaner-2l",
               "industrial-cleaner-5l"
             ],
             "dateAdded": "2026-06-01",
             "isBestSeller": true
+          },
+          {
+            "id": "mop-handle-telescopic",
+            "name": "SBECO Telescopic Mop Handle",
+            "sku": "SBL-MOP-HANDLE",
+            "brand": "SBECO",
+            "tagline": "Adjustable telescopic handle for efficient mopping",
+            "badge": "Essential",
+            "description": "Lightweight telescopic mop handle extends from 1.2m to 1.8m for comfortable cleaning reach.",
+            "specs": {
+              "Material": "Aluminum alloy",
+              "Length": "1.2m - 1.8m adjustable",
+              "Weight": "350g",
+              "Thread": "Standard universal fit",
+              "Durability": "Heavy-duty"
+            },
+            "imageUrl": "/images/mop_handle.png",
+            "consumables": [
+              {
+                "name": "Mop Head Microfiber",
+                "sku": "SBL-MOP-HEAD-MF",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-cleaner-5l",
+              "mop-head-microfiber"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "trash-bags-large-100",
+            "name": "SBECO Large Trash Bags (100-pack)",
+            "sku": "SBL-TRASH-100",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty trash bags for general waste disposal",
+            "badge": "Value",
+            "description": "Strong, reliable trash bags suitable for office and facility waste collection.",
+            "specs": {
+              "Qty": "100 bags per roll",
+              "Capacity": "60 Liters",
+              "Thickness": "0.08mm",
+              "Color": "Black",
+              "Strength": "Heavy-duty"
+            },
+            "imageUrl": "/images/trash_bags.png",
+            "consumables": [
+              {
+                "name": "Trash Bin Liners Dispenser",
+                "sku": "SBL-BIN-DISP",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "recycling-bins-set"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "microfiber-cloth-pack",
+            "name": "SBECO Microfiber Cleaning Cloth Pack (20-piece)",
+            "sku": "SBL-CLOTH-MF-20",
+            "brand": "SBECO",
+            "tagline": "Ultra-absorbent microfiber cloths for streak-free cleaning",
+            "badge": "Essential",
+            "description": "Pack of 20 premium microfiber cloths suitable for cleaning glass, mirrors, and all surfaces without leaving lint.",
+            "specs": {
+              "Pieces": "20 cloths",
+              "Material": "100% Microfiber",
+              "Size": "12\" x 12\"",
+              "Absorbency": "Ultra-absorbent",
+              "Reusable": "Washable up to 500 times"
+            },
+            "imageUrl": "/images/microfiber_cloths.png",
+            "consumables": [
+              {
+                "name": "Cloth Storage Bag",
+                "sku": "SBL-CLOTH-BAG",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "window-cleaner-2l",
+              "industrial-cleaner-5l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "floor-buffer-machine-15in",
+            "name": "SBECO Floor Buffer Machine 15-inch",
+            "sku": "SBL-BUFFER-15IN",
+            "brand": "SBECO",
+            "tagline": "Professional floor buffer and polisher for large surface areas",
+            "badge": "Professional",
+            "description": "Heavy-duty floor buffer with dual-motor design for efficient buffing and polishing of tile, linoleum, and concrete floors.",
+            "specs": {
+              "Diameter": "15 inches",
+              "Power": "1.5 HP motor",
+              "Speed": "175 RPM",
+              "Weight": "45 lbs",
+              "Cord Length": "50 feet"
+            },
+            "imageUrl": "/images/floor_buffer.png",
+            "consumables": [
+              {
+                "name": "Buffer Pads Replacement",
+                "sku": "SBL-BUFFER-PADS",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "floor-cleaner-5l",
+              "mop-handle-telescopic"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
           }
         ]
       },
@@ -6235,7 +6506,8 @@ export const CATALOGUE = [
               }
             ],
             "similar": [
-              "safety-glasses"
+              "safety-glasses",
+              "latex-gloves-powder-free"
             ],
             "dateAdded": "2026-06-01",
             "isBestSeller": true
@@ -6264,7 +6536,8 @@ export const CATALOGUE = [
               }
             ],
             "similar": [
-              "safety-gloves-nitrile"
+              "safety-gloves-nitrile",
+              "face-shield-protective"
             ],
             "dateAdded": "2026-06-01",
             "isBestSeller": false
@@ -6298,10 +6571,525 @@ export const CATALOGUE = [
               }
             ],
             "similar": [
-              "safety-gloves-nitrile"
+              "safety-gloves-nitrile",
+              "emergency-eyewash-station"
             ],
             "dateAdded": "2026-06-01",
             "isBestSeller": false
+          },
+          {
+            "id": "latex-gloves-powder-free",
+            "name": "SBECO Latex Gloves Powder-Free (100 pairs)",
+            "sku": "SBL-GLOVE-LTX",
+            "brand": "SBECO",
+            "tagline": "Medical-grade latex gloves for precision handling and examination",
+            "badge": "Essential",
+            "description": "Powder-free latex gloves providing excellent tactile sensitivity and protection.",
+            "specs": {
+              "Material": "Natural Latex",
+              "Qty": "100 pairs/box",
+              "Powder-free": "Yes",
+              "Thickness": "0.13mm",
+              "Sizes": "S, M, L, XL"
+            },
+            "imageUrl": "/images/latex_gloves.png",
+            "consumables": [
+              {
+                "name": "Hand Sanitizer Dispenser",
+                "sku": "SBL-SANITIZER-DISP",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "safety-gloves-nitrile",
+              "safety-head-protection"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "safety-helmet-hard-hat",
+            "name": "SBECO Safety Helmet Hard Hat",
+            "sku": "SBL-HELMET-HARD",
+            "brand": "SBECO",
+            "tagline": "ANSI-certified hard hat for head protection in hazardous environments",
+            "badge": "Safety",
+            "description": "Durable hard hat providing protection against falling objects and workplace hazards.",
+            "specs": {
+              "Material": "ABS Plastic",
+              "ANSI Certified": "Yes",
+              "Weight": "390g",
+              "Color": "Yellow/White/Red options",
+              "Adjustable": "Yes"
+            },
+            "imageUrl": "/images/safety_helmet.png",
+            "consumables": [
+              {
+                "name": "Hard Hat Chin Strap",
+                "sku": "SBL-HELMET-STRAP",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "face-shield-protective",
+              "safety-vest-reflective"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "safety-vest-reflective",
+            "name": "SBECO Reflective Safety Vest (High-Visibility)",
+            "sku": "SBL-VEST-REFLECT",
+            "brand": "SBECO",
+            "tagline": "High-visibility safety vest for warehouse and construction environments",
+            "badge": "Essential",
+            "description": "ANSI-certified high-visibility vest with reflective strips for maximum visibility in low-light conditions.",
+            "specs": {
+              "Material": "Mesh polyester",
+              "Reflectivity": "ANSI/ISEA 107-2015 Type 2",
+              "Color": "Orange with silver stripes",
+              "Sizes": "S, M, L, XL, XXL",
+              "Lightweight": "Yes"
+            },
+            "imageUrl": "/images/safety_vest.png",
+            "consumables": [
+              {
+                "name": "Safety Vest Clips",
+                "sku": "SBL-VEST-CLIPS",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "safety-helmet-hard-hat",
+              "safety-gloves-nitrile"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "face-shield-protective",
+            "name": "SBECO Protective Face Shield",
+            "sku": "SBL-SHIELD-FACE",
+            "brand": "SBECO",
+            "tagline": "Clear polycarbonate face shield for splash and splash protection",
+            "badge": "Essential",
+            "description": "Anti-fog, anti-scratch protective face shield for additional facial protection.",
+            "specs": {
+              "Material": "Polycarbonate",
+              "Coverage": "Full face",
+              "Anti-fog": "Yes",
+              "Anti-scratch": "Yes",
+              "Qty": "10 units per pack"
+            },
+            "imageUrl": "/images/face_shield.png",
+            "consumables": [
+              {
+                "name": "Face Shield Replacement Film",
+                "sku": "SBL-SHIELD-FILM",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "safety-glasses",
+              "safety-helmet-hard-hat"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "emergency-eyewash-station",
+            "name": "SBECO Emergency Eyewash Station",
+            "sku": "SBL-EYEWASH-EMRG",
+            "brand": "SBECO",
+            "tagline": "Wall-mounted eyewash station for emergency eye irrigation",
+            "badge": "Safety",
+            "description": "ANSI Z358.1 compliant eyewash station for emergency eye and face washing. Critical for chemical exposure incidents.",
+            "specs": {
+              "Type": "Dual eyecup",
+              "Activation": "Foot pedal or push button",
+              "Flow Rate": "0.4 GPM minimum",
+              "ANSI Compliant": "Yes",
+              "Installation": "Wall-mounted"
+            },
+            "imageUrl": "/images/eyewash_station.png",
+            "consumables": [
+              {
+                "name": "Eyewash Saline Solution",
+                "sku": "SBL-EYEWASH-SOL",
+                "icon": "medical"
+              }
+            ],
+            "similar": [
+              "first-aid-kit",
+              "safety-equipment"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "hearing-protection-earmuff",
+            "name": "SBECO Hearing Protection Earmuffs (NRR 30)",
+            "sku": "SBL-EAR-MUFF",
+            "brand": "SBECO",
+            "tagline": "Noise-canceling earmuffs for hearing protection in noisy environments",
+            "badge": "Professional",
+            "description": "ANSI S3.19 certified hearing protection with comfortable padding. NRR rating of 30dB.",
+            "specs": {
+              "Material": "Plastic cups with foam padding",
+              "NRR Rating": "30 dB",
+              "Weight": "210g",
+              "Adjustable": "Yes",
+              "Foldable": "Yes"
+            },
+            "imageUrl": "/images/hearing_protection.png",
+            "consumables": [
+              {
+                "name": "Foam Ear Plugs Box",
+                "sku": "SBL-EARPLUG-FOAM",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "safety-glasses",
+              "safety-helmet-hard-hat"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "maintenance-tools",
+        "name": "Maintenance & Tools",
+        "products": [
+          {
+            "id": "tool-kit-basic-25pc",
+            "name": "SBECO Basic Tool Kit (25-piece)",
+            "sku": "SBL-TOOL-KIT-25",
+            "brand": "SBECO",
+            "tagline": "Essential hand tools for general maintenance and repairs",
+            "badge": "Popular",
+            "description": "Complete basic tool kit including hammers, screwdrivers, wrenches, and pliers for general facility maintenance.",
+            "specs": {
+              "Pieces": "25 items",
+              "Storage": "Durable carry case included",
+              "Materials": "Chrome-plated steel",
+              "Contents": "Hammers, screwdrivers, wrenches, pliers, level, tape measure"
+            },
+            "imageUrl": "/images/tool_kit_basic.png",
+            "consumables": [
+              {
+                "name": "Tool Box Organizer",
+                "sku": "SBL-TOOL-BOX-ORG",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "power-drill-cordless-18v",
+              "adjustable-wrench-set"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "power-drill-cordless-18v",
+            "name": "SBECO Cordless Power Drill 18V",
+            "sku": "SBL-DRILL-18V",
+            "brand": "SBECO",
+            "tagline": "Versatile cordless drill for drilling, fastening, and light demolition",
+            "badge": "Professional",
+            "description": "Powerful 18V cordless drill with adjustable chuck, variable speed, and forward/reverse capability.",
+            "specs": {
+              "Voltage": "18V Li-ion",
+              "Chuck Size": "13mm",
+              "Speed Range": "0-1500 RPM",
+              "Torque Settings": "16 positions",
+              "Includes": "2 batteries, charger, carrying case"
+            },
+            "imageUrl": "/images/power_drill.png",
+            "consumables": [
+              {
+                "name": "Drill Bit Set (50-piece)",
+                "sku": "SBL-DRILL-BITS-50",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "tool-kit-basic-25pc",
+              "impact-driver-20v"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "impact-driver-20v",
+            "name": "SBECO Impact Driver 20V",
+            "sku": "SBL-IMPACT-20V",
+            "brand": "SBECO",
+            "tagline": "High-torque impact driver for fastening and drilling heavy-duty applications",
+            "badge": "Professional",
+            "description": "Compact impact driver delivering up to 2000 in-lbs of torque. Perfect for decking, framing, and assembly.",
+            "specs": {
+              "Voltage": "20V Li-ion",
+              "Max Torque": "2000 in-lbs",
+              "Speed": "0-3200 RPM",
+              "Weight": "3.6 lbs",
+              "Includes": "2 batteries, charger, carrying case"
+            },
+            "imageUrl": "/images/impact_driver.png",
+            "consumables": [
+              {
+                "name": "Bit Holder Set",
+                "sku": "SBL-BIT-HOLDER",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "power-drill-cordless-18v",
+              "adjustable-wrench-set"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "adjustable-wrench-set",
+            "name": "SBECO Adjustable Wrench Set (6-piece)",
+            "sku": "SBL-WRENCH-SET-6",
+            "brand": "SBECO",
+            "tagline": "Precision adjustable wrenches for various fastening tasks",
+            "badge": "Essential",
+            "description": "Set of 6 chrome-plated adjustable wrenches in sizes 6\", 8\", 10\", 12\", 15\", and 18\".",
+            "specs": {
+              "Pieces": "6 wrenches",
+              "Sizes": "6-18 inches",
+              "Material": "Chrome-plated steel",
+              "Accuracy": "±0.5mm tolerance",
+              "Storage": "Roll-up carrying bag"
+            },
+            "imageUrl": "/images/wrench_set.png",
+            "consumables": [
+              {
+                "name": "Wrench Organizer Holder",
+                "sku": "SBL-WRENCH-HOLDER",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "tool-kit-basic-25pc",
+              "socket-set-metric"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "socket-set-metric",
+            "name": "SBECO Socket Set Metric (40-piece)",
+            "sku": "SBL-SOCKET-METRIC-40",
+            "brand": "SBECO",
+            "tagline": "Complete metric socket set for professional-grade maintenance",
+            "badge": "Popular",
+            "description": "Comprehensive 40-piece metric socket set with ratchet, extensions, and carrying case.",
+            "specs": {
+              "Pieces": "40 items",
+              "Socket Range": "8mm - 32mm",
+              "Drive Size": "1/2\" square drive",
+              "Material": "Chrome-vanadium steel",
+              "Case": "Heavy-duty plastic organizer"
+            },
+            "imageUrl": "/images/socket_set.png",
+            "consumables": [
+              {
+                "name": "Socket Adapter Set",
+                "sku": "SBL-SOCKET-ADAPT",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "adjustable-wrench-set",
+              "tool-kit-basic-25pc"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "tape-measure-30m",
+            "name": "SBECO Tape Measure 30M Professional",
+            "sku": "SBL-TAPE-MEASURE-30",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty retractable tape measure for accurate measurements",
+            "badge": "Essential",
+            "description": "Professional-grade tape measure with 30-meter reach, dual-sided markings, and auto-lock feature.",
+            "specs": {
+              "Length": "30 meters / 100 feet",
+              "Width": "25mm",
+              "Material": "Steel blade",
+              "Auto-lock": "Yes",
+              "Impact-resistant": "Yes"
+            },
+            "imageUrl": "/images/tape_measure.png",
+            "consumables": [
+              {
+                "name": "Tape Belt Clip",
+                "sku": "SBL-TAPE-CLIP",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "level-laser-digital",
+              "stud-finder-digital"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "level-laser-digital",
+            "name": "SBECO Digital Laser Level",
+            "sku": "SBL-LEVEL-LASER",
+            "brand": "SBECO",
+            "tagline": "Precision laser level for accurate alignment and leveling tasks",
+            "badge": "Professional",
+            "description": "Digital laser level with self-leveling capability and up to 30-meter range for construction and maintenance work.",
+            "specs": {
+              "Range": "30 meters",
+              "Accuracy": "±3mm at 10m",
+              "Self-leveling": "Yes",
+              "Beam": "Red laser line",
+              "Power": "2 x AA batteries"
+            },
+            "imageUrl": "/images/laser_level.png",
+            "consumables": [
+              {
+                "name": "Laser Level Mount",
+                "sku": "SBL-LEVEL-MOUNT",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "tape-measure-30m",
+              "stud-finder-digital"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "stud-finder-digital",
+            "name": "SBECO Digital Stud Finder",
+            "sku": "SBL-FINDER-STUD",
+            "brand": "SBECO",
+            "tagline": "Wall stud detector for safely locating studs, pipes, and wires",
+            "badge": "Popular",
+            "description": "Advanced digital stud finder with metal and live wire detection capabilities.",
+            "specs": {
+              "Scanning Depth": "50mm",
+              "Stud Detection": "16-24\" stud spacing",
+              "Metal Detection": "Yes",
+              "Live Wire Detection": "Yes",
+              "Accuracy": "99.5%"
+            },
+            "imageUrl": "/images/stud_finder.png",
+            "consumables": [
+              {
+                "name": "Stud Finder Batteries",
+                "sku": "SBL-FINDER-BATT",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "level-laser-digital",
+              "tape-measure-30m"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "step-ladder-6ft",
+            "name": "SBECO Aluminum Step Ladder 6-Foot",
+            "sku": "SBL-LADDER-6FT",
+            "brand": "SBECO",
+            "tagline": "Lightweight aluminum step ladder for safe access and maintenance work",
+            "badge": "Essential",
+            "description": "Sturdy 6-foot aluminum step ladder with anti-slip steps and wide platform for stability and safety.",
+            "specs": {
+              "Height": "6 feet",
+              "Material": "Aluminum alloy",
+              "Load Capacity": "300 lbs",
+              "Steps": "6 wide steps",
+              "Anti-slip": "Yes"
+            },
+            "imageUrl": "/images/step_ladder.png",
+            "consumables": [
+              {
+                "name": "Ladder Stabilizer Bar",
+                "sku": "SBL-LADDER-STABIL",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "tool-kit-basic-25pc",
+              "power-drill-cordless-18v"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "recycling-bins-set",
+            "name": "SBECO Color-Coded Recycling Bins Set (4-piece)",
+            "sku": "SBL-BIN-RECYCLE-4",
+            "brand": "SBECO",
+            "tagline": "Organized recycling solution with color-coded bins for waste segregation",
+            "badge": "Eco",
+            "description": "Set of 4 color-coded recycling bins (20L each) for waste segregation and environmental responsibility.",
+            "specs": {
+              "Bins": "4 pieces",
+              "Capacity": "20L each",
+              "Colors": "Blue (paper), Green (organic), Yellow (plastic), Gray (general)",
+              "Material": "Durable plastic",
+              "Lids": "Lockable lids included"
+            },
+            "imageUrl": "/images/recycling_bins.png",
+            "consumables": [
+              {
+                "name": "Bin Labels & Signs",
+                "sku": "SBL-BIN-LABELS",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "trash-bags-large-100"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "hand-sanitizer-pump-500ml",
+            "name": "SBECO Hand Sanitizer Pump 500ml",
+            "sku": "SBL-SANITIZER-500",
+            "brand": "SBECO",
+            "tagline": "Antibacterial hand sanitizer with moisturizing formula for frequent use",
+            "badge": "Essential",
+            "description": "70% alcohol-based hand sanitizer with aloe vera for effective germ killing and skin care.",
+            "specs": {
+              "Volume": "500ml",
+              "Alcohol Content": "70%",
+              "Formula": "With aloe vera",
+              "Dispenser": "Pump bottle",
+              "Effectiveness": "99.9% antimicrobial"
+            },
+            "imageUrl": "/images/hand_sanitizer.png",
+            "consumables": [
+              {
+                "name": "Refill Bottle 5L",
+                "sku": "SBL-SANITIZER-REFILL",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "disinfectant-surface-1l",
+              "bathroom-cleaner-2l"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
           }
         ]
       }
