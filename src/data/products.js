@@ -1,9 +1,9 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
     "name": "Tape and Tape Dispensers",
-    "description": "Premium adhesive tapes and professional tape dispensers for packaging, labeling, and sealing applications.",
+    "description": "Premium adhesive tapus and professional tape dispensers for packaging, labeling, and sealing applications.",
     "imageUrl": "/images/tape_dispensers.png",
     "subcategories": [
       {
@@ -2404,9 +2404,9 @@ export const CATALOGUE = [
             "products": [
               {
                 "id": "handheld-dispenser-1",
-                "name": "SBECO Heavy-Duty Handheld Pistol Grip Dispenser 50mm",
+                "name": "Packex SAFE 3-inch",
                 "sku": "SBL-DISP-HH-01",
-                "brand": "SBECO",
+                "brand": "Packex",
                 "tagline": "Ergonomic 50mm pistol grip tape dispenser for high-speed carton sealing",
                 "badge": "Popular",
                 "description": "Industrial-grade handheld pistol grip tape dispenser designed for standard 50mm (2 inch) packaging tapes. Features an adjustable tension control knob, heat-treated steel serrated blade, and a comfortable ergonomic handle that reduces hand fatigue during continuous warehouse operations.",
@@ -2417,7 +2417,7 @@ export const CATALOGUE = [
                   "Blade Type": "Reverse-Cut Serrated Steel",
                   "Tension Control": "Adjustable Knob"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex SAFE 3.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-3",
@@ -2428,9 +2428,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-2",
-                "name": "Tesa 6400 Industrial Handheld Dispenser 50mm",
+                "name": "Packex 2-inch",
                 "sku": "SBL-DISP-HH-02",
-                "brand": "Tesa",
+                "brand": "Packex",
                 "tagline": "Robust professional manual dispenser with safety blade cover",
                 "badge": "Industrial",
                 "description": "Premium manual tape dispenser from Tesa featuring a covered blade for worker safety (injury prevention). Built with a heavy metal frame and rubber roller for smooth tape application without wrinkling.",
@@ -2441,7 +2441,7 @@ export const CATALOGUE = [
                   "Safety Feature": "Retractable Blade Shield",
                   "Weight": "500g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/packex 2.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-3",
@@ -2452,7 +2452,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-3",
-                "name": "SBECO Wide-Roll Handheld Dispenser 75mm",
+                "name": "Eagle 3-inch",
                 "sku": "SBL-DISP-HH-03",
                 "brand": "SBECO",
                 "tagline": "Heavy-duty 75mm (3-inch) tape gun for wide box sealing",
@@ -2465,7 +2465,7 @@ export const CATALOGUE = [
                   "Blade": "Hardened Stainless Steel",
                   "Tension": "Dual Spring Mechanism"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/eagle 3.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-11"
@@ -2475,9 +2475,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-4",
-                "name": "Tesa 6300 Standard Handheld Packaging Dispenser",
+                "name": "Eagle 2-inch",
                 "sku": "SBL-DISP-HH-04",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "Lightweight and durable manual packaging tape dispenser",
                 "badge": "Essential",
                 "description": "Versatile and lightweight manual tape gun suited for general packaging applications. Features adjustable roll brake and durable wiper plate for firm tape adhesion.",
@@ -2487,7 +2487,7 @@ export const CATALOGUE = [
                   "Weight": "380g",
                   "Blade": "Serrated Carbon Steel"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/eagle 2.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-5"
@@ -2497,10 +2497,10 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-5",
-                "name": "SBECO Noise-Reduction Silent Roll Dispenser",
+                "name": "Packex HD 3-inch",
                 "sku": "SBL-DISP-HH-05",
-                "brand": "SBECO",
-                "tagline": "Quiet-unwind handheld tape gun for noise-sensitive workplaces",
+                "brand": "Packex",
+                "tagline": "Heavy duty 75 mm tape dispenser for industrial sealing jobs.",
                 "badge": "Quiet Operation",
                 "description": "Specially designed dampening roller system reduces harsh unspooling noise by up to 15dB. Perfect for fulfillment centers and indoor packing stations where noise reduction is essential.",
                 "specs": {
@@ -2509,7 +2509,7 @@ export const CATALOGUE = [
                   "Core Diameter": "76mm",
                   "Handle": "Soft-Touch Ergonomic Rubber"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex HD 3.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-9"
@@ -2519,10 +2519,10 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-6",
-                "name": "Falcon Pro Handheld Carton Sealing Dispenser",
+                "name": "Packex MB 2-inch",
                 "sku": "SBL-DISP-HH-06",
-                "brand": "Falcon",
-                "tagline": "High-speed commercial carton tape gun with quick-load core",
+                "brand": "Packex",
+                "tagline": "Heavy duty 75 mm tape dispenser for industrial sealing jobs.",
                 "badge": "Professional",
                 "description": "Falcon Pro series tape dispenser built for fast-paced logistics lines. Quick-change core mechanism allows tape roll swaps in seconds.",
                 "specs": {
@@ -2531,7 +2531,7 @@ export const CATALOGUE = [
                   "Tensioning": "Micro-Adjustable Dial",
                   "Weight": "420g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Packex mb 2.png",
                 "similar": [
                   "handheld-dispenser-7",
                   "handheld-dispenser-8"
@@ -2541,9 +2541,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-7",
-                "name": "Eagle Comfort-Grip Handheld Packaging Dispenser",
+                "name": "Tesa 6300",
                 "sku": "SBL-DISP-HH-07",
-                "brand": "Eagle",
+                "brand": "Tesa",
                 "tagline": "Ergonomic handheld dispenser with anti-slip rubber grip",
                 "badge": "Popular",
                 "description": "Eagle packaging tape gun crafted with non-slip textured grip for maximum operator comfort and precision tape application.",
@@ -2553,7 +2553,7 @@ export const CATALOGUE = [
                   "Handle Type": "Molded Anti-Slip Rubber",
                   "Blade Guard": "Spring-Loaded Safety Cap"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa 6300.png",
                 "similar": [
                   "handheld-dispenser-6",
                   "handheld-dispenser-10"
@@ -2563,9 +2563,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-8",
-                "name": "YBICO H11 Heavy-Duty Metal Handheld Tape Dispenser",
+                "name": "Tesa Pack N Go",
                 "sku": "SBL-DISP-HH-08",
-                "brand": "YBICO",
+                "brand": "Tesa",
                 "tagline": "All-steel commercial tape dispenser for extreme duty environments",
                 "badge": "Premium",
                 "description": "Rugged chrome-plated steel frame tape dispenser built for harsh industrial environments. Features high-tensile spring steel tensioner and hardened cutter.",
@@ -2575,7 +2575,7 @@ export const CATALOGUE = [
                   "Blade": "Tempered Alloy Steel",
                   "Weight": "650g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa Pack N Go.png",
                 "similar": [
                   "handheld-dispenser-1",
                   "handheld-dispenser-3"
@@ -2585,9 +2585,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-9",
-                "name": "SBECO Low-Noise Handheld Tape Gun 50mm",
+                "name": "Easy Packer",
                 "sku": "SBL-DISP-HH-09",
-                "brand": "SBECO",
+                "brand": "Tesa",
                 "tagline": "Economical quiet-dispensing tape gun for office & logistics",
                 "badge": "Value",
                 "description": "Budget-friendly quiet-operation tape dispenser. Features smooth silicone pressure roller and dual-action blade shield.",
@@ -2597,7 +2597,7 @@ export const CATALOGUE = [
                   "Tensioning": "Knurled Screw Knob",
                   "Weight": "390g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Easy Packer.png",
                 "similar": [
                   "handheld-dispenser-5",
                   "handheld-dispenser-1"
@@ -2607,7 +2607,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-10",
-                "name": "Tesa 6000 Comfort Handheld Tape Dispenser 50mm",
+                "name": "Tesa Comfort",
                 "sku": "SBL-DISP-HH-10",
                 "brand": "Tesa",
                 "tagline": "Premium ergonomic tape gun with push-button blade retractor",
@@ -2619,7 +2619,7 @@ export const CATALOGUE = [
                   "Body": "Impact-Resistant Polymer & Metal",
                   "Weight": "460g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-2.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa Comfort.png",
                 "similar": [
                   "handheld-dispenser-2",
                   "handheld-dispenser-7"
@@ -2629,9 +2629,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "handheld-dispenser-11",
-                "name": "SBECO Extra-Wide Box Sealing Dispenser 100mm",
+                "name": "Tesa 6075",
                 "sku": "SBL-DISP-HH-11",
-                "brand": "SBECO",
+                "brand": "Tesa",
                 "tagline": "Heavy-duty 100mm (4-inch) tape gun for large carton closing",
                 "badge": "Specialty",
                 "description": "Extra-wide manual tape dispenser designed for 100mm wide tape rolls. Provides single-strip sealing for large corrugated containers.",
@@ -2641,7 +2641,7 @@ export const CATALOGUE = [
                   "Frame": "Heavy Plate Steel",
                   "Weight": "780g"
                 },
-                "imageUrl": "/images/Strap-Dispenser-1.png",
+                "imageUrl": "/images/Tape-dispensers/Manual Tape Dispensers/Tesa 6075.png",
                 "similar": [
                   "handheld-dispenser-3",
                   "handheld-dispenser-1"
@@ -2657,7 +2657,7 @@ export const CATALOGUE = [
             "products": [
               {
                 "id": "auto-dispenser-1",
-                "name": "SBECO Auto-Cut Electric Tape Dispenser M-1000",
+                "name": "SBECO M-1000",
                 "sku": "SBL-DISP-AT-01",
                 "brand": "SBECO",
                 "tagline": "Automatic electric tape dispenser with digital length selection",
@@ -2670,7 +2670,7 @@ export const CATALOGUE = [
                   "Power Supply": "AC 220V / 50Hz",
                   "Weight": "2.5kg"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/M1000.png",
                 "similar": [
                   "auto-dispenser-2",
                   "auto-dispenser-4"
@@ -2680,7 +2680,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-2",
-                "name": "SBECO Dual-Sensor Automatic Tape Dispenser ZCUT-9",
+                "name": "SBECO ZCUT-9",
                 "sku": "SBL-DISP-AT-02",
                 "brand": "SBECO",
                 "tagline": "Dual-roll automatic tape dispenser with infrared sensor feeding",
@@ -2693,7 +2693,7 @@ export const CATALOGUE = [
                   "Sensor Type": "Infrared Auto-Detect",
                   "Display": "Digital LED Display"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z CUT 9.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-6"
@@ -2703,9 +2703,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-3",
-                "name": "Tesa 6038 Automatic Water-Activated Gummed Paper Dispenser",
+                "name": "Z-Cut 9GR",
                 "sku": "SBL-DISP-AT-03",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "Automatic electronic water-activated gummed tape dispenser",
                 "badge": "Eco Choice",
                 "description": "High-performance electronic dispenser specifically designed for water-activated paper gummed tape. Features a built-in water heater and programmable preset keys for repetitive box sizes.",
@@ -2715,7 +2715,7 @@ export const CATALOGUE = [
                   "Water Tank Capacity": "1.5 Liters (Heated)",
                   "Tape Compatibility": "Reinforced & Non-Reinforced Kraft Gummed Tape"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/ZCUT-9GR Tape dispenser.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-5"
@@ -2725,9 +2725,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-4",
-                "name": "Eagle Auto-Dispenser Programmable Tape Cutter ED-100",
+                "name": "Z-Cut 870",
                 "sku": "SBL-DISP-AT-04",
-                "brand": "Eagle",
+                "brand": "SBECO",
                 "tagline": "Programmable automatic tape cutter with 6-preset memory",
                 "badge": "Precision",
                 "description": "Commercial programmable electric tape dispenser with 6 memory slots for pre-programmed length cycles. Features auto and manual operating modes.",
@@ -2737,7 +2737,7 @@ export const CATALOGUE = [
                   "Cutting Accuracy": "±1mm",
                   "Operating Modes": "Auto / Manual / Preset Loop"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 870.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-2"
@@ -2747,7 +2747,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-5",
-                "name": "SBECO Heavy-Duty Industrial Automatic Tape Feeder M-2000",
+                "name": "SBECO Z-Cut 2",
                 "sku": "SBL-DISP-AT-05",
                 "brand": "SBECO",
                 "tagline": "Heavy-duty automatic tape dispenser for wide rolls up to 100mm",
@@ -2759,7 +2759,7 @@ export const CATALOGUE = [
                   "Cut Length Range": "50mm - 999mm",
                   "Frame": "Heavy Steel Housing"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Z-Cut 2.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-3"
@@ -2769,9 +2769,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-6",
-                "name": "Falcon Electric Micro-Cut Tape Dispenser RT-7000",
+                "name": "Sbeco-8000 ATD",
                 "sku": "SBL-DISP-AT-06",
-                "brand": "Falcon",
+                "brand": "SBECO",
                 "tagline": "High-speed electronic tape dispenser with anti-jam sensor",
                 "badge": "High Speed",
                 "description": "Compact high-speed electric tape dispenser with optical safety sensor and anti-jam protection mechanism. Ideal for assembly line and electronic component bundling.",
@@ -2781,7 +2781,7 @@ export const CATALOGUE = [
                   "Tape Width Range": "6mm - 60mm",
                   "Safety": "Anti-Jam Auto Shut-off"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/Sbeco-8000 ATD.png",
                 "similar": [
                   "auto-dispenser-2",
                   "auto-dispenser-7"
@@ -2791,9 +2791,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "auto-dispenser-7",
-                "name": "YBICO Electronic Auto-Laminating Tape Dispenser ET-80",
+                "name": "555E Sbeco Water",
                 "sku": "SBL-DISP-AT-07",
-                "brand": "YBICO",
+                "brand": "Sbeco",
                 "tagline": "Precision electronic tape dispenser with auto piece counter",
                 "badge": "Premium",
                 "description": "Professional electronic tape dispenser featuring a built-in 4-digit piece counter and auto-repeat cutting function for automated packaging work.",
@@ -2803,7 +2803,7 @@ export const CATALOGUE = [
                   "Piece Counter": "4-Digit LED Display",
                   "Blade Material": "Tungsten Carbide"
                 },
-                "imageUrl": "/images/tape_dispensers.png",
+                "imageUrl": "/images/Tape-dispensers/Automatic Tape Dispensers/555E Sbeco WAT.png",
                 "similar": [
                   "auto-dispenser-1",
                   "auto-dispenser-4"
@@ -2819,9 +2819,9 @@ export const CATALOGUE = [
             "products": [
               {
                 "id": "tabletop-dispenser-1",
-                "name": "SBECO Dual-Core Heavy Weighted Table Top Dispenser",
+                "name": "Duro Inov 80",
                 "sku": "SBL-DISP-TT-01",
-                "brand": "SBECO",
+                "brand": "Duro",
                 "tagline": "Weighted desktop tape dispenser with dual 1-inch & 3-inch cores",
                 "badge": "Essential",
                 "description": "Classic heavy-weighted desktop tape dispenser designed for one-handed operation. Includes interchangeable 1-inch and 3-inch tape cores for small office rolls and large industrial rolls up to 25mm width.",
@@ -2841,9 +2841,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-2",
-                "name": "Tesa 6012 Heavy-Duty Desktop Multi-Roll Dispenser",
+                "name": "Bag Tape Dispenser",
                 "sku": "SBL-DISP-TT-02",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "Heavy-duty metal benchtop dispenser for 50mm or multi-rolls",
                 "badge": "Industrial",
                 "description": "Rugged metal benchtop tape dispenser engineered to hold either one 50mm wide roll or two 25mm wide rolls simultaneously. Can be screw-mounted or clamped to packing tables.",
@@ -2863,9 +2863,9 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-3",
-                "name": "Falcon Office Table Top Tape Dispenser TT-200",
+                "name": "Taped Mini",
                 "sku": "SBL-DISP-TT-03",
-                "brand": "Falcon",
+                "brand": "SBECO",
                 "tagline": "Compact weighted table top tape dispenser for office & retail",
                 "badge": "Popular",
                 "description": "Sleek and compact weighted desktop dispenser with anti-skid rubber pads. Ideal for office desk, retail counter, or shipping desk use.",
@@ -2885,7 +2885,7 @@ export const CATALOGUE = [
               },
               {
                 "id": "tabletop-dispenser-4",
-                "name": "SBECO Multi-Roll Benchtop Tape Dispenser 100mm",
+                "name": "Omega Table Top Tape Dispenser",
                 "sku": "SBL-DISP-TT-04",
                 "brand": "SBECO",
                 "tagline": "Industrial 100mm benchtop dispenser holding up to 4 rolls",
