@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -26,7 +26,7 @@ export const CATALOGUE = [
                   "Width": "12mm",
                   "Length": "50m",
                   "Backing Material": "Crepe Paper",
-                  "Temperature Resistance": "60�C",
+                  "Temperature Resistance": "60C",
                   "Adhesive Type": "Natural Rubber"
                 },
                 "imageUrl": "/images/tapes/Masking tapes and films/SBECO-GP-Masking-Tape.png",
@@ -50,7 +50,7 @@ export const CATALOGUE = [
                   "Width": "18mm",
                   "Length": "50m",
                   "Backing Material": "Crepe Paper",
-                  "Temperature Resistance": "80�C",
+                  "Temperature Resistance": "80C",
                   "Adhesive Type": "Natural Rubber"
                 },
                 "imageUrl": "/images/tapes/Masking tapes and films/Tesa 53123 Masking Tape.png",
