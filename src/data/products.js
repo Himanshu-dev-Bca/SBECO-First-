@@ -1,4 +1,4 @@
-﻿// Complete product catalogue data — single source of truth
+// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -6132,6 +6132,1034 @@ export const CATALOGUE = [
               "bubble-wrap-10mm"
             ],
             "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "air-bubble-film",
+        "name": "Air Bubble Film",
+        "products": [
+          {
+            "id": "air-bubble-film-180g",
+            "name": "SBECO Air Bubble Film 180G",
+            "sku": "SBL-ABF-180",
+            "brand": "SBECO",
+            "tagline": "Lightweight air bubble film for general-purpose cushioning",
+            "badge": "Popular",
+            "description": "SBECO Air Bubble Film 180G is a cost-effective protective packaging material designed for general-purpose cushioning. Made from high-quality LLDPE, it provides reliable protection for lightweight and moderately fragile items during transit and storage.",
+            "specs": {
+              "GSM": "180",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Standard"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-180-G.png",
+            "similar": ["air-bubble-film-250g", "air-bubble-film-300g", "air-bubble-film-350g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-film-250g",
+            "name": "SBECO Air Bubble Film 250G",
+            "sku": "SBL-ABF-250",
+            "brand": "SBECO",
+            "tagline": "Medium-weight air bubble film for enhanced item protection",
+            "badge": "Essential",
+            "description": "SBECO Air Bubble Film 250G offers enhanced cushioning compared to lower GSM variants. Suitable for moderately heavy items requiring reliable shock absorption and surface protection during shipping and handling.",
+            "specs": {
+              "GSM": "250",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Standard"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-250-G.png",
+            "similar": ["air-bubble-film-180g", "air-bubble-film-300g", "air-bubble-film-350g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-film-300g",
+            "name": "SBECO Air Bubble Film 300G",
+            "sku": "SBL-ABF-300",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty air bubble film for industrial-grade protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO Air Bubble Film 300G is an industrial-grade protective material with higher GSM for superior cushioning. Ideal for heavy, fragile, or high-value items requiring maximum protection during transit.",
+            "specs": {
+              "GSM": "300",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-300-G.png",
+            "similar": ["air-bubble-film-250g", "air-bubble-film-350g", "air-bubble-film-180g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-film-350g",
+            "name": "SBECO Air Bubble Film 350G",
+            "sku": "SBL-ABF-350",
+            "brand": "SBECO",
+            "tagline": "Premium heavy-duty air bubble film for maximum protection",
+            "badge": "Premium",
+            "description": "SBECO Air Bubble Film 350G is the highest GSM variant in the range, providing premium-grade cushioning for the most fragile and valuable items. Thick bubble layer ensures superior shock absorption.",
+            "specs": {
+              "GSM": "350",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Premium Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Film-350-G.png",
+            "similar": ["air-bubble-film-300g", "air-bubble-film-250g", "air-bubble-film-lamination"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-film-lamination",
+            "name": "SBECO Air Bubble Film with Lamination",
+            "sku": "SBL-ABF-LAM",
+            "brand": "SBECO",
+            "tagline": "Laminated air bubble film for dust-free and moisture-resistant packaging",
+            "badge": "Premium",
+            "description": "SBECO Air Bubble Film with Lamination features an additional laminated layer that provides enhanced moisture resistance and dust protection. Ideal for electronics, pharmaceutical, and food-grade packaging applications.",
+            "specs": {
+              "GSM": "350+",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE with Lamination",
+              "Width": "Multiple sizes available",
+              "Lamination": "Yes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["air-bubble-film-350g", "air-bubble-antistatic", "air-bubble-pouch"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-pouch",
+            "name": "SBECO Air Bubble Pouch",
+            "sku": "SBL-ABP-001",
+            "brand": "SBECO",
+            "tagline": "Pre-cut air bubble pouches for individual item protection",
+            "badge": "Popular",
+            "description": "SBECO Air Bubble Pouches are pre-cut, ready-to-use protective sleeves made from high-quality bubble film. Available in multiple sizes for wrapping individual items like electronics, glassware, and delicate components.",
+            "specs": {
+              "Material": "LLDPE Bubble Film",
+              "Sizes": "Multiple sizes available",
+              "Closure": "Self-seal / Open end",
+              "Bubble Diameter": "10mm",
+              "Usage": "Individual item wrapping"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["air-bubble-film-250g", "air-bubble-film-350g", "air-bubble-roll-machine"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-roll-machine",
+            "name": "SBECO Air Bubble Roll Machine Grade",
+            "sku": "SBL-ABR-MCH",
+            "brand": "SBECO",
+            "tagline": "Machine-grade bubble rolls for high-volume automated packaging",
+            "badge": "Professional",
+            "description": "SBECO Machine Grade Air Bubble Rolls are designed for use with automated packaging machines. Consistent bubble quality and roll dimensions ensure smooth feed and reliable performance in high-throughput operations.",
+            "specs": {
+              "Material": "LLDPE",
+              "Bubble Diameter": "10mm",
+              "Roll Width": "Standard machine widths",
+              "Roll Length": "Extended length",
+              "Type": "Machine Grade"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["air-bubble-film-350g", "air-bubble-antistatic", "air-bubble-film-lamination"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-antistatic",
+            "name": "SBECO Antistatic Air Bubble Film",
+            "sku": "SBL-ABF-ESD",
+            "brand": "SBECO",
+            "tagline": "ESD-safe antistatic bubble film for electronics packaging",
+            "badge": "Professional",
+            "description": "SBECO Antistatic Air Bubble Film is specially formulated to prevent static charge buildup. Essential for packaging electronic components, PCBs, and sensitive equipment where electrostatic discharge (ESD) can cause damage.",
+            "specs": {
+              "Material": "LLDPE with Antistatic Additive",
+              "Bubble Diameter": "10mm",
+              "Surface Resistivity": "10^9 – 10^12 Ohm",
+              "Color": "Pink",
+              "ESD Safe": "Yes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["air-bubble-film-lamination", "air-bubble-film-350g", "air-bubble-pouch"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "foam-sheets-rolls",
+        "name": "Foam Sheets & Rolls",
+        "products": [
+          {
+            "id": "epe-foam-roll-consumable",
+            "name": "SBECO EPE Foam Roll",
+            "sku": "SBL-FOAM-ROLL-01",
+            "brand": "SBECO",
+            "tagline": "Expanded polyethylene foam roll for surface protection and cushioning",
+            "badge": "Essential",
+            "description": "SBECO EPE Foam Roll provides excellent cushioning and surface protection for a wide range of products. Lightweight, flexible, and easy to cut. Ideal for wrapping furniture, appliances, and industrial components.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Thickness": "1mm – 10mm",
+              "Width": "1000mm / 1200mm",
+              "Length": "100m – 200m per roll",
+              "Density": "20–30 kg/m³"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["epe-foam-sheet", "epe-foam-pouch", "epe-foam-roll-laminated"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "epe-foam-sheet",
+            "name": "SBECO EPE Foam Sheet 2000x1000",
+            "sku": "SBL-FOAM-SHT-01",
+            "brand": "SBECO",
+            "tagline": "Pre-cut foam sheets for layering and interleaving protection",
+            "badge": "Popular",
+            "description": "SBECO EPE Foam Sheets are pre-cut to standard 2000x1000mm dimensions for easy use as interleaving, wrapping, and cushioning material. Available in various thicknesses to suit different protection needs.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Size": "2000mm x 1000mm",
+              "Thickness": "2mm – 50mm",
+              "Density": "20–30 kg/m³",
+              "Color": "White"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["epe-foam-roll-consumable", "epe-foam-pouch", "epe-foam-plank"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-pouch",
+            "name": "SBECO EPE Foam Pouch",
+            "sku": "SBL-FOAM-PCH-01",
+            "brand": "SBECO",
+            "tagline": "Pre-formed foam pouches for individual item cushioning",
+            "badge": "Popular",
+            "description": "SBECO EPE Foam Pouches are ready-to-use protective sleeves made from expanded polyethylene foam. Perfect for wrapping individual items like bottles, glassware, electronics, and delicate components.",
+            "specs": {
+              "Material": "EPE Foam",
+              "Sizes": "Multiple sizes available",
+              "Thickness": "1mm – 3mm",
+              "Closure": "Open end",
+              "Usage": "Individual item wrapping"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["epe-foam-sheet", "epe-foam-roll-consumable", "air-bubble-pouch"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-roll-laminated",
+            "name": "SBECO EPE Foam Roll with Lamination",
+            "sku": "SBL-FOAM-LAM-01",
+            "brand": "SBECO",
+            "tagline": "Laminated foam roll for enhanced moisture and abrasion resistance",
+            "badge": "Premium",
+            "description": "SBECO EPE Foam Roll with Lamination features a protective laminated layer bonded to the foam surface. Provides enhanced resistance against moisture, abrasion, and tearing for high-value or sensitive products.",
+            "specs": {
+              "Material": "EPE Foam + PE Lamination",
+              "Thickness": "2mm – 10mm",
+              "Width": "1000mm / 1200mm",
+              "Lamination": "LDPE / HDPE",
+              "Density": "20–30 kg/m³"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["epe-foam-roll-consumable", "epe-foam-sheet", "air-bubble-film-lamination"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-plank",
+            "name": "SBECO EPE Foam Plank",
+            "sku": "SBL-FOAM-PLK-01",
+            "brand": "SBECO",
+            "tagline": "Thick foam planks for heavy-duty cushioning and void filling",
+            "badge": "Heavy Duty",
+            "description": "SBECO EPE Foam Planks are thick, high-density foam blocks designed for heavy-duty cushioning, void filling, and custom die-cut packaging inserts. Available in various thicknesses up to 100mm.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Size": "2000mm x 1000mm",
+              "Thickness": "20mm – 100mm",
+              "Density": "25–35 kg/m³",
+              "Color": "White"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["epe-foam-sheet", "epe-foam-roll-consumable", "epe-foam-pouch"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "bhive-paper",
+        "name": "BHive Paper",
+        "products": [
+          {
+            "id": "bhive-paper-roll",
+            "name": "SBECO BHive Paper Roll",
+            "sku": "SBL-BHIVE-ROLL",
+            "brand": "SBECO",
+            "tagline": "Eco-friendly honeycomb paper wrap for sustainable packaging",
+            "badge": "Eco-Friendly",
+            "description": "SBECO BHive Paper is an innovative honeycomb-structured wrapping paper that expands to cushion and protect items. A sustainable alternative to bubble wrap, it is 100% recyclable and biodegradable.",
+            "specs": {
+              "Material": "Kraft Paper",
+              "Structure": "Honeycomb expandable",
+              "Width": "380mm / 500mm",
+              "Roll Length": "50m – 250m",
+              "Recyclable": "100%"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["bhive-paper-sheet", "air-bubble-film-250g", "epe-foam-roll-consumable"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "bhive-paper-sheet",
+            "name": "SBECO BHive Paper Sheet",
+            "sku": "SBL-BHIVE-SHT",
+            "brand": "SBECO",
+            "tagline": "Pre-cut honeycomb paper sheets for individual item wrapping",
+            "badge": "Eco-Friendly",
+            "description": "SBECO BHive Paper Sheets are pre-cut honeycomb paper pieces ideal for wrapping individual products. Provides cushioning protection while being completely eco-friendly and compostable.",
+            "specs": {
+              "Material": "Kraft Paper",
+              "Structure": "Honeycomb expandable",
+              "Sheet Sizes": "Multiple sizes available",
+              "Recyclable": "100%",
+              "Compostable": "Yes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["bhive-paper-roll", "air-bubble-pouch", "epe-foam-pouch"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "dunnage-bags",
+        "name": "Dunnage Bags",
+        "products": [
+          {
+            "id": "dunnage-bag-pp-woven",
+            "name": "SBECO Dunnage Bag PP Woven",
+            "sku": "SBL-DUN-PPW",
+            "brand": "SBECO",
+            "tagline": "PP woven dunnage bag for securing cargo in containers",
+            "badge": "Heavy Duty",
+            "description": "SBECO PP Woven Dunnage Bags are inflatable airbags used to fill voids and secure cargo inside shipping containers, trucks, and rail cars. PP woven construction provides high burst strength and durability.",
+            "specs": {
+              "Material": "PP Woven",
+              "Inflation": "Air valve",
+              "Burst Pressure": "High",
+              "Sizes": "Multiple sizes available",
+              "Usage": "Container void filling"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["dunnage-bag-kraft", "dunnage-bag-vinyl"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "dunnage-bag-kraft",
+            "name": "SBECO Dunnage Bag Kraft Paper",
+            "sku": "SBL-DUN-KFT",
+            "brand": "SBECO",
+            "tagline": "Kraft paper dunnage bag for lightweight cargo bracing",
+            "badge": "Essential",
+            "description": "SBECO Kraft Paper Dunnage Bags combine a multi-ply kraft paper outer layer with an inflatable PE inner bladder. Cost-effective solution for bracing lighter cargo loads in transit.",
+            "specs": {
+              "Material": "Multi-ply Kraft Paper + PE Bladder",
+              "Inflation": "Air valve",
+              "Burst Pressure": "Medium",
+              "Sizes": "Multiple sizes available",
+              "Recyclable": "Partially"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["dunnage-bag-pp-woven", "dunnage-bag-vinyl"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "dunnage-bag-vinyl",
+            "name": "SBECO Dunnage Bag Vinyl",
+            "sku": "SBL-DUN-VNL",
+            "brand": "SBECO",
+            "tagline": "Reusable vinyl dunnage bag for heavy-duty cargo securing",
+            "badge": "Premium",
+            "description": "SBECO Vinyl Dunnage Bags are reusable, heavy-duty airbags designed for securing the heaviest cargo loads. Vinyl construction provides exceptional durability, puncture resistance, and reusability.",
+            "specs": {
+              "Material": "Vinyl",
+              "Inflation": "Air valve",
+              "Burst Pressure": "Very High",
+              "Reusable": "Yes",
+              "Usage": "Heavy cargo securing"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "similar": ["dunnage-bag-pp-woven", "dunnage-bag-kraft"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "silica-gel-desiccants",
+        "name": "Silica Gel & Desiccants",
+        "products": [
+          {
+            "id": "silica-gel-1g",
+            "name": "SBECO Silica Gel 1g",
+            "sku": "SBL-SG-001",
+            "brand": "SBECO",
+            "tagline": "1 gram silica gel sachet for small package moisture protection",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 1g sachets are compact desiccant packets designed to absorb moisture inside small packages. Protects electronics, medications, food items, and leather goods from humidity damage.",
+            "specs": {
+              "Weight": "1 gram",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Small packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-2g", "silica-gel-5g", "silica-gel-10g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-2g",
+            "name": "SBECO Silica Gel 2g",
+            "sku": "SBL-SG-002",
+            "brand": "SBECO",
+            "tagline": "2 gram silica gel sachet for compact moisture absorption",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 2g sachets provide reliable moisture protection for small to medium packages. Suitable for pharmaceutical, electronics, and food packaging applications.",
+            "specs": {
+              "Weight": "2 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Small–medium packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-1g", "silica-gel-5g", "silica-gel-10g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-5g",
+            "name": "SBECO Silica Gel 5g",
+            "sku": "SBL-SG-005",
+            "brand": "SBECO",
+            "tagline": "5 gram silica gel sachet for medium package moisture control",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 5g sachets are the most widely used desiccant size for medium packages. Protects shoes, handbags, electronic devices, and packaged food from moisture and mould.",
+            "specs": {
+              "Weight": "5 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Medium packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-2g", "silica-gel-10g", "silica-gel-20g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-10g",
+            "name": "SBECO Silica Gel 10g",
+            "sku": "SBL-SG-010",
+            "brand": "SBECO",
+            "tagline": "10 gram silica gel sachet for larger package protection",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 10g sachets deliver enhanced moisture absorption for larger packages and shipping cartons. A versatile desiccant for multiple industrial applications.",
+            "specs": {
+              "Weight": "10 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Large packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-5g", "silica-gel-20g", "silica-gel-25g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-20g",
+            "name": "SBECO Silica Gel 20g",
+            "sku": "SBL-SG-020",
+            "brand": "SBECO",
+            "tagline": "20 gram silica gel sachet for carton-level moisture control",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 20g sachets provide moisture protection at the carton level. Suitable for large packaging, machinery parts, and bulk goods requiring humidity control.",
+            "specs": {
+              "Weight": "20 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Cartons & large packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-10g", "silica-gel-25g", "silica-gel-50g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-25g",
+            "name": "SBECO Silica Gel 25g",
+            "sku": "SBL-SG-025",
+            "brand": "SBECO",
+            "tagline": "25 gram silica gel sachet for carton and box protection",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 25g sachets are designed for medium to large cartons and shipping boxes. Provides sustained moisture absorption throughout the supply chain.",
+            "specs": {
+              "Weight": "25 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Cartons & shipping boxes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-20g", "silica-gel-50g", "silica-gel-100g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-50g",
+            "name": "SBECO Silica Gel 50g",
+            "sku": "SBL-SG-050",
+            "brand": "SBECO",
+            "tagline": "50 gram silica gel sachet for bulk packaging moisture protection",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 50g sachets deliver powerful moisture absorption for bulk packaging, large cartons, and industrial applications requiring extended humidity control.",
+            "specs": {
+              "Weight": "50 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Bulk packaging"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-25g", "silica-gel-100g", "silica-gel-250g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-100g",
+            "name": "SBECO Silica Gel 100g",
+            "sku": "SBL-SG-100",
+            "brand": "SBECO",
+            "tagline": "100 gram silica gel sachet for heavy-duty moisture control",
+            "badge": "Heavy Duty",
+            "description": "SBECO Silica Gel 100g sachets are designed for heavy-duty moisture control in large containers, machinery packaging, and long-duration storage applications.",
+            "specs": {
+              "Weight": "100 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Heavy-duty industrial"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-50g", "silica-gel-250g", "silica-gel-500g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-250g",
+            "name": "SBECO Silica Gel 250g",
+            "sku": "SBL-SG-250",
+            "brand": "SBECO",
+            "tagline": "250 gram silica gel sachet for container-level desiccation",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel 250g sachets provide container-level moisture protection. Ideal for export packaging, ocean freight, and long-term storage of moisture-sensitive goods.",
+            "specs": {
+              "Weight": "250 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Container & export packaging"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-100g", "silica-gel-500g", "silica-gel-1kg"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-500g",
+            "name": "SBECO Silica Gel 500g",
+            "sku": "SBL-SG-500",
+            "brand": "SBECO",
+            "tagline": "500 gram silica gel sachet for large-volume desiccation",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel 500g sachets provide extended moisture absorption for large containers, machinery crates, and industrial storage. Ideal for export shipments across oceans.",
+            "specs": {
+              "Weight": "500 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Large containers"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-250g", "silica-gel-1kg", "silica-gel-1kg-hanger"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-1kg",
+            "name": "SBECO Silica Gel 1kg",
+            "sku": "SBL-SG-1000",
+            "brand": "SBECO",
+            "tagline": "1 kilogram silica gel sachet for maximum moisture protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO Silica Gel 1kg is the largest standard sachet, delivering maximum moisture absorption for heavy machinery, full container loads, and long-term ocean freight storage.",
+            "specs": {
+              "Weight": "1 kg",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Full container loads"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-500g", "silica-gel-1kg-hanger", "silica-gel-beads"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-1kg-hanger",
+            "name": "SBECO Silica Gel 1kg with Hanger",
+            "sku": "SBL-SG-1000H",
+            "brand": "SBECO",
+            "tagline": "Hangable 1kg silica gel sachet for container ceiling mounting",
+            "badge": "Premium",
+            "description": "SBECO Silica Gel 1kg with Hanger includes an integrated hook for suspending inside shipping containers, warehouses, and storage areas. Maximizes air exposure for optimal moisture absorption.",
+            "specs": {
+              "Weight": "1 kg with hanger",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Mounting": "Hook / Hanger"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-1kg", "silica-gel-500g", "clay-desiccant"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-beads",
+            "name": "SBECO Silica Gel Beads",
+            "sku": "SBL-SG-BEADS",
+            "brand": "SBECO",
+            "tagline": "Loose silica gel beads for custom desiccant applications",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel Beads are loose-form desiccant beads available in bulk for custom packaging and refillable desiccant applications. Perfect for filling custom sachets or desiccant cartridges.",
+            "specs": {
+              "Color Options": "Blue & White",
+              "Form": "Beads",
+              "Packaging Type": "Paper bag / Bulk",
+              "Mesh Size": "Standard",
+              "Usage": "Custom / Refillable"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-1kg", "clay-desiccant", "silica-gel-100g"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "clay-desiccant",
+            "name": "SBECO Clay Desiccant",
+            "sku": "SBL-CLAY-DES",
+            "brand": "SBECO",
+            "tagline": "Natural clay desiccant sachets for cost-effective moisture control",
+            "badge": "Value Pick",
+            "description": "SBECO Clay Desiccants are natural, non-toxic moisture absorbers made from bentonite clay. A cost-effective alternative to silica gel, available in multiple weights and also in Tyvek packaging.",
+            "specs": {
+              "Weight": "Various weights available",
+              "Material": "Bentonite Clay",
+              "Packaging Type": "Paper (Also Available in Tyvek)",
+              "Non-Toxic": "Yes",
+              "Application": "General moisture control"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["silica-gel-100g", "silica-gel-beads", "silica-gel-1kg"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "vci-products",
+        "name": "VCI Products",
+        "products": [
+          {
+            "id": "vci-paper-plain",
+            "name": "SBECO VCI Paper Plain",
+            "sku": "SBL-VCI-PPR",
+            "brand": "SBECO",
+            "tagline": "VCI-coated kraft paper for ferrous metal corrosion prevention",
+            "badge": "Professional",
+            "description": "SBECO VCI Paper Plain is a virgin kraft paper coated with Vapour Corrosion Inhibitor (VCI) chemicals. When wrapped around ferrous metal parts, it releases protective vapours that prevent rust and corrosion.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "No Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-with-lamination", "vci-paper-yellow-metal", "vci-hdpe-laminate"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "vci-with-lamination",
+            "name": "SBECO VCI With Lamination",
+            "sku": "SBL-VCI-LAM",
+            "brand": "SBECO",
+            "tagline": "Laminated VCI paper for enhanced moisture and corrosion barrier",
+            "badge": "Premium",
+            "description": "SBECO VCI With Lamination combines VCI-coated kraft paper with a laminated moisture barrier. Provides dual protection against both corrosion and moisture for critical metal components.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-paper-plain", "vci-hdpe-laminate", "vci-plastic-film"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-paper-yellow-metal",
+            "name": "SBECO VCI Paper for Yellow Metal",
+            "sku": "SBL-VCI-YMT",
+            "brand": "SBECO",
+            "tagline": "Specialized VCI paper for copper, brass, and yellow metal protection",
+            "badge": "Professional",
+            "description": "SBECO VCI Paper for Yellow Metal is specially formulated to protect non-ferrous yellow metals such as copper, brass, and bronze from tarnishing and corrosion during storage and shipping.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-paper-plain", "vci-with-lamination", "vci-hdpe-laminate"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-hdpe-laminate",
+            "name": "SBECO VCI With HDPE Laminate",
+            "sku": "SBL-VCI-HDPE",
+            "brand": "SBECO",
+            "tagline": "HDPE-laminated VCI paper for heavy-duty corrosion protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO VCI With HDPE Laminate features a heavy-duty HDPE film laminated to VCI paper, providing the strongest barrier against moisture ingress while delivering corrosion-inhibiting vapours.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-with-lamination", "vci-paper-plain", "vci-plastic-film"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-plastic-film",
+            "name": "SBECO VCI Plastic Film",
+            "sku": "SBL-VCI-FILM",
+            "brand": "SBECO",
+            "tagline": "VCI-treated plastic film for wrapping and bagging metal parts",
+            "badge": "Popular",
+            "description": "SBECO VCI Plastic Film is an LDPE film treated with VCI chemicals for wrapping, bagging, and covering metal parts. Available in flat bags, tubing, shrink covers, and 3D covers.",
+            "specs": {
+              "Material": "LDPE Natural with VCI Chemical",
+              "Size": "1 mtr wide (Slit Tube)",
+              "Colour": "Blue & Yellow",
+              "Thickness": "100 Micron",
+              "Options": "Printing / Pouches / 3D Covers"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-paper-plain", "vci-with-lamination", "vci-powder"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "vci-powder",
+            "name": "SBECO VCI Powder",
+            "sku": "SBL-VCI-PWD",
+            "brand": "SBECO",
+            "tagline": "VCI powder for sprinkle-application corrosion protection",
+            "badge": "Professional",
+            "description": "SBECO VCI Powder is a dry powder form of vapour corrosion inhibitor that can be sprinkled directly onto metal surfaces or into packaging. Available in sachets and bulk packs.",
+            "specs": {
+              "VCI Type": "Powder",
+              "Packing Type": "Sachets & Bulk Pack",
+              "Packing Available": "1g, 2g, 5g, 10g, 25g, 50g & more",
+              "Application": "Sprinkle / Disperse",
+              "Metal Type": "Ferrous & Non-Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": ["vci-plastic-film", "vci-paper-plain", "vci-with-lamination"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "cable-ties",
+        "name": "Cable Ties",
+        "products": [
+          {
+            "id": "cable-tie-4",
+            "name": "SBECO Cable Tie 4 Inch",
+            "sku": "SBL-CT-004",
+            "brand": "SBECO",
+            "tagline": "4-inch nylon cable tie for small bundling applications",
+            "badge": "Essential",
+            "description": "SBECO 4-inch Cable Ties are compact nylon zip ties ideal for bundling small wire groups, securing cables in tight spaces, and light-duty fastening applications.",
+            "specs": {
+              "Size": "4 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-8", "cable-tie-10", "cable-tie-12"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-8",
+            "name": "SBECO Cable Tie 8 Inch",
+            "sku": "SBL-CT-008",
+            "brand": "SBECO",
+            "tagline": "8-inch nylon cable tie for medium bundling applications",
+            "badge": "Popular",
+            "description": "SBECO 8-inch Cable Ties are versatile nylon zip ties suitable for bundling medium wire groups, securing hoses, and general-purpose fastening in industrial and commercial environments.",
+            "specs": {
+              "Size": "8 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-4", "cable-tie-10", "cable-tie-12"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "cable-tie-10",
+            "name": "SBECO Cable Tie 10 Inch",
+            "sku": "SBL-CT-010",
+            "brand": "SBECO",
+            "tagline": "10-inch nylon cable tie for versatile industrial use",
+            "badge": "Popular",
+            "description": "SBECO 10-inch Cable Ties offer a versatile length for a wide range of industrial bundling, cable management, and securing applications. Strong nylon construction ensures reliable hold.",
+            "specs": {
+              "Size": "10 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-8", "cable-tie-12", "cable-tie-16"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-12",
+            "name": "SBECO Cable Tie 12 Inch",
+            "sku": "SBL-CT-012",
+            "brand": "SBECO",
+            "tagline": "12-inch nylon cable tie for larger bundle management",
+            "badge": "Essential",
+            "description": "SBECO 12-inch Cable Ties are designed for larger bundling applications including thick cable runs, pipe bundling, and heavy-duty securing tasks in facilities and warehouses.",
+            "specs": {
+              "Size": "12 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-10", "cable-tie-16", "cable-tie-20"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-16",
+            "name": "SBECO Cable Tie 16 Inch",
+            "sku": "SBL-CT-016",
+            "brand": "SBECO",
+            "tagline": "16-inch nylon cable tie for heavy-duty bundling",
+            "badge": "Heavy Duty",
+            "description": "SBECO 16-inch Cable Ties deliver heavy-duty performance for securing large cable bundles, pipes, and equipment. Extra length accommodates larger circumferences with ease.",
+            "specs": {
+              "Size": "16 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-12", "cable-tie-20", "cable-tie-24"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "cable-tie-20",
+            "name": "SBECO Cable Tie 20 Inch",
+            "sku": "SBL-CT-020",
+            "brand": "SBECO",
+            "tagline": "20-inch nylon cable tie for extra-large bundling applications",
+            "badge": "Heavy Duty",
+            "description": "SBECO 20-inch Cable Ties are extra-long ties designed for securing large bundles, palletizing, and industrial applications where standard length ties are insufficient.",
+            "specs": {
+              "Size": "20 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-16", "cable-tie-24", "cable-tie-12"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-24",
+            "name": "SBECO Cable Tie 24 Inch",
+            "sku": "SBL-CT-024",
+            "brand": "SBECO",
+            "tagline": "24-inch nylon cable tie for maximum-size bundling",
+            "badge": "Professional",
+            "description": "SBECO 24-inch Cable Ties are the largest in the range, designed for maximum-circumference bundling, pallet securing, and heavy-duty industrial fastening applications.",
+            "specs": {
+              "Size": "24 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["cable-tie-20", "cable-tie-16", "cable-tie-12"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "glue-guns-sticks",
+        "name": "Hot Melt Glue Guns & Sticks",
+        "products": [
+          {
+            "id": "glue-sticks-very-high-bond",
+            "name": "SBECO Glue Sticks Very High Bond",
+            "sku": "SBL-GLUE-VHB",
+            "brand": "Wonder",
+            "tagline": "Very high bond hot melt glue sticks for maximum adhesion",
+            "badge": "Heavy Duty",
+            "description": "SBECO Very High Bond Glue Sticks are yellow-colored hot melt adhesive sticks delivering the strongest bond strength in the range. Ideal for heavy-duty bonding of wood, plastic, fabric, and mixed materials.",
+            "specs": {
+              "Color": "Yellow",
+              "Bonding": "High",
+              "Diameter": "11 mm",
+              "Brand": "Wonder",
+              "Application": "Heavy-duty bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["glue-sticks-milky-white", "glue-sticks-high-bond", "glue-sticks-clear"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "glue-sticks-milky-white",
+            "name": "SBECO Glue Sticks Milky White",
+            "sku": "SBL-GLUE-MW",
+            "brand": "Wonder",
+            "tagline": "Milky white glue sticks with medium bond for general use",
+            "badge": "Popular",
+            "description": "SBECO Milky White Glue Sticks provide a clean, medium-bond adhesive suitable for general crafting, packaging, and light industrial bonding applications. Smooth feed and consistent melt.",
+            "specs": {
+              "Color": "Milky White",
+              "Bonding": "Medium",
+              "Diameter": "11 mm",
+              "Brand": "Wonder",
+              "Application": "General purpose"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["glue-sticks-very-high-bond", "glue-sticks-high-bond", "glue-sticks-clear"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "glue-sticks-high-bond",
+            "name": "SBECO Glue Sticks High Bond",
+            "sku": "SBL-GLUE-HB",
+            "brand": "Niyo",
+            "tagline": "High bond hot melt glue sticks for strong adhesion",
+            "badge": "Essential",
+            "description": "SBECO High Bond Glue Sticks deliver strong adhesive performance for packaging, woodworking, and industrial bonding. Yellow-colored for high visibility during application.",
+            "specs": {
+              "Color": "Yellow",
+              "Bonding": "High",
+              "Diameter": "11 mm",
+              "Brand": "Niyo",
+              "Application": "Industrial bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["glue-sticks-very-high-bond", "glue-sticks-milky-white", "glue-sticks-clear"],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "glue-sticks-clear",
+            "name": "SBECO Glue Sticks Clear",
+            "sku": "SBL-GLUE-CLR",
+            "brand": "Niyo",
+            "tagline": "Clear transparent glue sticks for invisible bonding",
+            "badge": "Popular",
+            "description": "SBECO Clear Glue Sticks provide an invisible bond line, making them perfect for applications where aesthetics matter. Medium bonding strength suitable for crafts, packaging, and light industrial use.",
+            "specs": {
+              "Color": "Clear",
+              "Bonding": "Medium",
+              "Diameter": "11 mm",
+              "Brand": "Niyo",
+              "Application": "Clean invisible bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": ["glue-sticks-milky-white", "glue-sticks-high-bond", "glue-sticks-very-high-bond"],
+            "dateAdded": "2026-08-16",
             "isBestSeller": false
           }
         ]
