@@ -43,7 +43,7 @@ export const CATALOGUE = [
                 "name": "Tesa 53123 Masking Tape",
                 "sku": "SBL-TAPE-MSK-02",
                 "brand": "Tesa",
-                "tagline": "Premium-grade masking tape designed for general purpose applications.",
+                "tagline": "gotta change this one",
                 "badge": "Essential",
                 "description": "Premium general purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
                 "specs": {
