@@ -1,4 +1,4 @@
-﻿// Complete product catalogue data — single source of truth
+// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -5967,6 +5967,607 @@ export const CATALOGUE = [
                 "isBestSeller": false
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "packaging-consumables",
+    "name": "Packaging Consumables",
+    "description": "Essential packaging consumables including bubble wrap, foam, stretch films, desiccants, VCI corrosion protection, and adhesive solutions for secure product protection and shipment.",
+    "imageUrl": "/images/packaging_consumables.png",
+    "subcategories": [
+      {
+        "id": "bubble-foam-protection",
+        "name": "Bubble & Foam Protection",
+        "products": [
+          {
+            "id": "air-film-bubble",
+            "name": "Air Film Bubble",
+            "sku": "PKG-AFB-001",
+            "brand": "SBECO",
+            "tagline": "Lightweight air-cushion film for surface protection and void fill",
+            "badge": "Popular",
+            "description": "High-performance air film bubble providing superior cushioning and shock absorption. Lightweight yet durable, it wraps around products to prevent scratches, dents, and breakage during transit and storage.",
+            "specs": {
+              "Material": "LDPE",
+              "Bubble Diameter": "10 mm",
+              "Roll Width": "500 mm",
+              "Roll Length": "100 m"
+            },
+            "imageUrl": "/images/packaging-consumables/Air-Film-Bubble.png",
+            "similar": ["anti-static-air-bubble-film", "air-bubble-pouches"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-static-air-bubble-film",
+            "name": "Anti-Static Air Bubble Film",
+            "sku": "PKG-ASABF-002",
+            "brand": "SBECO",
+            "tagline": "Static-dissipative bubble film for electronics and sensitive components",
+            "badge": "Specialty",
+            "description": "Anti-static air bubble film engineered to dissipate electrostatic charge, protecting sensitive electronic components, circuit boards, and precision instruments during packaging and shipping.",
+            "specs": {
+              "Material": "Anti-Static LDPE",
+              "Bubble Diameter": "10 mm",
+              "Surface Resistivity": "10⁹ – 10¹¹ Ω",
+              "Roll Width": "500 mm"
+            },
+            "imageUrl": "/images/packaging-consumables/Anti-Static-Air-Bubble-Film.png",
+            "similar": ["air-film-bubble", "air-bubble-pouches"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-pouches",
+            "name": "Air Bubble Pouches",
+            "sku": "PKG-ABP-003",
+            "brand": "SBECO",
+            "tagline": "Pre-formed bubble pouches for quick slip-in protection",
+            "badge": "Essential",
+            "description": "Ready-to-use air bubble pouches with self-adhesive peel-and-seal closure. Ideal for wrapping small to medium items such as glassware, electronics, and auto parts with minimal packing time.",
+            "specs": {
+              "Material": "LDPE Bubble",
+              "Closure": "Self-Adhesive Peel & Seal",
+              "Bubble Diameter": "10 mm",
+              "Sizes Available": "Multiple"
+            },
+            "imageUrl": "/images/packaging-consumables/Air-Bubble-Pouches.png",
+            "similar": ["air-film-bubble", "anti-static-air-bubble-film"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "foam-roll",
+            "name": "Foam Roll",
+            "sku": "PKG-FR-004",
+            "brand": "SBECO",
+            "tagline": "Flexible EPE foam roll for scratch-free surface wrapping",
+            "badge": "Popular",
+            "description": "Non-abrasive expanded polyethylene (EPE) foam roll providing excellent surface protection against scratches, dents, and abrasion. Flexible and easy to cut, wrap, and cushion products of any shape.",
+            "specs": {
+              "Material": "EPE Foam",
+              "Thickness": "1 – 5 mm",
+              "Roll Width": "1000 mm",
+              "Density": "20 – 30 kg/m³"
+            },
+            "imageUrl": "/images/packaging-consumables/Foam-Roll.png",
+            "similar": ["foam-sheets", "custom-foam-pouches"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "foam-sheets",
+            "name": "Foam Sheets",
+            "sku": "PKG-FS-005",
+            "brand": "SBECO",
+            "tagline": "Pre-cut EPE foam sheets for layered cushioning and interleaving",
+            "badge": "Essential",
+            "description": "Uniform-density EPE foam sheets designed for interleaving, layering, and padding. Provide consistent cushioning between stacked products, glass panels, and fragile surfaces during storage and transit.",
+            "specs": {
+              "Material": "EPE Foam",
+              "Thickness": "1 – 10 mm",
+              "Sheet Sizes": "Multiple standard sizes",
+              "Density": "20 – 30 kg/m³"
+            },
+            "imageUrl": "/images/packaging-consumables/Foam-Sheets.png",
+            "similar": ["foam-roll", "custom-foam-pouches"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "custom-foam-pouches",
+            "name": "Custom Made Foam Pouches",
+            "sku": "PKG-CFP-006",
+            "brand": "SBECO",
+            "tagline": "Tailor-made foam pouches for precision part protection",
+            "badge": "Specialty",
+            "description": "Custom-fabricated EPE foam pouches tailored to exact product dimensions. Provide scratch-proof, snug-fit protection for delicate items including optics, medical devices, and precision components.",
+            "specs": {
+              "Material": "EPE Foam",
+              "Custom Sizing": "Yes",
+              "Closure Options": "Open-top / Flap / Adhesive",
+              "Printing": "Available on request"
+            },
+            "imageUrl": "/images/packaging-consumables/Custom-Made-Foam-Pouches.png",
+            "similar": ["foam-roll", "foam-sheets"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "honeycomb-paper",
+        "name": "Honeycomb Paper",
+        "products": [
+          {
+            "id": "bhive-paper",
+            "name": "Bhive Paper",
+            "sku": "PKG-BHP-007",
+            "brand": "SBECO",
+            "tagline": "Eco-friendly honeycomb paper wrap for sustainable packaging",
+            "badge": "Eco-Friendly",
+            "description": "100% recyclable honeycomb paper wrap that expands into a protective interlocking structure. Eliminates the need for plastic bubble wrap while providing excellent cushioning and presentation.",
+            "specs": {
+              "Material": "Kraft Paper",
+              "Pattern": "Honeycomb Expansion",
+              "Roll Width": "380 mm",
+              "Recyclable": "100%"
+            },
+            "imageUrl": "/images/packaging-consumables/Bhive-Paper.png",
+            "similar": ["bhive-paper-stand"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "bhive-paper-stand",
+            "name": "Bhive Paper Stand",
+            "sku": "PKG-BHPS-008",
+            "brand": "SBECO",
+            "tagline": "Compact dispenser stand for honeycomb paper rolls",
+            "badge": "Accessory",
+            "description": "Manual stretch dispenser stand designed for Bhive honeycomb paper rolls. Compact tabletop footprint with smooth roll rotation, adjustable height, and easy assembly for efficient packing stations.",
+            "specs": {
+              "Type": "Tabletop Dispenser",
+              "Compatible Roll Width": "Up to 500 mm",
+              "Material": "Steel Frame",
+              "Assembly": "Tool-free"
+            },
+            "imageUrl": "/images/packaging-consumables/Bhive-Paper-Stand.png",
+            "similar": ["bhive-paper"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "void-fill-cargo",
+        "name": "Void Fill & Cargo Protection",
+        "products": [
+          {
+            "id": "dunnage-bag",
+            "name": "Dunnage Bag",
+            "sku": "PKG-DB-009",
+            "brand": "SBECO",
+            "tagline": "Inflatable cargo stabilizing bag to prevent transit load shifting",
+            "badge": "Industrial",
+            "description": "Heavy-duty inflatable dunnage bag that fills void spaces between cargo in containers, trucks, and railcars. Prevents product movement, collision, and damage during transportation.",
+            "specs": {
+              "Material": "PP Woven / Kraft / Poly",
+              "Inflation": "Compressed Air",
+              "Pressure Rating": "Up to 1.0 bar",
+              "Sizes": "Multiple standard sizes"
+            },
+            "imageUrl": "/images/packaging-consumables/Dunnage-Bag.png",
+            "similar": ["noz-gun"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "noz-gun",
+            "name": "Noz Gun",
+            "sku": "PKG-NG-010",
+            "brand": "SBECO",
+            "tagline": "Fast-inflation nozzle tool for dunnage bag deployment",
+            "badge": "Accessory",
+            "description": "Ergonomic inflation nozzle gun for rapid deployment of dunnage bags. Features a precision trigger control and secure airtight valve connection for consistent, efficient cargo stabilization.",
+            "specs": {
+              "Type": "Inflation Nozzle Gun",
+              "Connection": "Standard Air Valve",
+              "Trigger": "Ergonomic Lever",
+              "Compatible With": "Standard Dunnage Bags"
+            },
+            "imageUrl": "/images/packaging-consumables/Noz-Gun.png",
+            "similar": ["dunnage-bag"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "paper-corm-machine",
+            "name": "Paper Corm Machine",
+            "sku": "PKG-PCM-012",
+            "brand": "SBECO",
+            "tagline": "On-demand void-fill paper cushion converter",
+            "badge": "Industrial",
+            "description": "Automated paper cushion machine that converts flat paper stock into crumpled void-fill material on demand. High-speed dispensing with jam-free feeding for fast-paced packing lines.",
+            "specs": {
+              "Type": "Paper Cushion Converter",
+              "Speed": "Up to 4 m/min",
+              "Paper Width": "380 mm",
+              "Power": "220V / 50Hz"
+            },
+            "imageUrl": "/images/packaging-consumables/Paper-Corm-Machine.png",
+            "similar": ["dunnage-bag", "bhive-paper"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "corrugated-board-protection",
+        "name": "Corrugated & Board Protection",
+        "products": [
+          {
+            "id": "corrugated-sheets",
+            "name": "Corrugated Sheets",
+            "sku": "PKG-CS-011",
+            "brand": "SBECO",
+            "tagline": "Rigid corrugated board sheets for layering and pallet separation",
+            "badge": "Essential",
+            "description": "Strong corrugated board sheets providing rigid layer separation for pallet stacking and product protection. Available in various ply counts and flute sizes to match specific load requirements.",
+            "specs": {
+              "Material": "Corrugated Board",
+              "Ply Options": "3-ply / 5-ply / 7-ply",
+              "Flute Types": "B / C / BC / E",
+              "Custom Sizes": "Available"
+            },
+            "imageUrl": "/images/packaging-consumables/Corrugated-Sheets.png",
+            "similar": ["angle-boards", "edge-protectors"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "angle-boards",
+            "name": "Angle Boards",
+            "sku": "PKG-AB-013",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty L-shaped corner reinforcement for pallet loads",
+            "badge": "Essential",
+            "description": "Laminated L-profile angle boards that reinforce pallet corners and edges. Increase vertical stacking strength and protect goods from strap pressure and stretch wrap compression.",
+            "specs": {
+              "Material": "Laminated Paperboard",
+              "Profile": "L-shape (90°)",
+              "Leg Sizes": "35×35 mm to 75×75 mm",
+              "Lengths": "Custom cut"
+            },
+            "imageUrl": "/images/packaging-consumables/Angle-Boards.png",
+            "similar": ["edge-protectors", "corrugated-sheets"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "edge-protectors",
+            "name": "Edge Protectors",
+            "sku": "PKG-EP-014",
+            "brand": "SBECO",
+            "tagline": "Recyclable edge guards available in Kraft, White, and Custom colors",
+            "badge": "Popular",
+            "description": "100% recyclable compressed paperboard edge protectors designed to guard product edges and corners from transit damage. Available in multiple color finishes to match branding requirements.",
+            "specs": {
+              "Material": "Compressed Paperboard",
+              "Profile": "L-shape / U-shape",
+              "Recyclable": "100%",
+              "Variants": "Kraft/Brown, White, Custom Colors"
+            },
+            "imageUrl": "/images/packaging-consumables/Edge-Protectors.png",
+            "variants": ["Kraft/Brown", "White", "Custom Colors"],
+            "similar": ["angle-boards", "corrugated-sheets"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "stretch-shrink-wrapping",
+        "name": "Stretch & Shrink Wrapping",
+        "products": [
+          {
+            "id": "stretch-wrap-films",
+            "name": "Stretch Wrap Films",
+            "sku": "PKG-SWF-015",
+            "brand": "SBECO",
+            "tagline": "High-stretch pallet wrapping film with strong cling",
+            "badge": "Popular",
+            "description": "High-performance stretch wrap film with exceptional stretchability, puncture resistance, and self-adhesive cling. Secures pallet loads tightly while providing moisture and dust protection.",
+            "specs": {
+              "Material": "LLDPE",
+              "Thickness": "17 – 23 micron",
+              "Stretch": "Up to 300%",
+              "Roll Width": "500 mm"
+            },
+            "imageUrl": "/images/packaging-consumables/Stretch-Wrap-Films.png",
+            "similar": ["stretch-wrap-dispenser", "pof-shrink-films"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": true
+          },
+          {
+            "id": "stretch-wrap-dispenser",
+            "name": "Stretch Wrap Dispenser",
+            "sku": "PKG-SWD-016",
+            "brand": "SBECO",
+            "tagline": "Ergonomic hand-held dispenser with adjustable tension control",
+            "badge": "Accessory",
+            "description": "Ergonomic hand-held stretch wrap dispenser with adjustable tension control. Compatible with standard film core sizes, reduces operator fatigue, and ensures consistent wrap tightness.",
+            "specs": {
+              "Type": "Hand-Held Dispenser",
+              "Core Compatibility": "76 mm (3 in)",
+              "Tension Control": "Adjustable Brake",
+              "Handle": "Ergonomic Grip"
+            },
+            "imageUrl": "/images/packaging-consumables/Stretch-Wrap-Dispenser.png",
+            "similar": ["stretch-wrap-films"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "pof-shrink-films",
+            "name": "POF Shrink Films",
+            "sku": "PKG-PSF-017",
+            "brand": "SBECO",
+            "tagline": "High-clarity polyolefin shrink film with uniform shrinkage",
+            "badge": "Essential",
+            "description": "Multi-layer polyolefin (POF) shrink film with excellent clarity, high gloss, and uniform shrinkage. Provides strong seal integrity and puncture resistance for retail-ready product presentation.",
+            "specs": {
+              "Material": "Polyolefin (POF)",
+              "Thickness": "12 – 25 micron",
+              "Shrinkage": "Up to 75%",
+              "Clarity": "High Gloss"
+            },
+            "imageUrl": "/images/packaging-consumables/POF-Shrink-Films.png",
+            "similar": ["stretch-wrap-films"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "polythene-products",
+        "name": "Polythene Products",
+        "products": [
+          {
+            "id": "polythene-rolls",
+            "name": "Polythene Rolls",
+            "sku": "PKG-PR-018",
+            "brand": "SBECO",
+            "tagline": "Waterproof LDPE polythene rolls in multiple gauges",
+            "badge": "Essential",
+            "description": "Durable LDPE polythene rolls providing waterproof and dustproof protection. Heat-sealable construction available in multiple widths and thickness gauges for versatile packaging applications.",
+            "specs": {
+              "Material": "LDPE",
+              "Thickness": "40 – 200 micron",
+              "Widths": "Multiple standard sizes",
+              "Sealable": "Heat-sealable"
+            },
+            "imageUrl": "/images/packaging-consumables/Polythene-Rolls.png",
+            "similar": ["polythene-bags"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "polythene-bags",
+            "name": "Polythene Bags",
+            "sku": "PKG-PB-019",
+            "brand": "SBECO",
+            "tagline": "Versatile poly bags with seal-top and custom print options",
+            "badge": "Popular",
+            "description": "General-purpose LDPE polythene bags with heat-sealable open top. Lightweight, flexible, and moisture-resistant for versatile product bagging, storage, and shipping applications.",
+            "specs": {
+              "Material": "LDPE",
+              "Closure": "Open Top / Seal Top",
+              "Thickness": "40 – 150 micron",
+              "Printing": "Custom printing available"
+            },
+            "imageUrl": "/images/packaging-consumables/Polythene-Bags.png",
+            "similar": ["polythene-rolls"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "desiccants-moisture-control",
+        "name": "Desiccants & Moisture Control",
+        "products": [
+          {
+            "id": "silica-gel",
+            "name": "Silica Gel (Gel)",
+            "sku": "PKG-SGG-020",
+            "brand": "SBECO",
+            "tagline": "High-capacity silica gel desiccant sachets for moisture protection",
+            "badge": "Essential",
+            "description": "Non-toxic silica gel desiccant granules providing high moisture absorption capacity. Chemically inert and safe for use with food, pharmaceuticals, electronics, and industrial goods.",
+            "specs": {
+              "Type": "Silica Gel Beads",
+              "Absorption": "Up to 40% of own weight",
+              "Non-Toxic": "Yes",
+              "Packaging": "Sachets / Bulk"
+            },
+            "imageUrl": "/images/packaging-consumables/Silica-Gel.png",
+            "similar": ["silica-gel-clay"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-clay",
+            "name": "Silica Gel (Clay Desiccants)",
+            "sku": "PKG-SGC-021",
+            "brand": "SBECO",
+            "tagline": "Natural bentonite clay desiccant for eco-friendly moisture control",
+            "badge": "Eco-Friendly",
+            "description": "Natural bentonite clay desiccant with high adsorption capacity. Eco-friendly and biodegradable, providing cost-effective moisture control stable across a wide temperature range.",
+            "specs": {
+              "Type": "Bentonite Clay",
+              "Absorption": "Up to 28% of own weight",
+              "Biodegradable": "Yes",
+              "Packaging": "Sachets / Bags"
+            },
+            "imageUrl": "/images/packaging-consumables/Silica-Gel-Clay-Desiccants.png",
+            "similar": ["silica-gel"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "vci-corrosion-protection",
+        "name": "VCI Corrosion Protection",
+        "products": [
+          {
+            "id": "vci-paper-plain",
+            "name": "VCI Paper Plain",
+            "sku": "PKG-VPP-022",
+            "brand": "SBECO",
+            "tagline": "Vapor corrosion inhibitor paper for ferrous and non-ferrous metals",
+            "badge": "Specialty",
+            "description": "VCI-coated kraft paper providing active vapor corrosion inhibition for ferrous and non-ferrous metal parts. Leaves clean, dry, residue-free surfaces when removed — no cleaning needed before use.",
+            "specs": {
+              "Type": "VCI Coated Kraft Paper",
+              "Protection": "Ferrous & Non-Ferrous Metals",
+              "Residue": "None",
+              "Roll Widths": "Multiple standard sizes"
+            },
+            "imageUrl": "/images/packaging-consumables/VCI-Paper-Plain.png",
+            "similar": ["vci-plastic-sheet", "vci-powder"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-plastic-sheet",
+            "name": "VCI Plastic Sheet",
+            "sku": "PKG-VPS-023",
+            "brand": "SBECO",
+            "tagline": "Transparent VCI polyethylene sheet for dual moisture and rust barrier",
+            "badge": "Specialty",
+            "description": "Transparent VCI polyethylene sheet combining moisture barrier properties with volatile corrosion inhibitor technology. Tear-resistant film allows visual product inspection while actively preventing rust.",
+            "specs": {
+              "Material": "VCI Polyethylene",
+              "Transparency": "Clear",
+              "Protection": "Multi-Metal VCI",
+              "Thickness": "80 – 200 micron"
+            },
+            "imageUrl": "/images/packaging-consumables/VCI-Plastic-Sheet.png",
+            "similar": ["vci-paper-plain", "vci-powder"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-powder",
+            "name": "VCI Powder",
+            "sku": "PKG-VP-024",
+            "brand": "SBECO",
+            "tagline": "Diffusion-based VCI powder for enclosed cavity rust prevention",
+            "badge": "Specialty",
+            "description": "Fine VCI powder that diffuses corrosion-inhibiting vapors into enclosed spaces and complex internal cavities. Leaves no toxic residues and provides extended protection for stored metal parts.",
+            "specs": {
+              "Type": "VCI Powder",
+              "Application": "Sprinkle / Pour into Cavities",
+              "Residue": "Non-toxic",
+              "Protection Duration": "Up to 24 months"
+            },
+            "imageUrl": "/images/packaging-consumables/VCI-Powder.png",
+            "similar": ["vci-paper-plain", "vci-plastic-sheet"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "adhesive-solutions",
+        "name": "Adhesive Solutions",
+        "products": [
+          {
+            "id": "hot-melt-glue-gun",
+            "name": "Hot Melt Glue Gun",
+            "sku": "PKG-HMGG-025",
+            "brand": "SBECO",
+            "tagline": "Rapid heat-up glue gun with anti-drip precision nozzle",
+            "badge": "Popular",
+            "description": "Industrial hot melt glue gun with rapid PTC heating element, ergonomic trigger feed mechanism, and insulated anti-drip precision nozzle. Compatible with standard 11 mm glue sticks.",
+            "specs": {
+              "Heating": "PTC Rapid Heat-Up",
+              "Stick Diameter": "11 mm",
+              "Nozzle": "Anti-Drip Insulated",
+              "Power": "60W / 100W"
+            },
+            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Gun.png",
+            "similar": ["hot-melt-glue-sticks-yellow", "hot-melt-glue-sticks-white"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "hot-melt-glue-sticks-yellow",
+            "name": "Hot Melt Glue Gun Sticks – Yellow",
+            "sku": "PKG-HMGS-Y-026",
+            "brand": "SBECO",
+            "tagline": "High-tack yellow hot melt glue sticks for strong carton sealing",
+            "badge": "Essential",
+            "description": "Yellow hot melt glue sticks with high initial tack and strong bonding strength. Fast setting time and clean melt with low odor, ideal for carton sealing and general packaging applications.",
+            "specs": {
+              "Color": "Yellow",
+              "Diameter": "11 mm",
+              "Length": "270 mm",
+              "Adhesion": "High Tack"
+            },
+            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Sticks-Yellow.png",
+            "similar": ["hot-melt-glue-sticks-white", "hot-melt-glue-gun"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "hot-melt-glue-sticks-white",
+            "name": "Hot Melt Glue Gun Sticks – White",
+            "sku": "PKG-HMGS-W-027",
+            "brand": "SBECO",
+            "tagline": "Clean white hot melt glue sticks for precision bonding",
+            "badge": "Essential",
+            "description": "White hot melt glue sticks offering clean, low-odor bonding with fast set time. Designed for applications requiring discreet glue lines on light-colored surfaces and clean packaging finishes.",
+            "specs": {
+              "Color": "White",
+              "Diameter": "11 mm",
+              "Length": "270 mm",
+              "Adhesion": "High Tack"
+            },
+            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Sticks-White.png",
+            "similar": ["hot-melt-glue-sticks-yellow", "hot-melt-glue-gun"],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "cable-management",
+        "name": "Cable Management",
+        "products": [
+          {
+            "id": "cable-tie",
+            "name": "Cable Tie",
+            "sku": "PKG-CT-028",
+            "brand": "SBECO",
+            "tagline": "Self-locking nylon cable ties with high tensile strength",
+            "badge": "Essential",
+            "description": "Durable self-locking nylon cable ties with high tensile holding strength. UV and weather resistant for both indoor and outdoor use, enabling easy one-handed fastening of cables and bundles.",
+            "specs": {
+              "Material": "Nylon 6/6",
+              "Tensile Strength": "Up to 55 kg",
+              "UV Resistant": "Yes",
+              "Sizes": "Multiple lengths and widths"
+            },
+            "imageUrl": "/images/packaging-consumables/Cable-Tie.png",
+            "similar": [],
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
           }
         ]
       }
