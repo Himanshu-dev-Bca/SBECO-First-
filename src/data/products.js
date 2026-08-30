@@ -6059,7 +6059,7 @@ export const CATALOGUE = [
               "Length": "100m per roll",
               "Material": "Polyethylene"
             },
-            "imageUrl": "/images/bubble_wrap.png",
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-180-G.png",
             "consumables": [
               {
                 "name": "Packing Tape 50mm",
@@ -6089,7 +6089,7 @@ export const CATALOGUE = [
               "Material": "Polyethylene",
               "Protection": "Maximum"
             },
-            "imageUrl": "/images/bubble_wrap_20.png",
+            "imageUrl": "/images/Consumables/1''Big-bubble-500g.png",
             "consumables": [
               {
                 "name": "Packing Tape 50mm",
@@ -6119,7 +6119,7 @@ export const CATALOGUE = [
               "Material": "EPE Foam",
               "Reusable": "Yes"
             },
-            "imageUrl": "/images/foam_sheets.png",
+            "imageUrl": "/images/Consumables/Foam-sheet-25mm.png",
             "consumables": [
               {
                 "name": "Packing Tape 50mm",
@@ -6235,7 +6235,7 @@ export const CATALOGUE = [
               "Width": "Multiple sizes available",
               "Lamination": "Yes"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/Air-Bubble-Film-450G.png",
             "similar": ["air-bubble-film-350g", "air-bubble-antistatic", "air-bubble-pouch"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6255,7 +6255,7 @@ export const CATALOGUE = [
               "Bubble Diameter": "10mm",
               "Usage": "Individual item wrapping"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/Air-Bubble-Pouches.png",
             "similar": ["air-bubble-film-250g", "air-bubble-film-350g", "air-bubble-roll-machine"],
             "dateAdded": "2026-08-16",
             "isBestSeller": true
@@ -6275,7 +6275,7 @@ export const CATALOGUE = [
               "Roll Length": "Extended length",
               "Type": "Machine Grade"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/air-bubble-film-500G.png",
             "similar": ["air-bubble-film-350g", "air-bubble-antistatic", "air-bubble-film-lamination"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6295,7 +6295,7 @@ export const CATALOGUE = [
               "Color": "Pink",
               "ESD Safe": "Yes"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/anti-static-air-bubble-film300G.png",
             "similar": ["air-bubble-film-lamination", "air-bubble-film-350g", "air-bubble-pouch"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6321,7 +6321,7 @@ export const CATALOGUE = [
               "Length": "100m – 200m per roll",
               "Density": "20–30 kg/m³"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/Foam-roll-1mm.png",
             "similar": ["epe-foam-sheet", "epe-foam-pouch", "epe-foam-roll-laminated"],
             "dateAdded": "2026-08-16",
             "isBestSeller": true
@@ -6341,7 +6341,7 @@ export const CATALOGUE = [
               "Density": "20–30 kg/m³",
               "Color": "White"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/30-mm-foam-sheet.png",
             "similar": ["epe-foam-roll-consumable", "epe-foam-pouch", "epe-foam-plank"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6361,7 +6361,7 @@ export const CATALOGUE = [
               "Closure": "Open end",
               "Usage": "Individual item wrapping"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/custom-made-foam-pouches.png",
             "similar": ["epe-foam-sheet", "epe-foam-roll-consumable", "air-bubble-pouch"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6381,7 +6381,7 @@ export const CATALOGUE = [
               "Lamination": "LDPE / HDPE",
               "Density": "20–30 kg/m³"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/Foam-roll-3mm.png",
             "similar": ["epe-foam-roll-consumable", "epe-foam-sheet", "air-bubble-film-lamination"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6401,7 +6401,7 @@ export const CATALOGUE = [
               "Density": "25–35 kg/m³",
               "Color": "White"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/40mm-foam-sheet.png",
             "similar": ["epe-foam-sheet", "epe-foam-roll-consumable", "epe-foam-pouch"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6427,7 +6427,7 @@ export const CATALOGUE = [
               "Roll Length": "50m – 250m",
               "Recyclable": "100%"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
             "similar": ["bhive-paper-sheet", "air-bubble-film-250g", "epe-foam-roll-consumable"],
             "dateAdded": "2026-08-16",
             "isBestSeller": true
@@ -6447,7 +6447,7 @@ export const CATALOGUE = [
               "Recyclable": "100%",
               "Compostable": "Yes"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
             "similar": ["bhive-paper-roll", "air-bubble-pouch", "epe-foam-pouch"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6473,7 +6473,7 @@ export const CATALOGUE = [
               "Sizes": "Multiple sizes available",
               "Usage": "Container void filling"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
             "similar": ["dunnage-bag-kraft", "dunnage-bag-vinyl"],
             "dateAdded": "2026-08-16",
             "isBestSeller": true
@@ -6493,7 +6493,7 @@ export const CATALOGUE = [
               "Sizes": "Multiple sizes available",
               "Recyclable": "Partially"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
             "similar": ["dunnage-bag-pp-woven", "dunnage-bag-vinyl"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
@@ -6513,7 +6513,7 @@ export const CATALOGUE = [
               "Reusable": "Yes",
               "Usage": "Heavy cargo securing"
             },
-            "imageUrl": "/images/Consumables/catalog_products_1.png",
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
             "similar": ["dunnage-bag-pp-woven", "dunnage-bag-kraft"],
             "dateAdded": "2026-08-16",
             "isBestSeller": false
