@@ -7253,4 +7253,561 @@ CATALOGUE.forEach(cat => {
       });
     }
   });
-});
+});  {
+    "id": "packaging-consumables",
+    "name": "Packaging Consumables",
+    "description": "Protective packaging, cushioning, wrapping, moisture protection, and shipping essentials.",
+    "imageUrl": "/images/packaging_consumables.png",
+    "subcategories": [
+      {
+        "id": "bubble-film-and-pouches",
+        "name": "Bubble Film & Pouches",
+        "products": [
+          {
+            "id": "air-film-bubble",
+            "name": "Air Film Bubble",
+            "sku": "PC-001",
+            "brand": "SBECO",
+            "tagline": "Lightweight bubble cushioning for general protection",
+            "badge": "Popular",
+            "description": "Air film bubble cushioning delivers effective shock absorption for lightweight and medium-weight products during packing and transit.",
+            "specs": {
+              "Material": "Polyethylene",
+              "Bubble Type": "Air film",
+              "Use": "Protective wrapping"
+            },
+            "key_features": ["Shock absorption", "Lightweight protection", "Easy wrapping"],
+            "variants": ["Standard roll", "Custom size"],
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-180-G.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "anti-static-air-bubble-film",
+            "name": "Anti-Static Air Bubble Film",
+            "sku": "PC-002",
+            "brand": "SBECO",
+            "tagline": "ESD-safe cushioning for electronic goods",
+            "badge": "Professional",
+            "description": "Anti-static air bubble film protects sensitive electronic components from static discharge while cushioning against impact during shipment.",
+            "specs": {
+              "Material": "Antistatic polyethylene",
+              "Use": "Electronics packaging",
+              "Safety": "ESD-safe"
+            },
+            "key_features": ["Static-safe", "Electronics protection", "Shock resistant"],
+            "variants": ["Standard roll", "Custom width"],
+            "imageUrl": "/images/Consumables/anti-static-air-bubble-film300G.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-pouches",
+            "name": "Air Bubble Pouches",
+            "sku": "PC-003",
+            "brand": "SBECO",
+            "tagline": "Ready-to-use pouches for individual item protection",
+            "badge": "Essential",
+            "description": "Air bubble pouches provide convenient, pre-formed cushioning for product wrapping and safe handling of delicate items.",
+            "specs": {
+              "Format": "Pouch",
+              "Material": "Bubble film",
+              "Use": "Individual item packing"
+            },
+            "key_features": ["Convenient packaging", "Shock protection", "Custom fit"],
+            "variants": ["Small", "Medium", "Large"],
+            "imageUrl": "/images/Consumables/Air-Bubble-Pouches.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "foam-and-cushioning",
+        "name": "Foam & Cushioning",
+        "products": [
+          {
+            "id": "foam-roll",
+            "name": "Foam Roll",
+            "sku": "PC-004",
+            "brand": "SBECO",
+            "tagline": "Flexible foam roll for multi-use cushioning",
+            "badge": "Essential",
+            "description": "Foam roll offers flexible cushioning for wrapping, interleaving, and protecting components with excellent resilience.",
+            "specs": {
+              "Material": "EPE foam",
+              "Format": "Roll",
+              "Use": "Surface protection"
+            },
+            "key_features": ["Flexible cushioning", "Easy to cut", "Multi-use protection"],
+            "variants": ["Standard roll", "Custom thickness"],
+            "imageUrl": "/images/Consumables/Foam-roll-1mm.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "foam-sheets",
+            "name": "Foam Sheets",
+            "sku": "PC-005",
+            "brand": "SBECO",
+            "tagline": "Precision sheets for layered product protection",
+            "badge": "Popular",
+            "description": "Foam sheets provide precise cushioning and spacing for products that need light, clean protection during storage or shipping.",
+            "specs": {
+              "Material": "EPE foam",
+              "Format": "Sheet",
+              "Use": "Layering & interleaving"
+            },
+            "key_features": ["Clean presentation", "Layered protection", "Custom sizing"],
+            "variants": ["Standard sheet", "Custom dimension"],
+            "imageUrl": "/images/Consumables/30-mm-foam-sheet.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "custom-made-foam-pouches",
+            "name": "Custom Made Foam Pouches",
+            "sku": "PC-006",
+            "brand": "SBECO",
+            "tagline": "Tailored foam pouch protection for unique product shapes",
+            "badge": "Premium",
+            "description": "Custom made foam pouches are designed to fit specific product dimensions and minimize movement during shipping or storage.",
+            "specs": {
+              "Material": "Foam",
+              "Format": "Custom pouch",
+              "Use": "Tailored product protection"
+            },
+            "key_features": ["Custom-fit design", "Shock absorbing", "Secure handling"],
+            "variants": ["Standard density", "High density", "Custom shape"],
+            "imageUrl": "/images/Consumables/custom-made-foam-pouches.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "paper-dunnage-and-boards",
+        "name": "Paper, Dunnage & Boards",
+        "products": [
+          {
+            "id": "bhive-paper",
+            "name": "Bhive Paper",
+            "sku": "PC-007",
+            "brand": "SBECO",
+            "tagline": "Eco-friendly honeycomb paper for protective wrapping",
+            "badge": "Eco-Friendly",
+            "description": "Bhive paper is a sustainable protective wrap that provides cushioning while remaining lightweight and recyclable.",
+            "specs": {
+              "Material": "Kraft honeycomb paper",
+              "Use": "Eco-packaging",
+              "Type": "Expandable wrap"
+            },
+            "key_features": ["Sustainable wrap", "Lightweight cushioning", "Recyclable"],
+            "variants": ["Roll", "Sheet"],
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "bhive-paper-stand",
+            "name": "Bhive Paper Stand",
+            "sku": "PC-008",
+            "brand": "SBECO",
+            "tagline": "Support stand for organized bhive paper storage",
+            "badge": "Essential",
+            "description": "Bhive paper stand keeps protective paper organized and accessible for smooth packaging operations and better workflow efficiency.",
+            "specs": {
+              "Use": "Storage support",
+              "Material": "Metal / frame",
+              "Application": "Packaging station"
+            },
+            "key_features": ["Organized storage", "Easy access", "Stable support"],
+            "variants": ["Standard stand", "Heavy duty stand"],
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "dunnage-bag",
+            "name": "Dunnage Bag",
+            "sku": "PC-009",
+            "brand": "SBECO",
+            "tagline": "Cargo stabilizer for void filling and load bracing",
+            "badge": "Heavy Duty",
+            "description": "Dunnage bags secure cargo in containers and trucks by filling voids and preventing movement during transit.",
+            "specs": {
+              "Material": "PP woven / kraft / vinyl",
+              "Use": "Load stabilization",
+              "Application": "Container & truck shipping"
+            },
+            "key_features": ["Cargo immobilization", "Void filling", "Load stability"],
+            "variants": ["Standard", "Heavy duty", "Custom size"],
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "noz-gun",
+            "name": "Noz Gun",
+            "sku": "PC-010",
+            "brand": "SBECO",
+            "tagline": "Precision dispensing tool for packaging materials",
+            "badge": "Essential",
+            "description": "Noz gun allows controlled dispensing of adhesives or sealants for efficient packaging application.",
+            "specs": {
+              "Use": "Dispensing tool",
+              "Application": "Packaging sealing",
+              "Operation": "Manual"
+            },
+            "key_features": ["Controlled dispensing", "Fast application", "Reliable flow"],
+            "variants": ["Standard", "Heavy duty"],
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "corrugated-sheets",
+            "name": "Corrugated Sheets",
+            "sku": "PC-011",
+            "brand": "SBECO",
+            "tagline": "Rigid sheets for protective packaging and support",
+            "badge": "Value",
+            "description": "Corrugated sheets offer strong, lightweight protection for packaging, inserts, and temporary support structures.",
+            "specs": {
+              "Material": "Corrugated board",
+              "Use": "Board protection",
+              "Type": "Single / double wall"
+            },
+            "key_features": ["Rigid support", "Strong protection", "Recyclable"],
+            "variants": ["Single wall", "Double wall", "Custom grade"],
+            "imageUrl": "/images/Facility Management/corrugated sheets.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "paper-corm-machine",
+            "name": "Paper Corm Machine",
+            "sku": "PC-012",
+            "brand": "SBECO",
+            "tagline": "Machine for paper corner reinforcement and edge protection",
+            "badge": "Professional",
+            "description": "Paper corm machine helps reinforce packaging corners and edges to increase box strength and improve load integrity.",
+            "specs": {
+              "Use": "Corner reinforcement",
+              "Application": "Packaging line",
+              "Output": "Paper cornering"
+            },
+            "key_features": ["Edge reinforcement", "Improved durability", "Efficient packaging"],
+            "variants": ["Standard", "Heavy duty"],
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "angle-boards",
+            "name": "Angle Boards",
+            "sku": "PC-013",
+            "brand": "SBECO",
+            "tagline": "Corner protection for heavy and sharp-edged loads",
+            "badge": "Heavy Duty",
+            "description": "Angle boards protect the corners and edges of loads from impact, crushing, and abrasion during handling and shipping.",
+            "specs": {
+              "Material": "Paper / board",
+              "Use": "Corner protection",
+              "Application": "Load edge safety"
+            },
+            "key_features": ["Corner reinforcement", "Impact resistance", "Easy to apply"],
+            "variants": ["Standard", "Heavy duty"],
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "edge-protectors",
+            "name": "Edge Protectors",
+            "sku": "PC-014",
+            "brand": "SBECO",
+            "tagline": "Edge protection for vulnerable corners and sides",
+            "badge": "Popular",
+            "description": "Edge protectors shield product edges from dents, crushing, and impact during transport and storage.",
+            "specs": {
+              "Material": "Paper / board",
+              "Use": "Edge guarding",
+              "Application": "Shipping protection"
+            },
+            "key_features": ["Protects edges", "Prevents dents", "Improves load integrity"],
+            "variants": ["Kraft Brown", "White", "Custom Printed", "Custom Color"],
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "wraps-and-shrink-film",
+        "name": "Wraps & Shrink Film",
+        "products": [
+          {
+            "id": "stretch-wrap-films",
+            "name": "Stretch Wrap Films",
+            "sku": "PC-015",
+            "brand": "SBECO",
+            "tagline": "High-stretch film for pallet and load wrapping",
+            "badge": "Popular",
+            "description": "Stretch wrap films lock products together and reduce movement, helping secure pallet loads and bulky items.",
+            "specs": {
+              "Material": "LLDPE",
+              "Use": "Pallet wrapping",
+              "Strength": "High stretch"
+            },
+            "key_features": ["Secures loads", "High stretch retention", "Minimizes movement"],
+            "variants": ["Standard", "Heavy duty", "Pre-stretched"],
+            "imageUrl": "/images/stretch_film.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "stretch-wrap-dispenser",
+            "name": "Stretch Wrap Dispenser",
+            "sku": "PC-016",
+            "brand": "SBECO",
+            "tagline": "Convenient dispenser for fast and consistent wrapping",
+            "badge": "Essential",
+            "description": "Stretch wrap dispenser helps operators apply film evenly and reduces wasted material during wrapping jobs.",
+            "specs": {
+              "Use": "Film application",
+              "Type": "Manual dispenser",
+              "Operator benefit": "Faster wrapping"
+            },
+            "key_features": ["Consistent tension", "Improves productivity", "Easy handling"],
+            "variants": ["Manual", "Semi automatic"],
+            "imageUrl": "/images/stretch_film_250.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "pof-shrink-films",
+            "name": "POF Shrink Films",
+            "sku": "PC-017",
+            "brand": "SBECO",
+            "tagline": "Clear shrink film for secure, tamper-resistant packaging",
+            "badge": "Popular",
+            "description": "POF shrink films provide a tight protective wrap over products, improving presentation and tamper resistance.",
+            "specs": {
+              "Material": "POF",
+              "Use": "Shrink wrapping",
+              "Finish": "High clarity"
+            },
+            "key_features": ["Tight finish", "Product visibility", "Tamper protection"],
+            "variants": ["Standard gauge", "Custom gauge", "Custom width"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "polythene-rolls",
+            "name": "Polythene Rolls",
+            "sku": "PC-018",
+            "brand": "SBECO",
+            "tagline": "Flexible polythene rolls for multi-purpose packaging",
+            "badge": "Essential",
+            "description": "Polythene rolls are used for moisture protection, covering, wrapping, and general packaging across industrial and retail settings.",
+            "specs": {
+              "Material": "Polythene",
+              "Use": "General wrapping",
+              "Format": "Roll"
+            },
+            "key_features": ["Moisture resistant", "Flexible use", "Easy to cut"],
+            "variants": ["Standard roll", "Heavy duty", "Custom width"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "polythene-bags",
+            "name": "Polythene Bags",
+            "sku": "PC-019",
+            "brand": "SBECO",
+            "tagline": "Flexible packaging bags for retail and industrial use",
+            "badge": "Popular",
+            "description": "Polythene bags provide convenient, moisture-resistant packaging for products, parts, and order fulfillment.",
+            "specs": {
+              "Material": "Polythene",
+              "Use": "Bagging",
+              "Format": "Bag"
+            },
+            "key_features": ["Moisture protection", "Versatile use", "Quick packing"],
+            "variants": ["Small", "Medium", "Large", "Custom size"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "desiccants-and-vci",
+        "name": "Desiccants & VCI",
+        "products": [
+          {
+            "id": "silica-gel-gel",
+            "name": "Silica Gel (Gel)",
+            "sku": "PC-020",
+            "brand": "SBECO",
+            "tagline": "Moisture absorber for sealed and sensitive product packaging",
+            "badge": "Essential",
+            "description": "Silica gel desiccant absorbs moisture to protect packaged goods from humidity, corrosion, and contamination.",
+            "specs": {
+              "Material": "Silica gel",
+              "Use": "Moisture absorption",
+              "Format": "Sachet / packet"
+            },
+            "key_features": ["Humidity control", "Protects sensitive goods", "Ideal for sealed packaging"],
+            "variants": ["Packets", "Canisters", "Custom quantity"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-clay-desiccants",
+            "name": "Silica Gel (Clay Desiccants)",
+            "sku": "PC-021",
+            "brand": "SBECO",
+            "tagline": "Natural clay moisture control for cost-effective protection",
+            "badge": "Value Pick",
+            "description": "Clay desiccants provide efficient moisture absorption for industrial and export packaging with an economical natural solution.",
+            "specs": {
+              "Material": "Bentonite clay",
+              "Use": "Moisture control",
+              "Type": "Clay desiccant"
+            },
+            "key_features": ["Cost effective", "Bulk packaging use", "Non-toxic moisture control"],
+            "variants": ["Clay packets", "Bulk packs", "Custom quantity"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-paper-plain",
+            "name": "VCI Paper Plain",
+            "sku": "PC-022",
+            "brand": "SBECO",
+            "tagline": "Anti-corrosion paper for metal protection during storage",
+            "badge": "Professional",
+            "description": "VCI paper plain releases vapor corrosion inhibitors that protect ferrous metal components from rust and corrosion in storage and transit.",
+            "specs": {
+              "Material": "VCI-coated kraft paper",
+              "Use": "Corrosion protection",
+              "Metal Type": "Ferrous"
+            },
+            "key_features": ["Rust prevention", "Protective barrier", "Metal packaging wrap"],
+            "variants": ["Standard sheet", "Custom size"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-plastic-sheet",
+            "name": "VCI Plastic Sheet",
+            "sku": "PC-023",
+            "brand": "SBECO",
+            "tagline": "Flexible VCI protection for metal surfaces and parts",
+            "badge": "Popular",
+            "description": "VCI plastic sheet combines corrosion protection with a moisture barrier for packaging critical metal components.",
+            "specs": {
+              "Material": "VCI-treated plastic",
+              "Use": "Corrosion shielding",
+              "Type": "Sheet / wrap"
+            },
+            "key_features": ["Flexible barrier", "Rust protection", "Metal surface shielding"],
+            "variants": ["Standard sheet", "Heavy duty sheet"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-powder",
+            "name": "VCI Powder",
+            "sku": "PC-024",
+            "brand": "SBECO",
+            "tagline": "Powdered corrosion inhibitor for packaging and direct application",
+            "badge": "Professional",
+            "description": "VCI powder is used to protect metal surfaces and enclosed packaging zones by releasing vapor inhibitors that reduce corrosion.",
+            "specs": {
+              "Form": "Powder",
+              "Use": "Corrosion inhibitor",
+              "Application": "Sprinkle / packing"
+            },
+            "key_features": ["Rust prevention", "Bulk application", "Protective coating"],
+            "variants": ["Standard powder", "Industrial grade"],
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "adhesives-and-fasteners",
+        "name": "Adhesives & Fasteners",
+        "products": [
+          {
+            "id": "hot-melt-glue-gun",
+            "name": "Hot Melt Glue Gun",
+            "sku": "PC-025",
+            "brand": "SBECO",
+            "tagline": "Fast adhesive application tool for sealing and bonding",
+            "badge": "Essential",
+            "description": "Hot melt glue gun offers strong, rapid bonding for boxes, cartons, and packaging assembly work.",
+            "specs": {
+              "Use": "Adhesive application",
+              "Type": "Hot melt gun",
+              "Application": "Packaging assembly"
+            },
+            "key_features": ["Fast bonding", "High strength", "Industrial use"],
+            "variants": ["Standard", "Heavy duty"],
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "hot-melt-glue-gun-sticks",
+            "name": "Hot Melt Glue Gun Sticks",
+            "sku": "PC-026",
+            "brand": "SBECO",
+            "tagline": "Reliable hot melt adhesive sticks for packaging and assembly",
+            "badge": "Popular",
+            "description": "Hot melt glue gun sticks provide strong adhesion for carton sealing, light assembly, and package reinforcement tasks.",
+            "specs": {
+              "Material": "Hot melt adhesive",
+              "Use": "Bonding",
+              "Form": "Stick"
+            },
+            "key_features": ["Strong bond", "Quick set time", "Packaging ready"],
+            "variants": ["Yellow", "White"],
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie",
+            "name": "Cable Tie",
+            "sku": "PC-027",
+            "brand": "SBECO",
+            "tagline": "Strong zip ties for cable and bundle management",
+            "badge": "Popular",
+            "description": "Cable ties provide a quick and secure method for bundling wires, hoses, and materials during packing and dispatch work.",
+            "specs": {
+              "Use": "Bundling & fastening",
+              "Material": "Nylon",
+              "Application": "Cable ;& bundle management"
+            },
+            "key_features": ["Secure bundling", "Quick installation", "Reliable hold"],
+            "variants": ["Standard", "Heavy duty", "Custom length"],
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      }
+    ]
+  },
+
