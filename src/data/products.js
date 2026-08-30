@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -5983,20 +5983,20 @@ export const CATALOGUE = [
         "name": "Bubble & Foam Protection",
         "products": [
           {
-            "id": "air-film-bubble",
-            "name": "Air Film Bubble",
-            "sku": "PKG-AFB-001",
+            "id": "air-bubble-film",
+            "name": "Air Bubble Film",
+            "sku": "PKG-ABF-001",
             "brand": "SBECO",
             "tagline": "Lightweight air-cushion film for surface protection and void fill",
             "badge": "Popular",
-            "description": "High-performance air film bubble providing superior cushioning and shock absorption. Lightweight yet durable, it wraps around products to prevent scratches, dents, and breakage during transit and storage.",
+            "description": "High-performance air bubble film providing superior cushioning and shock absorption. Lightweight yet durable, it wraps around products to prevent scratches, dents, and breakage during transit and storage.",
             "specs": {
               "Material": "LDPE",
               "Bubble Diameter": "10 mm",
               "Roll Width": "500 mm",
               "Roll Length": "100 m"
             },
-            "imageUrl": "/images/packaging-consumables/Air-Film-Bubble.png",
+            "imageUrl": "/images/packaging-consumables/Air-Bubble-Film.png",
             "similar": ["anti-static-air-bubble-film", "air-bubble-pouches"],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
