@@ -127,7 +127,10 @@ export default function Contact() {
       <Hero label="Contact · Super Bright Labs" title="Get In Touch"
         subtitle="Have a question about our products, need a bulk quote, or want to discuss your packaging requirements? We're here to help." />
 
-      <section className="px-8 md:px-12 py-14">
+      <section 
+        className="px-8 md:px-12 py-14 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('/images/indu.png')" }}
+      >
         <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
           Send Us A Message <span className="text-[11px] text-gray-400 font-light">01</span>
         </div>
