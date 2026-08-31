@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -6555,9 +6555,9 @@ export const CATALOGUE = [
             "name": "Dunnage Bag",
             "sku": "PKG-DB-009",
             "brand": "SBECO",
-            "tagline": "Inflatable cargo stabilizing bag to prevent transit load shifting",
+            "tagline": "Dunnage bags, also known as inflatable void fill bags or container airbags, are flexible bladders inflated with compressed air to stabilize and secure cargo inside trucks, railcars, and shipping containers.",
             "badge": "Industrial",
-            "description": "Heavy-duty inflatable dunnage bag that fills void spaces between cargo in containers, trucks, and railcars. Prevents product movement, collision, and damage during transportation.",
+            "description": "When properly inflated and placed between cargo items or pallets, dunnage bags act as shock absorbers, preventing load shifting, tipping, and damage caused by impacts, vibrations, and accelerations during transit. They are essential for securing mixed loads and ensuring products arrive undamaged at their destination.",
             "specs": {
               "Material": "PP Woven / Kraft / Poly",
               "Inflation": "Compressed Air",
