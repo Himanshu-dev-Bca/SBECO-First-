@@ -1,4 +1,4 @@
-﻿// Complete product catalogue data — single source of truth
+// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -19,14 +19,14 @@ export const CATALOGUE = [
                 "name": "SBECO GP Masking Tape",
                 "sku": "SBL-TAPE-MSK-01",
                 "brand": "SBECO",
-                "tagline": "A pressure-sensitive paper tape designed with easy-tear backing and low-tack adhesive, ideal for temporary holding, labeling, surface masking, and paint-line protection.",
+                "tagline": "Professional-grade masking tape designed for general purpose crepe applications.",
                 "badge": "Popular",
                 "description": "Premium general purpose crepe masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
                 "specs": {
                   "Width": "12mm",
                   "Length": "50m",
                   "Backing Material": "Crepe Paper",
-                  "Temperature Resistance": "60C",
+                  "Temperature Resistance": "60�C",
                   "Adhesive Type": "Natural Rubber"
                 },
                 "imageUrl": "/images/tapes/Masking tapes and films/SBECO-GP-Masking-Tape.png",
@@ -43,14 +43,14 @@ export const CATALOGUE = [
                 "name": "Tesa 53123 Masking Tape",
                 "sku": "SBL-TAPE-MSK-02",
                 "brand": "Tesa",
-                "tagline": "gotta change this one",
+                "tagline": "Premium-grade masking tape designed for general purpose applications.",
                 "badge": "Essential",
                 "description": "Premium general purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
                 "specs": {
                   "Width": "18mm",
                   "Length": "50m",
                   "Backing Material": "Crepe Paper",
-                  "Temperature Resistance": "80C",
+                  "Temperature Resistance": "80�C",
                   "Adhesive Type": "Natural Rubber"
                 },
                 "imageUrl": "/images/tapes/Masking tapes and films/Tesa 53123 Masking Tape.png",
@@ -3448,7 +3448,10 @@ export const CATALOGUE = [
                   "Weight": "0.9 kg"
                 },
                 "imageUrl": "/images/Images/Drill-Driver-GSR-120-Li.png",
-                "similar": ["drill-gsr-180li", "drill-gsb-120li"],
+                "similar": [
+                  "drill-gsr-180li",
+                  "drill-gsb-120li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3468,7 +3471,10 @@ export const CATALOGUE = [
                   "Weight": "1.5 kg"
                 },
                 "imageUrl": "/images/Images/Drill-Driver-GSR-180-Li.jpg",
-                "similar": ["drill-gsr-185li", "drill-gsr-120li"],
+                "similar": [
+                  "drill-gsr-185li",
+                  "drill-gsr-120li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -3488,7 +3494,10 @@ export const CATALOGUE = [
                   "Weight": "1.6 kg"
                 },
                 "imageUrl": "/images/Images/Drill-Driver-GSR-185-Li.png",
-                "similar": ["drill-gsr-18v50", "drill-gsr-180li"],
+                "similar": [
+                  "drill-gsr-18v50",
+                  "drill-gsr-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3508,7 +3517,10 @@ export const CATALOGUE = [
                   "Weight": "1.7 kg"
                 },
                 "imageUrl": "/images/Images/Drill-Driver-GSR-18V-50.png",
-                "similar": ["drill-gsr-185li", "drill-gsb-18v150c"],
+                "similar": [
+                  "drill-gsr-185li",
+                  "drill-gsb-18v150c"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3528,7 +3540,10 @@ export const CATALOGUE = [
                   "Weight": "2.1 kg"
                 },
                 "imageUrl": "/images/Images/Drill-Driver-GSB-18V-150C.png",
-                "similar": ["drill-gsr-18v50", "drill-gsb-180li"],
+                "similar": [
+                  "drill-gsr-18v50",
+                  "drill-gsb-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3548,7 +3563,10 @@ export const CATALOGUE = [
                   "Weight": "1.1 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Drill-Driver-GSB-120-Li.png",
-                "similar": ["drill-gsr-120li", "drill-gsb-180li"],
+                "similar": [
+                  "drill-gsr-120li",
+                  "drill-gsb-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3568,7 +3586,10 @@ export const CATALOGUE = [
                   "Weight": "1.7 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Drill-Driver-GSB-180-Li.png",
-                "similar": ["drill-gsb-120li", "drill-gsr-180li"],
+                "similar": [
+                  "drill-gsb-120li",
+                  "drill-gsr-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -3594,7 +3615,10 @@ export const CATALOGUE = [
                   "Weight": "0.8 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Wrench-GDR-12-V-EC.png",
-                "similar": ["wrench-gdr-120li", "wrench-gds-18v200"],
+                "similar": [
+                  "wrench-gdr-120li",
+                  "wrench-gds-18v200"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3614,7 +3638,10 @@ export const CATALOGUE = [
                   "Weight": "0.9 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Wrench-GDR-120-Li.png",
-                "similar": ["wrench-gdr-12vec", "wrench-gdr-180li"],
+                "similar": [
+                  "wrench-gdr-12vec",
+                  "wrench-gdr-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3634,7 +3661,10 @@ export const CATALOGUE = [
                   "Weight": "1.1 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Wrench-GDR-180-Li.png",
-                "similar": ["wrench-gdr-120li", "wrench-gds-18v200"],
+                "similar": [
+                  "wrench-gdr-120li",
+                  "wrench-gds-18v200"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -3654,7 +3684,10 @@ export const CATALOGUE = [
                   "Weight": "1.6 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Wrench-GDS-18V-200.png",
-                "similar": ["wrench-gdx-18v200c", "wrench-gdr-180li"],
+                "similar": [
+                  "wrench-gdx-18v200c",
+                  "wrench-gdr-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3674,7 +3707,10 @@ export const CATALOGUE = [
                   "Weight": "1.5 kg"
                 },
                 "imageUrl": "/images/Images/Impact-Wrench-GDX-18V-200-C.png",
-                "similar": ["wrench-gds-18v200", "wrench-gdr-180li"],
+                "similar": [
+                  "wrench-gds-18v200",
+                  "wrench-gdr-180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -3700,7 +3736,9 @@ export const CATALOGUE = [
                   "Weight": "0.35 kg"
                 },
                 "imageUrl": "/images/Images/ScrewDriver-GO-2.0.png",
-                "similar": ["drill-gsr-120li"],
+                "similar": [
+                  "drill-gsr-120li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               }
@@ -3732,7 +3770,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-600.png",
-                "similar": ["grinder-s-gws800", "grinder-s-gws750"],
+                "similar": [
+                  "grinder-s-gws800",
+                  "grinder-s-gws750"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3752,7 +3793,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-750-100.png",
-                "similar": ["grinder-s-gws600", "grinder-s-gws800"],
+                "similar": [
+                  "grinder-s-gws600",
+                  "grinder-s-gws800"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3772,7 +3816,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-800.png",
-                "similar": ["grinder-s-gws600", "grinder-s-gws900-100"],
+                "similar": [
+                  "grinder-s-gws600",
+                  "grinder-s-gws900-100"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -3792,7 +3839,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-900-100.png",
-                "similar": ["grinder-s-gws800", "grinder-s-gws900-125s"],
+                "similar": [
+                  "grinder-s-gws800",
+                  "grinder-s-gws900-125s"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3812,7 +3862,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-900-125-S.png",
-                "similar": ["grinder-s-gws900-100", "grinder-s-gws12-125s"],
+                "similar": [
+                  "grinder-s-gws900-100",
+                  "grinder-s-gws12-125s"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3832,7 +3885,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS 6-125.png",
-                "similar": ["grinder-s-gws800", "grinder-s-gws600"],
+                "similar": [
+                  "grinder-s-gws800",
+                  "grinder-s-gws600"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3852,7 +3908,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-12-125-S.png",
-                "similar": ["grinder-s-gws14-125ci", "grinder-s-gws900-125s"],
+                "similar": [
+                  "grinder-s-gws14-125ci",
+                  "grinder-s-gws900-125s"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3872,7 +3931,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-14-125-CI.png",
-                "similar": ["grinder-s-gws12-125s", "grinder-s-gws18-125l"],
+                "similar": [
+                  "grinder-s-gws12-125s",
+                  "grinder-s-gws18-125l"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3892,7 +3954,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-18-125-L.png",
-                "similar": ["grinder-s-gws14-125ci", "grinder-l-gws2200-180"],
+                "similar": [
+                  "grinder-s-gws14-125ci",
+                  "grinder-l-gws2200-180"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3912,7 +3977,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-18-li.png",
-                "similar": ["grinder-s-gws180li", "grinder-s-gwx180li"],
+                "similar": [
+                  "grinder-s-gws180li",
+                  "grinder-s-gwx180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3932,7 +4000,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-180-li.png",
-                "similar": ["grinder-s-gws18li", "grinder-s-gwx180li"],
+                "similar": [
+                  "grinder-s-gws18li",
+                  "grinder-s-gwx180li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -3952,7 +4023,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWS-18V-10.png",
-                "similar": ["grinder-s-gwx180li", "grinder-s-gws18li"],
+                "similar": [
+                  "grinder-s-gwx180li",
+                  "grinder-s-gws18li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -3972,7 +4046,10 @@ export const CATALOGUE = [
                   "Interface": "X-LOCK + M14"
                 },
                 "imageUrl": "/images/Images/Small-Angle-Grinder-GWX-180-Li.png",
-                "similar": ["grinder-s-gws18v10", "grinder-s-gws18li"],
+                "similar": [
+                  "grinder-s-gws18v10",
+                  "grinder-s-gws18li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -3998,7 +4075,10 @@ export const CATALOGUE = [
                   "Interface": "X-LOCK"
                 },
                 "imageUrl": "/images/Images/Angle-Grinder-GWX-17-125-S.png",
-                "similar": ["grinder-l-gws2200-180", "grinder-l-gws24-180"],
+                "similar": [
+                  "grinder-l-gws2200-180",
+                  "grinder-l-gws24-180"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4018,7 +4098,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-2200-180.png",
-                "similar": ["grinder-l-gws2200-230", "grinder-l-gws24-180"],
+                "similar": [
+                  "grinder-l-gws2200-230",
+                  "grinder-l-gws24-180"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4038,7 +4121,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-2200-230.png",
-                "similar": ["grinder-l-gws2200-180", "grinder-l-gws30-230"],
+                "similar": [
+                  "grinder-l-gws2200-180",
+                  "grinder-l-gws30-230"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4058,7 +4144,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-24-180.png",
-                "similar": ["grinder-l-gws2200-180", "grinder-l-gws24-230"],
+                "similar": [
+                  "grinder-l-gws2200-180",
+                  "grinder-l-gws24-230"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4078,7 +4167,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-24-230.png",
-                "similar": ["grinder-l-gws24-180", "grinder-l-gws2200-230"],
+                "similar": [
+                  "grinder-l-gws24-180",
+                  "grinder-l-gws2200-230"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4098,7 +4190,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-30-180-B.jpg",
-                "similar": ["grinder-l-gws30-230", "grinder-l-gws24-180"],
+                "similar": [
+                  "grinder-l-gws30-230",
+                  "grinder-l-gws24-180"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4118,7 +4213,10 @@ export const CATALOGUE = [
                   "Thread": "M14"
                 },
                 "imageUrl": "/images/Images/Large-Angle-Grinder-GWS-30-230.png",
-                "similar": ["grinder-l-gws30-180b", "grinder-l-gws2200-230"],
+                "similar": [
+                  "grinder-l-gws30-180b",
+                  "grinder-l-gws2200-230"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4150,7 +4248,10 @@ export const CATALOGUE = [
                   "Weight": "2.2 kg"
                 },
                 "imageUrl": "/images/Images/Circular-Saw-GKS-140.png",
-                "similar": ["saw-c-gks190", "saw-c-gks185li"],
+                "similar": [
+                  "saw-c-gks190",
+                  "saw-c-gks185li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4170,7 +4271,10 @@ export const CATALOGUE = [
                   "Weight": "3.0 kg"
                 },
                 "imageUrl": "/images/Images/Circular-Saw-GKS-185-Li.png",
-                "similar": ["saw-c-gks190", "saw-c-gks235turbo"],
+                "similar": [
+                  "saw-c-gks190",
+                  "saw-c-gks235turbo"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4190,7 +4294,10 @@ export const CATALOGUE = [
                   "Weight": "3.8 kg"
                 },
                 "imageUrl": "/images/Images/Circular-Saw-GKS-190.png",
-                "similar": ["saw-c-gks185li", "saw-c-gks235turbo"],
+                "similar": [
+                  "saw-c-gks185li",
+                  "saw-c-gks235turbo"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4210,7 +4317,10 @@ export const CATALOGUE = [
                   "Weight": "5.5 kg"
                 },
                 "imageUrl": "/images/Images/Circular-Saw-GKS-235-Turbo.png",
-                "similar": ["saw-c-gks190", "saw-t-gts10j"],
+                "similar": [
+                  "saw-c-gks190",
+                  "saw-t-gts10j"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4236,7 +4346,10 @@ export const CATALOGUE = [
                   "Weight": "2.0 kg"
                 },
                 "imageUrl": "/images/Images/Jigsaw-GST-90-BE.png",
-                "similar": ["saw-j-gst150bce", "saw-j-gst650"],
+                "similar": [
+                  "saw-j-gst150bce",
+                  "saw-j-gst650"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4256,7 +4369,10 @@ export const CATALOGUE = [
                   "Weight": "2.5 kg"
                 },
                 "imageUrl": "/images/Images/Jigsaw-GST-150-BCE.png",
-                "similar": ["saw-j-gst90be", "saw-j-gst185li"],
+                "similar": [
+                  "saw-j-gst90be",
+                  "saw-j-gst185li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4276,7 +4392,10 @@ export const CATALOGUE = [
                   "Weight": "2.3 kg"
                 },
                 "imageUrl": "/images/Images/Jigsaw-GST-185-li.png",
-                "similar": ["saw-j-gst150bce", "saw-j-gst650"],
+                "similar": [
+                  "saw-j-gst150bce",
+                  "saw-j-gst650"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4296,7 +4415,10 @@ export const CATALOGUE = [
                   "Weight": "1.9 kg"
                 },
                 "imageUrl": "/images/Images/Jigsaw-GST-650.png",
-                "similar": ["saw-j-gst90be", "saw-j-gst185li"],
+                "similar": [
+                  "saw-j-gst90be",
+                  "saw-j-gst185li"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4322,7 +4444,10 @@ export const CATALOGUE = [
                   "Weight": "1.3 kg"
                 },
                 "imageUrl": "/images/Images/Reciprocating-Saw-GSA-120.png",
-                "similar": ["saw-r-gsa1300pce", "saw-r-gsa18v32"],
+                "similar": [
+                  "saw-r-gsa1300pce",
+                  "saw-r-gsa18v32"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4342,7 +4467,10 @@ export const CATALOGUE = [
                   "Weight": "3.6 kg"
                 },
                 "imageUrl": "/images/Images/Reciprocating-Saw-GSA-1300-PCE.png",
-                "similar": ["saw-r-gsa18v32", "saw-r-gsa18vli"],
+                "similar": [
+                  "saw-r-gsa18v32",
+                  "saw-r-gsa18vli"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4362,7 +4490,10 @@ export const CATALOGUE = [
                   "Weight": "2.9 kg"
                 },
                 "imageUrl": "/images/Images/Recipsaw-GSA-18V-32.png",
-                "similar": ["saw-r-gsa18vli", "saw-r-gsa1300pce"],
+                "similar": [
+                  "saw-r-gsa18vli",
+                  "saw-r-gsa1300pce"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4382,7 +4513,10 @@ export const CATALOGUE = [
                   "Weight": "1.8 kg"
                 },
                 "imageUrl": "/images/Images/Recipsaw-GSA-18V-Li-Compact.png",
-                "similar": ["saw-r-gsa18v32", "saw-r-gsa120"],
+                "similar": [
+                  "saw-r-gsa18v32",
+                  "saw-r-gsa120"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4408,7 +4542,10 @@ export const CATALOGUE = [
                   "Weight": "30 kg"
                 },
                 "imageUrl": "/images/Images/Table-Saw-GTS-10-J.png",
-                "similar": ["saw-t-gts254", "saw-m-gcm10mx"],
+                "similar": [
+                  "saw-t-gts254",
+                  "saw-m-gcm10mx"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4428,7 +4565,10 @@ export const CATALOGUE = [
                   "Weight": "75 kg"
                 },
                 "imageUrl": "/images/Images/Table-Saw-GTS-254.png",
-                "similar": ["saw-t-gts10j", "saw-m-gcm10mx"],
+                "similar": [
+                  "saw-t-gts10j",
+                  "saw-m-gcm10mx"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4448,7 +4588,10 @@ export const CATALOGUE = [
                   "Weight": "26.5 kg"
                 },
                 "imageUrl": "/images/Images/Mitre-Saw-GCM-10-MX.png",
-                "similar": ["saw-t-gts10j", "saw-t-gts254"],
+                "similar": [
+                  "saw-t-gts10j",
+                  "saw-t-gts254"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4480,7 +4623,10 @@ export const CATALOGUE = [
                   "Weight": "6.0 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-5.png",
-                "similar": ["hammer-d-gsh11e", "hammer-d-gsh500hex"],
+                "similar": [
+                  "hammer-d-gsh11e",
+                  "hammer-d-gsh500hex"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4500,7 +4646,10 @@ export const CATALOGUE = [
                   "Weight": "10.8 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-11-E.png",
-                "similar": ["hammer-d-gsh11vc", "hammer-d-gsh5"],
+                "similar": [
+                  "hammer-d-gsh11vc",
+                  "hammer-d-gsh5"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4520,7 +4669,10 @@ export const CATALOGUE = [
                   "Weight": "11.5 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-11-VC.png",
-                "similar": ["hammer-d-gsh11e", "hammer-d-gsh14c"],
+                "similar": [
+                  "hammer-d-gsh11e",
+                  "hammer-d-gsh14c"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4540,7 +4692,10 @@ export const CATALOGUE = [
                   "Weight": "14.0 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-14-C.png",
-                "similar": ["hammer-d-gsh11vc", "hammer-d-gsh1630"],
+                "similar": [
+                  "hammer-d-gsh11vc",
+                  "hammer-d-gsh1630"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4560,7 +4715,10 @@ export const CATALOGUE = [
                   "Weight": "16.0 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-16-30.png",
-                "similar": ["hammer-d-gsh27vc", "hammer-d-gsh14c"],
+                "similar": [
+                  "hammer-d-gsh27vc",
+                  "hammer-d-gsh14c"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4580,7 +4738,10 @@ export const CATALOGUE = [
                   "Weight": "27.0 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-27-VC.png",
-                "similar": ["hammer-d-gsh1630", "hammer-d-gsh14c"],
+                "similar": [
+                  "hammer-d-gsh1630",
+                  "hammer-d-gsh14c"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4600,7 +4761,10 @@ export const CATALOGUE = [
                   "Weight": "4.8 kg"
                 },
                 "imageUrl": "/images/Images/Demolition-Hammer-GSH-500-Hex.png",
-                "similar": ["hammer-d-gsh5", "hammer-r-gbh220"],
+                "similar": [
+                  "hammer-d-gsh5",
+                  "hammer-r-gbh220"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4626,7 +4790,10 @@ export const CATALOGUE = [
                   "Weight": "2.7 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH-185-Li.png",
-                "similar": ["hammer-r-gbh220", "hammer-r-gbh226re"],
+                "similar": [
+                  "hammer-r-gbh220",
+                  "hammer-r-gbh226re"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4646,7 +4813,10 @@ export const CATALOGUE = [
                   "Weight": "2.8 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH-220.png",
-                "similar": ["hammer-r-gbh185li", "hammer-r-gbh226re"],
+                "similar": [
+                  "hammer-r-gbh185li",
+                  "hammer-r-gbh226re"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4666,7 +4836,10 @@ export const CATALOGUE = [
                   "Weight": "2.9 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH-2-26-RE.png",
-                "similar": ["hammer-r-gbh220", "hammer-r-gbh228dv"],
+                "similar": [
+                  "hammer-r-gbh220",
+                  "hammer-r-gbh228dv"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4686,7 +4859,10 @@ export const CATALOGUE = [
                   "Weight": "3.0 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH-2-28-DV.png",
-                "similar": ["hammer-r-gbh226re", "hammer-r-gbh432dfr"],
+                "similar": [
+                  "hammer-r-gbh226re",
+                  "hammer-r-gbh432dfr"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4706,7 +4882,10 @@ export const CATALOGUE = [
                   "Weight": "3.7 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH-4-32-DFR.png",
-                "similar": ["hammer-r-gbh228dv", "hammer-r-gbh540d"],
+                "similar": [
+                  "hammer-r-gbh228dv",
+                  "hammer-r-gbh540d"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4726,7 +4905,10 @@ export const CATALOGUE = [
                   "Weight": "5.7 kg"
                 },
                 "imageUrl": "/images/Images/Rotary-Hammer-GBH 5-40-D.png",
-                "similar": ["hammer-r-gbh432dfr", "hammer-d-gsh5"],
+                "similar": [
+                  "hammer-r-gbh432dfr",
+                  "hammer-d-gsh5"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -4754,7 +4936,10 @@ export const CATALOGUE = [
               "Weight": "4.0 kg"
             },
             "imageUrl": "/images/Images/Diamond-Cutter-GDC-120.png",
-            "similar": ["cutter-gdc141", "cutter-gac250"],
+            "similar": [
+              "cutter-gdc141",
+              "cutter-gac250"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4774,7 +4959,10 @@ export const CATALOGUE = [
               "Weight": "4.8 kg"
             },
             "imageUrl": "/images/Images/Diamond-Cutter-GDC-141.png",
-            "similar": ["cutter-gdc120", "cutter-gac250"],
+            "similar": [
+              "cutter-gdc120",
+              "cutter-gac250"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4794,7 +4982,10 @@ export const CATALOGUE = [
               "Weight": "12.0 kg"
             },
             "imageUrl": "/images/Images/AAC-Block-Cutter-GAC-250.png",
-            "similar": ["cutter-gdc141", "saw-c-gks235turbo"],
+            "similar": [
+              "cutter-gdc141",
+              "saw-c-gks235turbo"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4814,7 +5005,10 @@ export const CATALOGUE = [
               "Cutting Speed": "Variable"
             },
             "imageUrl": "/images/Images/Cutting-Pro-Pruner.png",
-            "similar": ["saw-r-gsa18vli", "screwdriver-go2"],
+            "similar": [
+              "saw-r-gsa18vli",
+              "screwdriver-go2"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           }
@@ -4840,7 +5034,10 @@ export const CATALOGUE = [
               "Hose Length": "5m"
             },
             "imageUrl": "/images/Images/BOSCH-AQUATEK120.png",
-            "similar": ["pw-aquatak125", "pw-aquatak130"],
+            "similar": [
+              "pw-aquatak125",
+              "pw-aquatak130"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4860,7 +5057,10 @@ export const CATALOGUE = [
               "Hose Length": "5m"
             },
             "imageUrl": "/images/Images/AQUATAK-125.png",
-            "similar": ["pw-aquatek120", "pw-aquatak130"],
+            "similar": [
+              "pw-aquatek120",
+              "pw-aquatak130"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": true
           },
@@ -4880,7 +5080,10 @@ export const CATALOGUE = [
               "Hose Length": "7.5m"
             },
             "imageUrl": "/images/Images/AQUATAK-130.png",
-            "similar": ["pw-aquatak125", "pw-aquatak140"],
+            "similar": [
+              "pw-aquatak125",
+              "pw-aquatak140"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4900,7 +5103,10 @@ export const CATALOGUE = [
               "Hose Length": "10m"
             },
             "imageUrl": "/images/Images/AQUATAK-140.png",
-            "similar": ["pw-aquatak130", "pw-aquatak160"],
+            "similar": [
+              "pw-aquatak130",
+              "pw-aquatak160"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -4920,7 +5126,10 @@ export const CATALOGUE = [
               "Hose Length": "10m"
             },
             "imageUrl": "/images/Images/AQUATAK-160.png",
-            "similar": ["pw-aquatak140", "pw-aquatak130"],
+            "similar": [
+              "pw-aquatak140",
+              "pw-aquatak130"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           }
@@ -4950,7 +5159,10 @@ export const CATALOGUE = [
                   "Weight": "9.5 kg"
                 },
                 "imageUrl": "/images/Images/PRO-GAS12-25.png",
-                "similar": ["vac-gas15ps", "vac-gas35l"],
+                "similar": [
+                  "vac-gas15ps",
+                  "vac-gas35l"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -4970,7 +5182,10 @@ export const CATALOGUE = [
                   "Weight": "7.0 kg"
                 },
                 "imageUrl": "/images/Images/PRO-GAS15PS.png",
-                "similar": ["vac-gas12-25", "vac-gas35l"],
+                "similar": [
+                  "vac-gas12-25",
+                  "vac-gas35l"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -4990,7 +5205,10 @@ export const CATALOGUE = [
                   "Weight": "12.0 kg"
                 },
                 "imageUrl": "/images/Images/PRO-GAS35L-SFC+.png",
-                "similar": ["vac-gas12-25", "vac-gas55m"],
+                "similar": [
+                  "vac-gas12-25",
+                  "vac-gas55m"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5010,7 +5228,10 @@ export const CATALOGUE = [
                   "Weight": "18.0 kg"
                 },
                 "imageUrl": "/images/Images/PRO-GAS-55M-AFC.png",
-                "similar": ["vac-gas35l", "vac-gas15ps"],
+                "similar": [
+                  "vac-gas35l",
+                  "vac-gas15ps"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5036,7 +5257,10 @@ export const CATALOGUE = [
                   "Speed Settings": "Variable"
                 },
                 "imageUrl": "/images/Images/BOSCH-GBL-82-270-Professional-Blower.png",
-                "similar": ["blower-gbl18v120", "blower-gbl620"],
+                "similar": [
+                  "blower-gbl18v120",
+                  "blower-gbl620"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5056,7 +5280,10 @@ export const CATALOGUE = [
                   "Noise Level": "80 dB(A)"
                 },
                 "imageUrl": "/images/Images/PRO-GBL18V-120.png",
-                "similar": ["blower-gbl82", "blower-gbl620"],
+                "similar": [
+                  "blower-gbl82",
+                  "blower-gbl620"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5076,7 +5303,10 @@ export const CATALOGUE = [
                   "Speed Settings": "Variable"
                 },
                 "imageUrl": "/images/Images/PRO-GBL620.png",
-                "similar": ["blower-gbl82", "blower-gbl18v120"],
+                "similar": [
+                  "blower-gbl82",
+                  "blower-gbl18v120"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5104,7 +5334,10 @@ export const CATALOGUE = [
               "Compatible": "All Bosch 12V Li-ion"
             },
             "imageUrl": "/images/Images/Charger-GAL-12V-20.png",
-            "similar": ["charger-gal12v40", "charger-gal18v40"],
+            "similar": [
+              "charger-gal12v40",
+              "charger-gal18v40"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -5124,7 +5357,10 @@ export const CATALOGUE = [
               "Compatible": "All Bosch 12V Li-ion"
             },
             "imageUrl": "/images/Images/Charger-GAL-12V- 40.png",
-            "similar": ["charger-gal12v20", "charger-gal18v40"],
+            "similar": [
+              "charger-gal12v20",
+              "charger-gal18v40"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": false
           },
@@ -5144,7 +5380,10 @@ export const CATALOGUE = [
               "Compatible": "All Bosch 18V Li-ion"
             },
             "imageUrl": "/images/Images/Charger-GAL18V-40.png",
-            "similar": ["charger-gal12v40", "kit-gal18v40-2x"],
+            "similar": [
+              "charger-gal12v40",
+              "kit-gal18v40-2x"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": true
           },
@@ -5164,7 +5403,10 @@ export const CATALOGUE = [
               "Weight": "1.0 kg"
             },
             "imageUrl": "/images/Images/Starter-Kits-GAL-12V-40-2x GBA-12V-2.0 Ah.png",
-            "similar": ["charger-gal12v40", "kit-gal18v40-2x"],
+            "similar": [
+              "charger-gal12v40",
+              "kit-gal18v40-2x"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": true
           },
@@ -5184,7 +5426,10 @@ export const CATALOGUE = [
               "Weight": "1.5 kg"
             },
             "imageUrl": "/images/Images/Starter-Kits-GAL-18V-40-2x-GBA-18-V-2.0 Ah.png",
-            "similar": ["charger-gal18v40", "kit-gal12v40-2x"],
+            "similar": [
+              "charger-gal18v40",
+              "kit-gal12v40-2x"
+            ],
             "dateAdded": "2026-07-01",
             "isBestSeller": true
           }
@@ -5222,7 +5467,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler -ECO-PS8016.png",
-                "similar": ["ps8016-neo", "ps8016-pro", "ps8016-xpro"],
+                "similar": [
+                  "ps8016-neo",
+                  "ps8016-pro",
+                  "ps8016-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5242,7 +5491,11 @@ export const CATALOGUE = [
                   "Tier": "NEO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler -NEO-PS8016.png",
-                "similar": ["ps8016-eco", "ps8016-pro", "ps8016-xpro"],
+                "similar": [
+                  "ps8016-eco",
+                  "ps8016-pro",
+                  "ps8016-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5262,7 +5515,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS8016V2.png",
-                "similar": ["ps8016-eco", "ps8016-neo", "ps8016-xpro"],
+                "similar": [
+                  "ps8016-eco",
+                  "ps8016-neo",
+                  "ps8016-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5282,7 +5539,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-XPRO-PS8016.png",
-                "similar": ["ps8016-eco", "ps8016-neo", "ps8016-pro"],
+                "similar": [
+                  "ps8016-eco",
+                  "ps8016-neo",
+                  "ps8016-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5302,7 +5563,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS7116.png",
-                "similar": ["ps8016-eco", "ps1013j-neo", "pshs16-pro"],
+                "similar": [
+                  "ps8016-eco",
+                  "ps1013j-neo",
+                  "pshs16-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5322,7 +5587,11 @@ export const CATALOGUE = [
                   "Tier": "NEO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-NEO-PS1013J.png",
-                "similar": ["ps1013j-pro", "ps1013f-eco", "ps7116-eco"],
+                "similar": [
+                  "ps1013j-pro",
+                  "ps1013f-eco",
+                  "ps7116-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5342,7 +5611,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS1013J.png",
-                "similar": ["ps1013j-neo", "ps1013f-eco", "ps1013f-pro"],
+                "similar": [
+                  "ps1013j-neo",
+                  "ps1013f-eco",
+                  "ps1013f-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5362,7 +5635,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1013F.png",
-                "similar": ["ps1013f-pro", "ps1013j-neo", "ps7116-eco"],
+                "similar": [
+                  "ps1013f-pro",
+                  "ps1013j-neo",
+                  "ps7116-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5382,7 +5659,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/pro-ps1013fv2-kaymo-pneumatic-stapler.png",
-                "similar": ["ps1013f-eco", "ps1013j-pro", "ps1013jv2-eco"],
+                "similar": [
+                  "ps1013f-eco",
+                  "ps1013j-pro",
+                  "ps1013jv2-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5402,7 +5683,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1013JV2.png",
-                "similar": ["ps1013j-neo", "ps1013j-pro", "ps1013f-eco"],
+                "similar": [
+                  "ps1013j-neo",
+                  "ps1013j-pro",
+                  "ps1013f-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5422,7 +5707,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS2315V2.png",
-                "similar": ["pshs16-pro", "ps8016-pro", "ps9040-pro"],
+                "similar": [
+                  "pshs16-pro",
+                  "ps8016-pro",
+                  "ps9040-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5442,7 +5731,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PSHS16.png",
-                "similar": ["ps2315-pro", "ps7116-eco", "ps8016-pro"],
+                "similar": [
+                  "ps2315-pro",
+                  "ps7116-eco",
+                  "ps8016-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5462,7 +5755,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS9040.png",
-                "similar": ["ps9240-pro", "ps9040combi-eco", "ps16wc38-pro"],
+                "similar": [
+                  "ps9240-pro",
+                  "ps9040combi-eco",
+                  "ps16wc38-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5482,7 +5779,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS9240.png",
-                "similar": ["ps9040-pro", "ps16wc38-pro", "ps10050-eco"],
+                "similar": [
+                  "ps9040-pro",
+                  "ps16wc38-pro",
+                  "ps10050-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5502,7 +5803,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/pro-ps9716-pneumatic-stapler.png",
-                "similar": ["ps7116-eco", "ps2315-pro", "pshs16-pro"],
+                "similar": [
+                  "ps7116-eco",
+                  "ps2315-pro",
+                  "pshs16-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5522,7 +5827,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-PRO-PS16WC38V2.png",
-                "similar": ["ps16wc38-xpro", "ps9040-pro", "ps10050-eco"],
+                "similar": [
+                  "ps16wc38-xpro",
+                  "ps9040-pro",
+                  "ps10050-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5542,7 +5851,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-XPRO-PS16WC38.png",
-                "similar": ["ps16wc38-pro", "ps9040-pro", "ps10050-eco"],
+                "similar": [
+                  "ps16wc38-pro",
+                  "ps9040-pro",
+                  "ps10050-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5562,7 +5875,11 @@ export const CATALOGUE = [
                   "Tier": "Standard"
                 },
                 "imageUrl": "/images/nailing&Stapling/kaymo-10050v2-pneumatic-stapler.png",
-                "similar": ["ps10050e2-eco", "ps10050e3-eco", "ps9040-pro"],
+                "similar": [
+                  "ps10050e2-eco",
+                  "ps10050e3-eco",
+                  "ps9040-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5582,7 +5899,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Kaymo-ECO-PS10050E2.png",
-                "similar": ["ps10050-kaymo", "ps10050e3-eco", "ps9040-pro"],
+                "similar": [
+                  "ps10050-kaymo",
+                  "ps10050e3-eco",
+                  "ps9040-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5602,7 +5923,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-ECO-PS1050E3.png",
-                "similar": ["ps10050-kaymo", "ps10050e2-eco", "ps9040-pro"],
+                "similar": [
+                  "ps10050-kaymo",
+                  "ps10050e2-eco",
+                  "ps9040-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5628,7 +5953,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose -ECO-PS8016LN.png",
-                "similar": ["ps8016ln-pro", "ps8016ln-xpro", "ps8016-eco"],
+                "similar": [
+                  "ps8016ln-pro",
+                  "ps8016ln-xpro",
+                  "ps8016-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5648,7 +5977,11 @@ export const CATALOGUE = [
                   "Tier": "PRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose -PRO-PS8016LNV2.png",
-                "similar": ["ps8016ln-eco", "ps8016ln-xpro", "ps8016-pro"],
+                "similar": [
+                  "ps8016ln-eco",
+                  "ps8016ln-xpro",
+                  "ps8016-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5668,7 +6001,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Nose-XPRO-PS8016LN.png",
-                "similar": ["ps8016ln-eco", "ps8016ln-pro", "ps8016-xpro"],
+                "similar": [
+                  "ps8016ln-eco",
+                  "ps8016ln-pro",
+                  "ps8016-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               }
@@ -5694,7 +6031,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Long-Magazine-XPRO-PS8016LM.png",
-                "similar": ["ps8016ralm-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "similar": [
+                  "ps8016ralm-xpro",
+                  "ps8016-xpro",
+                  "ps8016ln-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5714,7 +6055,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Rapid-Action-Long-Magazine-XPRO-PS8016RALM.png",
-                "similar": ["ps8016lm-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "similar": [
+                  "ps8016lm-xpro",
+                  "ps8016-xpro",
+                  "ps8016ln-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               }
@@ -5740,7 +6085,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/pneumatic-stapler-folding-attachment-xpro-ps8016fa.png",
-                "similar": ["ps16wc38fa-xpro", "ps8016-xpro", "ps8016ln-xpro"],
+                "similar": [
+                  "ps16wc38fa-xpro",
+                  "ps8016-xpro",
+                  "ps8016ln-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5760,7 +6109,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Folding-Attachment-XPRO-PS16WC38FA.png",
-                "similar": ["ps8016fa-xpro", "ps16wc38-xpro", "ps16wc38-pro"],
+                "similar": [
+                  "ps8016fa-xpro",
+                  "ps16wc38-xpro",
+                  "ps16wc38-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5786,7 +6139,11 @@ export const CATALOGUE = [
                   "Tier": "ECO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Pneumatic-Stapler-Combi-ECO-PS9040COMBI.png",
-                "similar": ["ps9040-pro", "ps9240-pro", "ps8016-eco"],
+                "similar": [
+                  "ps9040-pro",
+                  "ps9240-pro",
+                  "ps8016-eco"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5818,7 +6175,10 @@ export const CATALOGUE = [
                   "Weight": "2.65 kg"
                 },
                 "imageUrl": "/images/nailing&Stapling/Air-Boxer-Combi-PRO-AB3518COMBI.png",
-                "similar": ["ab3522combi-pro", "hb3518combi-pro"],
+                "similar": [
+                  "ab3522combi-pro",
+                  "hb3518combi-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5838,7 +6198,10 @@ export const CATALOGUE = [
                   "Weight": "2.65 kg"
                 },
                 "imageUrl": "/images/nailing&Stapling/Air-Boxer-Combi-PRO-AB3522COMBI.png",
-                "similar": ["ab3518combi-pro", "hb3518combi-pro"],
+                "similar": [
+                  "ab3518combi-pro",
+                  "hb3518combi-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5864,7 +6227,10 @@ export const CATALOGUE = [
                   "Operation": "Manual (No compressor)"
                 },
                 "imageUrl": "/images/nailing&Stapling/Hand-Boxer-Combi-PRO-HB3518COMBI.png",
-                "similar": ["ab3518combi-pro", "ab3522combi-pro"],
+                "similar": [
+                  "ab3518combi-pro",
+                  "ab3522combi-pro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5896,7 +6262,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Pneumatic-XPRO-FN1650-250F.png",
-                "similar": ["fn1838-q550al-xpro", "fn1838-q550al-pt-xpro", "fn1650-h330-xpro"],
+                "similar": [
+                  "fn1838-q550al-xpro",
+                  "fn1838-q550al-pt-xpro",
+                  "fn1650-h330-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": true
               },
@@ -5916,7 +6286,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Pneumatic-XPRO-FN1838-Q550AL.png",
-                "similar": ["fn1650-250f-xpro", "fn1838-q550al-pt-xpro", "fn1650-h330-xpro"],
+                "similar": [
+                  "fn1650-250f-xpro",
+                  "fn1838-q550al-pt-xpro",
+                  "fn1650-h330-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               },
@@ -5936,7 +6310,11 @@ export const CATALOGUE = [
                   "Variant": "PT (Enhanced Base Plate)"
                 },
                 "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-PT-Pneumatic-XPRO-FN1838-Q550AL.png",
-                "similar": ["fn1838-q550al-xpro", "fn1650-250f-xpro", "fn1650-h330-xpro"],
+                "similar": [
+                  "fn1838-q550al-xpro",
+                  "fn1650-250f-xpro",
+                  "fn1650-h330-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5962,7 +6340,11 @@ export const CATALOGUE = [
                   "Tier": "XPRO"
                 },
                 "imageUrl": "/images/nailing&Stapling/Flooring-Nailer-Manual-XPRO-FN1650-H330.png",
-                "similar": ["fn1650-250f-xpro", "fn1838-q550al-xpro", "fn1838-q550al-pt-xpro"],
+                "similar": [
+                  "fn1650-250f-xpro",
+                  "fn1838-q550al-xpro",
+                  "fn1838-q550al-pt-xpro"
+                ],
                 "dateAdded": "2026-07-01",
                 "isBestSeller": false
               }
@@ -5976,7 +6358,7 @@ export const CATALOGUE = [
     "id": "packaging-consumables",
     "name": "Packaging Consumables",
     "description": "Essential packaging consumables including bubble wrap, foam, stretch films, desiccants, VCI corrosion protection, and adhesive solutions for secure product protection and shipment.",
-    "imageUrl": "/images/packaging_consumables.png",
+    "imageUrl": "/images/Consumables/air film bubble.png",
     "subcategories": [
       {
         "id": "bubble-foam-protection",
@@ -5996,8 +6378,11 @@ export const CATALOGUE = [
               "Roll Width": "500 mm",
               "Roll Length": "100 m"
             },
-            "imageUrl": "/images/packaging-consumables/Air-Bubble-Film.png",
-            "similar": ["anti-static-air-bubble-film", "air-bubble-pouches"],
+            "imageUrl": "/images/Consumables/air film bubble.png",
+            "similar": [
+              "anti-static-air-bubble-film",
+              "air-bubble-pouches"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6015,8 +6400,11 @@ export const CATALOGUE = [
               "Surface Resistivity": "10⁹ – 10¹¹ Ω",
               "Roll Width": "500 mm"
             },
-            "imageUrl": "/images/packaging-consumables/Anti-Static-Air-Bubble-Film.png",
-            "similar": ["air-film-bubble", "air-bubble-pouches"],
+            "imageUrl": "/images/Consumables/ANTI-STATIC AIR BUBBLE FILM.png",
+            "similar": [
+              "air-film-bubble",
+              "air-bubble-pouches"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6034,8 +6422,11 @@ export const CATALOGUE = [
               "Bubble Diameter": "10 mm",
               "Sizes Available": "Multiple"
             },
-            "imageUrl": "/images/packaging-consumables/Air-Bubble-Pouches.png",
-            "similar": ["air-film-bubble", "anti-static-air-bubble-film"],
+            "imageUrl": "/images/Consumables/Air Bubble Pouches.png",
+            "similar": [
+              "air-film-bubble",
+              "anti-static-air-bubble-film"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6053,8 +6444,11 @@ export const CATALOGUE = [
               "Roll Width": "1000 mm",
               "Density": "20 – 30 kg/m³"
             },
-            "imageUrl": "/images/packaging-consumables/Foam-Roll.png",
-            "similar": ["foam-sheets", "custom-foam-pouches"],
+            "imageUrl": "/images/Consumables/FOAM ROLL.png",
+            "similar": [
+              "foam-sheets",
+              "custom-foam-pouches"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6072,8 +6466,11 @@ export const CATALOGUE = [
               "Sheet Sizes": "Multiple standard sizes",
               "Density": "20 – 30 kg/m³"
             },
-            "imageUrl": "/images/packaging-consumables/Foam-Sheets.png",
-            "similar": ["foam-roll", "custom-foam-pouches"],
+            "imageUrl": "/images/Consumables/FOAM sheets.png",
+            "similar": [
+              "foam-roll",
+              "custom-foam-pouches"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6091,8 +6488,11 @@ export const CATALOGUE = [
               "Closure Options": "Open-top / Flap / Adhesive",
               "Printing": "Available on request"
             },
-            "imageUrl": "/images/packaging-consumables/Custom-Made-Foam-Pouches.png",
-            "similar": ["foam-roll", "foam-sheets"],
+            "imageUrl": "/images/Consumables/CUSTOM MADE FOAM POUCHES.png",
+            "similar": [
+              "foam-roll",
+              "foam-sheets"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6116,8 +6516,10 @@ export const CATALOGUE = [
               "Roll Width": "380 mm",
               "Recyclable": "100%"
             },
-            "imageUrl": "/images/packaging-consumables/Bhive-Paper.png",
-            "similar": ["bhive-paper-stand"],
+            "imageUrl": "/images/Consumables/BHIVE PAPER.png",
+            "similar": [
+              "bhive-paper-stand"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6135,8 +6537,10 @@ export const CATALOGUE = [
               "Material": "Steel Frame",
               "Assembly": "Tool-free"
             },
-            "imageUrl": "/images/packaging-consumables/Bhive-Paper-Stand.png",
-            "similar": ["bhive-paper"],
+            "imageUrl": "/images/Consumables/BHIVE PAPER STAND.png",
+            "similar": [
+              "bhive-paper"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6160,8 +6564,10 @@ export const CATALOGUE = [
               "Pressure Rating": "Up to 1.0 bar",
               "Sizes": "Multiple standard sizes"
             },
-            "imageUrl": "/images/packaging-consumables/Dunnage-Bag.png",
-            "similar": ["noz-gun"],
+            "imageUrl": "/images/Consumables/DUNNAGE BAG.png",
+            "similar": [
+              "noz-gun"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6179,8 +6585,10 @@ export const CATALOGUE = [
               "Trigger": "Ergonomic Lever",
               "Compatible With": "Standard Dunnage Bags"
             },
-            "imageUrl": "/images/packaging-consumables/Noz-Gun.png",
-            "similar": ["dunnage-bag"],
+            "imageUrl": "/images/Consumables/NOZ GUN.png",
+            "similar": [
+              "dunnage-bag"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6198,8 +6606,11 @@ export const CATALOGUE = [
               "Paper Width": "380 mm",
               "Power": "220V / 50Hz"
             },
-            "imageUrl": "/images/packaging-consumables/Paper-Corm-Machine.png",
-            "similar": ["dunnage-bag", "bhive-paper"],
+            "imageUrl": "/images/Consumables/BHIVE PAPER.png",
+            "similar": [
+              "dunnage-bag",
+              "bhive-paper"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6223,8 +6634,11 @@ export const CATALOGUE = [
               "Flute Types": "B / C / BC / E",
               "Custom Sizes": "Available"
             },
-            "imageUrl": "/images/packaging-consumables/Corrugated-Sheets.png",
-            "similar": ["angle-boards", "edge-protectors"],
+            "imageUrl": "/images/Consumables/CORRUGATED SHEETS.png",
+            "similar": [
+              "angle-boards",
+              "edge-protectors"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6242,8 +6656,11 @@ export const CATALOGUE = [
               "Leg Sizes": "35×35 mm to 75×75 mm",
               "Lengths": "Custom cut"
             },
-            "imageUrl": "/images/packaging-consumables/Angle-Boards.png",
-            "similar": ["edge-protectors", "corrugated-sheets"],
+            "imageUrl": "/images/Consumables/ANGLE BOARDS.png",
+            "similar": [
+              "edge-protectors",
+              "corrugated-sheets"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6261,9 +6678,16 @@ export const CATALOGUE = [
               "Recyclable": "100%",
               "Variants": "Kraft/Brown, White, Custom Colors"
             },
-            "imageUrl": "/images/packaging-consumables/Edge-Protectors.png",
-            "variants": ["Kraft/Brown", "White", "Custom Colors"],
-            "similar": ["angle-boards", "corrugated-sheets"],
+            "imageUrl": "/images/Consumables/EDGE PROTECTORS.png",
+            "variants": [
+              "Kraft/Brown",
+              "White",
+              "Custom Colors"
+            ],
+            "similar": [
+              "angle-boards",
+              "corrugated-sheets"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6287,8 +6711,11 @@ export const CATALOGUE = [
               "Stretch": "Up to 300%",
               "Roll Width": "500 mm"
             },
-            "imageUrl": "/images/packaging-consumables/Stretch-Wrap-Films.png",
-            "similar": ["stretch-wrap-dispenser", "pof-shrink-films"],
+            "imageUrl": "/images/Consumables/stretch wrap films.png",
+            "similar": [
+              "stretch-wrap-dispenser",
+              "pof-shrink-films"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": true
           },
@@ -6306,8 +6733,10 @@ export const CATALOGUE = [
               "Tension Control": "Adjustable Brake",
               "Handle": "Ergonomic Grip"
             },
-            "imageUrl": "/images/packaging-consumables/Stretch-Wrap-Dispenser.png",
-            "similar": ["stretch-wrap-films"],
+            "imageUrl": "/images/Consumables/STRETCH WRAP DISPENSER.png",
+            "similar": [
+              "stretch-wrap-films"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6325,8 +6754,10 @@ export const CATALOGUE = [
               "Shrinkage": "Up to 75%",
               "Clarity": "High Gloss"
             },
-            "imageUrl": "/images/packaging-consumables/POF-Shrink-Films.png",
-            "similar": ["stretch-wrap-films"],
+            "imageUrl": "/images/Consumables/POF SHRINK FILMS.png",
+            "similar": [
+              "stretch-wrap-films"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6350,8 +6781,10 @@ export const CATALOGUE = [
               "Widths": "Multiple standard sizes",
               "Sealable": "Heat-sealable"
             },
-            "imageUrl": "/images/packaging-consumables/Polythene-Rolls.png",
-            "similar": ["polythene-bags"],
+            "imageUrl": "/images/Consumables/POLYTHENE ROLLS.png",
+            "similar": [
+              "polythene-bags"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6369,8 +6802,10 @@ export const CATALOGUE = [
               "Thickness": "40 – 150 micron",
               "Printing": "Custom printing available"
             },
-            "imageUrl": "/images/packaging-consumables/Polythene-Bags.png",
-            "similar": ["polythene-rolls"],
+            "imageUrl": "/images/Consumables/POLYTHENE BAGS.png",
+            "similar": [
+              "polythene-rolls"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6394,8 +6829,10 @@ export const CATALOGUE = [
               "Non-Toxic": "Yes",
               "Packaging": "Sachets / Bulk"
             },
-            "imageUrl": "/images/packaging-consumables/Silica-Gel.png",
-            "similar": ["silica-gel-clay"],
+            "imageUrl": "/images/Consumables/silica gel(gel).png",
+            "similar": [
+              "silica-gel-clay"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6413,8 +6850,10 @@ export const CATALOGUE = [
               "Biodegradable": "Yes",
               "Packaging": "Sachets / Bags"
             },
-            "imageUrl": "/images/packaging-consumables/Silica-Gel-Clay-Desiccants.png",
-            "similar": ["silica-gel"],
+            "imageUrl": "/images/Consumables/silica gel(clay dessicants).png",
+            "similar": [
+              "silica-gel"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6438,8 +6877,11 @@ export const CATALOGUE = [
               "Residue": "None",
               "Roll Widths": "Multiple standard sizes"
             },
-            "imageUrl": "/images/packaging-consumables/VCI-Paper-Plain.png",
-            "similar": ["vci-plastic-sheet", "vci-powder"],
+            "imageUrl": "/images/Consumables/VCI PAPER PLAIN.png",
+            "similar": [
+              "vci-plastic-sheet",
+              "vci-powder"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6457,8 +6899,11 @@ export const CATALOGUE = [
               "Protection": "Multi-Metal VCI",
               "Thickness": "80 – 200 micron"
             },
-            "imageUrl": "/images/packaging-consumables/VCI-Plastic-Sheet.png",
-            "similar": ["vci-paper-plain", "vci-powder"],
+            "imageUrl": "/images/Consumables/vci plastic sheet.png",
+            "similar": [
+              "vci-paper-plain",
+              "vci-powder"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6476,8 +6921,11 @@ export const CATALOGUE = [
               "Residue": "Non-toxic",
               "Protection Duration": "Up to 24 months"
             },
-            "imageUrl": "/images/packaging-consumables/VCI-Powder.png",
-            "similar": ["vci-paper-plain", "vci-plastic-sheet"],
+            "imageUrl": "/images/Consumables/vci powder.png",
+            "similar": [
+              "vci-paper-plain",
+              "vci-plastic-sheet"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6501,8 +6949,11 @@ export const CATALOGUE = [
               "Nozzle": "Anti-Drip Insulated",
               "Power": "60W / 100W"
             },
-            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Gun.png",
-            "similar": ["hot-melt-glue-sticks-yellow", "hot-melt-glue-sticks-white"],
+            "imageUrl": "/images/Consumables/hot melt glue gun.png",
+            "similar": [
+              "hot-melt-glue-sticks-yellow",
+              "hot-melt-glue-sticks-white"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6520,8 +6971,11 @@ export const CATALOGUE = [
               "Length": "270 mm",
               "Adhesion": "High Tack"
             },
-            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Sticks-Yellow.png",
-            "similar": ["hot-melt-glue-sticks-white", "hot-melt-glue-gun"],
+            "imageUrl": "/images/Consumables/hot melt glue gun sticks.png",
+            "similar": [
+              "hot-melt-glue-sticks-white",
+              "hot-melt-glue-gun"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           },
@@ -6539,8 +6993,11 @@ export const CATALOGUE = [
               "Length": "270 mm",
               "Adhesion": "High Tack"
             },
-            "imageUrl": "/images/packaging-consumables/Hot-Melt-Glue-Sticks-White.png",
-            "similar": ["hot-melt-glue-sticks-yellow", "hot-melt-glue-gun"],
+            "imageUrl": "/images/Consumables/hot melt glue gun sticks.png",
+            "similar": [
+              "hot-melt-glue-sticks-yellow",
+              "hot-melt-glue-gun"
+            ],
             "dateAdded": "2026-08-30",
             "isBestSeller": false
           }
@@ -6564,9 +7021,2344 @@ export const CATALOGUE = [
               "UV Resistant": "Yes",
               "Sizes": "Multiple lengths and widths"
             },
-            "imageUrl": "/images/packaging-consumables/Cable-Tie.png",
+            "imageUrl": "/images/Consumables/cable tie.png",
             "similar": [],
             "dateAdded": "2026-08-30",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "stretch-film",
+        "name": "Stretch Film",
+        "products": [
+          {
+            "id": "stretch-film-500mm",
+            "name": "SBECO Stretch Film 500mm",
+            "sku": "SBL-STRETCH-500",
+            "brand": "SBECO",
+            "tagline": "High-grade stretch film for pallet wrapping and bundle protection",
+            "badge": "Popular",
+            "description": "Durable plastic stretch film with excellent cling and puncture resistance. Available in 500mm width rolls.",
+            "specs": {
+              "Width": "500mm",
+              "Length": "1500m per roll",
+              "Thickness": "20 microns",
+              "Material": "LLDPE",
+              "Cling": "Enhanced"
+            },
+            "imageUrl": "/images/stretch_film.png",
+            "consumables": [
+              {
+                "name": "Stretch Film Dispenser",
+                "sku": "SBL-DISP-STRETCH",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "stretch-film-250mm"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "stretch-film-250mm",
+            "name": "SBECO Stretch Film 250mm",
+            "sku": "SBL-STRETCH-250",
+            "brand": "SBECO",
+            "tagline": "Compact stretch film for small bundles and light-duty wrapping",
+            "badge": "Value Pick",
+            "description": "Economical stretch film suitable for lighter wrapping applications.",
+            "specs": {
+              "Width": "250mm",
+              "Length": "2000m per roll",
+              "Thickness": "15 microns",
+              "Material": "LLDPE"
+            },
+            "imageUrl": "/images/stretch_film_250.png",
+            "consumables": [
+              {
+                "name": "Stretch Film Dispenser",
+                "sku": "SBL-DISP-STRETCH",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "stretch-film-500mm"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "foam-products",
+        "name": "Foam Products",
+        "products": [
+          {
+            "id": "bubble-wrap-10mm",
+            "name": "SBECO Bubble Wrap 10mm",
+            "sku": "SBL-BUBBLE-10",
+            "brand": "SBECO",
+            "tagline": "Standard bubble wrap for lightweight item protection",
+            "badge": "Essential",
+            "description": "Protective bubble wrap with 10mm bubbles for cushioning fragile items.",
+            "specs": {
+              "Bubble Size": "10mm",
+              "Width": "1200mm",
+              "Length": "100m per roll",
+              "Material": "Polyethylene"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-180-G.png",
+            "consumables": [
+              {
+                "name": "Packing Tape 50mm",
+                "sku": "SBL-TAPE-PKG",
+                "icon": "tape"
+              }
+            ],
+            "similar": [
+              "bubble-wrap-20mm",
+              "foam-sheets"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "bubble-wrap-20mm",
+            "name": "SBECO Bubble Wrap 20mm",
+            "sku": "SBL-BUBBLE-20",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty bubble wrap with larger bubbles for superior protection",
+            "badge": "Heavy Duty",
+            "description": "Premium bubble wrap with 20mm bubbles for maximum cushioning.",
+            "specs": {
+              "Bubble Size": "20mm",
+              "Width": "1200mm",
+              "Length": "50m per roll",
+              "Material": "Polyethylene",
+              "Protection": "Maximum"
+            },
+            "imageUrl": "/images/Consumables/1''Big-bubble-500g.png",
+            "consumables": [
+              {
+                "name": "Packing Tape 50mm",
+                "sku": "SBL-TAPE-PKG",
+                "icon": "tape"
+              }
+            ],
+            "similar": [
+              "bubble-wrap-10mm",
+              "foam-sheets"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "foam-sheets",
+            "name": "SBECO Foam Sheets 50mm",
+            "sku": "SBL-FOAM-50",
+            "brand": "SBECO",
+            "tagline": "Closed-cell foam sheets for rigid cushioning and insulation",
+            "badge": "Premium",
+            "description": "High-quality closed-cell foam sheets for protecting fragile and sensitive items.",
+            "specs": {
+              "Thickness": "50mm",
+              "Density": "25kg/m�",
+              "Size": "1m x 0.5m per sheet",
+              "Material": "EPE Foam",
+              "Reusable": "Yes"
+            },
+            "imageUrl": "/images/Consumables/Foam-sheet-25mm.png",
+            "consumables": [
+              {
+                "name": "Packing Tape 50mm",
+                "sku": "SBL-TAPE-PKG",
+                "icon": "tape"
+              }
+            ],
+            "similar": [
+              "bubble-wrap-20mm",
+              "bubble-wrap-10mm"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "air-bubble-film",
+        "name": "Air Bubble Film",
+        "products": [
+          {
+            "id": "air-bubble-film-180g",
+            "name": "SBECO Air Bubble Film 180G",
+            "sku": "SBL-ABF-180",
+            "brand": "SBECO",
+            "tagline": "Lightweight air bubble film for general-purpose cushioning",
+            "badge": "Popular",
+            "description": "SBECO Air Bubble Film 180G is a cost-effective protective packaging material designed for general-purpose cushioning. Made from high-quality LLDPE, it provides reliable protection for lightweight and moderately fragile items during transit and storage.",
+            "specs": {
+              "GSM": "180",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Standard"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-180-G.png",
+            "similar": [
+              "air-bubble-film-250g",
+              "air-bubble-film-300g",
+              "air-bubble-film-350g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-film-250g",
+            "name": "SBECO Air Bubble Film 250G",
+            "sku": "SBL-ABF-250",
+            "brand": "SBECO",
+            "tagline": "Medium-weight air bubble film for enhanced item protection",
+            "badge": "Essential",
+            "description": "SBECO Air Bubble Film 250G offers enhanced cushioning compared to lower GSM variants. Suitable for moderately heavy items requiring reliable shock absorption and surface protection during shipping and handling.",
+            "specs": {
+              "GSM": "250",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Standard"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Roll-250-G.png",
+            "similar": [
+              "air-bubble-film-180g",
+              "air-bubble-film-300g",
+              "air-bubble-film-350g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-film-300g",
+            "name": "SBECO Air Bubble Film 300G",
+            "sku": "SBL-ABF-300",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty air bubble film for industrial-grade protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO Air Bubble Film 300G is an industrial-grade protective material with higher GSM for superior cushioning. Ideal for heavy, fragile, or high-value items requiring maximum protection during transit.",
+            "specs": {
+              "GSM": "300",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-300-G.png",
+            "similar": [
+              "air-bubble-film-250g",
+              "air-bubble-film-350g",
+              "air-bubble-film-180g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-film-350g",
+            "name": "SBECO Air Bubble Film 350G",
+            "sku": "SBL-ABF-350",
+            "brand": "SBECO",
+            "tagline": "Premium heavy-duty air bubble film for maximum protection",
+            "badge": "Premium",
+            "description": "SBECO Air Bubble Film 350G is the highest GSM variant in the range, providing premium-grade cushioning for the most fragile and valuable items. Thick bubble layer ensures superior shock absorption.",
+            "specs": {
+              "GSM": "350",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE",
+              "Width": "Multiple sizes available",
+              "Type": "Premium Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Film-350-G.png",
+            "similar": [
+              "air-bubble-film-300g",
+              "air-bubble-film-250g",
+              "air-bubble-film-lamination"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-film-lamination",
+            "name": "SBECO Air Bubble Film with Lamination",
+            "sku": "SBL-ABF-LAM",
+            "brand": "SBECO",
+            "tagline": "Laminated air bubble film for dust-free and moisture-resistant packaging",
+            "badge": "Premium",
+            "description": "SBECO Air Bubble Film with Lamination features an additional laminated layer that provides enhanced moisture resistance and dust protection. Ideal for electronics, pharmaceutical, and food-grade packaging applications.",
+            "specs": {
+              "GSM": "350+",
+              "Bubble Diameter": "10mm",
+              "Material": "LLDPE with Lamination",
+              "Width": "Multiple sizes available",
+              "Lamination": "Yes"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Film-450G.png",
+            "similar": [
+              "air-bubble-film-350g",
+              "air-bubble-antistatic",
+              "air-bubble-pouch"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-pouch",
+            "name": "SBECO Air Bubble Pouch",
+            "sku": "SBL-ABP-001",
+            "brand": "SBECO",
+            "tagline": "Pre-cut air bubble pouches for individual item protection",
+            "badge": "Popular",
+            "description": "SBECO Air Bubble Pouches are pre-cut, ready-to-use protective sleeves made from high-quality bubble film. Available in multiple sizes for wrapping individual items like electronics, glassware, and delicate components.",
+            "specs": {
+              "Material": "LLDPE Bubble Film",
+              "Sizes": "Multiple sizes available",
+              "Closure": "Self-seal / Open end",
+              "Bubble Diameter": "10mm",
+              "Usage": "Individual item wrapping"
+            },
+            "imageUrl": "/images/Consumables/Air-Bubble-Pouches.png",
+            "similar": [
+              "air-bubble-film-250g",
+              "air-bubble-film-350g",
+              "air-bubble-roll-machine"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "air-bubble-roll-machine",
+            "name": "SBECO Air Bubble Roll Machine Grade",
+            "sku": "SBL-ABR-MCH",
+            "brand": "SBECO",
+            "tagline": "Machine-grade bubble rolls for high-volume automated packaging",
+            "badge": "Professional",
+            "description": "SBECO Machine Grade Air Bubble Rolls are designed for use with automated packaging machines. Consistent bubble quality and roll dimensions ensure smooth feed and reliable performance in high-throughput operations.",
+            "specs": {
+              "Material": "LLDPE",
+              "Bubble Diameter": "10mm",
+              "Roll Width": "Standard machine widths",
+              "Roll Length": "Extended length",
+              "Type": "Machine Grade"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-500G.png",
+            "similar": [
+              "air-bubble-film-350g",
+              "air-bubble-antistatic",
+              "air-bubble-film-lamination"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "air-bubble-antistatic",
+            "name": "SBECO Antistatic Air Bubble Film",
+            "sku": "SBL-ABF-ESD",
+            "brand": "SBECO",
+            "tagline": "ESD-safe antistatic bubble film for electronics packaging",
+            "badge": "Professional",
+            "description": "SBECO Antistatic Air Bubble Film is specially formulated to prevent static charge buildup. Essential for packaging electronic components, PCBs, and sensitive equipment where electrostatic discharge (ESD) can cause damage.",
+            "specs": {
+              "Material": "LLDPE with Antistatic Additive",
+              "Bubble Diameter": "10mm",
+              "Surface Resistivity": "10^9 – 10^12 Ohm",
+              "Color": "Pink",
+              "ESD Safe": "Yes"
+            },
+            "imageUrl": "/images/Consumables/anti-static-air-bubble-film300G.png",
+            "similar": [
+              "air-bubble-film-lamination",
+              "air-bubble-film-350g",
+              "air-bubble-pouch"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "foam-sheets-rolls",
+        "name": "Foam Sheets & Rolls",
+        "products": [
+          {
+            "id": "epe-foam-roll-consumable",
+            "name": "SBECO EPE Foam Roll",
+            "sku": "SBL-FOAM-ROLL-01",
+            "brand": "SBECO",
+            "tagline": "Expanded polyethylene foam roll for surface protection and cushioning",
+            "badge": "Essential",
+            "description": "SBECO EPE Foam Roll provides excellent cushioning and surface protection for a wide range of products. Lightweight, flexible, and easy to cut. Ideal for wrapping furniture, appliances, and industrial components.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Thickness": "1mm – 10mm",
+              "Width": "1000mm / 1200mm",
+              "Length": "100m – 200m per roll",
+              "Density": "20–30 kg/m³"
+            },
+            "imageUrl": "/images/Consumables/Foam-roll-1mm.png",
+            "similar": [
+              "epe-foam-sheet",
+              "epe-foam-pouch",
+              "epe-foam-roll-laminated"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "epe-foam-sheet",
+            "name": "SBECO EPE Foam Sheet 2000x1000",
+            "sku": "SBL-FOAM-SHT-01",
+            "brand": "SBECO",
+            "tagline": "Pre-cut foam sheets for layering and interleaving protection",
+            "badge": "Popular",
+            "description": "SBECO EPE Foam Sheets are pre-cut to standard 2000x1000mm dimensions for easy use as interleaving, wrapping, and cushioning material. Available in various thicknesses to suit different protection needs.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Size": "2000mm x 1000mm",
+              "Thickness": "2mm – 50mm",
+              "Density": "20–30 kg/m³",
+              "Color": "White"
+            },
+            "imageUrl": "/images/Consumables/30-mm-foam-sheet.png",
+            "similar": [
+              "epe-foam-roll-consumable",
+              "epe-foam-pouch",
+              "epe-foam-plank"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-pouch",
+            "name": "SBECO EPE Foam Pouch",
+            "sku": "SBL-FOAM-PCH-01",
+            "brand": "SBECO",
+            "tagline": "Pre-formed foam pouches for individual item cushioning",
+            "badge": "Popular",
+            "description": "SBECO EPE Foam Pouches are ready-to-use protective sleeves made from expanded polyethylene foam. Perfect for wrapping individual items like bottles, glassware, electronics, and delicate components.",
+            "specs": {
+              "Material": "EPE Foam",
+              "Sizes": "Multiple sizes available",
+              "Thickness": "1mm – 3mm",
+              "Closure": "Open end",
+              "Usage": "Individual item wrapping"
+            },
+            "imageUrl": "/images/Consumables/custom-made-foam-pouches.png",
+            "similar": [
+              "epe-foam-sheet",
+              "epe-foam-roll-consumable",
+              "air-bubble-pouch"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-roll-laminated",
+            "name": "SBECO EPE Foam Roll with Lamination",
+            "sku": "SBL-FOAM-LAM-01",
+            "brand": "SBECO",
+            "tagline": "Laminated foam roll for enhanced moisture and abrasion resistance",
+            "badge": "Premium",
+            "description": "SBECO EPE Foam Roll with Lamination features a protective laminated layer bonded to the foam surface. Provides enhanced resistance against moisture, abrasion, and tearing for high-value or sensitive products.",
+            "specs": {
+              "Material": "EPE Foam + PE Lamination",
+              "Thickness": "2mm – 10mm",
+              "Width": "1000mm / 1200mm",
+              "Lamination": "LDPE / HDPE",
+              "Density": "20–30 kg/m³"
+            },
+            "imageUrl": "/images/Consumables/Foam-roll-3mm.png",
+            "similar": [
+              "epe-foam-roll-consumable",
+              "epe-foam-sheet",
+              "air-bubble-film-lamination"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-plank",
+            "name": "SBECO EPE Foam Plank",
+            "sku": "SBL-FOAM-PLK-01",
+            "brand": "SBECO",
+            "tagline": "Thick foam planks for heavy-duty cushioning and void filling",
+            "badge": "Heavy Duty",
+            "description": "SBECO EPE Foam Planks are thick, high-density foam blocks designed for heavy-duty cushioning, void filling, and custom die-cut packaging inserts. Available in various thicknesses up to 100mm.",
+            "specs": {
+              "Material": "EPE (Expanded Polyethylene)",
+              "Size": "2000mm x 1000mm",
+              "Thickness": "20mm – 100mm",
+              "Density": "25–35 kg/m³",
+              "Color": "White"
+            },
+            "imageUrl": "/images/Consumables/40mm-foam-sheet.png",
+            "similar": [
+              "epe-foam-sheet",
+              "epe-foam-roll-consumable",
+              "epe-foam-pouch"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "bhive-paper",
+        "name": "BHive Paper",
+        "products": [
+          {
+            "id": "bhive-paper-roll",
+            "name": "SBECO BHive Paper Roll",
+            "sku": "SBL-BHIVE-ROLL",
+            "brand": "SBECO",
+            "tagline": "Eco-friendly honeycomb paper wrap for sustainable packaging",
+            "badge": "Eco-Friendly",
+            "description": "SBECO BHive Paper is an innovative honeycomb-structured wrapping paper that expands to cushion and protect items. A sustainable alternative to bubble wrap, it is 100% recyclable and biodegradable.",
+            "specs": {
+              "Material": "Kraft Paper",
+              "Structure": "Honeycomb expandable",
+              "Width": "380mm / 500mm",
+              "Roll Length": "50m – 250m",
+              "Recyclable": "100%"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "similar": [
+              "bhive-paper-sheet",
+              "air-bubble-film-250g",
+              "epe-foam-roll-consumable"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "bhive-paper-sheet",
+            "name": "SBECO BHive Paper Sheet",
+            "sku": "SBL-BHIVE-SHT",
+            "brand": "SBECO",
+            "tagline": "Pre-cut honeycomb paper sheets for individual item wrapping",
+            "badge": "Eco-Friendly",
+            "description": "SBECO BHive Paper Sheets are pre-cut honeycomb paper pieces ideal for wrapping individual products. Provides cushioning protection while being completely eco-friendly and compostable.",
+            "specs": {
+              "Material": "Kraft Paper",
+              "Structure": "Honeycomb expandable",
+              "Sheet Sizes": "Multiple sizes available",
+              "Recyclable": "100%",
+              "Compostable": "Yes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_5.png",
+            "similar": [
+              "bhive-paper-roll",
+              "air-bubble-pouch",
+              "epe-foam-pouch"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "dunnage-bags",
+        "name": "Dunnage Bags",
+        "products": [
+          {
+            "id": "dunnage-bag-pp-woven",
+            "name": "SBECO Dunnage Bag PP Woven",
+            "sku": "SBL-DUN-PPW",
+            "brand": "SBECO",
+            "tagline": "PP woven dunnage bag for securing cargo in containers",
+            "badge": "Heavy Duty",
+            "description": "SBECO PP Woven Dunnage Bags are inflatable airbags used to fill voids and secure cargo inside shipping containers, trucks, and rail cars. PP woven construction provides high burst strength and durability.",
+            "specs": {
+              "Material": "PP Woven",
+              "Inflation": "Air valve",
+              "Burst Pressure": "High",
+              "Sizes": "Multiple sizes available",
+              "Usage": "Container void filling"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
+            "similar": [
+              "dunnage-bag-kraft",
+              "dunnage-bag-vinyl"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "dunnage-bag-kraft",
+            "name": "SBECO Dunnage Bag Kraft Paper",
+            "sku": "SBL-DUN-KFT",
+            "brand": "SBECO",
+            "tagline": "Kraft paper dunnage bag for lightweight cargo bracing",
+            "badge": "Essential",
+            "description": "SBECO Kraft Paper Dunnage Bags combine a multi-ply kraft paper outer layer with an inflatable PE inner bladder. Cost-effective solution for bracing lighter cargo loads in transit.",
+            "specs": {
+              "Material": "Multi-ply Kraft Paper + PE Bladder",
+              "Inflation": "Air valve",
+              "Burst Pressure": "Medium",
+              "Sizes": "Multiple sizes available",
+              "Recyclable": "Partially"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
+            "similar": [
+              "dunnage-bag-pp-woven",
+              "dunnage-bag-vinyl"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "dunnage-bag-vinyl",
+            "name": "SBECO Dunnage Bag Vinyl",
+            "sku": "SBL-DUN-VNL",
+            "brand": "SBECO",
+            "tagline": "Reusable vinyl dunnage bag for heavy-duty cargo securing",
+            "badge": "Premium",
+            "description": "SBECO Vinyl Dunnage Bags are reusable, heavy-duty airbags designed for securing the heaviest cargo loads. Vinyl construction provides exceptional durability, puncture resistance, and reusability.",
+            "specs": {
+              "Material": "Vinyl",
+              "Inflation": "Air valve",
+              "Burst Pressure": "Very High",
+              "Reusable": "Yes",
+              "Usage": "Heavy cargo securing"
+            },
+            "imageUrl": "/images/Consumables/air-bubble-film-600G.png",
+            "similar": [
+              "dunnage-bag-pp-woven",
+              "dunnage-bag-kraft"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "silica-gel-desiccants",
+        "name": "Silica Gel & Desiccants",
+        "products": [
+          {
+            "id": "silica-gel-1g",
+            "name": "SBECO Silica Gel 1g",
+            "sku": "SBL-SG-001",
+            "brand": "SBECO",
+            "tagline": "1 gram silica gel sachet for small package moisture protection",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 1g sachets are compact desiccant packets designed to absorb moisture inside small packages. Protects electronics, medications, food items, and leather goods from humidity damage.",
+            "specs": {
+              "Weight": "1 gram",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Small packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-2g",
+              "silica-gel-5g",
+              "silica-gel-10g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-2g",
+            "name": "SBECO Silica Gel 2g",
+            "sku": "SBL-SG-002",
+            "brand": "SBECO",
+            "tagline": "2 gram silica gel sachet for compact moisture absorption",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 2g sachets provide reliable moisture protection for small to medium packages. Suitable for pharmaceutical, electronics, and food packaging applications.",
+            "specs": {
+              "Weight": "2 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Small–medium packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-1g",
+              "silica-gel-5g",
+              "silica-gel-10g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-5g",
+            "name": "SBECO Silica Gel 5g",
+            "sku": "SBL-SG-005",
+            "brand": "SBECO",
+            "tagline": "5 gram silica gel sachet for medium package moisture control",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 5g sachets are the most widely used desiccant size for medium packages. Protects shoes, handbags, electronic devices, and packaged food from moisture and mould.",
+            "specs": {
+              "Weight": "5 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Medium packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-2g",
+              "silica-gel-10g",
+              "silica-gel-20g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-10g",
+            "name": "SBECO Silica Gel 10g",
+            "sku": "SBL-SG-010",
+            "brand": "SBECO",
+            "tagline": "10 gram silica gel sachet for larger package protection",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 10g sachets deliver enhanced moisture absorption for larger packages and shipping cartons. A versatile desiccant for multiple industrial applications.",
+            "specs": {
+              "Weight": "10 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Large packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-5g",
+              "silica-gel-20g",
+              "silica-gel-25g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-20g",
+            "name": "SBECO Silica Gel 20g",
+            "sku": "SBL-SG-020",
+            "brand": "SBECO",
+            "tagline": "20 gram silica gel sachet for carton-level moisture control",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 20g sachets provide moisture protection at the carton level. Suitable for large packaging, machinery parts, and bulk goods requiring humidity control.",
+            "specs": {
+              "Weight": "20 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Cartons & large packages"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-10g",
+              "silica-gel-25g",
+              "silica-gel-50g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-25g",
+            "name": "SBECO Silica Gel 25g",
+            "sku": "SBL-SG-025",
+            "brand": "SBECO",
+            "tagline": "25 gram silica gel sachet for carton and box protection",
+            "badge": "Essential",
+            "description": "SBECO Silica Gel 25g sachets are designed for medium to large cartons and shipping boxes. Provides sustained moisture absorption throughout the supply chain.",
+            "specs": {
+              "Weight": "25 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Cartons & shipping boxes"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-20g",
+              "silica-gel-50g",
+              "silica-gel-100g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-50g",
+            "name": "SBECO Silica Gel 50g",
+            "sku": "SBL-SG-050",
+            "brand": "SBECO",
+            "tagline": "50 gram silica gel sachet for bulk packaging moisture protection",
+            "badge": "Popular",
+            "description": "SBECO Silica Gel 50g sachets deliver powerful moisture absorption for bulk packaging, large cartons, and industrial applications requiring extended humidity control.",
+            "specs": {
+              "Weight": "50 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Bulk packaging"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-25g",
+              "silica-gel-100g",
+              "silica-gel-250g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-100g",
+            "name": "SBECO Silica Gel 100g",
+            "sku": "SBL-SG-100",
+            "brand": "SBECO",
+            "tagline": "100 gram silica gel sachet for heavy-duty moisture control",
+            "badge": "Heavy Duty",
+            "description": "SBECO Silica Gel 100g sachets are designed for heavy-duty moisture control in large containers, machinery packaging, and long-duration storage applications.",
+            "specs": {
+              "Weight": "100 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Heavy-duty industrial"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-50g",
+              "silica-gel-250g",
+              "silica-gel-500g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-250g",
+            "name": "SBECO Silica Gel 250g",
+            "sku": "SBL-SG-250",
+            "brand": "SBECO",
+            "tagline": "250 gram silica gel sachet for container-level desiccation",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel 250g sachets provide container-level moisture protection. Ideal for export packaging, ocean freight, and long-term storage of moisture-sensitive goods.",
+            "specs": {
+              "Weight": "250 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Container & export packaging"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-100g",
+              "silica-gel-500g",
+              "silica-gel-1kg"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-500g",
+            "name": "SBECO Silica Gel 500g",
+            "sku": "SBL-SG-500",
+            "brand": "SBECO",
+            "tagline": "500 gram silica gel sachet for large-volume desiccation",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel 500g sachets provide extended moisture absorption for large containers, machinery crates, and industrial storage. Ideal for export shipments across oceans.",
+            "specs": {
+              "Weight": "500 grams",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Large containers"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-250g",
+              "silica-gel-1kg",
+              "silica-gel-1kg-hanger"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-1kg",
+            "name": "SBECO Silica Gel 1kg",
+            "sku": "SBL-SG-1000",
+            "brand": "SBECO",
+            "tagline": "1 kilogram silica gel sachet for maximum moisture protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO Silica Gel 1kg is the largest standard sachet, delivering maximum moisture absorption for heavy machinery, full container loads, and long-term ocean freight storage.",
+            "specs": {
+              "Weight": "1 kg",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Application": "Full container loads"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-500g",
+              "silica-gel-1kg-hanger",
+              "silica-gel-beads"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "silica-gel-1kg-hanger",
+            "name": "SBECO Silica Gel 1kg with Hanger",
+            "sku": "SBL-SG-1000H",
+            "brand": "SBECO",
+            "tagline": "Hangable 1kg silica gel sachet for container ceiling mounting",
+            "badge": "Premium",
+            "description": "SBECO Silica Gel 1kg with Hanger includes an integrated hook for suspending inside shipping containers, warehouses, and storage areas. Maximizes air exposure for optimal moisture absorption.",
+            "specs": {
+              "Weight": "1 kg with hanger",
+              "Color Options": "Blue & White",
+              "Form": "Crystallized",
+              "Packaging Type": "Paper",
+              "Mounting": "Hook / Hanger"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-1kg",
+              "silica-gel-500g",
+              "clay-desiccant"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "silica-gel-beads",
+            "name": "SBECO Silica Gel Beads",
+            "sku": "SBL-SG-BEADS",
+            "brand": "SBECO",
+            "tagline": "Loose silica gel beads for custom desiccant applications",
+            "badge": "Professional",
+            "description": "SBECO Silica Gel Beads are loose-form desiccant beads available in bulk for custom packaging and refillable desiccant applications. Perfect for filling custom sachets or desiccant cartridges.",
+            "specs": {
+              "Color Options": "Blue & White",
+              "Form": "Beads",
+              "Packaging Type": "Paper bag / Bulk",
+              "Mesh Size": "Standard",
+              "Usage": "Custom / Refillable"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-1kg",
+              "clay-desiccant",
+              "silica-gel-100g"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "clay-desiccant",
+            "name": "SBECO Clay Desiccant",
+            "sku": "SBL-CLAY-DES",
+            "brand": "SBECO",
+            "tagline": "Natural clay desiccant sachets for cost-effective moisture control",
+            "badge": "Value Pick",
+            "description": "SBECO Clay Desiccants are natural, non-toxic moisture absorbers made from bentonite clay. A cost-effective alternative to silica gel, available in multiple weights and also in Tyvek packaging.",
+            "specs": {
+              "Weight": "Various weights available",
+              "Material": "Bentonite Clay",
+              "Packaging Type": "Paper (Also Available in Tyvek)",
+              "Non-Toxic": "Yes",
+              "Application": "General moisture control"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "silica-gel-100g",
+              "silica-gel-beads",
+              "silica-gel-1kg"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "vci-products",
+        "name": "VCI Products",
+        "products": [
+          {
+            "id": "vci-paper-plain",
+            "name": "SBECO VCI Paper Plain",
+            "sku": "SBL-VCI-PPR",
+            "brand": "SBECO",
+            "tagline": "VCI-coated kraft paper for ferrous metal corrosion prevention",
+            "badge": "Professional",
+            "description": "SBECO VCI Paper Plain is a virgin kraft paper coated with Vapour Corrosion Inhibitor (VCI) chemicals. When wrapped around ferrous metal parts, it releases protective vapours that prevent rust and corrosion.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "No Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-with-lamination",
+              "vci-paper-yellow-metal",
+              "vci-hdpe-laminate"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "vci-with-lamination",
+            "name": "SBECO VCI With Lamination",
+            "sku": "SBL-VCI-LAM",
+            "brand": "SBECO",
+            "tagline": "Laminated VCI paper for enhanced moisture and corrosion barrier",
+            "badge": "Premium",
+            "description": "SBECO VCI With Lamination combines VCI-coated kraft paper with a laminated moisture barrier. Provides dual protection against both corrosion and moisture for critical metal components.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-paper-plain",
+              "vci-hdpe-laminate",
+              "vci-plastic-film"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-paper-yellow-metal",
+            "name": "SBECO VCI Paper for Yellow Metal",
+            "sku": "SBL-VCI-YMT",
+            "brand": "SBECO",
+            "tagline": "Specialized VCI paper for copper, brass, and yellow metal protection",
+            "badge": "Professional",
+            "description": "SBECO VCI Paper for Yellow Metal is specially formulated to protect non-ferrous yellow metals such as copper, brass, and bronze from tarnishing and corrosion during storage and shipping.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-paper-plain",
+              "vci-with-lamination",
+              "vci-hdpe-laminate"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-hdpe-laminate",
+            "name": "SBECO VCI With HDPE Laminate",
+            "sku": "SBL-VCI-HDPE",
+            "brand": "SBECO",
+            "tagline": "HDPE-laminated VCI paper for heavy-duty corrosion protection",
+            "badge": "Heavy Duty",
+            "description": "SBECO VCI With HDPE Laminate features a heavy-duty HDPE film laminated to VCI paper, providing the strongest barrier against moisture ingress while delivering corrosion-inhibiting vapours.",
+            "specs": {
+              "Paper Quality": "Virgin Kraft",
+              "VCI": "Coated",
+              "Size": "1 mtr x 250 mtr",
+              "Lamination": "Yes Lamination",
+              "Metal Type": "Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-with-lamination",
+              "vci-paper-plain",
+              "vci-plastic-film"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "vci-plastic-film",
+            "name": "SBECO VCI Plastic Film",
+            "sku": "SBL-VCI-FILM",
+            "brand": "SBECO",
+            "tagline": "VCI-treated plastic film for wrapping and bagging metal parts",
+            "badge": "Popular",
+            "description": "SBECO VCI Plastic Film is an LDPE film treated with VCI chemicals for wrapping, bagging, and covering metal parts. Available in flat bags, tubing, shrink covers, and 3D covers.",
+            "specs": {
+              "Material": "LDPE Natural with VCI Chemical",
+              "Size": "1 mtr wide (Slit Tube)",
+              "Colour": "Blue & Yellow",
+              "Thickness": "100 Micron",
+              "Options": "Printing / Pouches / 3D Covers"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-paper-plain",
+              "vci-with-lamination",
+              "vci-powder"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "vci-powder",
+            "name": "SBECO VCI Powder",
+            "sku": "SBL-VCI-PWD",
+            "brand": "SBECO",
+            "tagline": "VCI powder for sprinkle-application corrosion protection",
+            "badge": "Professional",
+            "description": "SBECO VCI Powder is a dry powder form of vapour corrosion inhibitor that can be sprinkled directly onto metal surfaces or into packaging. Available in sachets and bulk packs.",
+            "specs": {
+              "VCI Type": "Powder",
+              "Packing Type": "Sachets & Bulk Pack",
+              "Packing Available": "1g, 2g, 5g, 10g, 25g, 50g & more",
+              "Application": "Sprinkle / Disperse",
+              "Metal Type": "Ferrous & Non-Ferrous"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_3.png",
+            "similar": [
+              "vci-plastic-film",
+              "vci-paper-plain",
+              "vci-with-lamination"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "cable-ties",
+        "name": "Cable Ties",
+        "products": [
+          {
+            "id": "cable-tie-4",
+            "name": "SBECO Cable Tie 4 Inch",
+            "sku": "SBL-CT-004",
+            "brand": "SBECO",
+            "tagline": "4-inch nylon cable tie for small bundling applications",
+            "badge": "Essential",
+            "description": "SBECO 4-inch Cable Ties are compact nylon zip ties ideal for bundling small wire groups, securing cables in tight spaces, and light-duty fastening applications.",
+            "specs": {
+              "Size": "4 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-8",
+              "cable-tie-10",
+              "cable-tie-12"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-8",
+            "name": "SBECO Cable Tie 8 Inch",
+            "sku": "SBL-CT-008",
+            "brand": "SBECO",
+            "tagline": "8-inch nylon cable tie for medium bundling applications",
+            "badge": "Popular",
+            "description": "SBECO 8-inch Cable Ties are versatile nylon zip ties suitable for bundling medium wire groups, securing hoses, and general-purpose fastening in industrial and commercial environments.",
+            "specs": {
+              "Size": "8 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-4",
+              "cable-tie-10",
+              "cable-tie-12"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "cable-tie-10",
+            "name": "SBECO Cable Tie 10 Inch",
+            "sku": "SBL-CT-010",
+            "brand": "SBECO",
+            "tagline": "10-inch nylon cable tie for versatile industrial use",
+            "badge": "Popular",
+            "description": "SBECO 10-inch Cable Ties offer a versatile length for a wide range of industrial bundling, cable management, and securing applications. Strong nylon construction ensures reliable hold.",
+            "specs": {
+              "Size": "10 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-8",
+              "cable-tie-12",
+              "cable-tie-16"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-12",
+            "name": "SBECO Cable Tie 12 Inch",
+            "sku": "SBL-CT-012",
+            "brand": "SBECO",
+            "tagline": "12-inch nylon cable tie for larger bundle management",
+            "badge": "Essential",
+            "description": "SBECO 12-inch Cable Ties are designed for larger bundling applications including thick cable runs, pipe bundling, and heavy-duty securing tasks in facilities and warehouses.",
+            "specs": {
+              "Size": "12 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Standard"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-10",
+              "cable-tie-16",
+              "cable-tie-20"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-16",
+            "name": "SBECO Cable Tie 16 Inch",
+            "sku": "SBL-CT-016",
+            "brand": "SBECO",
+            "tagline": "16-inch nylon cable tie for heavy-duty bundling",
+            "badge": "Heavy Duty",
+            "description": "SBECO 16-inch Cable Ties deliver heavy-duty performance for securing large cable bundles, pipes, and equipment. Extra length accommodates larger circumferences with ease.",
+            "specs": {
+              "Size": "16 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-12",
+              "cable-tie-20",
+              "cable-tie-24"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "cable-tie-20",
+            "name": "SBECO Cable Tie 20 Inch",
+            "sku": "SBL-CT-020",
+            "brand": "SBECO",
+            "tagline": "20-inch nylon cable tie for extra-large bundling applications",
+            "badge": "Heavy Duty",
+            "description": "SBECO 20-inch Cable Ties are extra-long ties designed for securing large bundles, palletizing, and industrial applications where standard length ties are insufficient.",
+            "specs": {
+              "Size": "20 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-16",
+              "cable-tie-24",
+              "cable-tie-12"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "cable-tie-24",
+            "name": "SBECO Cable Tie 24 Inch",
+            "sku": "SBL-CT-024",
+            "brand": "SBECO",
+            "tagline": "24-inch nylon cable tie for maximum-size bundling",
+            "badge": "Professional",
+            "description": "SBECO 24-inch Cable Ties are the largest in the range, designed for maximum-circumference bundling, pallet securing, and heavy-duty industrial fastening applications.",
+            "specs": {
+              "Size": "24 Inches",
+              "Quantity": "25-30 pcs per pack",
+              "Material Type": "Nylon",
+              "Colour": "White",
+              "Tensile Strength": "Heavy Duty"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "cable-tie-20",
+              "cable-tie-16",
+              "cable-tie-12"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "glue-guns-sticks",
+        "name": "Hot Melt Glue Guns & Sticks",
+        "products": [
+          {
+            "id": "glue-sticks-very-high-bond",
+            "name": "SBECO Glue Sticks Very High Bond",
+            "sku": "SBL-GLUE-VHB",
+            "brand": "Wonder",
+            "tagline": "Very high bond hot melt glue sticks for maximum adhesion",
+            "badge": "Heavy Duty",
+            "description": "SBECO Very High Bond Glue Sticks are yellow-colored hot melt adhesive sticks delivering the strongest bond strength in the range. Ideal for heavy-duty bonding of wood, plastic, fabric, and mixed materials.",
+            "specs": {
+              "Color": "Yellow",
+              "Bonding": "High",
+              "Diameter": "11 mm",
+              "Brand": "Wonder",
+              "Application": "Heavy-duty bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "glue-sticks-milky-white",
+              "glue-sticks-high-bond",
+              "glue-sticks-clear"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": true
+          },
+          {
+            "id": "glue-sticks-milky-white",
+            "name": "SBECO Glue Sticks Milky White",
+            "sku": "SBL-GLUE-MW",
+            "brand": "Wonder",
+            "tagline": "Milky white glue sticks with medium bond for general use",
+            "badge": "Popular",
+            "description": "SBECO Milky White Glue Sticks provide a clean, medium-bond adhesive suitable for general crafting, packaging, and light industrial bonding applications. Smooth feed and consistent melt.",
+            "specs": {
+              "Color": "Milky White",
+              "Bonding": "Medium",
+              "Diameter": "11 mm",
+              "Brand": "Wonder",
+              "Application": "General purpose"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "glue-sticks-very-high-bond",
+              "glue-sticks-high-bond",
+              "glue-sticks-clear"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "glue-sticks-high-bond",
+            "name": "SBECO Glue Sticks High Bond",
+            "sku": "SBL-GLUE-HB",
+            "brand": "Niyo",
+            "tagline": "High bond hot melt glue sticks for strong adhesion",
+            "badge": "Essential",
+            "description": "SBECO High Bond Glue Sticks deliver strong adhesive performance for packaging, woodworking, and industrial bonding. Yellow-colored for high visibility during application.",
+            "specs": {
+              "Color": "Yellow",
+              "Bonding": "High",
+              "Diameter": "11 mm",
+              "Brand": "Niyo",
+              "Application": "Industrial bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "glue-sticks-very-high-bond",
+              "glue-sticks-milky-white",
+              "glue-sticks-clear"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          },
+          {
+            "id": "glue-sticks-clear",
+            "name": "SBECO Glue Sticks Clear",
+            "sku": "SBL-GLUE-CLR",
+            "brand": "Niyo",
+            "tagline": "Clear transparent glue sticks for invisible bonding",
+            "badge": "Popular",
+            "description": "SBECO Clear Glue Sticks provide an invisible bond line, making them perfect for applications where aesthetics matter. Medium bonding strength suitable for crafts, packaging, and light industrial use.",
+            "specs": {
+              "Color": "Clear",
+              "Bonding": "Medium",
+              "Diameter": "11 mm",
+              "Brand": "Niyo",
+              "Application": "Clean invisible bonding"
+            },
+            "imageUrl": "/images/Consumables/catalog_products_4.png",
+            "similar": [
+              "glue-sticks-milky-white",
+              "glue-sticks-high-bond",
+              "glue-sticks-very-high-bond"
+            ],
+            "dateAdded": "2026-08-16",
+            "isBestSeller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "facility-management",
+    "name": "Facility Management",
+    "description": "Comprehensive facility solutions including cleaning supplies, safety equipment, and maintenance products.",
+    "imageUrl": "/images/Facility Management/floor marking tape.png",
+    "subcategories": [
+      {
+        "id": "cleaning-supplies",
+        "name": "Cleaning Supplies",
+        "products": [
+          {
+            "id": "floor-marking-tape",
+            "name": "Floor Marking Tape",
+            "sku": "SBL-TAPE-FM-001",
+            "brand": "SBECO",
+            "tagline": "Professional-grade floor marking tape for warehouse organization",
+            "badge": "Essential",
+            "description": "Durable, high-visibility floor marking tape designed for clearly marking pathways, storage zones, and hazard areas in facilities and warehouses.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "33m",
+              "Color": "Yellow/Black",
+              "Material": "Vinyl",
+              "Durability": "Heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/floor marking tape.png",
+            "consumables": [
+              {
+                "name": "Dispenser",
+                "sku": "SBL-DISP-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-marking-tape-dispenser",
+              "surface-protection-film"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "floor-marking-tape-dispenser",
+            "name": "Floor Marking Tape Dispenser",
+            "sku": "SBL-TAPE-FM-002",
+            "brand": "SBECO",
+            "tagline": "Handheld dispenser for precise floor marking tape application",
+            "badge": "Popular",
+            "description": "Heavy-duty tape dispenser designed specifically for floor marking applications. Features adjustable guide and sharp replaceable blade.",
+            "specs": {
+              "Tape Width": "48mm",
+              "Material": "Steel and plastic",
+              "Blade": "Sharp replaceable",
+              "Mounting": "Handheld",
+              "Durability": "Heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/floor marking Tape Dispenser.png",
+            "consumables": [
+              {
+                "name": "Replacement Blade",
+                "sku": "SBL-BLADE-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-marking-tape",
+              "surface-protection-film"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "surface-protection-film",
+            "name": "Surface Protection Film",
+            "sku": "SBL-FILM-FM-003",
+            "brand": "SBECO",
+            "tagline": "Protective adhesive film for surfaces and equipment",
+            "badge": "Essential",
+            "description": "Clear, transparent protective film designed to shield surfaces from scratches, dust, and damage during construction and maintenance work.",
+            "specs": {
+              "Thickness": "0.05mm",
+              "Width": "Multiple sizes",
+              "Type": "Adhesive film",
+              "Transparency": "Crystal clear",
+              "Durability": "Medium-term"
+            },
+            "imageUrl": "/images/Facility Management/surface protection film.png",
+            "consumables": [
+              {
+                "name": "Applicator Roller",
+                "sku": "SBL-ROLL-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-marking-tape-dispenser",
+              "masking-film"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "sbeco-sticky-mat",
+            "name": "SBECO Sticky Mat",
+            "sku": "SBL-MAT-FM-004",
+            "brand": "SBECO",
+            "tagline": "Adhesive floor mat for contamination control",
+            "badge": "Popular",
+            "description": "Layered sticky mat that removes dirt, dust, and debris from footwear and equipment wheels at entryways. Easy layer peeling.",
+            "specs": {
+              "Layers": "30 sheets per pad",
+              "Size": "60cm x 90cm",
+              "Adhesive": "Natural rubber",
+              "Color": "Blue with yellow",
+              "Durability": "Long-lasting"
+            },
+            "imageUrl": "/images/Facility Management/sbeco sticky mat.png",
+            "consumables": [
+              {
+                "name": "Mop",
+                "sku": "SBL-MOP-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "floor-marking-tape",
+              "duct-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "duct-tape",
+            "name": "Duct Tape",
+            "sku": "SBL-TAPE-FM-005",
+            "brand": "SBECO",
+            "tagline": "Heavy-duty duct tape for repairs and bundling",
+            "badge": "Essential",
+            "description": "Professional-grade duct tape with strong adhesive backing. Perfect for temporary repairs, bundling, and waterproofing in facilities.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Material": "Polyethylene-coated cloth",
+              "Color": "Silver/Gray",
+              "Strength": "Heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/Duct tape.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUT-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "rubber-repair-tape",
+              "cello-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "rubber-repair-tape",
+            "name": "Rubber Repair Tape",
+            "sku": "SBL-TAPE-FM-006",
+            "brand": "SBECO",
+            "tagline": "Self-fusing silicone rubber tape for equipment repairs",
+            "badge": "Professional",
+            "description": "Self-adhesive rubber tape that bonds to itself creating a waterproof seal. Ideal for repairing hoses, pipes, and electrical insulation.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "3m",
+              "Material": "Silicone rubber",
+              "Stretch": "Highly elastic",
+              "Temperature Resistance": "Up to 200°C"
+            },
+            "imageUrl": "/images/Facility Management/Rubber Repair tape.png",
+            "consumables": [
+              {
+                "name": "Cleaner Wipe",
+                "sku": "SBL-WIPE-001",
+                "icon": "cloth"
+              }
+            ],
+            "similar": [
+              "duct-tape",
+              "cello-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "cello-tape",
+            "name": "Cello Tape",
+            "sku": "SBL-TAPE-FM-007",
+            "brand": "SBECO",
+            "tagline": "Clear transparent adhesive tape for sealing packages",
+            "badge": "Essential",
+            "description": "Crystal-clear cellulose adhesive tape perfect for sealing boxes, envelopes, and light bundling in facilities and warehouses.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "50m",
+              "Material": "Cellulose",
+              "Transparency": "Crystal clear",
+              "Strength": "Standard"
+            },
+            "imageUrl": "/images/Facility Management/cello tape.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUT-002",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "masking-film",
+              "nano-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "masking-film",
+            "name": "Masking Film",
+            "sku": "SBL-FILM-FM-008",
+            "brand": "SBECO",
+            "tagline": "Professional masking film for paint protection",
+            "badge": "Popular",
+            "description": "Translucent protective film used to mask off areas during painting, sandblasting, or chemical applications. Easy to remove without residue.",
+            "specs": {
+              "Width": "Various sizes",
+              "Material": "Polyethylene",
+              "Transparency": "Translucent",
+              "Adhesive": "Low-tack",
+              "Reusability": "Single-use"
+            },
+            "imageUrl": "/images/Facility Management/Masking Film.png",
+            "consumables": [
+              {
+                "name": "Tape",
+                "sku": "SBL-TAPE-AUX",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "surface-protection-film",
+              "nano-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "nano-tape",
+            "name": "Nano Tape",
+            "sku": "SBL-TAPE-FM-009",
+            "brand": "SBECO",
+            "tagline": "Nano-tech reusable adhesive tape for mounting",
+            "badge": "Premium",
+            "description": "Revolutionary nano-technology adhesive tape that sticks and unsticks without leaving residue. Perfect for temporary mounting in facilities.",
+            "specs": {
+              "Width": "30mm",
+              "Length": "3m",
+              "Material": "Nano-polymer",
+              "Reusable": "Up to 200 times",
+              "Strength": "Strong adhesion"
+            },
+            "imageUrl": "/images/Facility Management/Nano Tape.png",
+            "consumables": [
+              {
+                "name": "Cleaner",
+                "sku": "SBL-CLEAN-NANO",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "cello-tape",
+              "reflective-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "reflective-tape",
+            "name": "Reflective Tape",
+            "sku": "SBL-TAPE-FM-010",
+            "brand": "SBECO",
+            "tagline": "High-visibility reflective safety tape for nighttime visibility",
+            "badge": "Safety",
+            "description": "Retroreflective tape that glows under vehicle headlights. Ideal for marking hazards, machinery, and walkways in low-light conditions.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "30m",
+              "Material": "Reflective vinyl",
+              "Color": "Silver with red trim",
+              "Brightness": "High-intensity"
+            },
+            "imageUrl": "/images/Facility Management/reflective tape.png",
+            "consumables": [
+              {
+                "name": "Mounting Dots",
+                "sku": "SBL-DOTS-001",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "caution-tape",
+              "floor-marking-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "caution-tape",
+            "name": "Caution Tape",
+            "sku": "SBL-TAPE-FM-011",
+            "brand": "SBECO",
+            "tagline": "High-visibility hazard warning tape for safety markings",
+            "badge": "Safety",
+            "description": "Bold yellow and black striped caution tape for marking hazardous areas, machinery, and restricted zones in facilities and construction sites.",
+            "specs": {
+              "Width": "48mm",
+              "Length": "100m",
+              "Material": "Polyethylene",
+              "Pattern": "Yellow/Black stripes",
+              "Weather Resistance": "Outdoor-rated"
+            },
+            "imageUrl": "/images/Facility Management/Caution tape.png",
+            "consumables": [
+              {
+                "name": "Dispenser",
+                "sku": "SBL-DISP-CAUTION",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "reflective-tape",
+              "floor-marking-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          }
+        ]
+      },
+      {
+        "id": "safety-equipment",
+        "name": "Safety Equipment",
+        "products": [
+          {
+            "id": "anti-static-pvc-curtain",
+            "name": "Anti-Static PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-012",
+            "brand": "SBECO",
+            "tagline": "Conductive PVC strip curtain for static-sensitive areas",
+            "badge": "Professional",
+            "description": "ESD-safe PVC curtain strips that prevent static buildup in sensitive work areas. Maintains cleanroom integrity while allowing easy passage.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "2mm",
+              "Material": "Anti-static PVC",
+              "Color": "Translucent",
+              "Conductivity": "Yes"
+            },
+            "imageUrl": "/images/Facility Management/anti static pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Track",
+                "sku": "SBL-TRACK-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "opaque-pvc-curtain",
+              "polar-grid-pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "opaque-pvc-curtain",
+            "name": "Opaque PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-013",
+            "brand": "SBECO",
+            "tagline": "Opaque PVC strip curtain for privacy and light control",
+            "badge": "Popular",
+            "description": "Heavy-duty opaque PVC curtain strips that block light and provide privacy while maintaining easy access through doorways.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "3mm",
+              "Material": "Opaque PVC",
+              "Color": "White",
+              "Durability": "Heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/opaque pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Mounting Clips",
+                "sku": "SBL-CLIPS-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "anti-static-pvc-curtain",
+              "polar-grid-pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "polar-grid-pvc-curtain",
+            "name": "Polar Grid PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-014",
+            "brand": "SBECO",
+            "tagline": "Grid-pattern PVC strip curtain for specialized environments",
+            "badge": "Essential",
+            "description": "Specialized PVC curtain with grid pattern for enhanced durability and visibility. Perfect for industrial and warehouse applications.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "4mm",
+              "Material": "Grid PVC",
+              "Color": "Clear with grid",
+              "Visibility": "Enhanced"
+            },
+            "imageUrl": "/images/Facility Management/polar grid pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Hooks",
+                "sku": "SBL-HOOKS-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "opaque-pvc-curtain",
+              "red-pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "red-pvc-curtain",
+            "name": "Red PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-015",
+            "brand": "SBECO",
+            "tagline": "Red-colored PVC strip curtain for hazard warning",
+            "badge": "Safety",
+            "description": "Bright red PVC curtain strips for high-visibility hazard areas and restricted zones. Warns personnel of dangerous work zones.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "2mm",
+              "Material": "PVC",
+              "Color": "Bright red",
+              "Visibility": "High-visibility"
+            },
+            "imageUrl": "/images/Facility Management/red pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Chains",
+                "sku": "SBL-CHAIN-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "yellow-pvc-curtain",
+              "polar-grid-pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "yellow-pvc-curtain",
+            "name": "Yellow PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-016",
+            "brand": "SBECO",
+            "tagline": "Yellow-colored PVC strip curtain for caution zones",
+            "badge": "Safety",
+            "description": "Bright yellow PVC curtain strips for caution and warning areas. Easy to identify danger zones while maintaining traffic flow.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "2mm",
+              "Material": "PVC",
+              "Color": "Bright yellow",
+              "Visibility": "High-visibility"
+            },
+            "imageUrl": "/images/Facility Management/yellow pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Rail System",
+                "sku": "SBL-RAIL-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "red-pvc-curtain",
+              "pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "pvc-curtain",
+            "name": "PVC Curtain",
+            "sku": "SBL-CURTAIN-FM-017",
+            "brand": "SBECO",
+            "tagline": "Clear PVC strip curtain for general-purpose use",
+            "badge": "Essential",
+            "description": "Transparent PVC curtain strips for maintaining visibility while controlling temperature and contamination in facility entryways.",
+            "specs": {
+              "Width": "200mm",
+              "Thickness": "2mm",
+              "Material": "Clear PVC",
+              "Color": "Transparent",
+              "Durability": "Medium-duty"
+            },
+            "imageUrl": "/images/Facility Management/pvc curtain.png",
+            "consumables": [
+              {
+                "name": "Connectors",
+                "sku": "SBL-CONN-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "opaque-pvc-curtain",
+              "pvc-curtain-j-hook"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "pvc-curtain-j-hook",
+            "name": "PVC Curtain J-Hook",
+            "sku": "SBL-CURTAIN-FM-018",
+            "brand": "SBECO",
+            "tagline": "J-shaped hook attachment for PVC curtain strips",
+            "badge": "Essential",
+            "description": "Universal J-hook connector designed to hang and support PVC curtain strips on standard tracks and rails securely.",
+            "specs": {
+              "Material": "Steel",
+              "Load Capacity": "50kg per hook",
+              "Finish": "Galvanized",
+              "Compatibility": "Universal fit",
+              "Durability": "Heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/pvc curtain j hook.png",
+            "consumables": [
+              {
+                "name": "Fasteners",
+                "sku": "SBL-FAST-001",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "pvc-curtain",
+              "yellow-pvc-curtain"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "yellow-black-anti-slip-tape",
+            "name": "Yellow & Black Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-019",
+            "brand": "SBECO",
+            "tagline": "High-visibility anti-slip safety tape for stairs and ramps",
+            "badge": "Safety",
+            "description": "Bold yellow and black striped anti-slip adhesive tape designed for stairs, ramps, and walkways to prevent slipping hazards.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Material": "Aluminum oxide",
+              "Pattern": "Yellow/Black",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/yellow and black anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Cleaner",
+                "sku": "SBL-CLEANER-TAPE",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "glow-dark-anti-slip-tape",
+              "reflective-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "glow-dark-anti-slip-tape",
+            "name": "Glow-in-Dark Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-020",
+            "brand": "SBECO",
+            "tagline": "Photoluminescent anti-slip tape for low-light safety",
+            "badge": "Professional",
+            "description": "Glow-in-the-dark anti-slip tape that charges from ambient light and glows in darkness. Perfect for emergency evacuation routes.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "10m",
+              "Material": "Photoluminescent",
+              "Glow Duration": "8-10 hours",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/glow in dark tape anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Charging Light",
+                "sku": "SBL-LIGHT-CHARGE",
+                "icon": "equipment"
+              }
+            ],
+            "similar": [
+              "yellow-black-anti-slip-tape",
+              "reflective-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          }
+        ]
+      },
+      {
+        "id": "maintenance-tools",
+        "name": "Maintenance & Tools",
+        "products": [
+          {
+            "id": "black-anti-slip-tape",
+            "name": "Black Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-021",
+            "brand": "SBECO",
+            "tagline": "Professional-grade black anti-slip safety tape",
+            "badge": "Essential",
+            "description": "Durable black anti-slip adhesive tape designed for professional facilities, stairs, platforms, and industrial equipment surfaces.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Material": "Aluminum oxide",
+              "Color": "Black",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/black anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Primer",
+                "sku": "SBL-PRIMER-001",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "grey-anti-slip-tape",
+              "white-anti-slip-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "grey-anti-slip-tape",
+            "name": "Grey Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-022",
+            "brand": "SBECO",
+            "tagline": "Medium-visibility grey anti-slip safety tape",
+            "badge": "Popular",
+            "description": "Grey anti-slip tape offering excellent visibility on most surfaces while providing strong non-slip properties for safety and durability.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Material": "Aluminum oxide",
+              "Color": "Grey",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/grey anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Roller",
+                "sku": "SBL-ROLLER-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "black-anti-slip-tape",
+              "white-anti-slip-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "white-anti-slip-tape",
+            "name": "White Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-023",
+            "brand": "SBECO",
+            "tagline": "White anti-slip safety tape for clean environments",
+            "badge": "Essential",
+            "description": "Clean white anti-slip tape suitable for healthcare, pharmaceutical, and food facilities where cleanliness and visibility are critical.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Material": "Aluminum oxide",
+              "Color": "White",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/white anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Applicator",
+                "sku": "SBL-APPLICATOR-001",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "grey-anti-slip-tape",
+              "yellow-anti-slip-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "yellow-anti-slip-tape",
+            "name": "Yellow Anti-Slip Tape",
+            "sku": "SBL-TAPE-FM-024",
+            "brand": "SBECO",
+            "tagline": "High-visibility yellow anti-slip safety tape",
+            "badge": "Popular",
+            "description": "Bright yellow anti-slip tape for maximum visibility in hazard areas, ramps, and walkways. Strong adhesion and durability.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "18m",
+              "Material": "Aluminum oxide",
+              "Color": "Bright yellow",
+              "Slip Resistance": "High-grip"
+            },
+            "imageUrl": "/images/Facility Management/yellow anti slip tape.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUTTER-TAPE",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "black-anti-slip-tape",
+              "grey-anti-slip-tape"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "corrugated-sheets",
+            "name": "Corrugated Sheets",
+            "sku": "SBL-SHEET-FM-025",
+            "brand": "SBECO",
+            "tagline": "Durable corrugated cardboard sheets for packaging and protection",
+            "badge": "Value",
+            "description": "Industrial-grade corrugated sheets for packaging, storage protection, and temporary barriers in warehouses and facilities.",
+            "specs": {
+              "Thickness": "5mm",
+              "Flute Type": "C-flute",
+              "Durability": "Heavy-duty",
+              "Water Resistance": "Moderate",
+              "Recyclable": "Yes"
+            },
+            "imageUrl": "/images/Facility Management/corrugated sheets.png",
+            "consumables": [
+              {
+                "name": "Tape",
+                "sku": "SBL-TAPE-CORRUGATED",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "epe-foam-roll",
+              "surface-protection-film"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "epe-foam-roll",
+            "name": "EPE Foam Roll with Lamination",
+            "sku": "SBL-FOAM-FM-026",
+            "brand": "SBECO",
+            "tagline": "Protective expanded polyethylene foam with laminated surface",
+            "badge": "Professional",
+            "description": "High-density EPE foam roll with protective lamination for cushioning and protecting equipment, furniture, and fragile items during storage and transport.",
+            "specs": {
+              "Thickness": "10mm",
+              "Density": "High",
+              "Lamination": "Yes",
+              "Width": "1.2m",
+              "Durability": "Long-lasting"
+            },
+            "imageUrl": "/images/Facility Management/epe foam roll with lamination.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUTTER-FOAM",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "corrugated-sheets",
+              "surface-protection-film"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "tesa-4169",
+            "name": "Tesa 4169 Tape",
+            "sku": "SBL-TAPE-FM-027",
+            "brand": "Tesa",
+            "tagline": "Professional-grade masking tape for precise applications",
+            "badge": "Professional",
+            "description": "Tesa 4169 masking tape known for precise edge definition and clean removal. Perfect for professional painting and coating applications.",
+            "specs": {
+              "Width": "19mm",
+              "Length": "50m",
+              "Material": "Paper",
+              "Adhesive": "Rubber",
+              "Temperature Resistance": "60°C"
+            },
+            "imageUrl": "/images/Facility Management/tesa 4169.png",
+            "consumables": [
+              {
+                "name": "Dispenser",
+                "sku": "SBL-DISP-TESA",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "tesa-4613",
+              "tesa-60950"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "tesa-4613",
+            "name": "Tesa 4613 Tape",
+            "sku": "SBL-TAPE-FM-028",
+            "brand": "Tesa",
+            "tagline": "Industrial-strength duct tape for heavy-duty repairs",
+            "badge": "Professional",
+            "description": "Tesa 4613 industrial duct tape with superior adhesive strength. Ideal for heavy-duty repairs and sealing applications in tough environments.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "50m",
+              "Material": "Cloth",
+              "Adhesive": "Rubber",
+              "Strength": "Extra-heavy-duty"
+            },
+            "imageUrl": "/images/Facility Management/tesa 4613.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUTTER-TESA",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "tesa-4169",
+              "tesa-60951"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "tesa-60950",
+            "name": "Tesa 60950 Tape",
+            "sku": "SBL-TAPE-FM-029",
+            "brand": "Tesa",
+            "tagline": "Premium universal tape for multiple applications",
+            "badge": "Premium",
+            "description": "Tesa 60950 multi-purpose tape delivering strong adhesion and clean removal. Suitable for marking, bundling, and general-purpose applications.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "66m",
+              "Material": "PVC",
+              "Adhesive": "Rubber",
+              "Versatility": "High"
+            },
+            "imageUrl": "/images/Facility Management/tesa 60950.png",
+            "consumables": [
+              {
+                "name": "Dispenser",
+                "sku": "SBL-DISP-TESA-60",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "tesa-60951",
+              "tesa-4169"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": true
+          },
+          {
+            "id": "tesa-60951",
+            "name": "Tesa 60951 Tape",
+            "sku": "SBL-TAPE-FM-030",
+            "brand": "Tesa",
+            "tagline": "Transparent multi-purpose tape for packaging",
+            "badge": "Popular",
+            "description": "Tesa 60951 clear transparent tape ideal for professional packaging, sealing boxes, and secure storage containment in facilities.",
+            "specs": {
+              "Width": "50mm",
+              "Length": "66m",
+              "Material": "Polypropylene",
+              "Adhesive": "Rubber",
+              "Transparency": "Crystal clear"
+            },
+            "imageUrl": "/images/Facility Management/tesa 60951.png",
+            "consumables": [
+              {
+                "name": "Cutter",
+                "sku": "SBL-CUTTER-TESA-60",
+                "icon": "tool"
+              }
+            ],
+            "similar": [
+              "tesa-60950",
+              "tesa-4613"
+            ],
+            "dateAdded": "2026-06-01",
+            "isBestSeller": false
+          },
+          {
+            "id": "tesa-60953",
+            "name": "Tesa 60953 Tape",
+            "sku": "SBL-TAPE-FM-031",
+            "brand": "Tesa",
+            "tagline": "Double-sided adhesive tape for bonding applications",
+            "badge": "Professional",
+            "description": "Tesa 60953 double-sided tape with strong permanent adhesion. Perfect for bonding, mounting, and securing items in facility maintenance.",
+            "specs": {
+              "Width": "25mm",
+              "Length": "50m",
+              "Material": "PVC with adhesive sides",
+              "Adhesive": "Permanent",
+              "Strength": "High-strength"
+            },
+            "imageUrl": "/images/Facility Management/tesa 60953.png",
+            "consumables": [
+              {
+                "name": "Primer",
+                "sku": "SBL-PRIMER-DOUBLE",
+                "icon": "container"
+              }
+            ],
+            "similar": [
+              "tesa-60950",
+              "tesa-4613"
+            ],
+            "dateAdded": "2026-06-01",
             "isBestSeller": false
           }
         ]
@@ -6579,7 +9371,8 @@ export const productIndex = {};
 export const allProducts = [];
 
 const addProductsToIndex = (category, subcategory, nestedSubcategory = null) => {
-  const productList = Array.isArray(subcategory.products) ? subcategory.products : [];
+  const target = nestedSubcategory || subcategory;
+  const productList = Array.isArray(target.products) ? target.products : [];
 
   productList.forEach((product) => {
     const enriched = {
@@ -6607,20 +9400,23 @@ const addProductsToIndex = (category, subcategory, nestedSubcategory = null) => 
   });
 };
 
+const walkSubcategories = (category, subcategory, parentSub = null) => {
+  if (Array.isArray(subcategory.products) && subcategory.products.length > 0) {
+    addProductsToIndex(category, parentSub || subcategory, parentSub ? subcategory : null);
+  }
+
+  const children = Array.isArray(subcategory.subcategories)
+    ? subcategory.subcategories
+    : (Array.isArray(subcategory.nestedSubcategories) ? subcategory.nestedSubcategories : []);
+
+  children.forEach(child => {
+    walkSubcategories(category, child, parentSub || subcategory);
+  });
+};
+
 CATALOGUE.forEach((category) => {
   const subcategories = Array.isArray(category.subcategories) ? category.subcategories : [];
-
   subcategories.forEach((subcategory) => {
-    if (subcategory.products) {
-      addProductsToIndex(category, subcategory);
-    }
-
-    if (Array.isArray(subcategory.nestedSubcategories)) {
-      subcategory.nestedSubcategories.forEach((nestedSubcategory) => {
-        if (Array.isArray(nestedSubcategory.products)) {
-          addProductsToIndex(category, subcategory, nestedSubcategory);
-        }
-      });
-    }
+    walkSubcategories(category, subcategory);
   });
 });
