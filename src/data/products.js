@@ -1,4 +1,4 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -3586,7 +3586,7 @@ export const CATALOGUE = [
                 "brand": "Kaymo",
                 "tagline": "Economy 80-series stapler for upholstery and light fastening",
                 "badge": "Essential",
-                "description": "The Kaymo ECO-PS8016 is a reliable entry-level pneumatic stapler designed for 80-series staples (6–16 mm). Features an ergonomic rubber grip, curved trigger for precise operational control, staple viewing window, and fixed top air exhaust. Ideal for upholstery, sofas, chairs, modular kitchens, flush doors, carrom boards, and screen printing applications.",
+                "description": "The Kaymo ECO-PS8016 is a reliable entry-level pneumatic stapler designed for 80-series staples ranging from 6–16 mm. It features an ergonomic rubber grip, curved trigger for precise control, a convenient staple viewing window, and a fixed top air exhaust. Ideal for upholstery, sofas, chairs, modular kitchens, flush doors, carrom boards, and screen printing applications.",
                 "specs": {
                   "Staple Series": "80 Series",
                   "Staple Length": "6 – 16 mm",
