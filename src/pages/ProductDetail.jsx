@@ -150,10 +150,10 @@ const APPLICATION_MAP = {
     { icon: 'factory', label: 'Industrial Manufacturing', desc: 'Production line bundling and unitizing' },
   ],
   'power-tools': [
-    { icon: 'construction', label: 'Construction', desc: 'On-site drilling, cutting, and fastening' },
-    { icon: 'wrench', label: 'Maintenance', desc: 'Facility repair and equipment maintenance' },
-    { icon: 'wood', label: 'Woodworking', desc: 'Precision cutting and shaping of wood' },
-    { icon: 'factory', label: 'Manufacturing', desc: 'Assembly line tools and fabrication' },
+    { icon: 'construction', label: 'Packaging & Shrinking', desc: 'Industrial heat shrinking and film wrapping' },
+    { icon: 'wrench', label: 'Maintenance', desc: 'Paint stripping, adhesive curing, and drying' },
+    { icon: 'wood', label: 'Plastic Welding', desc: 'Precision plastic shaping and pipe bending' },
+    { icon: 'factory', label: 'Manufacturing', desc: 'High-temperature industrial heat application' },
   ],
   'nailing-stapling': [
     { icon: 'wood', label: 'Woodworking', desc: 'Furniture assembly and wood joinery' },

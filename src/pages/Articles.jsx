@@ -2,7 +2,7 @@ import Hero from '../components/Hero';
 
 const ARTICLES = [
   { date: 'May 2026', badge: 'Guide', title: 'Choosing the Right Industrial Tape for Your Application', desc: 'A comprehensive guide to selecting between double-sided, masking, gaffer, and specialty tapes based on surface type, temperature, and load requirements.', tags: ['Tapes', 'Guide'] },
-  { date: 'April 2026', badge: 'Tips', title: 'Power Tool Maintenance: Extending the Life of Your Equipment', desc: 'Essential maintenance practices for cordless drills, grinders, and jigsaws — from battery care to blade replacement schedules.', tags: ['Power Tools', 'Maintenance'] },
+  { date: 'April 2026', badge: 'Tips', title: 'Hot Air Gun Safety & Maintenance Guide', desc: 'Essential maintenance and safety practices for professional heat guns and hot air tools — from temperature control to nozzle care.', tags: ['Hot Air Guns', 'Maintenance'] },
   { date: 'March 2026', badge: 'Industry', title: 'Sustainable Packaging Solutions for Modern Warehouses', desc: 'How recyclable edge protectors, biodegradable stretch films, and eco-friendly foam inserts are reshaping the packaging industry.', tags: ['Packaging', 'Sustainability'] },
   { date: 'February 2026', badge: 'Technical', title: 'Understanding Adhesive Strength Ratings & Standards', desc: 'Breaking down peel strength, shear resistance, and temperature ratings — what the numbers on your tape specifications actually mean.', tags: ['Technical', 'Standards'] },
 ];
