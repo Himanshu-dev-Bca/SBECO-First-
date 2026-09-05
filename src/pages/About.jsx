@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
+import { JOURNEY_RANGES, getRangePreview } from '../data/journeyTimeline';
 
 export default function About() {
   return (
@@ -135,23 +136,21 @@ export default function About() {
             </div>
             <div className="relative p-8 md:p-10">
               <div className="absolute left-[43px] md:left-[51px] top-10 bottom-10 w-px bg-gray-200" />
-              {[
-                { year: '2001', title: 'Founded', desc: 'Started as a focused industrial supply house specialising in adhesive tapes and packaging essentials.' },
-                { year: '2008', title: 'Expanded Range', desc: 'Added strapping systems, power tools, and protective packaging for broader factory and logistics needs.' },
-                { year: '2015', title: 'Wider Reach', desc: 'Built long-term relationships with clients across manufacturing, interiors, construction, and distribution.' },
-                { year: '2026', title: 'Digital Catalogue', desc: 'Brought the product range online so teams can browse, compare, and enquire with less friction.' },
-              ].map((tl, i) => (
-                <Link key={i} to="/about/journey"
-                  className="group relative grid grid-cols-[56px_1fr] gap-5 pb-7 last:pb-0 animate-fade-up no-underline text-black"
-                  style={{ animationDelay: `${i * .08}s` }}>
-                  <div className="relative z-10 w-7 h-7 mt-1 rounded-full bg-white border-2 border-accent group-hover:bg-accent transition-colors duration-300" />
-                  <div className="border border-gray-200 bg-gray-50 p-6 group-hover:bg-white group-hover:border-black group-hover:-translate-y-0.5 group-hover:shadow-[0_12px_32px_rgba(0,0,0,.06)] transition-all duration-300">
-                    <div className="text-[28px] font-extrabold text-accent tracking-tight mb-1">{tl.year}</div>
-                    <h4 className="text-[14px] font-bold uppercase tracking-[.04em] mb-2">{tl.title}</h4>
-                    <p className="text-[13px] text-gray-600 leading-relaxed">{tl.desc}</p>
-                  </div>
-                </Link>
-              ))}
+              {JOURNEY_RANGES.map((range, i) => {
+                const preview = getRangePreview(range);
+                return (
+                  <Link key={range.slug} to={`/about/journey/${range.slug}`}
+                    className="group relative grid grid-cols-[56px_1fr] gap-5 pb-7 last:pb-0 animate-fade-up no-underline text-black"
+                    style={{ animationDelay: `${i * .08}s` }}>
+                    <div className="relative z-10 w-7 h-7 mt-1 rounded-full bg-white border-2 border-accent group-hover:bg-accent transition-colors duration-300" />
+                    <div className="border border-gray-200 bg-gray-50 p-6 group-hover:bg-white group-hover:border-black group-hover:-translate-y-0.5 group-hover:shadow-[0_12px_32px_rgba(0,0,0,.06)] transition-all duration-300">
+                      <div className="text-[22px] md:text-[28px] font-extrabold text-accent tracking-tight mb-1">{range.label}</div>
+                      <h4 className="text-[14px] font-bold uppercase tracking-[.04em] mb-2">{preview.title}</h4>
+                      <p className="text-[13px] text-gray-600 leading-relaxed">{preview.desc}</p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>

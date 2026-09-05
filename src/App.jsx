@@ -10,6 +10,7 @@ import Videos from './pages/Videos';
 import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
 import OurJourney from './pages/OurJourney';
+import JourneyRange from './pages/JourneyRange';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
         <Route path="/about/journey" element={<Layout><OurJourney /></Layout>} />
+        <Route path="/about/journey/:rangeSlug" element={<Layout><JourneyRange /></Layout>} />
         <Route path="/contact" element={<Layout><Contact /></Layout>} />
         <Route path="/articles" element={<Layout><Articles /></Layout>} />
         <Route path="/gallery" element={<Layout><Photos /></Layout>} />
