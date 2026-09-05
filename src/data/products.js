@@ -1,4 +1,4 @@
-﻿// Complete product catalogue data — single source of truth
+// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
@@ -3421,143 +3421,502 @@ export const CATALOGUE = [
   {
     "id": "power-tools",
     "name": "Power Tools",
-    "description": "Industrial-grade Bosch hot air guns and heat tools engineered for shrink wrapping, plastic welding, adhesive curing, paint removal, and site heating applications.",
+    "description": "Industrial-grade Weldy hot air guns and heat tools engineered for shrink wrapping, plastic welding, car wrapping, adhesive curing, paint removal, and site heating applications.",
     "imageUrl": "/images/Consumables/hot melt glue gun.png",
     "subcategories": [
       {
-        "id": "hot-air-guns",
-        "name": "Hot Air Guns",
+        "id": "weldy-heat-guns",
+        "name": "Weldy Heat Guns",
         "nestedSubcategories": [
           {
-            "id": "standard-hot-air-guns",
-            "name": "Standard Hot Air Guns",
+            "id": "weldy-hg210-series",
+            "name": "HG 210 Entry Level Heat Guns",
             "products": [
               {
-                "id": "hot-air-gun-ghg180",
-                "name": "Bosch GHG 180 Professional Hot Air Gun",
-                "sku": "BOSCH-GHG-180",
-                "brand": "Bosch",
-                "tagline": "1800W hot air gun with 3-stage temperature & airflow control",
+                "id": "weldy-hg210b-230v",
+                "name": "Weldy HG 210-B 230V/1600W Heat Gun",
+                "sku": "WELDY-HG210B-230V",
+                "brand": "Weldy",
+                "tagline": "Compact 1600W entry-level heat gun with 2-stage temperature control",
                 "badge": "Essential",
-                "description": "The Bosch GHG 180 Professional hot air gun features a robust 1800W motor with 3-stage temperature and airflow adjustment (60°C / 350°C / 550°C). Designed for shrinking heat-shrink tubing, curing adhesives, drying paint, and bending plastic pipes. Overheat protection ensures operator safety and long tool life.",
+                "description": "The Weldy HG 210-B is a compact, lightweight heat gun ideal for everyday DIY and light professional tasks. Features a simple 2-step switch for easy airflow and temperature adjustment between 350°C and 550°C. Ergonomic design suitable for manual use or mounting on a spring balancer. Perfect for shrink wrapping, paint removal, and adhesive curing.",
                 "specs": {
-                  "Power": "1800W",
-                  "Working Temperature": "60 / 350 / 550 °C",
-                  "Airflow": "350 - 550 L/min",
-                  "Temperature Control": "3-Stage",
-                  "Weight": "0.75 kg"
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "350°C / 550°C (2-stage)",
+                  "Airflow": "250–500 l/min (2-stage)",
+                  "Weight": "0.51 kg",
+                  "Nozzle Connection": "35.5 mm"
                 },
-                "imageUrl": "/images/Consumables/hot melt glue gun.png",
+                "imageUrl": "/images/Weldy heat guns/WELDY-HG-210-B-230V-1600W-EU-plug.png",
                 "similar": [
-                  "hot-air-gun-ghg20-63",
-                  "hot-air-gun-ghg23-66"
+                  "weldy-hg330b-231v-carwrap",
+                  "weldy-hg330b-universal"
                 ],
-                "dateAdded": "2026-07-01",
-                "isBestSeller": true
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
               }
             ]
           },
           {
-            "id": "digital-hot-air-guns",
-            "name": "Digital & Heavy Duty Heat Guns",
+            "id": "weldy-hg330-series",
+            "name": "HG 330 Series Heat Guns",
             "products": [
               {
-                "id": "hot-air-gun-ghg20-63",
-                "name": "Bosch GHG 20-63 Professional Hot Air Gun",
-                "sku": "BOSCH-GHG-20-63",
-                "brand": "Bosch",
-                "tagline": "2000W digital display heat gun with variable temperature control",
+                "id": "weldy-hg330a-100v-universal",
+                "name": "Weldy HG 330-A 100V/1300W Universal Kit",
+                "sku": "WELDY-HG330A-100V-UNI",
+                "brand": "Weldy",
+                "tagline": "1300W professional heat gun with digital stepless temperature control",
+                "badge": "Professional",
+                "description": "The Weldy HG 330-A is a professional-grade heat gun featuring digital temperature control that maintains constant temperature regardless of airflow or nozzle attachments. Stepless temperature adjustment in 5°C increments from 80°C to 650°C and stepless airflow from 200–550 l/min. Comes in a Universal Kit with essential nozzle accessories.",
+                "specs": {
+                  "Power": "1300W",
+                  "Voltage": "100V",
+                  "Working Temperature": "80°C – 650°C (Stepless Digital)",
+                  "Airflow": "200–550 l/min (Stepless)",
+                  "Weight": "0.75 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HG-330-A-100V-1300W-Universal-Kit-JP-plug.png",
+                "similar": [
+                  "weldy-hg330s-230v-universal",
+                  "weldy-hg530a-230v-universal"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "weldy-hg330b-231v-carwrap",
+                "name": "Weldy HG 330-B 231V/1600W Car Wrapping Kit",
+                "sku": "WELDY-HG330B-231V-CW",
+                "brand": "Weldy",
+                "tagline": "1600W compact heat gun with 2-stage control for car wrapping",
                 "badge": "Popular",
-                "description": "The Bosch GHG 20-63 Professional delivers 2000W of precision heating with a digital display screen showing exact temperatures from 50°C to 630°C in 10°C increments. Features automatic heating shutdown when overheating to protect the heating element. Ideal for delicate shrink wrapping, soldering, and plastic welding.",
+                "description": "The Weldy HG 330-B is a compact, high-performance heat gun with a 2-stage switch for heat and airflow. Delivers 350°C and 550°C temperature stages with airflow of 350/500 l/min. This Car Wrapping Kit comes equipped with specialized nozzles and rollers for professional vehicle wrapping applications.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "231V",
+                  "Working Temperature": "350°C / 550°C (2-stage)",
+                  "Airflow": "350/500 l/min (2-stage)",
+                  "Weight": "0.70 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HG-330-B-231V-1600W-Car-Wrapping-Kit-EU-Plug.png",
+                "similar": [
+                  "weldy-hg330b-universal",
+                  "weldy-hg330s-230v-carwrap"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-hg330b-universal",
+                "name": "Weldy HG 330-B Universal Kit",
+                "sku": "WELDY-HG330B-UNI",
+                "brand": "Weldy",
+                "tagline": "Versatile 2-stage heat gun with universal nozzle kit",
+                "badge": "Essential",
+                "description": "The Weldy HG 330-B Universal Kit is a versatile heat gun package for general professional and DIY tasks. Features a 2-stage switch for simple temperature and airflow control at 350°C and 550°C. The Universal Kit includes a selection of standard nozzles for shrink wrapping, paint stripping, and plastic welding.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "350°C / 550°C (2-stage)",
+                  "Airflow": "250–500 l/min (2-stage)",
+                  "Weight": "0.70 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HG-330-B-Universal-Kit.png",
+                "similar": [
+                  "weldy-hg330b-231v-carwrap",
+                  "weldy-hg210b-230v"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-hg330s-230v-carwrap",
+                "name": "Weldy HG 330-S 230V/2000W Car Wrapping Kit",
+                "sku": "WELDY-HG330S-230V-CW",
+                "brand": "Weldy",
+                "tagline": "2000W multi-function heat gun with stepless temperature for car wrapping",
+                "badge": "Professional",
+                "description": "The Weldy HG 330-S is a multi-functional, high-performance heat gun with infinitely variable (stepless) temperature adjustment from 80°C to 600°C. Equipped with a 2-stage blower delivering up to 550 l/min. This Car Wrapping Kit includes specialized nozzles and rollers for professional vehicle wrapping applications.",
                 "specs": {
                   "Power": "2000W",
-                  "Working Temperature": "50°C - 630°C",
-                  "Airflow": "150 - 500 L/min",
-                  "Display": "Digital LCD",
-                  "Weight": "0.65 kg"
+                  "Voltage": "230V",
+                  "Working Temperature": "80°C – 600°C (Stepless)",
+                  "Airflow": "250/550 l/min (2-stage blower)",
+                  "Weight": "0.70 kg",
+                  "Nozzle Connection": "35.5 mm"
                 },
-                "imageUrl": "/images/Consumables/hot melt glue gun.png",
+                "imageUrl": "/images/Weldy heat guns/HG-330-S-230V-2000W-Car-Wrapping-Kit-EU-Plug.png",
                 "similar": [
-                  "hot-air-gun-ghg180",
-                  "hot-air-gun-ghg23-66"
+                  "weldy-hg330s-230v-universal",
+                  "weldy-hg330a-100v-universal"
                 ],
-                "dateAdded": "2026-07-01",
-                "isBestSeller": true
-              },
-              {
-                "id": "hot-air-gun-ghg23-66",
-                "name": "Bosch GHG 23-66 Heavy Duty Digital Hot Air Gun",
-                "sku": "BOSCH-GHG-23-66",
-                "brand": "Bosch",
-                "tagline": "2300W industrial heat gun with 10 airflow rates & 4 memory programs",
-                "badge": "Industrial",
-                "description": "The Bosch GHG 23-66 Professional is a top-of-the-line 2300W heat gun featuring 10 airflow settings, digital temperature control up to 660°C, and 4 customizable memory programs for repeating frequent tasks. Ergonomic handle with soft grip and thermal protection shield for continuous industrial use.",
-                "specs": {
-                  "Power": "2300W",
-                  "Working Temperature": "50°C - 660°C",
-                  "Airflow": "150 - 500 L/min (10 stages)",
-                  "Memory Programs": "4 Presets",
-                  "Weight": "0.67 kg"
-                },
-                "imageUrl": "/images/Consumables/hot melt glue gun.png",
-                "similar": [
-                  "hot-air-gun-ghg20-63",
-                  "hot-air-gun-ghg18v50"
-                ],
-                "dateAdded": "2026-07-01",
+                "dateAdded": "2026-09-01",
                 "isBestSeller": false
               },
               {
-                "id": "hot-air-gun-ghg660lcd",
-                "name": "Bosch GHG 660 LCD Professional Hot Air Gun",
-                "sku": "BOSCH-GHG-660-LCD",
-                "brand": "Bosch",
-                "tagline": "2300W high-precision heat gun with cold-air stage for quick cooling",
+                "id": "weldy-hg330s-230v-universal",
+                "name": "Weldy HG 330-S 230V/2000W Universal Kit",
+                "sku": "WELDY-HG330S-230V-UNI",
+                "brand": "Weldy",
+                "tagline": "2000W stepless temperature heat gun with universal nozzle kit",
+                "badge": "Popular",
+                "description": "The Weldy HG 330-S Universal Kit is a versatile heat gun with stepless temperature control from 80°C to 600°C and a 2-stage blower. Ideal for shrink wrapping, plastic welding, adhesive curing, and paint removal. The Universal Kit includes a comprehensive selection of nozzles for various professional applications.",
+                "specs": {
+                  "Power": "2000W",
+                  "Voltage": "230V",
+                  "Working Temperature": "80°C – 600°C (Stepless)",
+                  "Airflow": "250/550 l/min (2-stage blower)",
+                  "Weight": "0.70 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HG-330-S-230V-2000W-Universal-Kit-CH-plug.png",
+                "similar": [
+                  "weldy-hg330s-230v-carwrap",
+                  "weldy-hg330a-100v-universal"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": true
+              }
+            ]
+          },
+          {
+            "id": "weldy-hg530-series",
+            "name": "HG 530 Series Heat Guns",
+            "products": [
+              {
+                "id": "weldy-hg530a-120v-carwrap",
+                "name": "Weldy HG 530-A 120V/1440W Car Wrapping Kit",
+                "sku": "WELDY-HG530A-120V-CW",
+                "brand": "Weldy",
+                "tagline": "1440W digital heat gun with Eco-Mode for car wrapping",
                 "badge": "Professional",
-                "description": "The Bosch GHG 660 LCD Professional features an integrated LCD display and cold-air stage for rapid element cooling and nozzle protection. High-precision heat regulation makes it ideal for shrink wrapping, foil shaping, and electronics rework.",
+                "description": "The Weldy HG 530-A features digital temperature control maintaining constant temperature regardless of air volume or nozzle used. Equipped with sensor-controlled Eco-Mode that automatically reduces airflow when the tool is set down, saving energy. This Car Wrapping Kit includes specialized nozzles and rollers for professional vehicle wrapping.",
+                "specs": {
+                  "Power": "1440W",
+                  "Voltage": "120V",
+                  "Working Temperature": "80°C – 650°C (Stepless Digital)",
+                  "Airflow": "200–550 l/min (Stepless)",
+                  "Weight": "0.75 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HG-530-A-120V-1440W-Car-Wrapping-Kit-US-plug.png",
+                "similar": [
+                  "weldy-hg530a-230v-universal",
+                  "weldy-hg330a-100v-universal"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-hg530a-230v-universal",
+                "name": "Weldy HG 530-A 230V/2300W Universal Kit",
+                "sku": "WELDY-HG530A-230V-UNI",
+                "brand": "Weldy",
+                "tagline": "2300W premium digital heat gun with Eco-Mode & Miracle Key",
+                "badge": "Premium",
+                "description": "The Weldy HG 530-A is the flagship heat gun featuring digital temperature control, sensor-controlled Eco-Mode, and the innovative Miracle Key for quick temperature selection and configuration. Delivers 2300W of precision heating with stepless temperature from 80°C to 650°C. Soft-touch handle with balanced weight distribution for fatigue-free operation during long sessions.",
                 "specs": {
                   "Power": "2300W",
-                  "Working Temperature": "50°C - 660°C",
-                  "Airflow": "250 - 500 L/min",
-                  "Cooling Stage": "Yes (50°C cold airflow)",
-                  "Weight": "1.0 kg"
+                  "Voltage": "230V",
+                  "Working Temperature": "80°C – 650°C (Stepless Digital)",
+                  "Airflow": "200–550 l/min (Stepless)",
+                  "Weight": "0.75 kg",
+                  "Nozzle Connection": "35.5 mm"
                 },
-                "imageUrl": "/images/Consumables/hot melt glue gun.png",
+                "imageUrl": "/images/Weldy heat guns/HG-530-A-230V-2300W-Universal-Kit-UK-plug.png",
                 "similar": [
-                  "hot-air-gun-ghg23-66",
-                  "hot-air-gun-ghg20-63"
+                  "weldy-hg530a-120v-carwrap",
+                  "weldy-hg330a-100v-universal"
                 ],
-                "dateAdded": "2026-07-01",
+                "dateAdded": "2026-09-01",
+                "isBestSeller": true
+              }
+            ]
+          },
+          {
+            "id": "weldy-ht-series",
+            "name": "HT 330 & HT 530 Series Heat Guns",
+            "products": [
+              {
+                "id": "weldy-ht330s-100v-universal",
+                "name": "Weldy HT 330-S 100V/1200W Universal Kit",
+                "sku": "WELDY-HT330S-100V-UNI",
+                "brand": "Weldy",
+                "tagline": "1200W stepless temperature heat gun with 2-stage blower",
+                "badge": "Essential",
+                "description": "The Weldy HT 330-S is a compact, versatile heat gun designed for plastic welding, heat shrinking, and paint removal. Features stepless temperature adjustment from 80°C to 600°C with a 2-stage blower delivering 250–550 l/min. Lightweight at just 0.65 kg with an ergonomic handle for comfortable extended use.",
+                "specs": {
+                  "Power": "1200W",
+                  "Voltage": "100V",
+                  "Working Temperature": "80°C – 600°C (Stepless)",
+                  "Airflow": "250–550 l/min (2-stage)",
+                  "Weight": "0.65 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HT-330-S-100V-1200W-Universal-Kit-JP-plug.png",
+                "similar": [
+                  "weldy-ht530a-100v-universal",
+                  "weldy-hg330s-230v-universal"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-ht530a-100v-universal",
+                "name": "Weldy HT 530-A 100V/1300W Universal Kit",
+                "sku": "WELDY-HT530A-100V-UNI",
+                "brand": "Weldy",
+                "tagline": "1300W digital heat gun with Eco-Mode & cooling stage",
+                "badge": "Professional",
+                "description": "The Weldy HT 530-A features digital temperature control with a separate cooling stage and multiple blower settings. Equipped with sensor-controlled Eco-Mode that saves energy by reducing airflow when set down. Ideal for industrial and car wrapping applications requiring precise heat management. Features the innovative e-Drive menu navigation.",
+                "specs": {
+                  "Power": "1300W",
+                  "Voltage": "100V",
+                  "Working Temperature": "80°C – 650°C (Digital Stepless)",
+                  "Airflow": "200–550 l/min (Stepless)",
+                  "Weight": "0.75 kg",
+                  "Nozzle Connection": "35.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/HT-530-A-100V-1300W-Universal-Kit-JP-plug.png",
+                "similar": [
+                  "weldy-ht330s-100v-universal",
+                  "weldy-hg530a-230v-universal"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-ht300s-230v",
+                "name": "Weldy HT 300-S 230V/1600W Industrial Heater",
+                "sku": "WELDY-HT300S-230V",
+                "brand": "Weldy",
+                "tagline": "1600W split-style industrial air heater for automated processes",
+                "badge": "Industrial",
+                "description": "The Weldy HT 300-S is a professional split-style hot air tool designed for industrial applications requiring an external air supply. Unlike pistol-grip heat guns, this compact cylindrical heater is meant for integration into automated systems and controlled environments. Features a 1600W ceramic heating element in a compact 265mm × 40mm form factor.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "Regulated by external system",
+                  "Weight": "1.15 kg",
+                  "Dimensions": "265 × 40 mm",
+                  "Type": "Split-style (external air supply)"
+                },
+                "imageUrl": "/images/Weldy heat guns/HT300-S-230V-1600W-CN-plug.png",
+                "similar": [
+                  "weldy-ht10000-400v",
+                  "weldy-energy-ht1600-230v"
+                ],
+                "dateAdded": "2026-09-01",
                 "isBestSeller": false
               }
             ]
           },
           {
-            "id": "cordless-hot-air-guns",
-            "name": "Cordless Hot Air Guns",
+            "id": "weldy-energy-ht1600-series",
+            "name": "Energy HT1600 Series",
             "products": [
               {
-                "id": "hot-air-gun-ghg18v50",
-                "name": "Bosch GHG 18V-50 Cordless Hot Air Gun",
-                "sku": "BOSCH-GHG-18V-50",
-                "brand": "Bosch",
-                "tagline": "18V cordless heat gun heating to 300°C in 6 seconds",
-                "badge": "Professional",
-                "description": "The Bosch GHG 18V-50 Professional is a compact 18V cordless hot air gun designed for maximum portability on job sites. Heats up to 300°C in just 6 seconds, saving setup time. Features two temperature stages (300°C and 500°C) and LED work light. Powered by Bosch 18V Professional battery platform.",
+                "id": "weldy-energy-ht1600-230v",
+                "name": "Weldy Energy HT1600 230V/1600W",
+                "sku": "WELDY-HT1600-230V",
+                "brand": "Weldy",
+                "tagline": "1600W professional heat gun with stepless control up to 700°C",
+                "badge": "Popular",
+                "description": "The Weldy Energy HT1600 is a classic, powerful manual heat gun for professional and handyman tasks. Features stepless temperature control up to 700°C with a robust brush motor and ceramic heating element. Built-in dust protection ensures long service life in harsh environments. Ideal for plastic welding, roofing, flooring, and tarpaulin work.",
                 "specs": {
-                  "Voltage": "18V",
-                  "Working Temperature": "300°C / 500°C",
-                  "Heat-up Time": "6 seconds to 300°C",
-                  "Airflow": "175 L/min",
-                  "Weight": "0.59 kg (excl. battery)"
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 700°C (Stepless)",
+                  "Airflow": "240 l/min",
+                  "Weight": "0.99 kg",
+                  "Nozzle Connection": "31.5 mm"
                 },
-                "imageUrl": "/images/Consumables/hot melt glue gun.png",
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600-230V-1600W-EU-plug.png",
                 "similar": [
-                  "hot-air-gun-ghg180",
-                  "hot-air-gun-ghg20-63"
+                  "weldy-energy-ht1600d-230v",
+                  "weldy-energy-ht1600-overlap-cn"
                 ],
-                "dateAdded": "2026-07-01",
+                "dateAdded": "2026-09-01",
                 "isBestSeller": true
+              },
+              {
+                "id": "weldy-energy-ht1600-overlap-cn",
+                "name": "Weldy Energy HT1600 230V/1600W Overlap Kit",
+                "sku": "WELDY-HT1600-230V-OL-CN",
+                "brand": "Weldy",
+                "tagline": "1600W heat gun with overlap welding nozzle kit",
+                "badge": "Essential",
+                "description": "The Weldy Energy HT1600 Overlap Kit is optimized for overlap welding applications on roofing membranes and tarpaulins. Features stepless temperature control up to 700°C with a robust brush motor. Kit includes specialized overlap welding nozzles for consistent, professional-quality seams.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 700°C (Stepless)",
+                  "Airflow": "240 l/min",
+                  "Weight": "0.99 kg",
+                  "Nozzle Connection": "31.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600-230V-1600W-overlap-kit-CN-plug.png",
+                "similar": [
+                  "weldy-energy-ht1600-230v",
+                  "weldy-energy-ht1600-plastic"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-energy-ht1600-plastic",
+                "name": "Weldy Energy HT1600 230V/1600W Plastic Kit",
+                "sku": "WELDY-HT1600-230V-PL",
+                "brand": "Weldy",
+                "tagline": "1600W heat gun with plastic welding nozzle kit",
+                "badge": "Popular",
+                "description": "The Weldy Energy HT1600 Plastic Kit is specifically configured for plastic welding applications. Features stepless temperature control up to 700°C and includes specialized plastic welding nozzles for precision work on tanks, pipes, and fabricated plastic components.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 700°C (Stepless)",
+                  "Airflow": "240 l/min",
+                  "Weight": "0.99 kg",
+                  "Nozzle Connection": "31.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600-230V-1600W-plastic-kit-EU-plug.png",
+                "similar": [
+                  "weldy-energy-ht1600-230v",
+                  "weldy-energy-ht1600-overlap-cn"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-energy-ht1600d-230v",
+                "name": "Weldy Energy HT1600 D 230V/1600W Digital",
+                "sku": "WELDY-HT1600D-230V",
+                "brand": "Weldy",
+                "tagline": "1600W digital heat gun with LCD display & overheating protection",
+                "badge": "Premium",
+                "description": "The Weldy Energy HT1600 D is the digital variant featuring an LCD display for precise temperature management. Digitally regulated stepless temperature control from 40°C to 620°C with integrated overheating protection and cool-down function. Features e-Drive for variable air volume adjustment. Ideal for precision plastic welding and demanding applications.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 620°C (Digital Stepless)",
+                  "Airflow": "120–240 l/min",
+                  "Weight": "1.20 kg",
+                  "Nozzle Connection": "31.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600-D-230V-1600W-EU-plug.png",
+                "similar": [
+                  "weldy-energy-ht1600-230v",
+                  "weldy-energy-ht1600d-overlap-uk"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "weldy-energy-ht1600d-overlap-uk",
+                "name": "Weldy Energy HT1600 D 230V/1600W Overlap Kit",
+                "sku": "WELDY-HT1600D-230V-OL-UK",
+                "brand": "Weldy",
+                "tagline": "1600W digital heat gun with overlap welding nozzle kit",
+                "badge": "Professional",
+                "description": "The Weldy Energy HT1600 D Overlap Kit combines digital precision temperature control with specialized overlap welding nozzles. LCD display shows exact temperature with overheating protection and cool-down function. Optimized for professional overlap welding on roofing membranes and waterproofing applications.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 620°C (Digital Stepless)",
+                  "Airflow": "120–240 l/min",
+                  "Weight": "1.20 kg",
+                  "Nozzle Connection": "31.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600 D-230V-1600W-overlap-kit-UK-plug.png",
+                "similar": [
+                  "weldy-energy-ht1600d-230v",
+                  "weldy-energy-ht1600d-plastic"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              },
+              {
+                "id": "weldy-energy-ht1600d-plastic",
+                "name": "Weldy Energy HT1600 D 230V/1600W Plastic Kit",
+                "sku": "WELDY-HT1600D-230V-PL",
+                "brand": "Weldy",
+                "tagline": "1600W digital heat gun with plastic welding nozzle kit",
+                "badge": "Premium",
+                "description": "The Weldy Energy HT1600 D Plastic Kit combines digital precision temperature control with specialized plastic welding nozzles. LCD display shows exact temperature for precision work on tanks, pipes, and fabricated plastic components. Integrated overheating protection and cool-down function for safety.",
+                "specs": {
+                  "Power": "1600W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 620°C (Digital Stepless)",
+                  "Airflow": "120–240 l/min",
+                  "Weight": "1.20 kg",
+                  "Nozzle Connection": "31.5 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT1600-D-230V-1600W-plastic-kit-EU-plug.png",
+                "similar": [
+                  "weldy-energy-ht1600d-230v",
+                  "weldy-energy-ht1600d-overlap-uk"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
+              }
+            ]
+          },
+          {
+            "id": "weldy-industrial-heaters",
+            "name": "Industrial & Heavy Duty Heat Guns",
+            "products": [
+              {
+                "id": "weldy-energy-ht3400-230v",
+                "name": "Weldy Energy HT3400 230V/3400W",
+                "sku": "WELDY-HT3400-230V",
+                "brand": "Weldy",
+                "tagline": "3400W high-performance heat gun for intensive industrial applications",
+                "badge": "Heavy Duty",
+                "description": "The Weldy Energy HT3400 is a high-performance heat gun designed for intensive plastic welding and large-scale shrinking and bending applications. Delivers 3400W of heating power with stepless temperature control up to 650°C. Features a dust protection filter and robust blower for consistent high-heat output. The 50mm nozzle connection accommodates larger nozzles for heavy-duty work.",
+                "specs": {
+                  "Power": "3400W",
+                  "Voltage": "230V",
+                  "Working Temperature": "40°C – 650°C (Stepless)",
+                  "Airflow": "320 l/min",
+                  "Weight": "1.28 kg",
+                  "Nozzle Connection": "50 mm"
+                },
+                "imageUrl": "/images/Weldy heat guns/energy-HT3400-230V-3400W-CN-plug.png",
+                "similar": [
+                  "weldy-ht10000-400v",
+                  "weldy-energy-ht1600-230v"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": true
+              },
+              {
+                "id": "weldy-ht10000-400v",
+                "name": "Weldy HT10000 3×400V/10kW Industrial Air Heater",
+                "sku": "WELDY-HT10000-400V",
+                "brand": "Weldy",
+                "tagline": "10kW industrial electric air heater for continuous heavy-duty operations",
+                "badge": "Industrial",
+                "description": "The Weldy HT10000 is a large-format 10kW electric air heater designed for industrial processes, continuous operation, and automated/controlled environments. Operates flame-free with consistent heat output from 20°C to 650°C. Requires a 3×400V power supply with CEE 5-16 connector. Ideal for heavy-duty shrinking, drying, and industrial heating applications.",
+                "specs": {
+                  "Power": "10,000W (10kW)",
+                  "Voltage": "3×400V",
+                  "Working Temperature": "20°C – 650°C",
+                  "Connector": "CEE 5-16 (6h)",
+                  "Dimensions": "390 × 132 × 215 mm",
+                  "Type": "Industrial Air Heater"
+                },
+                "imageUrl": "/images/Weldy heat guns/HT10000-3x400V-10kW-CEE 5-16(6h).png",
+                "similar": [
+                  "weldy-energy-ht3400-230v",
+                  "weldy-ht300s-230v"
+                ],
+                "dateAdded": "2026-09-01",
+                "isBestSeller": false
               }
             ]
           }
