@@ -48,11 +48,6 @@ export default function JourneyRange() {
                   <h4 className="text-[16px] font-bold uppercase tracking-[.04em] mb-2 group-hover:text-accent transition-colors">{m.title}</h4>
                   <p className="text-[13px] text-gray-600 leading-relaxed">{m.desc}</p>
                 </div>
-                <div className="hidden md:flex items-center">
-                  <div className="w-8 h-8 border border-gray-200 flex items-center justify-center text-xs text-gray-300 group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all">
-                    →
-                  </div>
-                </div>
               </div>
             ))}
           </div>
