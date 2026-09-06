@@ -114,7 +114,7 @@ export const CATALOGUE = [
                 "id": "masking-tapes-films-5",
                 "name": "Tesa 04341 Masking Tape",
                 "sku": "SBL-TAPE-MSK-05",
-                "brand": "SBECO",
+                "brand": "Tesa",
                 "tagline": "Premium-grade masking tape designed for general-purpose applications.",
                 "badge": "Popular",
                 "description": "Premium general-purpose masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
@@ -312,7 +312,7 @@ export const CATALOGUE = [
                 "id": "double-sided-tapes-5",
                 "name": "SBECO Double Side Tissue Solvent Tape",
                 "sku": "SBL-TAPE-DST-05",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "High-strength double-coated tape with pvc carrier for splicing applications.",
                 "badge": "Popular",
                 "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a pvc carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
@@ -336,7 +336,7 @@ export const CATALOGUE = [
                 "id": "double-sided-tapes-6",
                 "name": "SBECO Aluminium Foil Tape",
                 "sku": "SBL-TAPE-DST-06",
-                "brand": "3M",
+                "brand": "SBECO",
                 "tagline": "High-strength double-sided tape with aluminium foil carrier for general crafts.",
                 "badge": "Essential",
                 "description": "Industrial-grade double-sided tape utilizing an advanced adhesive formula coated on both sides of a aluminium foil carrier. Engineered to deliver immediate adhesion and high shear resistance on a wide range of substrates including plastics, metals, glass, and wood. Comes with an easy-to-peel release liner.",
@@ -529,15 +529,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4934 Double Sided Cloth Tape",
                 "sku": "TESA-4934-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided cloth tape for various bonding applications.",
+                "tagline": "High-strength double-sided cloth tape for carpet laying and mounting on rough surfaces.",
                 "badge": "Essential",
-                "description": "Industrial-grade double-sided cloth tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4934 is a double-sided general-purpose mounting tape with a flexible cloth (fabric) backing and a thick solvent-free synthetic rubber adhesive. The high coating weight ensures excellent initial tack and reliable bonding on rough, fibrous, or uneven surfaces. Easily hand-tearable for quick tool-free application.",
                 "specs": {
                   "Width": "19mm",
                   "Length": "50m",
-                  "Carrier Material": "PVC",
-                  "Thickness": "1.2mm",
-                  "Adhesive Type": "Hot-melt Rubber"
+                  "Carrier Material": "Cloth (Fabric)",
+                  "Thickness": "0.2mm",
+                  "Adhesive Type": "Synthetic Rubber"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4934 Double Sided Cloth Tape.png",
                 "similar": [
@@ -553,15 +553,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4952 Double Sided Foam Tape",
                 "sku": "TESA-4952-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided foam tape for various bonding applications.",
+                "tagline": "High-strength double-sided PE foam tape for constructive mounting applications.",
                 "badge": "Heavy Duty",
-                "description": "Industrial-grade double-sided foam tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4952 is a double-sided PE foam mounting tape with a tackified acrylic adhesive. The closed-cell PE foam carrier acts as a shock absorber and compensates for differing thermal expansion between materials. Offers high immediate bonding strength, excellent UV/weather resistance, and is certified for furniture mirror mounting.",
                 "specs": {
                   "Width": "24mm",
                   "Length": "50m",
-                  "Carrier Material": "Transfer (No Carrier)",
-                  "Thickness": "1.5mm",
-                  "Adhesive Type": "Acrylic"
+                  "Carrier Material": "PE Foam (Closed-Cell)",
+                  "Thickness": "1.15mm",
+                  "Adhesive Type": "Tackified Acrylic"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4952 Double Sided Foam Tape.png",
                 "similar": [
@@ -577,15 +577,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4964 Double Side Cloth Tape",
                 "sku": "TESA-4964-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided cloth tape for various bonding applications.",
+                "tagline": "High-strength double-sided cloth tape for carpet laying, exhibition construction, and textile bonding.",
                 "badge": "Premium",
-                "description": "Industrial-grade double-sided cloth tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4964 is a double-sided tape with a flexible, tear-resistant fabric backing and a natural rubber adhesive. Designed for high initial tack on irregular or rough surfaces, it is ideal for carpet laying, exhibition construction, leather/footwear laminating, and fabric splicing. Contains >50% bio-based carbon content. Removable from most surfaces without residue.",
                 "specs": {
                   "Width": "30mm",
                   "Length": "10m",
-                  "Carrier Material": "Cloth",
-                  "Thickness": "2mm",
-                  "Adhesive Type": "Hot-melt Rubber"
+                  "Carrier Material": "Cloth (Fabric)",
+                  "Thickness": "0.39mm",
+                  "Adhesive Type": "Natural Rubber"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4964 Double Side Cloth Tape.png",
                 "similar": [
@@ -601,15 +601,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4965 Double Side Polyester Tape",
                 "sku": "TESA-4965-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided polyester tape for various bonding applications.",
+                "tagline": "High-performance double-sided PET film mounting tape for critical bonding applications.",
                 "badge": "Popular",
-                "description": "Industrial-grade double-sided polyester tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4965 is a high-performance transparent double-sided tape with a PET (polyester) film backing and a tackified modified acrylic adhesive. Offers reliable bonding on critical substrates and low surface energy materials. Features excellent resistance to UV, humidity, chemicals, and aging. Widely used in automotive, electronics, and industrial mounting applications.",
                 "specs": {
                   "Width": "48mm",
                   "Length": "50m",
-                  "Carrier Material": "PP Film",
-                  "Thickness": "0.1mm",
-                  "Adhesive Type": "Acrylic"
+                  "Carrier Material": "PET (Polyester) Film",
+                  "Thickness": "0.205mm",
+                  "Adhesive Type": "Tackified Modified Acrylic"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4965 Double Side Polyester Tape.png",
                 "similar": [
@@ -625,15 +625,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4970 Double Side Acrylic Tape",
                 "sku": "TESA-4970-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided acrylic tape for various bonding applications.",
+                "tagline": "Thick double-sided PVC mounting tape with high initial tack for rough surfaces.",
                 "badge": "Essential",
-                "description": "Industrial-grade double-sided acrylic tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4970 is a thick double-sided self-adhesive tape with a PVC film backing and a tackified acrylic adhesive. The high coating weight enables excellent adhesion on slightly rough or dusty surfaces. Ideal for mounting plastic and wooden trims, signs, scales, decorative POS materials, and heavy display elements. Offers very good UV, aging, humidity, and chemical resistance.",
                 "specs": {
                   "Width": "50mm",
                   "Length": "50m",
-                  "Carrier Material": "Non-Woven",
-                  "Thickness": "0.2mm",
-                  "Adhesive Type": "Hot-melt Rubber"
+                  "Carrier Material": "PVC Film",
+                  "Thickness": "0.225mm",
+                  "Adhesive Type": "Tackified Acrylic"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4970 Double Side Acrylic Tape.png",
                 "similar": [
@@ -649,15 +649,15 @@ export const CATALOGUE = [
                 "name": "Tesa 4985 Double Side Transfer Tape",
                 "sku": "TESA-4985-001",
                 "brand": "Tesa",
-                "tagline": "High-strength double-sided transfer tape for various bonding applications.",
+                "tagline": "Ultra-thin transfer tape for mounting posters, fabric samples, and paper splicing.",
                 "badge": "Premium",
-                "description": "Industrial-grade double-sided transfer tape featuring a high-performance acrylic adhesive formulation. Engineered for metal-to-metal and plastic-to-metal bonding applications, providing excellent adhesion, shear strength, and impact resistance. Comes with a release liner for easy handling and application.",
+                "description": "tesa® 4985 is a transfer tape consisting of a pure tackified acrylic adhesive layer without a carrier. At just 50 µm thick, it provides excellent conformability for uneven or textured surfaces. Ideal for mounting posters and photos, fixing fabric samples in pattern books, and paper splicing. Offers good immediate grab with excellent aging and humidity resistance.",
                 "specs": {
                   "Width": "12mm",
                   "Length": "10m",
-                  "Carrier Material": "Tissue",
-                  "Thickness": "0.5mm",
-                  "Adhesive Type": "Acrylic"
+                  "Carrier Material": "Transfer (No Carrier)",
+                  "Thickness": "0.05mm",
+                  "Adhesive Type": "Tackified Acrylic"
                 },
                 "imageUrl": "/images/tapes/Double sided tapes/Tesa 4985 Double Side Transfer Tape.png",
                 "similar": [
@@ -744,7 +744,7 @@ export const CATALOGUE = [
                 "id": "double-sided-tapes-23",
                 "name": "SBECO Copper Foil Tape",
                 "sku": "SBL-TAPE-CFT-23",
-                "brand": "Tesa",
+                "brand": "SBECO",
                 "tagline": "High-strength copper foil tape for EMI shielding and conductivity applications.",
                 "badge": "Heavy Duty",
                 "description": "Industrial-grade copper foil tape with an acrylic adhesive formulation. Engineered for EMI shielding, grounding, and conductivity applications requiring excellent adhesion and shielding performance. Comes with an easy-to-peel release liner.",
@@ -1538,7 +1538,7 @@ export const CATALOGUE = [
                 "id": "anti-slip-tapes-9",
                 "name": "Tesa 60950 Anti-Slip Black",
                 "sku": "SBL-TAPE-AST-09",
-                "brand": "SBECO",
+                "brand": "Tesa",
                 "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
                 "badge": "Popular",
                 "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
@@ -1563,7 +1563,7 @@ export const CATALOGUE = [
                 "id": "anti-slip-tapes-10",
                 "name": "Tesa 60951 Anti-Slip Yellow Black",
                 "sku": "SBL-TAPE-AST-10",
-                "brand": "SBECO",
+                "brand": "Tesa",
                 "tagline": "Industrial safety anti-skid tape with heavy-duty abrasive grit for stairs, ramps, and floors.",
                 "badge": "Essential",
                 "description": "Highly durable slip-resistant tape designed to prevent accidents in high-traffic work environments. Made with premium silicon carbide grit bonded to a tough PVC carrier. Resistant to water, oil, chemicals, and UV exposure. Suitable for indoor and outdoor applications on concrete, metal, wood, and tile surfaces.",
