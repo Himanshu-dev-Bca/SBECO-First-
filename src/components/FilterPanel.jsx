@@ -180,7 +180,6 @@ export default function FilterPanel({
                 <div
                   key={cat.id}
                   className="mb-0.5 group/cat"
-                  onMouseEnter={() => expandCategory(cat.id)}
                 >
                   {/* Category row */}
                   <button
@@ -232,7 +231,6 @@ export default function FilterPanel({
                         <div
                           key={sub.id}
                           className="group/sub"
-                          onMouseEnter={() => expandSubcategory(sub.id)}
                         >
                           <div className="flex items-center">
                             <button

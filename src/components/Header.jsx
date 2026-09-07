@@ -179,7 +179,7 @@ export default function Header() {
         </Link>
 
         {/* ═══ Desktop Nav ═══ */}
-        <ul className="hidden md:flex gap-10 list-none">
+        <ul className="hidden md:flex flex-1 justify-center gap-10 list-none">
           {NAV.map((item) => (
             <li
               key={item.to || item.label}
@@ -261,7 +261,7 @@ export default function Header() {
                             <button
                               key={cat.id}
                               type="button"
-                              onMouseEnter={() => setActiveCat(idx)}
+
                               onClick={() => {
                                 navigate(`/products?category=${cat.id}`);
                                 setMegaOpen(false);
@@ -372,18 +372,20 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* Desktop Search */}
-        <form onSubmit={handleSearch} className="hidden md:flex items-center gap-2 border border-gray-200 px-4 py-2 bg-white hover:border-gray-400 focus-within:border-accent transition-all duration-200 rounded-lg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-gray-400 shrink-0">
-            <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
-          </svg>
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search products..."
-            className="border-none outline-none text-[11px] tracking-[.04em] bg-transparent w-[150px] placeholder:text-gray-400"
-          />
-        </form>
+        {/* Desktop Search (hidden on /products since it has its own) */}
+        {!pathname.startsWith('/products') && (
+          <form onSubmit={handleSearch} className="hidden md:flex items-center gap-2 border border-gray-200 px-4 py-2 bg-white hover:border-gray-400 focus-within:border-accent transition-all duration-200 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-gray-400 shrink-0">
+              <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
+            </svg>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search products..."
+              className="border-none outline-none text-[11px] tracking-[.04em] bg-transparent w-[150px] placeholder:text-gray-400"
+            />
+          </form>
+        )}
 
         {/* ═══ Mobile Hamburger Button ═══ */}
         <button

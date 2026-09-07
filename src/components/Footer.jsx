@@ -75,7 +75,7 @@ export default function Footer() {
                 <img
                   src="/images/sbeco-logo.png"
                   alt="SBECO"
-                  className="h-12 md:h-14 w-auto object-contain brightness-0 invert"
+                  className="h-12 md:h-14 w-auto object-contain"
                 />
               </Link>
               <p className="text-[13px] text-gray-400 leading-[1.8] max-w-[320px] font-['Inter']">

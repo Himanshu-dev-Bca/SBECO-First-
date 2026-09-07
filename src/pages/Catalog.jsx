@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useCallback } from 'react';
+import { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { allProducts, CATALOGUE } from '../data/products';
 import FilterPanel from '../components/FilterPanel';
@@ -12,6 +12,9 @@ const ALL_BRANDS = [...new Set(allProducts.map((p) => p.brand).filter(Boolean))]
 
 // Featured / best-seller products
 const FEATURED = allProducts.filter((p) => p.isBestSeller);
+
+// Number of products to show per page
+const PRODUCTS_PER_PAGE = 30;
 
 // Helper: count products in a category
 function getProductCount(cat) {
@@ -44,6 +47,8 @@ export default function Catalog() {
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   const [isLoading, setIsLoading] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const gridRef = useRef(null);
 
   // Sync URL params → state on mount and URL change
   useEffect(() => {
@@ -96,6 +101,7 @@ export default function Catalog() {
     setSelectedCategory(catId);
     setSelectedSubcategory(null);
     setSelectedNested(null);
+    setCurrentPage(1);
     updateURL(catId, null, null, searchQuery);
     setMobileSidebarOpen(false);
   };
@@ -105,6 +111,7 @@ export default function Catalog() {
     setSelectedCategory(catId);
     setSelectedSubcategory(subId);
     setSelectedNested(null);
+    setCurrentPage(1);
     updateURL(catId, subId, null, searchQuery);
     setMobileSidebarOpen(false);
   };
@@ -114,12 +121,14 @@ export default function Catalog() {
     setSelectedCategory(catId);
     setSelectedSubcategory(subId);
     setSelectedNested(nestedId);
+    setCurrentPage(1);
     updateURL(catId, subId, nestedId, searchQuery);
     setMobileSidebarOpen(false);
   };
 
   const handleBrandToggle = (brand) => {
     triggerLoading();
+    setCurrentPage(1);
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand]
     );
@@ -132,12 +141,14 @@ export default function Catalog() {
     setSelectedNested(null);
     setSelectedBrands([]);
     setSearchQuery('');
+    setCurrentPage(1);
     setSearchParams({}, { replace: true });
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
     triggerLoading();
+    setCurrentPage(1);
     updateURL(selectedCategory, selectedSubcategory, selectedNested, searchQuery);
   };
 
@@ -367,9 +378,9 @@ export default function Catalog() {
           {/* Sort + results count */}
           <div className="flex items-center gap-4 ml-auto">
             <div className="text-[10px] tracking-[.08em] uppercase text-gray-400 font-medium hidden sm:block whitespace-nowrap">
-              {products.length} {products.length === 1 ? 'product' : 'products'}
+              {products.length > 0 ? `${(currentPage - 1) * PRODUCTS_PER_PAGE + 1}–${Math.min(currentPage * PRODUCTS_PER_PAGE, products.length)} of ${products.length}` : '0'} {products.length === 1 ? 'product' : 'products'}
             </div>
-            <SortDropdown value={sort} onChange={(v) => { setSort(v); triggerLoading(); }} />
+            <SortDropdown value={sort} onChange={(v) => { setSort(v); triggerLoading(); setCurrentPage(1); }} />
           </div>
         </div>
 
@@ -476,7 +487,7 @@ export default function Catalog() {
         <div className="flex-1 min-w-0 px-5 md:px-8 py-6">
           {/* Results count (mobile) */}
           <div className="sm:hidden text-[10px] tracking-[.08em] uppercase text-gray-400 font-medium mb-4">
-            {products.length} {products.length === 1 ? 'product' : 'products'}
+            {products.length > 0 ? `${(currentPage - 1) * PRODUCTS_PER_PAGE + 1}–${Math.min(currentPage * PRODUCTS_PER_PAGE, products.length)} of ${products.length}` : '0'} {products.length === 1 ? 'product' : 'products'}
           </div>
 
           {/* ── Featured / Best-Sellers (when no filter active) ── */}
@@ -547,11 +558,131 @@ export default function Catalog() {
                   </span>
                 </div>
               )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                {products.map((product, i) => (
-                  <ProductCard key={product.id} product={product} index={i} />
-                ))}
+              <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                {(() => {
+                  const totalPages = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+                  const safePage = Math.min(currentPage, totalPages || 1);
+                  const start = (safePage - 1) * PRODUCTS_PER_PAGE;
+                  const end = start + PRODUCTS_PER_PAGE;
+                  return products.slice(start, end).map((product, i) => (
+                    <ProductCard key={product.id} product={product} index={i} />
+                  ));
+                })()}
               </div>
+
+              {/* ── Pagination ── */}
+              {(() => {
+                const totalPages = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+                if (totalPages <= 1) return null;
+
+                const safePage = Math.min(currentPage, totalPages);
+
+                const goToPage = (page) => {
+                  const p = Math.max(1, Math.min(page, totalPages));
+                  setCurrentPage(p);
+                  triggerLoading();
+                  // Scroll to top of grid
+                  if (gridRef.current) {
+                    gridRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                };
+
+                // Build page numbers: always show first, last, and a window around current
+                const getPageNumbers = () => {
+                  const pages = [];
+                  const delta = 2; // pages to show on each side of current
+
+                  // Always include page 1
+                  pages.push(1);
+
+                  const rangeStart = Math.max(2, safePage - delta);
+                  const rangeEnd = Math.min(totalPages - 1, safePage + delta);
+
+                  if (rangeStart > 2) pages.push('...');
+
+                  for (let i = rangeStart; i <= rangeEnd; i++) {
+                    pages.push(i);
+                  }
+
+                  if (rangeEnd < totalPages - 1) pages.push('...');
+
+                  // Always include last page
+                  if (totalPages > 1) pages.push(totalPages);
+
+                  return pages;
+                };
+
+                return (
+                  <div className="flex flex-col items-center gap-4 mt-10 mb-4 animate-fade-up" id="pagination">
+                    {/* Showing info */}
+                    <div className="text-[10px] tracking-[.08em] uppercase text-gray-400 font-medium">
+                      Showing {(safePage - 1) * PRODUCTS_PER_PAGE + 1}–{Math.min(safePage * PRODUCTS_PER_PAGE, products.length)} of {products.length} products
+                    </div>
+
+                    {/* Page buttons */}
+                    <div className="flex items-center gap-1.5">
+                      {/* Previous */}
+                      <button
+                        onClick={() => goToPage(safePage - 1)}
+                        disabled={safePage === 1}
+                        className={`inline-flex items-center justify-center w-9 h-9 rounded-lg border text-[12px] font-semibold transition-all duration-200 cursor-pointer ${
+                          safePage === 1
+                            ? 'border-gray-100 text-gray-300 cursor-not-allowed bg-gray-50'
+                            : 'border-gray-200 text-gray-600 bg-white hover:border-accent hover:text-accent hover:-translate-y-0.5 hover:shadow-md'
+                        }`}
+                        aria-label="Previous page"
+                        id="pagination-prev"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+
+                      {/* Page numbers */}
+                      {getPageNumbers().map((page, idx) =>
+                        page === '...' ? (
+                          <span
+                            key={`ellipsis-${idx}`}
+                            className="inline-flex items-center justify-center w-9 h-9 text-[11px] text-gray-400 font-medium select-none"
+                          >
+                            ⋯
+                          </span>
+                        ) : (
+                          <button
+                            key={page}
+                            onClick={() => goToPage(page)}
+                            className={`inline-flex items-center justify-center w-9 h-9 rounded-lg border text-[12px] font-semibold transition-all duration-200 cursor-pointer ${
+                              page === safePage
+                                ? 'bg-accent border-accent text-white shadow-md shadow-accent/20 scale-105'
+                                : 'border-gray-200 text-gray-600 bg-white hover:border-accent hover:text-accent hover:-translate-y-0.5 hover:shadow-md'
+                            }`}
+                            id={`pagination-page-${page}`}
+                          >
+                            {page}
+                          </button>
+                        )
+                      )}
+
+                      {/* Next */}
+                      <button
+                        onClick={() => goToPage(safePage + 1)}
+                        disabled={safePage === totalPages}
+                        className={`inline-flex items-center justify-center w-9 h-9 rounded-lg border text-[12px] font-semibold transition-all duration-200 cursor-pointer ${
+                          safePage === totalPages
+                            ? 'border-gray-100 text-gray-300 cursor-not-allowed bg-gray-50'
+                            : 'border-gray-200 text-gray-600 bg-white hover:border-accent hover:text-accent hover:-translate-y-0.5 hover:shadow-md'
+                        }`}
+                        aria-label="Next page"
+                        id="pagination-next"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })()}
             </>
           )}
         </div>
