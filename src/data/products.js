@@ -1,9 +1,9 @@
-// Complete product catalogue data — single source of truth
+﻿// Complete product catalogue data — single source of truth
 export const CATALOGUE = [
   {
     "id": "tape-dispensers",
     "name": "Tape and Tape Dispensers",
-    "description": "Premium adhesive tapus and professional tape dispensers for packaging, labeling, and sealing applications.",
+    "description": "Tape and Tape Dispensers",
     "imageUrl": "/images/tape_dispensers.png",
     "subcategories": [
       {
