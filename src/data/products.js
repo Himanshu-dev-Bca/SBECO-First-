@@ -21,7 +21,7 @@ export const CATALOGUE = [
                 "brand": "SBECO",
                 "tagline": "Professional-grade masking tape designed for general purpose crepe applications.",
                 "badge": "Popular",
-                "description": "Premium general purpose crepe masking tape featuring a high-quality adhesive system. Provides clean removal without leaving residue or damaging surfaces. Specially conformable backing ensures sharp paint lines and ease of application on flat and contoured surfaces.",
+                "description": "General purpose crepe masking tape",
                 "specs": {
                   "Width": "12mm",
                   "Length": "50m",
