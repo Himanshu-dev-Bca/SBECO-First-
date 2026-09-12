@@ -67,8 +67,8 @@ const NAV = [
     label: 'More',
     hasDropdown: true,
     items: [
-      { to: '/articles', label: 'Articles', icon: '📰' },
-      { to: '/videos', label: 'Videos', icon: '🎬' },
+      { to: '/articles', label: 'Articles' },
+      { to: '/videos', label: 'Videos' },
     ],
   },
   { to: '/contact', label: 'Contact' },
