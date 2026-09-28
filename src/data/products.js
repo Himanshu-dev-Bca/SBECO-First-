@@ -5990,7 +5990,7 @@ export const CATALOGUE = [
             "brand": "SBECO",
             "tagline": "Yellow-colored PVC strip curtain for caution zones",
             "badge": "Safety",
-            "description": "Bright yellow PVC curtain strips for caution and warning areas. Easy to identify danger zones while maintaining traffic flow.",
+            "description": "Just yellow pvc curtains",
             "specs": {
               "Width": "200mm",
               "Thickness": "2mm",
