@@ -73,7 +73,7 @@ export default function Footer() {
             <div>
               <Link to="/" className="inline-block mb-5">
                 <img
-                  src="/images/sbeco-logo.png"
+                  src="/images/log.png"
                   alt="SBECO"
                   className="h-12 md:h-14 w-auto object-contain"
                 />
