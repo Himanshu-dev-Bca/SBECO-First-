@@ -1,14 +1,22 @@
 export default function Hero({ label, title, subtitle, children, image }) {
   return (
     <section className="bg-black text-white relative overflow-hidden flex flex-col justify-center min-h-[400px]">
-      {/* Background Image with Netflix-style gradient blend */}
+      {/* Background Image with smooth cinematic gradient blend */}
       {image && (
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 w-full md:w-3/4 lg:w-2/3 h-full right-0 ml-auto">
-            <img src={image} alt="Background" className="w-full h-full object-cover opacity-60" />
-            {/* The blend gradients */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40"></div>
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute inset-0 w-full md:w-[70%] lg:w-[60%] h-full right-0 ml-auto">
+            <img
+              src={image}
+              alt="Industrial background"
+              className="w-full h-full object-cover object-[center_30%] opacity-70"
+            />
+            {/* Multi-directional seamless feathering and blending into dark hero background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-transparent to-transparent" />
+            {/* Subtle warm industrial ambient glow */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 via-transparent to-amber-500/5 mix-blend-screen" />
           </div>
         </div>
       )}

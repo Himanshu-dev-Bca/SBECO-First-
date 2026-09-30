@@ -12,14 +12,14 @@ const PRODUCTS_PHOTOS = [
 const CERTIFICATES = [
   { src: '/images/category_facility.png', title: 'ISO 9001:2015 Quality Certification', award: 'Quality Assurance' },
   { src: '/images/category_power_tools.png', title: 'ISO 45001 Health & Safety', award: 'Workplace Safety' },
-  { src: '/images/about_trusted_partner.png', title: 'Environmental Excellence Award', award: 'Sustainability' },
+  { src: '/images/indu.png', title: 'Environmental Excellence Award', award: 'Sustainability' },
   { src: '/images/category_straps.png', title: 'Industry Partnership Recognition', award: 'Partnership' },
 ];
 
 const WORKSPACE = [
   { src: '/images/category_facility.png', title: 'State-of-the-Art Warehouse Facility', section: 'Storage & Logistics' },
   { src: '/images/category_power_tools.png', title: 'Advanced Testing Laboratory', section: 'Quality Control' },
-  { src: '/images/about_trusted_partner.png', title: 'Modern Packaging Department', section: 'Operations' },
+  { src: '/images/fact.png', title: 'Modern Manufacturing & Processing Plant', section: 'Operations' },
   { src: '/images/category_tapes.png', title: 'Organized Inventory Management', section: 'Warehouse' },
 ];
 

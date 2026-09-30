@@ -8,7 +8,7 @@ export default function About() {
       <Hero label="About · Super Bright Labs"
         title={<>Built On Trust,<br />Driven By Quality</>}
         subtitle="For over two decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India."
-        image="/images/about_trusted_partner.png"
+        image="/images/fact.png"
       />
 
       {/* Who We Are */}
