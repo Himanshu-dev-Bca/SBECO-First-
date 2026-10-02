@@ -1,27 +1,5 @@
 import { Link } from 'react-router-dom';
 
-/* map badge text → CSS class */
-function getBadgeClass(badge) {
-  if (!badge) return '';
-  const b = badge.toLowerCase();
-  if (b.includes('best') || b.includes('popular')) return 'badge-popular';
-  if (b.includes('professional')) return 'badge-professional';
-  if (b.includes('industrial')) return 'badge-industrial';
-  if (b.includes('essential')) return 'badge-essential';
-  if (b.includes('eco')) return 'badge-eco';
-  if (b.includes('heavy')) return 'badge-heavy-duty';
-  if (b.includes('machine')) return 'badge-machine';
-  if (b.includes('value')) return 'badge-value';
-  if (b.includes('premium')) return 'badge-premium';
-  if (b.includes('specialty')) return 'badge-specialty';
-  if (b.includes('new')) return 'badge-new';
-  if (b.includes('safety')) return 'badge-safety';
-  if (b.includes('versatile')) return 'badge-versatile';
-  if (b.includes('precision')) return 'badge-precision';
-  if (b.includes('light')) return 'badge-light-duty';
-  return 'badge-standard';
-}
-
 export default function ProductCard({ product, index = 0 }) {
   /* pick first 3 spec entries for preview */
   const specEntries = product.specs
@@ -43,13 +21,6 @@ export default function ProductCard({ product, index = 0 }) {
             loading="lazy"
             className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"
           />
-          {product.badge && (
-            <span
-              className={`absolute top-3 right-3 text-[8px] px-2.5 py-1 tracking-[.08em] uppercase font-bold rounded-full backdrop-blur-sm ${getBadgeClass(product.badge)}`}
-            >
-              {product.badge}
-            </span>
-          )}
 
           {/* Quick view overlay */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300 flex items-center justify-center">

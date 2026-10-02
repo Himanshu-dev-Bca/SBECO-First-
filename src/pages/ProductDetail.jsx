@@ -4,24 +4,6 @@ import Lightbox from '../components/Lightbox';
 import CategorySidebar from '../components/CategorySidebar';
 import { CATALOGUE, productIndex } from '../data/products';
 
-/* ── Badge class helper ── */
-function getBadgeClass(badge) {
-  if (!badge) return '';
-  const b = badge.toLowerCase();
-  if (b.includes('best') || b.includes('popular')) return 'badge-popular';
-  if (b.includes('professional')) return 'badge-professional';
-  if (b.includes('industrial')) return 'badge-industrial';
-  if (b.includes('essential')) return 'badge-essential';
-  if (b.includes('eco')) return 'badge-eco';
-  if (b.includes('heavy')) return 'badge-heavy-duty';
-  if (b.includes('machine')) return 'badge-machine';
-  if (b.includes('value')) return 'badge-value';
-  if (b.includes('premium')) return 'badge-premium';
-  if (b.includes('specialty')) return 'badge-specialty';
-  if (b.includes('new')) return 'badge-new';
-  if (b.includes('safety')) return 'badge-safety';
-  return 'badge-standard';
-}
 
 /* ── SVG icon components (replace emojis with professional vectors) ── */
 const ICONS = {
@@ -265,11 +247,6 @@ export default function ProductDetail() {
         {/* Product Hero */}
         <div className="grid grid-cols-1 md:grid-cols-2 animate-fade-up">
           <div className="bg-gray-50 flex items-center justify-center min-h-[400px] border-b md:border-b-0 md:border-r border-gray-200 relative overflow-hidden">
-            {product.badge && (
-              <span className={`absolute top-4 left-4 text-[9px] px-3 py-1.5 tracking-[.1em] uppercase font-bold z-10 rounded-full ${getBadgeClass(product.badge)}`}>
-                {product.badge}
-              </span>
-            )}
             <Lightbox src={product.imageUrl} alt={product.name}>
               <img
                 src={product.imageUrl}
