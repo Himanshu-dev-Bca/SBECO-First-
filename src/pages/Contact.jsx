@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Hero from '../components/Hero';
 import CloudflareTurnstile from '../components/CloudflareTurnstile';
 
-const WEB3FORMS_KEY = 'b1b9178c-a2eb-40d0-9704-277ac889a758';
+const WEB3FORMS_KEY = '50032f97-447d-42ce-9d87-5f6a8ec31294';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
