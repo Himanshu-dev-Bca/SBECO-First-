@@ -179,7 +179,7 @@ export default function Home() {
   return (
     <>
       <Hero
-        label="Super Bright Labs · Since 2001"
+        label="Super Bright Labs · Since 1985"
         title={<>Your Trusted Partner<br />For Industrial<br />Packaging &amp; Tools</>}
         subtitle="Showcasing premium industrial solutions — adhesive tapes, professional power tools, and protective packaging engineered for demanding environments. Enquire today for your requirements."
         image="/images/fact.png"
@@ -213,7 +213,7 @@ export default function Home() {
             { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />, title: 'Quality Assured', desc: 'Every product tested and certified for industrial-grade performance and durability.' },
             { icon: <><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" /></>, title: 'Trusted Brands', desc: 'Authorised stockists for Bosch, DeWalt, Camo, and our own Super Bright Labs range.' },
             { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /></>, title: 'Expert Support', desc: 'Dedicated technical team to help you choose the right products for your needs.' },
-            { icon: <><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></>, title: 'Since 2001', desc: 'Over two decades of trusted expertise in industrial packaging and tools.' },
+            { icon: <><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></>, title: 'Since 1985', desc: 'Over Four decades of trusted expertise in industrial packaging and tools.' },
           ].map((f, i) => (
             <div key={i} className="rounded-[28px] border border-gray-200 bg-white p-8 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
               <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-[18px] bg-accent text-white">

@@ -63,26 +63,6 @@ export default function Videos() {
         </div>
       </section>
 
-      {/* Video Tips Section */}
-      <section className="px-8 md:px-12 py-14 bg-gradient-to-r from-gray-50 to-white border-t border-gray-200">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <div className="text-3xl mb-3">📹</div>
-            <div className="text-[13px] font-bold uppercase tracking-[.06em] mb-2 text-black">Product Demonstrations</div>
-            <p className="text-[12px] text-gray-600 leading-relaxed">Watch real-world applications of our industrial equipment and packaging solutions in action.</p>
-          </div>
-          <div>
-            <div className="text-3xl mb-3">🎓</div>
-            <div className="text-[13px] font-bold uppercase tracking-[.06em] mb-2 text-black">Expert Tutorials</div>
-            <p className="text-[12px] text-gray-600 leading-relaxed">Learn best practices and techniques from our team of certified professionals and specialists.</p>
-          </div>
-          <div>
-            <div className="text-3xl mb-3">📊</div>
-            <div className="text-[13px] font-bold uppercase tracking-[.06em] mb-2 text-black">Process Overview</div>
-            <p className="text-[12px] text-gray-600 leading-relaxed">Gain insights into our quality assurance, testing, and manufacturing processes at SBECO.</p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

@@ -10,7 +10,7 @@ const QUICK_LINKS = [
 ];
 
 const PRODUCT_LINKS = [
-  { to: '/products?category=tape-dispensers', label: 'Tapes & Dispensers' },
+  { to: '/products?category=tape-dispensers', label: 'Tapes & Dispensers' },  
   { to: '/products?category=strapping-solutions', label: 'Strapping Solutions' },
   { to: '/products?category=power-tools', label: 'Power Tools' },
   { to: '/products?category=packaging-consumables', label: 'Packaging Consumables' },
