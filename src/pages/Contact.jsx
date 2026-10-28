@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import Hero from '../components/Hero';
 import CloudflareTurnstile from '../components/CloudflareTurnstile';
 
-const WEB3FORMS_KEY = '50032f97-447d-42ce-9d87-5f6a8ec31294';
-
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
@@ -52,6 +50,10 @@ export default function Contact() {
       newErrors.mobile = 'Please enter a valid mobile number (10+ digits)';
     }
 
+    // Require Turnstile verification
+    if (!turnstileToken) {
+      newErrors.turnstile = 'Please complete the security verification';
+    }
 
     return newErrors;
   };
@@ -75,25 +77,19 @@ export default function Contact() {
     setSending(true);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('/.netlify/functions/contact', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json' // REQUIRED by Web3Forms
         },
         body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          from_name: form.name,
-          subject: `SBECO: ${form.subject || 'General Enquiry'} — from ${form.name}`,
+          turnstileToken,
           name: form.name,
-          // Prevent validation crash if user only provided a mobile number
-          email: form.email || 'no-email-provided@example.com',
-          phone: form.mobile || 'Not provided',
-          company: form.company || 'Not specified',
-          topic: form.subject || 'General Enquiry',
+          email: form.email,
+          mobile: form.mobile,
+          company: form.company,
+          subject: form.subject,
           message: form.message,
-          // Web3Forms free bot protection (honeypot)
-          botcheck: '',
         }),
       });
 
@@ -109,9 +105,9 @@ export default function Contact() {
           subject: '',
           message: '',
         });
-        setTurnstileToken(''); // Reset widget if present
+        setTurnstileToken('');
       } else {
-        console.error("Web3Forms API Error:", data); 
+        console.error("API Error:", data);
         setErrors({ general: data.message || 'Something went wrong. Please try again or contact us directly.' });
       }
     } catch (err) {
@@ -295,16 +291,24 @@ export default function Contact() {
                   </div>
                 )}
 
-                {/* Cloudflare Turnstile Widget (visual deterrent only — not sent to Web3Forms) */}
+                {/* Cloudflare Turnstile Widget — token is verified server-side via Netlify Function */}
                 <div className="mb-6">
                   <label className="block text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                    Security Verification
+                    Security Verification <span className="text-red-500">*</span>
                   </label>
                   <CloudflareTurnstile
-                    onVerify={(token) => setTurnstileToken(token)}
+                    onVerify={(token) => {
+                      setTurnstileToken(token);
+                      if (errors.turnstile) setErrors({ ...errors, turnstile: '' });
+                    }}
                     onExpire={() => setTurnstileToken('')}
                     onError={() => setTurnstileToken('')}
                   />
+                  {errors.turnstile && (
+                    <div className="text-[11px] text-red-600 mt-1.5 flex items-center gap-1.5 animate-slide-down">
+                      <span>⚠</span> {errors.turnstile}
+                    </div>
+                  )}
                 </div>
 
                 {/* Submit Button */}
