@@ -105,7 +105,7 @@ export default function About() {
           { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />, title: 'Quality First', desc: 'Every product is tested and certified for industrial-grade performance.' },
           { icon: <><path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></>, title: 'Reliability', desc: 'Consistent product range, transparent business practices, and dependable support.' },
           { icon: <><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /></>, title: 'Partnership', desc: 'We work alongside clients as a long-term solutions partner, not just a supplier.' },
-          { icon: <><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></>, title: 'Experience', desc: 'Over 20 years of deep expertise in industrial packaging and tools.' },
+          { icon: <><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></>, title: 'Experience', desc: 'Over 40 years of deep expertise in industrial packaging and tools.' },
         ].map((v, i) => (
           <div key={i} className="p-9 border-r border-gray-200 last:border-r-0 hover:bg-gray-100 transition-colors">
             <div className="w-10 h-10 bg-accent rounded-[10px] flex items-center justify-center mb-4">
