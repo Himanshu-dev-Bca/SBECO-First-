@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Articles from './pages/Articles';
-import Photos from './pages/Photos';
+import Gallery from './pages/Gallery';
 import Videos from './pages/Videos';
 import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
@@ -41,7 +41,7 @@ export default function App() {
         <Route path="/about/journey/:rangeSlug" element={<Layout><JourneyRange /></Layout>} />
         <Route path="/contact" element={<Layout><Contact /></Layout>} />
         <Route path="/articles" element={<Layout><Articles /></Layout>} />
-        <Route path="/gallery" element={<Layout><Photos /></Layout>} />
+        <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
         <Route path="/photos" element={<Navigate to="/gallery" replace />} />
         <Route path="/videos" element={<Layout><Videos /></Layout>} />
         <Route path="/products" element={<Layout><Catalog /></Layout>} />

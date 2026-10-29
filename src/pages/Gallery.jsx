@@ -1,41 +1,78 @@
 import Hero from '../components/Hero';
-import Lightbox from '../components/Lightbox';
+import { GALLERY_IMAGE_PATHS } from '../data/galleryImages';
 
-const GALLERY_IMAGES = [
-  { src: '/images/category_power_tools.png', title: 'Power Tools Collection', tag: 'Products' },
-  { src: '/images/category_tapes.png', title: 'Industrial Adhesive Solutions', tag: 'Products' },
-  { src: '/images/category_straps.png', title: 'Packaging & Strapping', tag: 'Warehouse' },
-  { src: '/images/category_nailing.png', title: 'Heavy Duty Fastening', tag: 'Construction' },
-  { src: '/images/category_facility.png', title: 'Facility Management Gear', tag: 'Safety' },
-  { src: '/images/high_temp_tape.png', title: 'ThermoMask HT-260', tag: 'Specialty' },
-];
+const CATEGORY_LABELS = {
+  Consumables: 'Packaging Consumables',
+  'Facility Management': 'Facility Management',
+  Images: 'Power Tools',
+  'nailing&Stapling': 'Nailing & Stapling',
+  'Tape-dispensers': 'Tape Dispensers',
+  tapes: 'Tapes & Films',
+  'Weldy heat guns': 'Heat Guns',
+};
+
+const GALLERY_IMAGES = GALLERY_IMAGE_PATHS.map((path) => {
+  const segments = path.split('/');
+  const fileName = segments[segments.length - 1];
+  const title = fileName.replace(/\.[^.]+$/, '').replace(/[-_=]+/g, ' ');
+  const category = CATEGORY_LABELS[segments[0]] || 'Product Range';
+
+  return {
+    src: `/images/${segments.map(encodeURIComponent).join('/')}`,
+    title,
+    category,
+  };
+});
 
 export default function Gallery() {
   return (
     <>
-      <Hero label="Gallery · Super Bright Labs" title={<>Visual<br/>Showcase</>}
-        subtitle="A visual showcase of our premium products, facilities, and real-world industrial applications." />
+      <Hero
+        label="Gallery · Super Bright Labs"
+        title={<>A closer look<br />at our range.</>}
+        subtitle="Explore the products and equipment we bring together for better, more reliable work."
+      />
 
-      <section className="px-8 md:px-12 py-14">
-        <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
-          Image Gallery <span className="text-[11px] text-gray-400 font-light">{GALLERY_IMAGES.length} items</span>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {GALLERY_IMAGES.map((img, i) => (
-            <Lightbox key={i} src={img.src} alt={img.title}>
-              <div className="group relative border border-gray-200 bg-white overflow-hidden animate-fade-up cursor-zoom-in hover:border-black hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,.08)] transition-all" style={{ animationDelay: `${i * .06}s` }}>
-                <div className="h-[320px] bg-gray-100 overflow-hidden relative flex items-center justify-center">
-                  <img src={img.src} alt={img.title} loading="lazy" className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-500 ease-out" />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+      <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-10" aria-labelledby="gallery-heading">
+        <div className="mx-auto max-w-[1600px]">
+          <div className="mb-8 flex flex-col gap-3 border-b border-gray-200 pb-5 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="mb-2 text-[10px] font-bold uppercase tracking-[.2em] text-accent">The SBECO selection</p>
+              <h2 id="gallery-heading" className="text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+                Product gallery
+              </h2>
+            </div>
+            <p className="text-sm text-gray-600">
+              {GALLERY_IMAGES.length} products · Browse the collection
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 lg:gap-5 2xl:grid-cols-5">
+            {GALLERY_IMAGES.map((image) => (
+              <figure
+                key={image.src}
+                className="group overflow-hidden rounded-sm border border-gray-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-[0_14px_36px_rgba(17,24,39,.09)]"
+              >
+                <div className="aspect-square overflow-hidden bg-[#f7f8fa] p-4 sm:p-6">
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-contain transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+                  />
                 </div>
-                <div className="p-5 border-t border-gray-100 flex items-center justify-between">
-                  <h3 className="text-[13px] font-bold uppercase tracking-[.04em] text-black">{img.title}</h3>
-                  <span className="text-[9px] bg-gray-100 text-gray-600 px-2 py-1 tracking-[.08em] uppercase font-semibold">{img.tag}</span>
-                </div>
-              </div>
-            </Lightbox>
-          ))}
+                <figcaption className="min-h-[76px] border-t border-gray-100 px-3 py-3 sm:px-4">
+                  <p className="line-clamp-2 text-xs font-semibold leading-5 text-black sm:text-sm">
+                    {image.title}
+                  </p>
+                  <p className="mt-1 text-[9px] font-semibold uppercase tracking-[.12em] text-gray-400">
+                    {image.category}
+                  </p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
     </>

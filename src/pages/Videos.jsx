@@ -63,6 +63,45 @@ export default function Videos() {
         </div>
       </section>
 
+      <section className="px-6 pb-14 md:px-12 md:pb-16" aria-labelledby="social-cta-heading">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 rounded-sm border border-gray-200 border-t-2 border-t-accent bg-white p-6 shadow-[0_12px_36px_rgba(17,24,39,.04)] sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10">
+          <div className="max-w-2xl">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[.2em] text-accent">Stay connected</p>
+            <h2 id="social-cta-heading" className="mb-3 text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+              Want to see more?
+            </h2>
+            <p className="text-sm leading-6 text-gray-600 sm:text-base">
+              Explore our YouTube channel and follow us on Instagram for more videos, product highlights, and updates.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://www.youtube.com/@superbrightlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2.5 bg-accent px-5 py-3 text-center text-xs font-bold uppercase tracking-[.08em] text-white transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.615 3.184c-1.7-.455-8.51-.455-8.51-.455s-6.81 0-8.51.455A2.8 2.8 0 0 0 .615 5.164C.16 6.864.16 12 .16 12s0 5.136.455 6.836a2.8 2.8 0 0 0 1.98 1.98c1.7.455 8.51.455 8.51.455s6.81 0 8.51-.455a2.8 2.8 0 0 0 1.98-1.98c.455-1.7.455-6.836.455-6.836s0-5.136-.455-6.836a2.8 2.8 0 0 0-1.98-1.98ZM9.6 15.75v-7.5L16.1 12l-6.5 3.75Z" />
+              </svg>
+              Visit Our YouTube Channel
+            </a>
+            <a
+              href="https://www.instagram.com/superbrightlabs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2.5 border border-gray-300 px-5 py-3 text-center text-xs font-bold uppercase tracking-[.08em] text-black transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+              </svg>
+              Follow Us on Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
