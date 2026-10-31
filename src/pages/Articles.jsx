@@ -1,11 +1,6 @@
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-
-const ARTICLES = [
-  { date: 'May 2026', badge: 'Guide', title: 'Choosing the Right Industrial Tape for Your Application', desc: 'A comprehensive guide to selecting between double-sided, masking, gaffer, and specialty tapes based on surface type, temperature, and load requirements.', tags: ['Tapes', 'Guide'] },
-  { date: 'April 2026', badge: 'Tips', title: 'Hot Air Gun Safety & Maintenance Guide', desc: 'Essential maintenance and safety practices for professional heat guns and hot air tools — from temperature control to nozzle care.', tags: ['Hot Air Guns', 'Maintenance'] },
-  { date: 'March 2026', badge: 'Industry', title: 'Sustainable Packaging Solutions for Modern Warehouses', desc: 'How recyclable edge protectors, biodegradable stretch films, and eco-friendly foam inserts are reshaping the packaging industry.', tags: ['Packaging', 'Sustainability'] },
-  { date: 'February 2026', badge: 'Technical', title: 'Understanding Adhesive Strength Ratings & Standards', desc: 'Breaking down peel strength, shear resistance, and temperature ratings — what the numbers on your tape specifications actually mean.', tags: ['Technical', 'Standards'] },
-];
+import { ARTICLES } from '../data/articles';
 
 export default function Articles() {
   return (
@@ -19,7 +14,12 @@ export default function Articles() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {ARTICLES.map((a, i) => (
-            <div key={i} className="border border-gray-200 bg-white overflow-hidden hover:border-black hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,.06)] transition-all animate-fade-up" style={{ animationDelay: `${i * .06}s` }}>
+            <Link
+              key={a.slug}
+              to={`/articles/${a.slug}`}
+              className="border border-gray-200 bg-white overflow-hidden hover:border-black hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,.06)] transition-all animate-fade-up no-underline text-inherit block"
+              style={{ animationDelay: `${i * .04}s` }}
+            >
               <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 bg-gray-100">
                 <span className="text-[10px] font-bold tracking-[.1em] uppercase text-gray-400">{a.date}</span>
                 <span className="text-[9px] bg-accent text-white px-2.5 py-0.5 tracking-[.1em] uppercase font-bold">{a.badge}</span>
@@ -32,8 +32,11 @@ export default function Articles() {
                     <span key={t} className="text-[9px] tracking-[.08em] uppercase px-2.5 py-1 border border-gray-200 text-gray-600 font-semibold">{t}</span>
                   ))}
                 </div>
+                <div className="mt-5 text-[11px] tracking-[.08em] uppercase font-semibold text-accent">
+                  Open article →
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
