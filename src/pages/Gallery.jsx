@@ -1,4 +1,4 @@
-import Hero from '../components/Hero';
+ import Hero from '../components/Hero';
 import Lightbox from '../components/Lightbox';
 
 const GALLERY_IMAGES = [
