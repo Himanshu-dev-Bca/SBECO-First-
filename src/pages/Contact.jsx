@@ -1,12 +1,10 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import Hero from '../components/Hero';
-import CloudflareTurnstile from '../components/CloudflareTurnstile';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState({});
-  const [turnstileToken, setTurnstileToken] = useState('');
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -50,11 +48,6 @@ export default function Contact() {
       newErrors.mobile = 'Please enter a valid mobile number (10+ digits)';
     }
 
-    // Require Turnstile verification
-    if (!turnstileToken) {
-      newErrors.turnstile = 'Please complete the security verification';
-    }
-
     return newErrors;
   };
 
@@ -83,7 +76,6 @@ export default function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          turnstileToken,
           name: form.name,
           email: form.email,
           mobile: form.mobile,
@@ -105,7 +97,6 @@ export default function Contact() {
           subject: '',
           message: '',
         });
-        setTurnstileToken('');
       } else {
         console.error("API Error:", data);
         setErrors({ general: data.message || 'Something went wrong. Please try again or contact us directly.' });
@@ -291,26 +282,6 @@ export default function Contact() {
                   </div>
                 )}
 
-                {/* Cloudflare Turnstile Widget — token is verified server-side via Netlify Function */}
-                <div className="mb-6">
-                  <label className="block text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                    Security Verification <span className="text-red-500">*</span>
-                  </label>
-                  <CloudflareTurnstile
-                    onVerify={(token) => {
-                      setTurnstileToken(token);
-                      if (errors.turnstile) setErrors({ ...errors, turnstile: '' });
-                    }}
-                    onExpire={() => setTurnstileToken('')}
-                    onError={() => setTurnstileToken('')}
-                  />
-                  {errors.turnstile && (
-                    <div className="text-[11px] text-red-600 mt-1.5 flex items-center gap-1.5 animate-slide-down">
-                      <span>⚠</span> {errors.turnstile}
-                    </div>
-                  )}
-                </div>
-
                 {/* Submit Button */}
                 <button
                   onClick={handleSubmit}
@@ -350,7 +321,6 @@ export default function Contact() {
                       subject: '',
                       message: '',
                     });
-                    setTurnstileToken('');
                     setErrors({});
                   }}
                   className="inline-flex items-center gap-2 px-6 py-2.5 border border-gray-200 bg-white text-[11px] font-semibold tracking-[.08em] uppercase text-gray-600 cursor-pointer hover:border-black hover:bg-gray-50 transition-all"

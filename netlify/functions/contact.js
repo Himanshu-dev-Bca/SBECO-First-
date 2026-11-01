@@ -1,13 +1,11 @@
 /**
  * Netlify serverless function: POST /.netlify/functions/contact
  *
- * 1. Validates the Cloudflare Turnstile token server-side
- * 2. If valid, forwards the form data to Web3Forms for email delivery
- * 3. Returns the result to the frontend
+ * Forwards the form data to Web3Forms for email delivery
+ * and returns the result to the frontend.
  *
  * Environment variables required (set in Netlify dashboard):
- *   TURNSTILE_SECRET_KEY  — from Cloudflare Turnstile dashboard
- *   WEB3FORMS_KEY         — your Web3Forms access key
+ *   WEB3FORMS_KEY — your Web3Forms access key
  */
 
 export default async function handler(req) {
@@ -21,41 +19,9 @@ export default async function handler(req) {
 
   try {
     const body = await req.json();
-    const { turnstileToken, name, email, mobile, company, subject, message } = body;
+    const { name, email, mobile, company, subject, message } = body;
 
-    // ── 1. Verify the Turnstile token with Cloudflare ──
-    const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
-    if (!turnstileSecret) {
-      console.error('TURNSTILE_SECRET_KEY env variable is not set');
-      return new Response(
-        JSON.stringify({ success: false, message: 'Server configuration error.' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    const verifyResponse = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        secret: turnstileSecret,
-        response: turnstileToken,
-      }),
-    });
-
-    const verifyData = await verifyResponse.json();
-
-    if (!verifyData.success) {
-      console.warn('Turnstile verification failed:', verifyData);
-      return new Response(
-        JSON.stringify({
-          success: false,
-          message: 'Security verification failed. Please refresh the page and try again.',
-        }),
-        { status: 403, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    // ── 2. Forward form data to Web3Forms ──
+    // ── Forward form data to Web3Forms ──
     const web3formsKey = process.env.WEB3FORMS_KEY;
     if (!web3formsKey) {
       console.error('WEB3FORMS_KEY env variable is not set');
