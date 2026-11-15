@@ -1,14 +1,10 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import Hero from '../components/Hero';
-import CloudflareTurnstile from '../components/CloudflareTurnstile';
-
-const WEB3FORMS_KEY = 'b1b9178c-a2eb-40d0-9704-277ac889a758';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState({});
-  const [turnstileToken, setTurnstileToken] = useState('');
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -52,7 +48,6 @@ export default function Contact() {
       newErrors.mobile = 'Please enter a valid mobile number (10+ digits)';
     }
 
-
     return newErrors;
   };
 
@@ -75,25 +70,18 @@ export default function Contact() {
     setSending(true);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('/.netlify/functions/contact', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json' // REQUIRED by Web3Forms
         },
         body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          from_name: form.name,
-          subject: `SBECO: ${form.subject || 'General Enquiry'} — from ${form.name}`,
           name: form.name,
-          // Prevent validation crash if user only provided a mobile number
-          email: form.email || 'no-email-provided@example.com',
-          phone: form.mobile || 'Not provided',
-          company: form.company || 'Not specified',
-          topic: form.subject || 'General Enquiry',
+          email: form.email,
+          mobile: form.mobile,
+          company: form.company,
+          subject: form.subject,
           message: form.message,
-          // Web3Forms free bot protection (honeypot)
-          botcheck: '',
         }),
       });
 
@@ -109,9 +97,8 @@ export default function Contact() {
           subject: '',
           message: '',
         });
-        setTurnstileToken(''); // Reset widget if present
       } else {
-        console.error("Web3Forms API Error:", data); 
+        console.error("API Error:", data);
         setErrors({ general: data.message || 'Something went wrong. Please try again or contact us directly.' });
       }
     } catch (err) {
@@ -295,18 +282,6 @@ export default function Contact() {
                   </div>
                 )}
 
-                {/* Cloudflare Turnstile Widget (visual deterrent only — not sent to Web3Forms) */}
-                <div className="mb-6">
-                  <label className="block text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                    Security Verification
-                  </label>
-                  <CloudflareTurnstile
-                    onVerify={(token) => setTurnstileToken(token)}
-                    onExpire={() => setTurnstileToken('')}
-                    onError={() => setTurnstileToken('')}
-                  />
-                </div>
-
                 {/* Submit Button */}
                 <button
                   onClick={handleSubmit}
@@ -346,7 +321,6 @@ export default function Contact() {
                       subject: '',
                       message: '',
                     });
-                    setTurnstileToken('');
                     setErrors({});
                   }}
                   className="inline-flex items-center gap-2 px-6 py-2.5 border border-gray-200 bg-white text-[11px] font-semibold tracking-[.08em] uppercase text-gray-600 cursor-pointer hover:border-black hover:bg-gray-50 transition-all"
