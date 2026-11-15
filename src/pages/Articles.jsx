@@ -20,6 +20,14 @@ export default function Articles() {
               className="border border-gray-200 bg-white overflow-hidden hover:border-black hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,.06)] transition-all animate-fade-up no-underline text-inherit block"
               style={{ animationDelay: `${i * .04}s` }}
             >
+              {a.image && (
+                <img
+                  src={a.image}
+                  alt={a.imageAlt}
+                  className="w-full h-52 object-contain p-6 bg-gray-50"
+                  loading="lazy"
+                />
+              )}
               <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 bg-gray-100">
                 <span className="text-[10px] font-bold tracking-[.1em] uppercase text-gray-400">{a.date}</span>
                 <span className="text-[9px] bg-accent text-white px-2.5 py-0.5 tracking-[.1em] uppercase font-bold">{a.badge}</span>

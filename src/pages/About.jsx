@@ -28,7 +28,7 @@ export default function About() {
               </div>
               <div>
                 <div className="text-[13px] font-bold tracking-[.06em] uppercase">Our Story</div>
-                <div className="text-[10px] text-gray-400 tracking-[.08em] uppercase">Since 2001</div>
+                <div className="text-[10px] text-gray-400 tracking-[.08em] uppercase">Since 1985</div>
               </div>
             </div>
             <div className="p-9">

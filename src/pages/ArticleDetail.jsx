@@ -46,18 +46,46 @@ export default function ArticleDetail() {
               ))}
             </div>
 
-            <p className="text-[15px] text-gray-700 leading-[1.85] mb-6">
+            {article.image && (
+              <figure className="mb-8">
+                <img
+                  src={article.image}
+                  alt={article.imageAlt}
+                  className="w-full max-h-[28rem] object-contain bg-gray-50 p-6"
+                />
+                <figcaption className="mt-2 text-[11px] text-gray-500">
+                  {article.imageAlt}
+                </figcaption>
+              </figure>
+            )}
+
+            <p className="text-[15px] text-gray-700 leading-[1.85] mb-8">
               {article.desc}
             </p>
 
-            <div className="border border-dashed border-gray-300 bg-gray-50 px-6 py-8">
-              <div className="text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                Content coming soon
+            {article.sections ? (
+              <div className="space-y-7">
+                {article.sections.map((section) => (
+                  <section key={section.heading}>
+                    <h2 className="text-[14px] font-bold tracking-[.08em] uppercase mb-2">
+                      {section.heading}
+                    </h2>
+                    <p className="text-[14px] text-gray-700 leading-[1.85]">
+                      {section.body}
+                    </p>
+                  </section>
+                ))}
               </div>
-              <p className="text-[13px] text-gray-600 leading-relaxed">
-                This article page is ready. Full copy, images, and details will be added here next.
-              </p>
-            </div>
+            ) : (
+              <div className="border border-dashed border-gray-300 bg-gray-50 px-6 py-8">
+                <div className="text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
+                  Content coming soon
+                </div>
+                <p className="text-[13px] text-gray-600 leading-relaxed">
+                  This article page is ready. Full copy, images, and details will be added here next.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </article>
