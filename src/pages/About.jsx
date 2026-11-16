@@ -7,7 +7,7 @@ export default function About() {
     <>
       <Hero label="About · Super Bright Labs"
         title={<>Built On Trust,<br />Driven By Quality</>}
-        subtitle="For over two decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India."
+        subtitle="For over four decades, Super Bright Labs has been a trusted supplier of industrial tools, packaging solutions, and protective materials for businesses across India."
         image="/images/fact.png"
       />
 
@@ -36,7 +36,7 @@ export default function About() {
                 Super Bright Engineering Company (SBECO) has been a trusted name in the industry for over 40 years, delivering reliable solutions in strapping, nailing, stapling, packaging, and furnishing. Serving a wide range of clients—from packaging firms and interior designers to factories and logistics companies—we have built a reputation as a dependable, one-stop solution provider.
               </p>
               <p className="text-[13px] text-gray-600 leading-[1.8] mb-4">
-                With decades of expertise, we offer an extensive range of products including tapes, straps, seals, tools, foam rolls, wraps, dispensers, PVC curtains, films, and power tools. Our diverse portfolio ensures that customers find the right solutions for both current needs and future growth.
+                With decades of expertise, we offer an extensive range of products including tapes, straps, seals, tools, foam rolls, wraps, dispensers, Packaging consumables, and power tools. Our diverse portfolio ensures that customers find the right solutions for both current needs and future growth.
               </p>
               <div className="mt-6 pt-5 border-t border-gray-100">
                 <p className="text-[14px] font-semibold text-black italic leading-relaxed">
