@@ -16,6 +16,7 @@ export default function Videos() {
         label="Videos · Super Bright Labs" 
         title={<>Video<br/>Library</>}
         subtitle="Watch our product demonstrations, tutorials, and expert guides to get the most out of your industrial equipment and solutions." 
+        image="/images/pallet-belts.png"
       />
 
       {/* YouTube Videos Section */}

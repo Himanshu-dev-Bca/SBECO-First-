@@ -31,6 +31,7 @@ export default function Gallery() {
         label="Gallery · Super Bright Labs"
         title={<>A closer look<br />at our range.</>}
         subtitle="Explore the products and equipment we bring together for better, more reliable work."
+        image="/images/fact.png"
       />
 
       <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-10" aria-labelledby="gallery-heading">

@@ -18,6 +18,7 @@ export default function JourneyRange() {
         label="About · Our Journey"
         title={<>{range.label}</>}
         subtitle={`Key milestones from ${range.start} to ${range.end} that shaped Super Bright Engineering Company's growth and industry partnerships.`}
+        image="/images/indu.png"
       />
 
       <div className="px-8 md:px-12 pt-6 pb-2">

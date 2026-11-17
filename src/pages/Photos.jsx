@@ -39,6 +39,7 @@ export default function Photos() {
         label="Gallery · Super Bright Labs" 
         title={<>Visual<br/>Showcase</>}
         subtitle="Explore our facilities, certified processes, and premium industrial products in a focused, image-first gallery."
+        image="/images/indu.png"
       />
 
       {/* Products Showcase */}

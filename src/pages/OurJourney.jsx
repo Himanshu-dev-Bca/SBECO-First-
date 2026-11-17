@@ -9,6 +9,7 @@ export default function OurJourney() {
         label="About · Our Journey"
         title={<>40 Years Of<br />Trust &amp; Growth</>}
         subtitle="From a one-man general supply operation to a trusted industrial partner — explore the milestones that shaped Super Bright Engineering Company."
+        image="/images/fact.png"
       />
 
       <div className="px-8 md:px-12 pt-6 pb-2">

@@ -112,7 +112,8 @@ export default function Contact() {
   return (
     <>
       <Hero label="Contact · Super Bright Labs" title="Get In Touch"
-        subtitle="Have a question about our products, need a bulk quote, or want to discuss your packaging requirements? We're here to help." />
+        subtitle="Have a question about our products, need a bulk quote, or want to discuss your packaging requirements? We're here to help."
+        image="/images/indu.png" />
 
       <section 
         className="px-8 md:px-12 py-14 bg-cover bg-center bg-no-repeat"

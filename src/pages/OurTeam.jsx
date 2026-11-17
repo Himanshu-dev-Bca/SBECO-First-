@@ -34,7 +34,8 @@ export default function OurTeam() {
     <>
       <Hero label="About · Our Team"
         title={<>Meet The Team<br/>Behind SBECO</>}
-        subtitle="Our dedicated professionals bring expertise and commitment to delivering excellence in industrial packaging and tools." />
+        subtitle="Our dedicated professionals bring expertise and commitment to delivering excellence in industrial packaging and tools."
+        image="/images/log.png" />
 
       {/* Section Counter */}
       <div className="px-8 md:px-12 py-6 border-b border-gray-200 bg-white sticky top-20 z-40">

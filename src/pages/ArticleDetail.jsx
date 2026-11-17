@@ -18,6 +18,7 @@ export default function ArticleDetail() {
         label={`Articles · ${article.badge}`}
         title={<>{article.title}</>}
         subtitle={article.desc}
+        image="/images/pallet-belts.png"
       />
 
       <div className="px-8 md:px-12 pt-6 pb-2">

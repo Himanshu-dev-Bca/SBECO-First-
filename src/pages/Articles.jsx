@@ -6,7 +6,8 @@ export default function Articles() {
   return (
     <>
       <Hero label="Resources · Super Bright Labs" title={<>Articles &<br/>Insights</>}
-        subtitle="Industry knowledge, product guides, and expert tips from our team of packaging and tools specialists." />
+        subtitle="Industry knowledge, product guides, and expert tips from our team of packaging and tools specialists."
+        image="/images/steel-strap.png" />
 
       <section className="px-8 md:px-12 py-14">
         <div className="text-[15px] font-semibold tracking-[.15em] uppercase flex items-center gap-3 mb-7 pb-3.5 border-b-2 border-black">
