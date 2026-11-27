@@ -512,3 +512,32 @@ main > div {
   user-select: none;
 }
 
+/* Article recommendations scroll within their own row, not the page. */
+.article-carousel {
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: #d1d5db transparent;
+  scrollbar-width: thin;
+}
+
+.article-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.article-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.article-carousel::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.article-carousel:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
