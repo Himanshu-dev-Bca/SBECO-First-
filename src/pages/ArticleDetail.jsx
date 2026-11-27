@@ -102,116 +102,113 @@ export default function ArticleDetail() {
       </div>
 
       <section className="px-4 sm:px-8 md:px-12 py-10" aria-label="Article viewer">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-[10px] font-semibold tracking-[.1em] uppercase text-gray-400">
-              Article {currentIndex + 1} of {ARTICLES.length}
-            </span>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                aria-label="Previous article"
-                disabled={currentIndex === 0}
-                onClick={() => scrollToArticle(ARTICLES[currentIndex - 1].slug)}
-                className="w-9 h-9 border border-gray-200 bg-white text-gray-600 hover:border-black hover:text-black disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                ←
-              </button>
-              <button
-                type="button"
-                aria-label="Next article"
-                disabled={currentIndex === ARTICLES.length - 1}
-                onClick={() => scrollToArticle(ARTICLES[currentIndex + 1].slug)}
-                className="w-9 h-9 border border-gray-200 bg-white text-gray-600 hover:border-black hover:text-black disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                →
-              </button>
-            </div>
-          </div>
-
-          <div
-            ref={carouselRef}
-            onScroll={handleCarouselScroll}
-            role="region"
-            aria-label="All articles"
-            tabIndex={0}
-            className="article-carousel article-main-carousel flex"
-          >
-            {ARTICLES.map((item) => {
-              const isActive = item.slug === article.slug;
-
-              return (
-                <article
-                  key={item.slug}
-                  data-article-slug={item.slug}
-                  aria-current={isActive ? 'page' : undefined}
-                  className={`shrink-0 snap-center border bg-white ${
-                    isActive ? 'border-accent' : 'border-gray-200'
-                  }`}
+            <div className="max-w-7xl mx-auto">
+              <div className="mb-4 flex items-center justify-between">
+                <button
+                  type="button"
+                  aria-label="Previous article"
+                  disabled={currentIndex === 0}
+                  onClick={() => scrollToArticle(ARTICLES[currentIndex - 1].slug)}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-40"
                 >
-                  <div className="flex items-center justify-between px-6 md:px-10 py-5 border-b border-gray-100 bg-gray-100">
-                    <span className="text-[10px] font-bold tracking-[.1em] uppercase text-gray-400">{item.date}</span>
-                    <span className="text-[9px] bg-accent text-white px-2.5 py-0.5 tracking-[.1em] uppercase font-bold">{item.badge}</span>
-                  </div>
+                  ←
+                </button>
+                <span className="text-[10px] font-semibold tracking-[.1em] uppercase text-gray-400">
+                  Article {currentIndex + 1} of {ARTICLES.length}
+                </span>
+                <button
+                  type="button"
+                  aria-label="Next article"
+                  disabled={currentIndex === ARTICLES.length - 1}
+                  onClick={() => scrollToArticle(ARTICLES[currentIndex + 1].slug)}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  →
+                </button>
+              </div>
+              <div
+                ref={carouselRef}
+                onScroll={handleCarouselScroll}
+                role="region"
+                aria-label="All articles"
+                tabIndex={0}
+                className="article-carousel article-main-carousel flex"
+              >
+                {ARTICLES.map((item) => {
+                  const isActive = item.slug === article.slug;
 
-                  <div className="px-6 md:px-10 py-8 md:py-10">
-                    <h2 className="text-lg md:text-xl font-bold uppercase tracking-[.04em] leading-snug mb-6">
-                      {item.title}
-                    </h2>
-
-                    <div className="flex gap-2 mb-8 flex-wrap">
-                      {item.tags.map((tag) => (
-                        <span key={tag} className="text-[9px] tracking-[.08em] uppercase px-2.5 py-1 border border-gray-200 text-gray-600 font-semibold">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    {item.image && (
-                      <figure className="mb-8">
-                        <img
-                          src={item.image}
-                          alt={item.imageAlt}
-                          loading={isActive ? 'eager' : 'lazy'}
-                          className="w-full max-h-[28rem] object-contain bg-gray-50 p-6"
-                        />
-                        <figcaption className="mt-2 text-[11px] text-gray-500">
-                          {item.imageAlt}
-                        </figcaption>
-                      </figure>
-                    )}
-
-                    <p className="text-[15px] text-gray-700 leading-[1.85] mb-8">
-                      {item.desc}
-                    </p>
-
-                    {item.sections ? (
-                      <div className="space-y-7">
-                        {item.sections.map((section) => (
-                          <section key={section.heading}>
-                            <h3 className="text-[14px] font-bold tracking-[.08em] uppercase mb-2">
-                              {section.heading}
-                            </h3>
-                            <p className="text-[14px] text-gray-700 leading-[1.85]">
-                              {section.body}
-                            </p>
-                          </section>
-                        ))}
+                  return (
+                    <article
+                      key={item.slug}
+                      data-article-slug={item.slug}
+                      aria-current={isActive ? 'page' : undefined}
+                      className={`shrink-0 snap-center border bg-white ${
+                        isActive ? 'border-accent' : 'border-gray-200'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between px-6 md:px-10 py-5 border-b border-gray-100 bg-gray-100">
+                        <span className="text-[10px] font-bold tracking-[.1em] uppercase text-gray-400">{item.date}</span>
+                        <span className="text-[9px] bg-accent text-white px-2.5 py-0.5 tracking-[.1em] uppercase font-bold">{item.badge}</span>
                       </div>
-                    ) : (
-                      <div className="border border-dashed border-gray-300 bg-gray-50 px-6 py-8">
-                        <div className="text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
-                          Content coming soon
+
+                      <div className="px-4 sm:px-6 md:px-10 py-8 md:py-10">
+                        <h2 className="text-lg md:text-xl font-bold uppercase tracking-[.04em] leading-snug mb-6">
+                          {item.title}
+                        </h2>
+
+                        <div className="flex gap-2 mb-8 flex-wrap">
+                          {item.tags.map((tag) => (
+                            <span key={tag} className="text-[9px] tracking-[.08em] uppercase px-2.5 py-1 border border-gray-200 text-gray-600 font-semibold">
+                              {tag}
+                            </span>
+                          ))}
                         </div>
-                        <p className="text-[13px] text-gray-600 leading-relaxed">
-                          This article page is ready. Full copy, images, and details will be added here next.
+
+                        {item.image && (
+                          <figure className="mb-8">
+                            <img
+                              src={item.image}
+                              alt={item.imageAlt}
+                              loading={isActive ? 'eager' : 'lazy'}
+                              className="w-full max-h-[28rem] object-contain bg-gray-50 p-6"
+                            />
+                            <figcaption className="mt-2 text-[11px] text-gray-500">
+                              {item.imageAlt}
+                            </figcaption>
+                          </figure>
+                        )}
+
+                        <p className="text-[15px] text-gray-700 leading-[1.85] mb-8">
+                          {item.desc}
                         </p>
+
+                        {item.sections ? (
+                          <div className="space-y-7">
+                            {item.sections.map((section) => (
+                              <section key={section.heading}>
+                                <h3 className="text-[14px] font-bold tracking-[.08em] uppercase mb-2">
+                                  {section.heading}
+                                </h3>
+                                <p className="text-[14px] text-gray-700 leading-[1.85]">
+                                  {section.body}
+                                </p>
+                              </section>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="border border-dashed border-gray-300 bg-gray-50 px-6 py-8">
+                            <div className="text-[10px] font-bold tracking-[.12em] uppercase text-gray-400 mb-2">
+                              Content coming soon
+                            </div>
+                            <p className="text-[13px] text-gray-600 leading-relaxed">
+                              This article page is ready. Full copy, images, and details will be added here next.
+                            </p>
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                </article>
-              );
-            })}
+                    </article>
+                  );
+                })}
           </div>
         </div>
       </section>
