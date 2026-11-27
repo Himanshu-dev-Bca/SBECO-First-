@@ -1,4 +1,6 @@
-export default function Hero({ label, title, subtitle, children, image }) {
+export default function Hero({ label, title, subtitle, children, image, imageBlend = 'dark' }) {
+  const isLightImageBlend = imageBlend === 'light';
+
   return (
     <section className="bg-black text-white relative overflow-hidden flex flex-col justify-center min-h-[400px]">
       {/* Background Image with smooth cinematic gradient blend */}
@@ -8,12 +10,24 @@ export default function Hero({ label, title, subtitle, children, image }) {
             <img
               src={image}
               alt="Industrial background"
-              className="w-full h-full object-cover object-[center_30%] opacity-70"
+              className={`w-full h-full object-cover object-[center_30%] ${
+                isLightImageBlend ? 'opacity-95' : 'opacity-70'
+              }`}
             />
             {/* Multi-directional seamless feathering and blending into dark hero background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/60" />
+            <div className={`absolute inset-0 ${
+              isLightImageBlend
+                ? 'bg-gradient-to-r from-black via-black/35 to-transparent'
+                : 'bg-gradient-to-r from-black via-black/70 to-transparent'
+            }`} />
+            {isLightImageBlend ? (
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10" />
+            ) : (
+              <>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/60" />
+              </>
+            )}
             <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-transparent to-transparent" />
             {/* Subtle warm industrial ambient glow */}
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 via-transparent to-amber-500/5 mix-blend-screen" />
